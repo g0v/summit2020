@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Official website for g0v Summit 2020",
   "contributors": [
-    { "name": "mangoSu" },
-    { "name": "ddio", "email": "ddio@ddio.io" }
+    {
+      "name": "mangoSu"
+    },
+    {
+      "name": "ddio",
+      "email": "ddio@ddio.io"
+    }
   ],
   "private": true,
   "scripts": {
