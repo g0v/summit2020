@@ -13,6 +13,7 @@
   ],
   "private": true,
   "scripts": {
+    "sync:article": "node tools/syncArticles.js",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -21,11 +22,15 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "front-matter": "^3.2.1",
+    "markdown-it": "^11.0.0",
+    "move-file": "^2.0.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@hackmd/hackmd-cli": "^1.1.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
@@ -39,6 +44,7 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2",
+    "tempfile": "^3.0.0",
     "vue-jest": "^4.0.0-0"
   }
 }
