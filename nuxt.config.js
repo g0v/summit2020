@@ -25,11 +25,13 @@ export default {
   ** Global CSS
   */
   css: [
+    'tachyons/css/tachyons.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-plugins'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,8 +49,21 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-i18n'
   ],
+  i18n: {
+    locales: ['en', 'zh'],
+    defaultLocale: 'zh',
+    vueI18nLoader: true,
+    strategy: 'prefix_and_default',
+    lazy: true,
+    langDir: 'lang/',
+    locales: [
+      { code: 'zh', file: 'zh.js' },
+      { code: 'en', file: 'en.js' }
+    ]
+  },
   dotenv: {
     systemvars: true
   },
@@ -66,6 +81,12 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          loader: 'raw-loader'
+        }
+      )
     }
   }
 }

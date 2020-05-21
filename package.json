@@ -27,7 +27,10 @@
     "front-matter": "^3.2.1",
     "markdown-it": "^11.0.0",
     "move-file": "^2.0.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-i18n": "^6.11.1",
+    "vue-markdown": "^2.2.4",
+    "yaml-front-matter": "^4.1.0"
   },
   "devDependencies": {
     "@hackmd/hackmd-cli": "^1.1.0",
@@ -43,7 +46,9 @@
     "node-sass": "^4.14.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "raw-loader": "^4.0.1",
     "sass-loader": "^8.0.2",
+    "tachyons": "^4.12.0",
     "tempfile": "^3.0.0",
     "vue-jest": "^4.0.0-0"
   }
