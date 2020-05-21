@@ -6,16 +6,16 @@ const tempfile = require('tempfile')
 const moveFile = require('move-file')
 
 // https://g0v.hackmd.io/@ddio/summit-2020-articles
-const hackmdServer = 'https://g0v.hackmd.io'
-const rootDocId = 'SphmcJemS5CyIuwa1KtN2w'
-const docDir = path.join(__dirname, '../docs/articles')
+const config = require('../.article.config')
+const docDir = path.join(__dirname, '../assets/articles')
 
 const env = {
   ...process.env,
-  HMD_CLI_SERVER_URL: hackmdServer
+  HMD_CLI_COOKIE_PATH: path.join(__dirname, '../.hackmd.cookies.json'),
+  HMD_CLI_SERVER_URL: config.hackmdServer
 }
 
-const rootDoc = execSync(`npx hackmd-cli export ${rootDocId}`, { env }).toString('utf8')
+const rootDoc = execSync(`npx hackmd-cli export ${config.rootDocId}`, { env }).toString('utf8')
 const articleLinks = rootDoc.matchAll(/\[[^\]]+\]\(.*\/([a-zA-Z0-9_-]+)\)/g)
 
 for (const linkMatched of articleLinks) {
@@ -33,7 +33,7 @@ for (const linkMatched of articleLinks) {
     const { id, language = 'zh' } = content.attributes
     const realDest = `${id}.${language}.md`
     if (!id) {
-      console.error(`Missing ID in frontmatter: ${hackmdServer}/${articleLinks}`)
+      console.error(`Missing ID in frontmatter: ${config.hackmdServer}/${articleLinks}`)
     }
     // do need to wait
     moveFile(tempDest, path.join(docDir, realDest))
