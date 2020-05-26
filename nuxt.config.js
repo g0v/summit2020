@@ -53,10 +53,12 @@ export default {
     'nuxt-i18n'
   ],
   i18n: {
-    locales: ['en', 'zh'],
     defaultLocale: 'zh',
     vueI18nLoader: true,
     strategy: 'prefix_and_default',
+    vueI18n: {
+      silentTranslationWarn: true
+    },
     lazy: true,
     langDir: 'lang/',
     locales: [

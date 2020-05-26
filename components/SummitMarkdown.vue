@@ -22,7 +22,12 @@ export default {
   computed: {
     cleanMd () {
       const meta = yamlFront.loadFront(this.content)
-      return meta.__content || ''
+      const content = meta.__content || ''
+      // remove all quote as it's comment
+      return content
+        .split('\n')
+        .filter(line => !line.startsWith('>'))
+        .join('\n')
     }
   }
 }

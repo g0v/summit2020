@@ -24,7 +24,10 @@ function downloadOneTable (tableInfo) {
       view: tableInfo.view
     }).eachPage((records, fetchNextPage) => {
       records.forEach((record) => {
-        rows.push(record.fields)
+        rows.push({
+          id: record.id,
+          ...record.fields
+        })
       })
       fetchNextPage()
     }, (err) => {
