@@ -14,6 +14,8 @@
   "private": true,
   "scripts": {
     "sync:article": "node tools/syncArticles.js",
+    "sync:table": "node tools/syncStructuredData.js",
+    "sync:all": "npm run sync:article && npm run sync:table",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -38,6 +40,7 @@
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
+    "airtable": "^0.8.1",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
     "eslint": "^6.1.0",
