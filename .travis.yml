@@ -1,24 +1,36 @@
-sudo: false
-language: bash
-branches:
-  only:
-  - master
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: landing/
-  on:
-    branch: master
-
-after_deploy:
-  - sleep 30 # waiting for gh-pages build
-  - git config --global user.name "Travis CI"
-  - git config --global user.email "travis@example.org"
-  - git config --global push.default simple
-  - git clone --depth 1 --branch gh-pages https://$GITHUB_TOKEN@github.com/g0v/summit.g0v.tw
-  - cd summit.g0v.tw
-  - git submodule init
-  - git submodule update --remote
-  - git commit -a -m "Update submodule 2020"
-  - git push -f
+language: node_js
+node_js:
+  - 12
+jobs:
+  include:
+    - stage: deploy to staging
+      if: branch = master
+      script: npm run generate:staging
+      deploy:
+        provider: pages:git
+        edge: true # opt in to dpl v2
+        target_branch: staging-page
+        local_dir: dist
+    - stage: landing page
+        language: bash
+        branches:
+          only:
+          - master
+        deploy:
+          provider: pages
+          skip_cleanup: true
+          github_token: $GITHUB_TOKEN
+          local_dir: landing/
+          on:
+            branch: master
+        after_deploy:
+          - sleep 30 # waiting for gh-pages build
+          - git config --global user.name "Travis CI"
+          - git config --global user.email "travis@example.org"
+          - git config --global push.default simple
+          - git clone --depth 1 --branch gh-pages https://$GITHUB_TOKEN@github.com/g0v/summit.g0v.tw
+          - cd summit.g0v.tw
+          - git submodule init
+          - git submodule update --remote
+          - git commit -a -m "Update submodule 2020"
+          - git push -f
