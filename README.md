@@ -56,7 +56,8 @@ npm install
 npm run sync:article
 
 # 將靜態網站編譯至 dist/
-npm run generate
+npm run generate:staging
+npm run generate:production
 ```
 
 ## 待作們
@@ -64,8 +65,8 @@ npm run generate
 ### 網站架構
 
 1. [ ] SEO + Social Share
-1. [ ] script for staging only flag + staging deploy branch
-1. [ ] script for production deploy branch using existing dir
+1. [x] script for staging only flag + staging deploy branch
+1. [x] script for production deploy branch using existing dir
 1. [ ] doc for everything
    - install linter
    - gitlab flow

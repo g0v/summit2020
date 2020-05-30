@@ -21,7 +21,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "generate:staging": "env ROUTER_BASE=/summit2020 nuxt generate",
-    "generate:prod": "env ROUTER_BASE=/2020 nuxt generate",
+    "generate:production": "env ROUTER_BASE=/2020 nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },

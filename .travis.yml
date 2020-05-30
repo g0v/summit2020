@@ -10,7 +10,15 @@ jobs:
         provider: pages:git
         edge: true # opt in to dpl v2
         github_token: $GITHUB_TOKEN
-        target_branch: staging-page
+        local_dir: dist
+    - stage: deploy to production
+      if: branch = production
+      script: npm run generate:prod
+      deploy:
+        provider: pages:git
+        edge: true # opt in to dpl v2
+        github_token: $GITHUB_TOKEN
+        target_branch: production-pages
         local_dir: dist
     - stage: landing page
       language: shell
