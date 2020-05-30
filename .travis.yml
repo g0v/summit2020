@@ -16,12 +16,13 @@ jobs:
       language: shell
       branches:
         only:
-        - master2
+        - master
       deploy:
-        provider: pages
-        skip_cleanup: true
+        provider: pages:git
+        edge: true # opt in to dpl v2
         github_token: $GITHUB_TOKEN
-        local_dir: landing/
+        target_branch: landing-page
+        local_dir: landing
         on:
           branch: master
       after_deploy:
