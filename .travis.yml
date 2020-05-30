@@ -21,7 +21,7 @@ jobs:
         provider: pages:git
         edge: true # opt in to dpl v2
         github_token: $GITHUB_TOKEN
-        target_branch: landing-page
+        target_branch: landing-pages
         local_dir: landing
         on:
           branch: master
