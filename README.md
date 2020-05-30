@@ -18,10 +18,12 @@
 
 ## 文案資訊
 
-1. 文章請到[這篇 Hackmd](https://g0v.hackmd.io/@ddio/summit-2020-articles)閱讀，並找宣傳組開通權限
-2. 用 `npm run sync:all` 下載所有表格 + 長篇文案
-3. 所有下載後的檔案，都會放在 `~/assets/articles` 與 `~/assets/tables` 底下，並會 commit 到 git 裡
-4. 若要新增文案，須手動加入 `~/lang/zh.js` 與 `~/lang/en.js` 中
+1. 文章請到[官網文案集散地](https://g0v.hackmd.io/@ddio/summit-2020-articles)閱讀是否有需要的文章
+2. 點選 **官網文案集散地** 的任意 Airtable 連結，取得 Airtable 的使用權限
+3. 到 [Airtable API](https://airtable.com/api) ，取得自己 Airtable 帳號的 API key 後，在 .env 寫上 `AIRTABLE_API_KEY=<MY API KEY>`
+4. 用 `npm run sync:all` 下載所有表格 + 長篇文案
+5. 所有下載後的檔案，都會放在 `~/assets/articles` 與 `~/assets/tables` 底下，並會 commit 到 git 裡
+6. 若要新增文案，須手動加入 `~/lang/zh.js` 與 `~/lang/en.js` 中
 
 ## 開發環境
 
