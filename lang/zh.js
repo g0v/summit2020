@@ -2,6 +2,7 @@ const { extractLanguageFromTable } = require('./utils')
 
 export default {
   welcome: '你好',
+  venuelocation: '場地位置',
 
   // articles
   'article/example': require('~/assets/articles/範例文案1.zh.md').default,

@@ -27,12 +27,15 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
     "front-matter": "^3.2.1",
+    "leaflet": "^1.6.0",
     "lodash": "^4.17.15",
     "markdown-it": "^11.0.0",
     "move-file": "^2.0.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.11.1",
+    "nuxt-leaflet": "0.0.21",
     "vue-markdown": "^2.2.4",
+    "vue2-leaflet": "^2.5.2",
     "yaml-front-matter": "^4.1.0"
   },
   "devDependencies": {

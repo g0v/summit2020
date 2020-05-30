@@ -2,9 +2,11 @@
   <div class="example pa3 ma4 mw7 center">
     <h2>{{ $t('articleHeader') }}</h2>
     <summit-markdown :content="$t('article/example')" />
-    <h2 class="mt5 pv3 bt">{{ $t('tableHeader') }}</h2>
+    <h2 class="mt5 pv3 bt">
+      {{ $t('tableHeader') }}
+    </h2>
     <ul>
-      <li class="mv3" v-for="event in location" :key="event.id">
+      <li v-for="event in location" :key="event.id" class="mv3">
         <div class="silver f6">
           {{ event.日期 }}
         </div>

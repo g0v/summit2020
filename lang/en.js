@@ -2,6 +2,7 @@ const { extractLanguageFromTable } = require('./utils')
 
 export default {
   welcome: 'Welcome',
+  venuelocation: 'Venue location',
 
   // articles
   'article/example': require('~/assets/articles/範例文案1.en.md').default,

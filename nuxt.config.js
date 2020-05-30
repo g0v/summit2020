@@ -50,7 +50,9 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    'nuxt-i18n'
+    'nuxt-i18n',
+    // https://github.com/schlunsen/nuxt-leaflet#setup
+    'nuxt-leaflet'
   ],
   i18n: {
     defaultLocale: 'zh',
