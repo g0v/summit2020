@@ -48,6 +48,11 @@ npm run dev
 
 ## 發佈流程
 
+目前 Staging 已納入 CICD ：
+
+1. 網站網址： https://g0v.github.io/summit2020/
+1. 若發現網頁和想像的不同，請見 [Travis CI](https://travis-ci.org/github/g0v/summit2020)
+
 ```bash
 # 安裝套件
 npm install
