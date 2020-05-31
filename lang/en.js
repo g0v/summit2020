@@ -17,6 +17,7 @@ export default {
   'article/coc': require('~/assets/articles/行為準則.en.md').default,
   'article/communityIntro': require('~/assets/articles/社群簡介.en.md').default,
   'article/summitIntro': require('~/assets/articles/雙年會簡介.en.md').default,
+  'article/aboutSummit': require('~/assets/articles/關於雙年會.en.md').default,
 
   // tables
   'table/roughSchedule': extractLanguageFromTable({
