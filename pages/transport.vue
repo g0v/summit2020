@@ -28,7 +28,7 @@
         <div class="venue-location-detail-data">
           <h2>
             {{ location.name }}<div class="map-link">
-              MAP []
+              MAP <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
             </div>
           </h2>
           <p>{{ location.address }}</p>
@@ -57,12 +57,16 @@
 <script>
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
+import spacer from '~/assets/images/transport_spacer.svg'
 
 export default {
   components: {
     OpenStreepMap
   },
   computed: {
+    svgSpacer () {
+      return spacer
+    },
     locations () {
       return [...locations.reduce((m, location) => {
         if (m.has(location['地點名稱-華語'])) {
@@ -139,10 +143,14 @@ export default {
         position: absolute;
         left: 100%;
         top: 0;
-        width: 5em;
+        width: 5.5em;
         border-radius: 900px;
+        text-align: center;
         background-color: #ccc;
         padding: 0.35rem 0.8rem;
+        img {
+          height: 1em;
+        }
       }
     }
     .small-map {
@@ -161,8 +169,9 @@ export default {
       display: block;
       position: absolute;
       top: 60px;
-      background-image: url('../assets/images/transport_spacer.png');
+      background-image: url('../assets/images/transport_spacer.svg');
       background-size: contain;
+      background-repeat: no-repeat;
       width: 80px;
       height: 80px / 318 * 123;
       margin: 1.5rem 0;
