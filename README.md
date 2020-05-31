@@ -82,9 +82,7 @@ npm run generate:production
 1. [ ] SEO + Social Share
 1. [x] script for staging only flag + staging deploy branch
 1. [x] script for production deploy branch using existing dir
-1. [ ] doc for everything
-   - install linter
-   - gitlab flow
+1. [x] doc for everything
 1. [ ] Add Sentry
 1. [ ] Apply Sentry
 1. [ ] script for production deploy branch using nuxt gen
