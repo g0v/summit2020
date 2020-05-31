@@ -5,7 +5,7 @@
         {{ $t('example') }}
       </nuxt-link>
       <nuxt-link :to="'#'">
-        <img src="https://fakeimg.pl/50x50/" alt="img"></img>
+        <img src="https://fakeimg.pl/50x50/" alt="img">
       </nuxt-link>
       <nuxt-link class="fa fa-facebook-f" :to="'#'">
         {{ $t('') }}
@@ -30,7 +30,7 @@
       </nuxt-link>
     </div>
     <nuxt-link class="text" :to="'#'">
-      Copyright <span class="fa fa-copyright"></span> g0v Summit 2020
+      Copyright <span class="fa fa-copyright" /> g0v Summit 2020
     </nuxt-link>
   </div>
 </template>

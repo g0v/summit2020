@@ -1,22 +1,22 @@
 <template>
   <div>
     <div class="landing flex justify-center items-center bg-near-white">
-      <img class="g0v-logo" :src="require('~/assets/images/g0v-logo.svg')" alt="" srcset="">
+      <img class="g0v-logo" :src="require('~/assets/images/g0v-logo.svg')">
     </div>
     <div class="content">
       <div class="article">
-        <img class="blue-circle" :src="require('~/assets/images/blue-circle.svg')" alt="" srcset="">
-        <summit-markdown :content="$t('article/communityIntro')"></summit-markdown>
+        <img class="blue-circle" :src="require('~/assets/images/blue-circle.svg')">
+        <summit-markdown :content="$t('article/communityIntro')" />
       </div>
       <div class="article">
-        <img class="green-circle" :src="require('~/assets/images/green-circle.svg')" alt="" srcset="">
-        <summit-markdown :content="$t('article/summitAbout')"></summit-markdown>
-        <summit-markdown :content="$t('article/summitIntro')"></summit-markdown>
+        <img class="green-circle" :src="require('~/assets/images/green-circle.svg')">
+        <summit-markdown :content="$t('article/summitAbout')" />
+        <summit-markdown :content="$t('article/summitIntro')" />
       </div>
       <div class="article">
-        <img class="blue-circle" :src="require('~/assets/images/blue-circle.svg')" alt="" srcset="">
-        <img class="green-circle" :src="require('~/assets/images/green-circle.svg')" alt="" srcset="">
-        <summit-markdown :content="$t('article/summitGuidelines')"></summit-markdown>
+        <img class="blue-circle" :src="require('~/assets/images/blue-circle.svg')">
+        <img class="green-circle" :src="require('~/assets/images/green-circle.svg')">
+        <summit-markdown :content="$t('article/summitGuidelines')" />
       </div>
     </div>
     <div>
@@ -37,10 +37,10 @@ export default {}
   min-height: 90vh;
   max-height: 922px;
   position: relative;
-  background: url('../assets/images/banner.png') center center no-repeat;
+  background: url("../assets/images/banner.png") center center no-repeat;
   background-size: cover;
-  .g0v-logo{
-    width:25vw
+  .g0v-logo {
+    width: 25vw;
   }
 }
 .content {
@@ -55,25 +55,26 @@ export default {}
     color: #50bc83;
     font-size: 1.3em;
   }
-  .article{
-    margin:150px 0;
+  .article {
+    margin: 150px 0;
     position: relative;
-    &:first-of-type{
-      margin-top:0;
+    &:first-of-type {
+      margin-top: 0;
     }
   }
-  .blue-circle,.green-circle{
+  .blue-circle,
+  .green-circle {
     position: absolute;
-    width:15vw
+    width: 15vw;
   }
-  .blue-circle{
-    left:-20vw;
-    top:5vh;
-    transform:rotate(180deg);
+  .blue-circle {
+    left: -20vw;
+    top: 5vh;
+    transform: rotate(180deg);
   }
-  .green-circle{
-    right:-20vw;
-    bottom:20vh;
+  .green-circle {
+    right: -20vw;
+    bottom: 20vh;
   }
 }
 </style>
