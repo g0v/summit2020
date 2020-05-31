@@ -69,6 +69,9 @@ export default {
     },
     locations () {
       return [...locations.reduce((m, location) => {
+        // eslint-disable-next-line no-console
+        console.log(location)
+        location.coordinates = location.coordinates.split(',').map(o => +o)
         if (m.has(location['地點名稱-華語'])) {
           const currentLocation = m.get(location['地點名稱-華語'])
           currentLocation.events.push(location)
