@@ -1,8 +1,6 @@
 <template>
   <div class="navbar flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1">
-    <nuxt-link class="logo" :to="localePath('/')">
-      LOGO
-    </nuxt-link>
+    <nuxt-link class="logo" :to="localePath('/')"></nuxt-link>
     <div class="head flex items-center">
       <template v-for="menu in menuList">
         <nuxt-link
@@ -102,6 +100,11 @@ export default {
     right: 0;
     margin: auto;
     // z-index: 99;
+    background-image: url('../assets/images/headerLogo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 428px;
+    height: 58px;
   }
   a {
     color: #fff;
