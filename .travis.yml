@@ -10,7 +10,7 @@ jobs:
     - state: lint
       script: npm run lint
     - stage: deploy to staging
-      if: branch = master
+      if: (branch = master) AND type != cron
       script: npm run generate:staging
       deploy:
         provider: pages:git
@@ -30,9 +30,7 @@ jobs:
           tags: true
     - stage: landing page
       language: shell
-      branches:
-        only:
-        - master
+      if: (branch = master) AND type != cron
       deploy:
         provider: pages:git
         edge: true # opt in to dpl v2

@@ -13,9 +13,8 @@ commit_country_json_files() {
   # Stage the modified files in dist/output
   git add -f assets
   # Create a new commit with a custom build message
-  # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
-  git commit -m "Document auto update: $dateAndMonth (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
+  git commit -m "Document auto update: $dateAndMonth (Build $TRAVIS_BUILD_NUMBER)"
 }
 
 upload_files() {
