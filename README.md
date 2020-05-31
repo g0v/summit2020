@@ -25,7 +25,17 @@
 5. 所有下載後的檔案，都會放在 `~/assets/articles` 與 `~/assets/tables` 底下，並會 commit 到 git 裡
 6. 若要新增文案，須手動加入 `~/lang/zh.js` 與 `~/lang/en.js` 中
 
-## 開發環境
+## 開發須知
+
+### 開發流程
+
+1. 本專案使用加料版的 [Github flow](https://medium.com/@lf2lf2111/29c82f5d4469) ，提供測試與正式兩種網站，也就是說：
+   - 開發時請在自己的電腦開 feature branch ，用 PR merge 進 master ，保持 master 在最新的功能與內容
+   - 所有進到 master 的 commit ，都會被編到 Github page 上，當作[內部預覽](https://g0v.github.io/summit2020)
+   - 所有開頭為 `release-` 的 tag ，都會被編到 production-pages branch ，發佈在正式網站
+2. 確定程式碼遵守 nuxt 的 eslint 規範，細節請見 .eslintrs.js ，或使用支援 linter 的編輯器，例如 VS Code，否則 PR 會失敗呦
+
+### 執行步驟
 
 ```bash
 # 安裝套件
