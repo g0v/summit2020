@@ -16,8 +16,12 @@ export default {
   'article/cohostIntro': require('~/assets/articles/共同主辦介紹.zh.md').default,
   'article/communityIntro': require('~/assets/articles/社群簡介.zh.md').default,
   'article/summitIntro': require('~/assets/articles/雙年會簡介.zh.md').default,
+<<<<<<< HEAD
   'article/summitAbout': require('~/assets/articles/關於雙年會.zh.md').default,
   'article/summitGuidelines': require('~/assets/articles/行為準則.zh.md').default,
+=======
+  'article/aboutSummit': require('~/assets/articles/關於雙年會.zh.md').default,
+>>>>>>> 56e0c7f7c91a0ed7a77e1708754a8a55651a4621
 
   // tables
   'table/roughSchedule': extractLanguageFromTable({
