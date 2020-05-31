@@ -3,8 +3,14 @@ node_js:
   - 12
 jobs:
   include:
+    - state: download doc
+      if: type = cron
+      script: npm run sync:all
+      after_success: bash ./tools/updateDocsIfNeeded.sh
+    - state: lint
+      script: npm run lint
     - stage: deploy to staging
-      if: branch = master
+      if: (branch = master) AND type != cron
       script: npm run generate:staging
       deploy:
         provider: pages:git
@@ -12,19 +18,19 @@ jobs:
         github_token: $GITHUB_TOKEN
         local_dir: dist
     - stage: deploy to production
-      if: branch = production
-      script: npm run generate:prod
+      if: tag =~ /^release-/
+      script: npm run generate:production
       deploy:
         provider: pages:git
         edge: true # opt in to dpl v2
         github_token: $GITHUB_TOKEN
         target_branch: production-pages
         local_dir: dist
+        on:
+          tags: true
     - stage: landing page
       language: shell
-      branches:
-        only:
-        - master
+      if: (branch = master) AND type != cron
       deploy:
         provider: pages:git
         edge: true # opt in to dpl v2
