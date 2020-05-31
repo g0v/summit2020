@@ -2,7 +2,7 @@
   <div class="footer flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1">
     <div class="icon-container">
       <nuxt-link class="text" :to="'#'">
-        {{ $t('example') }}
+        {{ $t('follow') }}
       </nuxt-link>
       <nuxt-link :to="'#'">
         <img src="https://fakeimg.pl/50x50/" alt="img">
@@ -14,7 +14,7 @@
         {{ $t('') }}
       </nuxt-link>
       <nuxt-link class="text" :to="'#'">
-        {{ $t('speakers') }}
+        {{ $t('collaboration') }}
       </nuxt-link>
       <nuxt-link class="fa fa-slack" :to="'#'">
         {{ $t('') }}
@@ -37,11 +37,11 @@
 <i18n lang="yaml">
 // ref: https://nuxt-community.github.io/nuxt-i18n/vue-i18n-loader.html
 en:
-  example: xxx
-  speakers: xx
+  follow: Follow Us
+  collaboration: Collaboration
 zh:
-  example: 追蹤
-  speakers: 協作
+  follow: 追蹤
+  collaboration: 協作
 
 </i18n>
 <script>
