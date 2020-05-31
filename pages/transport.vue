@@ -156,7 +156,10 @@ export default {
 
         margin: 0.7em 0;
         &:first-of-type {
-          margin-top: 10.2em;
+          margin-top: 3.2em;
+          @media screen and (min-width: 800px) {
+            margin-top: 10.2em;
+          }
         }
       }
     }
