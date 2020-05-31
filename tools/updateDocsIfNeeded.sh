@@ -22,7 +22,7 @@ upload_files() {
   # Remove existing "origin"
   git remote rm origin
   # Add new "origin" with access token in the git URL for authentication
-  git remote add origin https://$GITHUB_TOKEN@github.com/ddio/summit2020.git
+  git remote add origin https://$GITHUB_TOKEN@github.com/g0v/summit2020.git
   git push origin master
 }
 
