@@ -2,7 +2,6 @@
   <div class="agenda pa3 ma4 mw10 center">
     <div class="banner-container">
       <div class="banner">
-        <img src="https://fakeimg.pl/100x150/" alt="img"></img>
         <div class="text">
           <p>
             {{ $t('title') }}
@@ -90,14 +89,11 @@ export default {
     }
     flex: 0 0 auto;
     position: relative;
-    img {
-      position: absolute;
-      z-index: -1;
-    }
     .text {
       text-align: center;
-      height: 100%;
-      padding-top: 3%;
+      position: absolute;
+      bottom: 30px;
+      left: 0;
       p {
         margin: 0;
       }
@@ -118,18 +114,34 @@ export default {
       button {
         margin-top: 60px;
         outline: none;
-        border: 0;
+        border: -10px;
         height: 90px;
         width: 290px;
         // color: #555555;
+        border: solid #4DEAFF;
         border-radius: 50px 50px 50px 50px / 30px 30px 30px 30px;
         box-shadow: 10px 14px 0px -1px #50BC83;
         background-color: #4DEAFF;
       }
     }
   }
+  .banner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1.5rem;
+    left: -7rem;
+    z-index: -1;
+    background-image: url('../assets/images/scene_14.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 254px;
+    height: 318px;
+    transform: rotate(180deg);
+  }
   .context-container {
-    margin-top: 100px;
+    margin-top: 280px;
+    position: relative;
     /deep/ .summitmd {
       div {
         column-width: 20em;
@@ -150,11 +162,32 @@ export default {
       }
     }
   }
+  .context-container::before, .context-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 135px;
+  }
+  .context-container::before {
+    top: -6rem;
+    left: -7rem;
+    background-image: url('../assets/images/scene_15.svg');
+  }
+  .context-container::after {
+    bottom: -6rem;
+    right: -7rem;
+    background-image: url('../assets/images/scene_14.svg');
+    transform: rotate(180deg)
+  }
   .agenda-time-container {
     background-color: #50BC83;
     padding: 20px 40px 30px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 280px;
     .title {
       font-size: 6rem;
       @media (max-width: 1681px) {

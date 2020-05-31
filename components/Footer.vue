@@ -4,9 +4,13 @@
       <nuxt-link class="text" :to="'#'">
         {{ $t('follow') }}
       </nuxt-link>
+<<<<<<< HEAD
       <nuxt-link :to="'#'">
         <img src="https://fakeimg.pl/50x50/" alt="img">
       </nuxt-link>
+=======
+      <nuxt-link class="g0v-icon" :to="'#'"></nuxt-link>
+>>>>>>> add svg in Footer、agenda
       <nuxt-link class="fa fa-facebook-f" :to="'#'">
         {{ $t('') }}
       </nuxt-link>
@@ -64,11 +68,19 @@ export default {
   .icon-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 60%;
     a {
-      width: 3em;
       @media (max-width: 1681px) {
         font-size: 1.5625rem;
       }
+    }
+    .g0v-icon {
+      background-image: url('../assets/images/scene_16.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 42px;
+      width: 3em;
     }
   }
   a {
