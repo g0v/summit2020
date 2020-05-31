@@ -1,14 +1,13 @@
 <template>
-  <div class="navbar flex flex-column flex-row-l justify-between items-center pa3 bb b--moon-gray shadow-1 bg-white relative z-1">
+  <div class="navbar flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1">
+    <nuxt-link class="logo" :to="localePath('/')">
+      LOGO
+    </nuxt-link>
     <div class="head flex items-center">
-      <nuxt-link class="pv2 ph3 ba b--moon-gray dib mr3" :to="localePath('/')">
-        LOGO
-      </nuxt-link>
       <template v-for="menu in menuList">
         <nuxt-link
           v-if="!menu.isExt"
           :key="menu.key"
-          class="dim black fw5 mr3 no-underline bb b--silver pb1"
           :to="localePath(menu.url)"
         >
           {{ $t(menu.key) }}
@@ -16,7 +15,6 @@
         <a
           v-else
           :key="menu.key"
-          class="dim black no-underline fw5 mr3 bb b--silver pb1"
           :href="menu.url"
           rel="noopener"
           target="_blank"
@@ -27,7 +25,7 @@
     </div>
     <div class="tail">
       <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
-        English
+        Eng
       </nuxt-link>
       <nuxt-link v-else :to="switchLocalePath('zh')">
         華語
@@ -64,18 +62,53 @@ const MENU_LIST = [
   { key: 'example', url: '/example' },
   { key: 'speakers', url: '/speakers' },
   { key: 'agenda', url: '/agenda' },
-  { key: 'partners', url: '/partners' },
-  { key: 'transport', url: '/transport' },
-  { key: 'live', url: 'https://some.live.url.com', isExt: true },
-  { key: 'feed', url: 'https://some.feed.url.com', isExt: true },
-  { key: 'staff', url: '/staff' },
-  { key: 'registration', url: 'https://xxx.kktix.com', isExt: true }
+  { key: 'transport', url: '/transport' }
 ]
 export default {
   data () {
     return {
-      menuList: MENU_LIST
+      menuList: MENU_LIST,
+      allMenuList: [
+        { key: 'example', url: '/example' },
+        { key: 'speakers', url: '/speakers' },
+        { key: 'agenda', url: '/agenda' },
+        { key: 'partners', url: '/partners' },
+        { key: 'transport', url: '/transport' },
+        { key: 'live', url: 'https://some.live.url.com', isExt: true },
+        { key: 'feed', url: 'https://some.feed.url.com', isExt: true },
+        { key: 'staff', url: '/staff' },
+        { key: 'registration', url: 'https://xxx.kktix.com', isExt: true }
+      ]
     }
   }
 }
 </script>
+<style lang="scss" scoped>
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
+  font-family: Noto Sans CJK TC;
+  font-size: 2rem;
+  @media (max-width: 1681px) {
+    font-size: 1.5625rem;
+  }
+  background-color: #50BC83;
+  padding: 1.5rem 2rem;
+  .logo {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    // z-index: 99;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 4em;
+    text-align: center;
+  }
+}
+</style>
