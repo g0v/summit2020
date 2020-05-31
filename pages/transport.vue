@@ -115,6 +115,7 @@ export default {
     margin-bottom: 1rem;
     box-shadow: 3px 3px 0 0 #ccc;
     background-color: #fff;
+    cursor: pointer;
     &:hover {
       box-shadow: 3px 3px 0 0 #ae3e41;
     }
@@ -122,7 +123,8 @@ export default {
       outline: none;
     }
     &.active {
-      color: #ae3e41
+      color: #ae3e41;
+      font-weight: bold;
     }
   }
 }
@@ -133,19 +135,35 @@ export default {
       margin-left: 0;
       padding: 0 1rem;
       @media screen and (min-width: 800px) {
-        margin-left: 210px;
+        margin-left: 321px + 84px;
       }
       details {
+        summary {
+          cursor: pointer;
+          &:focus {
+            outline: none;
+          }
+        }
+
+        ul {
+          padding-left: 1em;
+          li {
+            list-style: none;
+            font-weight: bold;
+            font-size: 20px;
+          }
+        }
+
         margin: 0.7em 0;
         &:first-of-type {
-          margin-top: 1.2em;
+          margin-top: 10.2em;
         }
       }
     }
     position: relative;
     padding-top: 240px; // for anchor
     padding-bottom: 80px; // for anchor
-    max-width: 600px;
+    max-width: 970px;
     margin: auto;
     h2 {
       position: relative;
@@ -153,7 +171,7 @@ export default {
       margin-bottom: 1.83em;
       @media screen and (min-width: 800px) {
         margin-top: 0;
-        margin-bottom: 0.83em;
+        margin-bottom: 3.83em;
       }
 
       a {
@@ -178,10 +196,13 @@ export default {
         position: absolute;
         top: 100%;
         left: 0;
+        right: auto;
         transform: scale(.8);
         transform-origin: left;
         @media screen and (min-width: 800px) {
-          left: 100%;
+          transform: scale(1);
+          left: auto;
+          right: 0;
           top: 0;
         }
       }
@@ -193,8 +214,8 @@ export default {
       height: 200px;
       @media screen and (min-width: 800px) {
         float: left;
-        width: 200px;
-        height: 200px;
+        width: 321px;
+        height: 310px;
       }
     }
     &::after {
