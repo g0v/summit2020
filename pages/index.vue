@@ -19,6 +19,9 @@
         <summit-markdown :content="$t('article/summitGuidelines')"></summit-markdown>
       </div>
     </div>
+    <div>
+      <img :src="require('~/assets/images/timeline.svg')">
+    </div>
   </div>
 </template>
 
