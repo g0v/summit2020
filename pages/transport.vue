@@ -22,7 +22,6 @@
       <div v-for="(location, index) in locations" :id="location.name" :key="location.name" class="venue-location-detail">
         <OpenStreepMap
           class="small-map"
-          style="height: 200px; width: 200px"
           :markers="[locations[index]]"
         />
         <div class="venue-location-detail-data">
@@ -109,7 +108,7 @@ export default {
   top: 4px;
   z-index: 1100;
   padding-left: 4px;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.8);
   // text-align: center;
   button {
     border-radius: 3px;
@@ -118,6 +117,7 @@ export default {
     margin-right: .5rem;
     margin-bottom: 1rem;
     box-shadow: 3px 3px 0 0 #ccc;
+    background-color: #fff;
     &:hover {
       box-shadow: 3px 3px 0 0 #ae3e41;
     }
@@ -133,17 +133,32 @@ export default {
 .venue-location {
   &-detail {
     &-data {
-      margin-left: 210px;
+      margin-left: 0;
+      padding: 0 1rem;
+      @media screen and (min-width: 800px) {
+        margin-left: 210px;
+      }
       details {
         margin: 0.7em 0;
+        &:first-of-type {
+          margin-top: 1.2em;
+        }
       }
     }
     position: relative;
-    padding-top: 160px; // for anchor
+    padding-top: 240px; // for anchor
+    padding-bottom: 80px; // for anchor
     max-width: 600px;
     margin: auto;
     h2 {
       position: relative;
+      margin-top: 0.83em;
+      margin-bottom: 1.83em;
+      @media screen and (min-width: 800px) {
+        margin-top: 0;
+        margin-bottom: 0.83em;
+      }
+
       a {
         color: black;
         text-decoration:none;
@@ -154,9 +169,6 @@ export default {
       }
       .map-link {
         font-size: 1rem;
-        position: absolute;
-        left: 100%;
-        top: 0;
         width: 5.5em;
         border-radius: 900px;
         text-align: center;
@@ -165,12 +177,28 @@ export default {
         img {
           height: 1em;
         }
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform: scale(.8);
+        transform-origin: left;
+        @media screen and (min-width: 800px) {
+          left: 100%;
+          top: 0;
+        }
       }
     }
     .small-map {
-      float: left;
-      width: 200px;
       margin-right: 10px;
+      float: none;
+      width: 100%;
+      height: 200px;
+      @media screen and (min-width: 800px) {
+        float: left;
+        width: 200px;
+        height: 200px;
+      }
     }
     &::after {
       content: '';
@@ -182,7 +210,7 @@ export default {
       // 分隔線
       display: block;
       position: absolute;
-      top: 60px;
+      top: 120px;
       background-image: url('../assets/images/transport_spacer.svg');
       background-size: contain;
       background-repeat: no-repeat;
