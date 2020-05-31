@@ -48,6 +48,11 @@ npm run dev
 
 ## 發佈流程
 
+目前 Staging 已納入 CICD ：
+
+1. 網站網址： https://g0v.github.io/summit2020/
+1. 若發現網頁和想像的不同，請見 [Travis CI](https://travis-ci.org/github/g0v/summit2020)
+
 ```bash
 # 安裝套件
 npm install
@@ -56,7 +61,8 @@ npm install
 npm run sync:article
 
 # 將靜態網站編譯至 dist/
-npm run generate
+npm run generate:staging
+npm run generate:production
 ```
 
 ## 待作們
@@ -64,8 +70,8 @@ npm run generate
 ### 網站架構
 
 1. [ ] SEO + Social Share
-1. [ ] script for staging only flag + staging deploy branch
-1. [ ] script for production deploy branch using existing dir
+1. [x] script for staging only flag + staging deploy branch
+1. [x] script for production deploy branch using existing dir
 1. [ ] doc for everything
    - install linter
    - gitlab flow
