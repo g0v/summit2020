@@ -9,44 +9,44 @@
     </div>
     <div class="nav-venue-location">
       <button
-        v-for="location in locations"
-        :key="location.name"
+        v-for="(location, index) in locations"
+        :key="index"
         type="button"
-        :class="{ active: $route.hash.slice(1) === location.name}"
-        @click="whereIs(location.name)"
+        :class="{ active: $route.hash.slice(1) === location[$t('venuelocationName')]}"
+        @click="whereIs(location[$t('venuelocationName')])"
       >
-        {{ location.name }}
+        {{ location[$t('venuelocationName')] }}
       </button>
     </div>
     <div class="venue-location">
-      <div v-for="(location, index) in locations" :id="location.name" :key="location.name" class="venue-location-detail">
+      <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
         <OpenStreepMap
           class="small-map"
           :markers="[locations[index]]"
         />
         <div class="venue-location-detail-data">
           <h2>
-            {{ location.name }}
-            <a :href="location.shareLink" class="map-link" target="_blank">
+            {{ location[$t('venuelocationName')] }}
+            <a :href="location['share-link']" class="map-link" target="_blank">
               MAP <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
             </a>
           </h2>
-          <p>{{ location.address }}</p>
+          <p>{{ location[$t('venuelocationAddress')] }}</p>
           <details>
-            <summary>活動</summary>
+            <summary>{{ $t('events') }}</summary>
             <ul>
               <li v-for="event in location.events" :key="event.id">
-                {{ event['日期'] }} {{ event['活動名稱-華語'] }}
+                {{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}
               </li>
             </ul>
           </details>
           <details>
-            <summary>開車前往</summary>
-            <p>(尚無內容)</p>
+            <summary>{{ $t('driveToVenue') }}</summary>
+            <p>({{ $t('noContentYet') }})</p>
           </details>
           <details>
-            <summary>搭程大眾交通工具</summary>
-            <p>(尚無內容)</p>
+            <summary>{{ $t('publicTransportationToVenue') }}</summary>
+            <p>({{ $t('noContentYet') }})</p>
           </details>
         </div>
       </div>
@@ -72,16 +72,13 @@ export default {
         ...location,
         coordinates: location.coordinates.split(',').map(o => +o)
       })).reduce((m, location) => {
-        if (m.has(location['地點名稱-華語'])) {
-          const currentLocation = m.get(location['地點名稱-華語'])
+        if (m.has(location[this.$t('venuelocationName')])) {
+          const currentLocation = m.get(location[this.$t('venuelocationName')])
           currentLocation.events.push(location)
         } else {
-          m.set(location['地點名稱-華語'], {
-            name: location['地點名稱-華語'],
-            address: location['地址-華語'],
-            coordinates: location.coordinates,
-            shareLink: location['share-link'],
-            events: [location]
+          m.set(location[this.$t('venuelocationName')], {
+            events: [location],
+            ...location
           })
         }
         return m
@@ -90,7 +87,7 @@ export default {
   },
   methods: {
     whereIs (locationName) {
-      this.locations.filter(location => location.name === locationName)
+      this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
       this.$router.push({ hash: locationName })
     }
   }
