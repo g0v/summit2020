@@ -26,10 +26,10 @@
         />
         <div class="venue-location-detail-data">
           <h2>
-            {{ location[$t('venuelocationName')] }}
             <a :href="location['share-link']" class="map-link" target="_blank">
               MAP <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
             </a>
+            {{ location[$t('venuelocationName')] }}
           </h2>
           <p>{{ location[$t('venuelocationAddress')] }}</p>
           <details>
@@ -169,7 +169,6 @@ export default {
     max-width: 970px;
     margin: auto;
     h2 {
-      position: relative;
       margin-top: 0.83em;
       margin-bottom: 1.83em;
       @media screen and (min-width: 800px) {
@@ -185,6 +184,7 @@ export default {
           color: black;
         }
       }
+      // position: relative;
       .map-link {
         font-size: 1rem;
         width: 5.5em;
@@ -196,17 +196,19 @@ export default {
           height: 1em;
         }
 
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: auto;
+        // position: absolute;
+        // top: 100%;
+        // left: 0;
+        // right: auto;
+        float: none;
         transform: scale(.8);
         transform-origin: left;
         @media screen and (min-width: 800px) {
           transform: scale(1);
-          left: auto;
-          right: 0;
-          top: 0;
+          float: right;
+          // left: auto;
+          // right: 0;
+          // top: 0;
         }
       }
     }
