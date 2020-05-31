@@ -27,9 +27,10 @@
         />
         <div class="venue-location-detail-data">
           <h2>
-            {{ location.name }}<div class="map-link">
+            {{ location.name }}
+            <a :href="location.shareLink" class="map-link" target="_blank">
               MAP <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
-            </div>
+            </a>
           </h2>
           <p>{{ location.address }}</p>
           <details>
@@ -68,10 +69,10 @@ export default {
       return spacer
     },
     locations () {
-      return [...locations.reduce((m, location) => {
-        // eslint-disable-next-line no-console
-        console.log(location)
-        location.coordinates = location.coordinates.split(',').map(o => +o)
+      return [...locations.map(location => ({
+        ...location,
+        coordinates: location.coordinates.split(',').map(o => +o)
+      })).reduce((m, location) => {
         if (m.has(location['地點名稱-華語'])) {
           const currentLocation = m.get(location['地點名稱-華語'])
           currentLocation.events.push(location)
@@ -80,6 +81,7 @@ export default {
             name: location['地點名稱-華語'],
             address: location['地址-華語'],
             coordinates: location.coordinates,
+            shareLink: location['share-link'],
             events: [location]
           })
         }
@@ -107,6 +109,7 @@ export default {
   top: 4px;
   z-index: 1100;
   padding-left: 4px;
+  background-color: rgba(255,255,255,.6);
   // text-align: center;
   button {
     border-radius: 3px;
@@ -141,6 +144,14 @@ export default {
     margin: auto;
     h2 {
       position: relative;
+      a {
+        color: black;
+        text-decoration:none;
+        &:hover, &:focus, &:active {
+          text-decoration:none;
+          color: black;
+        }
+      }
       .map-link {
         font-size: 1rem;
         position: absolute;
