@@ -53,8 +53,11 @@ export default {}
     font-size: 1.3em;
   }
   .article{
-    margin:200px 0;
+    margin:150px 0;
     position: relative;
+    &:first-of-type{
+      margin-top:0;
+    }
   }
   .blue-circle,.green-circle{
     position: absolute;
@@ -62,12 +65,12 @@ export default {}
   }
   .blue-circle{
     left:-20vw;
-    top:10vh;
+    top:5vh;
     transform:rotate(180deg);
   }
   .green-circle{
     right:-20vw;
-    bottom:10vh;
+    bottom:20vh;
   }
 }
 </style>
