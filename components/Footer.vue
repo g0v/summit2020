@@ -61,13 +61,12 @@ export default {
   padding: 1.5rem 2rem;
   .icon-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 60%;
-    a {
-      @media (max-width: 1681px) {
-        font-size: 1.5625rem;
-      }
+    @media (max-width: 950px) {
+      width: 100%;
     }
     .g0v-icon {
       background-image: url('../assets/images/scene_16.svg');
@@ -79,6 +78,7 @@ export default {
   }
   a {
     font-size: 2rem;
+    flex-shrink: 0;
     @media (max-width: 1681px) {
       font-size: 1.5625rem;
     }
