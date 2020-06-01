@@ -1,26 +1,31 @@
 <template>
   <div class="navbar flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
     <nuxt-link class="logo" :to="localePath('/')"></nuxt-link>
-    <div class="pages head flex items-center">
-      <template v-for="menu in menuList">
-        <nuxt-link
-          v-if="!menu.isExt"
-          :key="menu.key"
-          :to="localePath(menu.url)"
-        >
-          {{ $t(menu.key) }}
-        </nuxt-link>
-        <a
-          v-else
-          :key="menu.key"
-          :href="menu.url"
-          rel="noopener"
-          target="_blank"
-        >
-          {{ $t(menu.key) }}
-        </a>
-      </template>
-    </div>
+    <nav>
+      <button @click="isShowNavbarCollapse = !isShowNavbarCollapse" class="navbar-toggler">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="navbar-collapse head flex items-center" :class="{'show':isShowNavbarCollapse}">
+        <template v-for="menu in menuList">
+          <nuxt-link
+            v-if="!menu.isExt"
+            :key="menu.key"
+            :to="localePath(menu.url)"
+          >
+            {{ $t(menu.key) }}
+          </nuxt-link>
+          <a
+            v-else
+            :key="menu.key"
+            :href="menu.url"
+            rel="noopener"
+            target="_blank"
+          >
+            {{ $t(menu.key) }}
+          </a>
+        </template>
+      </div>
+    </nav>
     <div class="tail">
       <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
         Eng
@@ -64,6 +69,7 @@ const MENU_LIST = [
 export default {
   data () {
     return {
+      isShowNavbarCollapse: false,
       menuList: MENU_LIST,
       allMenuList: [
         { key: 'example', url: '/example' },
@@ -100,6 +106,7 @@ export default {
   padding: 1.5rem 2rem;
   .logo {
     position: fixed;
+    top: 0.75rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -110,6 +117,14 @@ export default {
     width: 428px;
     height: 58px;
   }
+  .navbar-toggler {
+    display: none;
+    color: #50BC83;
+    background: #fff;
+    outline: none;
+    border: #fff solid;
+    border-radius: 8px;
+  }
   a {
     color: #fff;
     text-decoration: none;
@@ -118,6 +133,25 @@ export default {
     width: 4em;
   }
 }
+// mobile navbar
+@media (max-width: 1375px) {
+  .navbar {
+    .navbar-toggler {
+      display: block;
+    }
+    .navbar-collapse {
+      display: none;
+    }
+    .navbar-collapse.show {
+      display: flex;
+      flex-direction: column;
+      a {
+        padding: 1.5rem 0;
+      }
+    }
+  }
+}
+// english css
 .navbar.en-css {
   .logo {
     width: 428px;
