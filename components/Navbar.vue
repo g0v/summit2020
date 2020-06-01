@@ -1,7 +1,7 @@
 <template>
-  <div class="navbar flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1">
+  <div class="navbar flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
     <nuxt-link class="logo" :to="localePath('/')"></nuxt-link>
-    <div class="head flex items-center">
+    <div class="pages head flex items-center">
       <template v-for="menu in menuList">
         <nuxt-link
           v-if="!menu.isExt"
@@ -57,7 +57,6 @@ zh:
 </i18n>
 <script>
 const MENU_LIST = [
-  { key: 'example', url: '/example' },
   { key: 'speakers', url: '/speakers' },
   { key: 'agenda', url: '/agenda' },
   { key: 'transport', url: '/transport' }
@@ -77,6 +76,11 @@ export default {
         { key: 'staff', url: '/staff' },
         { key: 'registration', url: 'https://xxx.kktix.com', isExt: true }
       ]
+    }
+  },
+  computed: {
+    isUseENCSS () {
+      return this.$i18n.locale === 'en'
     }
   }
 }
@@ -110,8 +114,17 @@ export default {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    width: 4em;
     text-align: center;
+    width: 4em;
+  }
+}
+.navbar.en-css {
+  .logo {
+    width: 428px;
+    height: 58px;
+  }
+  a {
+    width: 5em;
   }
 }
 </style>
