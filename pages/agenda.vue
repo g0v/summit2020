@@ -307,7 +307,7 @@ export default {
 // english css
 .agenda.en-css {
   .banner {
-    color: red;
+    // color: red;
   }
 }
 </style>
