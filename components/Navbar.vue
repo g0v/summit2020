@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
+  <div class="navbar flex flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
     <nuxt-link class="logo" :to="localePath('/')"></nuxt-link>
     <nav>
       <button @click="isShowNavbarCollapse = !isShowNavbarCollapse" class="navbar-toggler">
@@ -130,17 +130,37 @@ export default {
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    width: 4em;
+    width: 3em;
+  }
+  a:first-child {
+    text-align: left;
+  }
+  .tail {
+    a {
+      text-align: right;
+    }
+  }
+}
+// english css
+.navbar.en-css {
+  .navbar-collapse {
+    a {
+      width: 5em;
+    }
   }
 }
 // mobile navbar
 @media (max-width: 1375px) {
   .navbar {
+    align-items: start;
     .navbar-toggler {
       display: block;
     }
     .navbar-collapse {
       display: none;
+      a:first-child {
+        text-align: center;
+      }
     }
     .navbar-collapse.show {
       display: flex;
@@ -151,14 +171,14 @@ export default {
     }
   }
 }
-// english css
-.navbar.en-css {
-  .logo {
-    width: 428px;
-    height: 58px;
-  }
-  a {
-    width: 5em;
+@media (max-width: 735px) {
+  .navbar {
+    justify-content: center;
+    padding-top: 4rem;
+    .logo {
+      width: 300px;
+      height: 40px;
+    }
   }
 }
 </style>
