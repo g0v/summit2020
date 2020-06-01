@@ -1,6 +1,6 @@
 <template>
   <div class="navbar flex flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
-    <nuxt-link class="logo" @click.native="isShowNavbarCollapse = !isShowNavbarCollapse" :to="localePath('/')"></nuxt-link>
+    <nuxt-link class="logo" @click.native="isShowNavbarCollapse = false" :to="localePath('/')"></nuxt-link>
     <nav>
       <button @click="isShowNavbarCollapse = !isShowNavbarCollapse" class="navbar-toggler">
         <i class="fa fa-bars"></i>
