@@ -14,7 +14,7 @@
           </button>
         </div>
       </div>
-      <summit-markdown :content="$t('article/aboutSummit')" />
+      <summit-markdown :content="$t('article/summitAbout')" />
     </div>
     <div class="context-container">
       <summit-markdown :content="$t('article/summitIntro')" />
