@@ -1,5 +1,5 @@
 <template>
-  <div class="footer flex flex-column flex-row-l justify-between items-center bb b--moon-gray shadow-1">
+  <div class="footer bb b--moon-gray shadow-1">
     <div class="icon-container">
       <nuxt-link class="text" :to="'#'">
         {{ $t('follow') }}
@@ -50,10 +50,19 @@ zh:
 </i18n>
 <script>
 export default {
+  data () {
+    return {
+      isShowNavbarCollapse: false
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
 .footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -67,10 +76,12 @@ export default {
   padding: 1.5rem 2rem;
   .icon-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 60%;
     a {
+      flex-shrink: 0;
       @media (max-width: 1681px) {
         font-size: 1.5625rem;
       }
@@ -95,6 +106,16 @@ export default {
   }
   .text {
     color: #555555;
+  }
+}
+// mobile navbar
+@media (max-width: 1375px) {
+  .footer {
+    flex-direction: column;
+    .icon-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }
 </style>
