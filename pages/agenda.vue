@@ -56,7 +56,7 @@ export default {
   @media (max-width: 1681px) {
     font-size: 1.5625rem;
   }
-  // color: #555555;
+  color: #555555;
   /deep/ h3,p {
     font-size: 2rem;
     @media (max-width: 1681px) {
@@ -64,8 +64,7 @@ export default {
     }
   }
   /deep/ a {
-    color: #000;
-    // color: #555555;
+    color: #555555;
     text-decoration: none;
   }
   .banner-container {
@@ -168,7 +167,7 @@ export default {
         @media (max-width: 420px) {
           height: 72px;
         }
-        // color: #555555;
+        color: #555555;
         border: solid #4DEAFF;
         border-radius: 50px 50px 50px 50px / 30px 30px 30px 30px;
         box-shadow: 10px 14px 0px -1px #50BC83;
