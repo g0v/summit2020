@@ -1,5 +1,5 @@
 <template>
-  <div class="agenda pa3 ma4 mw10 center" :class="{'en-css': isUseENCSS}">
+  <div class="agenda" :class="{'en-css': isUseENCSS}">
     <div class="banner-container">
       <div class="banner">
         <div class="text">
@@ -103,6 +103,7 @@ export default {
       text-align: center;
       @media (max-width: 1325px) {
         text-align: left;
+        text-align: center;
       }
       @media (max-width: 950px) {
         text-align: center;
@@ -110,6 +111,10 @@ export default {
       p {
         margin: 0;
         text-align: left;
+        @media (max-width: 1325px) {
+          text-align: left;
+          text-align: center;
+        }
         @media (max-width: 950px) {
           text-align: center;
         }
@@ -184,6 +189,9 @@ export default {
     width: 254px;
     height: 318px;
     transform: rotate(180deg);
+    @media (max-width: 1325px) {
+      left: 7rem;
+    }
     @media (max-width: 950px) {
       left: -3rem;
     }
@@ -247,6 +255,9 @@ export default {
     top: -6rem;
     left: -7rem;
     background-image: url('../assets/images/scene_15.svg');
+    @media (max-width: 1325px) {
+      left: -3rem;
+    }
     @media (max-width: 950px) {
       top: -6rem;
       left: -3rem;
@@ -256,6 +267,9 @@ export default {
     bottom: -6rem;
     right: -7rem;
     background-image: url('../assets/images/scene_14.svg');
+    @media (max-width: 1325px) {
+      left: -3rem;
+    }
     transform: rotate(180deg);
     @media (max-width: 950px) {
       right: -3rem;
