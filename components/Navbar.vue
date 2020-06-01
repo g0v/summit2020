@@ -11,6 +11,7 @@
             v-if="!menu.isExt"
             :key="menu.key"
             :to="localePath(menu.url)"
+            @click.native="isShowNavbarCollapse = !isShowNavbarCollapse"
           >
             {{ $t(menu.key) }}
           </nuxt-link>
@@ -18,6 +19,7 @@
             v-else
             :key="menu.key"
             :href="menu.url"
+            @click="isShowNavbarCollapse = !isShowNavbarCollapse"
             rel="noopener"
             target="_blank"
           >
