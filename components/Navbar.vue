@@ -1,11 +1,10 @@
 <template>
-  <div class="navbar flex flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
-    <nuxt-link class="logo" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
+  <div class="navbar bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
     <nav>
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
       </button>
-      <div class="navbar-collapse head flex items-center" :class="{'show':isShowNavbarCollapse}">
+      <div class="navbar-collapse" :class="{'show':isShowNavbarCollapse}">
         <template v-for="menu in menuList">
           <nuxt-link
             v-if="!menu.isExt"
@@ -28,6 +27,9 @@
         </template>
       </div>
     </nav>
+    <div>
+      <nuxt-link class="logo" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
+    </div>
     <div class="tail">
       <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
         Eng
@@ -95,29 +97,40 @@ export default {
 </script>
 <style lang="scss" scoped>
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 9999;
-  font-family: Noto Sans CJK TC;
-  font-size: 2rem;
-  @media (max-width: 1681px) {
-    font-size: 1.5625rem;
-  }
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // position: fixed;
+  // top: 0;
+  // width: 100vw;
+  // z-index: 9999;
   background-color: #50BC83;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
+  & > * {
+    width: 33.333%;
+  }
+  & > *:nth-child(3) {
+    text-align: right;
+  }
   .logo {
-    position: fixed;
-    top: 0.75rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    // z-index: 99;
+    // position: fixed;
+    // top: 0.75rem;
+    // left: 0;
+    // right: 0;
+    // margin: auto;
+    // // z-index: 99;
     background-image: url('../assets/images/headerLogo.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 428px;
-    height: 58px;
+    background-position-x: center;
+    width: 100%;
+    // width: 200px;
+    height: 46px;
+    display: block;
+    margin: auto;
   }
   .navbar-toggler {
     display: none;
@@ -126,6 +139,7 @@ export default {
     outline: none;
     border: #fff solid;
     border-radius: 8px;
+    padding: 5px;
   }
   a {
     color: #fff;
@@ -134,8 +148,11 @@ export default {
     text-align: center;
     width: 3em;
   }
-  a:first-child {
-    text-align: left;
+  .navbar-collapse {
+    display: flex;
+    a:first-child {
+      text-align: left;
+    }
   }
   .tail {
     a {
@@ -152,11 +169,23 @@ export default {
   }
 }
 // mobile navbar
-@media (max-width: 1375px) {
+@media (max-width: 950px) {
   .navbar {
     align-items: start;
+    padding: 1rem 2rem 0;
+    & > *:nth-child(2) {
+      // flex: 1 0 200px;
+      // flex-shrink: 0;
+      // width: 200px;
+    }
+    .logo {
+      width: 200px;
+      // height: 46px;
+    }
     .navbar-toggler {
       display: block;
+      padding: 0 5px;
+      font-size: 20px;
     }
     .navbar-collapse {
       display: none;
@@ -168,18 +197,26 @@ export default {
       display: flex;
       flex-direction: column;
       a {
-        padding: 1.5rem 0;
+        padding: 10px 0;
       }
     }
   }
 }
-@media (max-width: 735px) {
+@media (max-width: 720px) {
   .navbar {
-    justify-content: center;
-    padding-top: 4rem;
+    & > * {
+      width: auto;
+    }
     .logo {
-      width: 300px;
-      height: 40px;
+      width: 200px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 1rem 0;
+    .logo {
+      width: 160px;
     }
   }
 }
