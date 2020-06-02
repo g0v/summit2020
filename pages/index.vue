@@ -6,6 +6,7 @@
     <div class="content">
       <div class="article">
         <img class="blue-circle" :src="require('~/assets/images/blue-circle.svg')">
+        <h2> {{ $t('communityIntro') }} </h2>
         <summit-markdown :content="$t('article/communityIntro')" />
       </div>
       <div class="article">
@@ -24,7 +25,12 @@
     </div>
   </div>
 </template>
-
+<i18n lang="yaml">
+en:
+  communityIntro: What is g0v ?
+zh:
+  communityIntro: 什麼是 g0v ？
+</i18n>
 <script>
 export default {}
 </script>
