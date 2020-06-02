@@ -1,9 +1,9 @@
 <template>
   <div class="navbar flex flex-row-l justify-between items-center bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
-    <nuxt-link class="logo" @click.native="isShowNavbarCollapse = false" :to="localePath('/')"></nuxt-link>
+    <nuxt-link class="logo" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
     <nav>
-      <button @click="isShowNavbarCollapse = !isShowNavbarCollapse" class="navbar-toggler">
-        <i class="fa fa-bars"></i>
+      <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
+        <i class="fa fa-bars" />
       </button>
       <div class="navbar-collapse head flex items-center" :class="{'show':isShowNavbarCollapse}">
         <template v-for="menu in menuList">
@@ -19,9 +19,9 @@
             v-else
             :key="menu.key"
             :href="menu.url"
-            @click="isShowNavbarCollapse = !isShowNavbarCollapse"
             rel="noopener"
             target="_blank"
+            @click="isShowNavbarCollapse = !isShowNavbarCollapse"
           >
             {{ $t(menu.key) }}
           </a>

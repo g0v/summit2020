@@ -4,7 +4,7 @@
       <nuxt-link class="text" :to="'#'">
         {{ $t('follow') }}
       </nuxt-link>
-      <nuxt-link class="g0v-icon" :to="'#'"></nuxt-link>
+      <nuxt-link class="g0v-icon" :to="'#'" />
       <nuxt-link class="fa fa-facebook-f" :to="'#'">
         {{ $t('') }}
       </nuxt-link>

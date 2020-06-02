@@ -23,7 +23,7 @@
       <!-- <p class="title">
         {{ $t('agendaTime') }}
       </p> -->
-      <div class="time"></div>
+      <div class="time" />
     </div>
   </div>
 </template>

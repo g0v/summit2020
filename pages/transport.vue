@@ -31,12 +31,14 @@
             </a>
             {{ location[$t('venuelocationName')] }}
           </h2>
-          <p>{{ location[$t('venuelocationAddress')] }}</p>
+          <p class="venue-location-detail-data-address">
+            {{ location[$t('venuelocationAddress')] }}
+          </p>
           <details>
             <summary>{{ $t('events') }}</summary>
             <ul>
               <li v-for="event in location.events" :key="event.id">
-                {{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}
+                {{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}
               </li>
             </ul>
           </details>
@@ -95,6 +97,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1, h2, h3, h4, h5, h6 {
+  color: #50bc83;
+}
+
 .transport-page {
   max-width: 1200px;
   margin: auto;
@@ -102,7 +108,7 @@ export default {
 
 .nav-venue-location {
   position: sticky;
-  top: 4px;
+  top: 4px + 84px;
   z-index: 1100;
   padding-left: 4px;
   background-color: rgba(255,255,255,.8);
@@ -117,13 +123,13 @@ export default {
     background-color: #fff;
     cursor: pointer;
     &:hover {
-      box-shadow: 3px 3px 0 0 #ae3e41;
+      box-shadow: 3px 3px 0 0 #50bc83;
     }
     &:focus {
       outline: none;
     }
     &.active {
-      color: #ae3e41;
+      color: #50bc83;
       font-weight: bold;
     }
   }
@@ -137,8 +143,14 @@ export default {
       @media screen and (min-width: 800px) {
         margin-left: 321px + 84px;
       }
+
+      &-address {
+        font-size: 20px;
+      }
+
       details {
         summary {
+          font-weight: bold;
           cursor: pointer;
           &:focus {
             outline: none;
@@ -149,7 +161,6 @@ export default {
           padding-left: 1em;
           li {
             list-style: none;
-            font-weight: bold;
             font-size: 20px;
           }
         }
@@ -158,7 +169,7 @@ export default {
         &:first-of-type {
           margin-top: 3.2em;
           @media screen and (min-width: 800px) {
-            margin-top: 10.2em;
+            margin-top: 10.6em;
           }
         }
       }
@@ -170,10 +181,9 @@ export default {
     margin: auto;
     h2 {
       margin-top: 0.83em;
-      margin-bottom: 1.83em;
+      margin-bottom: 1.63em;
       @media screen and (min-width: 800px) {
         margin-top: 0;
-        margin-bottom: 3.83em;
       }
 
       a {

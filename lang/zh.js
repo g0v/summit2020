@@ -6,6 +6,7 @@ export default {
   venuelocationName: '地點名稱-華語',
   venuelocationAddress: '地址-華語',
   venuelocationEventName: '活動名稱-華語',
+  venuelocationSubEventName: '子活動名稱-華語',
   events: '活動',
   driveToVenue: '開車前往',
   publicTransportationToVenue: '搭乘大眾交通工具',
