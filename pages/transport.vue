@@ -122,7 +122,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   &-nav {
     position: sticky;
-    top: 78px;
+    top: 62px;
+    @media screen and (min-width: 951px) {
+      top: 78px;
+    }
+
     z-index: 1100;
     width: 100%;
     background-color: $little_color;
