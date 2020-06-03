@@ -4,7 +4,7 @@
       <nuxt-link class="text" :to="'#'">
         {{ $t('follow') }}
       </nuxt-link>
-      <a class="g0v-icon" href="http://g0v.tw/en-US/" />
+      <a class="g0v-icon" :href="$t('g0vUrl')" />
       <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw/" />
       <a class="fa fa-twitter" href="https://twitter.com/g0vtw" />
       <nuxt-link class="text" :to="'#'">
@@ -12,14 +12,14 @@
       </nuxt-link>
       <a class="fa fa-slack" href="http://join.g0v.today/" />
       <a class="fa fa-github" href="https://github.com/g0v/summit2020" />
-      <nuxt-link class="fa fa-file-text" :to="'#'">
+      <!-- <nuxt-link class="fa fa-file-text" :to="'#'">
         {{ $t('') }}
-      </nuxt-link>
+      </nuxt-link> -->
       <nuxt-link class="fa fa-envelope" :to="'#'">
         {{ $t('') }}
       </nuxt-link>
     </div>
-    <span class="text" :to="'#'">
+    <span class="text">
       Copyright <span class="fa fa-copyright" /> g0v Summit 2020
     </span>
   </div>
@@ -29,10 +29,11 @@
 en:
   follow: Follow Us
   collaboration: Collaboration
+  g0vUrl: http://g0v.tw/en-US/
 zh:
   follow: 追蹤
   collaboration: 協作
-
+  g0vUrl: http://g0v.tw/
 </i18n>
 <script>
 export default {
