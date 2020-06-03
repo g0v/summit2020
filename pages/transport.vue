@@ -250,24 +250,16 @@ h1, h2, h3, h4, h5, h6 {
       &-address {
         margin: .5em 0 1.5em;
 
-        position: relative;
         a {
-          display: block;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 100%;
-          margin: auto;
+          display: inline-block;
           &.map-link {
-            position: absolute;
+            vertical-align: middle;
           }
           &.map-link {
             width: 48px;
             height: 48px;
             img {
               height: 100%;
-              // height: 100%;
-              // filter: drop-shadow(2px 2px 3px #555);
             }
           }
         }
