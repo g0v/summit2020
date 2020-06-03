@@ -23,8 +23,8 @@ export default {
   height: 100vh;
 }
 .pages-container {
-  padding-top: 85px;
-  min-height: calc(100% - 85px - 85px);
+  padding-top: 80px;
+  min-height: calc(100% - 80px);
   @media (max-width: 735px) {
     padding-top: 125px;
   }

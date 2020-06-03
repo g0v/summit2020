@@ -59,6 +59,8 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding-top: 5%;
+    max-width: 970px;
+    margin: auto;
     /deep/ .summitmd {
       width: 50%;
       @media (max-width: 1325px) {
@@ -72,6 +74,7 @@ export default {
   }
   .banner {
     width: 50%;
+    height: 368px;
     @media (max-width: 1325px) {
       width: 100%;
     }
@@ -133,7 +136,9 @@ export default {
   }
 
   .context-container {
-    margin-top: 280px;
+    max-width: 970px;
+    margin: auto;
+    margin-top: 220px;
     display: flex;
     flex-wrap: wrap;
     position: relative;

@@ -103,10 +103,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // position: fixed;
-  // top: 0;
-  // width: 100vw;
-  // z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
   background-color: #50BC83;
   padding: 1rem 2rem;
   & > * {
