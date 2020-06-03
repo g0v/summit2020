@@ -2,7 +2,7 @@
 <template>
   <div class="transport-page">
     <OpenStreepMap
-      style="height: 280px; width: 100%"
+      class="transport-page-map"
       :markers="locations"
     />
     <div class="transport-page-nav">
@@ -112,6 +112,11 @@ h1, h2, h3, h4, h5, h6 {
 .transport-page {
   width: 100%;
   background-color: $background-color * 10%;
+  &-map {
+    max-height: 80vh;
+    height: 40rem;
+    width: 100%;
+  }
   &-nav {
     position: sticky;
     top: 125px;
