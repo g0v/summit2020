@@ -116,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 80vh;
     height: 40rem;
     width: 100%;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
   &-nav {
     position: sticky;
