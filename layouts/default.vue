@@ -24,16 +24,9 @@ export default {
 }
 .pages-container {
   padding-top: 85px;
-  padding-bottom: 85px;
   min-height: calc(100% - 85px - 85px);
-  @media (max-width: 1375px) {
-    padding-bottom: 140px;
-  }
   @media (max-width: 735px) {
     padding-top: 125px;
-  }
-  @media (max-width: 457px) {
-    padding-bottom: 167px;
   }
 }
 </style>

@@ -13,6 +13,7 @@
         <img class="green-circle" :src="require('~/assets/images/green-circle.svg')">
         <summit-markdown :content="$t('article/summitAbout')" />
         <summit-markdown :content="$t('article/summitIntro')" />
+        <summit-markdown :content="$t('article/summitContent')" />
       </div>
       <div class="article">
         <img class="blue-circle" :src="require('~/assets/images/blue-circle.svg')">

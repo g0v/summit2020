@@ -16,6 +16,7 @@ export default {
   'article/cohostIntro': require('~/assets/articles/共同主辦介紹.zh.md').default,
   'article/communityIntro': require('~/assets/articles/社群簡介.zh.md').default,
   'article/summitIntro': require('~/assets/articles/雙年會簡介.zh.md').default,
+  'article/summitContent': require('~/assets/articles/雙年會內容.zh.md').default,
   'article/summitAbout': require('~/assets/articles/關於雙年會.zh.md').default,
   'article/summitGuidelines': require('~/assets/articles/行為準則.zh.md').default,
 

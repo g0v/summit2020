@@ -1,0 +1,21 @@
+* {
+  font-family:  Noto Sans CJK TC;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3,p {
+  font-size: 1rem;
+}
+p {
+  line-height: 1.7;
+}
+h1,h2,h3 {
+  color: $green;
+}
+p {
+  color: $gray;
+}
