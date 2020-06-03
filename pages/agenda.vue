@@ -143,6 +143,7 @@ export default {
       }
       width: 250px;
       height: 70px;
+      padding: 0 5px;
       font-size: 1.5em;
       font-weight: 300;
       background: #fff;
