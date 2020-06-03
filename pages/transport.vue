@@ -35,26 +35,14 @@
               </a>
             </span>
           </p>
-          <details>
-            <summary>{{ $t('events') }}</summary>
-            <ul class="venue-location-detail-data-events">
-              <li v-for="event in location.events" :key="event.id">
-                <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>{{ $t('driveToVenue') }}</summary>
-            <ul>
-              <li><span>{{ $t('noContentYet') }}</span></li>
-            </ul>
-          </details>
-          <details>
-            <summary>{{ $t('publicTransportationToVenue') }}</summary>
-            <ul>
-              <li><span>{{ $t('noContentYet') }}</span></li>
-            </ul>
-          </details>
+          <div class="event-title">
+            {{ $t('events') }}
+          </div>
+          <ul class="venue-location-detail-data-events">
+            <li v-for="event in location.events" :key="event.id">
+              <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

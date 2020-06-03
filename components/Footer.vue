@@ -4,14 +4,14 @@
       <nuxt-link class="text" :to="'#'">
         {{ $t('follow') }}
       </nuxt-link>
-      <a class="g0v-icon" href="http://g0v.tw/en-US/"></a>
-      <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw/"></a>
-      <a class="fa fa-twitter" href="https://twitter.com/g0vtw"></a>
+      <a class="g0v-icon" href="http://g0v.tw/en-US/" />
+      <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw/" />
+      <a class="fa fa-twitter" href="https://twitter.com/g0vtw" />
       <nuxt-link class="text" :to="'#'">
         {{ $t('collaboration') }}
       </nuxt-link>
-      <a class="fa fa-slack" href="http://join.g0v.today/"></a>
-      <a class="fa fa-github" href="https://github.com/g0v/summit2020"></a>
+      <a class="fa fa-slack" href="http://join.g0v.today/" />
+      <a class="fa fa-github" href="https://github.com/g0v/summit2020" />
       <nuxt-link class="fa fa-file-text" :to="'#'">
         {{ $t('') }}
       </nuxt-link>
