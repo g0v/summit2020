@@ -1,5 +1,5 @@
 <template>
-  <div class="footer bb b--moon-gray shadow-1">
+  <div class="footer">
     <div class="icon-container">
       <nuxt-link class="text" :to="'#'">
         {{ $t('follow') }}

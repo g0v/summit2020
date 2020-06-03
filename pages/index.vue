@@ -20,8 +20,8 @@
         <summit-markdown :content="$t('article/summitGuidelines')" />
       </div>
     </div>
-    <div>
-      <img :src="require('~/assets/images/timeline.svg')">
+    <div class="time-container">
+      <img class="time" :src="require('~/assets/images/timeline.svg')">
     </div>
   </div>
 </template>
@@ -29,9 +29,17 @@
 export default {}
 </script>
 <style lang="scss" scoped>
-/deep/ * {
-  color: #555555;
-  line-height: 1.7;
+.time-container {
+  background-color: #50BC83;
+  padding: 20px;
+  text-align: center;
+  margin-top: 120px;
+  .time {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
 }
 .landing {
   min-height: 90vh;
@@ -45,7 +53,11 @@ export default {}
 }
 .content {
   margin: auto;
-  max-width: 970px;
+  max-width: 800px;
+  padding: 50px 10px 0 10px;
+  @media (min-width: 800px) {
+    max-width: 970px;
+  }
   /deep/ h1 {
     color: #50bc83;
     font-size: 1.5em;

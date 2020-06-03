@@ -27,7 +27,7 @@
       <!-- <p class="title">
         {{ $t('agendaTime') }}
       </p> -->
-      <div class="time" />
+      <img class="time" :src="require('~/assets/images/agenda_time.svg')">
     </div>
   </div>
 </template>
@@ -55,42 +55,47 @@ export default {
 </script>
 <style lang="scss" scoped>
 .agenda {
+  overflow: hidden;
   .banner-container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 5%;
-    max-width: 970px;
+    padding-top: 50px;
+    max-width: 800px;
+    padding: 50px 10px 0 10px;
+    @media (min-width: 800px) {
+      max-width: 970px;
+    }
     margin: auto;
     /deep/ .summitmd {
-      width: 50%;
-      @media (max-width: 1325px) {
-        width: 100%;
-        margin-top: 100px;
+      width: 100%;
+      @media (min-width: 800px) {
+        width: 50%;
       }
       div {
-        width: 27em;
+        width: 100%;
+        padding: 0 10px;
+        max-width: 100%;
+        @media (min-width: 800px) {
+          max-width: 27em;
+        }
       }
     }
   }
   .banner {
-    width: 50%;
     height: 368px;
-    @media (max-width: 1325px) {
-      width: 100%;
+    width: 100%;
+    @media (min-width: 800px) {
+      width: 50%;
     }
     flex: 0 0 auto;
     text-align: center;
     .text {
       display: inline-block;
-      margin-top: 3vw;
+      margin-top: 70px;
       text-align: center;
-      font-size: 3em;
-      @media (max-width: 1325px) {
-        text-align: left;
-        text-align: center;
-      }
-      @media (max-width: 950px) {
-        text-align: center;
+      font-size: 2em;
+      @media (min-width: 800px) {
+        font-size: 3em;
       }
       h1 {
         margin: 0;
@@ -100,7 +105,11 @@ export default {
         margin: 0;
         font-size: 1.2em;
       }
+      h1,p {
+        color: #000;
+      }
       position: relative;
+
       &::before {
         position: absolute;
         bottom: 1em;
@@ -108,13 +117,15 @@ export default {
         z-index: -1;
         display: block;
       }
-
       &::before {
         content: '';
         background-image: url('../assets/images/scene_14.svg');
         background-size: contain;
         background-repeat: no-repeat;
-        width: 230px;
+        width: 200px;
+        @media (min-width: 800px) {
+          width: 230px;
+        }
         height: 280px;
         transform: rotate(180deg);
       }
@@ -123,7 +134,13 @@ export default {
     button {
       position: absolute;
       bottom: 0;
-      right: 25%;
+      right: 0;
+      left: 0;
+      margin: auto;
+      @media (min-width: 800px) {
+        left: 36%;
+        right: auto;
+      }
       width: 250px;
       height: 70px;
       font-size: 1.5em;
@@ -133,22 +150,29 @@ export default {
       border-radius: 9999px;
       color: #555555;
     }
+    button:hover {
+      background: #50BC83;
+      color: #fff;
+    }
   }
 
   .context-container {
-    max-width: 970px;
+    max-width: 800px;
+    margin-top: 150px;
+    padding: 50px 10px 0 10px;
+    @media (min-width: 800px) {
+      max-width: 970px;
+      margin-top: 220px;
+    }
     margin: auto;
-    margin-top: 220px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    @media (max-width: 1325px) {
-      margin-top: 150px;
-    }
     .item {
-      width: 50%;
-      @media (max-width: 1325px) {
-        width: 100%;
+      width: 100%;
+      padding: 0 10px;
+      @media (min-width: 800px) {
+        width: 50%;
       }
     }
     /deep/ .summitmd {
@@ -173,66 +197,27 @@ export default {
     top: -6rem;
     left: -7rem;
     background-image: url('../assets/images/scene_15.svg');
-    @media (max-width: 1325px) {
-      left: -3rem;
-    }
-    @media (max-width: 950px) {
-      top: -6rem;
-      left: -3rem;
-    }
   }
   .context-container::after {
     bottom: -6rem;
     right: -7rem;
     background-image: url('../assets/images/scene_14.svg');
-    @media (max-width: 1325px) {
-      left: -3rem;
-    }
     transform: rotate(180deg);
-    @media (max-width: 950px) {
-      right: -3rem;
-    }
   }
   .agenda-time-container {
     background-color: #50BC83;
     padding: 20px;
     text-align: center;
-    margin-top: 220px;
-    @media (max-width: 1325px) {
-      margin-top: 150px;
-    }
-    max-height: 800px;
-    height: 600px;
-    @media (max-width: 1375px) {
-      height: 500px;
-    }
-    @media (max-width: 1156px) {
-      height: 400px;
-    }
-    @media (max-width: 900px) {
-      height: 300px;
-    }
-    @media (max-width: 680px) {
-      height: 200px;
-    }
-    @media (max-width: 457px) {
-      padding: 20px 0;
-      height: 150px;
-    }
+    margin-top: 120px;
     .title {
-      font-size: 6rem;
-      @media (max-width: 1681px) {
-        font-size: 4.8rem;
-      }
+      font-size: 1rem;
       margin: 20px;
     }
     .time {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url('../assets/images/agenda_time.svg');
-      background-position-x: center;
-      width: auto;
-      height: 100%;
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 400px;
     }
   }
 }
