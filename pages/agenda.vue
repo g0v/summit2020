@@ -134,7 +134,13 @@ export default {
     button {
       position: absolute;
       bottom: 0;
-      right: 25%;
+      right: 0;
+      left: 0;
+      margin: auto;
+      @media (min-width: 800px) {
+        left: 36%;
+        right: auto;
+      }
       width: 250px;
       height: 70px;
       font-size: 1.5em;
