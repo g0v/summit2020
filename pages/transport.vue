@@ -6,15 +6,15 @@
       :markers="locations"
     />
     <div class="transport-page-nav">
-      <span
+      <button
         v-for="(location, index) in locations"
         :key="index"
-        type="button"
+        class="transport-page-nav-item"
         :class="{ active: routeHash === location[$t('venuelocationName')]}"
         @click="whereIs(location[$t('venuelocationName')])"
       >
         {{ location[$t('venuelocationName')] }}
-      </span>
+      </button>
     </div>
     <div class="venue-location">
       <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
@@ -119,8 +119,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-around;
 
-    span {
+    &-item {
+      box-sizing: border-box;
       padding: .7em;
+      background: transparent;
+      border: none;
       cursor: pointer;
       &:hover {
         color: #fff;
