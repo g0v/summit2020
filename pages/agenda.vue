@@ -3,21 +3,25 @@
     <div class="banner-container">
       <div class="banner">
         <div class="text">
-          <p>
-            {{ $t('title') }}
-          </p>
+          <h1>{{ $t('title') }}</h1>
           <p>
             {{ $t('subTitle') }}
           </p>
-          <button>
-            {{ $t('CFPButtonText') }}
-          </button>
         </div>
+        <button>
+          {{ $t('CFPButtonText') }}
+        </button>
       </div>
       <summit-markdown :content="$t('article/summitAbout')" />
     </div>
     <div class="context-container">
-      <summit-markdown :content="$t('article/summitIntro')" />
+      <div class="item">
+        <summit-markdown :content="$t('article/summitIntro')" />
+      </div>
+      <div class="item">
+        <summit-markdown :content="$t('article/summitContent')" />
+        <summit-markdown :content="$t('article/communityIntro')" />
+      </div>
     </div>
     <div class="agenda-time-container">
       <!-- <p class="title">
@@ -51,22 +55,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .agenda {
-  font-family: Noto Sans CJK TC;
-  font-size: 2rem;
-  @media (max-width: 1681px) {
-    font-size: 1.5625rem;
-  }
-  color: #555555;
-  /deep/ h3,p {
-    font-size: 2rem;
-    @media (max-width: 1681px) {
-      font-size: 1.5625rem;
-    }
-  }
-  /deep/ a {
-    color: #555555;
-    text-decoration: none;
-  }
   .banner-container {
     display: flex;
     flex-wrap: wrap;
@@ -77,16 +65,8 @@ export default {
         width: 100%;
         margin-top: 100px;
       }
-    }
-    /deep/ h2 {
-      margin: 0;
-      color: #50BC83;
-      font-size: 3rem;
-      @media (max-width: 1681px) {
-        font-size: 2.4rem;
-      }
-      @media (max-width: 420px) {
-        font-size: 1.92rem;
+      div {
+        width: 27em;
       }
     }
   }
@@ -96,10 +76,12 @@ export default {
       width: 100%;
     }
     flex: 0 0 auto;
-    position: relative;
+    text-align: center;
     .text {
+      display: inline-block;
       margin-top: 3vw;
       text-align: center;
+      font-size: 3em;
       @media (max-width: 1325px) {
         text-align: left;
         text-align: center;
@@ -107,136 +89,68 @@ export default {
       @media (max-width: 950px) {
         text-align: center;
       }
+      h1 {
+        margin: 0;
+        font-size: 2em;
+      }
       p {
         margin: 0;
-        text-align: left;
-        @media (max-width: 1325px) {
-          text-align: left;
-          text-align: center;
-        }
-        @media (max-width: 950px) {
-          text-align: center;
-        }
+        font-size: 1.2em;
       }
-      p:nth-child(1) {
-        font-weight: bold;
-        font-size: 9rem;
-        @media (max-width: 1681px) {
-          font-size: 7rem;
-        }
-        @media (max-width: 690px) {
-          font-size: 5.6rem;
-        }
-        @media (max-width: 580px) {
-          font-size: 4.48rem;
-        }
-        @media (max-width: 480px) {
-          font-size: 3.6rem;
-        }
-        @media (max-width: 420px) {
-          font-size: 2.88rem;
-        }
-        letter-spacing: 12px;
+      position: relative;
+      &::before {
+        position: absolute;
+        bottom: 1em;
+        right: 5em;
+        z-index: -1;
+        display: block;
       }
-      p:nth-child(2) {
-        font-size: 5.625rem;
-        @media (max-width: 1681px) {
-          font-size: 4.5rem;
-        }
-        @media (max-width: 690px) {
-          font-size: 3.6rem;
-        }
-        @media (max-width: 580px) {
-          font-size: 2.88rem;
-        }
-        @media (max-width: 480px) {
-          font-size: 2.3rem;
-        }
-        @media (max-width: 420px) {
-          font-size: 1.84rem;
-        }
+
+      &::before {
+        content: '';
+        background-image: url('../assets/images/scene_14.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 230px;
+        height: 280px;
+        transform: rotate(180deg);
       }
-      button {
-        margin-top: 60px;
-        outline: none;
-        width: 290px;
-        height: 90px;
-        @media (max-width: 480px) {
-          width: 232px;
-        }
-        @media (max-width: 420px) {
-          height: 72px;
-        }
-        color: #555555;
-        border: solid #4DEAFF;
-        border-radius: 50px 50px 50px 50px / 30px 30px 30px 30px;
-        box-shadow: 10px 14px 0px -1px #50BC83;
-        background-color: #4DEAFF;
-      }
+    }
+    position: relative;
+    button {
+      position: absolute;
+      bottom: 0;
+      right: 25%;
+      width: 250px;
+      height: 70px;
+      font-size: 1.5em;
+      font-weight: 300;
+      background: #fff;
+      border: 2px solid #50BC83;
+      border-radius: 9999px;
+      color: #555555;
     }
   }
-  .banner::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -1.5rem;
-    left: -7rem;
-    z-index: -1;
-    background-image: url('../assets/images/scene_14.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 254px;
-    height: 318px;
-    transform: rotate(180deg);
-    @media (max-width: 1325px) {
-      left: 7rem;
-    }
-    @media (max-width: 950px) {
-      left: -3rem;
-    }
-    @media (max-width: 690px) {
-      width: 200px;
-      height: 255px;
-    }
-    @media (max-width: 580px) {
-      width: 160px;
-      height: 204px;
-    }
-    @media (max-width: 480px) {
-      width: 128px;
-      height: 163px;
-    }
-    @media (max-width: 420px) {
-      width: 102px;
-      height: 130px;
-    }
-  }
+
   .context-container {
     margin-top: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     @media (max-width: 1325px) {
       margin-top: 150px;
     }
-    position: relative;
+    .item {
+      width: 50%;
+      @media (max-width: 1325px) {
+        width: 100%;
+      }
+    }
     /deep/ .summitmd {
       div {
-        column-width: 20em;
-      }
-    }
-    /deep/ h2 {
-      margin: 0;
-      color: #50BC83;
-      font-size: 3rem;
-      @media (max-width: 1681px) {
-        font-size: 2.4rem;
-      }
-      @media (max-width: 420px) {
-        font-size: 1.92rem;
-      }
-    }
-    /deep/ h2:nth-of-type(2) {
-      break-before: column;
-      @media (max-width: 1325px) {
-        break-before: auto;
+        a {
+          color: #555555;
+        }
       }
     }
   }
