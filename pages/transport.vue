@@ -6,15 +6,16 @@
       :markers="locations"
     />
     <div class="transport-page-nav">
-      <span
+      <div
         v-for="(location, index) in locations"
         :key="index"
-        type="button"
-        :class="{ active: routeHash === location[$t('venuelocationName')]}"
+        class="location-link"
         @click="whereIs(location[$t('venuelocationName')])"
       >
-        {{ location[$t('venuelocationName')] }}
-      </span>
+        <span
+          :class="{ active: routeHash === location[$t('venuelocationName')]}"
+        >{{ location[$t('venuelocationName')] }}</span>
+      </div>
     </div>
     <div class="venue-location">
       <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
@@ -113,24 +114,45 @@ h1, h2, h3, h4, h5, h6 {
   background-color: $background-color * 10%;
   &-nav {
     position: sticky;
-    top: 84px;
+    top: 125px;
+    @media screen and (min-width: 800px) {
+      top: 84px;
+    }
     z-index: 1100;
+    width: 100%;
     background-color: $main_green;
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
+    flex-wrap: nowrap;
+    // flex-direction: column;
+    overflow: auto;
+    flex-direction: row;
+    @media screen and (min-width: 800px) {
+      overflow: visible;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
 
-    span {
-      padding: .7em;
-      cursor: pointer;
-      &:hover {
-        color: #fff;
+    .location-link {
+      flex: 0 0 auto;
+      text-align: center;
+      flex-basis: 32%;
+      @media screen and (min-width: 800px) {
+        flex-basis: (100% / 7);
       }
-      &:focus {
-        outline: none;
-      }
-      &.active {
-        // 做底線
-        position: relative;
+      span {
+        display: inline-block;
+        padding: .7em;
+
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+        }
+        &:focus {
+          outline: none;
+        }
+
+        transition: .3s;
         &::before {
           content: '';
           display: block;
@@ -140,6 +162,21 @@ h1, h2, h3, h4, h5, h6 {
           right: 0;
           bottom: 0;
           background-color: #000;
+          width: 0;
+        }
+        &.active {
+          // 做底線
+          position: relative;
+          &::before {
+            content: '';
+            display: block;
+            height: 0.2em;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+          }
         }
       }
     }
@@ -194,13 +231,18 @@ h1, h2, h3, h4, h5, h6 {
       $photo-data-desktop-spacer: 20px;
 
       margin-left: 0;
+      padding: 0 1em;
       @media screen and (min-width: 800px) {
         margin-left: $photo-desktop-width + $photo-data-desktop-spacer;
+        padding: 0;
       }
 
       h1 {
-        margin: 0;;
         line-height: 1;
+
+        @media screen and (min-width: 800px) {
+          margin: 0;
+        }
       }
 
       line-height: 1.5;
@@ -209,11 +251,22 @@ h1, h2, h3, h4, h5, h6 {
 
         position: relative;
         a {
-          position: absolute;
-          display: inline-block;
-          top: 0;
-          bottom: 0;
-          margin: auto;
+          position: relative;
+          display: block;
+          margin: 0;
+          @media screen and (min-width: 800px) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            margin: auto;
+          }
+          &.map-link {
+            position: relative;
+            @media screen and (min-width: 800px) {
+              position: absolute;
+            }
+          }
           &.map-link {
             width: 48px;
             height: 48px;
@@ -234,8 +287,10 @@ h1, h2, h3, h4, h5, h6 {
         list-style: none;
         padding-left: 1em;
         margin: 0;
+        // line-height: 2.3;
+
         li {
-          line-height: 2.3;
+          margin: .5em 0;
         }
         span {
           background-color: $little_color;
