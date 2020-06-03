@@ -122,13 +122,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   &-nav {
     position: sticky;
-    top: 125px;
-    @media screen and (min-width: 800px) {
-      top: 84px;
-    }
+    top: 78px;
     z-index: 1100;
     width: 100%;
-    background-color: $main_green;
+    background-color: $little_color;
+    color: #555;
     display: flex;
     // justify-content: space-around;
     flex-wrap: nowrap;
@@ -145,6 +143,9 @@ h1, h2, h3, h4, h5, h6 {
       flex: 0 0 auto;
       text-align: center;
       flex-basis: 32%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @media screen and (min-width: 800px) {
         flex-basis: (100% / 7);
       }

@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bb b--moon-gray shadow-1" :class="{'en-css': isUseENCSS}">
+  <div class="navbar bb shadow-1" :class="{'en-css': isUseENCSS}">
     <nav>
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
@@ -109,6 +109,7 @@ export default {
   z-index: 9999;
   background-color: #50BC83;
   padding: 1rem 2rem;
+  border: none;
   & > * {
     width: 33.333%;
   }
