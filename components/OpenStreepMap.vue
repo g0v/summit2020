@@ -1,6 +1,7 @@
 <template>
   <l-map
-    :zoom="13"
+    ref="map"
+    :zoom="16"
     :center="centerMarkers"
   >
     <l-marker
@@ -28,6 +29,8 @@
 
 <script>
 import { LMap, LTileLayer, LMarker } from 'vue2-leaflet'
+import L from 'leaflet'
+
 export default {
   components: {
     LMap,
@@ -60,6 +63,31 @@ export default {
         return sum
       }, 0)
       return [x / this.markers.length, y / this.markers.length]
+    }
+  },
+  mounted () {
+    this.moveToCenter()
+  },
+  methods: {
+    moveToCenter () {
+      if (!this.$refs.map) {
+        return
+      }
+      const map = this.$refs.map.mapObject
+      if (this.markers.length > 1) {
+        const first2 = this.markers.slice(0, 2)
+        const restMarkers = this.markers.slice(2)
+        const bounds = L.latLngBounds(
+          ...first2.map(marker => marker.coordinates)
+        )
+        restMarkers.forEach((marker) => {
+          bounds.extend(marker.coordinates)
+        })
+        map.fitBounds(bounds, {
+          padding: [60, 60]
+        })
+      } else {
+      }
     }
   }
 }
