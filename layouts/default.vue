@@ -26,7 +26,7 @@ export default {
   padding-top: 80px;
   min-height: calc(100% - 80px);
   @media (max-width: 735px) {
-    padding-top: 125px;
+    // padding-top: 125px;
   }
 }
 </style>
