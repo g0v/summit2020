@@ -252,21 +252,14 @@ h1, h2, h3, h4, h5, h6 {
 
         position: relative;
         a {
-          position: relative;
           display: block;
-          margin: 0;
-          @media screen and (min-width: 800px) {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 100%;
-            margin: auto;
-          }
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 100%;
+          margin: auto;
           &.map-link {
-            position: relative;
-            @media screen and (min-width: 800px) {
-              position: absolute;
-            }
+            position: absolute;
           }
           &.map-link {
             width: 48px;
