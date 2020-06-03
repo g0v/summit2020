@@ -1,14 +1,12 @@
+
 <template>
   <div class="transport-page">
-    <h1>{{ $t('venuelocation') }}</h1>
-    <div style="height: 350px;">
-      <OpenStreepMap
-        style="height: 80%; width: 100%"
-        :markers="locations"
-      />
-    </div>
-    <div class="nav-venue-location">
-      <button
+    <OpenStreepMap
+      style="height: 280px; width: 100%"
+      :markers="locations"
+    />
+    <div class="transport-page-nav">
+      <span
         v-for="(location, index) in locations"
         :key="index"
         type="button"
@@ -16,40 +14,34 @@
         @click="whereIs(location[$t('venuelocationName')])"
       >
         {{ location[$t('venuelocationName')] }}
-      </button>
+      </span>
     </div>
     <div class="venue-location">
       <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
         <OpenStreepMap
-          class="small-map"
+          class="locatipn-photo"
           :markers="[locations[index]]"
         />
         <div class="venue-location-detail-data">
-          <h2>
-            <a :href="location['share-link']" class="map-link" target="_blank">
-              MAP <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
-            </a>
+          <h1>
             {{ location[$t('venuelocationName')] }}
-          </h2>
+          </h1>
           <p class="venue-location-detail-data-address">
             {{ location[$t('venuelocationAddress')] }}
+            <a :href="location['share-link']" class="map-link" target="_blank">
+              <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
+            </a>
           </p>
-          <details>
-            <summary>{{ $t('events') }}</summary>
-            <ul>
-              <li v-for="event in location.events" :key="event.id">
-                {{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>{{ $t('driveToVenue') }}</summary>
-            <p>({{ $t('noContentYet') }})</p>
-          </details>
-          <details>
-            <summary>{{ $t('publicTransportationToVenue') }}</summary>
-            <p>({{ $t('noContentYet') }})</p>
-          </details>
+          <div class="event-title">
+            {{ $t('events') }}
+          </div>
+          <ul class="venue-location-detail-data-events">
+            <li v-for="event in location.events" :key="event.id">
+              <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
+            </li>
+          </ul>
+          <div>&gt; {{ $t('driveToVenue') }}</div>
+          <div>&gt; {{ $t('publicTransportationToVenue') }}</div>
         </div>
       </div>
     </div>
@@ -97,140 +89,68 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$background-color: #E5F3F4;
+$main_green: #50bc83;
+$little_color: #4DEAFF;
+
 h1, h2, h3, h4, h5, h6 {
-  color: #50bc83;
+  color: $main_green;
 }
 
 .transport-page {
-  max-width: 1200px;
-  margin: auto;
-}
+  width: 100%;
+  background-color: $background-color * 10%;
+  &-nav {
+    position: sticky;
+    top: 84px;
+    z-index: 1100;
+    background-color: $main_green;
+    display: flex;
+    justify-content: space-around;
 
-.nav-venue-location {
-  position: sticky;
-  top: 4px + 84px;
-  z-index: 1100;
-  padding-left: 4px;
-  background-color: rgba(255,255,255,.8);
-  // text-align: center;
-  button {
-    border-radius: 3px;
-    border: solid 1px;
-    padding: .35rem .8rem;
-    margin-right: .5rem;
-    margin-bottom: 1rem;
-    box-shadow: 3px 3px 0 0 #ccc;
-    background-color: #fff;
-    cursor: pointer;
-    &:hover {
-      box-shadow: 3px 3px 0 0 #50bc83;
-    }
-    &:focus {
-      outline: none;
-    }
-    &.active {
-      color: #50bc83;
-      font-weight: bold;
+    span {
+      padding: .7em;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+      &:focus {
+        outline: none;
+      }
+      &.active {
+        // 做底線
+        position: relative;
+        &::before {
+          content: '';
+          display: block;
+          height: 0.2em;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #000;
+        }
+      }
     }
   }
 }
 
 .venue-location {
   &-detail {
-    &-data {
-      margin-left: 0;
-      padding: 0 1rem;
-      @media screen and (min-width: 800px) {
-        margin-left: 321px + 84px;
-      }
-
-      &-address {
-        font-size: 20px;
-      }
-
-      details {
-        summary {
-          font-weight: bold;
-          cursor: pointer;
-          &:focus {
-            outline: none;
-          }
-        }
-
-        ul {
-          padding-left: 1em;
-          li {
-            list-style: none;
-            font-size: 20px;
-          }
-        }
-
-        margin: 0.7em 0;
-        &:first-of-type {
-          margin-top: 3.2em;
-          @media screen and (min-width: 800px) {
-            margin-top: 10.6em;
-          }
-        }
-      }
-    }
-    position: relative;
-    padding-top: 240px; // for anchor
-    padding-bottom: 80px; // for anchor
+    color: #555555;
     max-width: 970px;
     margin: auto;
-    h2 {
-      margin-top: 0.83em;
-      margin-bottom: 1.63em;
-      @media screen and (min-width: 800px) {
-        margin-top: 0;
-      }
 
-      a {
-        color: black;
-        text-decoration:none;
-        &:hover, &:focus, &:active {
-          text-decoration:none;
-          color: black;
-        }
-      }
-      // position: relative;
-      .map-link {
-        font-size: 1rem;
-        width: 5.5em;
-        border-radius: 900px;
-        text-align: center;
-        background-color: #ccc;
-        padding: 0.35rem 0.8rem;
-        img {
-          height: 1em;
-        }
-
-        // position: absolute;
-        // top: 100%;
-        // left: 0;
-        // right: auto;
-        float: none;
-        transform: scale(.8);
-        transform-origin: left;
-        @media screen and (min-width: 800px) {
-          transform: scale(1);
-          float: right;
-          // left: auto;
-          // right: 0;
-          // top: 0;
-        }
-      }
-    }
-    .small-map {
+    $photo-desktop-width: 300px;
+    .locatipn-photo {
       margin-right: 10px;
       float: none;
       width: 100%;
       height: 200px;
       @media screen and (min-width: 800px) {
         float: left;
-        width: 321px;
-        height: 310px;
+        width: 300px;
+        height: $photo-desktop-width;
       }
     }
     &::after {
@@ -238,18 +158,66 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       clear: left;
     }
-    & + &::before {
+    a {
+      &.map-link {
+        width: 5.5em;
+        img {
+          height: 1em;
+        }
+      }
+    }
+
+    // 分隔線的 egg
+    padding-top: 180px;
+    padding-bottom: 100px;
+
+    position: relative;
+    &::before {
       content: '';
-      // 分隔線
       display: block;
       position: absolute;
-      top: 120px;
-      background-image: url('../assets/images/transport_spacer.svg');
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
+      background-position: left center, right center;
       background-size: contain;
       background-repeat: no-repeat;
-      width: 80px;
-      height: 80px / 318 * 123;
-      margin: 1.5rem 0;
+      height: 80px;
+    }
+
+    &-data {
+      font-size: 20px;
+      $photo-data-desktop-spacer: 20px;
+
+      margin-left: 0;
+      @media screen and (min-width: 800px) {
+        margin-left: $photo-desktop-width + $photo-data-desktop-spacer;
+      }
+
+      h1 {
+        margin: 0;;
+        line-height: 1;
+      }
+
+      line-height: 1.5;
+      &-address {
+        margin: .5em 0 1.5em;
+      }
+
+      .event-title {
+        margin: 0;
+      }
+
+      &-events {
+        li {
+          list-style: none;
+        }
+        span {
+          background-color: $little_color;
+          padding: .1em .3em;
+        }
+      }
     }
   }
 }

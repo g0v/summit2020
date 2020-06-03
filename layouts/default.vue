@@ -23,8 +23,6 @@ export default {
   height: 100vh;
 }
 .pages-container {
-  margin-left: 10%;
-  margin-right: 10%;
   padding-top: 85px;
   padding-bottom: 85px;
   min-height: calc(100% - 85px - 85px);
