@@ -213,11 +213,11 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 100px;
 
     position: relative;
-    &::before {
+    & + &::before {
       content: '';
       display: block;
       position: absolute;
-      top: 100%;
+      bottom: 85%;
       left: 0;
       right: 0;
       background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
