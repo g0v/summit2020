@@ -10,7 +10,7 @@
         v-for="(location, index) in locations"
         :key="index"
         type="button"
-        :class="{ active: $route.hash.slice(1) === location[$t('venuelocationName')]}"
+        :class="{ active: routeHash === location[$t('venuelocationName')]}"
         @click="whereIs(location[$t('venuelocationName')])"
       >
         {{ location[$t('venuelocationName')] }}
@@ -26,22 +26,34 @@
           <h1>
             {{ location[$t('venuelocationName')] }}
           </h1>
-          <p class="venue-location-detail-data-address">
-            {{ location[$t('venuelocationAddress')] }}
-            <a :href="location['share-link']" class="map-link" target="_blank">
-              <img :src="require('~/assets/images/external-link-alt-solid.svg')" alt="">
-            </a>
+          <p>
+            <span class="venue-location-detail-data-address">
+              {{ location[$t('venuelocationAddress')] }}
+              <a :href="location['share-link']" class="map-link" target="_blank">
+                <img :src="require('~/assets/images/map-marker.png')" alt="">
+              </a>
+            </span>
           </p>
-          <div class="event-title">
-            {{ $t('events') }}
-          </div>
-          <ul class="venue-location-detail-data-events">
-            <li v-for="event in location.events" :key="event.id">
-              <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
-            </li>
-          </ul>
-          <div>&gt; {{ $t('driveToVenue') }}</div>
-          <div>&gt; {{ $t('publicTransportationToVenue') }}</div>
+          <details>
+            <summary>{{ $t('events') }}</summary>
+            <ul class="venue-location-detail-data-events">
+              <li v-for="event in location.events" :key="event.id">
+                <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
+              </li>
+            </ul>
+          </details>
+          <details>
+            <summary>{{ $t('driveToVenue') }}</summary>
+            <ul>
+              <li><span>{{ $t('noContentYet') }}</span></li>
+            </ul>
+          </details>
+          <details>
+            <summary>{{ $t('publicTransportationToVenue') }}</summary>
+            <ul>
+              <li><span>{{ $t('noContentYet') }}</span></li>
+            </ul>
+          </details>
         </div>
       </div>
     </div>
@@ -51,15 +63,14 @@
 <script>
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
-import spacer from '~/assets/images/transport_spacer.svg'
 
 export default {
   components: {
     OpenStreepMap
   },
   computed: {
-    svgSpacer () {
-      return spacer
+    routeHash () {
+      return this.$route.hash.slice(1)
     },
     locations () {
       return [...locations.map(location => ({
@@ -158,14 +169,6 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       clear: left;
     }
-    a {
-      &.map-link {
-        width: 5.5em;
-        img {
-          height: 1em;
-        }
-      }
-    }
 
     // 分隔線的 egg
     padding-top: 180px;
@@ -203,15 +206,36 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1.5;
       &-address {
         margin: .5em 0 1.5em;
+
+        position: relative;
+        a {
+          position: absolute;
+          display: inline-block;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          &.map-link {
+            width: 48px;
+            height: 48px;
+            img {
+              height: 100%;
+              // height: 100%;
+              // filter: drop-shadow(2px 2px 3px #555);
+            }
+          }
+        }
       }
 
       .event-title {
         margin: 0;
       }
 
-      &-events {
+      ul {
+        list-style: none;
+        padding-left: 1em;
+        margin: 0;
         li {
-          list-style: none;
+          line-height: 2.3;
         }
         span {
           background-color: $little_color;
