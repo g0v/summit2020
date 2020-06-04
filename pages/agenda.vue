@@ -36,7 +36,7 @@
 en:
   title: agenda
   subTitle: Call For Paper
-  CFPButtonText: Submit a paper, NOW!
+  CFPButtonText: Submit a proposal
   agendaTime: Agenda Time
 zh:
   title: 議程招募
