@@ -10,11 +10,10 @@
         v-for="(location, index) in locations"
         :key="index"
         class="location-link"
+        :class="{ active: routeHash === location[$t('venuelocationName')]}"
         @click="whereIs(location[$t('venuelocationName')])"
       >
-        <span
-          :class="{ active: routeHash === location[$t('venuelocationName')]}"
-        >{{ location[$t('venuelocationName')] }}</span>
+        <span>{{ location[$t('venuelocationName')] }}</span>
       </div>
     </div>
     <div class="venue-location">
@@ -146,38 +145,38 @@ h1, h2, h3, h4, h5, h6 {
         padding: .7em;
 
         cursor: pointer;
+
+        transition: color .3s ease-out;
+        color: #555;
         &:hover {
           color: #fff;
         }
         &:focus {
           outline: none;
         }
+      }
 
-        transition: .3s;
+      &::before {
+        content: '';
+        display: block;
+        height: 0.15em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #555;
+      }
+
+      &::before {
+        content: '';
+        width: 0;
+      }
+      &.active {
+        // 做底線
+        position: relative;
         &::before {
           content: '';
-          display: block;
-          height: 0.2em;
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #000;
-          width: 0;
-        }
-        &.active {
-          // 做底線
-          position: relative;
-          &::before {
-            content: '';
-            display: block;
-            height: 0.2em;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #000;
-          }
+          width: 100%;
+          transition: width .3s ease-in-out;
         }
       }
     }
