@@ -6,7 +6,9 @@ const ROUTER_BASE = process.env.ROUTER_BASE || ''
 
 process.env.SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
 
-const { friendlyHeader } = require('./utils/crawlerFriendly')
+// eslint-disable-next-line import/first
+import { friendlyHeader } from './utils/crawlerFriendly'
+
 const defaultHeader = friendlyHeader({
   description: 'g0v Summit 國際雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等面向，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。',
   coverUrl: '/og.png'
