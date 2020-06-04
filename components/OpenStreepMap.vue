@@ -15,9 +15,7 @@
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       :options="{
         maxZoom: 18,
-        attribution: `<a href='https://www.openstreetmap.org/'>OSM</a>`,
-        tileSize: 512,
-        zoomOffset: -1
+        attribution: `<a href='https://www.openstreetmap.org/'>OSM</a>`
       }"
     />
     </l-tile-layer>
