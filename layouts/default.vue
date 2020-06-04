@@ -26,7 +26,8 @@ body {
   height: 100vh;
 }
 .pages-container {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: calc(100% - 62px);
   @media (min-width: 951px) {
     height: calc(100% - 78px);

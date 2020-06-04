@@ -55,7 +55,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .agenda {
-  overflow: hidden;
   .banner-container {
     display: flex;
     flex-wrap: wrap;
