@@ -3,8 +3,8 @@
     <navbar />
     <div class="pages-container">
       <nuxt />
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 <script>
@@ -19,14 +19,17 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  overflow: hidden;
+}
 .entry-point {
   height: 100vh;
 }
 .pages-container {
-  padding-top: 62px;
-  min-height: calc(100% - 80px);
+  overflow: scroll;
+  height: calc(100% - 62px);
   @media (min-width: 951px) {
-    padding-top: 78px;
+    height: calc(100% - 78px);
   }
 }
 </style>

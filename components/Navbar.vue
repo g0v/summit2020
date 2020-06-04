@@ -66,7 +66,6 @@ zh:
 </i18n>
 <script>
 const MENU_LIST = [
-  { key: 'speakers', url: '/speakers' },
   { key: 'agenda', url: '/agenda' },
   { key: 'transport', url: '/transport' }
 ]
@@ -103,7 +102,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  // position: fixed;
   top: 0;
   width: 100vw;
   z-index: 9999;
@@ -197,6 +196,13 @@ export default {
     .navbar-collapse.show {
       display: flex;
       flex-direction: column;
+      position: absolute;
+      background-color: #50BC83;
+      width: 100vw;
+      left: 0;
+      padding-left: 2rem;
+      z-index: 9999;
+      box-shadow: 0 4px 4px -2px rgba( 0, 0, 0, .2 );
       a {
         padding: 10px 0;
       }
