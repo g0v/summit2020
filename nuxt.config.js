@@ -6,6 +6,12 @@ const ROUTER_BASE = process.env.ROUTER_BASE || ''
 
 process.env.SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
 
+const { friendlyHeader } = require('./utils/crawlerFriendly')
+const defaultHeader = friendlyHeader({
+  description: 'g0v Summit 國際雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等面向，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。',
+  coverUrl: '/og.png'
+})()
+
 export default {
   // mode: 'spa',
   /*
@@ -16,21 +22,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'g0v Summit 國際雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等面向，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。'
-      },
-      {
-        hid: 'og:image',
-        name: 'og:image',
-        content: `${process.env.SITE_BASE}/og.png`
-      },
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image'
-      }
+      ...defaultHeader.meta
     ],
     link: [
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
