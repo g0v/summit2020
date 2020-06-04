@@ -192,7 +192,7 @@ export default {}
   max-width: 800px;
   padding: 50px 10px 0 10px;
   @media (min-width: 800px) {
-    max-width: 970px;
+    width: 100vw;
   }
   /deep/ h1 {
     color: #50bc83;
