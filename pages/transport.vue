@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
         &::before {
           content: '';
           width: 100%;
-          transition: width 10s ease-in-out;
+          transition: width .3s ease-in-out;
         }
       }
     }
@@ -237,7 +237,6 @@ h1, h2, h3, h4, h5, h6 {
       height: 80px;
 
       background-position: 0% center, 100% center;
-      transition: 1.5s ease-in-out;
     }
 
     & + &:hover::before {
