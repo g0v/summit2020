@@ -1,7 +1,17 @@
 const { extractLanguageFromTable } = require('./utils')
 
 export default {
-  welcome: '你好',
+  // navbar
+  speakers: '講者',
+  agenda: '投稿',
+  partners: '合作夥伴',
+  transport: '交通',
+  live: '直播',
+  feed: '社群動態',
+  staff: '工作人員',
+  registration: '立即購票',
+
+  // transportation
   venuelocationName: '地點名稱-華語',
   venuelocationAddress: '地址-華語',
   venuelocationEventName: '活動名稱-華語',

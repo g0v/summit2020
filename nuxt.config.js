@@ -1,20 +1,40 @@
 // in case we need env var in this file
 require('dotenv').config()
 
+const DOMAIN = process.env.DOMAIN || 'summit.g0v.tw'
+const ROUTER_BASE = process.env.ROUTER_BASE || ''
+
+process.env.SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
+
 export default {
   mode: 'spa',
   /*
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'g0v Summit 台灣零時政府雙年會',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'g0v Summit 國際雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等面向，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。'
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: `${process.env.SITE_BASE}/og.png`
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap' }
     ]

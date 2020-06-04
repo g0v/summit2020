@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
 
@@ -95,7 +96,13 @@ export default {
       this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
       this.$router.push({ hash: locationName })
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('transport')
+    },
+    coverUrl: '/og-transport.jpg'
+  })
 }
 </script>
 

@@ -6,8 +6,8 @@
   </div>
 </template>
 <script>
-import * as yamlFront from 'yaml-front-matter'
 import VueMarkdown from 'vue-markdown'
+import { cleanMarkdown } from '~/utils/markdownUtils'
 
 export default {
   components: {
@@ -25,24 +25,7 @@ export default {
   },
   computed: {
     cleanMd () {
-      const meta = yamlFront.loadFront(this.content)
-      let content = meta.__content || ''
-
-      // remove all quote as it's comment
-      content = content
-        .split('\n')
-        .filter(line => !line.startsWith('>'))
-        .join('\n')
-
-      if (this.hideH1) {
-        content = content
-          // remove atx format H1, aka `# This is H1`
-          .replace(/\n# [^\n]+\n/g, '\n')
-          // remove Setext format H1, aka `This is H1\n======`
-          .replace(/\n[^\n]+\n=+\n/g, '\n')
-      }
-
-      return content
+      return cleanMarkdown(this.content)
     }
   }
 }

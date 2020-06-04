@@ -40,30 +40,6 @@
     </div>
   </div>
 </template>
-<i18n lang="yaml">
-// ref: https://nuxt-community.github.io/nuxt-i18n/vue-i18n-loader.html
-en:
-  example: Example Page
-  speakers: Speakers
-  agenda: Agenda
-  partners: Partners
-  transport: Transport
-  live: Live
-  feed: Feed
-  staff: Staff
-  registration: Registration
-zh:
-  example: 範例頁面
-  speakers: 講者
-  agenda: 投稿
-  partners: 合作夥伴
-  transport: 交通
-  live: 直播
-  feed: 社群動態
-  staff: 工作人員
-  registration: 立即購票
-
-</i18n>
 <script>
 const MENU_LIST = [
   { key: 'agenda', url: '/agenda' },
