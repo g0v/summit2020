@@ -11,6 +11,15 @@ export function summaryFromMarkdown (content, max = 100) {
   return text
 }
 
+export function genMeta (name, content) {
+  const nameAttr = name.startsWith('og:') ? 'property' : 'name'
+  return {
+    hid: name,
+    [nameAttr]: name,
+    content
+  }
+}
+
 // all three attribute can be either static string or callback that use vue instance as this
 export function friendlyHeader ({ title, description, coverUrl }) {
   function getContentAtBest (sth) {
@@ -22,13 +31,7 @@ export function friendlyHeader ({ title, description, coverUrl }) {
       return sth.toString()
     }
   }
-  function genMeta (name, content) {
-    return {
-      hid: name,
-      name,
-      content
-    }
-  }
+
   // return a head function
   return function () {
     const getContentWithThis = getContentAtBest.bind(this)
@@ -56,7 +59,8 @@ export function friendlyHeader ({ title, description, coverUrl }) {
       head.meta.push(genMeta('twitter:image', coverUrlStr))
       head.meta.push(genMeta('twitter:card', 'summary_large_image'))
     }
-    if (title || description || coverUrl) {
+    // if we are in page, so have access to vue instance
+    if (this && (title || description || coverUrl)) {
       const url = `${PROD_URL}${this.$route.path}`
       head.meta.push(genMeta('og:url', url))
     }
