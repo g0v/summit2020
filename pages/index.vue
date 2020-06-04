@@ -23,43 +23,43 @@
     <div class="time-container">
       <div class="timebar">
         <div class="circle-container top one-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="https://summit.g0v.tw/2012/">2012 summit</a>
         </div>
         <div class="circle-container bottom two-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="https://summit.g0v.tw/2014/">2014 summit</a>
         </div>
         <div class="circle-container top three-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="https://summit.g0v.tw/2016/">2016 summit</a>
         </div>
         <div class="circle-container bottom four-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="https://summit.g0v.tw/2018/">2018 summit</a>
         </div>
         <div class="circle-container top five-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="https://summit.g0v.tw/2020/">2020 summit</a>
         </div>
         <div class="circle-container bottom six-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="http://">即日起至 6/4 投稿</a>
         </div>
         <div class="circle-container top seven-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="http://">即日起至 9/1</a>
         </div>
         <div class="circle-container bottom eight-point">
-          <div class="circle"></div>
-          <div class="circle-line"></div>
+          <div class="circle" />
+          <div class="circle-line" />
           <a href="http://">12/03 ~ 12/6</a>
         </div>
       </div>

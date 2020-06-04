@@ -15,6 +15,7 @@
         <span>{{ location[$t('venuelocationName')] }}</span>
       </div>
     </div>
+    {{ coords }}
     <div class="venue-location">
       <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
         <OpenStreepMap
@@ -28,7 +29,7 @@
           <p>
             <span class="venue-location-detail-data-address">
               {{ location[$t('venuelocationAddress')] }}
-              <a :href="location['share-link']" class="map-link" target="_blank">
+              <a :href="gmapLink(location[$t('venuelocationName')]) || location['share-link']" class="map-link" target="_blank">
                 <img :src="require('~/assets/images/map-marker.png')" alt="">
               </a>
             </span>
@@ -55,6 +56,11 @@ export default {
   components: {
     OpenStreepMap
   },
+  data () {
+    return {
+      hereCoords: []
+    }
+  },
   computed: {
     routeHash () {
       return this.$route.hash.slice(1)
@@ -77,7 +83,14 @@ export default {
       }, new Map()).values()]
     }
   },
+  mounted () {
+    navigator.geolocation && navigator.geolocation.getCurrentPosition(({ coords }) => (this.hereCoords = [coords.latitude, coords.longitude]))
+  },
   methods: {
+    gmapLink (destination) {
+      const origin = this.hereCoords.join()
+      return origin && `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
+    },
     whereIs (locationName) {
       this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
       this.$router.push({ hash: locationName })
