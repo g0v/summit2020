@@ -150,10 +150,13 @@ export default {
       border: 2px solid #50BC83;
       border-radius: 9999px;
       color: #555555;
+      transition: 0.5s;
+      box-shadow: inset 0 0 0 0 #50BC83;
     }
     button:hover {
-      background: #50BC83;
+      // background: #50BC83;
       color: #fff;
+      box-shadow: 800px 0 200px -200px inset #50BC83
     }
   }
 
