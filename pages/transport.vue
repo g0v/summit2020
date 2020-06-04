@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
         &::before {
           content: '';
           width: 100%;
-          transition: width .3s ease-in-out;
+          transition: width 10s ease-in-out;
         }
       }
     }
@@ -232,10 +232,16 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       right: 0;
       background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
-      background-position: left center, right center;
       background-size: contain;
       background-repeat: no-repeat;
       height: 80px;
+
+      background-position: 0% center, 100% center;
+      transition: 1.5s ease-in-out;
+    }
+
+    & + &:hover::before {
+      background-position: 100% center, 0% center;
     }
 
     &-data {
@@ -263,6 +269,9 @@ h1, h2, h3, h4, h5, h6 {
 
         a {
           display: inline-block;
+          &.map-link {
+            animation: bounce 3s infinite;
+          }
           &.map-link {
             vertical-align: middle;
           }
@@ -295,6 +304,36 @@ h1, h2, h3, h4, h5, h6 {
         }
       }
     }
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -20px, 0) scaleY(1.1);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -10px, 0) scaleY(1.05);
+  }
+
+  80% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, -3px, 0) scaleY(1.02);
   }
 }
 </style>
