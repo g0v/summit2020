@@ -27,7 +27,7 @@
       <!-- <p class="title">
         {{ $t('agendaTime') }}
       </p> -->
-      <img class="time" :src="require('~/assets/images/agenda_time.svg')">
+      <img class="time" :src="require('~/assets/images/g0vtimelinebanner.svg')">
     </div>
   </div>
 </template>
