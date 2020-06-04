@@ -16,7 +16,7 @@
           <span>{{ location[$t('venuelocationName')] }}</span>
         </div>
       </div>
-      {{ coords }}
+      <!-- {{ coords }} -->
       <div class="venue-location">
         <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
           <OpenStreepMap
