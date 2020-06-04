@@ -7,7 +7,7 @@ const ROUTER_BASE = process.env.ROUTER_BASE || ''
 process.env.SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
 
 export default {
-  mode: 'spa',
+  // mode: 'spa',
   /*
   ** Headers of the page
   */

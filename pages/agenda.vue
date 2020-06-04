@@ -45,12 +45,22 @@ zh:
   agendaTime: 投稿時程
 </i18n>
 <script>
+import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
+
 export default {
   computed: {
     isUseENCSS () {
       return this.$i18n.locale === 'en'
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('title')
+    },
+    description () {
+      return summaryFromMarkdown(this.$t('article/summitIntro'))
+    }
+  })
 }
 </script>
 <style lang="scss" scoped>

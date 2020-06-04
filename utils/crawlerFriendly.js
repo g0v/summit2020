@@ -58,7 +58,6 @@ export function friendlyHeader ({ title, description, coverUrl }) {
     }
     if (title || description || coverUrl) {
       const url = `${PROD_URL}${this.$route.path}`
-      console.warn('URL', url)
       head.meta.push(genMeta('og:url', url))
     }
     return head
