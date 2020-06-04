@@ -1,39 +1,47 @@
 <template>
-  <l-map
-    ref="map"
-    :zoom="16"
-    :center="centerMarkers"
-  >
-    <l-marker
-      v-for="location in markers"
-      :key="location.name"
-      :lat-lng="location.coordinates"
+  <client-only>
+    <l-map
+      ref="map"
+      :zoom="16"
+      :center="centerMarkers"
     >
-      <l-popup :content="`<b>${location.name}</b><br />${location.address}`" />
-    </l-marker>
-    <l-tile-layer
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      :options="{
-        maxZoom: 18,
-        attribution: `<a href='https://www.openstreetmap.org/'>OSM</a>`
-      }"
-    />
-    </l-tile-layer>
-  </l-map>
-  <!-- <div>
-    {{ centerMarkers }}
-  </div> -->
+      <l-marker
+        v-for="location in markers"
+        :key="location.name"
+        :lat-lng="location.coordinates"
+      >
+        <l-popup :content="`<b>${location.name}</b><br />${location.address}`" />
+      </l-marker>
+      <l-tile-layer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        :options="{
+          maxZoom: 18,
+          attribution: `<a href='https://www.openstreetmap.org/'>OSM</a>`
+        }"
+      />
+      </l-tile-layer>
+    </l-map>
+    <!-- <div>
+      {{ centerMarkers }}
+    </div> -->
+  </client-only>
 </template>
 
 <script>
-import { LMap, LTileLayer, LMarker } from 'vue2-leaflet'
-import L from 'leaflet'
+// Avoid run leaflet on server
+// https://github.com/vue-leaflet/Vue2Leaflet/issues/207
+let Vue2Leaflet = {}
+let L = {}
+if (process.client) {
+  Vue2Leaflet = require('vue2-leaflet')
+  L = require('leaflet')
+}
 
 export default {
   components: {
-    LMap,
-    LTileLayer,
-    LMarker
+    'l-map': Vue2Leaflet.LMap,
+    'l-tile-layer': Vue2Leaflet.LTileLayer,
+    'l-marker': Vue2Leaflet.LMarker
   },
   props: {
     markers: {

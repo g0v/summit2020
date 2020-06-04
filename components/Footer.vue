@@ -15,9 +15,7 @@
       <!-- <nuxt-link class="fa fa-file-text" :to="'#'">
         {{ $t('') }}
       </nuxt-link> -->
-      <nuxt-link class="fa fa-envelope" :to="'#'">
-        {{ $t('') }}
-      </nuxt-link>
+      <a class="fa fa-envelope" href="mailto:host@summit.g0v.tw" />
     </div>
     <span class="text">
       Copyright <span class="fa fa-copyright" /> g0v Summit 2020

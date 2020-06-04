@@ -1,54 +1,57 @@
 <template>
-  <div class="transport-page">
-    <OpenStreepMap
-      class="transport-page-map"
-      :markers="locations"
-    />
-    <div class="transport-page-nav">
-      <div
-        v-for="(location, index) in locations"
-        :key="index"
-        class="location-link"
-        :class="{ active: routeHash === location[$t('venuelocationName')]}"
-        @click="whereIs(location[$t('venuelocationName')])"
-      >
-        <span>{{ location[$t('venuelocationName')] }}</span>
+  <client-only>
+    <div class="transport-page">
+      <OpenStreepMap
+        class="transport-page-map"
+        :markers="locations"
+      />
+      <div class="transport-page-nav">
+        <div
+          v-for="(location, index) in locations"
+          :key="index"
+          class="location-link"
+          :class="{ active: routeHash === location[$t('venuelocationName')]}"
+          @click="whereIs(location[$t('venuelocationName')])"
+        >
+          <span>{{ location[$t('venuelocationName')] }}</span>
+        </div>
       </div>
-    </div>
-    {{ coords }}
-    <div class="venue-location">
-      <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
-        <OpenStreepMap
-          class="locatipn-photo"
-          :markers="[locations[index]]"
-        />
-        <div class="venue-location-detail-data">
-          <h1>
-            {{ location[$t('venuelocationName')] }}
-          </h1>
-          <p>
-            <span class="venue-location-detail-data-address">
-              {{ location[$t('venuelocationAddress')] }}
-              <a :href="gmapLink(location[$t('venuelocationName')]) || location['share-link']" class="map-link" target="_blank">
-                <img :src="require('~/assets/images/map-marker.png')" alt="">
-              </a>
-            </span>
-          </p>
-          <div class="event-title">
-            {{ $t('events') }}
+      <!-- {{ coords }} -->
+      <div class="venue-location">
+        <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
+          <OpenStreepMap
+            class="locatipn-photo"
+            :markers="[locations[index]]"
+          />
+          <div class="venue-location-detail-data">
+            <h1>
+              {{ location[$t('venuelocationName')] }}
+            </h1>
+            <p>
+              <span class="venue-location-detail-data-address">
+                {{ location[$t('venuelocationAddress')] }}
+                <a :href="gmapLink(location[$t('venuelocationName')]) || location['share-link']" class="map-link" target="_blank">
+                  <img :src="require('~/assets/images/map-marker.png')" alt="">
+                </a>
+              </span>
+            </p>
+            <div class="event-title">
+              {{ $t('events') }}
+            </div>
+            <ul class="venue-location-detail-data-events">
+              <li v-for="event in location.events" :key="event.id">
+                <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
+              </li>
+            </ul>
           </div>
-          <ul class="venue-location-detail-data-events">
-            <li v-for="event in location.events" :key="event.id">
-              <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
-  </div>
+  </client-only>
 </template>
 
 <script>
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
 
@@ -95,7 +98,13 @@ export default {
       this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
       this.$router.push({ hash: locationName })
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('transport')
+    },
+    coverUrl: '/og-transport.jpg'
+  })
 }
 </script>
 

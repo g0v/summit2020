@@ -67,7 +67,15 @@
   </div>
 </template>
 <script>
-export default {}
+import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
+
+export default {
+  head: friendlyHeader({
+    description () {
+      return summaryFromMarkdown(this.$t('article/summitAbout'))
+    }
+  })
+}
 </script>
 <style lang="scss" scoped>
 .time-container {

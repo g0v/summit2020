@@ -1,7 +1,17 @@
 const { extractLanguageFromTable } = require('./utils')
 
 export default {
-  welcome: 'Welcome',
+  // navbar
+  speakers: 'Speakers',
+  agenda: 'Agenda',
+  partners: 'Partners',
+  transport: 'Transport',
+  live: 'Live',
+  feed: 'Feed',
+  staff: 'Staff',
+  registration: 'Registration',
+
+  // transportation
   venuelocationName: '地點名稱-en',
   venuelocationAddress: '地址-en',
   venuelocationEventName: '活動名稱-en',
