@@ -30,9 +30,9 @@
             <p>
               <span class="venue-location-detail-data-address">
                 {{ location[$t('venuelocationAddress')] }}
-                <a :href="gmapLink(location[$t('venuelocationName')]) || location['share-link']" class="map-link" target="_blank">
+                <div class="map-link" target="_blank" @click="gmapLink(location)">
                   <img :src="require('~/assets/images/map-marker.png')" alt="">
-                </a>
+                </div>
               </span>
             </p>
             <div class="event-title">
@@ -59,11 +59,6 @@ export default {
   components: {
     OpenStreepMap
   },
-  data () {
-    return {
-      hereCoords: []
-    }
-  },
   computed: {
     routeHash () {
       return this.$route.hash.slice(1)
@@ -86,13 +81,30 @@ export default {
       }, new Map()).values()]
     }
   },
-  mounted () {
-    navigator.geolocation && navigator.geolocation.getCurrentPosition(({ coords }) => (this.hereCoords = [coords.latitude, coords.longitude]))
-  },
   methods: {
-    gmapLink (destination) {
-      const origin = this.hereCoords.join()
-      return origin && `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
+    gmapLink (location) {
+      if (!process.client) { return }
+      if (navigator.geolocation) {
+        navigator.permissions.query({ name: 'geolocation' })
+          .then(function (permissionStatus) {
+            // eslint-disable-next-line no-console
+            console.log('geolocation permission state is ', permissionStatus.state)
+
+            permissionStatus.onchange = function () {
+              // eslint-disable-next-line no-console
+              console.log('geolocation permission state has changed to ', this.state)
+            }
+          })
+        navigator.geolocation.getCurrentPosition(({ coords }) => {
+          const origin = [coords.latitude, coords.longitude].join()
+          const destination = location[this.$t('venuelocationName')]
+          if (origin) {
+            window.open(`https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`, '_blank')
+          } else {
+            window.open(location['share-link'], '_blank')
+          }
+        })
+      }
     },
     whereIs (locationName) {
       this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
@@ -271,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
       &-address {
         margin: .5em 0 1.5em;
 
-        a {
+        div {
           display: inline-block;
           &.map-link {
             animation: bounce 3s infinite;
