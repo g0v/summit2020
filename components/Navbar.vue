@@ -10,7 +10,7 @@
             v-if="!menu.isExt"
             :key="menu.key"
             :to="localePath(menu.url)"
-            @click.native="isShowNavbarCollapse = !isShowNavbarCollapse"
+            @click.native="onClickNavItem"
           >
             {{ $t(menu.key) }}
           </nuxt-link>
@@ -66,6 +66,14 @@ export default {
   computed: {
     isUseENCSS () {
       return this.$i18n.locale === 'en'
+    }
+  },
+  methods: {
+    onClickNavItem () {
+      this.isShowNavbarCollapse = !this.isShowNavbarCollapse
+      if (process.client) {
+        setTimeout(() => (document.querySelector('.pages-container').scrollTop = 0), 5)
+      }
     }
   }
 }
