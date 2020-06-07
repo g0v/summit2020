@@ -8,9 +8,9 @@
             {{ $t('subTitle') }}
           </p>
         </div>
-        <button>
+        <a class="agenda-cta flex items-center justify-center" href=" https://propose.summit2020.g0v.tw/" target="_blank" rel="noopener">
           {{ $t('CFPButtonText') }}
-        </button>
+        </a>
       </div>
       <summit-markdown :content="$t('article/summitAbout')" />
     </div>
@@ -140,7 +140,7 @@ export default {
       }
     }
     position: relative;
-    button {
+    a.agenda-cta {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -161,11 +161,12 @@ export default {
       color: #555555;
       transition: 0.5s;
       box-shadow: inset 0 0 0 0 #50BC83;
-    }
-    button:hover {
-      // background: #50BC83;
-      color: #fff;
-      box-shadow: 800px 0 200px -200px inset #50BC83
+
+      &:hover {
+        // background: #50BC83;
+        color: #fff;
+        box-shadow: 800px 0 200px -200px inset #50BC83
+      }
     }
   }
 
