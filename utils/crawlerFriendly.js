@@ -1,6 +1,5 @@
 import { cleanMarkdown } from './markdownUtils'
 
-const PROD_URL = process.env.SITE_BASE
 const TITLE_TAIL = ' | g0v Summit 台灣零時政府雙年會'
 
 export function summaryFromMarkdown (content, max = 100) {
@@ -34,6 +33,7 @@ export function friendlyHeader ({ title, description, coverUrl }) {
 
   // return a head function
   return function () {
+    const PROD_URL = process.env.SITE_BASE
     const getContentWithThis = getContentAtBest.bind(this)
     const head = { meta: [] }
 

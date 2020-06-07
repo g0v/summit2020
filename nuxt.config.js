@@ -27,8 +27,8 @@ export default {
       ...defaultHeader.meta
     ],
     link: [
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${ROUTER_BASE}/favicon-32x32.png` },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${ROUTER_BASE}/favicon-16x16.png` },
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap' }
     ]
@@ -104,6 +104,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    publicPath: '/nuxt/',
     extend (config, ctx) {
       config.module.rules.push(
         {
