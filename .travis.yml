@@ -25,20 +25,9 @@ jobs:
         edge: true # opt in to dpl v2
         github_token: $GITHUB_TOKEN
         target_branch: production-pages
-        local_dir: dist
+        lcal_dir: dist
         on:
           tags: true
-    - stage: landing page
-      language: shell
-      if: (branch = master) AND type != cron
-      deploy:
-        provider: pages:git
-        edge: true # opt in to dpl v2
-        github_token: $GITHUB_TOKEN
-        target_branch: landing-pages
-        local_dir: landing
-        on:
-          branch: master
       after_deploy:
         - sleep 30 # waiting for gh-pages build
         - git config --global user.name "Travis CI"
