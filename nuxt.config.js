@@ -104,6 +104,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    publicPath: '/nuxt/',
     extend (config, ctx) {
       config.module.rules.push(
         {
