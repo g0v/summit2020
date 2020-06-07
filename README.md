@@ -6,8 +6,6 @@
 1. npx
 1. [Nuxt.js](https://nuxtjs.org)
 
-// TODO: 給 Vue 開發者的簡單的上手教學
-
 ### 多語支援
 
 本專案使用 [nuxt-i18n](https://nuxt-community.github.io/nuxt-i18n/) ，共有兩種設定雙語的方式：
@@ -58,6 +56,8 @@ npm run dev
 
 ## 發佈流程
 
+### Staging
+
 目前 Staging 已納入 CICD ：
 
 1. 網站網址： https://g0v.github.io/summit2020/
@@ -67,22 +67,45 @@ npm run dev
 # 安裝套件
 npm install
 
-# 下載所有文案
-npm run sync:article
-
 # 將靜態網站編譯至 dist/
 npm run generate:staging
-npm run generate:production
+```
+
+### Production
+
+目前 Production 已納入 CICD ：
+
+1. 網站網址：https://summit.g0v.tw/2020/
+2. 使用 `release-*` tag 當作發布標記，最新而且開頭為 `release-` 的 tag ，會被發佈到上述網址
+3. 若發現網頁和想像的不同，請見
+   1. 是否有在 [Github release](https://github.com/g0v/summit2020/releases) 裡
+   2. [Travis CI](https://travis-ci.org/github/g0v/summit2020) 編輯是否成功
+   3. [主網站](https://github.com/g0v/summit.g0v.tw/) 的 2020 資料夾是否使用預期的 commit hash
+
+發佈流程：
+
+```bash
+# 確定在最新的 staging ，或在對的 hot fix commit
+git checkout master
+git pull master
+
+# 在本地端建立 tag ，命名建議為 release-<MMDD>.<revision>
+git tag release-0608.0
+
+# 將 tag 推上 remote
+git push -u origin release-<MMDD>.<revision>
+
+# 等 5 分鐘後，就可在 https://summit.g0v.tw/2020/ 看到更新
 ```
 
 ## 待作們
 
 ### 網站架構
 
-1. [ ] SEO + Social Share
+1. [x] SEO + Social Share
 1. [x] script for staging only flag + staging deploy branch
 1. [x] script for production deploy branch using existing dir
 1. [x] doc for everything
 1. [ ] Add Sentry
 1. [ ] Apply Sentry
-1. [ ] script for production deploy branch using nuxt gen
+1. [x] script for production deploy branch using nuxt gen
