@@ -22,11 +22,6 @@
     </div>
     <div class="time-container">
       <div class="timebar">
-        <div class="circle-container top one-point">
-          <div class="circle" />
-          <div class="circle-line" />
-          <a href="https://summit.g0v.tw/2012/">2012 summit</a>
-        </div>
         <div class="circle-container bottom two-point">
           <div class="circle" />
           <div class="circle-line" />
@@ -159,29 +154,26 @@ export default {
         left: -0;
       }
     }
-    .circle-container.one-point{
-      left:7%;
-    }
     .circle-container.two-point{
-      left:18%;
+      left:15%;
     }
     .circle-container.three-point{
-      left:29%;
+      left:25%;
     }
     .circle-container.four-point{
-      left:42%;
+      left:35%;
     }
     .circle-container.five-point{
-      left:53%;
+      left:45%;
     }
     .circle-container.six-point{
-      left:65%;
+      left:55%;
     }
     .circle-container.seven-point{
-      left:75%;
+      left:65%;
     }
     .circle-container.eight-point{
-      left:85%;
+      left:75%;
     }
   }
 }
@@ -260,6 +252,9 @@ export default {
         width: 20px;
         height: 20px;
       }
+      a{
+        font-size: 1rem;
+        }
       &.top{
         flex-direction: row;
         bottom: auto;
@@ -277,73 +272,28 @@ export default {
           left: -100px;
         }
       }
-      &.one-point{
-        top:5%;
-      }
       &.two-point{
-        top:17%;
+        top:13%;
       }
       &.three-point{
-        top:29%;
+        top:25%;
       }
       &.four-point{
-        top:40%;
+        top:36%;
       }
       &.five-point{
-        top:52%;
+        top:48%;
       }
       &.six-point{
-        top:67%;
+        top:62%;
       }
       &.seven-point{
-        top:79%;
+        top:75%;
       }
       &.eight-point{
-        top:90%;
+        top:85%;
       }
     }
-    // .circle-container{
-    //   position: absolute;
-    //   .circle{
-    //     width: 40px;
-    //     height: 40px;
-    //     background-color: #fff;
-    //     border-radius:100%;
-    //   }
-    //   .circle-line{
-    //       height: 100px;
-    //       width: 2px;
-    //       background-color: #fff;
-    //   }
-    //   a{
-    //     position: absolute;
-    //     width: 200px;
-    //     color:white;
-    //     text-decoration: none;
-    //     font-size: 1.5rem;
-    //   }
-    // }
-    // .circle-container.bottom{
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    //   top: -150%;
-    //   a{
-    //     bottom: -35px;
-    //     left: -0;
-    //   }
-    // }
-    // .circle-container.top{
-    //   display: flex;
-    //   flex-direction: column-reverse;
-    //   align-items: center;
-    //   bottom: -150%;
-    //   a{
-    //     top: -35px;
-    //     left: -0;
-    //   }
-    // }
-
   }
   }
 }
