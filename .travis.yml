@@ -25,7 +25,7 @@ jobs:
         edge: true # opt in to dpl v2
         github_token: $GITHUB_TOKEN
         target_branch: production-pages
-        lcal_dir: dist
+        local_dir: dist
         on:
           tags: true
       after_deploy:
