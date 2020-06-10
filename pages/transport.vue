@@ -106,6 +106,7 @@ export default {
           element.scrollTop = val
           if (currentTime < duration) {
             setTimeout(animateScroll, increment)
+            document.documentElement.scrollTop = 0
           }
         }
         animateScroll()
