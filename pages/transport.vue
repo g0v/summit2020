@@ -81,27 +81,59 @@ export default {
       }, new Map()).values()]
     }
   },
+  mounted () {
+    this.$nextTick(() => {
+      document.querySelectorAll('.location-link').forEach((link) => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault()
+          const header = document.querySelector(`#${link.textContent}`)
+          scrollTo(header.offsetTop, 550)
+        })
+      })
+
+      function scrollTo (to, duration) {
+        const element = document.querySelector('.pages-container')
+        const start = element.scrollTop
+        const change = to - start
+        let currentTime = 0
+        const increment = 20
+
+        const animateScroll = () => {
+          currentTime += increment
+          const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
+          // eslint-disable-next-line no-console
+          console.log(val.toFixed(4))
+          element.scrollTop = val
+          if (currentTime < duration) {
+            setTimeout(animateScroll, increment)
+          }
+        }
+        animateScroll()
+      }
+
+      // t = current time
+      // b = start value
+      // c = change in value
+      // d = duration
+      Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2
+        if (t < 1) { return c / 2 * t * t + b }
+        t--
+        return -c / 2 * (t * (t - 2) - 1) + b
+      }
+    })
+  },
   methods: {
     gmapLink (location) {
       if (!process.client) { return }
       if (navigator.geolocation) {
-        navigator.permissions.query({ name: 'geolocation' })
-          .then(function (permissionStatus) {
-            // eslint-disable-next-line no-console
-            console.log('geolocation permission state is ', permissionStatus.state)
-
-            permissionStatus.onchange = function () {
-              // eslint-disable-next-line no-console
-              console.log('geolocation permission state has changed to ', this.state)
-            }
-          })
         navigator.geolocation.getCurrentPosition(({ coords }) => {
           const origin = [coords.latitude, coords.longitude].join()
           const destination = location[this.$t('venuelocationName')]
           if (origin) {
-            window.open(`https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`, '_blank')
+            window.location.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
           } else {
-            window.open(location['share-link'], '_blank')
+            window.location.href = location['share-link']
           }
         })
       }
