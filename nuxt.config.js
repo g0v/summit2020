@@ -34,7 +34,8 @@ export default {
     ]
   },
   router: {
-    base: process.env.ROUTER_BASE || '/'
+    base: process.env.ROUTER_BASE || '/',
+    middleware: 'scrollTop'
   },
   /*
   ** Customize the progress-bar color
