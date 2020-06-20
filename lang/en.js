@@ -5,7 +5,7 @@ export default {
   speakers: 'Speakers',
   agenda: 'Agenda',
   partners: 'Partners',
-  transport: 'Transport',
+  transport: 'Transportation',
   live: 'Live',
   feed: 'Feed',
   staff: 'Staff',

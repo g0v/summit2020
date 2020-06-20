@@ -1,21 +1,43 @@
-* {
-  font-family:  Noto Sans CJK TC;
+html, body {
+  font-family: 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  color: $gray;
+  line-height: 1.65;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin: 1rem 0 0.5rem;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin: 1rem 0 0.25rem;
 }
-h3,p {
-  font-size: 1rem;
+h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 1rem 0 0.25rem;
 }
-p {
-  line-height: 1.7;
+h2:first-child {
+	margin-top: 0;
 }
-h1,h2,h3 {
+h2 + h3 {
+	margin-top: 0;
+}
+h1, h2, h3 {
   color: $green;
 }
 p {
-  color: $gray;
+	font-size: 1pm;
+	margin: 0 0 1rem;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+ul {
+	margin: 1rem 0 1rem 1.5rem;
+}
+a {
+	color: $green;
 }
