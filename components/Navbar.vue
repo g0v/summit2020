@@ -1,6 +1,6 @@
 <template>
   <div class="navbar bb shadow-1" :class="{'en-css': isUseENCSS}">
-    <nav>
+    <nav class="nav">
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
       </button>
@@ -27,9 +27,7 @@
         </template>
       </div>
     </nav>
-    <div>
-      <nuxt-link class="logo" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
-    </div>
+    <nuxt-link class="logo" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
     <div class="tail">
       <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
         Eng
@@ -71,68 +69,57 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+$navH: 54px;
 .navbar {
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // align-items: center;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  // position: fixed;
+  align-items: center;
   top: 0;
   width: 100vw;
   z-index: 9999;
   background-color: #50BC83;
-  padding: 1rem 2rem;
+  padding: 0 1rem;
   border: none;
-  & > * {
-    width: 33.333%;
+  height: $navH;
+  > .nav {
+    flex-shrink: 0;
   }
-  & > *:nth-child(3) {
-    text-align: right;
-  }
-  .logo {
-    // position: fixed;
-    // top: 0.75rem;
-    // left: 0;
-    // right: 0;
-    // margin: auto;
-    // // z-index: 99;
-    background-image: url('../assets/images/headerLogo.svg');
+  > .logo {
+    $origW: 2280px; // original w/h
+    $origH: 400px;
+    $h: 50px;
+    display: block;
+    margin: ($navH - $h) / 2 auto;
+    flex-basis: $origW * $h / $origH;
+    height: $h;
+    flex-shrink: 1;
+    background-image: url('../assets/images/ocean-islands/logo-singleline-simple.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: center;
-    width: 100%;
-    // width: 200px;
-    height: 46px;
-    display: block;
-    margin: auto;
+    background-position: center center;
   }
-  .navbar-toggler {
-    display: none;
-    color: #50BC83;
-    background: #fff;
-    outline: none;
-    border: #fff solid;
-    border-radius: 8px;
-    padding: 5px;
+  > .tail {
+    flex-basis: 2.25rem;
+    flex-shrink: 0;
+    text-align: right;
   }
   a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    width: 3em;
+  }
+  .navbar-toggler {
+    display: none;
+    color: white;
+    background: none;
+    outline: none;
+    border: none;
   }
   .navbar-collapse {
     display: flex;
-    a:first-child {
-      text-align: left;
-    }
-  }
-  .tail {
-    a {
-      text-align: right;
+    a:not(:first-child) {
+      margin-left: 0.5rem;
     }
   }
 }
@@ -140,28 +127,16 @@ export default {
 .navbar.en-css {
   .navbar-collapse {
     a {
-      width: 5em;
     }
   }
 }
 // mobile navbar
-@media (max-width: 950px) {
+@media (max-width: 640px) {
   .navbar {
-    align-items: start;
-    padding: 1rem 2rem 0;
-    & > *:nth-child(2) {
-      // flex: 1 0 200px;
-      // flex-shrink: 0;
-      // width: 200px;
-    }
-    .logo {
-      width: 200px;
-      // height: 46px;
-    }
     .navbar-toggler {
       display: block;
-      padding: 0 5px;
-      font-size: 20px;
+      padding-right: 0.25rem;
+      font-size: 1.5rem;
     }
     .navbar-collapse {
       display: none;
@@ -172,34 +147,18 @@ export default {
     .navbar-collapse.show {
       display: flex;
       flex-direction: column;
-      position: absolute;
       background-color: #50BC83;
       width: 100vw;
+      position: absolute;
+      top: $navH;
       left: 0;
-      padding-left: 2rem;
       z-index: 9999;
-      box-shadow: 0 4px 4px -2px rgba( 0, 0, 0, .2 );
-      a {
-        padding: 10px 0;
+      box-shadow: 0 4px 4px -2px rgba(black, .125);
+      padding: 0.25rem 0;
+      > a {
+        margin: 0;
+        padding: 0.25rem;
       }
-    }
-  }
-}
-@media (max-width: 720px) {
-  .navbar {
-    & > * {
-      width: auto;
-    }
-    .logo {
-      width: 200px;
-    }
-  }
-}
-@media (max-width: 480px) {
-  .navbar {
-    padding: 1rem 1rem 0;
-    .logo {
-      width: 160px;
     }
   }
 }

@@ -1,32 +1,21 @@
 <template>
   <div class="footer">
     <div class="icon-container">
-      <nuxt-link class="text" :to="'#'">
-        {{ $t('follow') }}
-      </nuxt-link>
       <a class="g0v-icon" :href="$t('g0vUrl')" />
       <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw/" />
       <a class="fa fa-twitter" href="https://twitter.com/g0vtw" />
-      <nuxt-link class="text" :to="'#'">
-        {{ $t('collaboration') }}
-      </nuxt-link>
       <a class="fa fa-slack" href="http://join.g0v.today/" />
       <a class="fa fa-github" href="https://github.com/g0v/summit2020" />
-      <!-- <nuxt-link class="fa fa-file-text" :to="'#'">
-        {{ $t('') }}
-      </nuxt-link> -->
       <a class="fa fa-envelope" href="mailto:host@summit.g0v.tw" />
     </div>
-    <span class="text">
-      Copyright <span class="fa fa-copyright" /> g0v Summit 2020
-    </span>
+    <div class="license">CC BY 4.0</div>
   </div>
 </template>
 <i18n lang="yaml">
 // ref: https://nuxt-community.github.io/nuxt-i18n/vue-i18n-loader.html
 en:
-  follow: Follow Us
-  collaboration: Collaboration
+  follow: Follow
+  collaboration: Collab
   g0vUrl: http://g0v.tw/en-US/
 zh:
   follow: 追蹤
@@ -38,63 +27,49 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import 'assets/scss/color';
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
+  flex-wrap: no-wrap;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  color: #555555;
+  color: $gray;
   background-color: #fff;
-  padding: .5rem 2rem;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
   .icon-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    @media (max-width: 960px) {
-      width: 70%;
-      margin-bottom: 8px;
+    flex-wrap: no-wrap;
+    flex-grow: 1;
+    padding: 0 0.5rem;
+    max-width: 320px;
+    > a {
+      flex-shrink: 0;
+      flex-grow: 1;
+      color: #50BC83;
+      display: inline-block;
+      text-align: center;
+      padding: 0.5rem;
     }
-    @media (max-width: 680px) {
-      width: 100%;
-    }
-    .g0v-icon {
+    > a.g0v-icon {
       background-image: url('../assets/images/scene_16.svg');
       background-size: contain;
       background-repeat: no-repeat;
-      background-position-x: center;
-      height: 15px;
-      width: 3em;
+      background-position: center center;
+      background-size: 75%;
+      width: 64px;
+      height: 32px;
     }
   }
-  a {
-    flex-shrink: 0;
-    color: #50BC83;
-    display: inline-block;
-    text-align: center;
-    @media (max-width: 540px) {
-      margin-top: 8px;
-      width: 20%;
-      &:nth-child(1) {
-        width: 25%;
-      }
-      &:nth-child(2) {
-        width: 25%;
-      }
-      &:nth-child(3) {
-        width: 25%;
-      }
-      &:nth-child(4) {
-        width: 25%;
-      }
+  .license {
+    display: none;
+    flex-grow: 0;
+    @media (min-width: 640px) {
+      display: block;
     }
-  }
-  .text {
-    color: #555555;
+    line-height: 32px;
+    font-size: 14px;
+    padding: 0 16px;
   }
 }
 </style>
