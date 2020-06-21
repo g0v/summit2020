@@ -2,9 +2,9 @@
   <div class="footer">
     <div class="icon-container">
       <a class="g0v-icon" :href="$t('g0vUrl')" />
-      <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw/" />
+      <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw" />
       <a class="fa fa-twitter" href="https://twitter.com/g0vtw" />
-      <a class="fa fa-slack" href="http://join.g0v.today/" />
+      <a class="fa fa-slack" href="http://join.g0v.tw" />
       <a class="fa fa-github" href="https://github.com/g0v/summit2020" />
       <a class="fa fa-envelope" href="mailto:host@summit.g0v.tw" />
     </div>
@@ -36,7 +36,8 @@ export default {
   flex-wrap: no-wrap;
   justify-content: space-between;
   color: $gray;
-  background-color: #fff;
+  background-color: white;
+  z-index: 9999;
   .icon-container {
     display: flex;
     flex-wrap: no-wrap;
