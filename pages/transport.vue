@@ -24,23 +24,21 @@
             :markers="[locations[index]]"
           />
           <div class="venue-location-detail-data">
-            <h1>
-              {{ location[$t('venuelocationName')] }}
-            </h1>
+            <h3>{{ location[$t('venuelocationName')] }}</h3>
             <p>
               <span class="venue-location-detail-data-address">
                 {{ location[$t('venuelocationAddress')] }}
                 <div class="map-link" target="_blank" @click="gmapLink(location)">
-                  <img :src="require('~/assets/images/map-marker.png')" alt="">
+                  <img :src="require('~/assets/images/map-marker.png')">
                 </div>
               </span>
             </p>
             <div class="event-title">
-              {{ $t('events') }}
+              <span>{{ $t('events') }}</span>
             </div>
             <ul class="venue-location-detail-data-events">
               <li v-for="event in location.events" :key="event.id">
-                <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
+                <span>{{ event['日期'] }} - {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
               </li>
             </ul>
           </div>
@@ -154,17 +152,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$background-color: #E5F3F4;
-$main_green: #50bc83;
-$little_color: #4DEAFF;
-
-h1, h2, h3, h4, h5, h6 {
-  color: $main_green;
-}
+@import 'assets/scss/color';
 
 .transport-page {
   width: 100%;
-  background-color: $background-color * 10%;
   &-map {
     max-height: 80vh;
     height: 40rem;
@@ -178,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     z-index: 1100;
     width: 100%;
-    background-color: $little_color;
+    background-color: $blue;
     color: #555;
     display: flex;
     // justify-content: space-around;
@@ -247,9 +238,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .venue-location {
   &-detail {
-    color: #555555;
-    max-width: 970px;
-    margin: auto;
+    position: relative;
+    color: $gray;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 1.5rem 0 4.5rem;
 
     $photo-desktop-width: 300px;
     .locatipn-photo {
@@ -268,54 +261,40 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       clear: left;
     }
-
-    // 分隔線的 egg
-    padding-top: 180px;
-    padding-bottom: 100px;
-
-    position: relative;
-    & + &::before {
+    & + &::before { // eggs
       content: '';
       display: block;
       position: absolute;
-      bottom: 85%;
+      bottom: 100%;
       left: 0;
-      right: 0;
+      width: 100%;
+      height: 80px;
+      margin: 0 auto;
       background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
       background-size: contain;
       background-repeat: no-repeat;
-      height: 80px;
-
-      background-position: 0% center, 100% center;
+      background-position: 5% center, 95% center;
     }
-
     & + &:hover::before {
-      background-position: 100% center, 0% center;
+      background-position: 95% center, 5% center;
     }
-
     &-data {
-      font-size: 20px;
       $photo-data-desktop-spacer: 20px;
-
       margin-left: 0;
       padding: 0 1em;
       @media screen and (min-width: 800px) {
         margin-left: $photo-desktop-width + $photo-data-desktop-spacer;
         padding: 0;
       }
-
-      h1 {
-        line-height: 1;
-
+      h3 {
+        font-size: 1.75rem;
+        line-height: 1.25;
         @media screen and (min-width: 800px) {
           margin: 0;
         }
       }
-
-      line-height: 1.5;
       &-address {
         margin: .5em 0 1.5em;
-
         div {
           display: inline-block;
           cursor: pointer;
@@ -326,31 +305,28 @@ h1, h2, h3, h4, h5, h6 {
             vertical-align: middle;
           }
           &.map-link {
-            width: 48px;
-            height: 48px;
+            width: 32px;
+            height: 32px;
             img {
               height: 100%;
             }
           }
         }
       }
-
       .event-title {
-        margin: 0;
+        font-weight: bold;
+        span {
+          border-bottom: $gray 2px solid;
+        }
       }
-
       ul {
         list-style: none;
-        padding-left: 1em;
         margin: 0;
-        // line-height: 2.3;
-
         li {
           margin: .5em 0;
         }
         span {
-          background-color: $little_color;
-          padding: .1em .3em;
+          border-bottom: $blue 2px solid;
         }
       }
     }
@@ -358,30 +334,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes bounce {
-  from,
-  20%,
-  53%,
-  to {
+  from, 20%, 53%, to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 0, 0);
   }
-
-  40%,
-  43% {
+  40%, 43% {
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transform: translate3d(0, -20px, 0) scaleY(1.1);
   }
-
   70% {
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transform: translate3d(0, -10px, 0) scaleY(1.05);
   }
-
   80% {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 0, 0) scaleY(0.95);
   }
-
   90% {
     transform: translate3d(0, -3px, 0) scaleY(1.02);
   }
