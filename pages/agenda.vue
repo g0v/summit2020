@@ -58,6 +58,9 @@ const cfpTimeline = [
 ]
 
 export default {
+  components: {
+    Timeline
+  },
   data () {
     return {
       cfpTimeline
@@ -75,16 +78,12 @@ export default {
     description () {
       return summaryFromMarkdown(this.$t('article/summitIntro'))
     }
-  }),
-  components: {
-    Timeline
-  }
+  })
 }
 </script>
 <style lang="scss" scoped>
 @import 'assets/scss/color';
 .agenda {
-  padding-bottom: 4rem;
   > .banner-container {
     max-width: 800px;
     padding: 2rem 1rem;
