@@ -31,8 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'assets/scss/color';
-
 $w: 0.5rem;
 $d: 2rem;
 

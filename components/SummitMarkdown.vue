@@ -32,7 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'assets/scss/color';
 .summitmd {
   padding: 1rem;
 }

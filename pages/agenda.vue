@@ -82,7 +82,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import 'assets/scss/color';
 .agenda {
   > .banner-container {
     max-width: 800px;

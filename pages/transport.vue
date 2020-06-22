@@ -144,8 +144,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import 'assets/scss/color';
-
 .transport {
   width: 100%;
   &-map {
@@ -158,7 +156,7 @@ export default {
   }
   &-nav {
     position: sticky;
-    top: 0;
+    top: $nav-height;
     width: 100%;
     display: flex;
     flex-direction: row;

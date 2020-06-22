@@ -47,6 +47,9 @@ export default {
     'tachyons/css/tachyons.css',
     '@/assets/scss/main.scss'
   ],
+  styleResources: {
+    scss: './assets/scss/variables/*.scss'
+  },
   /*
   ** Plugins to load before mounting the App
   */
@@ -59,7 +62,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources'
   ],
   /*
   ** Nuxt.js modules
