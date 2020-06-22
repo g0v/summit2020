@@ -13,6 +13,7 @@ export default {
 
   // transportation
   venuelocationName: '地點名稱-en',
+  venuelocationNameShort: '地點名稱-短-en',
   venuelocationAddress: '地址-en',
   venuelocationEventName: '活動名稱-en',
   venuelocationSubEventName: '子活動名稱-en',
