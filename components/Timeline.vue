@@ -1,7 +1,7 @@
 <template>
   <div class="timeline">
     <div class="timeline-container">
-      <div class="point" v-for="(point, pointIndex) of points" :key="pointIndex" :class="point.class">
+      <div v-for="(point, pointIndex) of points" :key="pointIndex" class="point" :class="point.class">
         <div class="circle" />
         <div class="label">
           <div v-if="point.date" class="date">{{ point.date }}</div>
