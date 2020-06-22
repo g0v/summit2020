@@ -96,11 +96,12 @@ export default {
         ...location,
         coordinates: location.coordinates.split(',').map(o => +o)
       })).reduce((m, location) => {
-        if (m.has(location.id)) {
-          const currentLocation = m.get(location.id)
+        const locationIdentifier = location[this.$t('venuelocationName')]
+        if (m.has(locationIdentifier)) {
+          const currentLocation = m.get(locationIdentifier)
           currentLocation.events.push(location)
         } else {
-          m.set(location.id, {
+          m.set(locationIdentifier, {
             events: [location],
             ...location
           })
