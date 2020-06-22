@@ -1,11 +1,11 @@
 <template>
   <client-only>
-    <div class="transport-page">
+    <div class="transport">
       <OpenStreepMap
-        class="transport-page-map"
+        class="transport-map"
         :markers="locations"
       />
-      <div class="transport-page-nav">
+      <div class="transport-nav">
         <div
           v-for="(location, index) in locations"
           :id="`location-link-${location.id}`"
@@ -16,16 +16,16 @@
         >{{ location[$t('venuelocationNameShort')] }}</div>
       </div>
       <!-- {{ coords }} -->
-      <div class="venue-location">
-        <div v-for="(location, index) in locations" :id="`location-${location.id}`" :key="index" class="venue-location-detail">
+      <div class="locations">
+        <div v-for="(location, index) in locations" :id="`location-${location.id}`" :key="index" class="location">
           <OpenStreepMap
             class="location-photo"
             :markers="[locations[index]]"
           />
-          <div class="venue-location-detail-data">
+          <div class="location-detail">
             <h3>{{ location[$t('venuelocationName')] }}</h3>
             <p>
-              <span class="venue-location-detail-data-address">
+              <span class="location-detail-address">
                 {{ location[$t('venuelocationAddress')] }}
                 <div class="map-link" target="_blank" @click="gmapLink(location)">
                   <img :src="require('~/assets/images/map-marker.png')">
@@ -35,7 +35,7 @@
             <div class="event-title">
               <span>{{ $t('events') }}</span>
             </div>
-            <ul class="venue-location-detail-data-events">
+            <ul class="location-detail-events">
               <li v-for="event in location.events" :key="event.id">
                 <span>{{ event['日期'] }} - {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
               </li>
@@ -144,7 +144,7 @@ export default {
 <style lang="scss" scoped>
 @import 'assets/scss/color';
 
-.transport-page {
+.transport {
   width: 100%;
   &-map {
     max-height: 80vh;
@@ -176,12 +176,11 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0.25rem;
+      padding: 0.5rem 0.25rem;
       text-align: center;
       cursor: pointer;
       @media screen and (min-width: 640px) {
         flex-basis: (100% / 7);
-        padding: 0.5rem 0.25rem;
       }
       &:active, &:focus {
         outline: none;
@@ -207,16 +206,45 @@ export default {
   }
 }
 
-.venue-location {
-  &-detail {
+.locations {
+  .location {
     position: relative;
     color: $gray;
     max-width: 960px;
     margin: 2rem auto;
-    padding: 1.5rem 0 4.5rem;
+    padding: 0 0 6rem;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: left;
+    }
+    &::before { // eggs
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: calc(100% + 1.5rem);
+      left: 0;
+      width: 100%;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 5% center, 95% center;
+    }
+    &:hover::before {
+      background-position: 95% center, 5% center;
+    }
+    &:first-child::before {
+      content: none;
+    }
 
     $photo-desktop-width: 300px;
-    .location-photo {
+    &-photo {
       margin-right: 10px;
       float: none;
       width: 100%;
@@ -227,29 +255,7 @@ export default {
         height: $photo-desktop-width;
       }
     }
-    &::after {
-      content: '';
-      display: block;
-      clear: left;
-    }
-    & + &::before { // eggs
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 100%;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      margin: 0 auto;
-      background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 5% center, 95% center;
-    }
-    & + &:hover::before {
-      background-position: 95% center, 5% center;
-    }
-    &-data {
+    &-detail {
       $photo-data-desktop-spacer: 20px;
       margin-left: 0;
       padding: 0 1em;
