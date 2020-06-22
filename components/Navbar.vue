@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bb" :class="{'en-css': isUseENCSS}">
+  <div class="navbar" :class="{'en-css': isUseENCSS}">
     <nav class="nav">
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
@@ -78,7 +78,7 @@ $navH: 54px;
   justify-content: space-between;
   align-items: center;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 9999;
   background-color: #50BC83;
   border: none;

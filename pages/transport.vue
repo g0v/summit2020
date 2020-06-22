@@ -158,7 +158,7 @@ export default {
   }
   &-nav {
     position: sticky;
-    top: 0;
+    top: 54px;
     width: 100%;
     display: flex;
     flex-direction: row;
