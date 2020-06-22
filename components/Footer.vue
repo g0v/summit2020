@@ -29,8 +29,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import 'assets/scss/color';
 .footer {
+  height: $footer-height;
   position: fixed;
   bottom: 0;
   width: 100%;

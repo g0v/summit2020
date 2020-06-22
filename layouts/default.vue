@@ -23,9 +23,7 @@ body, .entry-point, .page-container {
   width: 100%;
 }
 .page-container {
-  padding-top: 54px;
-  padding-bottom: 48px;
-  // overflow-x: hidden;
-  // overflow-y: scroll;
+  padding-top: $nav-height;
+  padding-bottom: ($footer-height + 16px);
 }
 </style>

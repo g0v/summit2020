@@ -69,7 +69,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$navH: 54px;
 .navbar {
   position: fixed;
   top: 0;
@@ -82,7 +81,7 @@ $navH: 54px;
   z-index: 9999;
   background-color: #50BC83;
   border: none;
-  height: $navH;
+  height: $nav-height;
   > .nav {
     flex-shrink: 0;
   }
@@ -91,7 +90,7 @@ $navH: 54px;
     $origH: 400px;
     $h: 50px;
     display: block;
-    margin: ($navH - $h) / 2 auto;
+    margin: ($nav-height - $h) / 2 auto;
     flex-basis: $origW * $h / $origH;
     height: $h;
     flex-shrink: 1;
@@ -157,7 +156,7 @@ $navH: 54px;
       background-color: #50BC83;
       width: 100vw;
       position: absolute;
-      top: $navH;
+      top: $nav-height;
       left: 0;
       z-index: 9999;
       margin: 0;

@@ -48,6 +48,11 @@
    - `SERVER_PORT` ，預設為 3000
    - `SERVER_HOST` ，預設為 localhost
 
+### Style
+
+1. 本專案使用 scss + [styleResource](https://github.com/nuxt-community/style-resources-module/)
+2. 所有放在 `~/assets/scss/variables/` 底下的 scss 都會被自動 import 到所有 single file component 中
+
 ### 執行步驟
 
 ```bash
