@@ -115,7 +115,7 @@ export default {
     }
   },
   server: {
-    port: 20200,
-    host: '0.0.0.0'
+    port: process.env.SERVER_PORT || 3000,
+    host: process.env.SERVER_HOST || 'localhost'
   }
 }
