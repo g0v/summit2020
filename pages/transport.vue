@@ -5,7 +5,7 @@
         class="transport-map"
         :markers="locations"
       />
-      <div class="transport-nav">
+      <div class="transport-nav mb0 mb5-l">
         <div
           v-for="(location, index) in locations"
           :id="`location-link-${location.id}`"
@@ -213,8 +213,8 @@ export default {
     max-width: 960px;
     margin: 2rem auto;
     padding: 0 0 6rem;
-    &:first-child {
-      margin-top: 0;
+    &:last-child {
+      padding-bottom: 0;
     }
 
     &::after {
