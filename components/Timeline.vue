@@ -6,6 +6,7 @@
         <div class="label">
           <div v-if="point.date" class="date">{{ point.date }}</div>
           <div class="title">{{ point.title }}</div>
+          <div v-if="point.description" class="description">{{ point.description }}</div>
         </div>
       </div>
     </div>
@@ -77,6 +78,11 @@ $d: 2rem;
       }
       > .title {
         font-size: 1.25rem;
+        line-height: 1.375;
+      }
+      > .description {
+        font-size: 0.875rem;
+        line-height: 1.25;
       }
     }
     &.small {

@@ -34,34 +34,34 @@ zh:
 import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
 import Timeline from '~/components/Timeline'
 
-const cfpTimeline = [
-  {
-    date: '6/8',
-    title: '徵稿開始'
-  },
-  {
-    date: '6/30',
-    title: '徵稿截止'
-  },
-  {
-    date: '7/30',
-    title: '公開討論、稿件修改截止'
-  },
-  {
-    date: '8 月底',
-    title: '公布議程'
-  },
-  {
-    date: '2020/12/3-6',
-    title: 'summit 2020'
-  }
-]
-
 export default {
   components: {
     Timeline
   },
   data () {
+    const cfpTimeline = [
+      {
+        date: '6/8',
+        title: this.$t('cfp')
+      },
+      {
+        date: '6/30',
+        title: this.$t('cfpClosed'),
+        description: this.$t('cfpClosedDescription')
+      },
+      {
+        date: '8/2',
+        title: this.$t('cfpFinalized')
+      },
+      {
+        date: this.$t('eoAugust'),
+        title: this.$t('programAnnouncement')
+      },
+      {
+        date: '2020/12/3-6',
+        title: 'summit 2020'
+      }
+    ]
     return {
       cfpTimeline
     }

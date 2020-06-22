@@ -10,6 +10,12 @@ export default {
   feed: 'Feed',
   staff: 'Staff',
   registration: 'Registration',
+  cfp: 'Call for Proposals',
+  cfpClosed: 'Call closed',
+  cfpClosedDescription: 'Continue to modify proposals',
+  cfpFinalized: 'Proposals finalized',
+  eoAugust: 'End of August',
+  programAnnouncement: 'Announce Programming',
 
   // transportation
   venuelocationName: '地點名稱-en',

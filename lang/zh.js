@@ -10,6 +10,12 @@ export default {
   feed: '社群動態',
   staff: '工作人員',
   registration: '立即購票',
+  cfp: '議程徵集',
+  cfpClosed: '投稿截止',
+  cfpClosedDescription: '繼續修改稿件內容',
+  cfpFinalized: '稿件修改截止',
+  eoAugust: '8 月底',
+  programAnnouncement: '公布議程',
 
   // transportation
   venuelocationName: '地點名稱-華語',
