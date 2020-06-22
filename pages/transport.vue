@@ -13,7 +13,9 @@
           class="location-link"
           :class="{ active: routeHash === location.id }"
           @click="whereIs(location.id)"
-        >{{ location[$t('venuelocationNameShort')] }}</div>
+        >
+          {{ location[$t('venuelocationNameShort')] }}
+        </div>
       </div>
       <!-- {{ coords }} -->
       <div class="locations">
