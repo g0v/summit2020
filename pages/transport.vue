@@ -8,19 +8,20 @@
       <div class="transport-page-nav">
         <div
           v-for="(location, index) in locations"
+          :id="`location-link-${location.id}`"
           :key="index"
           class="location-link"
-          :class="{ active: routeHash === location[$t('venuelocationName')]}"
-          @click="whereIs(location[$t('venuelocationName')])"
+          :class="{ active: routeHash === location.id }"
+          @click="whereIs(location.id)"
         >
-          <span>{{ location[$t('venuelocationName')] }}</span>
+          <span>{{ location[$t('venuelocationNameShort')] }}</span>
         </div>
       </div>
       <!-- {{ coords }} -->
       <div class="venue-location">
-        <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
+        <div v-for="(location, index) in locations" :id="`location-${location.id}`" :key="index" class="venue-location-detail">
           <OpenStreepMap
-            class="locatipn-photo"
+            class="location-photo"
             :markers="[locations[index]]"
           />
           <div class="venue-location-detail-data">
@@ -53,6 +54,35 @@ import { friendlyHeader } from '~/utils/crawlerFriendly'
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
 
+// t = current time
+// b = start value
+// c = change in value
+// d = duration
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d / 2
+  if (t < 1) { return c / 2 * t * t + b }
+  t--
+  return -c / 2 * (t * (t - 2) - 1) + b
+}
+
+function scrollTo (to, duration) {
+  const element = document.querySelector('html')
+  const start = element.scrollTop
+  const change = to - start
+  let currentTime = 0
+  const increment = 20
+
+  const animateScroll = () => {
+    currentTime += increment
+    const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
+    element.scrollTop = val
+    if (currentTime < duration) {
+      setTimeout(animateScroll, increment)
+    }
+  }
+  animateScroll()
+}
+
 export default {
   components: {
     OpenStreepMap
@@ -66,11 +96,11 @@ export default {
         ...location,
         coordinates: location.coordinates.split(',').map(o => +o)
       })).reduce((m, location) => {
-        if (m.has(location[this.$t('venuelocationName')])) {
-          const currentLocation = m.get(location[this.$t('venuelocationName')])
+        if (m.has(location.id)) {
+          const currentLocation = m.get(location.id)
           currentLocation.events.push(location)
         } else {
-          m.set(location[this.$t('venuelocationName')], {
+          m.set(location.id, {
             events: [location],
             ...location
           })
@@ -80,47 +110,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      document.querySelectorAll('.location-link').forEach((link) => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault()
-          const header = document.querySelector(`#${link.textContent}`)
-          scrollTo(header.offsetTop, 550)
-        })
-      })
-
-      function scrollTo (to, duration) {
-        const element = document.querySelector('.pages-container')
-        const start = element.scrollTop
-        const change = to - start
-        let currentTime = 0
-        const increment = 20
-
-        const animateScroll = () => {
-          currentTime += increment
-          const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
-          // eslint-disable-next-line no-console
-          console.log(val.toFixed(4))
-          element.scrollTop = val
-          if (currentTime < duration) {
-            setTimeout(animateScroll, increment)
-            document.documentElement.scrollTop = 0
-          }
-        }
-        animateScroll()
-      }
-
-      // t = current time
-      // b = start value
-      // c = change in value
-      // d = duration
-      Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d / 2
-        if (t < 1) { return c / 2 * t * t + b }
-        t--
-        return -c / 2 * (t * (t - 2) - 1) + b
-      }
-    })
+    this.$router.push({ hash: null })
   },
   methods: {
     gmapLink (location) {
@@ -137,9 +127,10 @@ export default {
         })
       }
     },
-    whereIs (locationName) {
-      this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
-      this.$router.push({ hash: locationName })
+    whereIs (locationId) {
+      this.$router.push({ hash: locationId })
+      const header = document.querySelector(`#location-${locationId}`)
+      scrollTo(header.offsetTop - 54, 250) // 54 = Navbar height
     }
   },
   head: friendlyHeader({
@@ -170,67 +161,52 @@ export default {
     z-index: 1100;
     width: 100%;
     background-color: $blue;
-    color: #555;
+    color: $gray;
     display: flex;
-    // justify-content: space-around;
-    flex-wrap: nowrap;
-    // flex-direction: column;
-    overflow: auto;
     flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    line-height: 1.25;
     @media screen and (min-width: 800px) {
       overflow: visible;
-      flex-wrap: wrap;
-      flex-direction: row;
     }
-
     .location-link {
+      position: relative;
       flex: 0 0 auto;
       text-align: center;
-      flex-basis: 32%;
+      flex-basis: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 640px) {
         flex-basis: (100% / 7);
       }
       span {
         display: inline-block;
         padding: .7em;
-
+        color: $gray;
         cursor: pointer;
-
         transition: color .3s ease-out;
-        color: #555;
-        &:hover {
-          color: #fff;
-        }
-        &:focus {
+        &:active, &:focus {
           outline: none;
         }
       }
-
+      // underline
       &::before {
         content: '';
         display: block;
-        height: 0.15em;
+        height: 0.25rem;
         position: absolute;
         bottom: 0;
         left: 0;
         background-color: #555;
+        transition: width .3s ease-in-out;
       }
-
       &::before {
-        content: '';
         width: 0;
       }
-      &.active {
-        // 做底線
-        position: relative;
-        &::before {
-          content: '';
-          width: 100%;
-          transition: width .3s ease-in-out;
-        }
+      &.active::before {
+        width: 100%;
       }
     }
   }
@@ -245,7 +221,7 @@ export default {
     padding: 1.5rem 0 4.5rem;
 
     $photo-desktop-width: 300px;
-    .locatipn-photo {
+    .location-photo {
       margin-right: 10px;
       float: none;
       width: 100%;
