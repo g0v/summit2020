@@ -1,13 +1,14 @@
 <template>
   <div class="timeline">
     <div class="timeline-container">
-      <div class="point" :class="point.class" v-for="(point, pointIndex) of points" :key="pointIndex">
-      <div class="circle" />
-      <div class="label">
-        <div v-if="point.date" class="date">{{ point.date }}</div>
-        <div class="title">{{ point.title }}</div>
+      <div v-for="(point, pointIndex) of points" :key="pointIndex" class="point" :class="point.class">
+        <div class="circle" />
+        <div class="label">
+          <div v-if="point.date" class="date">{{ point.date }}</div>
+          <div class="title">{{ point.title }}</div>
+          <div v-if="point.description" class="description">{{ point.description }}</div>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </template>
@@ -15,7 +16,10 @@
 <script>
 export default {
   props: {
-    points: Array
+    points: {
+      type: Array,
+      default: () => []
+    }
   }
 }
 </script>
@@ -74,6 +78,19 @@ $d: 2rem;
       }
       > .title {
         font-size: 1.25rem;
+        line-height: 1.375;
+      }
+      > .description {
+        font-size: 0.875rem;
+        line-height: 1.25;
+      }
+    }
+    &.small {
+      > .circle {
+        $ds: $d / 5 * 3;
+        width: $ds;
+        height: $ds;
+        transform: translate(($d - $ds) / 2, ($d - $ds) / 2);
       }
     }
   }

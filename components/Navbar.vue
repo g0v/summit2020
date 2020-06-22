@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bb shadow-1" :class="{'en-css': isUseENCSS}">
+  <div class="navbar bb" :class="{'en-css': isUseENCSS}">
     <nav class="nav">
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
@@ -71,6 +71,9 @@ export default {
 <style lang="scss" scoped>
 $navH: 54px;
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +81,6 @@ $navH: 54px;
   width: 100vw;
   z-index: 9999;
   background-color: #50BC83;
-  padding: 0 1rem;
   border: none;
   height: $navH;
   > .nav {
@@ -102,6 +104,10 @@ $navH: 54px;
     flex-basis: 2.25rem;
     flex-shrink: 0;
     text-align: right;
+    a {
+      min-width: 4rem;
+      padding: 0.75rem;
+    }
   }
   a {
     color: #fff;
@@ -117,9 +123,10 @@ $navH: 54px;
     border: none;
   }
   .navbar-collapse {
+    margin-left: 0.75rem;
     display: flex;
-    a:not(:first-child) {
-      margin-left: 0.5rem;
+    a {
+      padding: 0.25rem;
     }
   }
 }
@@ -135,7 +142,7 @@ $navH: 54px;
   .navbar {
     .navbar-toggler {
       display: block;
-      padding-right: 0.25rem;
+      padding: 0.5rem 1rem;
       font-size: 1.5rem;
     }
     .navbar-collapse {
@@ -153,7 +160,7 @@ $navH: 54px;
       top: $navH;
       left: 0;
       z-index: 9999;
-      box-shadow: 0 4px 4px -2px rgba(black, .125);
+      margin: 0;
       padding: 0.25rem 0;
       > a {
         margin: 0;

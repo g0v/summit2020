@@ -10,7 +10,7 @@ process.env.SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
 import { friendlyHeader } from './utils/crawlerFriendly'
 
 const defaultHeader = friendlyHeader({
-  description: 'g0v Summit 國際雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等面向，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。',
+  description: 'g0v Summit 台灣零時政府雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等議題，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。',
   coverUrl: '/og.png'
 })()
 
@@ -20,7 +20,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'g0v Summit 台灣零時政府雙年會',
+    title: 'g0v Summit 2020 台灣零時政府雙年會',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,8 +34,7 @@ export default {
     ]
   },
   router: {
-    base: process.env.ROUTER_BASE || '/',
-    middleware: 'scrollTop'
+    base: process.env.ROUTER_BASE || '/'
   },
   /*
   ** Customize the progress-bar color
@@ -114,5 +113,9 @@ export default {
         }
       )
     }
+  },
+  server: {
+    port: 20200,
+    host: '0.0.0.0'
   }
 }

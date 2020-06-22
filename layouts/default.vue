@@ -1,10 +1,10 @@
 <template>
   <div class="entry-point">
-    <navbar />
-    <div class="pages-container">
+    <div class="page-container">
       <nuxt />
-      <Footer />
     </div>
+    <navbar />
+    <Footer />
   </div>
 </template>
 <script>
@@ -19,18 +19,13 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  overflow: hidden;
+body, .entry-point, .page-container {
+  width: 100%;
 }
-.entry-point {
-  height: 100vh;
-}
-.pages-container {
+.page-container {
+  padding-top: 54px;
+  padding-bottom: 48px;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: calc(100% - 62px);
-  @media (min-width: 951px) {
-    height: calc(100% - 78px);
-  }
 }
 </style>

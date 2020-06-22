@@ -1,6 +1,6 @@
 import { cleanMarkdown } from './markdownUtils'
 
-const TITLE_TAIL = ' | g0v Summit 台灣零時政府雙年會'
+const TITLE_TAIL = ' / g0v Summit 2020 台灣零時政府雙年會'
 
 export function summaryFromMarkdown (content, max = 100) {
   const text = cleanMarkdown(content, true, true)

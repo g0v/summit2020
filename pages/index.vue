@@ -19,38 +19,45 @@
 import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
 import Timeline from '~/components/Timeline'
 
-const bigTimeline = [
-  {
-    title: 'summit 2014'
-  },
-  {
-    title: 'summit 2016'
-  },
-  {
-    title: 'summit 2018'
-  },
-  {
-    title: 'summit 2020 徵稿'
-  },
-  {
-    date: '2020/6/30',
-    title: '徵稿截止',
-    class: 'large'
-  },
-  {
-    date: '2020/7/30',
-    title: ' 稿件修改截止',
-    class: 'large'
-  },
-  {
-    date: '2020/12/3-6',
-    title: 'summit 2020',
-    class: 'large'
-  }
-]
-
 export default {
+  components: {
+    Timeline
+  },
   data () {
+    const bigTimeline = [
+      {
+        title: 'summit 2014',
+        class: 'small'
+      },
+      {
+        title: 'summit 2016',
+        class: 'small'
+      },
+      {
+        title: 'summit 2018',
+        class: 'small'
+      },
+      {
+        title: 'summit 2020' + ' ' + this.$t('cfp'),
+        class: 'large'
+      },
+      {
+        date: '6/30',
+        title: this.$t('cfpClosed'),
+        description: this.$t('cfpClosedDescription'),
+        class: 'large'
+      },
+      {
+        date: '8/2',
+        title: this.$t('cfpFinalized'),
+        class: 'large'
+      },
+      {
+        date: '12/3-6',
+        title: 'summit 2020',
+        class: 'large'
+      }
+    ]
     return {
       bigTimeline
     }
@@ -59,21 +66,19 @@ export default {
     description () {
       return summaryFromMarkdown(this.$t('article/summitAbout'))
     }
-  }),
-  components: {
-    Timeline
-  }
+  })
 }
 </script>
 <style lang="scss" scoped>
 .homepage {
-  padding-bottom: 4rem;
   > .landing {
     height: 45vh;
     max-height: 30rem;
     position: relative;
-    background: url("../assets/images/banner.png") center center no-repeat;
+    background: url("../assets/images/banner.png");
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 2rem;
     .g0v-logo {
       width: 28vw;

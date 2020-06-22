@@ -1,46 +1,43 @@
 <template>
   <client-only>
-    <div class="transport-page">
+    <div class="transport">
       <OpenStreepMap
-        class="transport-page-map"
+        class="transport-map"
         :markers="locations"
       />
-      <div class="transport-page-nav">
+      <div class="transport-nav">
         <div
           v-for="(location, index) in locations"
+          :id="`location-link-${location.id}`"
           :key="index"
           class="location-link"
-          :class="{ active: routeHash === location[$t('venuelocationName')]}"
-          @click="whereIs(location[$t('venuelocationName')])"
-        >
-          <span>{{ location[$t('venuelocationName')] }}</span>
-        </div>
+          :class="{ active: routeHash === location.id }"
+          @click="whereIs(location.id)"
+        >{{ location[$t('venuelocationNameShort')] }}</div>
       </div>
       <!-- {{ coords }} -->
-      <div class="venue-location">
-        <div v-for="(location, index) in locations" :id="location[$t('venuelocationName')]" :key="index" class="venue-location-detail">
+      <div class="locations">
+        <div v-for="(location, index) in locations" :id="`location-${location.id}`" :key="index" class="location">
           <OpenStreepMap
-            class="locatipn-photo"
+            class="location-photo"
             :markers="[locations[index]]"
           />
-          <div class="venue-location-detail-data">
-            <h1>
-              {{ location[$t('venuelocationName')] }}
-            </h1>
+          <div class="location-detail">
+            <h3>{{ location[$t('venuelocationName')] }}</h3>
             <p>
-              <span class="venue-location-detail-data-address">
+              <span class="location-detail-address">
                 {{ location[$t('venuelocationAddress')] }}
                 <div class="map-link" target="_blank" @click="gmapLink(location)">
-                  <img :src="require('~/assets/images/map-marker.png')" alt="">
+                  <img :src="require('~/assets/images/map-marker.png')">
                 </div>
               </span>
             </p>
             <div class="event-title">
-              {{ $t('events') }}
+              <span>{{ $t('events') }}</span>
             </div>
-            <ul class="venue-location-detail-data-events">
+            <ul class="location-detail-events">
               <li v-for="event in location.events" :key="event.id">
-                <span>{{ event['日期'] }} {{ event[$t('venuelocationEventName')] }}  {{ event[$t('venuelocationSubEventName')] }}</span>
+                <span>{{ event['日期'] }} - {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
               </li>
             </ul>
           </div>
@@ -55,6 +52,35 @@ import { friendlyHeader } from '~/utils/crawlerFriendly'
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
 
+// t = current time
+// b = start value
+// c = change in value
+// d = duration
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d / 2
+  if (t < 1) { return c / 2 * t * t + b }
+  t--
+  return -c / 2 * (t * (t - 2) - 1) + b
+}
+
+function scrollTo (to, duration) {
+  const element = document.querySelector('html')
+  const start = element.scrollTop
+  const change = to - start
+  let currentTime = 0
+  const increment = 20
+
+  const animateScroll = () => {
+    currentTime += increment
+    const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
+    element.scrollTop = val
+    if (currentTime < duration) {
+      setTimeout(animateScroll, increment)
+    }
+  }
+  animateScroll()
+}
+
 export default {
   components: {
     OpenStreepMap
@@ -68,11 +94,12 @@ export default {
         ...location,
         coordinates: location.coordinates.split(',').map(o => +o)
       })).reduce((m, location) => {
-        if (m.has(location[this.$t('venuelocationName')])) {
-          const currentLocation = m.get(location[this.$t('venuelocationName')])
+        const locationIdentifier = location[this.$t('venuelocationName')]
+        if (m.has(locationIdentifier)) {
+          const currentLocation = m.get(locationIdentifier)
           currentLocation.events.push(location)
         } else {
-          m.set(location[this.$t('venuelocationName')], {
+          m.set(locationIdentifier, {
             events: [location],
             ...location
           })
@@ -82,47 +109,7 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      document.querySelectorAll('.location-link').forEach((link) => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault()
-          const header = document.querySelector(`#${link.textContent}`)
-          scrollTo(header.offsetTop, 550)
-        })
-      })
-
-      function scrollTo (to, duration) {
-        const element = document.querySelector('.pages-container')
-        const start = element.scrollTop
-        const change = to - start
-        let currentTime = 0
-        const increment = 20
-
-        const animateScroll = () => {
-          currentTime += increment
-          const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
-          // eslint-disable-next-line no-console
-          console.log(val.toFixed(4))
-          element.scrollTop = val
-          if (currentTime < duration) {
-            setTimeout(animateScroll, increment)
-            document.documentElement.scrollTop = 0
-          }
-        }
-        animateScroll()
-      }
-
-      // t = current time
-      // b = start value
-      // c = change in value
-      // d = duration
-      Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d / 2
-        if (t < 1) { return c / 2 * t * t + b }
-        t--
-        return -c / 2 * (t * (t - 2) - 1) + b
-      }
-    })
+    this.$router.push({ hash: null })
   },
   methods: {
     gmapLink (location) {
@@ -139,9 +126,10 @@ export default {
         })
       }
     },
-    whereIs (locationName) {
-      this.locations.filter(location => location[this.$t('venuelocationName')] === locationName)
-      this.$router.push({ hash: locationName })
+    whereIs (locationId) {
+      this.$router.push({ hash: locationId })
+      const header = document.querySelector(`#location-${locationId}`)
+      scrollTo(header.offsetTop - 54, 250) // 54 = Navbar height
     }
   },
   head: friendlyHeader({
@@ -154,17 +142,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$background-color: #E5F3F4;
-$main_green: #50bc83;
-$little_color: #4DEAFF;
+@import 'assets/scss/color';
 
-h1, h2, h3, h4, h5, h6 {
-  color: $main_green;
-}
-
-.transport-page {
+.transport {
   width: 100%;
-  background-color: $background-color * 10%;
   &-map {
     max-height: 80vh;
     height: 40rem;
@@ -176,83 +157,94 @@ h1, h2, h3, h4, h5, h6 {
   &-nav {
     position: sticky;
     top: 0;
-    z-index: 1100;
     width: 100%;
-    background-color: $little_color;
-    color: #555;
     display: flex;
-    // justify-content: space-around;
-    flex-wrap: nowrap;
-    // flex-direction: column;
-    overflow: auto;
     flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: auto;
+    background-color: $blue;
+    color: $gray;
+    line-height: 1.25;
+    z-index: 1100;
     @media screen and (min-width: 800px) {
       overflow: visible;
-      flex-wrap: wrap;
-      flex-direction: row;
     }
-
     .location-link {
+      position: relative;
       flex: 0 0 auto;
-      text-align: center;
-      flex-basis: 32%;
+      flex-basis: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
-      @media screen and (min-width: 800px) {
+      padding: 0.5rem 0.25rem;
+      text-align: center;
+      cursor: pointer;
+      @media screen and (min-width: 640px) {
         flex-basis: (100% / 7);
       }
-      span {
-        display: inline-block;
-        padding: .7em;
-
-        cursor: pointer;
-
-        transition: color .3s ease-out;
-        color: #555;
-        &:hover {
-          color: #fff;
-        }
-        &:focus {
-          outline: none;
-        }
+      &:active, &:focus {
+        outline: none;
       }
-
+      // underline
       &::before {
         content: '';
         display: block;
-        height: 0.15em;
+        height: 0.25rem;
         position: absolute;
         bottom: 0;
         left: 0;
         background-color: #555;
+        transition: width .3s ease-in-out;
       }
-
       &::before {
-        content: '';
         width: 0;
       }
-      &.active {
-        // 做底線
-        position: relative;
-        &::before {
-          content: '';
-          width: 100%;
-          transition: width .3s ease-in-out;
-        }
+      &.active::before {
+        width: 100%;
       }
     }
   }
 }
 
-.venue-location {
-  &-detail {
-    color: #555555;
-    max-width: 970px;
-    margin: auto;
+.locations {
+  .location {
+    position: relative;
+    color: $gray;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 0 6rem;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: left;
+    }
+    &::before { // eggs
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: calc(100% + 1.5rem);
+      left: 0;
+      width: 100%;
+      height: 80px;
+      margin: 0 auto;
+      background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 5% center, 95% center;
+    }
+    &:hover::before {
+      background-position: 95% center, 5% center;
+    }
+    &:first-child::before {
+      content: none;
+    }
 
     $photo-desktop-width: 300px;
-    .locatipn-photo {
+    &-photo {
       margin-right: 10px;
       float: none;
       width: 100%;
@@ -263,59 +255,23 @@ h1, h2, h3, h4, h5, h6 {
         height: $photo-desktop-width;
       }
     }
-    &::after {
-      content: '';
-      display: block;
-      clear: left;
-    }
-
-    // 分隔線的 egg
-    padding-top: 180px;
-    padding-bottom: 100px;
-
-    position: relative;
-    & + &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 85%;
-      left: 0;
-      right: 0;
-      background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 80px;
-
-      background-position: 0% center, 100% center;
-    }
-
-    & + &:hover::before {
-      background-position: 100% center, 0% center;
-    }
-
-    &-data {
-      font-size: 20px;
+    &-detail {
       $photo-data-desktop-spacer: 20px;
-
       margin-left: 0;
       padding: 0 1em;
       @media screen and (min-width: 800px) {
         margin-left: $photo-desktop-width + $photo-data-desktop-spacer;
         padding: 0;
       }
-
-      h1 {
-        line-height: 1;
-
+      h3 {
+        font-size: 1.75rem;
+        line-height: 1.25;
         @media screen and (min-width: 800px) {
           margin: 0;
         }
       }
-
-      line-height: 1.5;
       &-address {
         margin: .5em 0 1.5em;
-
         div {
           display: inline-block;
           cursor: pointer;
@@ -326,31 +282,28 @@ h1, h2, h3, h4, h5, h6 {
             vertical-align: middle;
           }
           &.map-link {
-            width: 48px;
-            height: 48px;
+            width: 32px;
+            height: 32px;
             img {
               height: 100%;
             }
           }
         }
       }
-
       .event-title {
-        margin: 0;
+        font-weight: bold;
+        span {
+          border-bottom: $gray 2px solid;
+        }
       }
-
       ul {
         list-style: none;
-        padding-left: 1em;
         margin: 0;
-        // line-height: 2.3;
-
         li {
           margin: .5em 0;
         }
         span {
-          background-color: $little_color;
-          padding: .1em .3em;
+          border-bottom: $blue 2px solid;
         }
       }
     }
@@ -358,30 +311,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes bounce {
-  from,
-  20%,
-  53%,
-  to {
+  from, 20%, 53%, to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 0, 0);
   }
-
-  40%,
-  43% {
+  40%, 43% {
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transform: translate3d(0, -20px, 0) scaleY(1.1);
   }
-
   70% {
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transform: translate3d(0, -10px, 0) scaleY(1.05);
   }
-
   80% {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 0, 0) scaleY(0.95);
   }
-
   90% {
     transform: translate3d(0, -3px, 0) scaleY(1.02);
   }
