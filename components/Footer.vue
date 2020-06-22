@@ -8,7 +8,9 @@
       <a class="fa fa-github" href="https://github.com/g0v/summit2020" />
       <a class="fa fa-envelope" href="mailto:host@summit.g0v.tw" />
     </div>
-    <div class="license">CC BY 4.0</div>
+    <div class="license">
+      CC BY 4.0
+    </div>
   </div>
 </template>
 <i18n lang="yaml">

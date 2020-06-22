@@ -4,9 +4,15 @@
       <div v-for="(point, pointIndex) of points" :key="pointIndex" class="point" :class="point.class">
         <div class="circle" />
         <div class="label">
-          <div v-if="point.date" class="date">{{ point.date }}</div>
-          <div class="title">{{ point.title }}</div>
-          <div v-if="point.description" class="description">{{ point.description }}</div>
+          <div v-if="point.date" class="date">
+            {{ point.date }}
+          </div>
+          <div class="title">
+            {{ point.title }}
+          </div>
+          <div v-if="point.description" class="description">
+            {{ point.description }}
+          </div>
         </div>
       </div>
     </div>

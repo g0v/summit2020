@@ -23,6 +23,18 @@
 5. 所有下載後的檔案，都會放在 `~/assets/articles` 與 `~/assets/tables` 底下，並會 commit 到 git 裡
 6. 若要新增文案，須手動加入 `~/lang/zh.js` 與 `~/lang/en.js` 中
 
+## 環境變數列表
+
+本專案使用 [dotenv](https://www.npmjs.com/package/dotenv)，你可以將想要使用的環境變數，加到專案根目錄的 `.env` 中，就會自動被帶入環境變數中。
+
+- 必填
+  1. 目前尚無必填的環境變數
+- 選填
+  1. `DOMAIN` - 產生靜態檔案時 (`nuxt generate`) 使用，確保 social tagging 指到正確的網址
+  2. `ROUER_BASE` - 網站不是跑在根目錄時使用，會影響 [nuxt.router.base](https://nuxtjs.org/api/configuration-router/#base)，預設為 ''
+  3. `AIRTABLE_API_KEY` - Airtable 存取金鑰，使用方式請見[文案資訊](#文案資訊)
+  4. `SERVER_PORT`, `SERVER_HOST` - 伺服器綁定設定，使用方式請見[開發流程](#開發流程)
+
 ## 開發須知
 
 ### 開發流程
@@ -32,6 +44,9 @@
    - 所有進到 master 的 commit ，都會被編到 Github page 上，當作[內部預覽](https://g0v.github.io/summit2020)
    - 所有開頭為 `release-` 的 tag ，都會被編到 production-pages branch ，發佈在正式網站
 2. 確定程式碼遵守 nuxt 的 eslint 規範，細節請見 .eslintrs.js ，或使用支援 linter 的編輯器，例如 VS Code，否則 PR 會失敗呦
+3. 若需要自訂開發時的 Interface 與 Port ，請在 .env 裡加上：
+   - `SERVER_PORT` ，預設為 3000
+   - `SERVER_HOST` ，預設為 localhost
 
 ### 執行步驟
 
