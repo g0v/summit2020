@@ -13,9 +13,7 @@
           class="location-link"
           :class="{ active: routeHash === location.id }"
           @click="whereIs(location.id)"
-        >
-          <span>{{ location[$t('venuelocationNameShort')] }}</span>
-        </div>
+        >{{ location[$t('venuelocationNameShort')] }}</div>
       </div>
       <!-- {{ coords }} -->
       <div class="venue-location">
@@ -159,38 +157,34 @@ export default {
   &-nav {
     position: sticky;
     top: 0;
-    z-index: 1100;
     width: 100%;
-    background-color: $blue;
-    color: $gray;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: auto;
+    background-color: $blue;
+    color: $gray;
     line-height: 1.25;
+    z-index: 1100;
     @media screen and (min-width: 800px) {
       overflow: visible;
     }
     .location-link {
       position: relative;
       flex: 0 0 auto;
-      text-align: center;
       flex-basis: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 0.25rem;
+      text-align: center;
+      cursor: pointer;
       @media screen and (min-width: 640px) {
         flex-basis: (100% / 7);
+        padding: 0.5rem 0.25rem;
       }
-      span {
-        display: inline-block;
-        padding: .7em;
-        color: $gray;
-        cursor: pointer;
-        transition: color .3s ease-out;
-        &:active, &:focus {
-          outline: none;
-        }
+      &:active, &:focus {
+        outline: none;
       }
       // underline
       &::before {
