@@ -1,6 +1,7 @@
 [
   {
     "id": "reckmDKnqBhq3GLj7",
+    "地點名稱-短-en": "A Break Cafe",
     "活動名稱-en": "Facing the Ocean Meet & Hack (HK-TW-JP-KR)",
     "日期": "2020-12-03",
     "share-link": "https://goo.gl/maps/7EaSRVNNF1yBqS2E9",
@@ -9,14 +10,14 @@
     "地點名稱-en": "A Break Cafe",
     "活動名稱-華語": "《面海松》港台日韓黑客松",
     "coordinates": "22.982368,120.193104",
+    "地點名稱-短-華語": "午營",
     "子活動名稱-華語": "FtO 台南 2020",
     "地點名稱-華語": "午營咖啡",
-    "地址-華語": "702 台南市南區福吉路 64 號 4 樓",
-    "地點名稱-短-華語": "午營",
-    "地點名稱-短-en": "A Break Cafe"
+    "地址-華語": "702 台南市南區福吉路 64 號 4 樓"
   },
   {
     "id": "recEkqDpN8kTsei7l",
+    "地點名稱-短-en": "Art Museum",
     "活動名稱-en": "Local Program",
     "日期": "2020-12-04",
     "share-link": "https://goo.gl/maps/7S2rPvozFzLHubkZA",
@@ -25,14 +26,14 @@
     "地點名稱-en": "Performing Arts Theatre - Tainan Art Museum Hall 2",
     "活動名稱-華語": "在地議程",
     "coordinates": "22.99054,120.201436",
+    "地點名稱-短-華語": "南美館",
     "子活動名稱-華語": "g0v 揪松團：零時小學堂",
     "地點名稱-華語": "臺南市美術館 2 館 - 跨域展覽廳",
-    "地址-華語": "700 台南市中西區忠義路二段 1 號",
-    "地點名稱-短-華語": "南美館",
-    "地點名稱-短-en": "Art Museum"
+    "地址-華語": "700 台南市中西區忠義路二段 1 號"
   },
   {
     "id": "recYve9mfdynQ0Zm8",
+    "地點名稱-短-en": "Wu Garden",
     "活動名稱-en": "Local Program",
     "日期": "2020-12-04",
     "share-link": "https://goo.gl/maps/Uj9zzA6SKosg62qC9",
@@ -41,14 +42,14 @@
     "地點名稱-en": "Wu Garden (Former Tainan Public Hall)",
     "活動名稱-華語": "在地議程",
     "coordinates": "22.99462,120.205988",
-    "子活動名稱-華語": "台南新芽：縣市合併 10 週年",
-    "地點名稱-華語": "吳園（原公會堂）",
-    "地址-華語": "700 台南市中西區民權路二段 30 號",
     "地點名稱-短-華語": "吳園",
-    "地點名稱-短-en": "Wu Garden"
+    "子活動名稱-華語": "台南新芽：縣市合併 10 週年",
+    "地點名稱-華語": "吳園 - 原公會堂",
+    "地址-華語": "700 台南市中西區民權路二段 30 號"
   },
   {
     "id": "recNK6y7amzCQrLCa",
+    "地點名稱-短-en": "Good-Ideas",
     "活動名稱-en": "Local Program",
     "日期": "2020-12-04",
     "share-link": "https://goo.gl/maps/cz689c3Ch5oHTQF97",
@@ -57,14 +58,14 @@
     "地點名稱-en": "Good-Ideas Studio",
     "活動名稱-華語": "在地議程",
     "coordinates": "22.999968,120.212847",
+    "地點名稱-短-華語": "好想",
     "子活動名稱-華語": "好想工作室：在地資訊人才培育",
     "地點名稱-華語": "好想工作室",
-    "地址-華語": "701 台南市東區北門路二段 16 號 L2A",
-    "地點名稱-短-華語": "好想",
-    "地點名稱-短-en": "Good-Ideas"
+    "地址-華語": "701 台南市東區北門路二段 16 號 L2A"
   },
   {
     "id": "recsU2zyCPlx8Xt0b",
+    "地點名稱-短-en": "C-Hub",
     "活動名稱-en": "Local Program",
     "日期": "2020-12-04",
     "share-link": "https://goo.gl/maps/vCYNCCwRV2KpeyhA9",
@@ -73,14 +74,14 @@
     "地點名稱-en": "C-Hub",
     "活動名稱-華語": "在地議程",
     "coordinates": "23.001315,120.214939",
+    "地點名稱-短-華語": "C-Hub",
     "子活動名稱-華語": "台南在地自造者社群",
     "地點名稱-華語": "C-Hub",
-    "地址-華語": "701 台南市東區大學路 1 號",
-    "地點名稱-短-華語": "C-Hub",
-    "地點名稱-短-en": "C-Hub"
+    "地址-華語": "701 台南市東區大學路 1 號"
   },
   {
     "id": "recM5LIEqcIZw5uZC",
+    "地點名稱-短-en": "Magic School",
     "活動名稱-en": "International Program",
     "日期": "2020-12-05",
     "share-link": "https://goo.gl/maps/una3ierpiHcE2a5v5",
@@ -89,14 +90,14 @@
     "地點名稱-en": "Magic School of Green Technologies",
     "活動名稱-華語": "國際議程",
     "coordinates": "23.001872,120.21605",
+    "地點名稱-短-華語": "魔法學校",
     "子活動名稱-華語": "場地 1",
     "地點名稱-華語": "綠色魔法學校",
-    "地址-華語": "701 台南市北區小東路 25 號",
-    "地點名稱-短-華語": "魔法學校",
-    "地點名稱-短-en": "Magic School"
+    "地址-華語": "701 台南市北區小東路 25 號"
   },
   {
     "id": "recFNxJ975WRQ9civ",
+    "地點名稱-短-en": "C-Hub",
     "活動名稱-en": "International Program",
     "日期": "2020-12-05",
     "share-link": "https://goo.gl/maps/vCYNCCwRV2KpeyhA9",
@@ -105,14 +106,14 @@
     "地點名稱-en": "C-Hub",
     "活動名稱-華語": "國際議程",
     "coordinates": "23.001315,120.214939",
+    "地點名稱-短-華語": "C-Hub",
     "子活動名稱-華語": "場地 2",
     "地點名稱-華語": "C-Hub",
-    "地址-華語": "701 台南市東區大學路 1 號",
-    "地點名稱-短-華語": "C-Hub",
-    "地點名稱-短-en": "C-Hub"
+    "地址-華語": "701 台南市東區大學路 1 號"
   },
   {
     "id": "recSwRD2nsASRFFZi",
+    "地點名稱-短-en": "Zhenxing Village",
     "活動名稱-en": "Dinner Party & Lightning Talks",
     "日期": "2020-12-05",
     "share-link": "https://goo.gl/maps/TWJhoPbgUL8eVUVk7",
@@ -121,14 +122,14 @@
     "地點名稱-en": "Zhenxing Village Assembly Center",
     "活動名稱-華語": "晚宴及閃電講",
     "coordinates": "23.006523,120.224366",
+    "地點名稱-短-華語": "振興里",
     "子活動名稱-華語": "台南辦桌",
     "地點名稱-華語": "振興里里民活動中心",
-    "地址-華語": "704 北區林森路三段 181 號",
-    "地點名稱-短-華語": "振興里",
-    "地點名稱-短-en": "Zhenxing Village"
+    "地址-華語": "704 北區林森路三段 181 號"
   },
   {
     "id": "recWxjZYVaeoJ2Sft",
+    "地點名稱-短-en": "Magic School",
     "活動名稱-en": "Keynote Speeches",
     "日期": "2020-12-06",
     "share-link": "https://goo.gl/maps/una3ierpiHcE2a5v5",
@@ -137,14 +138,14 @@
     "地點名稱-en": "Magic School of Green Technologies",
     "活動名稱-華語": "基調演講",
     "coordinates": "23.001872,120.21605",
+    "地點名稱-短-華語": "魔法學校",
     "子活動名稱-華語": "全場聯播",
     "地點名稱-華語": "綠色魔法學校",
-    "地址-華語": "701 台南市北區小東路 25 號",
-    "地點名稱-短-華語": "魔法學校",
-    "地點名稱-短-en": "Magic School"
+    "地址-華語": "701 台南市北區小東路 25 號"
   },
   {
     "id": "rec4RGUAGn6mzFHoq",
+    "地點名稱-短-en": "C-Hub",
     "活動名稱-en": "Keynote Speeches",
     "日期": "2020-12-06",
     "share-link": "https://goo.gl/maps/vCYNCCwRV2KpeyhA9",
@@ -153,14 +154,14 @@
     "地點名稱-en": "C-Hub",
     "活動名稱-華語": "基調演講",
     "coordinates": "23.001315,120.214939",
+    "地點名稱-短-華語": "C-Hub",
     "子活動名稱-華語": "全場聯播",
     "地點名稱-華語": "C-Hub",
-    "地址-華語": "701 台南市東區大學路 1 號",
-    "地點名稱-短-華語": "C-Hub",
-    "地點名稱-短-en": "C-Hub"
+    "地址-華語": "701 台南市東區大學路 1 號"
   },
   {
     "id": "recVec0uIE2ii0VTu",
+    "地點名稱-短-en": "Magic School",
     "活動名稱-en": "Unconference",
     "日期": "2020-12-06",
     "share-link": "https://goo.gl/maps/una3ierpiHcE2a5v5",
@@ -169,14 +170,14 @@
     "地點名稱-en": "Magic School of Green Technologies",
     "活動名稱-華語": "開放工作坊",
     "coordinates": "23.001872,120.21605",
+    "地點名稱-短-華語": "魔法學校",
     "子活動名稱-華語": "場地 1",
     "地點名稱-華語": "綠色魔法學校",
-    "地址-華語": "701 台南市北區小東路 25 號",
-    "地點名稱-短-華語": "魔法學校",
-    "地點名稱-短-en": "Magic School"
+    "地址-華語": "701 台南市北區小東路 25 號"
   },
   {
     "id": "recUpZHP86zBaZXn1",
+    "地點名稱-短-en": "C-Hub",
     "活動名稱-en": "Unconference",
     "日期": "2020-12-06",
     "share-link": "https://goo.gl/maps/vCYNCCwRV2KpeyhA9",
@@ -185,14 +186,14 @@
     "地點名稱-en": "C-Hub",
     "活動名稱-華語": "開放工作坊",
     "coordinates": "23.001315,120.214939",
+    "地點名稱-短-華語": "C-Hub",
     "子活動名稱-華語": "場地 2",
     "地點名稱-華語": "C-Hub",
-    "地址-華語": "701 台南市東區大學路 1 號",
-    "地點名稱-短-華語": "C-Hub",
-    "地點名稱-短-en": "C-Hub"
+    "地址-華語": "701 台南市東區大學路 1 號"
   },
   {
     "id": "recIPEseXuakYPeWN",
+    "地點名稱-短-en": "Wu Garden",
     "活動名稱-en": "Unconference",
     "日期": "2020-12-06",
     "share-link": "https://goo.gl/maps/Uj9zzA6SKosg62qC9",
@@ -201,14 +202,14 @@
     "地點名稱-en": "Wu Garden (Former Tainan Public Hall)",
     "活動名稱-華語": "開放工作坊",
     "coordinates": "22.99462,120.205988",
-    "子活動名稱-華語": "場地 3",
-    "地點名稱-華語": "吳園（原公會堂）",
-    "地址-華語": "700 台南市中西區民權路二段 30 號",
     "地點名稱-短-華語": "吳園",
-    "地點名稱-短-en": "Wu Garden"
+    "子活動名稱-華語": "場地 3",
+    "地點名稱-華語": "吳園 - 原公會堂",
+    "地址-華語": "700 台南市中西區民權路二段 30 號"
   },
   {
     "id": "recNQlXZSkPHpEcYq",
+    "地點名稱-短-en": "Good-Ideas",
     "活動名稱-en": "Unconference",
     "日期": "2020-12-06",
     "share-link": "https://goo.gl/maps/cz689c3Ch5oHTQF97",
@@ -217,10 +218,9 @@
     "地點名稱-en": "Good-Ideas Studio",
     "活動名稱-華語": "開放工作坊",
     "coordinates": "22.999968,120.212847",
+    "地點名稱-短-華語": "好想",
     "子活動名稱-華語": "場地 4",
     "地點名稱-華語": "好想工作室",
-    "地址-華語": "701 台南市東區北門路二段 16 號 L2A",
-    "地點名稱-短-華語": "好想",
-    "地點名稱-短-en": "Good-Ideas"
+    "地址-華語": "701 台南市東區北門路二段 16 號 L2A"
   }
 ]
