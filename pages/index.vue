@@ -3,6 +3,27 @@
     <div class="landing flex justify-center items-center bg-near-white">
       <img class="g0v-logo" :src="require('~/assets/images/g0v-logo.svg')">
     </div>
+    <div class="homepage__cfp pv3 pv4-l mb3 mb4-l shadow-3">
+      <div class="flex flex-column flex-row-l items-center justify-center">
+        <span class="f4 f3-l white tc lh-title">{{ $t('CFP_TITLE') }} ❤️️</span>
+        <a
+          class="pv1 ph3 mv3 mv0-l mh3-l f5 bg-white shadow-1 br-pill mid-gray hover-black"
+          href="https://propose.summit2020.g0v.tw/proposal-list"
+          rel="noopener"
+          target="_blank"
+        >
+          {{ $t('CFP_GOTO_LIST') }}
+        </a>
+        <a
+          class="pv1 ph3 f5 bg-mid-gray white shadow-1 br-pill hover-bg-dark-green b"
+          href="https://propose.summit2020.g0v.tw/"
+          rel="noopener"
+          target="_blank"
+        >
+          {{ $t('CFP_SUBMIT') }}
+        </a>
+      </div>
+    </div>
     <div class="text-container with-bubbles">
       <summit-markdown :content="$t('article/communityIntro')" />
       <summit-markdown :content="$t('article/summitAbout')" />
@@ -15,6 +36,16 @@
     </div>
   </div>
 </template>
+<i18n lang="yaml">
+en:
+  CFP_TITLE: We are calling for proposals!
+  CFP_GOTO_LIST: Read Proposals
+  CFP_SUBMIT: Submit Your Idea!
+zh:
+  CFP_TITLE: 議程現正徵集中
+  CFP_GOTO_LIST: 看投稿
+  CFP_SUBMIT: 馬上投！
+</i18n>
 <script>
 import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
 import Timeline from '~/components/Timeline'
@@ -71,6 +102,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 .homepage {
+  max-width: 100vw;
+  overflow-x: hidden;
+  &__cfp {
+    background: $green;
+
+    a {
+      letter-spacing: 2px;
+      transition: 300ms ease-in-out;
+    }
+  }
+
   > .landing {
     height: 45vh;
     max-height: 30rem;
