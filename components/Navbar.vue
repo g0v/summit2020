@@ -1,6 +1,6 @@
 <template>
   <div class="navbar" :class="{'en-css': isUseENCSS}">
-    <nav class="nav">
+    <nav class="nav mr2">
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
       </button>
@@ -27,7 +27,7 @@
         </template>
       </div>
     </nav>
-    <nuxt-link class="logo" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
+    <nuxt-link class="logo w4 w5-l h-100" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
     <div class="tail">
       <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
         Eng
@@ -76,33 +76,18 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
   width: 100%;
   z-index: 9999;
   background-color: #50BC83;
   border: none;
   height: $nav-height;
-  > .nav {
-    flex-shrink: 0;
-  }
   > .logo {
-    $origW: 2280px; // original w/h
-    $origH: 400px;
-    $h: 50px;
-    display: block;
-    margin: ($nav-height - $h) / 2 auto;
-    flex-basis: $origW * $h / $origH;
-    height: $h;
-    flex-shrink: 1;
     background-image: url('../assets/images/ocean-islands/logo-singleline-simple.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
   }
   > .tail {
-    flex-basis: 2.25rem;
-    flex-shrink: 0;
-    text-align: right;
     a {
       min-width: 4rem;
       padding: 0.75rem;
@@ -125,7 +110,10 @@ export default {
     margin-left: 0.75rem;
     display: flex;
     a {
-      padding: 0.25rem;
+      padding: 0.25rem 0.5rem;
+      &:not(:first-child) {
+        margin-left: 0.5rem;
+      }
     }
   }
 }

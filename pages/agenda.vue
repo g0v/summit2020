@@ -3,7 +3,7 @@
     <div class="banner-container">
       <div class="banner">
         <h1>{{ $t('title') }}</h1>
-        <a class="agenda-cta flex items-center justify-center" href=" https://propose.summit2020.g0v.tw/" target="_blank" rel="noopener">
+        <a class="agenda-cta flex items-center justify-center" href="https://propose.summit2020.g0v.tw/" target="_blank" rel="noopener">
           {{ $t('CFPButtonText') }}
         </a>
       </div>
