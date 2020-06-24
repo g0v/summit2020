@@ -5,7 +5,10 @@
     </div>
     <div class="homepage__cfp pv3 pv4-l mb3 mb4-l shadow-3">
       <div class="flex flex-column flex-row-l items-center justify-center">
-        <span class="f4 f3-l white tc lh-title">{{ $t('CFP_TITLE') }} ❤️️</span>
+        <span class="f4 f3-l white tc lh-title">
+          {{ $t('CFP_TITLE') }}
+          <i class="fa fa-heart red" />
+        </span>
         <a
           class="pv1 ph3 mv3 mv0-l mh3-l f5 bg-white shadow-1 br-pill mid-gray hover-black"
           href="https://propose.summit2020.g0v.tw/proposal-list"
