@@ -76,7 +76,7 @@ export default {
         class: 'large'
       },
       {
-        date: '6/30',
+        date: '7/15',
         title: this.$t('cfpClosed'),
         description: this.$t('cfpClosedDescription'),
         class: 'large'
