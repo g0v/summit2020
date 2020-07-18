@@ -41,16 +41,16 @@ export default {
   data () {
     const cfpTimeline = [
       {
-        date: '6/8',
+        date: this.$t('cfpDate'),
         title: this.$t('cfp')
       },
       {
-        date: '7/15',
+        date: this.$t('cfpClosedDate'),
         title: this.$t('cfpClosed'),
         description: this.$t('cfpClosedDescription')
       },
       {
-        date: '8/2',
+        date: this.$t('cfpFinalizedDate'),
         title: this.$t('cfpFinalized')
       },
       {
@@ -58,7 +58,7 @@ export default {
         title: this.$t('programAnnouncement')
       },
       {
-        date: '2020/12/3-6',
+        date: this.$t('summitDate'),
         title: 'summit 2020'
       }
     ]

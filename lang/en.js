@@ -17,6 +17,12 @@ export default {
   eoAugust: 'End of August',
   programAnnouncement: 'Announce Programming',
 
+  // date
+  cfpDate: 'Jun 08',
+  cfpClosedDate: 'Jul 15',
+  cfpFinalizedDate: 'Aug 02',
+  summitDate: 'Dec 03-06, 2020',
+
   // transportation
   venuelocationName: '地點名稱-en',
   venuelocationNameShort: '地點名稱-短-en',

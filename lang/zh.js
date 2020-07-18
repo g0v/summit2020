@@ -17,6 +17,12 @@ export default {
   eoAugust: '8 月底',
   programAnnouncement: '公布議程',
 
+  // date
+  cfpDate: '06/08',
+  cfpClosedDate: '07/15',
+  cfpFinalizedDate: '08/02',
+  summitDate: '2020/12/03~06',
+
   // transportation
   venuelocationName: '地點名稱-華語',
   venuelocationNameShort: '地點名稱-短-華語',
