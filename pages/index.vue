@@ -18,12 +18,12 @@
           {{ $t('CFP_GOTO_LIST') }}
         </a>
         <a
-          class="pv1 ph3 f5 bg-mid-gray white shadow-1 br-pill hover-bg-dark-green b"
-          href="https://propose.summit2020.g0v.tw/"
+          class="pv1 ph3 f5 bg-mid-gray white shadow-1 br-pill hover-bg-dark-green"
+          href="https://discuss.summit2020.g0v.tw/"
           rel="noopener"
           target="_blank"
         >
-          {{ $t('CFP_SUBMIT') }}
+          {{ $t('CFP_GOTO_FORUM') }}
         </a>
       </div>
     </div>
@@ -41,13 +41,13 @@
 </template>
 <i18n lang="yaml">
 en:
-  CFP_TITLE: We are calling for proposals!
+  CFP_TITLE: All proposals open for comment
   CFP_GOTO_LIST: Read Proposals
-  CFP_SUBMIT: Submit Your Idea!
+  CFP_GOTO_FORUM: Join Discussion
 zh:
-  CFP_TITLE: 議程現正徵集中
+  CFP_TITLE: 投稿截止，討論進行中
   CFP_GOTO_LIST: 看投稿
-  CFP_SUBMIT: 馬上投！
+  CFP_GOTO_FORUM: 參與討論
 </i18n>
 <script>
 import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
