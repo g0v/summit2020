@@ -3,13 +3,28 @@
     <div class="banner-container">
       <div class="banner">
         <h1>{{ $t('title') }}</h1>
-        <a class="agenda-cta flex items-center justify-center" href="https://propose.summit2020.g0v.tw/" target="_blank" rel="noopener">
-          {{ $t('CFPButtonText') }}
-        </a>
+        <div class="flex flex-column flex-row-l items-center justify-center">
+          <a
+            class="agenda-cta flex items-center justify-center mb3 mb0-l mr3-l"
+            href="https://propose.summit2020.g0v.tw/"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('CFP_GOTO_LIST') }}
+          </a>
+          <a
+            class="agenda-cta flex items-center justify-center"
+            href="https://discuss.summit2020.g0v.tw/"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ $t('CFP_GOTO_FORUM') }}
+          </a>
+        </div>
       </div>
     </div>
     <timeline :points="cfpTimeline" />
-    <div class="text-container with-bubbles">
+    <div class="text-container with-bubbles overflow-hidden overflow-visible-l">
       <div class="group">
         <summit-markdown :content="$t('article/summitAbout')" />
         <summit-markdown :content="$t('article/summitContent')" />
@@ -24,11 +39,13 @@
 <i18n lang="yaml">
 // ref: https://nuxt-community.github.io/nuxt-i18n/vue-i18n-loader.html
 en:
-  title: Call for Proposals
-  CFPButtonText: Submit Now
+  title: Open for comment
+  CFP_GOTO_LIST: Read Proposals
+  CFP_GOTO_FORUM: Join Discussion
 zh:
-  title: 議程招募
-  CFPButtonText: 馬上投稿
+  title: 投稿截止，討論進行中
+  CFP_GOTO_LIST: 看投稿
+  CFP_GOTO_FORUM: 參與討論
 </i18n>
 <script>
 import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
@@ -94,15 +111,10 @@ export default {
         line-height: 1.125;
         margin: 2rem 0;
       }
-      > a.agenda-cta {
+      a.agenda-cta {
         bottom: 0;
         right: 0;
         left: 0;
-        margin: auto;
-        @media (min-width: 800px) {
-          left: 36%;
-          right: auto;
-        }
         width: 15rem;
         height: 4rem;
         padding: 0 0.5rem;
