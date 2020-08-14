@@ -53,13 +53,20 @@
           </h2>
           <div v-for="(rental, index) in rentals" :key="index" class="fl w-50-ns pa2">
             <div class="rental">
-              <div class="icon-name">
+              <a class="icon-name" :href="rental.link" target="_blank">
                 <img :src="require(`../assets/images/v2/${rental.icon}`)" alt="">
-                <div class="name f2">{{ rental.name }}<br />{{ rental.cht_name }}</div>
-              </div>
+                <div class="name f2">
+                  {{ rental.name }}<br />
+                  {{ rental.cht_name }}
+                </div>
+              </a>
               <div v-if="rental.is_app" class="app-link">
-                <div><img :src="require(`../assets/images/v2/icon-Apple Store.png`)" alt=""></div>
-                <div><img :src="require(`../assets/images/v2/icon-Google Play.png`)" alt=""></div>
+                <a :href="rental.apple_link" target="_blank">
+                  <img :src="require(`../assets/images/v2/icon-Apple Store.png`)" alt="">
+                </a>
+                <a :href="rental.google_link" target="_blank">
+                  <img :src="require(`../assets/images/v2/icon-Google Play.png`)" alt="">
+                </a>
               </div>
             </div>
           </div>
@@ -140,17 +147,24 @@ export default {
         name: 'iRent',
         cht_name: '自助租車',
         icon: 'img-irentlogo.png',
-        is_app: true
+        is_app: true,
+        apple_link: 'https://apps.apple.com/tw/app/irent%E8%87%AA%E5%8A%A9%E7%A7%9F%E8%BB%8A/id860552248',
+        google_link: 'https://play.google.com/store/apps/details?id=com.cht.easyrent.irent',
+        link: 'https://www.easyrent.com.tw/irent/web/'
       }, {
         name: 'GoShare',
         cht_name: '移動共享服務',
         icon: 'img-gosharelogo.png',
-        is_app: true
+        is_app: true,
+        apple_link: 'https://apps.apple.com/tw/app/goshare-%E7%A7%BB%E5%8B%95%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8B%99/id1441601829',
+        google_link: 'https://play.google.com/store/apps/details?id=com.gogoro.goshare',
+        link: 'https://www.ridegoshare.com/tw/'
       }, {
         name: 'T-Bike',
         cht_name: '臺南市公共自行車',
         icon: 'img-tbikelogo.png',
-        is_app: false
+        is_app: false,
+        link: 'https://tbike.tainan.gov.tw/Portal'
       }]
     }
   },
@@ -382,6 +396,7 @@ export default {
     }
     height: 250px;
     .icon-name {
+      display: inline-block;
       img, .name {
         vertical-align: middle;
         margin-left: 12px;
@@ -397,7 +412,8 @@ export default {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      div {
+      a {
+        display: inline-block;
         flex: 1 1 100%;
         text-align: center;
         @media screen and (min-width: 30em) {
