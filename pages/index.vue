@@ -1,40 +1,18 @@
 <template>
   <div class="homepage">
     <div class="landing flex justify-center items-center bg-near-white">
-      <img class="g0v-logo" :src="require('~/assets/images/g0v-logo.svg')">
+      <img :src="require('~/assets/images/v2/banner-2.svg')">
     </div>
-    <div class="homepage__cfp pv3 pv4-l mb3 mb4-l shadow-3">
-      <div class="flex flex-column flex-row-l items-center justify-center">
-        <span class="f4 f3-l white tc lh-title">
-          {{ $t('CFP_TITLE') }}
-          <i class="fa fa-heart red" />
-        </span>
-        <a
-          class="pv1 ph3 mv3 mv0-l mh3-l f5 bg-white shadow-1 br-pill mid-gray hover-black"
-          href="https://propose.summit2020.g0v.tw/proposal-list"
-          rel="noopener"
-          target="_blank"
-        >
-          {{ $t('CFP_GOTO_LIST') }}
-        </a>
-        <a
-          class="pv1 ph3 f5 bg-mid-gray white shadow-1 br-pill hover-bg-dark-green"
-          href="https://discuss.summit2020.g0v.tw/"
-          rel="noopener"
-          target="_blank"
-        >
-          {{ $t('CFP_GOTO_FORUM') }}
-        </a>
-      </div>
-    </div>
-    <div class="text-container with-bubbles">
+    <div class="text-container article article-1">
       <summit-markdown :content="$t('article/communityIntro')" />
       <summit-markdown :content="$t('article/summitAbout')" />
       <summit-markdown :content="$t('article/summitIntro')" />
       <summit-markdown :content="$t('article/summitContent')" />
     </div>
-    <timeline :points="bigTimeline" />
-    <div class="text-container with-bubbles">
+    <div class="timeline-container">
+      <timeline :points="bigTimeline" />
+    </div>
+    <div class="text-container article article-2">
       <summit-markdown :content="$t('article/summitGuidelines')" />
     </div>
   </div>
@@ -73,23 +51,23 @@ export default {
       },
       {
         title: 'summit 2020' + ' ' + this.$t('cfp'),
-        class: 'large'
+        class: 'small'
       },
       {
         date: '7/15',
         title: this.$t('cfpClosed'),
-        description: this.$t('cfpClosedDescription'),
-        class: 'large'
+        // description: this.$t('cfpClosedDescription'),
+        class: 'small'
       },
       {
         date: '8/2',
         title: this.$t('cfpFinalized'),
-        class: 'large'
+        class: 'small'
       },
       {
-        date: '12/3-6',
+        date: '12/3 - 6',
         title: 'summit 2020',
-        class: 'large'
+        class: 'small'
       }
     ]
     return {
@@ -107,33 +85,66 @@ export default {
 .homepage {
   max-width: 100vw;
   overflow-x: hidden;
-  &__cfp {
-    background: $green;
-
-    a {
-      letter-spacing: 2px;
-      transition: 300ms ease-in-out;
-    }
-  }
 
   > .landing {
-    height: 45vh;
-    max-height: 30rem;
-    position: relative;
-    background: url("../assets/images/banner.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #fff;
     margin-bottom: 2rem;
-    .g0v-logo {
-      width: 28vw;
-      min-width: 10rem;
-      max-width: 30rem;
-      filter: drop-shadow(0 0 0.25rem #fff);
-      @media (max-width: 800px) {
-        width: 50vw;
-      }
+  }
+
+  .text-container {
+    padding: 0;
+    max-width: 760px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .article {
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
+  .article-1 {
+    &:before {
+      width: 196px;
+      height: 110px;
+      top: 2rem;
+      left: -260px;
+      background-image: url('../assets/images/v2/island-1.svg');
+    }
+    &:after {
+      width: 123px;
+      height: 50px;
+      bottom: 29rem;
+      right: -123px;
+      background-image: url('../assets/images/v2/island-2.svg');
+    }
+  }
+  .article-2 {
+    padding-bottom: 395px;
+    &:before {
+      width: 162px;
+      height: 83px;
+      top: 2rem;
+      left: -195px;
+      background-image: url('../assets/images/v2/island-3.svg');
+    }
+    &:after {
+      width: 487px;
+      height: 178px;
+      bottom: 10rem;
+      right: -244px;
+      background-image: url('../assets/images/v2/island-4.svg');
+    }
+  }
+  .timeline-container {
+    padding-top: 163px;
+  }
+
 }
 </style>
