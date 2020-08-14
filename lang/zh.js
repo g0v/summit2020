@@ -3,8 +3,9 @@ const { extractLanguageFromTable } = require('./utils')
 export default {
   // navbar
   speakers: '講者',
-  agenda: '投稿',
+  agenda: '議程',
   partners: '合作夥伴',
+  cosponsor: '共同主辦',
   transport: '交通',
   live: '直播',
   feed: '社群動態',

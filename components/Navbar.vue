@@ -7,14 +7,14 @@
       <div class="navbar-collapse" :class="{'show':isShowNavbarCollapse}">
         <template v-for="menu in menuList">
           <nuxt-link
-            v-if="!menu.isExt"
             :key="menu.key"
             :to="localePath(menu.url)"
             @click.native="isShowNavbarCollapse = false"
           >
+            <!-- v-if="!menu.isExt" -->
             {{ $t(menu.key) }}
           </nuxt-link>
-          <a
+          <!-- <a
             v-else
             :key="menu.key"
             :href="menu.url"
@@ -23,25 +23,30 @@
             @click="isShowNavbarCollapse = !isShowNavbarCollapse"
           >
             {{ $t(menu.key) }}
-          </a>
+          </a> -->
         </template>
       </div>
     </nav>
     <nuxt-link class="logo w4 w5-l h-100" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
     <div class="tail">
       <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
-        Eng
+        English
       </nuxt-link>
       <nuxt-link v-else :to="switchLocalePath('zh')">
-        華語
+        中文
       </nuxt-link>
     </div>
   </div>
 </template>
 <script>
 const MENU_LIST = [
+  { key: 'speakers', url: '/transport' },
   { key: 'agenda', url: '/agenda' },
-  { key: 'transport', url: '/transport' }
+  { key: 'cosponsor', url: '/transport' },
+  { key: 'transport', url: '/transport' },
+  { key: 'live', url: '/transport' },
+  { key: 'staff', url: '/transport' },
+  { key: 'registration', url: '/transport' }
 ]
 export default {
   data () {
@@ -78,11 +83,12 @@ export default {
   align-items: center;
   width: 100%;
   z-index: 9999;
-  background-color: #50BC83;
+  background-color: #fff;
   border: none;
   height: $nav-height;
+  border-bottom: 1.5px solid $pink-1;
   > .logo {
-    background-image: url('../assets/images/ocean-islands/logo-singleline-simple.svg');
+    background-image: url('../assets/images/v2/logo-singleline.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -91,17 +97,24 @@ export default {
     a {
       min-width: 4rem;
       padding: 0.75rem;
+      color: $pink-1;
+    }
+    a:hover {
+      color: $gray-1;
     }
   }
   a {
-    color: #fff;
+    color: $gray-1;
     text-decoration: none;
     display: inline-block;
     text-align: center;
   }
+  a:hover {
+    color: $pink-1;
+  }
   .navbar-toggler {
     display: none;
-    color: white;
+    color: $gray;
     background: none;
     outline: none;
     border: none;
@@ -141,7 +154,7 @@ export default {
     .navbar-collapse.show {
       display: flex;
       flex-direction: column;
-      background-color: #50BC83;
+      background-color: white;
       width: 100vw;
       position: absolute;
       top: $nav-height;

@@ -5,6 +5,7 @@ export default {
   speakers: 'Speakers',
   agenda: 'Agenda',
   partners: 'Partners',
+  cosponsor: 'Cosponsor',
   transport: 'Transportation',
   live: 'Live',
   feed: 'Feed',
