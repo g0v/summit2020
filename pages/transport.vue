@@ -5,7 +5,7 @@
         class="transport-map"
         :markers="locations"
       />
-      <div class="transport-nav mb0 mb5-l">
+      <!-- <div class="transport-nav mb0 mb5-l">
         <div
           v-for="(location, index) in locations"
           :id="`location-link-${location.id}`"
@@ -16,32 +16,52 @@
         >
           {{ location[$t('venuelocationNameShort')] }}
         </div>
-      </div>
-      <!-- {{ coords }} -->
-      <div class="locations">
-        <div v-for="(location, index) in locations" :id="`location-${location.id}`" :key="index" class="location">
-          <OpenStreepMap
-            class="location-photo"
-            :markers="[locations[index]]"
-          />
-          <div class="location-detail">
-            <h3>{{ location[$t('venuelocationName')] }}</h3>
-            <p>
-              <span class="location-detail-address">
-                {{ location[$t('venuelocationAddress')] }}
-                <div class="map-link" target="_blank" @click="gmapLink(location)">
-                  <img :src="require('~/assets/images/map-marker.png')">
-                </div>
-              </span>
-            </p>
-            <div class="event-title">
+      </div> -->
+      <div class="locations ph2-ns cf center">
+        <h1 class="f2">
+          {{ $t('locations') }}
+        </h1>
+        <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="fl w-50 pa2">
+          <div class="location">
+            <h3 class="f3">
+              {{ location[$t('venuelocationName')] }}
+            </h3>
+            <div class="location-address" @click="gmapLink(location)">
+              <img :src="require('../assets/images/v2/icon-map.png')" alt="">
+              <span>{{ location[$t('venuelocationAddress')] }}</span>
+              <img class="location-address-navigation" :src="require('../assets/images/v2/icno-navigation.png')" alt="">
+            </div>
+            <img class="location-photo" :src="require(`../assets/images/v2/${location.photo}`)" alt="">
+            <div class="location-event-name">
               <span>{{ $t('events') }}</span>
             </div>
-            <ul class="location-detail-events">
+            <ul class="location-events">
               <li v-for="event in location.events" :key="event.id">
-                <span>{{ event['日期'] }} - {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
+                <span>{{ event['日期'] | MM_DD }} {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="rental-area">
+        <div class="rentals ph2-ns cf center">
+          <h2 class="f2">
+            <span class="head-text">
+              {{ $t('rental') }}
+              <img :src="require('../assets/images/v2/img-8.png')" alt="">
+            </span>
+          </h2>
+          <div v-for="(rental, index) in rentals" :key="index" class="fl w-50 pa2">
+            <div class="rental">
+              <div class="icon-name">
+                <img :src="require(`../assets/images/v2/${rental.icon}`)" alt="">
+                <div class="name f2">{{ rental.name }}<br />{{ rental.cht_name }}</div>
+              </div>
+              <div v-if="rental.is_app" class="app-link">
+                <div><img :src="require(`../assets/images/v2/icon-Apple Store.png`)" alt=""></div>
+                <div><img :src="require(`../assets/images/v2/icon-Google Play.png`)" alt=""></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -50,6 +70,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
@@ -58,34 +79,39 @@ import locations from '~/assets/tables/交通地理位置.json'
 // b = start value
 // c = change in value
 // d = duration
-Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d / 2
-  if (t < 1) { return c / 2 * t * t + b }
-  t--
-  return -c / 2 * (t * (t - 2) - 1) + b
-}
+// Math.easeInOutQuad = function (t, b, c, d) {
+//   t /= d / 2
+//   if (t < 1) { return c / 2 * t * t + b }
+//   t--
+//   return -c / 2 * (t * (t - 2) - 1) + b
+// }
 
-function scrollTo (to, duration) {
-  const element = document.querySelector('html')
-  const start = element.scrollTop
-  const change = to - start
-  let currentTime = 0
-  const increment = 20
+// function scrollTo (to, duration) {
+//   const element = document.querySelector('html')
+//   const start = element.scrollTop
+//   const change = to - start
+//   let currentTime = 0
+//   const increment = 20
 
-  const animateScroll = () => {
-    currentTime += increment
-    const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
-    element.scrollTop = val
-    if (currentTime < duration) {
-      setTimeout(animateScroll, increment)
-    }
-  }
-  animateScroll()
-}
+//   const animateScroll = () => {
+//     currentTime += increment
+//     const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
+//     element.scrollTop = val
+//     if (currentTime < duration) {
+//       setTimeout(animateScroll, increment)
+//     }
+//   }
+//   animateScroll()
+// }
 
 export default {
   components: {
     OpenStreepMap
+  },
+  filters: {
+    MM_DD (dateStr) {
+      return moment(dateStr).format('MM-DD')
+    }
   },
   computed: {
     routeHash () {
@@ -108,6 +134,24 @@ export default {
         }
         return m
       }, new Map()).values()]
+    },
+    rentals () {
+      return [{
+        name: 'iRent',
+        cht_name: '自助租車',
+        icon: 'img-irentlogo.png',
+        is_app: true
+      }, {
+        name: 'GoShare',
+        cht_name: '移動共享服務',
+        icon: 'img-gosharelogo.png',
+        is_app: true
+      }, {
+        name: 'T-Bike',
+        cht_name: '臺南市公共自行車',
+        icon: 'img-tbikelogo.png',
+        is_app: false
+      }]
     }
   },
   mounted () {
@@ -207,104 +251,149 @@ export default {
 }
 
 .locations {
-  .location {
+  max-width: 960px;
+  h1 {
+    text-align: center;
+    color: #0EAFC9;
+    margin-top: 96px;
+    margin-bottom: 135px;
     position: relative;
-    color: $gray;
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 0 6rem;
-    &:last-child {
-      padding-bottom: 0;
-    }
-
-    &::after {
-      content: '';
+    line-height: 1;
+    &::before {
+      content: "";
       display: block;
-      clear: left;
+      background-image: url("../assets/images/v2/img-6.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 403px + 59px;
+      height: 78px;
+      margin: auto;
+      top: .5em;
+      left: 0;
+      right: 0;
     }
-    &::before { // eggs
+  }
+}
+
+.location {
+  margin-top: 20px;
+  margin-bottom: 90px - 20px;
+  &-address {
+    color: #555555;
+    display: inline-block;
+    line-height: 3;
+    cursor: pointer;
+    img, span {
+      vertical-align: middle;
+    }
+    position: relative;
+    &-navigation {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: translate(15.4px);
+    }
+  }
+  &-event-name {
+    font-size: 1.1em;
+    color: #0EAFC9;
+  }
+  &-events {
+    color: #555555;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 0.8px;
+    li {
+      position: relative;
+      list-style: none;
+    }
+    li::before {
       content: '';
       display: block;
       position: absolute;
-      bottom: calc(100% + 1.5rem);
-      left: 0;
-      width: 100%;
-      height: 80px;
-      margin: 0 auto;
-      background-image: url('../assets/images/scene_14.svg'), url('../assets/images/scene_15.svg');
-      background-size: contain;
+      right: 101%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/images/v2/icon-event-item.png');
       background-repeat: no-repeat;
-      background-position: 5% center, 95% center;
+      background-position: center;
     }
-    &:hover::before {
-      background-position: 95% center, 5% center;
-    }
-    &:first-child::before {
-      content: none;
-    }
+  }
+}
 
-    $photo-desktop-width: 300px;
-    &-photo {
-      margin-right: 10px;
-      float: none;
-      width: 100%;
-      height: 200px;
-      @media screen and (min-width: 800px) {
-        float: left;
-        width: 300px;
-        height: $photo-desktop-width;
+.rental-area {
+  margin-top: 265px;
+  background-color: #f7f7f7;
+
+  position: relative;
+  &::after, &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 75% top, center 80px;
+  }
+  &::before {
+    content: "";
+    $spacer: 232px;
+    top: $spacer * -1;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: $spacer;
+    background-image: url("../assets/images/v2/img-7.png"), url("../assets/images/v2/bk.png");
+  }
+  h2 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 102px;
+    .head-text {
+      display: inline-block;
+      img {
+        position: absolute;
+        top: 1em;
+        right: 50%;
+        width: 321px;
+        height: 70px;
       }
     }
-    &-detail {
-      $photo-data-desktop-spacer: 20px;
-      margin-left: 0;
-      padding: 0 1em;
-      @media screen and (min-width: 800px) {
-        margin-left: $photo-desktop-width + $photo-data-desktop-spacer;
-        padding: 0;
+  }
+}
+
+.rentals {
+  max-width: 960px;
+  padding-bottom: 148px;
+  .rental {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 28px 71px;
+    height: 196px;
+    .icon-name {
+      img, .name {
+        vertical-align: middle;
+        margin-left: 12px;
       }
-      h3 {
-        font-size: 1.75rem;
-        line-height: 1.25;
-        @media screen and (min-width: 800px) {
-          margin: 0;
-        }
+      .name {
+        display: inline-block;
+        font-size: 24px;
+        color: #F779EE;
       }
-      &-address {
-        margin: .5em 0 1.5em;
-        div {
-          display: inline-block;
-          cursor: pointer;
-          &.map-link {
-            animation: bounce 3s infinite;
-          }
-          &.map-link {
-            vertical-align: middle;
-          }
-          &.map-link {
-            width: 32px;
-            height: 32px;
-            img {
-              height: 100%;
-            }
-          }
-        }
-      }
-      .event-title {
-        font-weight: bold;
-        span {
-          border-bottom: $gray 2px solid;
-        }
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        li {
-          margin: .5em 0;
-        }
-        span {
-          border-bottom: $blue 2px solid;
-        }
+    }
+    .app-link {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      div {
+        flex: 1 1 133px;
       }
     }
   }

@@ -34,6 +34,8 @@ export default {
   driveToVenue: '開車前往',
   publicTransportationToVenue: '搭乘大眾交通工具',
   noContentYet: '尚無內容',
+  locations: '活動地點',
+  rental: '租車資訊',
 
   // articles
   'article/example': require('~/assets/articles/範例文案1.zh.md').default,

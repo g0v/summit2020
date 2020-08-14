@@ -24,6 +24,6 @@ body, .entry-point, .page-container {
 }
 .page-container {
   padding-top: $nav-height;
-  padding-bottom: ($footer-height + 16px);
+  // padding-bottom: ($footer-height + 16px);
 }
 </style>

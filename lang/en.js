@@ -34,6 +34,8 @@ export default {
   driveToVenue: 'Drive to',
   publicTransportationToVenue: 'Take public transportation',
   noContentYet: 'No content yet',
+  locations: 'Locations',
+  rental: 'Rental',
 
   // articles
   'article/example': require('~/assets/articles/範例文案1.en.md').default,
