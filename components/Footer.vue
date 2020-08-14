@@ -1,15 +1,26 @@
 <template>
   <div class="footer">
-    <div class="icon-container">
-      <a class="g0v-icon" :href="$t('g0vUrl')" />
-      <a class="fa fa-facebook-f" href="https://www.facebook.com/g0v.tw" />
-      <a class="fa fa-twitter" href="https://twitter.com/g0vtw" />
-      <a class="fa fa-slack" href="http://join.g0v.tw" />
-      <a class="fa fa-github" href="https://github.com/g0v/summit2020" />
-      <a class="fa fa-envelope" href="mailto:host@summit.g0v.tw" />
-    </div>
-    <div class="license">
-      CC BY 4.0
+    <div>
+      <div class="license">
+        Copyright CC by 4.0 @g0v Summit 2020
+      </div>
+      <div class="icon-container">
+        <a href="https://www.facebook.com/g0v.tw">
+          <img :src="require('~/assets/images/v2/icon-fb.svg')" alt="g0v facebook">
+        </a>
+        <a href="http://join.g0v.tw">
+          <img :src="require('~/assets/images/v2/icon-slack.svg')" alt="g0v slack">
+        </a>
+        <a href="https://twitter.com/g0vtw">
+          <img :src="require('~/assets/images/v2/icon-twitter.svg')" alt="g0v twitter">
+        </a>
+        <a href="https://github.com/g0v/summit2020">
+          <img :src="require('~/assets/images/v2/icon-GitHub.svg')" alt="g0v GitHub">
+        </a>
+        <a href="mailto:host@summit.g0v.tw">
+          <img :src="require('~/assets/images/v2/icon-email.svg')" alt="g0v email">
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -30,49 +41,25 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer {
-  height: $footer-height;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  height: 156px;
   display: flex;
-  flex-wrap: no-wrap;
-  justify-content: space-between;
-  color: $gray;
-  background-color: white;
-  z-index: 9999;
-  .icon-container {
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-grow: 1;
-    padding: 0 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: $blue-2;
+  .license, .icon-container {
     max-width: 320px;
-    > a {
-      flex-shrink: 0;
-      flex-grow: 1;
-      color: #50BC83;
-      display: inline-block;
-      text-align: center;
-      padding: 0.5rem;
-    }
-    > a.g0v-icon {
-      background-image: url('../assets/images/scene_16.svg');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 75%;
-      width: 64px;
-      height: 32px;
-    }
+    margin: auto;
+    text-align: center;
   }
   .license {
-    display: none;
-    flex-grow: 0;
-    @media (min-width: 640px) {
-      display: block;
+    margin-bottom: 30px;
+  }
+  .icon-container {
+    > a {
+      color: white;
+      padding: 0 0.5rem;
     }
-    line-height: 32px;
-    font-size: 14px;
-    padding: 0 16px;
   }
 }
 </style>
