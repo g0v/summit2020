@@ -17,11 +17,11 @@
           {{ location[$t('venuelocationNameShort')] }}
         </div>
       </div> -->
-      <div class="locations ph2-ns cf center">
+      <div class="locations ph2 cf center">
         <h1 class="f2">
           {{ $t('locations') }}
         </h1>
-        <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="fl w-50 pa2">
+        <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="fl w-50-ns pa2-ns">
           <div class="location">
             <h3 class="f3">
               {{ location[$t('venuelocationName')] }}
@@ -44,14 +44,14 @@
         </div>
       </div>
       <div class="rental-area">
-        <div class="rentals ph2-ns cf center">
+        <div class="rentals ph2 cf center">
           <h2 class="f2">
             <span class="head-text">
               {{ $t('rental') }}
               <img :src="require('../assets/images/v2/img-8.png')" alt="">
             </span>
           </h2>
-          <div v-for="(rental, index) in rentals" :key="index" class="fl w-50 pa2">
+          <div v-for="(rental, index) in rentals" :key="index" class="fl w-50-ns pa2">
             <div class="rental">
               <div class="icon-name">
                 <img :src="require(`../assets/images/v2/${rental.icon}`)" alt="">
@@ -265,7 +265,7 @@ export default {
       background-image: url("../assets/images/v2/img-6.svg");
       background-repeat: no-repeat;
       position: absolute;
-      width: 403px + 59px;
+      max-width: 403px + 59px;
       height: 78px;
       margin: auto;
       top: .5em;
@@ -337,6 +337,7 @@ export default {
     position: absolute;
     background-repeat: no-repeat;
     background-position: 75% top, center 80px;
+    background-size: auto, cover;
   }
   &::before {
     content: "";
@@ -375,8 +376,11 @@ export default {
     flex-wrap: wrap;
     background-color: #fff;
     border-radius: 4px;
-    padding: 28px 71px;
-    height: 196px;
+    padding: 28px;
+    @media screen and (min-width: 30em) {
+      padding: 28px 71px;
+    }
+    height: 250px;
     .icon-name {
       img, .name {
         vertical-align: middle;
@@ -392,8 +396,13 @@ export default {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       div {
-        flex: 1 1 133px;
+        flex: 1 1 100%;
+        text-align: center;
+        @media screen and (min-width: 30em) {
+          flex: 1 1 133px;
+        }
       }
     }
   }
