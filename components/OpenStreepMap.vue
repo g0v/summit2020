@@ -10,8 +10,11 @@
         v-for="location in markers"
         :key="location.name"
         :lat-lng="location.coordinates"
+        @click="$emit('click:marker', location.id)"
       >
-        <l-popup :content="`<b>${location.name}</b><br />${location.address}`" />
+        <l-popup
+          :content="`<b>${location[$t('venuelocationNameShort')]}</b><br />${location[$t('venuelocationAddress')]}`"
+        />
       </l-marker>
       <l-tile-layer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -2,8 +2,10 @@
   <client-only>
     <div class="transport">
       <OpenStreepMap
+        id="location-map"
         class="transport-map"
         :markers="locations"
+        @click:marker="whereIs"
       />
       <!-- <div class="transport-nav mb0 mb5-l">
         <div
@@ -23,7 +25,7 @@
         </h1>
         <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="fl w-50-ns pa2-ns">
           <div class="location">
-            <h3 class="f3">
+            <h3 class="f3" @click="whereIs('map')">
               {{ location[$t('venuelocationName')] }}
             </h3>
             <div class="location-address" @click="gmapLink(location)">
@@ -86,30 +88,30 @@ import locations from '~/assets/tables/交通地理位置.json'
 // b = start value
 // c = change in value
 // d = duration
-// Math.easeInOutQuad = function (t, b, c, d) {
-//   t /= d / 2
-//   if (t < 1) { return c / 2 * t * t + b }
-//   t--
-//   return -c / 2 * (t * (t - 2) - 1) + b
-// }
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d / 2
+  if (t < 1) { return c / 2 * t * t + b }
+  t--
+  return -c / 2 * (t * (t - 2) - 1) + b
+}
 
-// function scrollTo (to, duration) {
-//   const element = document.querySelector('html')
-//   const start = element.scrollTop
-//   const change = to - start
-//   let currentTime = 0
-//   const increment = 20
+function scrollTo (to, duration) {
+  const element = document.querySelector('html')
+  const start = element.scrollTop
+  const change = to - start
+  let currentTime = 0
+  const increment = 20
 
-//   const animateScroll = () => {
-//     currentTime += increment
-//     const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
-//     element.scrollTop = val
-//     if (currentTime < duration) {
-//       setTimeout(animateScroll, increment)
-//     }
-//   }
-//   animateScroll()
-// }
+  const animateScroll = () => {
+    currentTime += increment
+    const val = parseInt(Math.easeInOutQuad(currentTime, start, change, duration))
+    element.scrollTop = val
+    if (currentTime < duration) {
+      setTimeout(animateScroll, increment)
+    }
+  }
+  animateScroll()
+}
 
 export default {
   components: {
