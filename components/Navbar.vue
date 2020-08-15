@@ -40,13 +40,8 @@
 </template>
 <script>
 const MENU_LIST = [
-  { key: 'speakers', url: '/transport' },
   { key: 'agenda', url: '/agenda' },
-  { key: 'cosponsor', url: '/transport' },
-  { key: 'transport', url: '/transport' },
-  { key: 'live', url: '/transport' },
-  { key: 'staff', url: '/transport' },
-  { key: 'registration', url: '/transport' }
+  { key: 'transport', url: '/transport' }
 ]
 export default {
   data () {
