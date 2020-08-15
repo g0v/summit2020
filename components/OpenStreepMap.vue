@@ -4,6 +4,7 @@
       ref="map"
       :zoom="16"
       :center="centerMarkers"
+      :options="{ scrollWheelZoom: false }"
     >
       <l-marker
         v-for="location in markers"
@@ -72,7 +73,7 @@ export default {
     }
   },
   mounted () {
-    this.moveToCenter()
+    this.$nextTick(() => this.moveToCenter())
   },
   methods: {
     moveToCenter () {
