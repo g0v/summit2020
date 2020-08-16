@@ -179,7 +179,7 @@ export default {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(({ coords }) => {
           const origin = [coords.latitude, coords.longitude].join()
-          const destination = location.coordinates
+          const destination = location[this.$t('venuelocationName')]
           let link = null
           if (origin) {
             // window.location.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
@@ -187,9 +187,11 @@ export default {
           } else {
             link = location['share-link']
           }
-          // eslint-disable-next-line
-          console.log(link)
-          window.open(link, '_blank')
+          const a = document.createElement('a')
+          a.href = link
+          a.target = '_blank'
+          a.click()
+          // window.open(link, '_blank')
         })
       }
     },
