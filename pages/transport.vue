@@ -179,14 +179,16 @@ export default {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(({ coords }) => {
           const origin = [coords.latitude, coords.longitude].join()
-          const destination = location[this.$t('venuelocationName')]
+          const destination = location.coordinates
           let link = null
           if (origin) {
             // window.location.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
-            link = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
+            link = `https://www.google.com/maps/dir/?api=1&map_action=map&origin=${origin}&destination=${destination}&hl=zh-tw`
           } else {
             link = location['share-link']
           }
+          // eslint-disable-next-line
+          console.log(link)
           window.open(link, '_blank')
         })
       }
