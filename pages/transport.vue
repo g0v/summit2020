@@ -28,11 +28,11 @@
             <h3 class="f3" @click="whereIs('map')">
               {{ location[$t('venuelocationName')] }}
             </h3>
-            <div class="location-address" @click="gmapLink(location)">
+            <a class="location-address" :href="location['share-link']" target="_blank">
               <img :src="require('../assets/images/v2/icon-map.png')" alt="">
               <span>{{ location[$t('venuelocationAddress')] }}</span>
               <img class="location-address-navigation" :src="require('../assets/images/v2/icno-navigation.png')" alt="">
-            </div>
+            </a>
             <img class="location-photo" :src="require(`../assets/images/v2/${location.photo}`)" alt="">
             <div class="location-event-name">
               <span>{{ $t('events') }}</span>
@@ -58,7 +58,7 @@
               <a class="icon-name" :href="rental.link" target="_blank">
                 <img :src="require(`../assets/images/v2/${rental.icon}`)" alt="">
                 <div class="name f2">
-                  {{ rental.name }}<br />
+                  {{ rental.name }}<br>
                   {{ rental.cht_name }}
                 </div>
               </a>
@@ -174,27 +174,24 @@ export default {
     this.$router.push({ hash: null })
   },
   methods: {
-    gmapLink (location) {
-      if (!process.client) { return }
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(({ coords }) => {
-          const origin = [coords.latitude, coords.longitude].join()
-          const destination = location[this.$t('venuelocationName')]
-          let link = null
-          if (origin) {
-            // window.location.href = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}&hl=zh-tw`
-            link = `https://www.google.com/maps/dir/?api=1&map_action=map&origin=${origin}&destination=${destination}&hl=zh-tw`
-          } else {
-            link = location['share-link']
-          }
-          const a = document.createElement('a')
-          a.href = link
-          a.target = '_blank'
-          a.click()
-          // window.open(link, '_blank')
-        })
-      }
-    },
+    // gmapLink (location) {
+    //   if (!process.client) { return }
+    //   const destination = location[this.$t('venuelocationAddress')]
+    //   return `https://www.google.com/maps/search/?api=1&map_action=map&query=${destination}&hl=zh-tw`
+    //   if (window.innerWidth < 768) {
+    //     if (navigator.platform.includes('iPhone')) {
+    //       // return `https://www.google.com/maps/@?api=1&map_action=map&center=-33.712206,150.311941&zoom=12&basemap=terrain`
+    //       return `comgooglemaps://?daddr=${destination}&zoom=14`
+    //       // return `https://www.google.com/maps/search/?api=1&map_action=map&query=${destination}&hl=zh-tw`
+    //     } else {
+    //       // return `https://www.google.com/maps/search/?api=1&map_action=map&query=${destination}&hl=zh-tw`
+    //       return `geo:${location.coordinates}`
+    //     }
+    //   } else {
+    //     return `https://www.google.com/maps/search/?api=1&map_action=map&query=${destination}&hl=zh-tw`
+    //     // return location['share-link']
+    //   }
+    // },
     whereIs (locationId) {
       this.$router.push({ hash: locationId })
       const header = document.querySelector(`#location-${locationId}`)
