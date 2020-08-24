@@ -54,5 +54,8 @@ export default {
   'table/location': extractLanguageFromTable({
     rows: require('~/assets/tables/交通地理位置.json'),
     isEn: false
-  })
+  }),
+
+  //meta
+  'article/summitMeta': require('~/assets/articles/meta.zh.md').default
 }

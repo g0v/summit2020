@@ -76,7 +76,7 @@ export default {
   },
   head: friendlyHeader({
     description () {
-      return summaryFromMarkdown(this.$t('article/summitAbout'))
+      return summaryFromMarkdown(this.$t('article/summitMeta'))
     }
   })
 }
