@@ -40,7 +40,6 @@
 </template>
 <script>
 const MENU_LIST = [
-  { key: 'agenda', url: '/agenda' },
   { key: 'transport', url: '/transport' }
 ]
 export default {
