@@ -56,6 +56,6 @@ export default {
     isEn: false
   }),
 
-  //meta
+  // meta
   'article/summitMeta': require('~/assets/articles/meta.zh.md').default
 }
