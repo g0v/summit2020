@@ -82,7 +82,7 @@ function exportProposals (origProposals, timeSheet) {
     }
     const sheet = timeMap[proposal.id]
     if (sheet.isTakenBy) {
-      console.warn(`Time ${sheet.議程日期} ${sheet.議程開始時間} - ${sheet.議程場地-華語} is taken by at least 2 proposals:`)
+      console.warn(`Time ${sheet.議程日期} ${sheet.議程開始時間} - ${sheet['議程場地-華語']} is taken by at least 2 proposals:`)
       console.warn(`    ${sheet.isTakenBy.id} && ${proposal.id}`)
       return
     }
