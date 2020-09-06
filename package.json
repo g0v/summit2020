@@ -15,7 +15,8 @@
   "scripts": {
     "sync:article": "node tools/syncArticles.js",
     "sync:table": "node tools/syncStructuredData.js",
-    "sync:all": "npm run sync:article && npm run sync:table",
+    "sync:proposal": "node tools/syncProposals.js",
+    "sync:all": "npm run sync:article && npm run sync:table && npm run sync:proposal",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
