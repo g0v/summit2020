@@ -32,6 +32,30 @@ function extractLanguageFromTable ({ rows, isEn = true }) {
   })
 }
 
+function extractLanguageFromProposal ({ proposals, isEn = true }) {
+  return Object.values(proposals).map((proposal) => {
+    const timeSheetWrapper = extractLanguageFromTable({ rows: [proposal.timeSheet], isEn })
+    const perLangProposal = {
+      ...proposal,
+      timeSheet: timeSheetWrapper[0]
+    }
+
+    Object.keys(perLangProposal).forEach((key) => {
+      if (key.endsWith('_en')) {
+        const val = (perLangProposal[key] || '').trim()
+        if (isEn && val) {
+          const zhKey = key.split('_').slice(0, -1).join('_')
+          perLangProposal[zhKey] = val
+        }
+        delete perLangProposal[key]
+      }
+    })
+
+    return perLangProposal
+  })
+}
+
 export {
-  extractLanguageFromTable
+  extractLanguageFromTable,
+  extractLanguageFromProposal
 }
