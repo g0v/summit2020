@@ -16,7 +16,9 @@
       </div>
       <div class="pl3-l ml3-l bl-l b--moon-gray">
         <div>{{ proposal.timeSheet.議程場地 }}</div>
-        <div class="gray">{{ proposal.timeSheet.議程開始時間 }}-{{ proposal.timeSheet.議程長度 }}</div>
+        <div class="gray">
+          {{ proposal.timeSheet.議程開始時間 }}-{{ proposal.timeSheet.議程長度 }}
+        </div>
       </div>
     </div>
   </div>
