@@ -36,6 +36,7 @@
     ],
     "verified": true,
     "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
     "timeSheet": {
       "id": "5edcf7ffba206b030d66a2c5",
       "議程開始時間": "2020-12-05T13:00",
@@ -45,45 +46,7 @@
       "分類主題-華語": "媒體與技術",
       "分類主題-en": "Media and tech",
       "議程場地-華語": "南美館",
-      "議程場地-en": "Tainan Art Museum Hall 2",
-      "isTakenBy": {
-        "id": "5edcf7ffba206b030d66a2c5",
-        "title": "（範例）假新聞在不同國家的樣貌與跨國合作",
-        "title_en": "(Example) Fake News in Different Countries and International Cooperation to Fight against It",
-        "summary": "近年來，眾多擁有新聞自由及言論自由的民主國家皆苦於假新聞的快速且大量的散播。本主題論壇將聚集來自各個國家對抗假新聞的專家，期待能藉由相互辯證及與會眾交流的過程釐清假新聞的真面目，也希望能發想出更有效的跨國合作模式。",
-        "summary_en": "In the recent years, many democratic countries which have freedom of speech and freedom of the press suffer from the vast and rapid spread of fake news. This panel discussion will gather fake news experts from different countries, trying to clarify the true face of the fake news and come up with more effective cooperation model to fight against fake news.",
-        "oral_language": "English",
-        "oral_languate_other": "",
-        "format": "主題論壇 （120 分鐘）Panel discussion (120 min)",
-        "topic": "第四個島 The fourth island",
-        "three_keywords": "fake news, cooperation, international",
-        "cover_image": "https://i.imgur.com/BQ8f185h.jpg",
-        "is_presentation_cc40": false,
-        "is_slide_cc40": false,
-        "is_content_cc40": true,
-        "speakers": [
-          {
-            "display_name": "John Doe",
-            "organization": "Some institute fighting against fake news",
-            "avatar_url": "https://i.imgur.com/LnppHRgh.jpg",
-            "city": "Taipei",
-            "info_url": "https://www.linkedin.com/in/johndoeisnotavailable",
-            "bio": "（範例用）不存在的人物",
-            "bio_en": "(Example) Non-existing character"
-          },
-          {
-            "display_name": "Jane Doe",
-            "organization": "Some other institute fighting against fake news",
-            "avatar_url": "https://i.imgur.com/4jIJm2Wh.jpg",
-            "city": "New York",
-            "info_url": "https://www.linkedin.com/in/janedoeisnotavailable",
-            "bio": "（範例用）不存在的人物",
-            "bio_en": "(Example) Non-existing character"
-          }
-        ],
-        "verified": true,
-        "createdAt": "2020-08-23T00:00:00.000Z"
-      }
+      "議程場地-en": "Tainan Art Museum Hall 2"
     }
   },
   "5edcffaeba206b030d66a2c6": {
@@ -123,6 +86,7 @@
         "bio_en": "Ael is an active g0v participant that wants to build digital solutions for open and collaborative civic participation with open source communities.\n\nShe has been serving as product manager in “Disfactory”, a report platform on illegal factories on the farmlands, “Herstory in East Asia” and “Libot”, a LINE bot for Village Chiefs to report damages in the city.\n\nAel was the project manager of g0v Civic Tech Prototype Grant working with Jothon team and the product manager of sense.tw, an issue-policy mapping tool."
       }
     ],
+    "updatedAt": "2020-09-06T02:23:46.959Z",
     "timeSheet": {
       "id": "5edcffaeba206b030d66a2c6",
       "議程開始時間": "2020-12-04T09:30",
@@ -132,51 +96,13 @@
       "分類主題-華語": "學習與文化東亞經驗交流",
       "分類主題-en": "En version of this category",
       "議程場地-華語": "成大 R1",
-      "議程場地-en": "NCKU R1",
-      "isTakenBy": {
-        "id": "5edcffaeba206b030d66a2c6",
-        "title": "牧貓人 —— g0v 混亂有序開放協作專案管理",
-        "title_en": " Herding Cats –– Project Management in g0v Projects",
-        "summary": "來 g0v 提案許願就會成真？才沒那麼簡單，想走得長遠有影響力，需有對社會議題的理解、習慣開源社群鬆散的協作方式、做數位產品的產品開發、跨領域溝通。滿多專案隨時面臨人力、時間不足、無法說服利害關係人、開發方向不明等問題。當每個貢獻者都是獨立的貓時，該如何促進社群協作呢？\n\n作為兩個長期提案的專案經理，我們將以環境倡議團體發起的 Disfactory 農地違章工廠回報行動，與嘗試居住新解法的 Rentea 社群為例，說明我們如何嘗試定義提案目標、釐清議題需求、定出可執行的具體項目、與開源社群協作開發、找到/運用手上的資源，從食物轉為程式碼的黑盒子中，提取專案管理的經驗和心法。\n\n這次分享是另一個長期專案 #herding-cats 的開頭，開始訪談整理形形色色的 g0v 專案，具體來說是如何協作開發的，成為之後 g0v 專案的養分。\n\n圖片來源：https://www.flickr.com/photos/ceardach/4549876293\n",
-        "summary_en": "",
-        "oral_language": "華語",
-        "oral_languate_other": "",
-        "format": "演講 （20 分鐘）Talk (20 min)",
-        "topic": "「沒有人」的島 Nobody’s island",
-        "three_keywords": "專案管理, 產品開發, 開源協作",
-        "cover_image": "https://i.imgur.com/uk4tVMsh.jpg",
-        "is_content_cc40": true,
-        "is_presentation_cc40": true,
-        "is_slide_cc40": true,
-        "verified": true,
-        "createdAt": "2020-09-06T02:23:46.959Z",
-        "speakers": [
-          {
-            "display_name": "ddio",
-            "organization": "主婦 / Miso Technology / g0v",
-            "avatar_url": "https://i.imgur.com/tZTxzeAh.jpg",
-            "city": "台北 / Taipei, Taiwan",
-            "info_url": "https://medium.com/@ddio",
-            "bio": "斜槓主婦，正在嘗試打掃做飯、寫程式還有作功德之間的平衡，g0v 參與者，興趣是人宅跨界翻譯和居住議題，開放台灣民間租屋資料發起人，這兩年跳坑 Rentea ，希望用開源社群討論台北的居住新方案。",
-            "bio_en": ""
-          },
-          {
-            "display_name": "小班（ael）",
-            "organization": "g0v",
-            "avatar_url": "https://i.imgur.com/wjxy5yvh.jpg",
-            "city": "台北 / Taipei, Taiwan",
-            "info_url": "https://medium.com/@aelcenganda",
-            "bio": "g0v 參與者，想要開發可以促進開放公民參與協作的數位服務，關注社群協作的各種可能。\n\n過去一年在 Disfactory 農地違章工廠回報行動扮演產品經理的角色，其他深度參與的 g0v 專案包括台日韓港合作的 Herstory in East Asia、Libot 里伯市容回報 LINE bot。\n\n曾於 g0v 揪松團擔任職工，以及在 sense.tw 專案擔任產品經理開發議題政策討論工具。\n",
-            "bio_en": "Ael is an active g0v participant that wants to build digital solutions for open and collaborative civic participation with open source communities.\n\nShe has been serving as product manager in “Disfactory”, a report platform on illegal factories on the farmlands, “Herstory in East Asia” and “Libot”, a LINE bot for Village Chiefs to report damages in the city.\n\nAel was the project manager of g0v Civic Tech Prototype Grant working with Jothon team and the product manager of sense.tw, an issue-policy mapping tool."
-          }
-        ]
-      }
+      "議程場地-en": "NCKU R1"
     }
   },
   "5f0178e9e88a4948daf87fb0": {
     "id": "5f0178e9e88a4948daf87fb0",
-    "title": "(範例) 用資料幫助學生 - 以 XXX 為例",
-    "title_en": "(Sample) Helping students with data - take XXX as an example",
+    "title": "一個想要蓋掉雙語標題的提案",
+    "title_en": "A proposal that overwrite both title",
     "summary": "建設基礎學生資料 並提供主動回報系統，接收與整合需要提供學生的幫助，並作為社福機構與學生之間的橋樑。\n提供學生主動求助的管道，同時減輕教師的負擔，並幫助社福機構整理個案的在校狀況與資料。",
     "summary_en": "Construct a system to monitor students' objective situations. Provide them a way to report their needs. Link students with other NPO and NGO organizations to help them.",
     "oral_language": "華語",
@@ -189,19 +115,10 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "",
-    "speakers": [
-      {
-        "display_name": "Oliver Lu",
-        "organization": "g0v 2020 Summit / ProUnitas",
-        "avatar_url": "https://i.imgur.com/XOJfnGvh.jpg",
-        "city": "TW",
-        "info_url": "",
-        "bio": "圖資所研究生，找坑填中~ 歡迎找我玩",
-        "bio_en": "UT MSIS, willing to help!"
-      }
-    ],
+    "speakers": [],
     "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
+    "createdAt": "2020-09-07T02:31:39.000Z",
+    "updatedAt": "2020-09-07T02:31:39.000Z",
     "timeSheet": {
       "id": "5f0178e9e88a4948daf87fb0",
       "議程開始時間": "2020-12-05T13:30",
@@ -211,37 +128,32 @@
       "分類主題-華語": "網路自由",
       "分類主題-en": "Network freedom",
       "議程場地-華語": "南美館",
-      "議程場地-en": "Tainan Art Museum Hall 2",
-      "isTakenBy": {
-        "id": "5f0178e9e88a4948daf87fb0",
-        "title": "(範例) 用資料幫助學生 - 以 XXX 為例",
-        "title_en": "(Sample) Helping students with data - take XXX as an example",
-        "summary": "建設基礎學生資料 並提供主動回報系統，接收與整合需要提供學生的幫助，並作為社福機構與學生之間的橋樑。\n提供學生主動求助的管道，同時減輕教師的負擔，並幫助社福機構整理個案的在校狀況與資料。",
-        "summary_en": "Construct a system to monitor students' objective situations. Provide them a way to report their needs. Link students with other NPO and NGO organizations to help them.",
-        "oral_language": "華語",
-        "oral_languate_other": "",
-        "format": "演講 （20 分鐘）Talk (20 min)",
-        "topic": "賢者之島 Academia Formosa",
-        "three_keywords": "Education, NPO, g0v",
-        "cover_image": "",
-        "is_content_cc40": true,
-        "is_presentation_cc40": true,
-        "is_slide_cc40": true,
-        "related_url": "",
-        "speakers": [
-          {
-            "display_name": "Oliver Lu",
-            "organization": "g0v 2020 Summit / ProUnitas",
-            "avatar_url": "https://i.imgur.com/XOJfnGvh.jpg",
-            "city": "TW",
-            "info_url": "",
-            "bio": "圖資所研究生，找坑填中~ 歡迎找我玩",
-            "bio_en": "UT MSIS, willing to help!"
-          }
-        ],
-        "verified": true,
-        "createdAt": "2020-08-23T00:00:00.000Z"
+      "議程場地-en": "Tainan Art Museum Hall 2"
+    }
+  },
+  "5f0adf8828e2513e54d17fca": {
+    "id": "5f0adf8828e2513e54d17fca",
+    "speakers": [
+      {
+        "display_name": "外星人",
+        "organization": "冥王星 中山路 36 號 2 弄 7 樓",
+        "city": "冥王星"
       }
+    ],
+    "updatedAt": "2020-09-07T02:43:21.000Z",
+    "createdAt": "2020-09-07T02:43:21.000Z",
+    "title": "一個橫空出世的提案",
+    "is_presentation_cc40": true,
+    "timeSheet": {
+      "id": "5f0adf8828e2513e54d17fca",
+      "議程預設標題-華語": "一個橫空出世的提案",
+      "議程日期": "2020-09-04",
+      "議程開始時間": "2020-09-04T10:00",
+      "議程長度": 30,
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "成大 R1",
+      "議程場地-en": "NCKU R1"
     }
   }
 }

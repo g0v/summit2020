@@ -7,22 +7,103 @@ const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
 const moment = require('moment')
+const yaml = require('yaml')
 const { proposalServer } = require('../.docs.config')
 const { downloadOneTable } = require('./airtableLibs')
+const {
+  CONTENT_FIELD_DEFINITIONS,
+  SPEAKER_FIELD_DEFINITIONS
+} = require('./projectFields')
 
 const EXPORT_PATH = path.join(__dirname, '../assets/proposals.json')
 const SEC_PER_MIN = 60
+const ALLOW_MERGE_SINCE = moment('2020-09-06T12:00:00+08:00')
 
 async function downloadProposals () {
   const allProposals = await axios.get(`${proposalServer}/projects`)
-  return allProposals.data
+  const acceptedProposals = allProposals.data
     .filter(proposal => proposal.selected)
     .map((proposal) => {
+      const lastVersion = proposal.versions[0]
       return {
         id: proposal._id,
-        ...proposal.versions[0]
+        ...lastVersion,
+        // createdAt of last version is updatedAt of this proposal
+        updatedAt: moment(lastVersion.createdAt)
       }
     })
+
+  const acceptedMap = {}
+  acceptedProposals.forEach((proposal) => {
+    acceptedMap[proposal.id] = proposal
+  })
+
+  const additionalProposals = await downloadOneTable({
+    id: 'dummy',
+    tableName: '議程組覆寫專用',
+    view: 'Grid view'
+  }, false)
+
+  const usedAdditionalMap = {}
+
+  additionalProposals.forEach((row) => {
+    const proposal = genProposalFromAdditionalTable(row)
+    const existing = acceptedMap[proposal.id]
+    if (proposal.id in usedAdditionalMap) {
+      throw new Error(`Duplicated proposal ID ${proposal.id} in airtable`)
+    }
+    usedAdditionalMap[proposal.id] = true
+
+    if (!existing) {
+      acceptedMap[proposal.id] = proposal
+    } else if (proposal.updatedAt > existing.updatedAt && proposal.updatedAt > ALLOW_MERGE_SINCE) {
+      acceptedMap[proposal.id] = {
+        ...existing,
+        ...proposal
+      }
+    }
+  })
+  return Object.values(acceptedMap)
+}
+
+function genProposalFromAdditionalTable (addition) {
+  // Don't forget to check if ID conflict
+  const ts = moment(addition.updatedAt)
+  const proposal = {
+    id: addition.id,
+    speakers: [],
+    updatedAt: ts,
+    // to be compatible to CFP site data structure
+    createdAt: ts
+  }
+
+  CONTENT_FIELD_DEFINITIONS.forEach((field) => {
+    const val = addition[field.label]
+    if (val === undefined || val === '') {
+      return
+    }
+    proposal[field.id] = addition[field.label]
+  });
+
+  ['講者 1', '講者 2', '講者 3'].forEach((speakerId) => {
+    if (!addition[speakerId]) {
+      return
+    }
+    const additionalSpeaker = yaml.parse(addition[speakerId])
+    const speaker = {}
+    SPEAKER_FIELD_DEFINITIONS.forEach((field) => {
+      const val = additionalSpeaker[field.id]
+      if (val === undefined || val === '') {
+        return
+      }
+      speaker[field.id] = val
+    })
+    if (Object.keys(speaker).length) {
+      proposal.speakers.push(speaker)
+    }
+  })
+
+  return proposal
 }
 
 async function downloadTables () {
@@ -70,24 +151,26 @@ function normalizeTimeSheet (timeSheet) {
 
 function exportProposals (origProposals, timeSheet) {
   const timeMap = {}
+  const timeTakenMap = {}
   timeSheet.forEach((sheet) => {
     timeMap[sheet.id] = { ...sheet }
   })
 
   const toExport = {}
   origProposals.forEach((proposal) => {
-    if (!(proposal.id in timeMap)) {
-      console.warn(`Proposal [${proposal.id}] ${proposal.title} not found in time sheet`)
+    const pid = proposal.id
+    if (!(pid in timeMap)) {
+      console.warn(`Proposal [${pid}] ${proposal.title} not found in time sheet`)
       return
     }
-    const sheet = timeMap[proposal.id]
-    if (sheet.isTakenBy) {
+    const sheet = timeMap[pid]
+    if (timeTakenMap[pid]) {
       console.warn(`Time ${sheet.議程日期} ${sheet.議程開始時間} - ${sheet['議程場地-華語']} is taken by at least 2 proposals:`)
-      console.warn(`    ${sheet.isTakenBy.id} && ${proposal.id}`)
+      console.warn(`    ${sheet.isTakenBy.id} && ${pid}`)
       return
     }
-    sheet.isTakenBy = proposal
-    toExport[proposal.id] = {
+    timeTakenMap[pid] = proposal
+    toExport[pid] = {
       ...proposal,
       timeSheet: sheet
     }
