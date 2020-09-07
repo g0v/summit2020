@@ -23,6 +23,27 @@
 5. 所有下載後的檔案，都會放在 `~/assets/articles` 與 `~/assets/tables` 底下，並會 commit 到 git 裡
 6. 若要新增文案，須手動加入 `~/lang/zh.js` 與 `~/lang/en.js` 中
 
+## 稿件資料結構
+
+1. 稿件資料放在 `~/assets/proposal.json` 裡，資料格式基本上和徵件網站相同
+2. 徵件網站資料結構，請見 `~/tools/projectFields.js`
+3. 額外欄位包括：
+   - `timeSheet`:
+
+     ```json
+     {
+      "議程開始時間": "2020-12-05T13:00",
+      "議程日期": "2020-12-05",
+      "議程長度": 30,
+      "議程預設標題": "<支援雙語>",
+      "分類主題": "<支援雙語>",
+      "議程場地": "<支援雙語>"
+     ```
+
+   - `isPseudo`: 是否是虛擬議程，例如開幕、午休等，沒有說明，也不會有獨立議程說明頁的格子
+   - `updatedAt`, `createdAt`: 議程最後更新時間
+4. `proposal.json` 裡 `_en` 結尾的欄位，在有內容的情況下，皆會被當作英語翻譯使用，使用時請去掉 `_en` ，如 `summary_en` 改用 `summary` 即可
+
 ## 環境變數列表
 
 本專案使用 [dotenv](https://www.npmjs.com/package/dotenv)，你可以將想要使用的環境變數，加到專案根目錄的 `.env` 中，就會自動被帶入環境變數中。

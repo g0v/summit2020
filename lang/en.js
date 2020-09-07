@@ -1,4 +1,7 @@
-const { extractLanguageFromTable } = require('./utils')
+const {
+  extractLanguageFromTable,
+  extractLanguageFromProposal
+} = require('./utils')
 
 export default {
   // navbar
@@ -54,6 +57,12 @@ export default {
   }),
   'table/location': extractLanguageFromTable({
     rows: require('~/assets/tables/交通地理位置.json'),
+    isEn: true
+  }),
+
+  // proposal
+  'proposal/map': extractLanguageFromProposal({
+    proposals: require('~/assets/proposals.json'),
     isEn: true
   })
 }
