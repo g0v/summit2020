@@ -1,12 +1,13 @@
 // TODO:
 // 1. [x] download accepted proposal && merge time sheet info
-// 2. [ ] allow overwrite by summit worker using special airtable table
+// 2. [x] allow overwrite by summit worker using special airtable table
 // 3. [ ] host avatar ourselves
 
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
 const moment = require('moment')
+const _ = require('lodash')
 const yaml = require('yaml')
 const { proposalServer } = require('../.docs.config')
 const { downloadOneTable } = require('./airtableLibs')
@@ -149,7 +150,7 @@ function normalizeTimeSheet (timeSheet) {
   return ret
 }
 
-function exportProposals (origProposals, timeSheet) {
+function exportProposals (proposals, timeSheet) {
   const timeMap = {}
   const timeTakenMap = {}
   timeSheet.forEach((sheet) => {
@@ -157,7 +158,7 @@ function exportProposals (origProposals, timeSheet) {
   })
 
   const toExport = {}
-  origProposals.forEach((proposal) => {
+  proposals.forEach((proposal) => {
     const pid = proposal.id
     if (!(pid in timeMap)) {
       console.warn(`Proposal [${pid}] ${proposal.title} not found in time sheet`)
@@ -176,6 +177,26 @@ function exportProposals (origProposals, timeSheet) {
     }
   })
 
+  const now = moment()
+  Object.keys(timeMap).forEach((pid) => {
+    if (timeTakenMap[pid]) {
+      return
+    }
+    // pseudo time slot!
+    const timeSheet = timeMap[pid]
+    const zhTitle = _.get(timeSheet, '議程預設標題-華語', 'N/A')
+    const enTitle = _.get(timeSheet, '議程預設標題-en', zhTitle)
+    toExport[pid] = {
+      id: pid,
+      isPseudo: true,
+      title: zhTitle,
+      title_en: enTitle,
+      updatedAt: now,
+      createdAt: now,
+      timeSheet
+    }
+  })
+
   fs.writeFile(EXPORT_PATH, JSON.stringify(toExport, null, '  '), (err) => {
     if (err) {
       console.error(err)
@@ -187,7 +208,7 @@ function exportProposals (origProposals, timeSheet) {
 }
 
 (async function syncProposals () {
-  const origProposals = await downloadProposals()
+  const proposals = await downloadProposals()
   const { timeSheet } = await downloadTables()
-  exportProposals(origProposals, timeSheet)
+  exportProposals(proposals, timeSheet)
 })()
