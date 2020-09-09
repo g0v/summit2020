@@ -161,8 +161,8 @@
     "isPseudo": true,
     "title": "開幕",
     "title_en": "????",
-    "updatedAt": "2020-09-08T00:45:42.715Z",
-    "createdAt": "2020-09-08T00:45:42.715Z",
+    "updatedAt": "2020-09-09T00:45:48.367Z",
+    "createdAt": "2020-09-09T00:45:48.367Z",
     "timeSheet": {
       "id": "開幕",
       "議程開始時間": "2020-12-04T09:20",
@@ -181,8 +181,8 @@
     "isPseudo": true,
     "title": "來亂的",
     "title_en": "XD",
-    "updatedAt": "2020-09-08T00:45:42.715Z",
-    "createdAt": "2020-09-08T00:45:42.715Z",
+    "updatedAt": "2020-09-09T00:45:48.367Z",
+    "createdAt": "2020-09-09T00:45:48.367Z",
     "timeSheet": {
       "id": "在這裡亂填東西會怎樣？",
       "議程開始時間": "2020-09-30T15:00",
@@ -201,8 +201,8 @@
     "isPseudo": true,
     "title": "N/A",
     "title_en": "N/A",
-    "updatedAt": "2020-09-08T00:45:42.715Z",
-    "createdAt": "2020-09-08T00:45:42.715Z",
+    "updatedAt": "2020-09-09T00:45:48.367Z",
+    "createdAt": "2020-09-09T00:45:48.367Z",
     "timeSheet": {
       "id": "reclFyylWf5YdYo9Z",
       "議程開始時間": "undefinedTInvalid date",
@@ -218,10 +218,27 @@
     "isPseudo": true,
     "title": "N/A",
     "title_en": "N/A",
-    "updatedAt": "2020-09-08T00:45:42.715Z",
-    "createdAt": "2020-09-08T00:45:42.715Z",
+    "updatedAt": "2020-09-09T00:45:48.367Z",
+    "createdAt": "2020-09-09T00:45:48.367Z",
     "timeSheet": {
       "id": "recZbGYqLMYsHd0LS",
+      "議程開始時間": "undefinedTInvalid date",
+      "議程長度": null,
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "",
+      "議程場地-en": ""
+    }
+  },
+  "recImV7oC5vQSoyH6": {
+    "id": "recImV7oC5vQSoyH6",
+    "isPseudo": true,
+    "title": "N/A",
+    "title_en": "N/A",
+    "updatedAt": "2020-09-09T00:45:48.367Z",
+    "createdAt": "2020-09-09T00:45:48.367Z",
+    "timeSheet": {
+      "id": "recImV7oC5vQSoyH6",
       "議程開始時間": "undefinedTInvalid date",
       "議程長度": null,
       "分類主題-華語": "",
