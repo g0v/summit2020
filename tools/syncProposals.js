@@ -137,7 +137,7 @@ function normalizeTimeSheet (timeSheet) {
   const location = genFieldI18n(timeSheet.議程場地)
   const startHour = moment.unix(timeSheet.議程開始時間).utc().format('HH:mm')
   const ret = {
-    ...timeSheet,
+    ..._.pick(timeSheet, ['id', '議程日期', '議程預設標題-華語', '議程預設標題-en']),
     議程開始時間: `${timeSheet.議程日期}T${startHour}`,
     議程長度: timeSheet.議程長度 / SEC_PER_MIN,
     '分類主題-華語': category.zh,
