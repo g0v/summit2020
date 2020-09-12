@@ -1,22 +1,21 @@
 [
   {
     "id": "recvkZNhf1A4Xoxlb",
-    "地點名稱-en": "A Break Cafe",
-    "地點名稱-華語": "午營咖啡"
+    "地點名稱-華語": "午營咖啡",
+    "地點名稱-en": "A Break Cafe"
   },
   {
     "id": "recQeYfEOKyPwM5dH",
-    "地點名稱-en": "Performing Arts Theatre - Tainan Art Museum Hall 2",
-    "地點名稱-華語": "臺南市美術館 2 館 - 跨域展覽廳"
+    "地點名稱-華語": "臺南市美術館 2 館 - 跨域展覽廳",
+    "地點名稱-en": "Performing Arts Theatre - Tainan Art Museum Hall 2"
   },
   {
     "id": "recVtwxtGU1zmDfsk",
-    "地點名稱-en": "Wu Garden (Former Tainan Public Hall)",
-    "地點名稱-華語": "吳園 - 原公會堂"
+    "地點名稱-華語": "吳園 - 原公會堂",
+    "地點名稱-en": "Wu Garden (Former Tainan Public Hall)"
   },
   {
     "id": "recyJO3epcgQ24SgP",
-    "地點名稱-en": "Good-Ideas Studio",
     "地點名稱-華語": "好想工作室",
     "照片們": [
       {
@@ -116,22 +115,23 @@
         }
       }
     ],
+    "說明-華語": "於台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。\n",
     "說明-en": "a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan.\n",
-    "說明-華語": "於台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。\n"
+    "地點名稱-en": "Good-Ideas Studio"
   },
   {
     "id": "rec7DcEMC7luZanjO",
-    "地點名稱-en": "C-Hub",
-    "地點名稱-華語": "C-Hub"
+    "地點名稱-華語": "C-Hub",
+    "地點名稱-en": "C-Hub"
   },
   {
     "id": "recp8JQbdc6QoZSSB",
-    "地點名稱-en": "Magic School of Green Technologies",
-    "地點名稱-華語": "綠色魔法學校"
+    "地點名稱-華語": "綠色魔法學校",
+    "地點名稱-en": "Magic School of Green Technologies"
   },
   {
     "id": "recimmx7sIyP4aRil",
-    "地點名稱-en": "Zhenxing Village Assembly Center",
-    "地點名稱-華語": "振興里里民活動中心"
+    "地點名稱-華語": "振興里里民活動中心",
+    "地點名稱-en": "Zhenxing Village Assembly Center"
   }
 ]
