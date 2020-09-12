@@ -1,29 +1,19 @@
 <template>
-  <div class="navbar" :class="{'en-css': isUseENCSS}">
+  <div class="navbar">
     <nav class="nav mr2">
       <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
         <i class="fa fa-bars" />
       </button>
       <div class="navbar-collapse" :class="{'show':isShowNavbarCollapse}">
         <template v-for="menu in menuList">
-          <nuxt-link
+          <component
+            :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
             :key="menu.key"
-            :to="localePath(menu.url)"
+            :to="genLink(menu)"
             @click.native="isShowNavbarCollapse = false"
           >
-            <!-- v-if="!menu.isExt" -->
             {{ $t(menu.key) }}
-          </nuxt-link>
-          <!-- <a
-            v-else
-            :key="menu.key"
-            :href="menu.url"
-            rel="noopener"
-            target="_blank"
-            @click="isShowNavbarCollapse = !isShowNavbarCollapse"
-          >
-            {{ $t(menu.key) }}
-          </a> -->
+          </component>
         </template>
       </div>
     </nav>
@@ -38,11 +28,41 @@
     </div>
   </div>
 </template>
+<i18n lang="yaml">
+en:
+  speakers: 'Speakers'
+  cfp: 'Get Latest Proposals'
+  agenda: 'Agenda'
+  partners: 'Partners'
+  cosponsor: 'Cosponsor'
+  transport: 'Transportation'
+  live: 'Live'
+  feed: 'Feed'
+  staff: 'Staff'
+  registration: 'Registration'
+zh:
+  speakers: '講者'
+  cfp: '看議程投稿'
+  agenda: '議程'
+  partners: '合作夥伴'
+  cosponsor: '共同主辦'
+  transport: '交通'
+  live: '直播'
+  feed: '社群動態'
+  staff: '工作人員'
+  registration: '立即購票'
+</i18n>
 <script>
+import ExtLink from '~/components/ExtLink'
+
 const MENU_LIST = [
-  { key: 'transport', url: '/transport' }
+  { key: 'transport', url: '/transport' },
+  { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true }
 ]
 export default {
+  components: {
+    ExtLink
+  },
   data () {
     return {
       isShowNavbarCollapse: false,
@@ -60,9 +80,12 @@ export default {
       ]
     }
   },
-  computed: {
-    isUseENCSS () {
-      return this.$i18n.locale === 'en'
+  methods: {
+    genLink (menu) {
+      if (menu.isExt) {
+        return menu.url
+      }
+      return this.localePath(menu.url)
     }
   }
 }
@@ -124,13 +147,7 @@ export default {
     }
   }
 }
-// english css
-.navbar.en-css {
-  .navbar-collapse {
-    a {
-    }
-  }
-}
+
 // mobile navbar
 @media (max-width: 640px) {
   .navbar {

@@ -4,22 +4,13 @@ const {
 } = require('./utils')
 
 export default {
-  // navbar
-  speakers: 'Speakers',
-  agenda: 'Agenda',
-  partners: 'Partners',
-  cosponsor: 'Cosponsor',
-  transport: 'Transportation',
-  live: 'Live',
-  feed: 'Feed',
-  staff: 'Staff',
-  registration: 'Registration',
-  cfp: 'Call for Proposals',
-  cfpClosed: 'Call closed',
+  // cfp schedule
+  cfp: 'Call for proposals',
+  cfpClosed: 'End of submission',
   cfpClosedDescription: 'Continue to modify proposals',
   cfpFinalized: 'Proposals finalized',
   eoAugust: 'End of August',
-  programAnnouncement: 'Announce Programming',
+  programAnnouncement: 'Announce programming',
 
   // date
   cfpDate: 'Jun 08',

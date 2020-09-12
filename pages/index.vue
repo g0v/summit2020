@@ -38,19 +38,19 @@ export default {
   data () {
     const bigTimeline = [
       {
-        title: 'summit 2014',
+        title: 'Summit 2014',
         class: 'small'
       },
       {
-        title: 'summit 2016',
+        title: 'Summit 2016',
         class: 'small'
       },
       {
-        title: 'summit 2018',
+        title: 'Summit 2018',
         class: 'small'
       },
       {
-        title: 'summit 2020' + ' ' + this.$t('cfp'),
+        title: 'Summit 2020' + ' ' + this.$t('cfp'),
         class: 'small'
       },
       {
@@ -66,7 +66,7 @@ export default {
       },
       {
         date: '12/3 - 6',
-        title: 'summit 2020',
+        title: 'Summit 2020',
         class: 'small'
       }
     ]

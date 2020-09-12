@@ -4,16 +4,7 @@ const {
 } = require('./utils')
 
 export default {
-  // navbar
-  speakers: '講者',
-  agenda: '議程',
-  partners: '合作夥伴',
-  cosponsor: '共同主辦',
-  transport: '交通',
-  live: '直播',
-  feed: '社群動態',
-  staff: '工作人員',
-  registration: '立即購票',
+  // cfp schedule
   cfp: '議程徵集',
   cfpClosed: '投稿截止',
   cfpClosedDescription: '繼續修改稿件內容',
