@@ -33,8 +33,10 @@
               <span>{{ location[$t('venuelocationAddress')] }}</span>
               <img class="location-address-navigation" :src="require('../assets/images/v2/icno-navigation.png')" alt="">
             </a>
+            <!--
             <img class="location-photo" :src="require(`../assets/images/v2/${location.photo}`)" alt="">
-            <div class="location-event-name">
+            -->
+            <div class="location-event-name mt2">
               <span>{{ $t('events') }}</span>
             </div>
             <ul class="location-events">
