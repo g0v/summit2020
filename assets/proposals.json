@@ -15,7 +15,8 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-09-06T02:23:46.959Z",
+    "createdAt": "2020-09-11T16:03:29.271Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "ddio",
@@ -36,7 +37,7 @@
         "bio_en": "Ael is an active g0v participant that wants to build digital solutions for open and collaborative civic participation with open source communities.\n\nShe has been serving as product manager in “Disfactory”, a report platform on illegal factories on the farmlands, “Herstory in East Asia” and “Libot”, a LINE bot for Village Chiefs to report damages in the city.\n\nAel was the project manager of g0v Civic Tech Prototype Grant working with Jothon team and the product manager of sense.tw, an issue-policy mapping tool."
       }
     ],
-    "updatedAt": "2020-09-06T02:23:46.959Z",
+    "updatedAt": "2020-09-11T16:03:29.271Z",
     "timeSheet": {
       "id": "5edcffaeba206b030d66a2c6",
       "議程日期": "2020-12-04",
@@ -3697,8 +3698,8 @@
     "isPseudo": true,
     "title": "開幕",
     "title_en": "Opening",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1204開幕",
       "議程日期": "2020-12-04",
@@ -3717,8 +3718,8 @@
     "isPseudo": true,
     "title": "午休",
     "title_en": "Lunch break",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1204-lunch-break-0",
       "議程日期": "2020-12-04",
@@ -3737,8 +3738,8 @@
     "isPseudo": true,
     "title": "午休",
     "title_en": "Lunch break",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1204-lunch-break-1",
       "議程日期": "2020-12-04",
@@ -3757,8 +3758,8 @@
     "isPseudo": true,
     "title": "午休",
     "title_en": "Lunch break",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1204-lunch-break-2",
       "議程日期": "2020-12-04",
@@ -3777,8 +3778,8 @@
     "isPseudo": true,
     "title": "午休",
     "title_en": "Lunch break",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1204-lunch-break-3",
       "議程日期": "2020-12-04",
@@ -3797,8 +3798,8 @@
     "isPseudo": true,
     "title": "休息",
     "title_en": "Short break",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1204-afternoon-break-0",
       "議程日期": "2020-12-04",
@@ -3817,8 +3818,8 @@
     "isPseudo": true,
     "title": "閃電講",
     "title_en": "閃電講",
-    "updatedAt": "2020-09-13T00:47:57.247Z",
-    "createdAt": "2020-09-13T00:47:57.247Z",
+    "updatedAt": "2020-09-14T00:48:16.036Z",
+    "createdAt": "2020-09-14T00:48:16.036Z",
     "timeSheet": {
       "id": "1206-lightning-talk",
       "議程預設標題-華語": "閃電講",
