@@ -136,8 +136,15 @@ function normalizeTimeSheet (timeSheet) {
   const category = genFieldI18n(timeSheet.分類主題)
   const location = genFieldI18n(timeSheet.議程場地)
   const startHour = moment.unix(timeSheet.議程開始時間).utc().format('HH:mm')
+  const timeSheetFields = [
+    'id',
+    '議程日期',
+    '議程預設標題-華語',
+    '議程預設標題-en',
+    '最後更新時間'
+  ]
   const ret = {
-    ..._.pick(timeSheet, ['id', '議程日期', '議程預設標題-華語', '議程預設標題-en']),
+    ..._.pick(timeSheet, timeSheetFields),
     議程開始時間: `${timeSheet.議程日期}T${startHour}`,
     議程長度: timeSheet.議程長度 / SEC_PER_MIN,
     '分類主題-華語': category.zh,
@@ -177,13 +184,13 @@ function exportProposals (proposals, timeSheet) {
     }
   })
 
-  const now = moment()
   Object.keys(timeMap).forEach((pid) => {
     if (timeTakenMap[pid]) {
       return
     }
     // pseudo time slot!
     const timeSheet = timeMap[pid]
+    const updatedAt = moment(timeSheet.最後更新時間)
     const zhTitle = _.get(timeSheet, '議程預設標題-華語', 'N/A')
     const enTitle = _.get(timeSheet, '議程預設標題-en', zhTitle)
     toExport[pid] = {
@@ -191,8 +198,8 @@ function exportProposals (proposals, timeSheet) {
       isPseudo: true,
       title: zhTitle,
       title_en: enTitle,
-      updatedAt: now,
-      createdAt: now,
+      updatedAt,
+      createdAt: updatedAt,
       timeSheet
     }
   })
