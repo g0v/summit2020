@@ -204,8 +204,9 @@
     "is_slide_cc40": true,
     "related_url": "https://cofacts.g0v.tw/",
     "verified": true,
-    "createdAt": "2020-09-11T13:49:40.686Z",
+    "createdAt": "2020-09-11T14:38:32.117Z",
     "is_present_online": true,
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Billion Lee",
@@ -226,7 +227,7 @@
         "bio_en": "Frontend developer at day job, full-stack developer in open-source community.\nFounder of Cofacts, the crowd-sourced & open-source fact-checking project."
       }
     ],
-    "updatedAt": "2020-09-11T13:49:40.686Z",
+    "updatedAt": "2020-09-11T14:38:32.117Z",
     "timeSheet": {
       "id": "5ee48620ba206b030d66a2e5",
       "議程日期": "2020-12-05",
@@ -299,6 +300,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://hackmd.io/75rmGtgfRe2UhKCYpIRc3Q?both",
+    "verified": true,
+    "createdAt": "2020-09-12T07:58:53.436Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Irvin Chen",
@@ -328,9 +332,7 @@
         "bio_en": "Taiwan Internet Transparency Report project officer\n"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-12T07:58:53.436Z",
     "timeSheet": {
       "id": "5eeb7044ba206b030d66a2f4",
       "議程日期": "2020-12-05",
@@ -359,6 +361,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": false,
+    "verified": true,
+    "createdAt": "2020-09-11T15:22:08.339Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "曹存慧、吳柏旻、楊克鈞、葛昌惠、陳韋臻",
@@ -370,9 +375,7 @@
         "bio_en": "Although Darwin’s Theory of Species doesn't mention the pneuma of life, it describes all organisms as distant relatives. Taiwan’s Civil Law Code Article 983 states that one shouldn't marry a collateral relative by blood within the 6th degree of kinship. The 6 Degree Separation Theory shows the convergence of the social community era. Relatives beyond the 7th degree are on the enlarged magnetic field of divergence. \n\nOur the experimental lab collaborates firstly on creating the optimal impacts, then studies to avoid physical risks, and is always preparing a control/contrast room, in which diverging/distracting thoughts procreated immortally. "
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-11T15:22:08.339Z",
     "timeSheet": {
       "id": "5eee8137ba206b030d66a2ff",
       "議程日期": "2020-12-05",
@@ -624,6 +627,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.tbn.org.tw/",
+    "verified": true,
+    "createdAt": "2020-09-14T09:49:23.375Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "柯智仁",
@@ -662,9 +668,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T09:49:23.375Z",
     "timeSheet": {
       "id": "5ef2e905ba206b030d66a333",
       "議程日期": "2020-12-05",
@@ -768,17 +772,20 @@
     "id": "5ef44d7fba206b030d66a34b",
     "title": "當藝術社群遇上開放文化 —— Lightbox攝影圖書室的經驗（以及3個我們不知道怎麼解決的問題）",
     "title_en": "When art community meets open culture: Lightbox Photo Library as an example",
-    "summary": "#g0v專案與Lightbox\ng0v社群中的「公有地大行動」專案，讓 Lightbox 看見了成長與搬遷的契機。後來，在一段辛苦但有趣的申請過程後，g0v所倡議及實踐的開放文化，真實地讓台灣在地的藝文組織成了受益者。我們將簡介這段歷程。\n\n#2種文化\n但是，當人們談論起藝術時，腦中浮現的可能是深奧難懂、珍稀昂貴、脫離現實、殿堂的、神聖的、小眾的、神秘的、封閉的印象。再加上美術館中各種入館規定、禁止標示、看顧展場的志工，可能又加深了某些刻板印象，使得藝術與開放之間的距離，始終感覺頗為遙遠......\n\n#3個我們不知道怎樣解決的問題\nLightbox成立4年多來，為了更加的多元、開放、共融，做了不少努力，但也遭遇到一些困難。我們將在工作坊向大家概述3個難題，期盼更歡迎大家能貢獻想法，共同來思考突破或創新的可能。",
+    "summary": "#g0v專案與Lightbox\ng0v社群中的「公有地大行動」專案，讓 Lightbox 看見了成長與搬遷的契機。後來，在一段辛苦但有趣的申請過程後，g0v所倡議及實踐的開放文化，真實地讓台灣在地的藝文組織成了受益者。我們將簡介這段歷程。\n\n#2種文化\n但是，當人們談論起藝術時，腦中浮現的可能是深奧難懂、珍稀昂貴、脫離現實、殿堂的、神聖的、小眾的、神秘的、封閉的印象。再加上美術館中各種入館規定、禁止標示、看顧展場的志工，可能又加深了某些刻板印象，使得藝術與開放之間的距離，始終感覺頗為遙遠......\n\n#3個我們不知道怎樣解決的問題\nLightbox成立4年多來，為了更加的多元、開放、共融，做了不少努力，但也遭遇到一些困難。我們將在工作坊向大家概述3個難題（關於社群多樣性、組織共識、共融實踐），期盼更歡迎大家能貢獻想法，共同來思考突破或創新的可能。",
     "summary_en": "",
     "oral_language": "華語",
     "oral_languate_other": "",
-    "format": "工作坊 （90 分鐘）Workshop (90 min)",
+    "format": "工作坊 （60 分鐘）Workshop (60 min)",
     "topic": "賢者之島 Academia Formosa",
     "three_keywords": "藝文組織、開放多元、共融 ",
     "cover_image": "https://i.imgur.com/qcLsKpAh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-14T03:45:24.622Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "曹良賓",
@@ -790,9 +797,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T03:45:24.622Z",
     "timeSheet": {
       "id": "5ef44d7fba206b030d66a34b",
       "議程日期": "2020-12-05",
@@ -817,11 +822,14 @@
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
     "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "揪松團,線上揪松,遠距交流",
-    "cover_image": "https://i.imgur.com/6gin0E5h.jpg",
+    "cover_image": "https://i.imgur.com/HJdIdjkh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/@jothon/jothonline",
+    "verified": true,
+    "createdAt": "2020-09-11T14:31:33.742Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "慕約",
@@ -851,9 +859,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-11T14:31:33.742Z",
     "timeSheet": {
       "id": "5ef479b9ba206b030d66a34e",
       "議程日期": "2020-12-05",
@@ -914,17 +920,20 @@
     "id": "5ef4bfc8ba206b030d66a358",
     "title": "臺灣館連開放的挑戰--低成本、低介入的 wikidata 是可能的出路嗎？",
     "title_en": "",
-    "summary": "館連(GLAM)即畫廊、圖術館、檔案館與博物館的簡稱，是國際在提及文化機構開放時常用的架構，像是 OpenGLAM 或是 GLAM-Wiki，都是以這個架構推動的開放計畫。\n然而在臺灣館連開放推動較為緩慢，在 2020年新樂園藝術空間首次以替代空間之姿，大膽嘗試使用 wikidata 進行歷史資料的紀錄；透過整年度的執行經驗，回頭審視過往的館連開放推動策略，我們其實會發現：對館連機構而言，開放的成本高、難度高，但是短期可見的量化效益卻很低。\n\n而 wikidata 在這之中，提供一個低成本、低介入的資料開放模式，對於館連機構會是一個突破口嗎？本論壇將由講者分享自身的博物館實務經驗與 wikidata 研究案的參與心得，嘗試為臺灣的館連開放工作找出新的方向。",
+    "summary": "館連(GLAM)即畫廊、圖術館、檔案館與博物館的簡稱，是國際在提及文化機構開放時常用的架構，像是 OpenGLAM 或是 GLAM-Wiki，都是以這個架構推動的開放計畫。\n在 2020年新樂園藝術空間首次以替代空間之姿，大膽嘗試使用 wikidata 進行歷史資料的紀錄；透過整年度的執行經驗，回頭審視過往的泛館連機構開放推動策略，我們其實會發現：對他們而言，開放的成本高、難度高，但是短期可見的量化效益卻很低。\n\n而 wikidata 在這之中，提供一個低成本、低介入的資料開放模式，對於館連機構會是一個突破口嗎？本論壇將由講者分享自身的博物館實務經驗與 wikidata 研究案的參與心得，嘗試為臺灣的館連開放工作找出新的方向。",
     "summary_en": "",
     "oral_language": "華語",
     "oral_languate_other": "",
-    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
+    "format": "演講 （20 分鐘）Talk (20 min)",
     "topic": "賢者之島 Academia Formosa",
-    "three_keywords": "GLAM、Open、Wiki",
+    "three_keywords": "GLAM、Open、Wikidata",
     "cover_image": "https://i.imgur.com/NBuGApMh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-13T06:30:57.430Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Allen Wang",
@@ -936,9 +945,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-13T06:30:57.430Z",
     "timeSheet": {
       "id": "5ef4bfc8ba206b030d66a358",
       "議程日期": "2020-12-05",
@@ -1047,7 +1054,7 @@
     "summary_en": "Women, lesbians and sexual minorities are labeled, compartmentalised, and suppressed because of their sexuality, gender expression and sexual orientation for a long time. Despite the majority's treatment against the groups, similar kind of treatment is also found, and even more fierce among these groups, against the even marginalised. When labelling underlies suppression, we need deconstruction, and this is why Lez is more is here. ",
     "oral_language": "華語",
     "oral_languate_other": "",
-    "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
     "topic": "沒有島是局外島 No island is outside island",
     "three_keywords": "性少數 社群網路 empower",
     "cover_image": "https://i.imgur.com/lqwlwVah.jpg",
@@ -1055,6 +1062,9 @@
     "is_presentation_cc40": false,
     "is_slide_cc40": true,
     "related_url": "https://lezismore.org/",
+    "verified": true,
+    "createdAt": "2020-09-14T13:11:44.921Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Shin",
@@ -1062,7 +1072,7 @@
         "avatar_url": "https://i.imgur.com/ysvCbpRh.jpg",
         "city": "Taipei",
         "info_url": "",
-        "bio": "有感於簡單正義可以如何傷害人類的性／別複雜多元性，夢想著個體的認同、情感、身體與性得以自主、自在、自由的一天，世界可以真正從需索與缺憾、偏見和恐懼中自由的那一天。",
+        "bio": "從學生自治運動與網路串連為起始，歷經些許虛擬空間到實體空間的性別戰役，一度接近體制內的國家女性主義，因緣際會走至性別圈話語權的邊緣地帶。文／法跨領域雙背景，五年社群管理經驗，現為濡沫站長。仍在摸索、思考與發展避免或減少多元主體被代言與被消費的性別運動方法論。",
         "bio_en": ""
       },
       {
@@ -1084,9 +1094,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T13:11:44.921Z",
     "timeSheet": {
       "id": "5ef6eca4ba206b030d66a368",
       "議程日期": "2020-12-05",
@@ -1716,6 +1724,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://amis.moedict.tw/#~;posi",
+    "verified": true,
+    "createdAt": "2020-09-13T13:10:26.460Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Lafin",
@@ -1727,9 +1738,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-13T13:10:26.460Z",
     "timeSheet": {
       "id": "5ef9fa99ba206b030d66a3d8",
       "議程日期": "2020-12-04",
@@ -2196,6 +2205,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://medium.com/twreporter/orangutan-npm-packages-e48ec08df1a2",
+    "verified": true,
+    "createdAt": "2020-09-14T08:36:48.049Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "李法賢",
@@ -2216,9 +2228,7 @@
         "bio_en": "Frontend Engineer"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T08:36:48.049Z",
     "timeSheet": {
       "id": "5efaa323ba206b030d66a414",
       "議程日期": "2020-12-05",
@@ -2248,6 +2258,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://g0v.social",
+    "verified": true,
+    "createdAt": "2020-09-11T14:37:01.726Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Poga",
@@ -2259,9 +2272,7 @@
         "bio_en": "Programmer. Participate in g0v.tw since 2013. Focus on distributed system, decentralization, P2P, Privacy, and Security in recent years."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-11T14:37:01.726Z",
     "timeSheet": {
       "id": "5efaa83cba206b030d66a41a",
       "議程日期": "2020-12-05",
@@ -2527,14 +2538,15 @@
     "format": "工作坊 （60 分鐘）Workshop (60 min)",
     "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "揪松團,線上揪松,遠距交流",
-    "cover_image": "https://i.imgur.com/gj7wB9jh.jpg",
+    "cover_image": "https://i.imgur.com/sB8LeRLh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "http://g0v.github.io/jitsi-screen/screen2",
     "verified": true,
-    "createdAt": "2020-09-11T14:13:42.454Z",
+    "createdAt": "2020-09-11T14:31:42.755Z",
     "is_present_online": true,
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Ronny Wang",
@@ -2555,7 +2567,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-11T14:13:42.454Z",
+    "updatedAt": "2020-09-11T14:31:42.755Z",
     "timeSheet": {
       "id": "5efaf2c6ba206b030d66a458",
       "議程日期": "2020-12-04",
@@ -2636,6 +2648,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-12T16:22:56.027Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Patrice Tsai",
@@ -2647,9 +2662,7 @@
         "bio_en": "Transfer from accounting to UI/UX. I hope I can contribute my abilities to make the world better."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-12T16:22:56.027Z",
     "timeSheet": {
       "id": "5efb0618ba206b030d66a474",
       "議程日期": "2020-12-05",
@@ -2679,6 +2692,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://newmedia.pts.org.tw/subsidy/",
+    "verified": true,
+    "createdAt": "2020-09-13T14:06:08.066Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "吳亭霓",
@@ -2699,9 +2715,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-13T14:06:08.066Z",
     "timeSheet": {
       "id": "5efb0ef9ba206b030d66a47b",
       "議程日期": "2020-12-05",
@@ -3403,13 +3417,16 @@
     "summary_en": "While social impact turns into a buzzword, it takes much more efforts to describe what social impact actually is.  Mainstream businesses keep growing the economy and technological application, but clean air and ocean have been falling in a continual fashion for decades.  The system of human societal and economic development is obviously flawed in a significant way.  When financial and market success become the exclusive sort of value in the mind of decision makers, “partial stakeholders perspective” leads to enormous negligence of such impact as on human, cultural, social, environmental aspects.  It is the main theme of the talk about how to assess and manage the intangible values in a more routine way.",
     "oral_language": "華語",
     "oral_languate_other": "",
-    "format": "工作坊 （120 分鐘）Workshop (120 min)",
+    "format": "工作坊 （60 分鐘）Workshop (60 min)",
     "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "影響力評估、社會投資報酬、社會創新",
     "cover_image": "https://i.imgur.com/36kqmk7h.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-12T00:06:28.054Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "楊家彥 Steven Yang",
@@ -3418,12 +3435,10 @@
         "city": "台北市",
         "info_url": "",
         "bio": "留美經濟學博士，曾任職於台灣經濟研究院十餘年，主要研究涵蓋總體經濟、中小企業、知識服務及產業創新等領域，研究報告及產經政策評論均多。基於實踐創造理論更大價值的信念，近年投身影響力投資領域，希望透過跨界、跨域、跨世代方式整合多方力量，投入新經濟探索與社會改善工作。",
-        "bio_en": ""
+        "bio_en": "Steven C.Y. Yang received his Ph.D. in economics from Iowa State University in 2000, and had since worked for more than a decade as a research fellow and policy consultant in Taiwan. His research interest covered the areas of industrial innovation system, SMEs, and knowledge services. \n\nIn recent years he has joined the impact investment circle for putting in practice his academic findings in the hope for more actively contributing to the development of economic inclusiveness and a better society. "
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-12T00:06:28.054Z",
     "timeSheet": {
       "id": "5f0d47ede88a4948daf87fed",
       "議程日期": "2020-12-05",
@@ -3453,6 +3468,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://recommendations.implicit-development.org/",
+    "verified": true,
+    "createdAt": "2020-09-14T08:37:25.717Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Elisa Lindinger",
@@ -3460,8 +3478,8 @@
         "avatar_url": "https://i.imgur.com/T9Btfooh.jpg",
         "city": "Berlin",
         "info_url": "https://elisalindinger.de/",
-        "bio": "As a trained archaeologist, Elisa has long worked at the intersection of culture, tech and society and now focuses her research on technology and its potential for a fair, equitable society. She co-founded SUPERRR Lab with Julia Kloiber.",
-        "bio_en": "As a trained archaeologist, Elisa has long worked at the intersection of culture, tech and society and now focuses her research on technology and its potential for a fair, equitable society. She co-founded SUPERRR Lab with Julia Kloiber."
+        "bio": "As a trained archaeologist, Elisa has long worked at the intersection of culture, technology and society and now focuses her research on all things digital and their potential for a fair, equitable society. She co-founded SUPERRR Lab with Julia Kloiber.",
+        "bio_en": "As a trained archaeologist, Elisa has long worked at the intersection of culture, technology and society and now focuses her research on all things digital and their potential for a fair, equitable society. She co-founded SUPERRR Lab with Julia Kloiber."
       },
       {
         "display_name": "Julia Kloiber",
@@ -3473,9 +3491,7 @@
         "bio_en": "Julia builds programs that promote technology for the common good and advocate for gender equality. She co-founded SUPERRR Lab with Elisa Lindinger."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T08:37:25.717Z",
     "timeSheet": {
       "id": "5f0dd9c960d627285b6b14e7",
       "議程日期": "2020-12-05",
@@ -3566,20 +3582,21 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://github.com/Inndy/twnhi-smartcard-agent",
+    "verified": true,
+    "createdAt": "2020-09-11T16:50:18.846Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Inndy Lin",
-        "organization": " ",
-        "avatar_url": "https://i.imgur.com/KyA7W5ih.jpg",
+        "organization": " 奧義智慧科技",
+        "avatar_url": "https://i.imgur.com/Bw3tBaph.jpg",
         "city": "Taipei",
         "info_url": "https://twitter.com/Inndy_tw",
         "bio": "Inndy 是一位資訊安全研究員，專注於研究惡意程式以及 APT 攻擊。他喜愛鑽研逆向工程、貢獻開源軟體、Python以及分析惡意程式。曾經於 BlackHat、HITCON、SITCON 發表研究以及演講。",
         "bio_en": "Inndy Lin is a cyber security researcher, focuses on malware and APT research. He loves reverse engineering, open source, Python and malware analysis. He had presented his research in BlackHat, HITCON, ROOTCON."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-11T16:50:18.846Z",
     "timeSheet": {
       "id": "5f0ef5300bde6f3bbab73f6d",
       "議程日期": "2020-12-04",
@@ -3648,33 +3665,34 @@
   "5f0f1b6e0bde6f3bbab73f76": {
     "id": "5f0f1b6e0bde6f3bbab73f76",
     "title": "失敗分享：澳門民間投票 2019 ",
-    "title_en": "Lesson learnt from failure - Reflection on Macau Civil Voting 2019",
-    "summary": "民間/非官方公投是培養公民參與和集體表達意見的一種手段。在香港和澳門，中國試圖壓制民間投票。在過去的幾年中，公權力及有國家資助的行為者濫用了刑事訴訟程序及並發起了網絡攻擊，以干擾在香港和澳門的這些投票的運作。\n\n以2019年在澳門舉行的特首選舉民間投票為例，投票組織者在遭受多方面攻擊後，被迫提前結束投票。本建議議程將在技術角度介紹投票和防護措拖。我將討論當時來自中國拒絕服務（DoS）攻擊的模式、投票程式是否需要過度設計以及我為應對技術威脅所採取的措施。\n\n儘管在技術方面成功地守著了投票程式運行，但投票活動還是失敗了。投票組織者的主要成員收到對其人身安全受到威脅。組織者不僅提前中止了投票，還取消了計劃中的宣佈結果的新聞發佈會。從2019年澳門投票失敗中吸取的教訓可能會幫助有志者將來組織類似的投票。",
-    "summary_en": "Civic / unofficial referendums have been a means of cultivating civic engagement and collective expression of opinions.  In the context of Hong Kong and Macau, China has attempted to clamp down on civic votes / referendums.  In the past few years, the authorities and state-sponsored actors have abused criminal procedures and launched cyberattacks to interfere with the organisation of these votes in both Hong Kong and Macau.\n\nIn the case of the 2019 Vote on Chief Execution Election in Macau, the vote organiser was forced to close the vote prematurely after encountering multifaceted attacks.   The proposed presentation will focus on the technical aspect of the vote and the defence.  I will discuss the pattern of the Denial of Service (DoS) attacks, whether overengineering is necessary and the measures I took to mitigate these threats. \n\nDespite the success in defence of the voting application on the technical front, the vote ended up a failure.  Key members of the vote organiser received threats to their personal safety.  Not only did the organiser halt the vote but also cancelled a planned press conference at which the results would be announced.  The lessons learnt from the failure of the 2019 Macau Vote might help others plan a similar vote in the future. ",
+    "title_en": "Lesson learnt from failure - Reflection on Macau Civil Vote 2019",
+    "summary": "民間/非官方公投是培養公民參與和集體表達意見的一種手段。在香港和澳門，中國試圖壓制民間投票。在過去的幾年中，公權力及有國家資助的行為者濫用了刑事訴訟程序及並發起了網絡攻擊，以干擾在香港和澳門的這些投票的運作。\n\n以2019年在澳門舉行的特首選舉民間投票為例，投票組織者在遭受多方面攻擊後，被迫提前結束投票。本議程將包括投票所面對的政治威脅以及在技術角度介紹防護措拖。我將討論當時來自中國拒絕服務（DoS）攻擊的模式、投票程式是否需要過度設計以及我為應對技術威脅所採取的措施。儘管在技術方面成功地守著了投票程式運行，但投票活動還是失敗了。投票組織者的主要成員收到對其人身安全受到威脅。組織者不僅提前中止了投票，還取消了計劃中的宣佈結果的新聞發佈會。從2019年澳門投票失敗中吸取的教訓可能會幫助有志者將來組織類似的投票。",
+    "summary_en": "Civic / unofficial referendums have been a means of cultivating civic engagement and collective expression of opinions.  In the context of Hong Kong and Macau, China has attempted to clamp down on civic votes / referendums.  In the past few years, the authorities and state-sponsored actors have abused criminal procedures and launched cyberattacks to interfere with the organisation of these votes in both Hong Kong and Macau.\n\nIn the case of the 2019 Vote on Chief Execution Election in Macau, the vote organiser was forced to close the vote prematurely after encountering multifaceted attacks.   The presentation will cover the political threat facing the vote as well as the technical aspect of the defence.  I will discuss the pattern of the Denial of Service (DoS) attacks, whether over-engineering is necessary and the measures I took to mitigate these threats.  Despite the success in defence of the voting application on the technical front, the vote ended up a failure.  Key members of the vote organiser received threats to their personal safety.  Not only did the organiser halt the vote but also cancelled a planned press conference at which the results would be announced.  The lessons learnt from the failure of the 2019 Macau Vote might help others plan a similar vote in the future. ",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
     "topic": "島嶼大聯盟 Island’s federation",
-    "three_keywords": "voting, failure",
+    "three_keywords": "voting, failure, referendum",
     "cover_image": "",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://2019.newmacau.org/results.html",
+    "verified": true,
+    "createdAt": "2020-09-14T11:59:47.938Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
-        "display_name": "Jason Chao",
+        "display_name": "Jason Chao 周庭希",
         "organization": "(Unaffiliated)",
         "avatar_url": "https://i.imgur.com/0BvQjEqh.jpg",
         "city": "London",
         "info_url": "https://jasontc.net/",
-        "bio": "Developer, PhD student",
-        "bio_en": "Developer, PhD student"
+        "bio": "開發人員、人權運動人士、博士生",
+        "bio_en": "Developer, human rights activist and PhD student"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T11:59:47.938Z",
     "timeSheet": {
       "id": "5f0f1b6e0bde6f3bbab73f76",
       "議程日期": "2020-12-05",
@@ -3746,6 +3764,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-12T07:31:16.231Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "皇甫",
@@ -3757,9 +3778,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-12T07:31:16.231Z",
     "timeSheet": {
       "id": "5f0f235a0bde6f3bbab73f7e",
       "議程日期": "2020-12-05",
@@ -3773,19 +3792,19 @@
       "議程場地-en": "C-Hub - 3F"
     }
   },
-  "1204開幕": {
-    "id": "1204開幕",
+  "1204-opening": {
+    "id": "1204-opening",
     "isPseudo": true,
     "title": "開幕",
     "title_en": "Opening",
-    "updatedAt": "2020-09-10T05:47:08.000Z",
-    "createdAt": "2020-09-10T05:47:08.000Z",
+    "updatedAt": "2020-09-14T14:00:23.000Z",
+    "createdAt": "2020-09-14T14:00:23.000Z",
     "timeSheet": {
-      "id": "1204開幕",
+      "id": "1204-opening",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "開幕",
       "議程預設標題-en": "Opening",
-      "最後更新時間": "2020-09-10T05:47:08.000Z",
+      "最後更新時間": "2020-09-14T14:00:23.000Z",
       "議程開始時間": "2020-12-04T09:10",
       "議程長度": 20,
       "分類主題-華語": "",
@@ -3903,19 +3922,41 @@
     "id": "1206-lightning-talk",
     "isPseudo": true,
     "title": "閃電講",
-    "title_en": "閃電講",
-    "updatedAt": "2020-09-10T14:03:13.000Z",
-    "createdAt": "2020-09-10T14:03:13.000Z",
+    "title_en": "Lightning talk",
+    "updatedAt": "2020-09-14T13:59:51.000Z",
+    "createdAt": "2020-09-14T13:59:51.000Z",
     "timeSheet": {
       "id": "1206-lightning-talk",
+      "議程日期": "2020-12-06",
       "議程預設標題-華語": "閃電講",
-      "最後更新時間": "2020-09-10T14:03:13.000Z",
-      "議程開始時間": "undefinedTInvalid date",
-      "議程長度": null,
+      "議程預設標題-en": "Lightning talk",
+      "最後更新時間": "2020-09-14T13:59:51.000Z",
+      "議程開始時間": "2020-12-06T17:00",
+      "議程長度": 1070,
       "分類主題-華語": "",
       "分類主題-en": "",
-      "議程場地-華語": "",
-      "議程場地-en": ""
+      "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+    }
+  },
+  "1206-closing-speech": {
+    "id": "1206-closing-speech",
+    "isPseudo": true,
+    "title": "閉幕",
+    "title_en": "閉幕",
+    "updatedAt": "2020-09-14T13:59:46.000Z",
+    "createdAt": "2020-09-14T13:59:46.000Z",
+    "timeSheet": {
+      "id": "1206-closing-speech",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "閉幕",
+      "最後更新時間": "2020-09-14T13:59:46.000Z",
+      "議程開始時間": "2020-12-06T17:50",
+      "議程長度": 1080,
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
     }
   }
 }
