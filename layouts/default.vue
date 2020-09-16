@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper bg-mid-gray">
     <div ref="content">
       <navbar @toggle="toggleMenu" />
       <div class="page-container">
@@ -8,7 +8,11 @@
       <Footer />
     </div>
     <div ref="mobilemenu" class="dn bg-mid-gray">
-      <summit-menu class="pa2" :dark="true" />
+      <summit-menu
+        class="pa2"
+        :dark="true"
+        @link-click="closeMenu"
+      />
     </div>
   </div>
 </template>
@@ -68,7 +72,7 @@ export default {
   top: 0;
   bottom: 0;
   width: 256px;
-  min-height: 100vh;
+  height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
@@ -88,7 +92,7 @@ export default {
   z-index: 1;
   will-change: transform;
   background-color: #FFF; /* A background-color is required */
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .slideout-open,
