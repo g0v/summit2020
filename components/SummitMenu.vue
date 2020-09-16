@@ -1,14 +1,14 @@
 <template lang="pug">
-.menu.flex.flex-column.flex-row-l.vh-100.h-auto-l
+.menu.flex.flex-column.flex-row-l.vh-100.h-auto-l(:class="{'menu--dark': dark}")
   .flex-auto.flex-none-l
     template(v-for="menu in menuList")
-      component.menu__item.dim.ph2.pv3.pv2-l.mr3-l.db.dib-l(
+      component.menu__item.dim.pa3.pa2-l.mr3-l.db.dib-l.bb.bn-l.b--silver(
         :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
         :key="menu.key"
         :to="genLink(menu)"
       )
         | {{ $t(menu.key) }}
-  nuxt-link.menu__lang.ph2.pv3.pv2-l(:to="switchLocalePath(isZh ? 'en' : 'zh')")
+  nuxt-link.menu__lang.pa3.pa2-l(:to="switchLocalePath(isZh ? 'en' : 'zh')")
     | {{$t('lang')}}
 </template>
 <i18n lang="yaml">
@@ -43,6 +43,12 @@ import ExtLink from '~/components/ExtLink'
 export default {
   components: {
     ExtLink
+  },
+  props: {
+    dark: {
+      type: Boolean,
+      default: false
+    }
   },
   data () {
     return {
@@ -83,6 +89,16 @@ export default {
   }
   &__lang {
     color: #f779ee;
+  }
+  &--dark {
+    .menu {
+      &__item {
+        color: #f6f6f6;
+      }
+      &__lang {
+        color: #f7dc79;
+      }
+    }
   }
 }
 </style>

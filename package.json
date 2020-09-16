@@ -38,6 +38,7 @@
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.11.1",
     "nuxt-leaflet": "0.0.21",
+    "slideout": "^1.0.1",
     "vue-markdown": "^2.2.4",
     "vue2-leaflet": "^2.5.2",
     "yaml-front-matter": "^4.1.0"
