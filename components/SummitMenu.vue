@@ -1,14 +1,18 @@
 <template lang="pug">
-.menu.flex.flex-column.flex-row-l.vh-100.h-auto-l(:class="{'menu--dark': dark}")
+.menu.flex.flex-column.flex-row-l.h-100.h-auto-l(:class="{'menu--dark': dark}")
   .flex-auto.flex-none-l
     template(v-for="menu in menuList")
-      component.menu__item.dim.pa3.pa2-l.mr3-l.db.dib-l.bb.bn-l.b--silver(
+      component.menu__item.dim-l.pa3.pa2-l.mr3-l.db.dib-l.bb.bn-l.b--silver(
         :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
         :key="menu.key"
         :to="genLink(menu)"
+        @click.native="sthClick"
       )
         | {{ $t(menu.key) }}
-  nuxt-link.menu__lang.pa3.pa2-l(:to="switchLocalePath(isZh ? 'en' : 'zh')")
+  nuxt-link.menu__lang.pa3.pa2-l.dim-l(
+    :to="switchLocalePath(isZh ? 'en' : 'zh')"
+    @click.native="sthClick"
+  )
     | {{$t('lang')}}
 </template>
 <i18n lang="yaml">
@@ -77,6 +81,9 @@ export default {
         return menu.url
       }
       return this.localePath(menu.url)
+    },
+    sthClick () {
+      this.$emit('link-click')
     }
   }
 }

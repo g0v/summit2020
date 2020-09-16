@@ -138,15 +138,3 @@ git push -u origin release-<MMDD>.<revision>
 
 # 等 5 分鐘後，就可在 https://summit.g0v.tw/2020/ 看到更新
 ```
-
-## 待作們
-
-### 網站架構
-
-1. [x] SEO + Social Share
-1. [x] script for staging only flag + staging deploy branch
-1. [x] script for production deploy branch using existing dir
-1. [x] doc for everything
-1. [ ] Add Sentry
-1. [ ] Apply Sentry
-1. [x] script for production deploy branch using nuxt gen
