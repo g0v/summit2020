@@ -1,6 +1,6 @@
 <template>
   <div class="homepage">
-    <div class="landing flex justify-center items-center bg-near-white">
+    <div class="landing flex justify-center">
       <img :src="require('~/assets/images/v2/banner-2.svg')">
     </div>
     <div class="text-container article article-1">
@@ -89,6 +89,15 @@ export default {
   > .landing {
     background-color: #fff;
     margin-bottom: 2rem;
+
+    img {
+      min-height: 70vh;
+      object-fit: cover;
+
+      @include not-small-screen {
+        height: calc(100vh - #{$nav-height});
+      }
+    }
   }
 
   .text-container {

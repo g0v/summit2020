@@ -1,2 +1,21 @@
-$nav-height: 54px;
+$nav-height: 90px;
 $footer-height: 32px;
+
+@mixin large-screen {
+  @media screen and (min-width: 60em) {
+    @content
+  }
+}
+
+@mixin medium-screen {
+  @media screen and (min-width: 30em) and (max-width: 60em) {
+    @content
+  }
+}
+
+@mixin not-small-screen {
+  @media screen and (min-width: 30em) {
+    @content
+  }
+}
+
