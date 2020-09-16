@@ -82,8 +82,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$nav-height: 60px;
-
 .homepage {
   max-width: 100vw;
   overflow-x: hidden;

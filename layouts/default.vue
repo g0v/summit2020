@@ -1,9 +1,9 @@
 <template>
   <div class="entry-point">
+    <navbar />
     <div class="page-container">
       <nuxt />
     </div>
-    <navbar />
     <Footer />
   </div>
 </template>
@@ -23,7 +23,7 @@ body, .entry-point, .page-container {
   width: 100%;
 }
 .page-container {
-  padding-top: $nav-height;
+  // padding-top: $nav-height;
   // padding-bottom: ($footer-height + 16px);
 }
 </style>

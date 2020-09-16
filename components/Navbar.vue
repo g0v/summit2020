@@ -1,35 +1,46 @@
-<template>
-  <div class="navbar">
-    <nav class="nav mr2">
-      <button class="navbar-toggler" @click="isShowNavbarCollapse = !isShowNavbarCollapse">
-        <i class="fa fa-bars" />
-      </button>
-      <div class="navbar-collapse" :class="{'show':isShowNavbarCollapse}">
-        <template v-for="menu in menuList">
-          <component
+<template lang="pug">
+  nav.navbar
+    .navbar__banner.flex.justify-between-l.items-center.h-100
+      .db.dn-l
+        button.bn.pa2.bg-white(@click="openMobileMenu")
+          i.fa.fa-bars
+      nuxt-link.navbar__logo.flex-auto.flex-none-l.tc(:to="localePath('/')")
+        img.h-100(src="~/assets/images/v2/logo-singleline.svg")
+      .dn.flex-l.items-center
+        template(v-for="menu in menuList")
+          component.navbar__item.dim.pa2.mr3(
             :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
             :key="menu.key"
             :to="genLink(menu)"
-            @click.native="isShowNavbarCollapse = false"
-          >
-            {{ $t(menu.key) }}
-          </component>
-        </template>
-      </div>
-    </nav>
-    <nuxt-link class="logo w4 w5-l h-100" :to="localePath('/')" @click.native="isShowNavbarCollapse = false" />
-    <div class="tail">
-      <nuxt-link v-if="$i18n.locale === 'zh'" :to="switchLocalePath('en')">
-        English
-      </nuxt-link>
-      <nuxt-link v-else :to="switchLocalePath('zh')">
-        中文
-      </nuxt-link>
-    </div>
-  </div>
+          )
+            | {{ $t(menu.key) }}
+        nuxt-link.navbar__lang.pa2(:to="switchLocalePath(isZh ? 'en' : 'zh')")
+          | {{$t('lang')}}
+    .mobilemenu.fixed.top-0.db.dn-l.z-999(v-show="isMobileMenuVisible")
+      .mobilemenu__wrapper.vh-100.overflow-y-auto.bg-black-50(
+        @click="closeMobileMenu"
+      )
+        .mobilemenu__content.vh-100.w-80.ph3.pv1.flex.flex-column.justify-between(
+          @click.stop
+        )
+          div.flex.flex-column.flex-auto
+            template(v-for="menu in menuList")
+              component.navbar__item.dim.ph2.pv3.bb.b--moon-gray(
+                :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
+                :key="menu.key"
+                :to="genLink(menu)"
+                @click.native="closeMobileMenu"
+              )
+                | {{ $t(menu.key) }}
+          nuxt-link.navbar__lang.ph2.pv3.bt.b--moon-gray(
+            :to="switchLocalePath(isZh ? 'en' : 'zh')"
+            @click.native="closeMobileMenu"
+          )
+            | {{$t('lang')}}
 </template>
 <i18n lang="yaml">
 en:
+  lang: '華語'
   speakers: 'Speakers'
   cfp: 'Get Latest Proposals'
   agenda: 'Agenda'
@@ -41,6 +52,7 @@ en:
   staff: 'Staff'
   registration: 'Registration'
 zh:
+  lang: 'English'
   speakers: '講者'
   cfp: '看議程投稿'
   agenda: '議程'
@@ -55,29 +67,30 @@ zh:
 <script>
 import ExtLink from '~/components/ExtLink'
 
-const MENU_LIST = [
-  { key: 'transport', url: '/transport' },
-  { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true }
-]
 export default {
   components: {
     ExtLink
   },
   data () {
     return {
-      isShowNavbarCollapse: false,
-      menuList: MENU_LIST,
-      allMenuList: [
-        { key: 'example', url: '/example' },
-        { key: 'speakers', url: '/speakers' },
-        { key: 'agenda', url: '/agenda' },
-        { key: 'partners', url: '/partners' },
+      isMobileMenuVisible: false,
+      menuList: [
         { key: 'transport', url: '/transport' },
-        { key: 'live', url: 'https://some.live.url.com', isExt: true },
-        { key: 'feed', url: 'https://some.feed.url.com', isExt: true },
-        { key: 'staff', url: '/staff' },
-        { key: 'registration', url: 'https://xxx.kktix.com', isExt: true }
+        { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true }
+        // { key: 'speakers', url: '/speakers' },
+        // { key: 'agenda', url: '/agenda' },
+        // { key: 'partners', url: '/partners' },
+        // { key: 'transport', url: '/transport' },
+        // { key: 'live', url: 'https://some.live.url.com', isExt: true },
+        // { key: 'feed', url: 'https://some.feed.url.com', isExt: true },
+        // { key: 'staff', url: '/staff' },
+        // { key: 'registration', url: 'https://xxx.kktix.com', isExt: true }
       ]
+    }
+  },
+  computed: {
+    isZh () {
+      return this.$i18n.locale === 'zh'
     }
   },
   methods: {
@@ -86,98 +99,46 @@ export default {
         return menu.url
       }
       return this.localePath(menu.url)
+    },
+    openMobileMenu () {
+      this.isMobileMenuVisible = true
+    },
+    closeMobileMenu () {
+      this.isMobileMenuVisible = false
     }
   }
 }
 </script>
 <style lang="scss" scoped>
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  z-index: 9999;
-  background-color: #fff;
-  border: none;
-  height: $nav-height;
-  border-bottom: 1.5px solid $pink-1;
-  > .logo {
-    background-image: url('../assets/images/v2/logo-singleline.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  > .tail {
-    a {
-      min-width: 4rem;
-      padding: 0.75rem;
-      color: $pink-1;
-    }
-    a:hover {
-      color: $gray-1;
+  background: white;
+  &__banner {
+    padding: 8px 12px;
+    @include large-screen {
+      padding: 18px 72px 18px 80px;
     }
   }
-  a {
-    color: $gray-1;
+  &__logo {
+    height: 36px;
+    @include large-screen {
+      height: 46px;
+    }
+  }
+  &__item {
+    color: #6e6e6e;
     text-decoration: none;
-    display: inline-block;
-    text-align: center;
   }
-  a:hover {
-    color: $pink-1;
-  }
-  .navbar-toggler {
-    display: none;
-    color: $gray;
-    background: none;
-    outline: none;
-    border: none;
-  }
-  .navbar-collapse {
-    margin-left: 0.75rem;
-    display: flex;
-    a {
-      padding: 0.25rem 0.5rem;
-      &:not(:first-child) {
-        margin-left: 0.5rem;
-      }
-    }
+  &__lang {
+    color: #f779ee;
   }
 }
 
-// mobile navbar
-@media (max-width: 640px) {
-  .navbar {
-    .navbar-toggler {
-      display: block;
-      padding: 0.5rem 1rem;
-      font-size: 1.5rem;
-    }
-    .navbar-collapse {
-      display: none;
-      a:first-child {
-        text-align: center;
-      }
-    }
-    .navbar-collapse.show {
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      width: 100vw;
-      position: absolute;
-      top: $nav-height;
-      left: 0;
-      z-index: 9999;
-      margin: 0;
-      padding: 0.25rem 0;
-      > a {
-        margin: 0;
-        padding: 0.25rem;
-      }
-    }
+.mobilemenu {
+  &__wrapper {
+    width: 100vw;
+  }
+  &__content {
+    background: rgba(255, 255, 255, .93);
   }
 }
 </style>
