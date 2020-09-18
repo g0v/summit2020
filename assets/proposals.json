@@ -498,6 +498,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-16T14:26:35.454Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "雨蒼",
@@ -509,9 +512,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-16T14:26:35.454Z",
     "timeSheet": {
       "id": "5ef211bcba206b030d66a31d",
       "議程日期": "2020-12-04",
@@ -975,6 +976,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "http://www.yunpeihsiung.com/workwindons/onemegaphone.html",
+    "verified": true,
+    "createdAt": "2020-09-15T15:00:17.237Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "熊元培",
@@ -986,9 +990,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-15T15:00:17.237Z",
     "timeSheet": {
       "id": "5ef63898ba206b030d66a362",
       "議程日期": "2020-12-04",
@@ -1719,26 +1721,35 @@
     "format": "演講 （20 分鐘）Talk (20 min)",
     "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "阿美語、原住民語、阿美語萌典",
-    "cover_image": "https://i.imgur.com/2MRinsyh.jpg",
+    "cover_image": "https://i.imgur.com/u4emQRmh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://amis.moedict.tw/#~;posi",
     "verified": true,
-    "createdAt": "2020-09-13T13:10:26.460Z",
+    "createdAt": "2020-09-16T01:13:16.452Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Lafin",
         "organization": "阿美語萌典",
-        "avatar_url": "https://i.imgur.com/6MrOrKLh.jpg",
+        "avatar_url": "https://i.imgur.com/5Z4ZN2xh.jpg",
         "city": "宜蘭縣",
         "info_url": "",
         "bio": "阿美語萌典的參與者，也是阿美族，但因該參與該專案後，才開始學習自己的族語，而產生新的認同與啟發。",
         "bio_en": ""
+      },
+      {
+        "display_name": "weiting",
+        "organization": "阿美語萌典",
+        "avatar_url": "https://i.imgur.com/G9VRMsFh.jpg",
+        "city": "台北市",
+        "info_url": "",
+        "bio": "阿美語萌典的參與者，本身為多元文化研究者，從事原住民族研究多年，對於世界南島文化具有一定程度了解。",
+        "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-13T13:10:26.460Z",
+    "updatedAt": "2020-09-16T01:13:16.452Z",
     "timeSheet": {
       "id": "5ef9fa99ba206b030d66a3d8",
       "議程日期": "2020-12-04",
@@ -1769,6 +1780,9 @@
     "is_slide_cc40": true,
     "oral_language_other": "文字華語，口說台語",
     "related_url": "https://sites.google.com/view/twgodhand/%E9%A6%96%E9%A0%81-home?authuser=0",
+    "verified": true,
+    "createdAt": "2020-09-14T15:11:25.280Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Scott Chen",
@@ -1780,9 +1794,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T15:11:25.280Z",
     "timeSheet": {
       "id": "5ef9fe47ba206b030d66a3dc",
       "議程日期": "2020-12-05",
@@ -1853,6 +1865,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-17T03:51:21.362Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Sandra Lin",
@@ -1864,9 +1879,7 @@
         "bio_en": "Service designer during day working at a non-profit, trying to make work easier for everyone in the organization. Bartender during night, and always looking for more side projects to do."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-17T03:51:21.362Z",
     "timeSheet": {
       "id": "5efa0bf6ba206b030d66a3ea",
       "議程日期": "2020-12-04",
@@ -2397,6 +2410,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://cc.ocf.tw/",
+    "verified": true,
+    "createdAt": "2020-09-15T13:35:58.909Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "ROCK",
@@ -2408,9 +2424,7 @@
         "bio_en": "Involved in Open Communities since 2009, not a programmer but love to push others into a pit.\nFather of 2 daughters\nThe last generation of Open Source Software Foundry\nStaff of Open Culture Foundation\nMember of CC Global Network membership committee \nRepresentative of CC Taiwan Chapter"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-15T13:35:58.909Z",
     "timeSheet": {
       "id": "5efadb44ba206b030d66a439",
       "議程日期": "2020-12-04",
@@ -2745,6 +2759,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://bit.ly/2ZmSmED",
+    "verified": true,
+    "createdAt": "2020-09-15T07:57:02.971Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "哈爸",
@@ -2756,9 +2773,7 @@
         "bio_en": "WuLung Hsu (Haba) LASS founder, HCOS founder, FBTUG founder\nEmbrace openness and welcome to the future! Hope to gather the strength of the Taiwan PRO Maker community and create together\nThe open hardware project that attracted the world's attention and developed an innovative Maker economic model. Former product line director of chip design company, system architect, love Linux, familiar\nEmbedded system design, communication system and software design. Serve as several community managers and business consultants."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-15T07:57:02.971Z",
     "timeSheet": {
       "id": "5efb2838ba206b030d66a495",
       "議程日期": "2020-12-04",
@@ -3037,20 +3052,22 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-09-14T17:21:14.632Z",
+    "presentation_method": "遠端連線 online",
+    "related_url": "https://codeforpakistan.org/blog/portfolio-item/open-data-portal-for-pmru/ ",
     "speakers": [
       {
-        "display_name": "Sahar Habib",
+        "display_name": "Ebtihaj",
         "organization": "Code for Pakistan",
-        "avatar_url": "https://i.imgur.com/54y63S5h.jpg",
+        "avatar_url": "https://i.imgur.com/VisWia1h.jpg",
         "city": "Islamabad, Pakistan",
-        "info_url": "https://pk.linkedin.com/in/sahar-habib",
-        "bio": "Sahar is the Director, Communications at Code for Pakistan.",
-        "bio_en": "Sahar is the Director, Communications at Code for Pakistan."
+        "info_url": "https://www.linkedin.com/in/ebtihajkhan/",
+        "bio": "Ebtihaj is the Government Innovation Lead at Code for Pakistan.",
+        "bio_en": "Ebtihaj is a development sector professional currently working as the Government Innovation Lead at Code for Pakistan. He has over 5 years of experience working with the government and holds great insights on how governments operate and how to transform their processes digitally. Being an avid technologist, Ebtihaj has a keen interest in civic innovation, open data and the development of scalable digital services to transform governance. Being an advocate for open data and transparency, Ebtihaj is spearheading innovation in the Government through his work in Code for Pakistan."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-14T17:21:14.632Z",
     "timeSheet": {
       "id": "5efb5c5eba206b030d66a4dc",
       "議程日期": "2020-12-05",
