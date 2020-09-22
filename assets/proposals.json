@@ -890,6 +890,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://chiahua.carto.com/builder/5705b22f-a7a0-4fbc-87b1-5d8fcc9e54d9/embed",
+    "verified": true,
+    "createdAt": "2020-09-21T08:32:27.402Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "ch",
@@ -901,9 +904,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-21T08:32:27.402Z",
     "timeSheet": {
       "id": "5ef4aeaeba206b030d66a354",
       "議程日期": "2020-12-05",
@@ -2118,7 +2119,7 @@
     "summary_en": "",
     "oral_language": "English",
     "oral_languate_other": "",
-    "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
     "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "facilitation, training, ExtinctionRebellion",
     "cover_image": "",
@@ -2126,6 +2127,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://xrebellion.nyc, https://www.xrdemocracy.uk/, ",
+    "verified": true,
+    "createdAt": "2020-09-20T20:04:10.684Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Liz Barry",
@@ -2137,9 +2141,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-20T20:04:10.684Z",
     "timeSheet": {
       "id": "5efa793fba206b030d66a402",
       "議程日期": "2020-12-05",
