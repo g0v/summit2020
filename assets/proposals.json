@@ -1602,7 +1602,7 @@
     "is_slide_cc40": true,
     "related_url": "https://amis.moedict.tw/#~;posi",
     "verified": true,
-    "createdAt": "2020-09-18T07:05:34.000Z",
+    "createdAt": "2020-09-26T13:50:13.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -1615,7 +1615,7 @@
         "bio_en": null
       }
     ],
-    "updatedAt": "2020-09-18T07:05:34.000Z",
+    "updatedAt": "2020-09-26T13:50:13.000Z",
     "timeSheet": {
       "id": "5ef9fa99ba206b030d66a3d8",
       "議程日期": "2020-12-04",
@@ -1955,20 +1955,10 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://mask.goodideas-studio.com/",
-    "speakers": [
-      {
-        "display_name": "Phelps",
-        "organization": "偶爾會路過好想工作室",
-        "avatar_url": "https://i.imgur.com/0TyHo8Uh.jpg",
-        "city": "台北",
-        "info_url": "https://待補充",
-        "bio": "年初協助口罩地圖專案設計規劃，7月協助北市聯合醫院線上掛號流程優化設計。設計師/專案經理、服務設計/UX/UI 職能。平常負責規劃商業(服務)模式設計，與使用者轉換優化。",
-        "bio_en": ""
-      }
-    ],
+    "speakers": [],
     "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "createdAt": "2020-09-26T13:53:33.000Z",
+    "updatedAt": "2020-09-26T13:53:33.000Z",
     "timeSheet": {
       "id": "5efa37d2ba206b030d66a3f9",
       "議程日期": "2020-12-04",
@@ -3701,7 +3691,7 @@
       "id": "1204-jothon-1",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "零時小學校 2020 成果發表會",
-      "最後更新時間": "2020-09-24T16:22:30.000Z",
+      "最後更新時間": "2020-09-26T13:39:37.000Z",
       "議程開始時間": "2020-12-04T09:30",
       "議程長度": 60,
       "分類主題-華語": "“零時小學校 2020 成果發表會” Sch001 2020 Final Presentation",
@@ -3837,8 +3827,8 @@
       "最後更新時間": "2020-09-24T16:18:44.000Z",
       "議程開始時間": "2020-12-04T09:30",
       "議程長度": 60,
-      "分類主題-華語": "取暖了！你各位最近過的好嗎 Maker you OK?",
-      "分類主題-en": "取暖了！你各位最近過的好嗎 Maker you OK?",
+      "分類主題-華語": "取暖了！你各位最近過得好嗎 Maker you OK?",
+      "分類主題-en": "取暖了！你各位最近過得好嗎 Maker you OK?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F"
     }
@@ -3856,8 +3846,8 @@
       "最後更新時間": "2020-09-24T16:18:44.000Z",
       "議程開始時間": "2020-12-04T10:30",
       "議程長度": 60,
-      "分類主題-華語": "取暖了！你各位最近過的好嗎 Maker you OK?",
-      "分類主題-en": "取暖了！你各位最近過的好嗎 Maker you OK?",
+      "分類主題-華語": "取暖了！你各位最近過得好嗎 Maker you OK?",
+      "分類主題-en": "取暖了！你各位最近過得好嗎 Maker you OK?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F"
     }
@@ -3875,8 +3865,8 @@
       "最後更新時間": "2020-09-24T16:19:30.000Z",
       "議程開始時間": "2020-12-04T13:30",
       "議程長度": 90,
-      "分類主題-華語": "構造改革！maker運動下一步可以做啥 What’s next for us makers?",
-      "分類主題-en": "構造改革！maker運動下一步可以做啥 What’s next for us makers?",
+      "分類主題-華語": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
+      "分類主題-en": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F"
     }
@@ -3951,6 +3941,25 @@
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+    }
+  },
+  "120x-QA-XX": {
+    "id": "120x-QA-XX",
+    "isPseudo": true,
+    "title": "禮拜六第一軌的第一個ＱＡ",
+    "title_en": "禮拜六第一軌的第一個ＱＡ",
+    "updatedAt": "2020-09-26T13:46:15.000Z",
+    "createdAt": "2020-09-26T13:46:15.000Z",
+    "timeSheet": {
+      "id": "120x-QA-XX",
+      "議程預設標題-華語": "禮拜六第一軌的第一個ＱＡ",
+      "最後更新時間": "2020-09-26T13:46:15.000Z",
+      "議程開始時間": "undefinedTInvalid date",
+      "議程長度": null,
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "",
+      "議程場地-en": ""
     }
   },
   "QA-blabla": {
@@ -4352,14 +4361,15 @@
     "id": "1206-afternoon-break",
     "isPseudo": true,
     "title": "休息",
-    "title_en": "休息",
-    "updatedAt": "2020-09-23T14:29:44.000Z",
-    "createdAt": "2020-09-23T14:29:44.000Z",
+    "title_en": "Short break",
+    "updatedAt": "2020-09-26T13:42:23.000Z",
+    "createdAt": "2020-09-26T13:42:23.000Z",
     "timeSheet": {
       "id": "1206-afternoon-break",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "休息",
-      "最後更新時間": "2020-09-23T14:29:44.000Z",
+      "議程預設標題-en": "Short break",
+      "最後更新時間": "2020-09-26T13:42:23.000Z",
       "議程開始時間": "2020-12-06T15:30",
       "議程長度": 30,
       "分類主題-華語": "",
@@ -4635,6 +4645,86 @@
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3"
+    }
+  },
+  "recX978BIGMdg33dw": {
+    "id": "recX978BIGMdg33dw",
+    "isPseudo": true,
+    "title": "分散式創新的新契機",
+    "title_en": "分散式創新的新契機",
+    "updatedAt": "2020-09-26T15:53:00.000Z",
+    "createdAt": "2020-09-26T15:53:00.000Z",
+    "timeSheet": {
+      "id": "recX978BIGMdg33dw",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "分散式創新的新契機",
+      "最後更新時間": "2020-09-26T15:53:00.000Z",
+      "議程開始時間": "2020-12-04T14:30",
+      "議程長度": 30,
+      "分類主題-華語": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
+      "分類主題-en": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
+      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
+      "議程場地-en": "C-Hub - 1F"
+    }
+  },
+  "recXVtX1jNjk2MyB9": {
+    "id": "recXVtX1jNjk2MyB9",
+    "isPseudo": true,
+    "title": "台灣第一個NGO自營社會住宅經驗分享",
+    "title_en": "台灣第一個NGO自營社會住宅經驗分享",
+    "updatedAt": "2020-09-26T16:04:55.000Z",
+    "createdAt": "2020-09-26T16:04:55.000Z",
+    "timeSheet": {
+      "id": "recXVtX1jNjk2MyB9",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "台灣第一個NGO自營社會住宅經驗分享",
+      "最後更新時間": "2020-09-26T16:04:55.000Z",
+      "議程開始時間": "2020-12-05T11:00",
+      "議程長度": 60,
+      "分類主題-華語": "青年發展的必須 Youth development is a must",
+      "分類主題-en": "青年發展的必須 Youth development is a must",
+      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+    }
+  },
+  "recPLJGpTGHpt0GaN": {
+    "id": "recPLJGpTGHpt0GaN",
+    "isPseudo": true,
+    "title": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
+    "title_en": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
+    "updatedAt": "2020-09-26T16:04:06.000Z",
+    "createdAt": "2020-09-26T16:04:06.000Z",
+    "timeSheet": {
+      "id": "recPLJGpTGHpt0GaN",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
+      "最後更新時間": "2020-09-26T16:04:06.000Z",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 60,
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "成功大學綠色魔法學校 - R3",
+      "議程場地-en": "The Magic School of Green Technologies - R3"
+    }
+  },
+  "recnRou0uwpZbTZG2": {
+    "id": "recnRou0uwpZbTZG2",
+    "isPseudo": true,
+    "title": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
+    "title_en": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
+    "updatedAt": "2020-09-26T16:04:57.000Z",
+    "createdAt": "2020-09-26T16:04:57.000Z",
+    "timeSheet": {
+      "id": "recnRou0uwpZbTZG2",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
+      "最後更新時間": "2020-09-26T16:04:57.000Z",
+      "議程開始時間": "2020-12-04T17:30",
+      "議程長度": 30,
+      "分類主題-華語": "maker 的花花世界 You maker",
+      "分類主題-en": "me maker",
+      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
+      "議程場地-en": "C-Hub - 1F"
     }
   }
 }
