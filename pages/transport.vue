@@ -23,7 +23,7 @@
         <h1 class="f2">
           {{ $t('locations') }}
         </h1>
-        <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="fl w-50-ns pa2-ns">
+        <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="dib pa3 w-100 w-50-l pa2-l">
           <div class="location">
             <h3 class="f3" @click="whereIs('map')">
               {{ location[$t('venuelocationName')] }}
@@ -55,7 +55,7 @@
               <img :src="require('../assets/images/v2/img-8.png')" alt="">
             </span>
           </h2>
-          <div v-for="(rental, index) in rentals" :key="index" class="fl w-50-ns pa2">
+          <div v-for="(rental, index) in rentals" :key="index" class="dib w-100 w-50-l pa2">
             <div class="rental">
               <a class="icon-name" :href="rental.link" target="_blank">
                 <img :src="require(`../assets/images/v2/${rental.icon}`)" alt="">
