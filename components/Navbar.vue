@@ -5,7 +5,7 @@
         button.bn.pa2.bg-white(@click="toggleMobileMenu")
           i.fa.fa-bars
       nuxt-link.navbar__logo.flex-auto.flex-none-l.tc(:to="localePath('/')")
-        img.h-100(src="~/assets/images/v2/logo-singleline.svg")
+        img.h-100(src="~/assets/images/logo-singleline.svg")
       .dn.flex-l.items-center
         summit-menu
 </template>

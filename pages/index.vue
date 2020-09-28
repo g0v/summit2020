@@ -1,7 +1,7 @@
 <template>
   <div class="homepage">
     <div class="landing flex justify-center">
-      <img :src="require('~/assets/images/v2/banner-2.svg')">
+      <img :src="require('~/assets/images/banner-2.svg')">
     </div>
     <div class="text-container article article-1">
       <summit-markdown :content="$t('article/communityIntro')" />
@@ -124,14 +124,14 @@ export default {
       height: 110px;
       top: 2rem;
       left: -260px;
-      background-image: url('../assets/images/v2/island-1.svg');
+      background-image: url('../assets/images/island-1.svg');
     }
     &:after {
       width: 123px;
       height: 50px;
       bottom: 29rem;
       right: -123px;
-      background-image: url('../assets/images/v2/island-2.svg');
+      background-image: url('../assets/images/island-2.svg');
     }
   }
   .article-2 {
@@ -141,14 +141,14 @@ export default {
       height: 83px;
       top: 2rem;
       left: -195px;
-      background-image: url('../assets/images/v2/island-3.svg');
+      background-image: url('../assets/images/island-3.svg');
     }
     &:after {
       width: 487px;
       height: 178px;
       bottom: 10rem;
       right: -244px;
-      background-image: url('../assets/images/v2/island-4.svg');
+      background-image: url('../assets/images/island-4.svg');
     }
   }
   .timeline-container {

@@ -51,7 +51,7 @@ $islandHeight: 142px;
     height: $islandHeight * $islandScale;
     top: -125px * $islandScale;
     left: 0px;
-    background-image: url('../assets/images/v2/island-5.svg');
+    background-image: url('../assets/images/island-5.svg');
     background-size: cover;
     background-repeat: no-repeat;
   }
