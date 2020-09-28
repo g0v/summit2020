@@ -91,7 +91,7 @@ export default {
     margin-bottom: 2rem;
 
     img {
-      min-height: 70vh;
+      height: 70vh;
       object-fit: cover;
 
       @include not-small-screen {
