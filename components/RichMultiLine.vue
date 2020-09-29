@@ -20,6 +20,9 @@ export default {
   computed: {
     paragraphList () {
       // remove empty line
+      if (!this.text) {
+        return []
+      }
       const text = this.text.replace(/^"/, '').replace(/"$/, '')
       return text.split('\n').filter(line => !!line)
     }
