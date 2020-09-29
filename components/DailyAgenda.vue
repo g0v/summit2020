@@ -1,7 +1,7 @@
 <template lang="pug">
-  .dailyagenda(:style="gridStyle")
+  .dailyagenda.relative(:style="gridStyle")
     template(v-for="room in regularRooms")
-      .dailyagenda__header(:key="room.name")
+      .dailyagenda__header.mb2(:key="room.name")
         room-card(:name="room.name")
       .dailyagenda__item(
         v-for="agenda in room.agendaList"

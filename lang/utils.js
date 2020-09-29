@@ -51,6 +51,30 @@ function extractLanguageFromProposal ({ proposals, isEn = true }) {
       }
     })
 
+    // format: <zh format> （...） <en format> (...)
+    // ex:演講 （20 分鐘）Talk (20 min)
+    if (perLangProposal.format) {
+      const format = perLangProposal.format
+        .replace(/（[^）]+）/, '')
+        .replace(/\([^)]+\)/, '')
+      const tokens = format.split(' ')
+      if (isEn) {
+        perLangProposal.format = tokens.slice(1).join(' ')
+      } else {
+        perLangProposal.format = tokens[0]
+      }
+    }
+
+    // topic
+    if (perLangProposal.topic) {
+      const tokens = perLangProposal.topic.split(' ')
+      if (isEn) {
+        perLangProposal.topic = tokens.slice(1).join(' ')
+      } else {
+        perLangProposal.topic = tokens[0]
+      }
+    }
+
     return perLangProposal
   })
 }

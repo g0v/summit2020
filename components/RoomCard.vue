@@ -33,5 +33,7 @@ export default {
 <style lang="scss" scoped>
 .roomcard {
   color: #555;
+  position: relative;
+  top: 0;
 }
 </style>
