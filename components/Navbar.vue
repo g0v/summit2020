@@ -35,7 +35,7 @@ export default {
   &__logo {
     height: 36px;
     @include large-screen {
-      height: 46px;
+      height: 54px;
     }
   }
 }
