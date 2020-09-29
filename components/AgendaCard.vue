@@ -10,7 +10,7 @@
 </template>
 <i18n lang="yaml">
 en:
-  minuteUnit: min
+  minuteUnit: mins
 zh:
   minuteUnit: 分鐘
 </i18n>
@@ -26,6 +26,9 @@ export default {
   },
   computed: {
     time () {
+      if (!this.agenda.timeSheet) {
+        console.warn(this.agenda, this.agenda.timeSheet)
+      }
       return this.agenda.timeSheet
     },
     fromTime () {

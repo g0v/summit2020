@@ -6,7 +6,8 @@
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
-const moment = require('moment')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 const _ = require('lodash')
 const yaml = require('yaml')
 const { proposalServer } = require('../.docs.config')
@@ -16,9 +17,11 @@ const {
   SPEAKER_FIELD_DEFINITIONS
 } = require('./projectFields')
 
+dayjs.extend(utc)
+
 const EXPORT_PATH = path.join(__dirname, '../assets/proposals.json')
 const SEC_PER_MIN = 60
-const ALLOW_MERGE_SINCE = moment('2020-09-06T12:00:00+08:00')
+const ALLOW_MERGE_SINCE = dayjs('2020-09-06T12:00:00+08:00')
 
 async function downloadProposals () {
   const allProposals = await axios.get(`${proposalServer}/projects`)
@@ -30,7 +33,7 @@ async function downloadProposals () {
         id: proposal._id,
         ...lastVersion,
         // createdAt of last version is updatedAt of this proposal
-        updatedAt: moment(lastVersion.createdAt)
+        updatedAt: dayjs(lastVersion.createdAt)
       }
     })
 
@@ -69,7 +72,7 @@ async function downloadProposals () {
 
 function genProposalFromAdditionalTable (addition) {
   // Don't forget to check if ID conflict
-  const ts = moment(addition.updatedAt)
+  const ts = dayjs(addition.updatedAt)
   const proposal = {
     id: addition.id,
     speakers: [],
@@ -119,7 +122,9 @@ async function downloadTables () {
     tableName: '議程時間',
     view: 'Grid view'
   }, false)
-  const timeSheet = timeSheetRaw.map(sheet => normalizeTimeSheet(sheet))
+  const timeSheet = timeSheetRaw
+    .map(sheet => normalizeTimeSheet(sheet))
+    .filter(sheet => sheet.議程長度 && sheet.議程開始時間)
   return { timeSheet }
 }
 
@@ -141,7 +146,7 @@ function genFieldI18n (value) {
 function normalizeTimeSheet (timeSheet) {
   const category = genFieldI18n(timeSheet.分類主題)
   const location = genFieldI18n(timeSheet.議程場地)
-  const startHour = moment.unix(timeSheet.議程開始時間).utc().format('HH:mm')
+  const startHour = dayjs.unix(timeSheet.議程開始時間)
   const timeSheetFields = [
     'id',
     '議程日期',
@@ -151,12 +156,16 @@ function normalizeTimeSheet (timeSheet) {
   ]
   const ret = {
     ..._.pick(timeSheet, timeSheetFields),
-    議程開始時間: `${timeSheet.議程日期}T${startHour}`,
-    議程長度: timeSheet.議程長度 / SEC_PER_MIN,
     '分類主題-華語': category.zh,
     '分類主題-en': category.en,
     '議程場地-華語': location.zh,
     '議程場地-en': location.en
+  }
+  if (startHour.isValid()) {
+    ret.議程開始時間 = `${timeSheet.議程日期}T${startHour.utc().format('HH:mm')}`
+  }
+  if (timeSheet.議程長度) {
+    ret.議程長度 = timeSheet.議程長度 / SEC_PER_MIN
   }
   delete ret.分類主題
   delete ret.議程場地
@@ -196,7 +205,7 @@ function exportProposals (proposals, timeSheet) {
     }
     // pseudo time slot!
     const timeSheet = timeMap[pid]
-    const updatedAt = moment(timeSheet.最後更新時間)
+    const updatedAt = dayjs(timeSheet.最後更新時間)
     const zhTitle = _.get(timeSheet, '議程預設標題-華語', 'N/A')
     const enTitle = _.get(timeSheet, '議程預設標題-en', zhTitle)
     toExport[pid] = {

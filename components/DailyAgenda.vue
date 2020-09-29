@@ -1,14 +1,30 @@
 <template lang="pug">
-  .dailyagenda
-    template(v-for="room in regularRoom")
+  .dailyagenda(:style="gridStyle")
+    template(v-for="room in regularRooms")
       .dailyagenda__header(:key="room.name")
         room-card(:name="room.name")
-      .dailyagenda__item(v-for="agenda in room.agendaList" :key="agenda.id")
+      .dailyagenda__item(
+        v-for="agenda in room.agendaList"
+        :key="agenda.id"
+        :style="agendaStyle(agenda)"
+      )
         agenda-card(:agenda="agenda")
+    .dailyagenda__item(
+      v-for="agenda in crossRoom.agendaList"
+      :key="agenda.id"
+      :style="agendaStyle(agenda)"
+    )
+      agenda-card(:agenda="agenda")
 </template>
 <script>
+import dayjs from 'dayjs'
+
 import RoomCard from '~/components/RoomCard'
 import AgendaCard from '~/components/AgendaCard'
+
+// each row is 5 min
+const ROW_SIZE_MIN = 5
+const ROW_SIZE_MS = ROW_SIZE_MIN * 60 * 1000
 
 export default {
   components: {
@@ -25,11 +41,60 @@ export default {
     }
   },
   computed: {
-    regularRoom () {
-      return this.agendaPerRoom.filter(room => room.name !== 'ALL')
+    regularRooms () {
+      return this.agendaPerRoom
+        .filter(room => room.name !== 'ALL')
+        .map((perRoom, index) => {
+          return this.decorateLayout(perRoom, index)
+        })
     },
     crossRoom () {
-      return this.agendaPerRoom.find(room => room.name === 'ALL')
+      const room = this.agendaPerRoom.find(room => room.name === 'ALL')
+      if (room) {
+        return this.decorateLayout(room, 0, this.regularRooms.length)
+      }
+      return {}
+    },
+    gridStyle () {
+      const columnNumber = this.agendaPerRoom.filter(room => room.name !== 'ALL').length
+      return {
+        gridTemplateColumns: `repeat(${columnNumber}, 13rem)`
+      }
+    },
+    eventStartTime () {
+      return Math.min(
+        ...this.agendaPerRoom
+          .filter(perRoom => perRoom.agendaList.length)
+          .map(perRoom => dayjs(perRoom.agendaList[0].timeSheet.議程開始時間))
+      )
+    }
+  },
+  methods: {
+    agendaStyle (agenda) {
+      return {
+        gridColumn: `${agenda.layout.columnStart} / span ${agenda.layout.columnSpan}`,
+        gridRow: `${agenda.layout.rowStart} / span ${agenda.layout.rowSpan}`
+      }
+    },
+    decorateLayout (perRoom, index, columnSpan = 1) {
+      const roomIndex = index + 1
+      return {
+        name: perRoom.name,
+        index: roomIndex,
+        agendaList: perRoom.agendaList.map((agenda) => {
+          const startRowIndex = (dayjs(agenda.timeSheet.議程開始時間) - this.eventStartTime) / ROW_SIZE_MS + 2
+          const rowSpan = agenda.timeSheet.議程長度 / ROW_SIZE_MIN
+          return {
+            ...agenda,
+            layout: {
+              columnStart: roomIndex,
+              columnSpan,
+              rowStart: startRowIndex,
+              rowSpan
+            }
+          }
+        })
+      }
     }
   }
 }
@@ -37,7 +102,6 @@ export default {
 <style lang="scss" scoped>
 .dailyagenda {
   display: grid;
-  grid-template-columns: [room-start] repeat(auto-fill, 13rem) [room-end];
   justify-content: center;
   align-items: stretch;
   column-gap: 0.5rem;
