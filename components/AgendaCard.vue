@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     detailUrl () {
-      if (!this.agenda.isPseudo) {
+      if (!this.agenda.isPseudo && this.$route.params.date) {
         return this.localePath(`/agenda/${this.$route.params.date}/${this.agenda.id}`)
       } else {
         return '#'
