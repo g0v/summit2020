@@ -9,13 +9,8 @@
         )
           .datemenu__title.b Day{{date.index}}
           .datemenu__date.fw5.bt {{$t(date.date)}}
-    .agenda__content.outline
-      h1.pa3 {{targetDate}}
-      .pa3.mv3.bt.bb(v-for="room in agendaPerRoom" :key="room.name")
-        .b.f4 {{room.name}}
-        .pa3
-          .pv2.gray(v-for="agenda in room.agendaList" :key="agenda.id")
-            | {{agenda.title}} - {{agenda.timeSheet.議程開始時間}}
+    .agenda__content.flex.justify-center
+      daily-agenda(:agenda-per-room="agendaPerRoom")
 </template>
 <i18n lang="yaml">
 en:
@@ -30,10 +25,15 @@ zh:
   '2020-12-06': 12/06 （日）
 </i18n>
 <script>
+import DailyAgenda from '~/components/DailyAgenda'
+
 const DEFAULT_DATE = '2020-12-04'
 const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
 
 export default {
+  components: {
+    DailyAgenda
+  },
   computed: {
     isDateValid () {
       return VALID_DATE_LIST.includes(this.$route.params.date)
@@ -107,12 +107,16 @@ export default {
   background-position: left -10.5rem top 15rem, right -10em top;
   background-repeat: no-repeat;
   @include medium-screen {
-    padding: 3.5rem 6.5rem;
+    padding: 2.5rem 6.5rem;
     background-position: left -6rem top 15rem, right -4.5rem top;
   }
   @include large-screen {
-    padding: 7rem 12rem;
+    padding: 5rem 12rem;
     background-position: left top 15rem, right top;
+  }
+
+  &__content {
+    margin-top: 5.25rem;
   }
 }
 
