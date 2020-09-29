@@ -42,7 +42,6 @@ export default {
     })
   },
   beforeDestroy () {
-    console.warn('destroy')
     if (this.slideout) {
       this.slideout.destroy()
     }

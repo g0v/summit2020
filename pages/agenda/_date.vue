@@ -11,6 +11,7 @@
           .datemenu__date.fw5.bt {{$t(date.date)}}
     .agenda__content.flex.justify-center
       daily-agenda(:agenda-per-room="agendaPerRoom")
+    nuxt
 </template>
 <i18n lang="yaml">
 en:
@@ -54,8 +55,7 @@ export default {
     },
     agendaPerRoom () {
       const allProposals = this.$t('proposal/map')
-      const agendaToday = Object
-        .values(allProposals)
+      const agendaToday = allProposals
         .filter(proposal => proposal.timeSheet.議程日期 === this.targetDate)
         .sort(proposal => proposal.timeSheet.議程開始時間)
 

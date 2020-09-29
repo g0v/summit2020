@@ -1,5 +1,5 @@
 <template lang="pug">
-  .agendacard.br2.h-100
+  nuxt-link.db.agendacard.br2.h-100(:to="detailUrl")
     .agendacard__wrapper
       .agendacard__time.flex.justify-between.mb3.lh-solid
         .f7 {{fromTime}} - {{toTime}}
@@ -10,8 +10,8 @@
       h2.agendacard__title.f5.mt3.fw5 {{title}}
       .agendacard__speakers.mt3.f6.lh-title(v-if="speakers") {{speakers}}
       .flex.flex-wrap.mt4(v-if="hasTagsToShow")
-        .agendacard__tag(v-if="lang") {{$t(lang)}}
         .agendacard__tag(v-if="format") {{format}}
+        .agendacard__tag(v-if="lang") {{$t(lang)}}
 </template>
 <i18n lang="yaml">
 en:
@@ -24,9 +24,10 @@ zh:
   華語: 華語
 </i18n>
 <script>
-import dayjs from 'dayjs'
+import agendaMixin from './AgendaMixin'
 
 export default {
+  mixins: [agendaMixin],
   props: {
     agenda: {
       type: Object,
@@ -34,45 +35,12 @@ export default {
     }
   },
   computed: {
-    time () {
-      if (!this.agenda.timeSheet) {
-        console.warn(this.agenda, this.agenda.timeSheet)
+    detailUrl () {
+      if (!this.agenda.isPseudo) {
+        return this.localePath(`/agenda/${this.$route.params.date}/${this.agenda.id}`)
+      } else {
+        return '#'
       }
-      return this.agenda.timeSheet
-    },
-    fromTime () {
-      return dayjs(this.time.議程開始時間).format('HH:mm')
-    },
-    duration () {
-      return this.time.議程長度
-    },
-    toTime () {
-      return dayjs(this.time.議程開始時間).add(this.duration, 'm').format('HH:mm')
-    },
-    title () {
-      return this.agenda.title
-    },
-    speakers () {
-      const speakers = this.agenda.speakers || []
-      return speakers.map(speaker => speaker.display_name).join(' / ')
-    },
-    hasTagsToShow () {
-      return !this.isPseudo && (this.lang || this.format)
-    },
-    lang () {
-      return this.agenda.oral_language_other || this.agenda.oral_language
-    },
-    format () {
-      return this.agenda.format
-    },
-    hasPreHeaderToShow () {
-      return this.topic || this.category
-    },
-    topic () {
-      return this.agenda.topic
-    },
-    category () {
-      return this.agenda.timeSheet.分類主題
     }
   }
 }
