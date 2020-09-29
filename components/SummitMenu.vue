@@ -58,9 +58,9 @@ export default {
     return {
       menuList: [
         { key: 'transport', url: '/transport' },
-        { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true }
+        // { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true },
         // { key: 'speakers', url: '/speakers' },
-        // { key: 'agenda', url: '/agenda' },
+        { key: 'agenda', url: '/agenda' }
         // { key: 'partners', url: '/partners' },
         // { key: 'transport', url: '/transport' },
         // { key: 'live', url: 'https://some.live.url.com', isExt: true },
@@ -93,6 +93,10 @@ export default {
   &__item {
     color: #6e6e6e;
     text-decoration: none;
+
+    &.nuxt-link-active {
+      font-weight: bold;
+    }
   }
   &__lang {
     color: #f779ee;

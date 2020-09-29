@@ -29,12 +29,12 @@
               {{ location[$t('venuelocationName')] }}
             </h3>
             <a class="location-address" :href="location['share-link']" target="_blank">
-              <img :src="require('../assets/images/v2/icon-map.png')" alt="">
+              <img :src="require('../assets/images/icon-map.png')" alt="">
               <span>{{ location[$t('venuelocationAddress')] }}</span>
-              <img class="location-address-navigation" :src="require('../assets/images/v2/icno-navigation.png')" alt="">
+              <img class="location-address-navigation" :src="require('../assets/images/icno-navigation.png')" alt="">
             </a>
             <!--
-            <img class="location-photo" :src="require(`../assets/images/v2/${location.photo}`)" alt="">
+            <img class="location-photo" :src="require(`../assets/images/${location.photo}`)" alt="">
             -->
             <div class="location-event-name mt2">
               <span>{{ $t('events') }}</span>
@@ -52,13 +52,13 @@
           <h2 class="f2">
             <span class="head-text">
               {{ $t('rental') }}
-              <img :src="require('../assets/images/v2/img-8.png')" alt="">
+              <img :src="require('../assets/images/img-8.png')" alt="">
             </span>
           </h2>
           <div v-for="(rental, index) in rentals" :key="index" class="dib w-100 w-50-l pa2">
             <div class="rental">
               <a class="icon-name" :href="rental.link" target="_blank">
-                <img :src="require(`../assets/images/v2/${rental.icon}`)" alt="">
+                <img :src="require(`../assets/images/${rental.icon}`)" alt="">
                 <div class="name f2">
                   {{ rental.name }}<br>
                   {{ rental.cht_name }}
@@ -66,10 +66,10 @@
               </a>
               <div v-if="rental.is_app" class="app-link">
                 <a :href="rental.apple_link" target="_blank">
-                  <img :src="require(`../assets/images/v2/icon-Apple Store.png`)" alt="">
+                  <img :src="require(`../assets/images/icon-Apple Store.png`)" alt="">
                 </a>
                 <a :href="rental.google_link" target="_blank">
-                  <img :src="require(`../assets/images/v2/icon-Google Play.png`)" alt="">
+                  <img :src="require(`../assets/images/icon-Google Play.png`)" alt="">
                 </a>
               </div>
             </div>
@@ -284,7 +284,7 @@ export default {
     &::before {
       content: "";
       display: block;
-      background-image: url("../assets/images/v2/img-6.svg");
+      background-image: url("../assets/images/img-6.svg");
       background-repeat: no-repeat;
       position: absolute;
       max-width: 403px + 59px;
@@ -341,7 +341,7 @@ export default {
       margin: auto;
       width: 20px;
       height: 20px;
-      background-image: url('../assets/images/v2/icon-event-item.png');
+      background-image: url('../assets/images/icon-event-item.png');
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -369,7 +369,7 @@ export default {
     left: 0;
     width: 100%;
     height: $spacer;
-    background-image: url("../assets/images/v2/img-7.png"), url("../assets/images/v2/bk.png");
+    background-image: url("../assets/images/img-7.png"), url("../assets/images/bk.png");
   }
   h2 {
     text-align: center;

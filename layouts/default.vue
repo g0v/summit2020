@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper bg-mid-gray">
-    <div ref="content">
+  <div class="wrapper">
+    <div ref="content" class="min-vh-100 flex flex-column">
       <navbar @toggle="toggleMenu" />
-      <div class="page-container">
+      <div class="page-container flex-auto">
         <nuxt />
       </div>
       <Footer />
@@ -63,7 +63,9 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
 
+</style>
 <style lang="scss">
 // copy from https://slideout.js.org/
 
@@ -92,7 +94,7 @@ export default {
   z-index: 1;
   will-change: transform;
   background-color: #FFF; /* A background-color is required */
-  min-height: 100%;
+  // min-height: 100%;
 }
 
 .slideout-open,

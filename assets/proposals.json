@@ -43,30 +43,33 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "牧貓人 —— g0v 混亂有序開放協作專案管理",
       "最後更新時間": "2020-09-24T16:31:27.000Z",
-      "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳更多坑 When tech people dive in some more",
-      "分類主題-en": "資訊人跳更多坑 When tech people dive in some more",
+      "分類主題-華語": "資訊人跳更多坑",
+      "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T15:30",
+      "議程長度": 30
     }
   },
   "5eddea12ba206b030d66a2ca": {
     "id": "5eddea12ba206b030d66a2ca",
     "title": "「社群治理」這個不太一樣的坑",
     "title_en": "Community g0vernance as a community project",
-    "summary": "寫 code 填坑，大家都是「沒有人」，那接受訪問的時候呢？募款的時候呢？參加展覽、國際會議、管理 domain name、Fb 專頁的時候呢？從「去中心」到「多中心」，從《媒體政策》到《社群治理目錄》，從 OCF 國際交流到 g0v 國際交流，從共筆討論到「基礎松」，為什麼 g0v 社群要這麼麻煩，討論什麼社群治理？投稿者想分享自己的參與討論社群治理的經驗，也很希望其他 g0ver 能從改稿階段（7/15-8/2）就一起來討論。",
+    "summary": "寫 code 填坑，大家都是「沒有人」，那接受訪問的時候呢？募款的時候呢？參加展覽、國際會議、管理 domain name、Fb 專頁的時候呢？辦 summit 的時候呢？從「去中心」到「多中心」，從《媒體政策》到《社群治理目錄》，從 OCF 國際交流到 g0v 國際交流，從共筆討論到「基礎松」，為什麼 g0v 社群要這麼麻煩，討論什麼社群治理？這些「治理」的大小事，能不能在其他地方找到共鳴？投稿者想分享自己的參與討論社群治理的經驗，也很希望能開啟更多討論。",
     "summary_en": "In g0v, “we are nobody.” How do “we” do interviews? Fundraising? Art exhibitions? International conferences? How do “we” manage domain names or g0v’s Facebook page?",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
     "topic": "「沒有人」的島 Nobody’s island",
-    "three_keywords": "社群、治理、第三個再想一下",
+    "three_keywords": "社群治理、開放、課責",
     "cover_image": "https://i.imgur.com/jjfgQwyh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/@chihao/H1bRSAWxP",
+    "verified": true,
+    "createdAt": "2020-09-26T01:45:11.815Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "chihao",
@@ -78,20 +81,18 @@
         "bio_en": "Co-founder of “g0v international” community task force. Co-chair of g0v Summit 2020."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-26T01:45:11.815Z",
     "timeSheet": {
       "id": "5eddea12ba206b030d66a2ca",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "「社群治理」這個不太一樣的坑",
       "最後更新時間": "2020-09-24T16:09:56.000Z",
-      "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 30,
-      "分類主題-華語": "決定囉？多中心社群的治理 Let’s decide? Governance of many centers",
-      "分類主題-en": "決定囉？多中心社群的治理 Let’s decide? Governance of many centers",
+      "分類主題-華語": "決定囉？多中心社群的治理",
+      "分類主題-en": "Let’s decide? Governance of many centers",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T13:30",
+      "議程長度": 30
     }
   },
   "5ee1aa0cba206b030d66a2d9": {
@@ -137,12 +138,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "左鎮的地方創生元年大冒險",
       "最後更新時間": "2020-09-24T16:28:57.000Z",
-      "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 60,
-      "分類主題-華語": "開源社群對NGO的重要性 Open is important for NGOs",
-      "分類主題-en": "開源社群對NGO的重要性 Open is important for NGOs",
+      "分類主題-華語": "開源社群對NGO的重要性",
+      "分類主題-en": "Open is important for NGOs",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T15:30",
+      "議程長度": 60
     }
   },
   "5ee48620ba206b030d66a2e5": {
@@ -190,13 +191,13 @@
       "id": "5ee48620ba206b030d66a2e5",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "集合啦！和 Cofacts 一起：影響民主的假新聞之友會",
-      "最後更新時間": "2020-09-20T03:30:51.000Z",
-      "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:08:07.000Z",
+      "分類主題-華語": "從 g0v 開始",
+      "分類主題-en": "Start from g0v",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-05T14:00",
+      "議程長度": 60
     }
   },
   "5ee88411ba206b030d66a2ea": {
@@ -233,13 +234,13 @@
       "id": "5ee88411ba206b030d66a2ea",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "如何和不同溫層對話不受傷",
-      "最後更新時間": "2020-09-20T03:32:01.000Z",
-      "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:09:13.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-05T09:30",
+      "議程長度": 60
     }
   },
   "5eeb7044ba206b030d66a2f4": {
@@ -295,13 +296,13 @@
       "id": "5eeb7044ba206b030d66a2f4",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "網路自由大風吹 ",
-      "最後更新時間": "2020-09-20T03:32:42.000Z",
-      "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:15:43.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-05T14:00",
+      "議程長度": 60
     }
   },
   "5eee8137ba206b030d66a2ff": {
@@ -338,12 +339,12 @@
       "id": "5eee8137ba206b030d66a2ff",
       "議程預設標題-華語": "芥面 & （網路）不自由區域的線上／下網路自由之文化反堵",
       "最後更新時間": "2020-09-24T16:07:19.000Z",
-      "議程開始時間": "undefinedT15:30",
-      "議程長度": 20,
-      "分類主題-華語": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
-      "分類主題-en": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
+      "分類主題-華語": "愛自由！危機下的公民韌性",
+      "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "undefinedT15:30",
+      "議程長度": 20
     }
   },
   "5eeee658ba206b030d66a303": {
@@ -380,12 +381,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "政治機器",
       "最後更新時間": "2020-09-24T15:55:03.000Z",
-      "議程開始時間": "2020-12-05T10:50",
-      "議程長度": 20,
-      "分類主題-華語": "集結吧！公民的意志 Assemble! Will of the People",
-      "分類主題-en": "集結吧！公民的意志 Assemble! Will of the People",
+      "分類主題-華語": "集結吧！公民的意志",
+      "分類主題-en": "Assemble! Will of the People",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T10:50",
+      "議程長度": 20
     }
   },
   "5ef09c0eba206b030d66a310": {
@@ -432,12 +433,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "NullFull - Introducing Korean civic hacking community",
       "最後更新時間": "2020-09-24T16:24:38.000Z",
-      "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 30,
-      "分類主題-華語": "自己的學習自己來 Self-learning",
-      "分類主題-en": "learn yourself",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T17:00",
+      "議程長度": 30
     }
   },
   "5ef211bcba206b030d66a31d": {
@@ -475,12 +476,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "台南市開放政府經驗談",
       "最後更新時間": "2020-09-24T16:27:17.000Z",
-      "議程開始時間": "2020-12-04T13:00",
-      "議程長度": 30,
-      "分類主題-華語": "地方的公共參與 Civic participation is local",
-      "分類主題-en": "地方的公共參與 Civic participation is local",
+      "分類主題-華語": "地方的公共參與",
+      "分類主題-en": "Civic participation is local",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T13:00",
+      "議程長度": 30
     }
   },
   "5ef220f9ba206b030d66a325": {
@@ -517,12 +518,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "線上參與的一百種方法",
       "最後更新時間": "2020-09-24T16:30:57.000Z",
-      "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳坑 When tech people dive in",
-      "分類主題-en": "資訊人跳坑 When tech people dive in",
+      "分類主題-華語": "資訊人跳坑",
+      "分類主題-en": "When tech people dive in",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T14:30",
+      "議程長度": 30
     }
   },
   "5ef22cd9ba206b030d66a327": {
@@ -561,12 +562,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "開放國會！百樂門開門！",
       "最後更新時間": "2020-09-24T15:54:44.000Z",
-      "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 40,
-      "分類主題-華語": "集結吧！公民的意志 Assemble! Will of the People",
-      "分類主題-en": "集結吧！公民的意志 Assemble! Will of the People",
+      "分類主題-華語": "集結吧！公民的意志",
+      "分類主題-en": "Assemble! Will of the People",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T09:30",
+      "議程長度": 40
     }
   },
   "5ef2e905ba206b030d66a333": {
@@ -632,12 +633,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "政府的邊緣人：生態保育與開放資料",
       "最後更新時間": "2020-09-24T16:12:00.000Z",
-      "議程開始時間": "2020-12-05T14:15",
-      "議程長度": 45,
-      "分類主題-華語": "陽光空氣水 Sun",
-      "分類主題-en": "air",
+      "分類主題-華語": "陽光空氣水",
+      "分類主題-en": "Sun",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T14:15",
+      "議程長度": 45
     }
   },
   "5ef324e1ba206b030d66a33d": {
@@ -675,12 +676,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "你付出的房租值得嗎? 談空間分析框架下的居住正義 以德國漢堡市為例",
       "最後更新時間": "2020-09-25T16:57:57.000Z",
-      "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20,
-      "分類主題-華語": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
-      "分類主題-en": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
+      "分類主題-華語": "我來啦！資訊人跳坑政",
+      "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 20
     }
   },
   "5ef4330bba206b030d66a347": {
@@ -718,12 +719,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "大家一起讓循環動起來：好盒器如何透過「社會設計」推動循環經濟",
       "最後更新時間": "2020-09-24T16:14:25.000Z",
-      "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20,
-      "分類主題-華語": "沒有人的網羅 Nobody is everywhere",
-      "分類主題-en": "沒有人的網羅 Nobody is everywhere",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T16:50",
+      "議程長度": 20
     }
   },
   "5ef44d7fba206b030d66a34b": {
@@ -760,13 +761,13 @@
       "id": "5ef44d7fba206b030d66a34b",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "當藝術社群遇上開放文化 —— Lightbox攝影圖書室的經驗（以及3個我們不知道怎麼解決的問題）",
-      "最後更新時間": "2020-09-20T03:30:11.000Z",
-      "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:09:07.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-05T09:30",
+      "議程長度": 60
     }
   },
   "5ef479b9ba206b030d66a34e": {
@@ -823,12 +824,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "線上揪松是怎麼煉成的",
       "最後更新時間": "2020-09-24T16:07:06.000Z",
-      "議程開始時間": "2020-12-05T14:15",
-      "議程長度": 45,
-      "分類主題-華語": "救命啊！公衛危機下的科技應變 Hack! Pandemic tech response",
-      "分類主題-en": "救命啊！公衛危機下的科技應變 Hack! Pandemic tech response",
+      "分類主題-華語": "救命啊！公衛危機下的科技應變",
+      "分類主題-en": "Hack! Pandemic tech response",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T14:15",
+      "議程長度": 45
     }
   },
   "5ef4aeaeba206b030d66a354": {
@@ -867,12 +868,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "在偏遠離島的side project：公共運輸分析地圖、GoogleMapsAPI的道路系統架構探索和人行環境建構潛在需求分析",
       "最後更新時間": "2020-09-24T16:11:59.000Z",
-      "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30,
-      "分類主題-華語": "陽光空氣水 Sun",
-      "分類主題-en": "air",
+      "分類主題-華語": "陽光空氣水",
+      "分類主題-en": "Sun",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T13:00",
+      "議程長度": 30
     }
   },
   "5ef4bfc8ba206b030d66a358": {
@@ -910,12 +911,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "臺灣館連開放的挑戰--低成本、低介入的 wikidata 是可能的出路嗎？",
       "最後更新時間": "2020-09-24T16:12:38.000Z",
-      "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20,
-      "分類主題-華語": "資料與他們的產地 Data and where to find them",
-      "分類主題-en": "資料與他們的產地 Data and where to find them",
+      "分類主題-華語": "資料與他們的產地",
+      "分類主題-en": "Data and where to find them",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 20
     }
   },
   "5ef63898ba206b030d66a362": {
@@ -954,12 +955,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "自造者與社會運動，然後呢？",
       "最後更新時間": "2020-09-24T16:20:57.000Z",
-      "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30,
-      "分類主題-華語": "maker 的花花世界 You maker",
-      "分類主題-en": "me maker",
+      "分類主題-華語": "maker 的花花世界",
+      "分類主題-en": "You maker",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T16:00",
+      "議程長度": 30
     }
   },
   "5ef6c29dba206b030d66a364": {
@@ -998,12 +999,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "通过游戏共同创造，YCAM黑客马拉松。",
       "最後更新時間": "2020-09-24T16:24:38.000Z",
-      "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30,
-      "分類主題-華語": "自己的學習自己來 Self-learning",
-      "分類主題-en": "learn yourself",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T16:30",
+      "議程長度": 30
     }
   },
   "5ef6eca4ba206b030d66a368": {
@@ -1060,12 +1061,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "性少數社群網站的建構經驗──從邊緣開拓出路",
       "最後更新時間": "2020-09-20T03:33:13.000Z",
-      "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 60
     }
   },
   "5ef709ebba206b030d66a36c": {
@@ -1112,12 +1113,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Herstory in East Asia ",
       "最後更新時間": "2020-09-24T16:09:18.000Z",
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20,
-      "分類主題-華語": "來串啊！國際公民社群 We connect! Civic hackers around the world",
-      "分類主題-en": "來串啊！國際公民社群 We connect! Civic hackers around the world",
+      "分類主題-華語": "來串啊！國際公民社群",
+      "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T10:30",
+      "議程長度": 20
     }
   },
   "5ef81b08ba206b030d66a37a": {
@@ -1156,12 +1157,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "讓公務員颱風天不再崩潰—我們怎麼向市政府提案開發里長回報 LINE bot",
       "最後更新時間": "2020-09-24T16:31:37.000Z",
-      "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳更多坑 When tech people dive in some more",
-      "分類主題-en": "資訊人跳更多坑 When tech people dive in some more",
+      "分類主題-華語": "資訊人跳更多坑",
+      "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T16:00",
+      "議程長度": 30
     }
   },
   "5ef8c370ba206b030d66a386": {
@@ -1198,12 +1199,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Addressing the State : an analysis of the online-offline petition system in Taiwan",
       "最後更新時間": "2020-09-24T15:55:03.000Z",
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20,
-      "分類主題-華語": "集結吧！公民的意志 Assemble! Will of the People",
-      "分類主題-en": "集結吧！公民的意志 Assemble! Will of the People",
+      "分類主題-華語": "集結吧！公民的意志",
+      "分類主題-en": "Assemble! Will of the People",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T10:30",
+      "議程長度": 20
     }
   },
   "5ef947a8ba206b030d66a392": {
@@ -1241,12 +1242,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "資料與應用，從地方政府談公私協力是轉機還是困境",
       "最後更新時間": "2020-09-24T16:31:37.000Z",
-      "議程開始時間": "2020-12-04T17:30",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳更多坑 When tech people dive in some more",
-      "分類主題-en": "資訊人跳更多坑 When tech people dive in some more",
+      "分類主題-華語": "資訊人跳更多坑",
+      "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T17:30",
+      "議程長度": 30
     }
   },
   "5ef99ae9ba206b030d66a39d": {
@@ -1284,12 +1285,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "台灣政商人物資料庫，從點到線的資料協作",
       "最後更新時間": "2020-09-24T16:31:37.000Z",
-      "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳更多坑 When tech people dive in some more",
-      "分類主題-en": "資訊人跳更多坑 When tech people dive in some more",
+      "分類主題-華語": "資訊人跳更多坑",
+      "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T17:00",
+      "議程長度": 30
     }
   },
   "5ef99bf1ba206b030d66a39f": {
@@ -1327,12 +1328,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "資料都開放了! 然後呢!? 讓我們一起譜出知識的樂章",
       "最後更新時間": "2020-09-24T16:10:58.000Z",
-      "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20,
-      "分類主題-華語": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
-      "分類主題-en": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
+      "分類主題-華語": "我來啦！資訊人跳坑政",
+      "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T16:50",
+      "議程長度": 20
     }
   },
   "5ef9aaffba206b030d66a3a4": {
@@ -1370,12 +1371,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "讓視障者來當政府的眼睛",
       "最後更新時間": "2020-09-24T16:20:55.000Z",
-      "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 30,
-      "分類主題-華語": "maker 的花花世界 You maker",
-      "分類主題-en": "me maker",
+      "分類主題-華語": "maker 的花花世界",
+      "分類主題-en": "You maker",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T15:30",
+      "議程長度": 30
     }
   },
   "5ef9bc2dba206b030d66a3ae": {
@@ -1413,12 +1414,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "香港開放數據指數",
       "最後更新時間": "2020-09-24T16:07:37.000Z",
-      "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20,
-      "分類主題-華語": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
-      "分類主題-en": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
+      "分類主題-華語": "愛自由！危機下的公民韌性",
+      "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T16:50",
+      "議程長度": 20
     }
   },
   "5ef9c9cbba206b030d66a3b1": {
@@ -1465,12 +1466,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "都市設計、公民科技與城市改善 ? - 台灣經驗",
       "最後更新時間": "2020-09-24T16:13:47.000Z",
-      "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 30,
-      "分類主題-華語": "科技也要倡議 Tech as activism",
-      "分類主題-en": "科技也要倡議 Tech as activism",
+      "分類主題-華語": "科技也要倡議",
+      "分類主題-en": "Tech as activism",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T14:00",
+      "議程長度": 30
     }
   },
   "5ef9e78dba206b030d66a3c2": {
@@ -1524,13 +1525,13 @@
       "id": "5ef9e78dba206b030d66a3c2",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "【鄉民的轉型正義】來聊聊「白色恐怖時期不義遺址」的公共推廣與開放系統吧！",
-      "最後更新時間": "2020-09-20T03:31:32.000Z",
-      "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:08:16.000Z",
+      "分類主題-華語": "從 g0v 開始",
+      "分類主題-en": "Start from g0v",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-05T15:30",
+      "議程長度": 60
     }
   },
   "5ef9f18fba206b030d66a3ca": {
@@ -1577,12 +1578,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "如何在香港透過民間協作方式實踐自主的政策研究",
       "最後更新時間": "2020-09-24T16:07:26.000Z",
-      "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20,
-      "分類主題-華語": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
-      "分類主題-en": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
+      "分類主題-華語": "愛自由！危機下的公民韌性",
+      "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 20
     }
   },
   "5ef9fa99ba206b030d66a3d8": {
@@ -1621,12 +1622,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "眾人協作台灣原住民族字典－阿美語萌典的開始",
       "最後更新時間": "2020-09-24T16:24:22.000Z",
-      "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30,
-      "分類主題-華語": "自己的學習自己來 Self-learning",
-      "分類主題-en": "learn yourself",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T14:30",
+      "議程長度": 30
     }
   },
   "5ef9fe47ba206b030d66a3dc": {
@@ -1666,12 +1667,56 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "用開源來改變世界",
       "最後更新時間": "2020-09-24T16:14:25.000Z",
-      "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20,
-      "分類主題-華語": "沒有人的網羅 Nobody is everywhere",
-      "分類主題-en": "沒有人的網羅 Nobody is everywhere",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 20
+    }
+  },
+  "5ef9fed0ba206b030d66a3df": {
+    "id": "5ef9fed0ba206b030d66a3df",
+    "title": "分散式創新的新契機",
+    "title_en": "New Opportunities for Distributed Innovation",
+    "summary": "    創新不但是促進全體人類往前邁進的力量，也是推動企業成長的重要動能之一。但是「創新」只能在透過大量資本與專家團隊投入才能產生嗎？「創新」必然是「開放」的嗎？為了解答以上的疑問，我們將爬梳分散式創新中的兩大理論—「使用者創新 (User Innovation)」 與「開放式創新 (Open Innovation)」，同時與近年來興起的兩個近似概念：「草根創新」(Grassroots Innovation)與「社會創新」(Social Innovation)進行定義的爬梳與比較。\n    過去一般均認為台灣市場規模偏小，難以研發出符合本土需求的技術、或培養出很大型的廠商。廠商沒有足夠的資源投入研發，就很難競爭，但如果能善用分散式創新的研發模式，即便廠商的規模不大，還是可以整合很多使用者或是社群創新。因此，如何透過開放式創新、使用者創新、以及結合草根力量的社會創新便是台灣在有限的企業規模下，持續維持創新動力的重要策略。\n",
+    "summary_en": "        Innovations not only promote all human beings to move forward, but also one of the important driving forces for enterprise growth. But can \"innovation\" only happen through a massive capital investment and expert team input? Is \"innovation\" necessarily \"open\"? In order to answer the above questions, we will review the two main theories in distributed innovation-\"User Innovation\" and \"Open Innovation\", as well as two similar concepts that have emerged in recent years: \"Grassroots Innovation\" and \"Social Innovation\" are defined and compared. \n        In the past, it was generally believed that the Taiwanese market was too small to develop technologies that meet local needs, or to develop very large manufacturers. Manufacturers do not have enough resources to invest in research and development (R&D), so it is difficult to compete, but if you can make good use of the distributed innovation model, even if the manufacturer is small, you can still integrate many users or community innovation. Therefore, how to use open innovation, user innovation, and social innovation that combines grassroots forces is an important strategy for Taiwan to continue to maintain its innovation momentum under a limited enterprise scale.",
+    "oral_language": "華語",
+    "oral_languate_other": "",
+    "format": "演講 （20 分鐘）Talk (20 min)",
+    "topic": "大島開放 Open island",
+    "three_keywords": "distributed innovation, user innovation, social innovation",
+    "cover_image": "https://i.imgur.com/Oji51e8h.jpg",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "related_url": "https://docs.google.com/document/d/1D_xFoc_i8hRVqbZw-maRZ5afPGePnBBaAdI0TfzWrq4/edit?usp=sharing",
+    "verified": true,
+    "createdAt": "2020-09-27T12:57:45.455Z",
+    "presentation_method": "現場報告 on-site",
+    "speakers": [
+      {
+        "display_name": "涂敏怡(Tumi)",
+        "organization": "德明財經科技大學",
+        "avatar_url": "https://i.imgur.com/rvQEVG6h.jpg",
+        "city": "Taipei",
+        "info_url": "https://www.linkedin.com/in/tumi729/",
+        "bio": "G0v參與會眾，目前在行銷系任教，不過研究興趣超展開，包括研究台灣開源/開放文化社群相關議題。",
+        "bio_en": "Ming-Yi Tu is an assistant professor at Takming University of Science and Technology, Taipei, Taiwan. Her research interests include new media industrial research, marketing research and analysis, and the Influence of Open Source Innovation in Taiwan."
+      }
+    ],
+    "updatedAt": "2020-09-27T12:57:45.455Z",
+    "timeSheet": {
+      "id": "5ef9fed0ba206b030d66a3df",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "分散式創新的新契機",
+      "最後更新時間": "2020-09-27T15:20:26.000Z",
+      "分類主題-華語": "構造改革！maker 運動下一步可以做啥",
+      "分類主題-en": "What’s next for us makers?",
+      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T14:30",
+      "議程長度": 30
     }
   },
   "5efa0877ba206b030d66a3e8": {
@@ -1708,12 +1753,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "做工的沒有人 - 社群治理為何重要",
       "最後更新時間": "2020-09-24T16:09:53.000Z",
-      "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30,
-      "分類主題-華語": "決定囉？多中心社群的治理 Let’s decide? Governance of many centers",
-      "分類主題-en": "決定囉？多中心社群的治理 Let’s decide? Governance of many centers",
+      "分類主題-華語": "決定囉？多中心社群的治理",
+      "分類主題-en": "Let’s decide? Governance of many centers",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T13:00",
+      "議程長度": 30
     }
   },
   "5efa0bf6ba206b030d66a3ea": {
@@ -1751,12 +1796,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "NGO 可以怎麼被設計/科技賦能？",
       "最後更新時間": "2020-09-24T16:28:41.000Z",
-      "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30,
-      "分類主題-華語": "開源社群對NGO的重要性 Open is important for NGOs",
-      "分類主題-en": "開源社群對NGO的重要性 Open is important for NGOs",
+      "分類主題-華語": "開源社群對NGO的重要性",
+      "分類主題-en": "Open is important for NGOs",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T16:30",
+      "議程長度": 30
     }
   },
   "5efa0fb8ba206b030d66a3ef": {
@@ -1793,13 +1838,13 @@
       "id": "5efa0fb8ba206b030d66a3ef",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "調個資、刪內容，公民如何監督政府與企業？來打造「透明報告」！",
-      "最後更新時間": "2020-09-20T03:32:11.000Z",
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:09:20.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-05T10:30",
+      "議程長度": 60
     }
   },
   "5efa11b2ba206b030d66a3f1": {
@@ -1836,12 +1881,12 @@
       "id": "5efa11b2ba206b030d66a3f1",
       "議程預設標題-華語": "How home stayers unlock the potential of open data in response to Covid-19 Pandemic in Myanmar?",
       "最後更新時間": "2020-09-24T16:06:51.000Z",
-      "議程開始時間": "undefinedT13:00",
-      "議程長度": 30,
-      "分類主題-華語": "救命啊！公衛危機下的科技應變 Hack! Pandemic tech response",
-      "分類主題-en": "救命啊！公衛危機下的科技應變 Hack! Pandemic tech response",
+      "分類主題-華語": "救命啊！公衛危機下的科技應變",
+      "分類主題-en": "Hack! Pandemic tech response",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "undefinedT13:00",
+      "議程長度": 30
     }
   },
   "5efa175bba206b030d66a3f3": {
@@ -1888,12 +1933,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "資料驅動的社會倡議–談談「掃了再買 App」的發想與執行",
       "最後更新時間": "2020-09-24T16:13:45.000Z",
-      "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30,
-      "分類主題-華語": "科技也要倡議 Tech as activism",
-      "分類主題-en": "科技也要倡議 Tech as activism",
+      "分類主題-華語": "科技也要倡議",
+      "分類主題-en": "Tech as activism",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T13:00",
+      "議程長度": 30
     }
   },
   "5efa2e57ba206b030d66a3f7": {
@@ -1931,12 +1976,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "零時檔案局 - 台灣資訊空間的開放資料",
       "最後更新時間": "2020-09-24T16:12:36.000Z",
-      "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20,
-      "分類主題-華語": "資料與他們的產地 Data and where to find them",
-      "分類主題-en": "資料與他們的產地 Data and where to find them",
+      "分類主題-華語": "資料與他們的產地",
+      "分類主題-en": "Data and where to find them",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T15:30",
+      "議程長度": 20
     }
   },
   "5efa37d2ba206b030d66a3f9": {
@@ -1964,12 +2009,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "口罩地圖設計後感，下次災難前，我們還可以準備什麼？",
       "最後更新時間": "2020-09-24T16:30:47.000Z",
-      "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳坑 When tech people dive in",
-      "分類主題-en": "資訊人跳坑 When tech people dive in",
+      "分類主題-華語": "資訊人跳坑",
+      "分類主題-en": "When tech people dive in",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T13:30",
+      "議程長度": 30
     }
   },
   "5efa793fba206b030d66a402": {
@@ -2008,12 +2053,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Building an army of facilitators with Extinction Rebellion",
       "最後更新時間": "2020-09-24T16:09:56.000Z",
-      "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 60,
-      "分類主題-華語": "決定囉？多中心社群的治理 Let’s decide? Governance of many centers",
-      "分類主題-en": "決定囉？多中心社群的治理 Let’s decide? Governance of many centers",
+      "分類主題-華語": "決定囉？多中心社群的治理",
+      "分類主題-en": "Let’s decide? Governance of many centers",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T14:00",
+      "議程長度": 60
     }
   },
   "5efa9092ba206b030d66a408": {
@@ -2050,12 +2095,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "来自日本的项目展示案例--我们如何合作？",
       "最後更新時間": "2020-09-24T16:09:13.000Z",
-      "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 40,
-      "分類主題-華語": "來串啊！國際公民社群 We connect! Civic hackers around the world",
-      "分類主題-en": "來串啊！國際公民社群 We connect! Civic hackers around the world",
+      "分類主題-華語": "來串啊！國際公民社群",
+      "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T09:30",
+      "議程長度": 40
     }
   },
   "5efaa323ba206b030d66a414": {
@@ -2103,12 +2148,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "打造說好故事的輪子 ——《報導者》開放「新聞敘事元件庫」的實踐之路。",
       "最後更新時間": "2020-09-24T16:11:24.000Z",
-      "議程開始時間": "2020-12-05T11:00",
-      "議程長度": 30,
-      "分類主題-華語": "台味科技新媒體 - Media tech Taiwan style",
-      "分類主題-en": "台味科技新媒體 - Media tech Taiwan style",
+      "分類主題-華語": "台味科技新媒體",
+      "分類主題-en": "Media tech Taiwan style",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T11:00",
+      "議程長度": 30
     }
   },
   "5efaa83cba206b030d66a41a": {
@@ -2147,12 +2192,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "g0v.social：分散式社群媒體的四年旅程",
       "最後更新時間": "2020-09-24T16:13:12.000Z",
-      "議程開始時間": "2020-12-05T10:50",
-      "議程長度": 20,
-      "分類主題-華語": "網路自由不能讓 Stand with Internet Freedom",
-      "分類主題-en": "網路自由不能讓 Stand with Internet Freedom",
+      "分類主題-華語": "網路自由不能讓",
+      "分類主題-en": "Stand with Internet Freedom",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T10:50",
+      "議程長度": 20
     }
   },
   "5efabbc9ba206b030d66a42a": {
@@ -2189,13 +2234,57 @@
       "id": "5efabbc9ba206b030d66a42a",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "不回家的死小孩，遠距長照進行時？",
-      "最後更新時間": "2020-09-20T03:33:09.000Z",
-      "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:15:43.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-05T15:30",
+      "議程長度": 60
+    }
+  },
+  "5efac8d2ba206b030d66a432": {
+    "id": "5efac8d2ba206b030d66a432",
+    "title": "台灣第一個NGO自營社會住宅經驗分享",
+    "title_en": "",
+    "summary": "有鑑於身心障礙者租屋之困難, 伊甸基金會從1987年的無殼蝸牛運動, 2014年的巢運, 都在其中扮演為身障者在這高房價的台灣, 爭取良好合宜且平價的居住環境而努力. 更在2013年, 於台南大林國宅購下一幢樓, 修繕了無障礙環境, 以身障, 老人及其他弱勢家庭為對象, 創辦了台灣第一個以NGO身份自營社會住宅的範例. 此服務係以中繼屋的方式, 希望在入住期間, 除了讓弱勢家庭有安定的住處外, 也提供各類社福服務, 希望幫助這些家庭, 發展其潛能, 也融入社區中, 不再成為社會邊緣人. 第一批在2014年初入住的住戶已在此居住6年, 我們期待透過弱勢住戶、家庭照顧者、服務提供者三個不同角度, 來和大家分享社會住宅對這些家庭的影響及重要性.",
+    "summary_en": "",
+    "oral_language": "華語",
+    "oral_languate_other": "",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
+    "topic": "「沒有人」的島 Nobody’s island",
+    "three_keywords": "社會住宅, 社會福利, 非營利組織",
+    "cover_image": "https://i.imgur.com/wYoCc2oh.jpg",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "related_url": "https://www.eden.org.tw/branches_detail.php?detailId=JCU4NSMh&rePageUrl=L2JyYW5jaGVzLnBocD8mcGFnZT0xNQ%3D%3D",
+    "verified": true,
+    "createdAt": "2020-09-28T01:19:29.203Z",
+    "presentation_method": "現場報告 on-site",
+    "speakers": [
+      {
+        "display_name": "張盟宜",
+        "organization": "財團法人伊甸社會福利基金會",
+        "avatar_url": "https://i.imgur.com/kdleVw2h.jpg",
+        "city": "台南",
+        "info_url": "",
+        "bio": "從事社會工作二十多年, 現任伊甸台南區區長",
+        "bio_en": ""
+      }
+    ],
+    "updatedAt": "2020-09-28T01:19:29.203Z",
+    "timeSheet": {
+      "id": "5efac8d2ba206b030d66a432",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "台灣第一個NGO自營社會住宅經驗分享",
+      "最後更新時間": "2020-09-27T15:20:09.000Z",
+      "分類主題-華語": "青年發展的必須",
+      "分類主題-en": "Youth development is a must",
+      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-05T11:00",
+      "議程長度": 60
     }
   },
   "5efad21cba206b030d66a437": {
@@ -2242,12 +2331,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "科技麻瓜 NGO 和開源魔法師的旅程",
       "最後更新時間": "2020-09-24T16:13:47.000Z",
-      "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 30,
-      "分類主題-華語": "科技也要倡議 Tech as activism",
-      "分類主題-en": "科技也要倡議 Tech as activism",
+      "分類主題-華語": "科技也要倡議",
+      "分類主題-en": "Tech as activism",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T13:30",
+      "議程長度": 30
     }
   },
   "5efadb44ba206b030d66a439": {
@@ -2286,12 +2375,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "創用 CC 在玩些什麼？",
       "最後更新時間": "2020-09-24T16:20:57.000Z",
-      "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30,
-      "分類主題-華語": "maker 的花花世界 You maker",
-      "分類主題-en": "me maker",
+      "分類主題-華語": "maker 的花花世界",
+      "分類主題-en": "You maker",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T16:30",
+      "議程長度": 30
     }
   },
   "5efadc65ba206b030d66a43a": {
@@ -2346,12 +2435,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "NPO組織 vs 開源社群",
       "最後更新時間": "2020-09-24T16:28:49.000Z",
-      "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 60,
-      "分類主題-華語": "開源社群對NGO的重要性 Open is important for NGOs",
-      "分類主題-en": "開源社群對NGO的重要性 Open is important for NGOs",
+      "分類主題-華語": "開源社群對NGO的重要性",
+      "分類主題-en": "Open is important for NGOs",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T17:00",
+      "議程長度": 60
     }
   },
   "5efae364ba206b030d66a441": {
@@ -2389,12 +2478,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Wikidata 台灣一年了，回顧過往與展望未來",
       "最後更新時間": "2020-09-24T16:12:38.000Z",
-      "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20,
-      "分類主題-華語": "資料與他們的產地 Data and where to find them",
-      "分類主題-en": "資料與他們的產地 Data and where to find them",
+      "分類主題-華語": "資料與他們的產地",
+      "分類主題-en": "Data and where to find them",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T16:50",
+      "議程長度": 20
     }
   },
   "5efaf2c6ba206b030d66a458": {
@@ -2443,12 +2532,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "線上揪松「 揪己家」工作坊",
       "最後更新時間": "2020-09-24T16:24:15.000Z",
-      "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 60,
-      "分類主題-華語": "自己的學習自己來 Self-learning",
-      "分類主題-en": "learn yourself",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T13:30",
+      "議程長度": 60
     }
   },
   "5efafc95ba206b030d66a461": {
@@ -2495,12 +2584,64 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "eID 數位身分證",
       "最後更新時間": "2020-09-24T16:13:47.000Z",
-      "議程開始時間": "2020-12-05T14:30",
-      "議程長度": 30,
-      "分類主題-華語": "科技也要倡議 Tech as activism",
-      "分類主題-en": "科技也要倡議 Tech as activism",
+      "分類主題-華語": "科技也要倡議",
+      "分類主題-en": "Tech as activism",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T14:30",
+      "議程長度": 30
+    }
+  },
+  "5efb007bba206b030d66a46c": {
+    "id": "5efb007bba206b030d66a46c",
+    "title": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
+    "title_en": "Introduce RPA(Robotic Process Automation) into NPO. Sharing our experience.",
+    "summary": "我們是一個新創的非營利組織，主要是透過攝影教育，在柬埔寨的偏鄉，讓孩子有完整的賦權(empower)經驗。\n\n因為草創，所以在沒錢也沒人的情況下，我們盡可能的善用所有數位工具，來讓我們的行政負擔以及服務達到更好的效果與效率，想與大家分享我們的經驗與目前的成果，也希望這樣的模板與工具可以幫助到其他需要的組織。\n\n分享內容主要包含：\n\n1. 我們發展這些數位自動化的動機？\n\n2. 我們如何開始擁抱數位？\n    第一步：線上開會、智慧相簿、共享行事曆、共筆與會議記錄。\n\n3. 如何結合 Google 表單以及試算表，打造組織的全自動報帳及會計系統？\n\n4. 透過撰寫簡易的 RPA 機器人，來銜接捐款系統與會計系統，以達到財務管理的自動化",
+    "summary_en": "",
+    "oral_language": "華語",
+    "oral_languate_other": "",
+    "format": "演講 （20 分鐘）Talk (20 min)",
+    "topic": "海海人聲 Voice of the islanders",
+    "three_keywords": "非營利組職,數位轉型,流程機器人",
+    "cover_image": "",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "related_url": "https://www.zazaeye.org/",
+    "speakers": [
+      {
+        "display_name": "CJ",
+        "organization": "眨眨眼國際兒童教育協會",
+        "avatar_url": "https://i.imgur.com/5wGtJyth.jpg",
+        "city": "Taipei",
+        "info_url": "",
+        "bio": "正職為資料科學家，在印度公司，偶爾派駐在印度。\n眨眨眼共同創辦人，努力在想怎麼把資料科學的訓練運用在我們組織當中。",
+        "bio_en": ""
+      },
+      {
+        "display_name": "張維",
+        "organization": "眨眨眼國際兒童教育協會",
+        "avatar_url": "https://i.imgur.com/7GzzwmRh.jpg",
+        "city": "Taipei",
+        "info_url": "",
+        "bio": "攝影師、眨眨眼教育協會創辦人、英國杜倫大學策略行銷碩士，由於8年前與柬埔寨孩子打勾勾的約定，集結教育、社工、心理、設計專業的夥伴，將相機交到偏鄉兒童手中，empower孩子透過鏡頭為自己發聲，打開未來想像可能性。",
+        "bio_en": ""
+      }
+    ],
+    "verified": true,
+    "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "timeSheet": {
+      "id": "5efb007bba206b030d66a46c",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
+      "最後更新時間": "2020-09-27T15:19:48.000Z",
+      "分類主題-華語": "maker 的花花世界",
+      "分類主題-en": "You maker",
+      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T17:30",
+      "議程長度": 30
     }
   },
   "5efb0618ba206b030d66a474": {
@@ -2537,13 +2678,13 @@
       "id": "5efb0618ba206b030d66a474",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "g0v新手村─如何讓 g0v 更容易入門？",
-      "最後更新時間": "2020-09-20T03:30:46.000Z",
-      "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:07:55.000Z",
+      "分類主題-華語": "從 g0v 開始",
+      "分類主題-en": "Start from g0v",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-05T13:00",
+      "議程長度": 60
     }
   },
   "5efb0ef9ba206b030d66a47b": {
@@ -2591,12 +2732,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "補助款明細的流浪之路：許一個選舉資料庫開放的願望",
       "最後更新時間": "2020-09-24T16:11:24.000Z",
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 30,
-      "分類主題-華語": "台味科技新媒體 - Media tech Taiwan style",
-      "分類主題-en": "台味科技新媒體 - Media tech Taiwan style",
+      "分類主題-華語": "台味科技新媒體",
+      "分類主題-en": "Media tech Taiwan style",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T10:30",
+      "議程長度": 30
     }
   },
   "5efb2838ba206b030d66a495": {
@@ -2635,12 +2776,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "LASS 如何建構水社群與公私協力經驗談",
       "最後更新時間": "2020-09-24T16:32:01.000Z",
-      "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30,
-      "分類主題-華語": "maker 的花花世界 You maker",
-      "分類主題-en": "me maker",
+      "分類主題-華語": "maker 的花花世界",
+      "分類主題-en": "You maker",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T14:30",
+      "議程長度": 30
     }
   },
   "5efb34d8ba206b030d66a4a4": {
@@ -2704,12 +2845,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "技術與媒體，談網路工程師在媒體以及科技對媒體的影響",
       "最後更新時間": "2020-09-24T16:11:21.000Z",
-      "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 60,
-      "分類主題-華語": "台味科技新媒體 - Media tech Taiwan style",
-      "分類主題-en": "台味科技新媒體 - Media tech Taiwan style",
+      "分類主題-華語": "台味科技新媒體",
+      "分類主題-en": "Media tech Taiwan style",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T09:30",
+      "議程長度": 60
     }
   },
   "5efb3c4bba206b030d66a4a9": {
@@ -2756,12 +2897,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "創新教師的線上課程資料庫有哪些實際案例？",
       "最後更新時間": "2020-09-24T16:24:22.000Z",
-      "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 30,
-      "分類主題-華語": "自己的學習自己來 Self-learning",
-      "分類主題-en": "learn yourself",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T15:30",
+      "議程長度": 30
     }
   },
   "5efb4748ba206b030d66a4bb": {
@@ -2799,12 +2940,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "將資料思維帶進政府",
       "最後更新時間": "2020-09-24T16:10:58.000Z",
-      "議程開始時間": "2020-12-05T15:50",
-      "議程長度": 20,
-      "分類主題-華語": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
-      "分類主題-en": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
+      "分類主題-華語": "我來啦！資訊人跳坑政",
+      "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T15:50",
+      "議程長度": 20
     }
   },
   "5efb5a5fba206b030d66a4d8": {
@@ -2843,12 +2984,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "台灣政治內與外的鴻溝",
       "最後更新時間": "2020-09-24T16:10:54.000Z",
-      "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20,
-      "分類主題-華語": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
-      "分類主題-en": "我來啦！資訊人跳坑政 Here I am! Tech for policy",
+      "分類主題-華語": "我來啦！資訊人跳坑政",
+      "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T15:30",
+      "議程長度": 20
     }
   },
   "5efb5c5eba206b030d66a4dc": {
@@ -2887,12 +3028,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Building Policy for Open and Inclusive Governance",
       "最後更新時間": "2020-09-24T15:55:03.000Z",
-      "議程開始時間": "2020-12-05T10:10",
-      "議程長度": 20,
-      "分類主題-華語": "集結吧！公民的意志 Assemble! Will of the People",
-      "分類主題-en": "集結吧！公民的意志 Assemble! Will of the People",
+      "分類主題-華語": "集結吧！公民的意志",
+      "分類主題-en": "Assemble! Will of the People",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T10:10",
+      "議程長度": 20
     }
   },
   "5efb712eba206b030d66a4e9": {
@@ -2939,12 +3080,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Civic Tech Toronto - 5 years in and 5 years onward",
       "最後更新時間": "2020-09-24T16:09:18.000Z",
-      "議程開始時間": "2020-12-05T10:10",
-      "議程長度": 20,
-      "分類主題-華語": "來串啊！國際公民社群 We connect! Civic hackers around the world",
-      "分類主題-en": "來串啊！國際公民社群 We connect! Civic hackers around the world",
+      "分類主題-華語": "來串啊！國際公民社群",
+      "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T10:10",
+      "議程長度": 20
     }
   },
   "5efcd945ba206b030d66a50e": {
@@ -2982,12 +3123,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Big issues, small data: How open-source data science can help social organizations tackle big problems ",
       "最後更新時間": "2020-09-24T16:12:38.000Z",
-      "議程開始時間": "2020-12-05T15:50",
-      "議程長度": 20,
-      "分類主題-華語": "資料與他們的產地 Data and where to find them",
-      "分類主題-en": "資料與他們的產地 Data and where to find them",
+      "分類主題-華語": "資料與他們的產地",
+      "分類主題-en": "Data and where to find them",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T15:50",
+      "議程長度": 20
     }
   },
   "5efe0289ba206b030d66a514": {
@@ -3033,12 +3174,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "The Battle for Internet Freedom ",
       "最後更新時間": "2020-09-24T16:13:10.000Z",
-      "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 40,
-      "分類主題-華語": "網路自由不能讓 Stand with Internet Freedom",
-      "分類主題-en": "網路自由不能讓 Stand with Internet Freedom",
+      "分類主題-華語": "網路自由不能讓",
+      "分類主題-en": "Stand with Internet Freedom",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T09:30",
+      "議程長度": 40
     }
   },
   "5f02d14ee88a4948daf87fb7": {
@@ -3076,12 +3217,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "What are the interns of Code for Japan doing?",
       "最後更新時間": "2020-09-24T16:24:38.000Z",
-      "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30,
-      "分類主題-華語": "自己的學習自己來 Self-learning",
-      "分類主題-en": "learn yourself",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T16:00",
+      "議程長度": 30
     }
   },
   "5f02d5a0e88a4948daf87fb9": {
@@ -3137,12 +3278,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Project Lockdown: 運用政府在新冠肺炎時政策的數據來評估對人權與數位權的影響",
       "最後更新時間": "2020-09-24T16:06:58.000Z",
-      "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 45,
-      "分類主題-華語": "救命啊！公衛危機下的科技應變 Hack! Pandemic tech response",
-      "分類主題-en": "救命啊！公衛危機下的科技應變 Hack! Pandemic tech response",
+      "分類主題-華語": "救命啊！公衛危機下的科技應變",
+      "分類主題-en": "Hack! Pandemic tech response",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T13:30",
+      "議程長度": 45
     }
   },
   "5f0c7c17e88a4948daf87fe0": {
@@ -3180,12 +3321,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Open Contracting for emergency response: how to use open procurement data and red flags to monitor public purchases. ",
       "最後更新時間": "2020-09-24T16:13:12.000Z",
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20,
-      "分類主題-華語": "網路自由不能讓 Stand with Internet Freedom",
-      "分類主題-en": "網路自由不能讓 Stand with Internet Freedom",
+      "分類主題-華語": "網路自由不能讓",
+      "分類主題-en": "Stand with Internet Freedom",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T10:30",
+      "議程長度": 20
     }
   },
   "5f0cd255e88a4948daf87fe9": {
@@ -3232,12 +3373,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "COVID種族歧視？但數據不會",
       "最後更新時間": "2020-09-24T16:30:57.000Z",
-      "議程開始時間": "2020-12-04T14:00",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳坑 When tech people dive in",
-      "分類主題-en": "資訊人跳坑 When tech people dive in",
+      "分類主題-華語": "資訊人跳坑",
+      "分類主題-en": "When tech people dive in",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T14:00",
+      "議程長度": 30
     }
   },
   "5f0d47ede88a4948daf87fed": {
@@ -3274,13 +3415,13 @@
       "id": "5f0d47ede88a4948daf87fed",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "防呆版社會投資報酬評估：無形價值的溝通與管理",
-      "最後更新時間": "2020-09-20T03:30:20.000Z",
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:09:08.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-05T10:30",
+      "議程長度": 60
     }
   },
   "5f0dd9c960d627285b6b14e7": {
@@ -3328,12 +3469,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "Who builds the Internet? Tales about infrastructure and the people behind it.",
       "最後更新時間": "2020-09-24T16:13:12.000Z",
-      "議程開始時間": "2020-12-05T10:10",
-      "議程長度": 20,
-      "分類主題-華語": "網路自由不能讓 Stand with Internet Freedom",
-      "分類主題-en": "網路自由不能讓 Stand with Internet Freedom",
+      "分類主題-華語": "網路自由不能讓",
+      "分類主題-en": "Stand with Internet Freedom",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T10:10",
+      "議程長度": 20
     }
   },
   "5f0e6f7560d627285b6b14f2": {
@@ -3389,12 +3530,55 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "水多的人輸，水少的人贏：運用資料分析優化決策時間以降低都市區域淹水風險",
       "最後更新時間": "2020-09-24T16:12:00.000Z",
-      "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 45,
-      "分類主題-華語": "陽光空氣水 Sun",
-      "分類主題-en": "air",
+      "分類主題-華語": "陽光空氣水",
+      "分類主題-en": "Sun",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T13:30",
+      "議程長度": 45
+    }
+  },
+  "5f0e97c660d627285b6b14f8": {
+    "id": "5f0e97c660d627285b6b14f8",
+    "title": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
+    "title_en": "Speculative Design | Future News: Let's talk about our Smart City!",
+    "summary": "未來新聞是一個以遊戲化的方式邀請民眾針對發生在未來的特定議題分享想法的體驗設計，以娛樂化的方式邀請民眾針對特定議題進行深入討論與了解其他參與民眾的想法。將一般而言較嚴肅的公共議題討論轉化較成輕鬆的體驗，以觸及原先較不會對該議題感興趣的民眾，打開同溫層。體驗過程包含聆聽未來新聞與分享想法約共20分鐘。\n \n工作坊預計提供未來新聞的共創工具，邀請參與者分組共同發想針對特定主題的未來新聞，一同體驗推測設計的創作過程，並在最後以google語音進行rapid prototype產出未來新聞的廣播體驗設計。\n \n這個作品在2019年以阿姆斯特丹為體驗設計場域，邀請市民參與體驗未來廣播，內容是關於智慧城市在阿姆斯特丹未來可能的樣貌。3個小時內累積30多組民眾參與體驗並分享想法。\n \n2019/TU Delft/互動設計碩士/畢業設計/參與式體驗設計/阿姆斯特丹",
+    "summary_en": "Future News is a 20-minute speculative experience which aims at evoking deep conversation on a certain topic by providing future news radio of the topic. This design transforms serious discussions of public issues into a fun experience.\n\nThe workshop will provide the co-creation tool for generating future news. Participants can have a taste of the process of speculative design by using the tool to create future news, and at the end of the workshop, prototype the news by google voice service.\n\nThis project was developed in 2019 in Amsterdam with the NGO, Waag. Future News invited Amsterdam citizens to experience and talk about Smart City in the future of Amsterdam and collected more than 30 pieces of opinion in 3 hours.\n\n2019/ TU Delft/ Design for Interaction/ Graduation Project/ Participatory Design/ Amsterdam ",
+    "oral_language": "華語",
+    "oral_languate_other": "",
+    "format": "工作坊 （90 分鐘）Workshop (90 min)",
+    "topic": "賢者之島 Academia Formosa",
+    "three_keywords": " 公民參與體驗, 推測設計, 共創工具",
+    "cover_image": "https://i.imgur.com/K9qb5NFh.jpg",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "related_url": "https://repository.tudelft.nl/islandora/object/uuid%3Ad708d240-6130-4a70-bf36-5019b525ced7?collection=education",
+    "speakers": [
+      {
+        "display_name": "HY Chang",
+        "organization": "myself",
+        "avatar_url": "https://i.imgur.com/4vXNHy2h.jpg",
+        "city": "台北市",
+        "info_url": "https://www.linkedin.com/in/hao-yung-chang-a21a1997/",
+        "bio": "UX Researcher & Designer from Taipei",
+        "bio_en": "UX Researcher & Designer from Taipei"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "timeSheet": {
+      "id": "5f0e97c660d627285b6b14f8",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
+      "最後更新時間": "2020-09-27T15:19:27.000Z",
+      "分類主題-華語": "從 g0v 開始",
+      "分類主題-en": "Start from g0v",
+      "議程場地-華語": "成功大學綠色魔法學校 - R3",
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-05T16:30",
+      "議程長度": 60
     }
   },
   "5f0ef5300bde6f3bbab73f6d": {
@@ -3433,12 +3617,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "自己的健保卡 Agent 自己開源",
       "最後更新時間": "2020-09-24T16:31:37.000Z",
-      "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳更多坑 When tech people dive in some more",
-      "分類主題-en": "資訊人跳更多坑 When tech people dive in some more",
+      "分類主題-華語": "資訊人跳更多坑",
+      "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T16:30",
+      "議程長度": 30
     }
   },
   "5f0f06fd0bde6f3bbab73f70": {
@@ -3484,13 +3668,13 @@
       "id": "5f0f06fd0bde6f3bbab73f70",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "「岔派樂基因：2035 eID 數位身份大冒險」藝術行動",
-      "最後更新時間": "2020-09-20T03:32:34.000Z",
-      "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "最後更新時間": "2020-09-27T08:15:43.000Z",
+      "分類主題-華語": "工作坊",
+      "分類主題-en": "Workshop",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-05T13:00",
+      "議程長度": 60
     }
   },
   "5f0f1b6e0bde6f3bbab73f76": {
@@ -3529,12 +3713,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "失敗分享：澳門民間投票 2019 ",
       "最後更新時間": "2020-09-24T16:07:26.000Z",
-      "議程開始時間": "2020-12-05T15:50",
-      "議程長度": 20,
-      "分類主題-華語": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
-      "分類主題-en": "愛自由！危機下的公民韌性 Fight for freedom! Resilience in crisis",
+      "分類主題-華語": "愛自由！危機下的公民韌性",
+      "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T15:50",
+      "議程長度": 20
     }
   },
   "5f0f209d0bde6f3bbab73f7a": {
@@ -3572,12 +3756,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "面向海洋 - 東亞公民黑客串連兩年回顧",
       "最後更新時間": "2020-09-24T16:09:18.000Z",
-      "議程開始時間": "2020-12-05T10:50",
-      "議程長度": 20,
-      "分類主題-華語": "來串啊！國際公民社群 We connect! Civic hackers around the world",
-      "分類主題-en": "來串啊！國際公民社群 We connect! Civic hackers around the world",
+      "分類主題-華語": "來串啊！國際公民社群",
+      "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T10:50",
+      "議程長度": 20
     }
   },
   "5f0f235a0bde6f3bbab73f7e": {
@@ -3615,12 +3799,12 @@
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "從同人圈到公民科技社群，非技術人的開放文化之旅",
       "最後更新時間": "2020-09-24T16:14:16.000Z",
-      "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20,
-      "分類主題-華語": "沒有人的網羅 Nobody is everywhere",
-      "分類主題-en": "沒有人的網羅 Nobody is everywhere",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T15:30",
+      "議程長度": 20
     }
   },
   "1204-jothon-0": {
@@ -3673,50 +3857,71 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "停學，不停學",
       "最後更新時間": "2020-09-24T16:23:04.000Z",
-      "議程開始時間": "2020-12-04T10:40",
-      "議程長度": 80,
       "分類主題-華語": "Stop Schooling",
       "分類主題-en": "Don’t Stop Learning",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T10:40",
+      "議程長度": 80
     }
   },
   "1204-jothon-1": {
     "id": "1204-jothon-1",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:53:10.000Z",
-    "createdAt": "2020-09-25T16:53:10.000Z",
+    "speakers": [
+      {
+        "display_name": "Sch001 Demo Day 2020 獲獎團隊",
+        "organization": "g0v.tw",
+        "avatar_url": "https://drive.google.com/file/d/1HJiJQMyHSlzUMcma5riGRLL1j3E3UFXc/view?usp=sharing",
+        "city": "Taipei",
+        "info_url": "https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees",
+        "bio": "詳細內容請至：https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees 【| 島島阿學 | 學習資源平台】 林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。 林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】 Irvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】 Kahou：「CoTeach 教案共享平臺」團隊成員。 蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】 林峻丞：小草書屋創辦人/執行長 賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】 廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】 tmonk：直播導播、網頁後端工程師、自由軟體工程師",
+        "bio_en": "MORE: https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees 【Dao Dao Online Learning Platform】 Lin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet. Lin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations. 【Traditional Chinese CC0 corpus and Mozilla Common Voice database】 Irvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net. 【CoTeach】 Kahou: Member of CoTeach. Meng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat! 【Happiness Bankbook】 Jeffery Lin: Founder of Grass Book House Giovanni: Project Manager of Happiness Bankbook 【Chatbot for High School Students】 Jason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year. 【Literacy Practices Database】 tmonk: Live Stream Director, Backend Developer, Free Software Engineer"
+      }
+    ],
+    "updatedAt": "2020-09-29T03:54:39.000Z",
+    "createdAt": "2020-09-29T03:54:39.000Z",
     "title": "零時小學校 2020 成果發表會",
+    "title_en": "Sch001 2020 Final Presentation",
+    "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
+    "summary_en": "“Sch001” project puts 0 and 1 representing the digital native generation in the “School”. Starting from February 2020, Sch001 has accumulated 21 Edtech proposals in 3 workshops, 3 g0v hackathons, and selected 6 winning teams on Demo Day, including “Dao Dao Online Learning Platform”, “Traditional Chinese CC0 corpus and Mozilla Common Voice database”, “CoTeach”, “Happiness Bankbook”, “Chatbot for High School Students” and “Literacy Practices Database”. The winning team members will share the origin and path of development, and give you refreshing new thinking about education.",
+    "oral_language": "華語",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
+    "topic": "賢者之島",
+    "three_keywords": "EdTech, Open Education, g0v",
+    "related_url": "https://sch001.g0v.tw/",
+    "cover_image": "https://drive.google.com/file/d/11pXS_QOk3YCQXwXi78nOFcGrMmIr5lGC/view?usp=sharing",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1204-jothon-1",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "零時小學校 2020 成果發表會",
       "最後更新時間": "2020-09-26T13:39:37.000Z",
-      "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 60,
-      "分類主題-華語": "“零時小學校 2020 成果發表會” Sch001 2020 Final Presentation",
-      "分類主題-en": "“零時小學校 2020 成果發表會” Sch001 2020 Final Presentation",
+      "分類主題-華語": "零時小學校 2020 成果發表會",
+      "分類主題-en": "Sch001 2020 Final Presentation",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T09:30",
+      "議程長度": 60
     }
   },
   "1204-goodideas-0": {
     "id": "1204-goodideas-0",
     "speakers": [],
-    "updatedAt": "2020-09-25T16:53:13.000Z",
-    "createdAt": "2020-09-25T16:53:13.000Z",
+    "updatedAt": "2020-09-27T17:02:58.000Z",
+    "createdAt": "2020-09-27T17:02:58.000Z",
     "title": "地方空間經營與創生（暫）",
     "timeSheet": {
       "id": "1204-goodideas-0",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "地方空間經營與創生（暫）",
-      "最後更新時間": "2020-09-24T16:30:07.000Z",
+      "最後更新時間": "2020-09-28T15:07:08.000Z",
+      "分類主題-華語": "資訊人經營",
+      "分類主題-en": "When tech people build",
+      "議程場地-華語": "好想工作室",
+      "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 60,
-      "分類主題-華語": "資訊人經營 When tech people build",
-      "分類主題-en": "資訊人經營 When tech people build",
-      "議程場地-華語": "資訊人經營 When tech people build",
-      "議程場地-en": "資訊人經營 When tech people build"
+      "議程長度": 60
     }
   },
   "1204-goodideas-1": {
@@ -3730,12 +3935,12 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "自我探索的資訊教育（暫）",
       "最後更新時間": "2020-09-24T16:30:15.000Z",
-      "議程開始時間": "2020-12-04T10:30",
-      "議程長度": 60,
-      "分類主題-華語": "資訊人經營 When tech people build",
-      "分類主題-en": "資訊人經營 When tech people build",
+      "分類主題-華語": "資訊人經營",
+      "分類主題-en": "When tech people build",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T10:30",
+      "議程長度": 60
     }
   },
   "1204-goodideas-2": {
@@ -3749,236 +3954,376 @@
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "口罩地圖事件（暫）",
       "最後更新時間": "2020-09-24T16:30:35.000Z",
-      "議程開始時間": "2020-12-04T13:00",
-      "議程長度": 30,
-      "分類主題-華語": "資訊人跳坑 When tech people dive in",
-      "分類主題-en": "資訊人跳坑 When tech people dive in",
+      "分類主題-華語": "資訊人跳坑",
+      "分類主題-en": "When tech people dive in",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T13:00",
+      "議程長度": 30
     }
   },
   "1204-sprout-0": {
     "id": "1204-sprout-0",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:53:19.000Z",
-    "createdAt": "2020-09-25T16:53:19.000Z",
-    "title": "青年宜居台南（暫）",
+    "speakers": [
+      {
+        "display_name": "洪敬舒",
+        "organization": "台灣勞工陣線",
+        "avatar_url": " ",
+        "city": "台南市&台北市",
+        "info_url": "https://sites.google.com/site/povertyknowledge/",
+        "bio": "思考以經濟民主作為勞動貧窮的可行解方"
+      }
+    ],
+    "updatedAt": "2020-09-28T06:23:36.000Z",
+    "createdAt": "2020-09-28T06:23:36.000Z",
+    "title": "開島在台南：青年的生存與生活",
+    "summary": "\"2020年迎來台南縣市合併十週年。縣市合併後，台南的青年過得好嗎？台南是否已經成為「一個台南」？\n在本場次中，我們希望討論青年在地居住、就業的情況，也邀請現在在前縣區居住的青年，聊聊他們對生活在台南的想法。\"",
+    "oral_language": "華語",
+    "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
+    "topic": "沒有島是局外島",
+    "three_keywords": "青年 居住 勞動",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1204-sprout-0",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "青年宜居台南（暫）",
       "最後更新時間": "2020-09-24T16:26:00.000Z",
-      "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 90,
-      "分類主題-華語": "青年發展的必須 Youth development is a must",
-      "分類主題-en": "青年發展的必須 Youth development is a must",
+      "分類主題-華語": "青年發展的必須",
+      "分類主題-en": "Youth development is a must",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T09:30",
+      "議程長度": 90
     }
   },
   "1204-sprout-1": {
     "id": "1204-sprout-1",
     "speakers": [],
-    "updatedAt": "2020-09-25T16:53:22.000Z",
-    "createdAt": "2020-09-25T16:53:22.000Z",
-    "title": "文資、發展真的不能並存嗎？（暫）",
+    "updatedAt": "2020-09-28T11:15:32.000Z",
+    "createdAt": "2020-09-28T11:15:32.000Z",
+    "title": "開發古都？文化資產與都市規劃的碰撞",
+    "summary": "常有人說，「要在臺南搞建設做開發，根本跟做考古沒兩樣。」\n\n臺南市區號稱是臺灣的文化古都，因為市鎮開發的早，留有許多歷史積累的痕跡，也讓當今許多土地開發或都市更新的規劃案，都碰上了文化資產保存的議題。如2016年的運河星鑽計畫與舊魚市場保存衝突，西港外環道的開發導致糖鐵鐵軌遭到拆除，諸如此類的案例層出不窮。\n\n2020年是臺南縣市合併升格十週年，我們希望藉由「開發古都？文化資產與都市規劃的碰撞」論壇，從大臺南市現行的「歷史街區計畫」切入，瞭解文化資產和都市規劃如何相互牽制、互相依存。而在兩造的拉扯之中，又該如何建立公民參與的空間，避免官方政策獨斷、少數專家裁定等困局？",
+    "oral_language": "華語",
+    "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
+    "topic": "沒有島是局外島",
+    "three_keywords": "文化資產 公民參與 都市開發",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1204-sprout-1",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "文資、發展真的不能並存嗎？（暫）",
       "最後更新時間": "2020-09-24T16:27:49.000Z",
-      "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 90,
-      "分類主題-華語": "地方的公共參與 Civic participation is local",
-      "分類主題-en": "地方的公共參與 Civic participation is local",
+      "分類主題-華語": "地方的公共參與",
+      "分類主題-en": "Civic participation is local",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T13:30",
+      "議程長度": 90
     }
   },
   "1204-sprout-2": {
     "id": "1204-sprout-2",
     "speakers": [],
-    "updatedAt": "2020-09-25T16:53:24.000Z",
-    "createdAt": "2020-09-25T16:53:24.000Z",
+    "updatedAt": "2020-09-28T11:15:04.000Z",
+    "createdAt": "2020-09-28T11:15:04.000Z",
     "title": "左鎮的地方創生元年大冒險（暫）",
     "timeSheet": {
       "id": "1204-sprout-2",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "左鎮的地方創生元年大冒險（暫）",
       "最後更新時間": "2020-09-24T16:28:24.000Z",
-      "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 60,
-      "分類主題-華語": "開源社群對NGO的重要性 Open is important for NGOs",
-      "分類主題-en": "開源社群對NGO的重要性 Open is important for NGOs",
+      "分類主題-華語": "開源社群對NGO的重要性",
+      "分類主題-en": "Open is important for NGOs",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T15:30",
+      "議程長度": 60
     }
   },
   "1204-maker-0": {
     "id": "1204-maker-0",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:53:27.000Z",
-    "createdAt": "2020-09-25T16:53:27.000Z",
-    "title": "自造者空間與社群近況（暫）",
+    "speakers": [
+      {
+        "display_name": "Felix Lin",
+        "organization": "創客閣樓(Maker's Attic)",
+        "avatar_url": "https://i.imgur.com/HhV0owX.jpg",
+        "city": "高雄市",
+        "info_url": " ",
+        "bio": "韌體工程師出身，熱愛研究新技術與有趣的專案，經常任聘於大專院校講師、職訓講師，目前專注在物聯網系統開發。2015年初創立高雄第一個創客社群，至今依然堅持每周定期聚會與活動。",
+        "bio_en": " "
+      },
+      {
+        "display_name": "賴聲寬",
+        "organization": "桃園市自造者協會",
+        "avatar_url": "https://www.dropbox.com/s/pqeofaoiy439uks/Q.JPG?dl=0",
+        "city": "桃園市",
+        "info_url": " ",
+        "bio": "桃園市自造者協會 理事長 整合智能有限公司 負責人 人嶼科技藝術國際有限公司 技術專家\"",
+        "bio_en": " "
+      },
+      {
+        "display_name": "Honki",
+        "organization": "Openlab.Taipei",
+        "avatar_url": "https://i.imgur.com/i5I8DNRh.jpg",
+        "city": "Taipei",
+        "info_url": " ",
+        "bio": "過氣的台灣 Maker 一哥～",
+        "bio_en": " "
+      }
+    ],
+    "updatedAt": "2020-09-29T03:55:21.000Z",
+    "createdAt": "2020-09-29T03:55:21.000Z",
+    "title": "全台大串燒：自造者空間與社群近況",
+    "summary": "希望可以聚集全台maker社群與空間，彼此分享過去與近期的經驗與做了些什麼給在場初次接觸maker的參加者；並希望在共同QA期間開放參與者提問，或聊聊彼此社群經營經驗交換、如何更加串連等議題。",
+    "oral_language": "華語",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
+    "topic": "「沒有人」的島\nNobody’s island",
+    "three_keywords": "自造者 創客空間 社群經營",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1204-maker-0",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "自造者空間與社群近況（暫）",
       "最後更新時間": "2020-09-24T16:18:44.000Z",
-      "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 60,
-      "分類主題-華語": "取暖了！你各位最近過得好嗎 Maker you OK?",
-      "分類主題-en": "取暖了！你各位最近過得好嗎 Maker you OK?",
+      "分類主題-華語": "取暖了！你各位最近過得好嗎",
+      "分類主題-en": "Maker you OK?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T09:30",
+      "議程長度": 60
     }
   },
   "1204-maker-1": {
     "id": "1204-maker-1",
     "speakers": [],
-    "updatedAt": "2020-09-25T16:53:29.000Z",
-    "createdAt": "2020-09-25T16:53:29.000Z",
-    "title": "何謂maker精神? 自造者們的真心話（暫）",
+    "updatedAt": "2020-09-28T08:48:54.000Z",
+    "createdAt": "2020-09-28T08:48:54.000Z",
+    "title": "何謂maker精神? 自造者們的真心話",
+    "summary": "台南在地動手做的maker社群們，聊聊彼此在做的事情，和自身對於maker精神的定義或看法提出想法。針對主題性的社群聚集未來能有哪些方向",
+    "oral_language": "華語",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
+    "topic": "大島開放\nOpen island",
+    "three_keywords": "自造者運動 自造工藝 自造公益",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1204-maker-1",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "何謂maker精神? 自造者們的真心話（暫）",
       "最後更新時間": "2020-09-24T16:18:44.000Z",
-      "議程開始時間": "2020-12-04T10:30",
-      "議程長度": 60,
-      "分類主題-華語": "取暖了！你各位最近過得好嗎 Maker you OK?",
-      "分類主題-en": "取暖了！你各位最近過得好嗎 Maker you OK?",
+      "分類主題-華語": "取暖了！你各位最近過得好嗎",
+      "分類主題-en": "Maker you OK?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T10:30",
+      "議程長度": 60
     }
   },
   "1204-maker-2": {
     "id": "1204-maker-2",
     "speakers": [],
-    "updatedAt": "2020-09-25T16:53:31.000Z",
-    "createdAt": "2020-09-25T16:53:31.000Z",
-    "title": "台灣自造運動下一步怎麼走？（暫）",
+    "updatedAt": "2020-09-28T08:49:59.000Z",
+    "createdAt": "2020-09-28T08:49:59.000Z",
+    "title": "台灣自造運動下一步怎麼走？",
+    "summary": "對自造運動的下一步想像，將討論：有空間的社群如何達到永續經營/開放社群如何進入在地社區/如何發展公民性開源硬體坑/如何達到資源共享化：開放空間與設備共享/如何友善新手maker等議題，延續及創造自造運動的活路與可能",
+    "oral_language": "華語",
+    "format": "Workshop 工作坊 (90min)",
+    "topic": "大島開放\nOpen island",
+    "three_keywords": "自造者運動 社會設計 未來想像",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1204-maker-2",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "台灣自造運動下一步怎麼走？（暫）",
       "最後更新時間": "2020-09-24T16:19:30.000Z",
-      "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 90,
-      "分類主題-華語": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
-      "分類主題-en": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
+      "分類主題-華語": "構造改革！maker 運動下一步可以做啥",
+      "分類主題-en": "What’s next for us makers?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T13:30",
+      "議程長度": 90
     }
   },
   "1206-keynote-0": {
     "id": "1206-keynote-0",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:53:34.000Z",
-    "createdAt": "2020-09-25T16:53:34.000Z",
+    "speakers": [
+      {
+        "display_name": "唐鳳",
+        "organization": "台灣政府數位政務委員",
+        "avatar_url": " ",
+        "city": " ",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": " "
+      },
+      {
+        "display_name": "陳舜伶",
+        "organization": "中研院法律所副研究員",
+        "avatar_url": " ",
+        "city": " ",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": " "
+      },
+      {
+        "display_name": "黃煥彰",
+        "organization": "台南社大環境行動小組召集人",
+        "avatar_url": " ",
+        "city": "台南市",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": " "
+      }
+    ],
+    "updatedAt": "2020-09-27T17:07:58.000Z",
+    "createdAt": "2020-09-27T17:07:58.000Z",
+    "title": "台灣社群與民主防衛（暫）",
+    "title_en": "Defending Democracy: Communities Can Help",
+    "summary": "台灣民主正在成長、茁壯，同時也正面對多層面、多角度、更精準、強度更高的挑戰。不實訊息、境外勢力滲透、全球公衛危機，讓社會對立、混亂加劇。許多人已清楚認知到，「民主」需要公民的持續防衛，使其更加健全。\n\n在實體空間、城市巷弄深度耕耘的非營利組織；運用網路科技、看似無遠弗屆的開放協作社群；以橫向連結嘗試突破傳統官僚體系的「公務員網絡」，這些不同型態的「台灣社群」，已經做了什麼，未來能如何協力防衛、深化民主？專案、組織的「民主」，又如何影響城市、國家的民主？而以「開放」之名推行的各項措施，是否都能達到還權於民、深化民主的目的，或者是有些仍不免成為少數人獲得利益的工具？\n",
+    "oral_language": "華語、台語",
+    "format": "基調座談 Keynote Panel",
+    "topic": "基調座談 Keynote Panel",
+    "three_keywords": "台灣、社群、民主防衛",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1206-keynote-0",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "基調演講：blablabla（全場聯播）",
       "最後更新時間": "2020-09-23T14:40:30.000Z",
-      "議程開始時間": "2020-12-06T09:30",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-06T09:30",
+      "議程長度": 90
     }
   },
   "1206-keynote-1": {
     "id": "1206-keynote-1",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:53:39.000Z",
-    "createdAt": "2020-09-25T16:53:39.000Z",
+    "speakers": [
+      {
+        "display_name": "Justine",
+        "organization": "香港邊城青年秘書長",
+        "avatar_url": " ",
+        "city": " ",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": " "
+      },
+      {
+        "display_name": "曉琳",
+        "organization": "台南香港關注組發言人",
+        "avatar_url": " ",
+        "city": " ",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": " "
+      }
+    ],
+    "updatedAt": "2020-09-27T17:07:58.000Z",
+    "createdAt": "2020-09-27T17:07:58.000Z",
+    "title": "區域民主社群串連",
+    "title_en": "Connecting Democracies Through Communities",
+    "summary": "2012 年 g0v 發起，以開放、協作的理念，號召社群參與改造社會。但是，隨著跨領域協作愈來愈深入，更多人開始意識到，開放協作的社群之所以能在台灣推動改變，民主自由的社會是不可或缺的基石。普選、多黨政治、言論自由、結社自由，這些制度上的基礎不只實現了開放的精神，也保障公民們可以積極組織起來改造社會，並一起承擔必要的運作成本與消耗。這些匯聚起來的力量，支持著社群的參與者們，讓社群走到今天。\n\n身處亞太地區的我們，面對極權擴張，公民權力、資訊安全受到挑戰，連帶著開放協作的空間受到擠壓。當公開自由的交流不再安全，分享與協作、讓改變發生，將成為一件奢侈的事情。此時我們怎麼繼續維持、加強人的連結？言論空間受到擠壓的環境下，社群如何變得更為重要？站在前線的香港人們已經做了什麼？台灣人做了什麼？鄰近的公民與黑客們，未來可以怎麼一起前進？\n",
+    "oral_language": "英語、廣東話、華語",
+    "format": "基調座談 Keynote Panel",
+    "topic": "基調座談 Keynote Panel",
+    "three_keywords": "台灣、香港、社群串連",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1206-keynote-1",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "基調演講：blablabla（全場聯播）",
       "最後更新時間": "2020-09-23T14:40:49.000Z",
-      "議程開始時間": "2020-12-06T11:30",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-06T11:30",
+      "議程長度": 90
     }
   },
   "1206-sponsor-A": {
     "id": "1206-sponsor-A",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:54:03.000Z",
-    "createdAt": "2020-09-25T16:54:03.000Z",
+    "speakers": [
+      {
+        "display_name": "Dr. Pimrapaat Dusadeeisariyakul",
+        "organization": "Friedrich Naumann Foundation",
+        "avatar_url": " ",
+        "city": "Bangkok, Thailand",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": "Dr. Pimrapaat Dusadeeisariyakul is known for an innovative idea to provide social innovation. Since 2011, she has been developing games to engage with Thai citizens. Her games on democracy, human rights, peace and media literacy have been translated into different languages. She continues to develop tools for social transformation. She is Thailand team’s Programme Manager for The Friedrich Naumann Foundation. In 1999 she obtained her doctorate degree in International Relations from the University of Aberdeen, United Kingdom and in 1993 her master degree in International Politics from the University of Aberystwyth, United Kingdom."
+      }
+    ],
+    "updatedAt": "2020-09-27T17:09:30.000Z",
+    "createdAt": "2020-09-27T17:09:30.000Z",
+    "title": "Engaging Thai citizens with games and open platforms",
+    "title_en": "Engaging Thai citizens with games and open platforms",
+    "summary": "\"The Friedrich Naumann Foundation (FNF) in Thailand has developed games and open platforms to engage citizens since 2010.\n\n“Sim Democracy” was our first game. Simulating a simple democratic community, the game aimes to provide understanding of basic democratic values and processes, to stimulate political opinions, and to raise questions on government administrations and public issues. The game has been translated into different languages.\n\nWith the success of our first game, FNF Thailand developed “Rights Card” and “Bingo Rights” based on the Declaration of Human Rights in 2016, “Media Literacy Game” in 2017, and “PeaceSoCrazy” in 2018. Local election game and virtual citizen online games are underway.\n\nAdditionally, “Dream Thailand,” a campaign based on “future research” provides platform for people to voice their dreams for the country. In 2020, an online survey of 1,880 people aoub their wishes for the post-COVI-19 Thailand was conducted. Data and findings were presented to policy makers and media to access.\"",
+    "summary_en": "\"With the thinking that the Friedrich Naumann Foundation is the creative innovation platform for the promotion of freedom, its office in Thailand (FNF Thailand) has developed games and open platforms to engage citizens since 2010. \n\nSim Democracy was our first board game to simulate a simple democratic community. The game has been implemented with the aim to provide better understanding of the basic democratic values and processes with the ultimate goal to stimulate political and public opinions and to raise questions on government administration and other issues, to encourage culture of political debates and thereby increasing realisation of active civil participation and foster interest in public affairs. The game has been translated in different languages.\n\nWith the success of Sim Democracy, FNF Thailand was asked by many leading institutions to develop more games. In 2016, we developed Rights Card and Bingo Rights game based on the Declaration of Human Rights, targeting primary school; Media Literacy card game in 2017; and PeaceSoCracy conflict management game in 2018. Local election game and virtual citizen online games are underway.\n\nSince 2012 ‘Dream Thailand’ a branded campaign based on ‘future search’ methodology provides platform for people to voice out their dreams for the country. The findings were presented to the country’s policy makers. Recently in 2020, an online survey with 1,880 people about their wishes for Thailand in post-COVID19 was conducted and the data was made available for the policy makers and media to access.\"",
+    "oral_language": "English",
+    "format": "短講 talk（30 mins）",
+    "topic": "贊助議程",
+    "three_keywords": "Citizen Engagement, Civic Education, Open Platform",
+    "related_url": "https://thailand.fnst.org",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1206-sponsor-A",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "贊助議程：blablabla",
       "最後更新時間": "2020-09-23T14:29:31.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-sponsor-B": {
     "id": "1206-sponsor-B",
-    "speakers": [],
-    "updatedAt": "2020-09-25T16:54:03.000Z",
-    "createdAt": "2020-09-25T16:54:03.000Z",
+    "speakers": [
+      {
+        "display_name": "王希",
+        "organization": "IORG",
+        "avatar_url": "https://drive.google.com/file/d/14yPqcQp9g6c7ZPu6nIZCe70s-H8NyP_u/view?usp=sharing",
+        "city": "台北市",
+        "info_url": " ",
+        "bio": "IORG 共同主持人、公民運動者、教育工作者。現任台灣公民陣線執行委員、現任《沃草》專案經理，為《沃草》創始成員、負責「2016 開放國會松」、「2017 文化部中正紀念堂之社會討論計畫」、「2018 六都市長給問嗎」、「2020 總統大選即時事實查核及語意分析」等專案，致力於打造公民與政治人物「直接、即時、互動」的平台，降低公民參與政治的門檻。認為台灣過去許多問題來自於民眾對明君聖主的迷信，相信集合群眾智慧才是改變台灣現況的關鍵。",
+        "bio_en": " "
+      }
+    ],
+    "updatedAt": "2020-09-27T17:12:36.000Z",
+    "createdAt": "2020-09-27T17:12:36.000Z",
+    "title": "如果有個 mnd.g0v.tw – 用資訊公開、公民參與防守中國對台認知戰",
+    "summary": "\"面對中國對台的認知戰，你是否感到無力？感覺無所不在的資訊操弄及滲透，不知道我們能做些什麼？\n\n先講結論：雖然是老梗，但資訊公開、公民參與，真的是防守台灣的重要力量。\n\n2019 年底，一群台灣媒體工作者、社會科學、資料科學家及公民運動者組成了「IORG」這個跨領域團隊，要以科學方法調查中國對台認知戰，要深入地方，了解資訊操弄、實體滲透在台灣各地的現狀。\n\n資訊公開很重要，讓滲透網絡現形，也讓研究接受檢驗。IORG 將分享「中國對台資訊操弄及滲透網絡圖」，訊息傳播、協同行為、組織合作等具體事證，標記並連結中國、台灣的人物、民間組織、政府機構、交流活動。\n\n公民參與也很重要，跨地域、跨族群的在地培力，讓資訊判讀落地。IORG 在全台北、中、南、東、離島建立研究組織網絡，在城市、鄉村舉辦 60 場資訊判讀工作坊，接觸千人。透過對話，理解資訊操弄在不同地方、不同族群的樣貌；透過互動，分享資訊判讀的技能，找回信任，增強面對認知戰的集體抵抗力。\"",
+    "oral_language": "華語",
+    "format": "短講 talk（30 mins）",
+    "topic": "贊助議程",
+    "three_keywords": "資訊操弄、中國對台滲透網絡、資訊判讀",
+    "related_url": "https://iorg.tw/",
+    "cover_image": "https://drive.google.com/file/d/1MeM5enF9IfGVv-_Sgb5k_J5VC9DIETz9/view?usp=sharing",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
     "timeSheet": {
       "id": "1206-sponsor-B",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "贊助議程：blablabla",
       "最後更新時間": "2020-09-23T14:29:48.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
-    }
-  },
-  "120x-QA-XX": {
-    "id": "120x-QA-XX",
-    "isPseudo": true,
-    "title": "禮拜六第一軌的第一個ＱＡ",
-    "title_en": "禮拜六第一軌的第一個ＱＡ",
-    "updatedAt": "2020-09-26T13:46:15.000Z",
-    "createdAt": "2020-09-26T13:46:15.000Z",
-    "timeSheet": {
-      "id": "120x-QA-XX",
-      "議程預設標題-華語": "禮拜六第一軌的第一個ＱＡ",
-      "最後更新時間": "2020-09-26T13:46:15.000Z",
-      "議程開始時間": "undefinedTInvalid date",
-      "議程長度": null,
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "",
-      "議程場地-en": ""
-    }
-  },
-  "QA-blabla": {
-    "id": "QA-blabla",
-    "isPseudo": true,
-    "title": "所有的 QA 時間都還沒填！！",
-    "title_en": "所有的 QA 時間都還沒填！！",
-    "updatedAt": "2020-09-25T16:55:17.000Z",
-    "createdAt": "2020-09-25T16:55:17.000Z",
-    "timeSheet": {
-      "id": "QA-blabla",
-      "議程預設標題-華語": "所有的 QA 時間都還沒填！！",
-      "最後更新時間": "2020-09-25T16:55:17.000Z",
-      "議程開始時間": "undefinedTInvalid date",
-      "議程長度": null,
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "",
-      "議程場地-en": ""
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1204-opening": {
@@ -3994,12 +4339,12 @@
       "議程預設標題-華語": "開幕",
       "議程預設標題-en": "Opening",
       "最後更新時間": "2020-09-14T14:00:23.000Z",
-      "議程開始時間": "2020-12-04T09:10",
-      "議程長度": 20,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-04T09:10",
+      "議程長度": 20
     }
   },
   "1204-morning-break-jothon": {
@@ -4015,12 +4360,12 @@
       "議程預設標題-華語": "休息",
       "議程預設標題-en": "Short break",
       "最後更新時間": "2020-09-23T14:34:56.000Z",
-      "議程開始時間": "2020-12-04T10:30",
-      "議程長度": 10,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T10:30",
+      "議程長度": 10
     }
   },
   "1204-lunch-break-jothon": {
@@ -4036,12 +4381,12 @@
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
       "最後更新時間": "2020-09-23T13:57:37.000Z",
-      "議程開始時間": "2020-12-04T12:00",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre"
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T12:00",
+      "議程長度": 90
     }
   },
   "1204-lunch-break-goodideas": {
@@ -4057,12 +4402,12 @@
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
       "最後更新時間": "2020-09-23T13:57:37.000Z",
-      "議程開始時間": "2020-12-04T11:30",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-04T11:30",
+      "議程長度": 90
     }
   },
   "1204-lunch-break-sprout": {
@@ -4078,12 +4423,12 @@
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
       "最後更新時間": "2020-09-23T13:57:38.000Z",
-      "議程開始時間": "2020-12-04T11:30",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-04T11:30",
+      "議程長度": 90
     }
   },
   "1204-lunch-break-maker": {
@@ -4099,12 +4444,12 @@
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
       "最後更新時間": "2020-09-23T13:57:41.000Z",
-      "議程開始時間": "2020-12-04T11:30",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-04T11:30",
+      "議程長度": 90
     }
   },
   "1204-afternoon-break": {
@@ -4120,12 +4465,12 @@
       "議程預設標題-華語": "休息",
       "議程預設標題-en": "Short break",
       "最後更新時間": "2020-09-23T13:59:54.000Z",
-      "議程開始時間": "2020-12-04T15:00",
-      "議程長度": 30,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-04T15:00",
+      "議程長度": 30
     }
   },
   "1205-lunch-break": {
@@ -4140,12 +4485,12 @@
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
       "最後更新時間": "2020-09-23T14:44:23.000Z",
-      "議程開始時間": "undefinedT11:30",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "undefinedT11:30",
+      "議程長度": 90
     }
   },
   "1205-afternoon-break": {
@@ -4160,12 +4505,12 @@
       "議程預設標題-華語": "休息",
       "議程預設標題-en": "Short break",
       "最後更新時間": "2020-09-23T14:44:30.000Z",
-      "議程開始時間": "undefinedT15:00",
-      "議程長度": 30,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "undefinedT15:00",
+      "議程長度": 30
     }
   },
   "1206-morning-break": {
@@ -4181,12 +4526,12 @@
       "議程預設標題-華語": "休息",
       "議程預設標題-en": "Short break",
       "最後更新時間": "2020-09-23T14:44:30.000Z",
-      "議程開始時間": "2020-12-06T11:00",
-      "議程長度": 30,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-06T11:00",
+      "議程長度": 30
     }
   },
   "1206-lunch-break": {
@@ -4202,12 +4547,12 @@
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
       "最後更新時間": "2020-09-23T14:44:25.000Z",
-      "議程開始時間": "2020-12-06T13:00",
-      "議程長度": 90,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-06T13:00",
+      "議程長度": 90
     }
   },
   "1206-unconf-A0": {
@@ -4223,12 +4568,12 @@
       "議程預設標題-華語": "Unconference A0",
       "議程預設標題-en": "Unconference A0",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-unconf-A1": {
@@ -4244,12 +4589,12 @@
       "議程預設標題-華語": "Unconference A1",
       "議程預設標題-en": "Unconference A1",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-unconf-A2": {
@@ -4265,12 +4610,12 @@
       "議程預設標題-華語": "Unconference A2",
       "議程預設標題-en": "Unconference A2",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-unconf-A3": {
@@ -4286,12 +4631,12 @@
       "議程預設標題-華語": "Unconference A3",
       "議程預設標題-en": "Unconference A3",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-unconf-A4": {
@@ -4307,12 +4652,12 @@
       "議程預設標題-華語": "Unconference A4",
       "議程預設標題-en": "Unconference A4",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-unconf-A5": {
@@ -4328,12 +4673,12 @@
       "議程預設標題-華語": "Unconference A5",
       "議程預設標題-en": "Unconference A5",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-unconf-A6": {
@@ -4349,12 +4694,12 @@
       "議程預設標題-華語": "Unconference A6",
       "議程預設標題-en": "Unconference A6",
       "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60
     }
   },
   "1206-afternoon-break": {
@@ -4370,12 +4715,12 @@
       "議程預設標題-華語": "休息",
       "議程預設標題-en": "Short break",
       "最後更新時間": "2020-09-26T13:42:23.000Z",
-      "議程開始時間": "2020-12-06T15:30",
-      "議程長度": 30,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
-      "議程場地-en": "ALL"
+      "議程場地-en": "ALL",
+      "議程開始時間": "2020-12-06T15:30",
+      "議程長度": 30
     }
   },
   "1206-unconf-B0": {
@@ -4391,12 +4736,12 @@
       "議程預設標題-華語": "Unconference B0",
       "議程預設標題-en": "Unconference B0",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-unconf-B1": {
@@ -4412,12 +4757,12 @@
       "議程預設標題-華語": "Unconference B1",
       "議程預設標題-en": "Unconference B1",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程場地-en": "The Magic School of Green Technologies - R3",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-unconf-B2": {
@@ -4433,12 +4778,12 @@
       "議程預設標題-華語": "Unconference B2",
       "議程預設標題-en": "Unconference B2",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4"
+      "議程場地-en": "The Magic School of Green Technologies - R4",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-unconf-B3": {
@@ -4454,12 +4799,12 @@
       "議程預設標題-華語": "Unconference B3",
       "議程預設標題-en": "Unconference B3",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-unconf-B4": {
@@ -4475,12 +4820,12 @@
       "議程預設標題-華語": "Unconference B4",
       "議程預設標題-en": "Unconference B4",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-unconf-B5": {
@@ -4496,12 +4841,12 @@
       "議程預設標題-華語": "Unconference B5",
       "議程預設標題-en": "Unconference B5",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio"
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-unconf-B6": {
@@ -4517,12 +4862,12 @@
       "議程預設標題-華語": "Unconference B6",
       "議程預設標題-en": "Unconference B6",
       "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60
     }
   },
   "1206-lightning-talk": {
@@ -4538,12 +4883,12 @@
       "議程預設標題-華語": "閃電講",
       "議程預設標題-en": "Lightning talk",
       "最後更新時間": "2020-09-15T01:18:06.000Z",
-      "議程開始時間": "2020-12-06T17:00",
-      "議程長度": 50,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-06T17:00",
+      "議程長度": 50
     }
   },
   "1206-closing-speech": {
@@ -4559,172 +4904,232 @@
       "議程預設標題-華語": "閉幕",
       "議程預設標題-en": "Closing speech",
       "最後更新時間": "2020-09-23T14:20:23.000Z",
-      "議程開始時間": "2020-12-06T17:50",
-      "議程長度": 10,
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
-      "議程場地-en": "The Magic School of Green Technologies - 崇華廳"
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-06T17:50",
+      "議程長度": 10
     }
   },
-  "rejected-01": {
-    "id": "rejected-01",
+  "1205-QA-hall-0": {
+    "id": "1205-QA-hall-0",
     "isPseudo": true,
-    "title": "Maker 做完計畫有加上文件說明與授權方式，這樣有多好你知道嗎？現在讓你知道一下。",
-    "title_en": "Maker 做完計畫有加上文件說明與授權方式，這樣有多好你知道嗎？現在讓你知道一下。",
-    "updatedAt": "2020-09-23T13:39:51.000Z",
-    "createdAt": "2020-09-23T13:39:51.000Z",
+    "title": "民主治理-QA",
+    "title_en": "民主治理-QA",
+    "updatedAt": "2020-09-27T14:41:32.000Z",
+    "createdAt": "2020-09-27T14:41:32.000Z",
     "timeSheet": {
-      "id": "rejected-01",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "Maker 做完計畫有加上文件說明與授權方式，這樣有多好你知道嗎？現在讓你知道一下。",
-      "最後更新時間": "2020-09-23T13:39:51.000Z",
-      "議程開始時間": "2020-12-04TInvalid date",
-      "議程長度": null,
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
-    }
-  },
-  "rejected-02": {
-    "id": "rejected-02",
-    "isPseudo": true,
-    "title": "如何迫使政府使用数据标准：一小撮内部人士推",
-    "title_en": "如何迫使政府使用数据标准：一小撮内部人士推",
-    "updatedAt": "2020-09-24T16:14:49.000Z",
-    "createdAt": "2020-09-24T16:14:49.000Z",
-    "timeSheet": {
-      "id": "rejected-02",
+      "id": "1205-QA-hall-0",
       "議程日期": "2020-12-05",
-      "議程預設標題-華語": "如何迫使政府使用数据标准：一小撮内部人士推",
-      "最後更新時間": "2020-09-24T16:14:49.000Z",
-      "議程開始時間": "2020-12-05TInvalid date",
-      "議程長度": null,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "議程預設標題-華語": "民主治理-QA",
+      "最後更新時間": "2020-09-27T14:41:32.000Z",
+      "分類主題-華語": "集結吧！公民的意志",
+      "分類主題-en": "Assemble! Will of the People",
+      "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T11:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-hall-1": {
+    "id": "1205-QA-hall-1",
+    "isPseudo": true,
+    "title": "網路自由（港澳台）-QA1",
+    "title_en": "網路自由（港澳台）-QA1",
+    "updatedAt": "2020-09-27T14:41:38.000Z",
+    "createdAt": "2020-09-27T14:41:38.000Z",
+    "timeSheet": {
+      "id": "1205-QA-hall-1",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "網路自由（港澳台）-QA1",
+      "最後更新時間": "2020-09-27T14:41:38.000Z",
+      "分類主題-華語": "愛自由！危機下的公民韌性",
+      "分類主題-en": "Fight for freedom! Resilience in crisis",
+      "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T16:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-hall-2": {
+    "id": "1205-QA-hall-2",
+    "isPseudo": true,
+    "title": "網路自由（港澳台）-QA2",
+    "title_en": "網路自由（港澳台）-QA2",
+    "updatedAt": "2020-09-27T14:41:39.000Z",
+    "createdAt": "2020-09-27T14:41:39.000Z",
+    "timeSheet": {
+      "id": "1205-QA-hall-2",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "網路自由（港澳台）-QA2",
+      "最後更新時間": "2020-09-27T14:41:39.000Z",
+      "分類主題-華語": "愛自由！危機下的公民韌性",
+      "分類主題-en": "Fight for freedom! Resilience in crisis",
+      "議程場地-華語": "成功大學綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-05T17:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-R1-0": {
+    "id": "1205-QA-R1-0",
+    "isPseudo": true,
+    "title": "社群：國際社群經驗-QA",
+    "title_en": "社群：國際社群經驗-QA",
+    "updatedAt": "2020-09-27T14:41:41.000Z",
+    "createdAt": "2020-09-27T14:41:41.000Z",
+    "timeSheet": {
+      "id": "1205-QA-R1-0",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "社群：國際社群經驗-QA",
+      "最後更新時間": "2020-09-27T14:41:41.000Z",
+      "分類主題-華語": "來串啊！國際公民社群",
+      "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "成功大學綠色魔法學校 - R1",
-      "議程場地-en": "The Magic School of Green Technologies - R1"
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T11:10",
+      "議程長度": 20
     }
   },
-  "rejected-03": {
-    "id": "rejected-03",
+  "1205-QA-R1-1": {
+    "id": "1205-QA-R1-1",
     "isPseudo": true,
-    "title": "食物驅動社會創新經驗：人與人的連結介面",
-    "title_en": "食物驅動社會創新經驗：人與人的連結介面",
-    "updatedAt": "2020-09-24T16:14:28.000Z",
-    "createdAt": "2020-09-24T16:14:28.000Z",
+    "title": "政府與公民-QA1",
+    "title_en": "政府與公民-QA1",
+    "updatedAt": "2020-09-27T14:41:48.000Z",
+    "createdAt": "2020-09-27T14:41:48.000Z",
     "timeSheet": {
-      "id": "rejected-03",
+      "id": "1205-QA-R1-1",
       "議程日期": "2020-12-05",
-      "議程預設標題-華語": "食物驅動社會創新經驗：人與人的連結介面",
-      "最後更新時間": "2020-09-24T16:14:28.000Z",
-      "議程開始時間": "2020-12-05TInvalid date",
-      "議程長度": null,
-      "分類主題-華語": "",
-      "分類主題-en": "",
+      "議程預設標題-華語": "政府與公民-QA1",
+      "最後更新時間": "2020-09-27T14:41:48.000Z",
+      "分類主題-華語": "我來啦！資訊人跳坑政",
+      "分類主題-en": "Here I am! Tech for policy",
+      "議程場地-華語": "成功大學綠色魔法學校 - R1",
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T16:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-R1-2": {
+    "id": "1205-QA-R1-2",
+    "isPseudo": true,
+    "title": "政府與公民-QA2",
+    "title_en": "政府與公民-QA2",
+    "updatedAt": "2020-09-27T14:41:49.000Z",
+    "createdAt": "2020-09-27T14:41:49.000Z",
+    "timeSheet": {
+      "id": "1205-QA-R1-2",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "政府與公民-QA2",
+      "最後更新時間": "2020-09-27T14:41:49.000Z",
+      "分類主題-華語": "我來啦！資訊人跳坑政",
+      "分類主題-en": "Here I am! Tech for policy",
+      "議程場地-華語": "成功大學綠色魔法學校 - R1",
+      "議程場地-en": "The Magic School of Green Technologies - R1",
+      "議程開始時間": "2020-12-05T17:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-C1-0": {
+    "id": "1205-QA-C1-0",
+    "isPseudo": true,
+    "title": "資料（TA: 社群）-QA1",
+    "title_en": "資料（TA: 社群）-QA1",
+    "updatedAt": "2020-09-27T15:18:25.000Z",
+    "createdAt": "2020-09-27T15:18:25.000Z",
+    "timeSheet": {
+      "id": "1205-QA-C1-0",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "資料（TA: 社群）-QA1",
+      "最後更新時間": "2020-09-27T15:18:25.000Z",
+      "分類主題-華語": "資料與他們的產地",
+      "分類主題-en": "Data and where to find them",
+      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T16:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-C1-1": {
+    "id": "1205-QA-C1-1",
+    "isPseudo": true,
+    "title": "資料（TA: 社群）-QA2",
+    "title_en": "資料（TA: 社群）-QA2",
+    "updatedAt": "2020-09-27T15:18:29.000Z",
+    "createdAt": "2020-09-27T15:18:29.000Z",
+    "timeSheet": {
+      "id": "1205-QA-C1-1",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "資料（TA: 社群）-QA2",
+      "最後更新時間": "2020-09-27T15:18:29.000Z",
+      "分類主題-華語": "資料與他們的產地",
+      "分類主題-en": "Data and where to find them",
+      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
+      "議程場地-en": "C-Hub - 1F",
+      "議程開始時間": "2020-12-05T17:10",
+      "議程長度": 20
+    }
+  },
+  "1205-QA-C3-0": {
+    "id": "1205-QA-C3-0",
+    "isPseudo": true,
+    "title": "網路自由-QA",
+    "title_en": "網路自由-QA",
+    "updatedAt": "2020-09-27T15:18:32.000Z",
+    "createdAt": "2020-09-27T15:18:32.000Z",
+    "timeSheet": {
+      "id": "1205-QA-C3-0",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "網路自由-QA",
+      "最後更新時間": "2020-09-27T15:18:32.000Z",
+      "分類主題-華語": "網路自由不能讓",
+      "分類主題-en": "Stand with Internet Freedom",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F"
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T11:10",
+      "議程長度": 20
     }
   },
-  "rejected-04": {
-    "id": "rejected-04",
+  "1205-QA-C3-1": {
+    "id": "1205-QA-C3-1",
     "isPseudo": true,
-    "title": "月亮的陰暗面：g0v 文化的反思---食物、參與、代表性、影響力與其他",
-    "title_en": "月亮的陰暗面：g0v 文化的反思---食物、參與、代表性、影響力與其他",
-    "updatedAt": "2020-09-23T13:38:29.000Z",
-    "createdAt": "2020-09-23T13:38:29.000Z",
+    "title": "連結-QA1",
+    "title_en": "連結-QA1",
+    "updatedAt": "2020-09-27T15:18:44.000Z",
+    "createdAt": "2020-09-27T15:18:44.000Z",
     "timeSheet": {
-      "id": "rejected-04",
+      "id": "1205-QA-C3-1",
       "議程日期": "2020-12-05",
-      "議程預設標題-華語": "月亮的陰暗面：g0v 文化的反思---食物、參與、代表性、影響力與其他",
-      "最後更新時間": "2020-09-23T13:38:29.000Z",
-      "議程開始時間": "2020-12-05TInvalid date",
-      "議程長度": null,
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
+      "議程預設標題-華語": "連結-QA1",
+      "最後更新時間": "2020-09-27T15:18:44.000Z",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
+      "議程場地-華語": "C-Hub 成大創意基地 - 3F",
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T16:10",
+      "議程長度": 20
     }
   },
-  "recX978BIGMdg33dw": {
-    "id": "recX978BIGMdg33dw",
+  "1205-QA-C3-2": {
+    "id": "1205-QA-C3-2",
     "isPseudo": true,
-    "title": "分散式創新的新契機",
-    "title_en": "分散式創新的新契機",
-    "updatedAt": "2020-09-26T15:53:00.000Z",
-    "createdAt": "2020-09-26T15:53:00.000Z",
+    "title": "連結-QA2",
+    "title_en": "連結-QA2",
+    "updatedAt": "2020-09-27T15:18:38.000Z",
+    "createdAt": "2020-09-27T15:18:38.000Z",
     "timeSheet": {
-      "id": "recX978BIGMdg33dw",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "分散式創新的新契機",
-      "最後更新時間": "2020-09-26T15:53:00.000Z",
-      "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30,
-      "分類主題-華語": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
-      "分類主題-en": "構造改革！maker 運動下一步可以做啥 What’s next for us makers?",
-      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
-    }
-  },
-  "recXVtX1jNjk2MyB9": {
-    "id": "recXVtX1jNjk2MyB9",
-    "isPseudo": true,
-    "title": "台灣第一個NGO自營社會住宅經驗分享",
-    "title_en": "台灣第一個NGO自營社會住宅經驗分享",
-    "updatedAt": "2020-09-26T16:04:55.000Z",
-    "createdAt": "2020-09-26T16:04:55.000Z",
-    "timeSheet": {
-      "id": "recXVtX1jNjk2MyB9",
+      "id": "1205-QA-C3-2",
       "議程日期": "2020-12-05",
-      "議程預設標題-華語": "台灣第一個NGO自營社會住宅經驗分享",
-      "最後更新時間": "2020-09-26T16:04:55.000Z",
-      "議程開始時間": "2020-12-05T11:00",
-      "議程長度": 60,
-      "分類主題-華語": "青年發展的必須 Youth development is a must",
-      "分類主題-en": "青年發展的必須 Youth development is a must",
-      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall"
-    }
-  },
-  "recPLJGpTGHpt0GaN": {
-    "id": "recPLJGpTGHpt0GaN",
-    "isPseudo": true,
-    "title": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
-    "title_en": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
-    "updatedAt": "2020-09-26T16:04:06.000Z",
-    "createdAt": "2020-09-26T16:04:06.000Z",
-    "timeSheet": {
-      "id": "recPLJGpTGHpt0GaN",
-      "議程日期": "2020-12-05",
-      "議程預設標題-華語": "推測設計 | 未來新聞: 來聊聊我們的智慧城市吧!",
-      "最後更新時間": "2020-09-26T16:04:06.000Z",
-      "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 60,
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "成功大學綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3"
-    }
-  },
-  "recnRou0uwpZbTZG2": {
-    "id": "recnRou0uwpZbTZG2",
-    "isPseudo": true,
-    "title": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
-    "title_en": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
-    "updatedAt": "2020-09-26T16:04:57.000Z",
-    "createdAt": "2020-09-26T16:04:57.000Z",
-    "timeSheet": {
-      "id": "recnRou0uwpZbTZG2",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
-      "最後更新時間": "2020-09-26T16:04:57.000Z",
-      "議程開始時間": "2020-12-04T17:30",
-      "議程長度": 30,
-      "分類主題-華語": "maker 的花花世界 You maker",
-      "分類主題-en": "me maker",
-      "議程場地-華語": "C-Hub 成大創意基地 - 1F",
-      "議程場地-en": "C-Hub - 1F"
+      "議程預設標題-華語": "連結-QA2",
+      "最後更新時間": "2020-09-27T15:18:38.000Z",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
+      "議程場地-華語": "C-Hub 成大創意基地 - 3F",
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T17:10",
+      "議程長度": 20
     }
   }
 }

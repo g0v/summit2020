@@ -6,15 +6,15 @@
         | &nbsp;g0v Summit 2020
       .icon-container
         ext-link(to="https://www.facebook.com/g0v.tw")
-          img(:src="require('~/assets/images/v2/icon-fb.svg')" alt="g0v Facebook")
+          img(:src="require('~/assets/images/icon-fb.svg')" alt="g0v Facebook")
         ext-link(to="http://join.g0v.tw")
-          img(:src="require('~/assets/images/v2/icon-slack.svg')" alt="Join g0v Slack")
+          img(:src="require('~/assets/images/icon-slack.svg')" alt="Join g0v Slack")
         ext-link(to="https://twitter.com/g0vtw")
-          img(:src="require('~/assets/images/v2/icon-twitter.svg')" alt="g0v Twitter")
+          img(:src="require('~/assets/images/icon-twitter.svg')" alt="g0v Twitter")
         ext-link(to="https://github.com/g0v/summit2020")
-          img(:src="require('~/assets/images/v2/icon-GitHub.svg')" alt="Source Code")
+          img(:src="require('~/assets/images/icon-GitHub.svg')" alt="Source Code")
         a(href="mailto:host@summit.g0v.tw")
-          img(:src="require('~/assets/images/v2/icon-email.svg')" alt="g0v Summit 2020 Email")
+          img(:src="require('~/assets/images/icon-email.svg')" alt="g0v Summit 2020 Email")
 </template>
 <i18n lang="yaml">
 // ref: https://nuxt-community.github.io/nuxt-i18n/vue-i18n-loader.html
