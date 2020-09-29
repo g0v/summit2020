@@ -90,7 +90,13 @@ function genProposalFromAdditionalTable (addition) {
     if (!addition[speakerId]) {
       return
     }
-    const additionalSpeaker = yaml.parse(addition[speakerId])
+    let additionalSpeaker = {}
+    try {
+      additionalSpeaker = yaml.parse(addition[speakerId])
+    } catch (err) {
+      console.error(`In ${addition.id} > ${speakerId}, get invalid yaml`)
+      throw err
+    }
     const speaker = {}
     SPEAKER_FIELD_DEFINITIONS.forEach((field) => {
       const val = additionalSpeaker[field.id]
