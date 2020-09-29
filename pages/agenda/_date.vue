@@ -19,10 +19,10 @@ en:
   '2020-12-05': Sat, Dec 5
   '2020-12-06': Sun, Dec 6
 zh:
-  '2020-12-03': 12/03 （四）
-  '2020-12-04': 12/04 （五）
-  '2020-12-05': 12/05 （六）
-  '2020-12-06': 12/06 （日）
+  '2020-12-03': 12/03（四）
+  '2020-12-04': 12/04（五）
+  '2020-12-05': 12/05（六）
+  '2020-12-06': 12/06（日）
 </i18n>
 <script>
 import DailyAgenda from '~/components/DailyAgenda'
@@ -133,8 +133,8 @@ export default {
   &__date {
     color: #c2c0c0;
     min-width: 10.5rem;
-    padding: 0.625rem 1.375rem 0;
-    margin-top: 0.75rem;
+    padding: 0.5rem 1.375rem 0;
+    margin-top: 0.875rem;
     border-color: transparent;
   }
 }

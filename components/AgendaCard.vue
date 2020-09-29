@@ -1,18 +1,27 @@
 <template lang="pug">
   .agendacard.br2.h-100
-    .agendacard__time.flex.justify-between.mb3
-      .f7 {{fromTime}} - {{toTime}}
-      .f7 {{duration}}{{$t('minuteUnit')}}
-    .agendacard__title.mv2.f6.fw5 {{title}}
-    .agendacard__speakers.mv2.f7 {{speakers}}
-    .flex.mt4
-      .agendacard__tag(v-if="lang") {{lang}}
+    .agendacard__wrapper
+      .agendacard__time.flex.justify-between.mb3.lh-solid
+        .f7 {{fromTime}} - {{toTime}}
+        .f7 {{duration}}{{$t('minuteUnit')}}
+      .mb2.mt3.f6.fw5(v-if="hasPreHeaderToShow")
+        .agendacard__topic(v-if="topic") {{topic}}
+        .agendacard__category(v-if="category") {{category}}
+      h2.agendacard__title.f5.mt3.fw5 {{title}}
+      .agendacard__speakers.mt3.f6.lh-title(v-if="speakers") {{speakers}}
+      .flex.flex-wrap.mt4(v-if="hasTagsToShow")
+        .agendacard__tag(v-if="lang") {{$t(lang)}}
+        .agendacard__tag(v-if="format") {{format}}
 </template>
 <i18n lang="yaml">
 en:
   minuteUnit: mins
+  華語: Mandarin
+  English: English
 zh:
   minuteUnit: 分鐘
+  English: English
+  華語: 華語
 </i18n>
 <script>
 import dayjs from 'dayjs'
@@ -45,10 +54,25 @@ export default {
     },
     speakers () {
       const speakers = this.agenda.speakers || []
-      return speakers.map(speaker => speaker.display_name).join(' ')
+      return speakers.map(speaker => speaker.display_name).join(' / ')
+    },
+    hasTagsToShow () {
+      return !this.isPseudo && (this.lang || this.format)
     },
     lang () {
       return this.agenda.oral_language_other || this.agenda.oral_language
+    },
+    format () {
+      return this.agenda.format
+    },
+    hasPreHeaderToShow () {
+      return this.topic || this.category
+    },
+    topic () {
+      return this.agenda.topic
+    },
+    category () {
+      return this.agenda.timeSheet.分類主題
     }
   }
 }
@@ -57,8 +81,18 @@ export default {
 .agendacard {
   background: #f8f8f8;
   padding: 1rem 0.75rem;
+  &__wrapper {
+    position: sticky;
+    top: 0.5rem;
+  }
   &__time {
     color: #303030;
+  }
+  &__topic {
+    color: $blue-1;
+  }
+  &__category {
+    color: #555;
   }
   &__title {
     color: $blue-1;
