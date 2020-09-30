@@ -118,6 +118,9 @@ export default {
       )
     }
   },
+  generate: {
+    fallback: '404.html'
+  },
   server: {
     port: process.env.SERVER_PORT || 3000,
     host: process.env.SERVER_HOST || 'localhost'

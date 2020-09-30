@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import moment from 'moment'
+import dayjs from 'dayjs'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 import OpenStreepMap from '~/components/OpenStreepMap'
 import locations from '~/assets/tables/交通地理位置.json'
@@ -121,7 +121,7 @@ export default {
   },
   filters: {
     MM_DD (dateStr) {
-      return moment(dateStr).format('MM-DD')
+      return dayjs(dateStr).format('MM-DD')
     }
   },
   computed: {
