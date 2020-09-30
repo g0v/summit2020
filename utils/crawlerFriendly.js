@@ -53,7 +53,7 @@ export function friendlyHeader ({ title, description, coverUrl }) {
     if (coverUrl) {
       let coverUrlStr = getContentWithThis(coverUrl)
       if (coverUrlStr.startsWith('/')) {
-        coverUrlStr = `${PROD_URL}${coverUrl}`
+        coverUrlStr = `${PROD_URL}${coverUrlStr}`
       }
       head.meta.push(genMeta('og:image', coverUrlStr))
       head.meta.push(genMeta('twitter:image', coverUrlStr))
