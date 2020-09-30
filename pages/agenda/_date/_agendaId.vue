@@ -100,9 +100,6 @@ export default {
       return cats.join(' / ')
     }
   },
-  mounted () {
-    console.warn(this.$route)
-  },
   methods: {
     closeModal () {
       this.$router.push({
