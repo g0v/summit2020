@@ -1,6 +1,6 @@
 const {
   extractLanguageFromTable,
-  extractLanguageFromProposal
+  extractLanguageFromProposals
 } = require('./utils')
 
 export default {
@@ -17,6 +17,17 @@ export default {
   cfpClosedDate: '07/15',
   cfpFinalizedDate: '08/02',
   summitDate: '2020/12/03~06',
+
+  // navbar
+  agenda: '議程',
+  partners: '合作夥伴',
+  cosponsor: '共同主辦',
+  transport: '交通',
+  live: '直播',
+  feed: '社群動態',
+  staff: '工作人員',
+  registration: '立即購票',
+  speakers: '講者',
 
   // transportation
   venuelocationName: '地點名稱-華語',
@@ -51,7 +62,7 @@ export default {
   }),
 
   // proposal
-  'proposal/map': extractLanguageFromProposal({
+  'proposal/map': extractLanguageFromProposals({
     proposals: require('~/assets/proposals.json'),
     isEn: false
   }),

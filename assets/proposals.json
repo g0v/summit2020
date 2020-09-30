@@ -95,6 +95,57 @@
       "議程長度": 30
     }
   },
+  "5ee0c02eba206b030d66a2d5": {
+    "id": "5ee0c02eba206b030d66a2d5",
+    "title": "初探大學課堂裡的數位新聞想像與實作─ 「淡哩來數位新聞實驗室」",
+    "title_en": "A Preliminary study on Mapping the Classroom with Participatory Politics and Citizen Journalism in the Digital Age",
+    "summary": "去年我們第一次在大學課堂《資訊採訪編輯》進行的初探性實驗。以觀察、反思、批判、同理的實作，與學生一起進入在地場域，進行人物的觀察、互動與報導。這門一整年的課程分成上下學期。上學期以採訪編纂紙本雜誌為成果發表；今年的下學期，我們嘗試以數位新聞的方式思考故事！\n然而，什麼是「以數位新聞的方式思考」？一個以此方式思考的作品會長成怎樣？這樣的採訪寫作和傳統有何差異？如何在一學期大約16周的時間，帶入議題、練習採訪寫作、進入在地場域，並且提供展現數位新聞後臺編寫的基模？如何利用開放源碼 (open-source)來進行新聞視覺化？最後的專題報導成果應該如何怎麼呈現？\n今年秋天第二次的數位新聞實驗即將展開，我們將重新思考新的新聞編採流程。但更重要的是，如何讓我們（所有參與者）在此過程發展出適合創新教學與未來視野的數位新聞教學場域。",
+    "summary_en": "Digital technologies have deeply reshaped the mainstream media system and how news and information is gathered, distributed and consumed. This module will provide students with a thorough understanding of the tools and practices of digital journalism. They will learn that the Internet is both a platform to gather and disseminate information. In this semester, students have to report, interview, write and design their news topic in a platform by teamwork. However, the ideas of ‘understanding and practicing digital journalism’ in the course is difficult. There are several questions: What is the new thinking about digital journalism? How to organize this kind of module for locally reporting, interviewing, writing and designing in 16 weeks? Will the new digital generation break down barriers between traditional news and digital news? Are they really different from each other? There are so many questions waiting for us to deal with and now we’re trying to reorganise our experiences and rethink a better editing process for the next turn. More importantly, how could we (students, lecturer and website designer) develop a new teaching and learning field for a practicable digital journalism education. ",
+    "oral_language": "華語",
+    "oral_languate_other": "",
+    "format": "演講 （20 分鐘）Talk (20 min)",
+    "topic": "第四個島 The fourth island",
+    "three_keywords": "數位新聞，在地參與，教學實踐",
+    "cover_image": "https://i.imgur.com/ZnIUvNbh.jpg",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "speakers": [
+      {
+        "display_name": "蔡蕙如",
+        "organization": "淡哩來數位新聞實驗室",
+        "avatar_url": "https://i.imgur.com/GPpqTcgh.jpg",
+        "city": "新北市",
+        "info_url": "",
+        "bio": "淡江大學大眾傳播學系助理教授，台灣媒體改造學社成員，台灣高等教育產業工會會員。目前研究關懷：批判的傳播政治經濟學、串流媒體研究、、影視產業研究、文化公共化、公民新聞學等。",
+        "bio_en": "Hui-Ju TSAI is a assistant professor at the Department of Mass Communication, Tamkang University. She obtained her PhD at Social Sciences, Loughborough University in 2018. She is a member of Campaign for Media Reform [CMR] in Taiwan. Her recent published articles include:Audience Commodity in the Age of Streaming Services: An Analysis of Netflix Binge-Watching and the Associated Audience Labor through Critical Political Economy of Communications (CEPC) Approach (2020). Her research orientation is critical political economy approach to studying culture and communication policies. Tsai is especially interested in creative industries, public service media, and the democratisation of mass culture."
+      },
+      {
+        "display_name": "許家雋",
+        "organization": "中華民國軟體自由協會",
+        "avatar_url": "https://i.imgur.com/YQT5axhh.jpg",
+        "city": "彰化",
+        "info_url": " https://blogs.slat.org/blog/otakupapa",
+        "bio": "文組出身；砍掉重練後，目前作為 Drupal site builder 混口飯吃。不過主要工作是當奶爸！",
+        "bio_en": "Drupal site builder / Homeschooling parent"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "timeSheet": {
+      "id": "5ee0c02eba206b030d66a2d5",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "初探大學課堂裡的數位新聞想像與實作─ 「淡哩來數位新聞實驗室」",
+      "最後更新時間": "2020-09-30T08:45:22.000Z",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
+      "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T17:30",
+      "議程長度": 30
+    }
+  },
   "5ee1aa0cba206b030d66a2d9": {
     "id": "5ee1aa0cba206b030d66a2d9",
     "title": "左鎮的地方創生元年大冒險",
@@ -3845,7 +3896,7 @@
       {
         "display_name": "Miley Takesada",
         "organization": "Code for Japan",
-        "avatar_url": "https://drive.google.com/file/d/1QTTWclcQinFarCGXKbxKkLmfus1JCaSn/view?usp=sharing",
+        "avatar_url": "https://imgur.com/HoU1W2W.jpg",
         "city": "Tokyo, Japan",
         "info_url": "https://medium.com/@mamisada",
         "bio": "Miley 是研究兒童發展的博士生、Code for Japan 的社群經理。他曾在 LITALICO 工作，舉辦 Social Fighter Award，獎勵關注社會議題的科技團隊。",
@@ -3854,7 +3905,7 @@
       {
         "display_name": "Mee / Eunmi Hwang",
         "organization": "Parti Co-op",
-        "avatar_url": "https://drive.google.com/file/d/1hzkWN_Yqzii0bwH3C0ynyly4lzNQjYT6/view?usp=sharing",
+        "avatar_url": "https://i.imgur.com/3oOb1NC.jpg",
         "city": "Jeju, South Korea",
         "info_url": "https://parti.coop/",
         "bio": "Parti Co-op 民主運動家、每日實驗家。兩隻狗 classi 和 berry 的阿姨。 ",
@@ -3863,25 +3914,25 @@
       {
         "display_name": "Bess Lee",
         "organization": "g0v.tw",
-        "avatar_url": "https://drive.google.com/file/d/18bZJXZv4ZIGQMlNHwetZoQqBrGDDQ_Vj/view?usp=sharing",
+        "avatar_url": "https://i.imgur.com/8rJa0cA.jpg",
         "city": "Taipei, Taiwan",
         "info_url": "https://jothon.g0v.tw/about/",
         "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。Bess 在 g0v 揪松團統籌多個 g0v 專案，包括 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
         "bio_en": "Bess is Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She coordinates many g0v projects at g0v jothon, including g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T16:41:27.000Z",
+    "createdAt": "2020-09-30T16:41:27.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
     "summary_en": "This panel session deal with connection of TW-JP-KR changing Education after COVID-19 pandemic. Edu system and Pedagogy is changing around the world during COVID-19 outbreak. TW-JP-KR civic hackers found similarity in changing phenomenon of edu field. Eventhough It is difficult to stop schooling and deal with schooling problems, youth continue to learn along digital solutions and experiments. What is different and difficult after COVID-19 pandemic? TW-JP-KR civic hackers will share each country’s situation and new solutions for “new normal experiment and experience” at the Post-Corona World.",
     "oral_language": "English",
     "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
-    "topic": "賢者之島",
+    "topic": "賢者之島 Academia Formosa",
     "three_keywords": "EdTech, COVID19, Open Education",
     "related_url": "https://g0v.hackmd.io/@summit2020/jothonatainan",
-    "cover_image": "https://drive.google.com/file/d/1KcyrhMkVoCAiNUKqLI9TQb1SsSWi1saW/view?usp=sharing",
+    "cover_image": "https://i.imgur.com/0S4wNlP.jpg",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
@@ -3903,25 +3954,25 @@
       {
         "display_name": "Sch001 Demo Day 2020 獲獎團隊",
         "organization": "g0v.tw",
-        "avatar_url": "https://drive.google.com/file/d/1HJiJQMyHSlzUMcma5riGRLL1j3E3UFXc/view?usp=sharing",
+        "avatar_url": "https://imgur.com/2YPVJDy.jpg",
         "city": "Taipei",
         "info_url": "https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees",
-        "bio": "詳細內容請至：https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees 【| 島島阿學 | 學習資源平台】 林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。 林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】 Irvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】 Kahou：「CoTeach 教案共享平臺」團隊成員。 蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】 林峻丞：小草書屋創辦人/執行長 賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】 廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】 tmonk：直播導播、網頁後端工程師、自由軟體工程師",
-        "bio_en": "MORE: https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees 【Dao Dao Online Learning Platform】 Lin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet. Lin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations. 【Traditional Chinese CC0 corpus and Mozilla Common Voice database】 Irvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net. 【CoTeach】 Kahou: Member of CoTeach. Meng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat! 【Happiness Bankbook】 Jeffery Lin: Founder of Grass Book House Giovanni: Project Manager of Happiness Bankbook 【Chatbot for High School Students】 Jason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year. 【Literacy Practices Database】 tmonk: Live Stream Director, Backend Developer, Free Software Engineer"
+        "bio": "【| 島島阿學 | 學習資源平台】\n林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。\n林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】\nIrvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】\nKahou：「CoTeach 教案共享平臺」團隊成員。\n蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】\n林峻丞：小草書屋創辦人/執行長\n賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】\n廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】\ntmonk：直播導播、網頁後端工程師、自由軟體工程師",
+        "bio_en": "【Dao Dao Online Learning Platform】\nLin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet.\nLin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations.\n【Traditional Chinese CC0 corpus and Mozilla Common Voice database】\nIrvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net.\n【CoTeach】\nKahou: Member of CoTeach.\nMeng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat!\n【Happiness Bankbook】\nJeffery Lin: Founder of Grass Book House\nGiovanni: Project Manager of Happiness Bankbook\n【Chatbot for High School Students】\nJason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year.\n【Literacy Practices Database】\ntmonk: Live Stream Director, Backend Developer, Free Software Engineer"
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T16:42:13.000Z",
+    "createdAt": "2020-09-30T16:42:13.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
     "summary_en": "“Sch001” project puts 0 and 1 representing the digital native generation in the “School”. Starting from February 2020, Sch001 has accumulated 21 Edtech proposals in 3 workshops, 3 g0v hackathons, and selected 6 winning teams on Demo Day, including “Dao Dao Online Learning Platform”, “Traditional Chinese CC0 corpus and Mozilla Common Voice database”, “CoTeach”, “Happiness Bankbook”, “Chatbot for High School Students” and “Literacy Practices Database”. The winning team members will share the origin and path of development, and give you refreshing new thinking about education.",
     "oral_language": "華語",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
-    "topic": "賢者之島",
+    "topic": "賢者之島 Academia Formosa",
     "three_keywords": "EdTech, Open Education, g0v",
     "related_url": "https://sch001.g0v.tw/",
-    "cover_image": "https://drive.google.com/file/d/11pXS_QOk3YCQXwXi78nOFcGrMmIr5lGC/view?usp=sharing",
+    "cover_image": "https://imgur.com/84af39bb-e9e4-46d4-ae14-1378fd75de43",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
@@ -3948,13 +3999,13 @@
         "bio": "好想工作室 Host，是一名網頁工程師，同時擅長經營空間，創造產業鏈結，期望創造出南部的資訊產業聚落，讓更多人可以在台南扎根生活的同時，也能夠挑戰世界舞台"
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:29:03.000Z",
+    "createdAt": "2020-09-30T15:29:03.000Z",
     "title": "地方空間經營與創生",
     "summary": "台南從前是個資訊沙漠，任何想要得到養分的人都會往台北跑，縱使一段時間後想要回家鄉，也沒有能撐起回家鄉工作的條件，這樣的環境若沒有人願意去動手耕耘，也就只會是惡性循環。「想要讓南部從事資訊產業的人有個友善環境」是我們的初衷，這六年來，我們建立了一個以資訊為主的共同工作空間，以此為起點，耕耘出台南的資訊燈塔，同時也建立了台灣唯一「沒有形狀」的免費資訊培育，以養成個人的「自學習慣」及重塑「解決問題」的能力為核心，漸變為量產好品質人才的基地，講者從「空間經營」、「資訊培育」、「社群創生」、「產業對接」這四個主題切入如何經營在地主題的創生。",
     "oral_language": "華語",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
-    "topic": "「沒有人」的島\nNobody’s island",
+    "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "空間經營 資訊培育 好想工作室",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -3983,13 +4034,13 @@
         "bio": "出道語言 C++，為追求主流跑到 JS 的世界而重新菜一次。以「足自己生活」為目標的開發者。"
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:35:00.000Z",
+    "createdAt": "2020-09-30T15:35:00.000Z",
     "title": "自我探索的資訊教育",
     "summary": "一位好的 mentor 是創造好的人才背後不可或缺的推手，目前的教育體制裡面一直都只有老師到角色而沒有 mentor 的角色，這兩者的差別在於一個是著重在於「授業」而一個是著重在於「引導」，必須要能引導出學生自我探索的能力才有機會變成好的人才，我們透過環境建立與氛圍營造來重新定義教育的本質。",
     "oral_language": "華語",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
-    "topic": "賢者之島",
+    "topic": "賢者之島 Academia Formosa",
     "three_keywords": "培育 自學 mentor",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4017,13 +4068,13 @@
         "bio": "好想工作室 Host，口罩地圖第一位發起者"
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:35:24.000Z",
+    "createdAt": "2020-09-30T15:35:24.000Z",
     "title": "口罩地圖事件",
     "summary": "2020 年初的 Covid-19 全球大流行，台灣是世界上最安全的地方之一，在疫情剛開始，口罩地圖事件是一個很成功的公民參與運動，也喚起許多人的防疫意識，我們聊聊從一塊小小的磚頭，引出了一大片的美玉。",
     "oral_language": "華語",
     "format": "短講 talk（30 mins）",
-    "topic": "大島開放",
+    "topic": "大島開放 Open island",
     "three_keywords": "口罩地圖 全民參與 防疫",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4052,13 +4103,13 @@
         "bio": "思考以經濟民主作為勞動貧窮的可行解方"
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:35:55.000Z",
+    "createdAt": "2020-09-30T15:35:55.000Z",
     "title": "開島在台南：青年的生存與生活",
     "summary": "\"2020年迎來台南縣市合併十週年。縣市合併後，台南的青年過得好嗎？台南是否已經成為「一個台南」？\n在本場次中，我們希望討論青年在地居住、就業的情況，也邀請現在在前縣區居住的青年，聊聊他們對生活在台南的想法。\"",
     "oral_language": "華語",
     "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
-    "topic": "沒有島是局外島",
+    "topic": "沒有島是局外島 No island is outside island",
     "three_keywords": "青年 居住 勞動",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4078,13 +4129,13 @@
   "1204-sprout-1": {
     "id": "1204-sprout-1",
     "speakers": [],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:36:06.000Z",
+    "createdAt": "2020-09-30T15:36:06.000Z",
     "title": "開發古都？文化資產與都市規劃的碰撞",
     "summary": "常有人說，「要在臺南搞建設做開發，根本跟做考古沒兩樣。」\n\n臺南市區號稱是臺灣的文化古都，因為市鎮開發的早，留有許多歷史積累的痕跡，也讓當今許多土地開發或都市更新的規劃案，都碰上了文化資產保存的議題。如2016年的運河星鑽計畫與舊魚市場保存衝突，西港外環道的開發導致糖鐵鐵軌遭到拆除，諸如此類的案例層出不窮。\n\n2020年是臺南縣市合併升格十週年，我們希望藉由「開發古都？文化資產與都市規劃的碰撞」論壇，從大臺南市現行的「歷史街區計畫」切入，瞭解文化資產和都市規劃如何相互牽制、互相依存。而在兩造的拉扯之中，又該如何建立公民參與的空間，避免官方政策獨斷、少數專家裁定等困局？",
     "oral_language": "華語",
     "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
-    "topic": "沒有島是局外島",
+    "topic": "沒有島是局外島 No island is outside island",
     "three_keywords": "文化資產 公民參與 都市開發",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4116,7 +4167,7 @@
       {
         "display_name": "賴聲寬",
         "organization": "桃園市自造者協會",
-        "avatar_url": "https://www.dropbox.com/s/pqeofaoiy439uks/Q.JPG?dl=0",
+        "avatar_url": "https://i.imgur.com/BzRn8FO.jpg",
         "city": "桃園市",
         "info_url": " ",
         "bio": "桃園市自造者協會 理事長 整合智能有限公司 負責人 人嶼科技藝術國際有限公司 技術專家\"",
@@ -4132,13 +4183,13 @@
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:36:10.000Z",
+    "createdAt": "2020-09-30T15:36:10.000Z",
     "title": "全台大串燒：自造者空間與社群近況",
     "summary": "希望可以聚集全台maker社群與空間，彼此分享過去與近期的經驗與做了些什麼給在場初次接觸maker的參加者；並希望在共同QA期間開放參與者提問，或聊聊彼此社群經營經驗交換、如何更加串連等議題。",
     "oral_language": "華語",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
-    "topic": "「沒有人」的島\nNobody’s island",
+    "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "自造者 創客空間 社群經營",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4158,13 +4209,13 @@
   "1204-maker-1": {
     "id": "1204-maker-1",
     "speakers": [],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:36:18.000Z",
+    "createdAt": "2020-09-30T15:36:18.000Z",
     "title": "何謂maker精神? 自造者們的真心話",
     "summary": "台南在地動手做的maker社群們，聊聊彼此在做的事情，和自身對於maker精神的定義或看法提出想法。針對主題性的社群聚集未來能有哪些方向",
     "oral_language": "華語",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
-    "topic": "大島開放\nOpen island",
+    "topic": "大島開放 Open island",
     "three_keywords": "自造者運動 自造工藝 自造公益",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4184,13 +4235,13 @@
   "1204-maker-2": {
     "id": "1204-maker-2",
     "speakers": [],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T15:36:35.000Z",
+    "createdAt": "2020-09-30T15:36:35.000Z",
     "title": "台灣自造運動下一步怎麼走？",
     "summary": "對自造運動的下一步想像，將討論：有空間的社群如何達到永續經營/開放社群如何進入在地社區/如何發展公民性開源硬體坑/如何達到資源共享化：開放空間與設備共享/如何友善新手maker等議題，延續及創造自造運動的活路與可能",
     "oral_language": "華語",
     "format": "工作坊 Workshop  (90min)",
-    "topic": "大島開放\nOpen island",
+    "topic": "大島開放 Open island",
     "three_keywords": "自造者運動 社會設計 未來想像",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
@@ -4213,11 +4264,11 @@
       {
         "display_name": "唐鳳",
         "organization": "台灣政府數位政務委員",
-        "avatar_url": " ",
-        "city": " ",
+        "avatar_url": "https://audreyt.org/au.jpg",
+        "city": "臺北市",
         "info_url": " ",
-        "bio": " ",
-        "bio_en": " "
+        "bio": " 唐鳳，自 2016 年 10 月 1 日起擔任行政院數位政務委員，負責「開放政府」、「社會創新」與「青年參與」等三項業務，透過「從自己辦公室做起」的方式，向事務官同仁們示範如何運用數位科技，達到簡化行政作業流程、提升討論及決策品質與透明度之目標。 過去，唐鳳曾擔任過行政院虛擬世界法規調適計劃顧問、國家發展委員會開放資料諮詢委員，以及十二年國民基本教育課程發展委員會委員。\n另外，唐鳳也是「g0v 零時政府」網路社群的專案貢獻者，並積極參與線上法規討論平台 vTaiwan 的相關活動，希望透過多元溝通管道的建立，協助產出符合多方利益關係人期待、也更貼近實際需求的法規內容。\n在國際交流方面，唐鳳與全球各級政府在數位治理領域保持合作關係，持續累積「開放政府外交」、「數位外交」之經驗與成果。",
+        "bio_en": " Audrey Tang is Taiwan’s digital minister in charge of Social Innovation. Audrey is known for revitalizing the computer languages Perl and Haskell, as well as building the online spreadsheet system EtherCalc in collaboration with Dan Bricklin.\nIn the public sector, Audrey served on Taiwan national development council’s open data committee and K-12 curriculum committee; and led the country’s first e-Rulemaking project.\nIn the private sector, Audrey worked as a consultant with Apple on computational linguistics, with Oxford University Press on crowd lexicography, and with Socialtext on social interaction design.\nIn the social sector, Audrey actively contributes to g0v (“gov zero”), a vibrant community focusing on creating tools for the civil society, with the call to “fork the government.”"
       },
       {
         "display_name": "陳舜伶",
@@ -4231,16 +4282,16 @@
       {
         "display_name": "黃煥彰",
         "organization": "台南社大環境行動小組召集人",
-        "avatar_url": " ",
+        "avatar_url": "https://imgur.com/crnn6yq.jpg",
         "city": "台南市",
         "info_url": " ",
-        "bio": " ",
+        "bio": "黃煥彰 中華醫事科技大學護理系副教授\n台南市社區大學環境行動小組召集人\n看守台灣理事\n地球公民監事\n1.長期擔任台南市社區大學環境與自然學程召集人與環境行動小組召集人，以『護生－守護生命』為最核心價值。長期培訓環境志工參與守護河流與土地的調查。台鹼安順廠戴奧辛污染事件、二仁溪廢五金整治、搶救三崁店諸羅樹蛙棲地、老樹調查與復育、海灘廢棄物長期監測、守護龍崎世界級自然地景、全國各地土地污染調查等，都可看到這樣的核心價值。主張「護溪為護生」，去除二仁溪、鹽水溪、嘉南大圳、阿公店溪等溪流多處重大污染源。2007年與台南地檢署合作推動打擊犯罪異業結盟，推動污染巡守，合力解決大台南多項重大污染，為全國首創。 2.2005年公視「45度C天空下」──劇情取材在非洲取材於外交役男連加恩的故事，另一個角色為台灣付出的人物林宇誠醫師靈感來自黃煥彰老師－長期投入河川保護與台鹼污染導致居民致癌的田野調查及921後一直在達關部落的社工黃盈豪。導演王小棣說「再勇敢的故事背後，有比故事更勇敢的真實人物存在」。 3. 2007年帶領台南社區大學榮獲福特保育暨環保獎首獎，獎金50萬。、2014帶領台南社大榮獲『國家環境教育獎團體組首獎』，獎金100萬。 4. 2011年當選中原大學傑出校友、2016年全國SUPER教師大專組首獎、2018年全國社會教育貢獻獎個人",
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
-    "title": "台灣社群與民主防衛（暫）",
+    "updatedAt": "2020-09-30T16:01:48.000Z",
+    "createdAt": "2020-09-30T16:01:48.000Z",
+    "title": "台灣社群與民主防衛",
     "title_en": "Defending Democracy: Communities Can Help",
     "summary": "台灣民主正在成長、茁壯，同時也正面對多層面、多角度、更精準、強度更高的挑戰。不實訊息、境外勢力滲透、全球公衛危機，讓社會對立、混亂加劇。許多人已清楚認知到，「民主」需要公民的持續防衛，使其更加健全。\n\n在實體空間、城市巷弄深度耕耘的非營利組織；運用網路科技、看似無遠弗屆的開放協作社群；以橫向連結嘗試突破傳統官僚體系的「公務員網絡」，這些不同型態的「台灣社群」，已經做了什麼，未來能如何協力防衛、深化民主？專案、組織的「民主」，又如何影響城市、國家的民主？而以「開放」之名推行的各項措施，是否都能達到還權於民、深化民主的目的，或者是有些仍不免成為少數人獲得利益的工具？\n",
     "oral_language": "華語、台語",
@@ -4252,8 +4303,8 @@
     "timeSheet": {
       "id": "1206-keynote-0",
       "議程日期": "2020-12-06",
-      "議程預設標題-華語": "基調演講：blablabla（全場聯播）",
-      "最後更新時間": "2020-09-23T14:40:30.000Z",
+      "議程預設標題-華語": "基調演講：台灣社群與民主防衛（暫）（全場聯播）",
+      "最後更新時間": "2020-09-30T14:20:59.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
@@ -4298,8 +4349,8 @@
     "timeSheet": {
       "id": "1206-keynote-1",
       "議程日期": "2020-12-06",
-      "議程預設標題-華語": "基調演講：blablabla（全場聯播）",
-      "最後更新時間": "2020-09-23T14:40:49.000Z",
+      "議程預設標題-華語": "基調演講：區域民主社群串連（暫）（全場聯播）",
+      "最後更新時間": "2020-09-30T14:21:06.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
@@ -4308,8 +4359,8 @@
       "議程長度": 90
     }
   },
-  "1206-sponsor-A1": {
-    "id": "1206-sponsor-A1",
+  "1206-sponsor-A0": {
+    "id": "1206-sponsor-A0",
     "speakers": [
       {
         "display_name": "Dr. Pimrapaat Dusadeeisariyakul",
@@ -4318,11 +4369,11 @@
         "city": "Bangkok, Thailand",
         "info_url": " ",
         "bio": " ",
-        "bio_en": "Dr. Pimrapaat Dusadeeisariyakul is known for an innovative idea to provide social innovation. Since 2011, she has been developing games to engage with Thai citizens. Her games on democracy, human rights, peace and media literacy have been translated into different languages. She continues to develop tools for social transformation. She is Thailand team’s Programme Manager for The Friedrich Naumann Foundation. In 1999 she obtained her doctorate degree in International Relations from the University of Aberdeen, United Kingdom and in 1993 her master degree in International Politics from the University of Aberystwyth, United Kingdom."
+        "bio_en": " Dr. Pimrapaat Dusadeeisariyakul is known for an innovative idea to provide social innovation. Since 2011, she has been developing games to engage with Thai citizens. Her games on democracy, human rights, peace and media literacy have been translated into different languages. She continues to develop tools for social transformation. She is Thailand team’s Programme Manager for The Friedrich Naumann Foundation. In 1999 she obtained her doctorate degree in International Relations from the University of Aberdeen, United Kingdom and in 1993 her master degree in International Politics from the University of Aberystwyth, United Kingdom."
       }
     ],
-    "updatedAt": "2020-09-30T05:37:16.000Z",
-    "createdAt": "2020-09-30T05:37:16.000Z",
+    "updatedAt": "2020-09-30T16:02:30.000Z",
+    "createdAt": "2020-09-30T16:02:30.000Z",
     "title": "Engaging Thai citizens with games and open platforms",
     "title_en": "Engaging Thai citizens with games and open platforms",
     "summary": "\"The Friedrich Naumann Foundation (FNF) in Thailand has developed games and open platforms to engage citizens since 2010.\n\n“Sim Democracy” was our first game. Simulating a simple democratic community, the game aimes to provide understanding of basic democratic values and processes, to stimulate political opinions, and to raise questions on government administrations and public issues. The game has been translated into different languages.\n\nWith the success of our first game, FNF Thailand developed “Rights Card” and “Bingo Rights” based on the Declaration of Human Rights in 2016, “Media Literacy Game” in 2017, and “PeaceSoCrazy” in 2018. Local election game and virtual citizen online games are underway.\n\nAdditionally, “Dream Thailand,” a campaign based on “future research” provides platform for people to voice their dreams for the country. In 2020, an online survey of 1,880 people aoub their wishes for the post-COVI-19 Thailand was conducted. Data and findings were presented to policy makers and media to access.\"",
@@ -4335,11 +4386,11 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
-      "id": "1206-sponsor-A1",
+      "id": "1206-sponsor-A0",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Engaging Thai citizens with games and open platforms",
       "議程預設標題-en": "Engaging Thai citizens with games and open platforms",
-      "最後更新時間": "2020-09-30T05:36:40.000Z",
+      "最後更新時間": "2020-09-30T15:05:10.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
@@ -4348,21 +4399,21 @@
       "議程長度": 30
     }
   },
-  "1206-sponsor-A2": {
-    "id": "1206-sponsor-A2",
+  "1206-sponsor-A1": {
+    "id": "1206-sponsor-A1",
     "speakers": [
       {
         "display_name": "王希",
         "organization": "IORG",
-        "avatar_url": "https://drive.google.com/file/d/14yPqcQp9g6c7ZPu6nIZCe70s-H8NyP_u/view?usp=sharing",
+        "avatar_url": "https://i.imgur.com/uxxYjbg.jpg",
         "city": "台北市",
         "info_url": " ",
-        "bio": "IORG 共同主持人、公民運動者、教育工作者。現任台灣公民陣線執行委員、現任《沃草》專案經理，為《沃草》創始成員、負責「2016 開放國會松」、「2017 文化部中正紀念堂之社會討論計畫」、「2018 六都市長給問嗎」、「2020 總統大選即時事實查核及語意分析」等專案，致力於打造公民與政治人物「直接、即時、互動」的平台，降低公民參與政治的門檻。認為台灣過去許多問題來自於民眾對明君聖主的迷信，相信集合群眾智慧才是改變台灣現況的關鍵。",
+        "bio": "IORG 共同主持人、公民運動者、教育工作者。現任台灣公民陣線執行委員、現任《沃草》專案經理，為《沃草》創始成員、負責「2016 開放國會松」、「2017 文化部中正紀念堂之社會討論計畫」、「2018 六都市長給問嗎」、「2020 總統大選即時事實查核及語意分析」等專案，致力於打造公民與政治人物「直接、即時、互動」的平台，降低公民參與政治的門檻。認為台灣過去許多問題來自於民眾對明君聖主的迷信，相信集合群眾智慧才是改變台灣現況的關鍵。",
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-09-30T05:37:25.000Z",
-    "createdAt": "2020-09-30T05:37:25.000Z",
+    "updatedAt": "2020-09-30T16:43:48.000Z",
+    "createdAt": "2020-09-30T16:43:48.000Z",
     "title": "如果有個 mnd.g0v.tw – 用資訊公開、公民參與防守中國對台認知戰",
     "summary": "\"面對中國對台的認知戰，你是否感到無力？感覺無所不在的資訊操弄及滲透，不知道我們能做些什麼？\n\n先講結論：雖然是老梗，但資訊公開、公民參與，真的是防守台灣的重要力量。\n\n2019 年底，一群台灣媒體工作者、社會科學、資料科學家及公民運動者組成了「IORG」這個跨領域團隊，要以科學方法調查中國對台認知戰，要深入地方，了解資訊操弄、實體滲透在台灣各地的現狀。\n\n資訊公開很重要，讓滲透網絡現形，也讓研究接受檢驗。IORG 將分享「中國對台資訊操弄及滲透網絡圖」，訊息傳播、協同行為、組織合作等具體事證，標記並連結中國、台灣的人物、民間組織、政府機構、交流活動。\n\n公民參與也很重要，跨地域、跨族群的在地培力，讓資訊判讀落地。IORG 在全台北、中、南、東、離島建立研究組織網絡，在城市、鄉村舉辦 60 場資訊判讀工作坊，接觸千人。透過對話，理解資訊操弄在不同地方、不同族群的樣貌；透過互動，分享資訊判讀的技能，找回信任，增強面對認知戰的集體抵抗力。\"",
     "oral_language": "華語",
@@ -4374,10 +4425,10 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
-      "id": "1206-sponsor-A2",
+      "id": "1206-sponsor-A1",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "如果有個 mnd.g0v.tw – 用資訊公開、公民參與防守中國對台認知戰",
-      "最後更新時間": "2020-09-30T05:36:33.000Z",
+      "最後更新時間": "2020-09-30T15:05:10.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
@@ -4386,17 +4437,17 @@
       "議程長度": 30
     }
   },
-  "1206-sponsor-B1": {
-    "id": "1206-sponsor-B1",
+  "1206-sponsor-B0": {
+    "id": "1206-sponsor-B0",
     "speakers": [],
-    "updatedAt": "2020-09-30T05:38:49.000Z",
-    "createdAt": "2020-09-30T05:38:49.000Z",
+    "updatedAt": "2020-09-30T15:04:55.000Z",
+    "createdAt": "2020-09-30T15:04:55.000Z",
     "title": "邀請中",
     "timeSheet": {
-      "id": "1206-sponsor-B1",
+      "id": "1206-sponsor-B0",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "邀請中",
-      "最後更新時間": "2020-09-30T05:35:46.000Z",
+      "最後更新時間": "2020-09-30T15:05:14.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
@@ -4405,17 +4456,17 @@
       "議程長度": 30
     }
   },
-  "1206-sponsor-B2": {
-    "id": "1206-sponsor-B2",
+  "1206-sponsor-B1": {
+    "id": "1206-sponsor-B1",
     "speakers": [],
-    "updatedAt": "2020-09-30T05:38:50.000Z",
-    "createdAt": "2020-09-30T05:38:50.000Z",
+    "updatedAt": "2020-09-30T15:04:55.000Z",
+    "createdAt": "2020-09-30T15:04:55.000Z",
     "title": "邀請中",
     "timeSheet": {
-      "id": "1206-sponsor-B2",
+      "id": "1206-sponsor-B1",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "邀請中",
-      "最後更新時間": "2020-09-30T05:35:54.000Z",
+      "最後更新時間": "2020-09-30T15:05:20.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",

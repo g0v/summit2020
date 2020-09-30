@@ -24,7 +24,7 @@
         .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
           span.mr2 {{$t('keyword')}}
           | {{agenda.three_keywords}}
-        .detail__speakers(v-if="speakers")
+        .detail__speakers(v-if="speakers" :class="{'detail__speakers--mono': isMonoSpeaker}")
           .speaker(
             v-for="(speaker, index) in agenda.speakers"
             :key="index"
@@ -36,7 +36,13 @@
             .speaker__title.mv3
               .fw5 {{speaker.display_name}} / {{speaker.city}}
               .f6 {{speaker.organization}}
-            rich-multi-line.gray.mv3.tl.fw3(:text="speaker.bio")
+            rich-multi-line.gray.mv3.fw3(
+              :text="speaker.bio"
+              :class="{tl: isMonoSpeaker}"
+            )
+            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isMonoSpeaker}")
+              | {{$t('moreInfo')}}
+              ext-link.ml2(:to="speaker.info_url")
 </template>
 <i18n lang="yaml">
 en:
@@ -45,29 +51,36 @@ en:
   '2020-12-05': Sat, Dec 5 2020
   '2020-12-06': Sun, Dec 6 2020
   abstract: abstract
-  keyword: keywords
+  keyword: "keywords:"
   華語: Mandarin
   English: English
+  moreInfo: "More info:"
+
 zh:
   '2020-12-03': 2020/12/03（四）
   '2020-12-04': 2020/12/04（五）
   '2020-12-05': 2020/12/05（六）
   '2020-12-06': 2020/12/06（日）
   abstract: 摘要
-  keyword: 關鍵字
+  keyword: 關鍵字：
   English: English
   華語: 華語
+  moreInfo: 更多資訊：
 </i18n>
 <script>
 import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
-import agendaMixin from '~/components/AgendaMixin'
+import ExtLink from '~/components/ExtLink'
+import agendaMixin from '~/utils/AgendaMixin'
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
+const SUPER_LONG_BIO = 300
 
 export default {
   components: {
-    RichMultiLine
+    RichMultiLine,
+    ExtLink
   },
   mixins: [agendaMixin],
   computed: {
@@ -76,13 +89,16 @@ export default {
     },
     agenda () {
       const allProposals = this.$t('proposal/map')
-      return allProposals.find(agenda => agenda.id === this.id)
+      return allProposals.find(agenda => agenda.id === this.id) || {}
     },
     isModalVisible () {
-      return !!this.id && !!this.agenda
+      return !!this.id && 'title' in this.agenda
     },
     startDate () {
-      return this.agenda.timeSheet.議程日期
+      if (this.isModalVisible) {
+        return this.agenda.timeSheet.議程日期
+      }
+      return this.$route.params.date
     },
     dayN () {
       const startDate = dayjs(this.startDate)
@@ -98,6 +114,14 @@ export default {
         cats.push(this.category)
       }
       return cats.join(' / ')
+    },
+    isMonoSpeaker () {
+      // example: 1204-jothon-1
+      const speakers = this.agenda.speakers || []
+      if (!speakers.length || speakers.length > 1) {
+        return false
+      }
+      return speakers[0].bio.length > SUPER_LONG_BIO
     }
   },
   methods: {
@@ -108,8 +132,35 @@ export default {
           date: this.$route.params.date
         }
       })
+    },
+    isUrl (url) {
+      if (!url) {
+        return false
+      }
+      const tokens = url.split('.')
+      return tokens.length > 1 && tokens.every(token => !!token)
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      if (this.title) {
+        return this.title
+      }
+      return `Day ${this.dayN} ${this.$t('agenda')}`
+    },
+    description () {
+      if (this.agenda && this.agenda.summary) {
+        return this.agenda.summary
+      }
+      return `Day ${this.dayN} ${this.$t('agenda')}`
+    },
+    coverUrl () {
+      if (this.agenda && this.agenda.cover_image) {
+        return this.agenda.cover_image
+      }
+      return '/og-agenda.png'
+    }
+  })
 }
 </script>
 <style lang="scss" scoped>
@@ -195,6 +246,10 @@ export default {
     column-gap: 3rem;
     margin-bottom: 4.5rem;
     justify-content: center;
+
+    &--mono {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .gray {

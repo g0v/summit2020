@@ -1,6 +1,6 @@
 import { cleanMarkdown } from './markdownUtils'
 
-const TITLE_TAIL = ' / g0v Summit 2020 台灣零時政府雙年會'
+const TITLE_TAIL = ' | g0v Summit 2020 台灣零時政府雙年會'
 
 export function summaryFromMarkdown (content, max = 100) {
   const text = cleanMarkdown(content, true, true)
@@ -53,7 +53,7 @@ export function friendlyHeader ({ title, description, coverUrl }) {
     if (coverUrl) {
       let coverUrlStr = getContentWithThis(coverUrl)
       if (coverUrlStr.startsWith('/')) {
-        coverUrlStr = `${PROD_URL}${coverUrl}`
+        coverUrlStr = `${PROD_URL}${coverUrlStr}`
       }
       head.meta.push(genMeta('og:image', coverUrlStr))
       head.meta.push(genMeta('twitter:image', coverUrlStr))

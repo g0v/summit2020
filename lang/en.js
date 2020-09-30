@@ -1,6 +1,6 @@
 const {
   extractLanguageFromTable,
-  extractLanguageFromProposal
+  extractLanguageFromProposals
 } = require('./utils')
 
 export default {
@@ -17,6 +17,17 @@ export default {
   cfpClosedDate: 'Jul 15',
   cfpFinalizedDate: 'Aug 02',
   summitDate: 'Dec 03-06, 2020',
+
+  // navbar
+  agenda: 'Agenda',
+  partners: 'Partners',
+  cosponsor: 'Cosponsor',
+  transport: 'Transportation',
+  live: 'Live',
+  feed: 'Feed',
+  staff: 'Staff',
+  registration: 'Registration',
+  speakers: 'Speakers',
 
   // transportation
   venuelocationName: '地點名稱-en',
@@ -52,7 +63,7 @@ export default {
   }),
 
   // proposal
-  'proposal/map': extractLanguageFromProposal({
+  'proposal/map': extractLanguageFromProposals({
     proposals: require('~/assets/proposals.json'),
     isEn: true
   })

@@ -25,7 +25,7 @@ zh:
   華語: 華語
 </i18n>
 <script>
-import agendaMixin from './AgendaMixin'
+import agendaMixin from '~/utils/AgendaMixin'
 
 export default {
   mixins: [agendaMixin],
