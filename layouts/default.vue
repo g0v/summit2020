@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div ref="content" class="min-vh-100 flex flex-column">
+    <div ref="content" class="content min-vh-100 flex flex-column" :style="{width: pageWidth}">
       <navbar @toggle="toggleMenu" />
       <div class="page-container flex-auto">
         <nuxt />
@@ -17,6 +17,9 @@
   </div>
 </template>
 <script>
+import { mapState } from 'vuex'
+
+import { STATES } from '~/store'
 import Navbar from '~/components/Navbar'
 import Footer from '~/components/Footer'
 import SummitMenu from '~/components/SummitMenu'
@@ -31,6 +34,11 @@ export default {
     return {
       slideout: null
     }
+  },
+  computed: {
+    ...mapState({
+      pageWidth: STATES.PAGE_WIDTH
+    })
   },
   mounted () {
     const Slideout = require('slideout')
@@ -63,7 +71,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.content {
+  min-width: 100%;
+}
 </style>
 <style lang="scss">
 // copy from https://slideout.js.org/
@@ -91,9 +101,10 @@ export default {
 .slideout-panel {
   position: relative;
   z-index: 1;
+  // this corrupt position fixed XD
+  // https://stackoverflow.com/questions/6794000/fixed-position-but-relative-to-container
   will-change: transform;
   background-color: #FFF; /* A background-color is required */
-  // min-height: 100%;
 }
 
 .slideout-open,
@@ -105,4 +116,5 @@ export default {
 .slideout-open .slideout-menu {
   display: block;
 }
+
 </style>

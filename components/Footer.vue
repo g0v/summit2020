@@ -1,6 +1,6 @@
 <template lang="pug">
   .footer
-    div
+    .footer__content.h-100.flex.flex-column.justify-center.items-center
       .license
         ext-link.white(to="https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW") CC by 4.0
         | &nbsp;g0v Summit 2020
@@ -34,14 +34,16 @@ export default {
 <style lang="scss" scoped>
 .footer {
   height: 156px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   background-color: $blue-2;
+  &__content {
+    position: sticky;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+  }
   .license, .icon-container {
     max-width: 320px;
-    margin: auto;
     text-align: center;
   }
   .license {

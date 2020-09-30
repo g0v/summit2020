@@ -1,5 +1,7 @@
 <template lang="pug">
-  .dailyagenda.relative(:style="gridStyle")
+  .dailyagenda(:style="gridStyle" data-slideout-ignore)
+    .dailyagenda__gutter.dailyagenda__gutter--left
+    .dailyagenda__gutter.dailyagenda__gutter--right
     template(v-for="room in regularRooms")
       .dailyagenda__header.mb2(:key="room.name")
         room-card(:name="room.name")
@@ -18,9 +20,15 @@
 </template>
 <script>
 import dayjs from 'dayjs'
+import { mapMutations } from 'vuex'
+import { MUTATIONS } from '~/store'
 
 import RoomCard from '~/components/RoomCard'
 import AgendaCard from '~/components/AgendaCard'
+
+const CARD_WIDTH = 13
+const GUTTER_WIDTH = 1
+const GAP_WIDTH = 0.5
 
 // each row is 5 min
 const ROW_SIZE_MIN = 5
@@ -55,10 +63,14 @@ export default {
       }
       return {}
     },
+    columnNumber () {
+      return this.agendaPerRoom.filter(room => room.name !== 'ALL').length
+    },
     gridStyle () {
-      const columnNumber = this.agendaPerRoom.filter(room => room.name !== 'ALL').length
+      const gutter = `minmax(${GUTTER_WIDTH}rem, 1fr)`
+      const agendaColumn = `repeat(${this.columnNumber}, ${CARD_WIDTH}rem)`
       return {
-        gridTemplateColumns: `repeat(${columnNumber}, 13rem)`
+        gridTemplateColumns: `${gutter} ${agendaColumn} ${gutter}`
       }
     },
     eventStartTime () {
@@ -69,7 +81,27 @@ export default {
       )
     }
   },
+  watch: {
+    columnNumber () {
+      this.updatePageWidth()
+    }
+  },
+  beforeDestroy () {
+    console.warn('reset width')
+    this.setPageWidth('0')
+  },
+  mounted () {
+    this.updatePageWidth()
+  },
   methods: {
+    ...mapMutations({
+      setPageWidth: MUTATIONS.SET_PAGE_WIDTH
+    }),
+    updatePageWidth () {
+      const totalWidth = this.columnNumber * CARD_WIDTH + (this.columnNumber + 1) * GAP_WIDTH + GUTTER_WIDTH * 2
+      console.warn(`set width ${totalWidth}rem`)
+      this.setPageWidth(`${totalWidth}rem`)
+    },
     agendaStyle (agenda) {
       return {
         gridColumn: `${agenda.layout.columnStart} / span ${agenda.layout.columnSpan}`,
@@ -77,7 +109,7 @@ export default {
       }
     },
     decorateLayout (perRoom, index, columnSpan = 1) {
-      const roomIndex = index + 1
+      const roomIndex = index + 2
       return {
         name: perRoom.name,
         index: roomIndex,
@@ -102,29 +134,23 @@ export default {
 <style lang="scss" scoped>
 .dailyagenda {
   display: grid;
-  justify-content: center;
   align-items: stretch;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
+  width: auto;
 
   &__header {
     grid-row-start: 1;
   }
 
-  &__all {
-    grid-column-start: room-start;
-    grid-column-end: room-end;
-  }
-
-  &__body3 {
-    grid-row-start: 3;
-    grid-row-end: span 3;
-    // min-height: 5rem;
-  }
-
-  &__body2 {
-    grid-row-start: 7;
-    grid-row-end: span 2;
+  &__gutter {
+    grid-row: 1 / 10;
+    &--left {
+      grid-column: 1 / 2;
+    }
+    &--right {
+      grid-column: -2 / -1
+    }
   }
 }
 </style>

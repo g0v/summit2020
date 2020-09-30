@@ -9,7 +9,7 @@
         )
           .datemenu__title.b Day{{date.index}}
           .datemenu__date.fw5.bt {{$t(date.date)}}
-    .agenda__content.flex.justify-center
+    .agenda__content
       daily-agenda(:agenda-per-room="agendaPerRoom")
     nuxt
 </template>
@@ -101,22 +101,29 @@ export default {
 </script>
 <style lang="scss" scoped>
 .agenda {
-  padding: 1rem;
+  padding: 1rem 0;
   background-image: url('../../assets/images/agenda-bg-left.svg'),
       url('../../assets/images/agenda-bg-right.svg');
   background-position: left -10.5rem top 15rem, right -10em top;
   background-repeat: no-repeat;
   @include medium-screen {
-    padding: 2.5rem 6.5rem;
+    padding: 2.5rem 0;
     background-position: left -6rem top 15rem, right -4.5rem top;
   }
   @include large-screen {
-    padding: 5rem 12rem;
+    padding: 5rem 0;
     background-position: left top 15rem, right top;
   }
 
   &__content {
     margin-top: 5.25rem;
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 100vw;
+    position: sticky;
+    left: 0;
   }
 }
 

@@ -27,6 +27,10 @@ export default {
 .navbar {
   background: white;
   &__banner {
+    position: sticky;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
     padding: 8px 12px;
     @include large-screen {
       padding: 18px 72px 18px 80px;
