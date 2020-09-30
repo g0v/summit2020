@@ -52,6 +52,11 @@ export default {
   &__wrapper {
     position: sticky;
     top: 0.5rem;
+    left: 1.25rem;
+    display: inline-block;
+    width: 100%;
+    // 2.5rem: 1.25 * 2
+    max-width: calc(100vw - 2.5rem);
   }
   &__time {
     color: #303030;
