@@ -1,6 +1,6 @@
 const {
   extractLanguageFromTable,
-  extractLanguageFromProposal
+  extractLanguageFromProposals
 } = require('./utils')
 
 export default {
@@ -52,7 +52,7 @@ export default {
   }),
 
   // proposal
-  'proposal/map': extractLanguageFromProposal({
+  'proposal/map': extractLanguageFromProposals({
     proposals: require('~/assets/proposals.json'),
     isEn: true
   })

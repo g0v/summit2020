@@ -37,6 +37,9 @@
               .fw5 {{speaker.display_name}} / {{speaker.city}}
               .f6 {{speaker.organization}}
             rich-multi-line.gray.mv3.tl.fw3(:text="speaker.bio")
+            .fw3.mv3.tl(v-if="isUrl(speaker.info_url)")
+              | {{$t('moreInfo')}}
+              ext-link.ml2(:to="speaker.info_url")
 </template>
 <i18n lang="yaml">
 en:
@@ -45,29 +48,34 @@ en:
   '2020-12-05': Sat, Dec 5 2020
   '2020-12-06': Sun, Dec 6 2020
   abstract: abstract
-  keyword: keywords
+  keyword: "keywords:"
   華語: Mandarin
   English: English
+  moreInfo: "More info:"
+
 zh:
   '2020-12-03': 2020/12/03（四）
   '2020-12-04': 2020/12/04（五）
   '2020-12-05': 2020/12/05（六）
   '2020-12-06': 2020/12/06（日）
   abstract: 摘要
-  keyword: 關鍵字
+  keyword: 關鍵字：
   English: English
   華語: 華語
+  moreInfo: 更多資訊：
 </i18n>
 <script>
 import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
-import agendaMixin from '~/components/AgendaMixin'
+import ExtLink from '~/components/ExtLink'
+import agendaMixin from '~/utils/AgendaMixin'
 
 const DAY_0_DATE = 3
 
 export default {
   components: {
-    RichMultiLine
+    RichMultiLine,
+    ExtLink
   },
   mixins: [agendaMixin],
   computed: {
@@ -108,6 +116,13 @@ export default {
           date: this.$route.params.date
         }
       })
+    },
+    isUrl (url) {
+      if (!url) {
+        return false
+      }
+      const tokens = url.split('.')
+      return tokens.length > 1 && tokens.every(token => !!token)
     }
   }
 }

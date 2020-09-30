@@ -32,7 +32,20 @@ function extractLanguageFromTable ({ rows, isEn = true }) {
   })
 }
 
-function extractLanguageFromProposal ({ proposals, isEn = true }) {
+function extractLanguageFromItem ({ item, isEn }) {
+  Object.keys(item).forEach((key) => {
+    if (key.endsWith('_en')) {
+      const val = (item[key] || '').trim()
+      if (isEn && val) {
+        const zhKey = key.split('_').slice(0, -1).join('_')
+        item[zhKey] = val
+      }
+      delete item[key]
+    }
+  })
+}
+
+function extractLanguageFromProposals ({ proposals, isEn = true }) {
   return Object.values(proposals).map((proposal) => {
     const timeSheetWrapper = extractLanguageFromTable({ rows: [proposal.timeSheet], isEn })
     const perLangProposal = {
@@ -40,16 +53,12 @@ function extractLanguageFromProposal ({ proposals, isEn = true }) {
       timeSheet: timeSheetWrapper[0]
     }
 
-    Object.keys(perLangProposal).forEach((key) => {
-      if (key.endsWith('_en')) {
-        const val = (perLangProposal[key] || '').trim()
-        if (isEn && val) {
-          const zhKey = key.split('_').slice(0, -1).join('_')
-          perLangProposal[zhKey] = val
-        }
-        delete perLangProposal[key]
-      }
-    })
+    extractLanguageFromItem({ item: perLangProposal, isEn })
+    if (perLangProposal.speakers) {
+      perLangProposal.speakers.forEach((speaker) => {
+        extractLanguageFromItem({ item: speaker, isEn })
+      })
+    }
 
     // format: <zh format> （...） <en format> (...)
     // ex:演講 （20 分鐘）Talk (20 min)
@@ -81,5 +90,5 @@ function extractLanguageFromProposal ({ proposals, isEn = true }) {
 
 export {
   extractLanguageFromTable,
-  extractLanguageFromProposal
+  extractLanguageFromProposals
 }
