@@ -95,6 +95,57 @@
       "議程長度": 30
     }
   },
+  "5ee0c02eba206b030d66a2d5": {
+    "id": "5ee0c02eba206b030d66a2d5",
+    "title": "初探大學課堂裡的數位新聞想像與實作─ 「淡哩來數位新聞實驗室」",
+    "title_en": "A Preliminary study on Mapping the Classroom with Participatory Politics and Citizen Journalism in the Digital Age",
+    "summary": "去年我們第一次在大學課堂《資訊採訪編輯》進行的初探性實驗。以觀察、反思、批判、同理的實作，與學生一起進入在地場域，進行人物的觀察、互動與報導。這門一整年的課程分成上下學期。上學期以採訪編纂紙本雜誌為成果發表；今年的下學期，我們嘗試以數位新聞的方式思考故事！\n然而，什麼是「以數位新聞的方式思考」？一個以此方式思考的作品會長成怎樣？這樣的採訪寫作和傳統有何差異？如何在一學期大約16周的時間，帶入議題、練習採訪寫作、進入在地場域，並且提供展現數位新聞後臺編寫的基模？如何利用開放源碼 (open-source)來進行新聞視覺化？最後的專題報導成果應該如何怎麼呈現？\n今年秋天第二次的數位新聞實驗即將展開，我們將重新思考新的新聞編採流程。但更重要的是，如何讓我們（所有參與者）在此過程發展出適合創新教學與未來視野的數位新聞教學場域。",
+    "summary_en": "Digital technologies have deeply reshaped the mainstream media system and how news and information is gathered, distributed and consumed. This module will provide students with a thorough understanding of the tools and practices of digital journalism. They will learn that the Internet is both a platform to gather and disseminate information. In this semester, students have to report, interview, write and design their news topic in a platform by teamwork. However, the ideas of ‘understanding and practicing digital journalism’ in the course is difficult. There are several questions: What is the new thinking about digital journalism? How to organize this kind of module for locally reporting, interviewing, writing and designing in 16 weeks? Will the new digital generation break down barriers between traditional news and digital news? Are they really different from each other? There are so many questions waiting for us to deal with and now we’re trying to reorganise our experiences and rethink a better editing process for the next turn. More importantly, how could we (students, lecturer and website designer) develop a new teaching and learning field for a practicable digital journalism education. ",
+    "oral_language": "華語",
+    "oral_languate_other": "",
+    "format": "演講 （20 分鐘）Talk (20 min)",
+    "topic": "第四個島 The fourth island",
+    "three_keywords": "數位新聞，在地參與，教學實踐",
+    "cover_image": "https://i.imgur.com/ZnIUvNbh.jpg",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "speakers": [
+      {
+        "display_name": "蔡蕙如",
+        "organization": "淡哩來數位新聞實驗室",
+        "avatar_url": "https://i.imgur.com/GPpqTcgh.jpg",
+        "city": "新北市",
+        "info_url": "",
+        "bio": "淡江大學大眾傳播學系助理教授，台灣媒體改造學社成員，台灣高等教育產業工會會員。目前研究關懷：批判的傳播政治經濟學、串流媒體研究、、影視產業研究、文化公共化、公民新聞學等。",
+        "bio_en": "Hui-Ju TSAI is a assistant professor at the Department of Mass Communication, Tamkang University. She obtained her PhD at Social Sciences, Loughborough University in 2018. She is a member of Campaign for Media Reform [CMR] in Taiwan. Her recent published articles include:Audience Commodity in the Age of Streaming Services: An Analysis of Netflix Binge-Watching and the Associated Audience Labor through Critical Political Economy of Communications (CEPC) Approach (2020). Her research orientation is critical political economy approach to studying culture and communication policies. Tsai is especially interested in creative industries, public service media, and the democratisation of mass culture."
+      },
+      {
+        "display_name": "許家雋",
+        "organization": "中華民國軟體自由協會",
+        "avatar_url": "https://i.imgur.com/YQT5axhh.jpg",
+        "city": "彰化",
+        "info_url": " https://blogs.slat.org/blog/otakupapa",
+        "bio": "文組出身；砍掉重練後，目前作為 Drupal site builder 混口飯吃。不過主要工作是當奶爸！",
+        "bio_en": "Drupal site builder / Homeschooling parent"
+      }
+    ],
+    "verified": true,
+    "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "timeSheet": {
+      "id": "5ee0c02eba206b030d66a2d5",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "初探大學課堂裡的數位新聞想像與實作─ 「淡哩來數位新聞實驗室」",
+      "最後更新時間": "2020-09-30T08:45:22.000Z",
+      "分類主題-華語": "自己的學習自己來",
+      "分類主題-en": "Self-learning",
+      "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "議程開始時間": "2020-12-04T17:30",
+      "議程長度": 30
+    }
+  },
   "5ee1aa0cba206b030d66a2d9": {
     "id": "5ee1aa0cba206b030d66a2d9",
     "title": "左鎮的地方創生元年大冒險",
@@ -3845,7 +3896,7 @@
       {
         "display_name": "Miley Takesada",
         "organization": "Code for Japan",
-        "avatar_url": "https://drive.google.com/file/d/1QTTWclcQinFarCGXKbxKkLmfus1JCaSn/view?usp=sharing",
+        "avatar_url": "https://imgur.com/HoU1W2W.jpg",
         "city": "Tokyo, Japan",
         "info_url": "https://medium.com/@mamisada",
         "bio": "Miley 是研究兒童發展的博士生、Code for Japan 的社群經理。他曾在 LITALICO 工作，舉辦 Social Fighter Award，獎勵關注社會議題的科技團隊。",
@@ -3854,7 +3905,7 @@
       {
         "display_name": "Mee / Eunmi Hwang",
         "organization": "Parti Co-op",
-        "avatar_url": "https://drive.google.com/file/d/1hzkWN_Yqzii0bwH3C0ynyly4lzNQjYT6/view?usp=sharing",
+        "avatar_url": "https://i.imgur.com/3oOb1NC.jpg",
         "city": "Jeju, South Korea",
         "info_url": "https://parti.coop/",
         "bio": "Parti Co-op 民主運動家、每日實驗家。兩隻狗 classi 和 berry 的阿姨。 ",
@@ -3863,15 +3914,15 @@
       {
         "display_name": "Bess Lee",
         "organization": "g0v.tw",
-        "avatar_url": "https://drive.google.com/file/d/18bZJXZv4ZIGQMlNHwetZoQqBrGDDQ_Vj/view?usp=sharing",
+        "avatar_url": "https://i.imgur.com/8rJa0cA.jpg",
         "city": "Taipei, Taiwan",
         "info_url": "https://jothon.g0v.tw/about/",
         "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。Bess 在 g0v 揪松團統籌多個 g0v 專案，包括 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
         "bio_en": "Bess is Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She coordinates many g0v projects at g0v jothon, including g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T14:47:52.000Z",
+    "createdAt": "2020-09-30T14:47:52.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
@@ -3903,15 +3954,15 @@
       {
         "display_name": "Sch001 Demo Day 2020 獲獎團隊",
         "organization": "g0v.tw",
-        "avatar_url": "https://drive.google.com/file/d/1HJiJQMyHSlzUMcma5riGRLL1j3E3UFXc/view?usp=sharing",
+        "avatar_url": "https://imgur.com/2YPVJDy.jpg",
         "city": "Taipei",
         "info_url": "https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees",
         "bio": "詳細內容請至：https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees 【| 島島阿學 | 學習資源平台】 林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。 林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】 Irvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】 Kahou：「CoTeach 教案共享平臺」團隊成員。 蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】 林峻丞：小草書屋創辦人/執行長 賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】 廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】 tmonk：直播導播、網頁後端工程師、自由軟體工程師",
         "bio_en": "MORE: https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees 【Dao Dao Online Learning Platform】 Lin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet. Lin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations. 【Traditional Chinese CC0 corpus and Mozilla Common Voice database】 Irvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net. 【CoTeach】 Kahou: Member of CoTeach. Meng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat! 【Happiness Bankbook】 Jeffery Lin: Founder of Grass Book House Giovanni: Project Manager of Happiness Bankbook 【Chatbot for High School Students】 Jason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year. 【Literacy Practices Database】 tmonk: Live Stream Director, Backend Developer, Free Software Engineer"
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T14:47:01.000Z",
+    "createdAt": "2020-09-30T14:47:01.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
@@ -4116,7 +4167,7 @@
       {
         "display_name": "賴聲寬",
         "organization": "桃園市自造者協會",
-        "avatar_url": "https://www.dropbox.com/s/pqeofaoiy439uks/Q.JPG?dl=0",
+        "avatar_url": "https://i.imgur.com/BzRn8FO.jpg",
         "city": "桃園市",
         "info_url": " ",
         "bio": "桃園市自造者協會 理事長 整合智能有限公司 負責人 人嶼科技藝術國際有限公司 技術專家\"",
@@ -4132,8 +4183,8 @@
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T14:50:31.000Z",
+    "createdAt": "2020-09-30T14:50:31.000Z",
     "title": "全台大串燒：自造者空間與社群近況",
     "summary": "希望可以聚集全台maker社群與空間，彼此分享過去與近期的經驗與做了些什麼給在場初次接觸maker的參加者；並希望在共同QA期間開放參與者提問，或聊聊彼此社群經營經驗交換、如何更加串連等議題。",
     "oral_language": "華語",
@@ -4252,8 +4303,8 @@
     "timeSheet": {
       "id": "1206-keynote-0",
       "議程日期": "2020-12-06",
-      "議程預設標題-華語": "基調演講：blablabla（全場聯播）",
-      "最後更新時間": "2020-09-23T14:40:30.000Z",
+      "議程預設標題-華語": "基調演講：台灣社群與民主防衛（暫）（全場聯播）",
+      "最後更新時間": "2020-09-30T14:20:59.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
@@ -4298,8 +4349,8 @@
     "timeSheet": {
       "id": "1206-keynote-1",
       "議程日期": "2020-12-06",
-      "議程預設標題-華語": "基調演講：blablabla（全場聯播）",
-      "最後更新時間": "2020-09-23T14:40:49.000Z",
+      "議程預設標題-華語": "基調演講：區域民主社群串連（暫）（全場聯播）",
+      "最後更新時間": "2020-09-30T14:21:06.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL",
