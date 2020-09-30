@@ -18,6 +18,17 @@ export default {
   cfpFinalizedDate: 'Aug 02',
   summitDate: 'Dec 03-06, 2020',
 
+  // navbar
+  agenda: 'Agenda',
+  partners: 'Partners',
+  cosponsor: 'Cosponsor',
+  transport: 'Transportation',
+  live: 'Live',
+  feed: 'Feed',
+  staff: 'Staff',
+  registration: 'Registration',
+  speakers: 'Speakers',
+
   // transportation
   venuelocationName: '地點名稱-en',
   venuelocationNameShort: '地點名稱-短-en',

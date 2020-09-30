@@ -37,6 +37,7 @@ zh:
 </i18n>
 <script>
 import DailyAgenda from '~/components/DailyAgenda'
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DEFAULT_DATE = '2020-12-04'
 const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
@@ -106,7 +107,16 @@ export default {
         })
       }
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return `${this.$t(this.targetDate)} ${this.$t('agenda')}`
+    },
+    description () {
+      return `${this.$t(this.targetDate)} ${this.$t('agenda')}`
+    },
+    coverUrl: '/og-agenda.png'
+  })
 }
 </script>
 <style lang="scss" scoped>

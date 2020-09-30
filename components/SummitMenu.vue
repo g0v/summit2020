@@ -18,28 +18,10 @@
 <i18n lang="yaml">
 en:
   lang: '華語'
-  speakers: 'Speakers'
   cfp: 'Get Latest Proposals'
-  agenda: 'Agenda'
-  partners: 'Partners'
-  cosponsor: 'Cosponsor'
-  transport: 'Transportation'
-  live: 'Live'
-  feed: 'Feed'
-  staff: 'Staff'
-  registration: 'Registration'
 zh:
   lang: 'English'
-  speakers: '講者'
   cfp: '看議程投稿'
-  agenda: '議程'
-  partners: '合作夥伴'
-  cosponsor: '共同主辦'
-  transport: '交通'
-  live: '直播'
-  feed: '社群動態'
-  staff: '工作人員'
-  registration: '立即購票'
 </i18n>
 <script>
 import ExtLink from '~/components/ExtLink'
