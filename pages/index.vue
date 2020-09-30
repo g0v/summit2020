@@ -1,7 +1,7 @@
 <template>
   <div class="homepage">
     <div class="landing flex justify-center">
-      <img :src="require('~/assets/images/banner-2.svg')">
+      <img :src="require('~/assets/images/banner-2.png')">
     </div>
     <div class="text-container article article-1">
       <summit-markdown :content="$t('article/communityIntro')" />
