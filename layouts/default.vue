@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div ref="content" class="content min-vh-100 flex flex-column" :sstyle="{width: pageWidth}">
+    <div ref="content" class="content min-vh-100 flex flex-column" :style="{width: pageWidth}">
       <navbar @toggle="toggleMenu" />
       <div class="page-container flex-auto">
         <nuxt />
@@ -73,6 +73,10 @@ export default {
 <style lang="scss" scoped>
 .content {
   min-width: 100%;
+  max-width: 100vw;
+  @include large-screen {
+    max-width: none;
+  }
 }
 </style>
 <style lang="scss">

@@ -87,7 +87,6 @@ export default {
     }
   },
   beforeDestroy () {
-    console.warn('reset width')
     this.setPageWidth('0')
   },
   mounted () {
@@ -99,7 +98,6 @@ export default {
     }),
     updatePageWidth () {
       const totalWidth = this.columnNumber * CARD_WIDTH + (this.columnNumber + 1) * GAP_WIDTH + GUTTER_WIDTH * 2
-      console.warn(`set width ${totalWidth}rem`)
       this.setPageWidth(`${totalWidth}rem`)
     },
     agendaStyle (agenda) {
