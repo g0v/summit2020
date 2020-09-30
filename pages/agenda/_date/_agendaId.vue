@@ -72,6 +72,7 @@ import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
 import agendaMixin from '~/utils/AgendaMixin'
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
 const SUPER_LONG_BIO = 300
@@ -88,13 +89,16 @@ export default {
     },
     agenda () {
       const allProposals = this.$t('proposal/map')
-      return allProposals.find(agenda => agenda.id === this.id)
+      return allProposals.find(agenda => agenda.id === this.id) || {}
     },
     isModalVisible () {
-      return !!this.id && !!this.agenda
+      return !!this.id && 'title' in this.agenda
     },
     startDate () {
-      return this.agenda.timeSheet.議程日期
+      if (this.isModalVisible) {
+        return this.agenda.timeSheet.議程日期
+      }
+      return this.$route.params.date
     },
     dayN () {
       const startDate = dayjs(this.startDate)
@@ -136,7 +140,27 @@ export default {
       const tokens = url.split('.')
       return tokens.length > 1 && tokens.every(token => !!token)
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      if (this.title) {
+        return this.title
+      }
+      return `Day ${this.dayN} ${this.$t('agenda')}`
+    },
+    description () {
+      if (this.agenda && this.agenda.summary) {
+        return this.agenda.summary
+      }
+      return `Day ${this.dayN} ${this.$t('agenda')}`
+    },
+    coverUrl () {
+      if (this.agenda && this.agenda.cover_image) {
+        return this.agenda.cover_image
+      }
+      return '/og-agenda.png'
+    }
+  })
 }
 </script>
 <style lang="scss" scoped>
