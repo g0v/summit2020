@@ -81,7 +81,7 @@ export default {
   i18n: {
     defaultLocale: 'zh',
     vueI18nLoader: true,
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     vueI18n: {
       silentTranslationWarn: true
     },
@@ -117,9 +117,6 @@ export default {
         }
       )
     }
-  },
-  generate: {
-    fallback: '404.html'
   },
   server: {
     port: process.env.SERVER_PORT || 3000,
