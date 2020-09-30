@@ -55,6 +55,11 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
 
     extractLanguageFromItem({ item: perLangProposal, isEn })
     if (perLangProposal.speakers) {
+      perLangProposal.speakers = perLangProposal.speakers.map((speaker) => {
+        return {
+          ...speaker
+        }
+      })
       perLangProposal.speakers.forEach((speaker) => {
         extractLanguageFromItem({ item: speaker, isEn })
       })

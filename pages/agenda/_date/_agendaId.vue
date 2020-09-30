@@ -24,7 +24,7 @@
         .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
           span.mr2 {{$t('keyword')}}
           | {{agenda.three_keywords}}
-        .detail__speakers(v-if="speakers")
+        .detail__speakers(v-if="speakers" :class="{'detail__speakers--mono': isMonoSpeaker}")
           .speaker(
             v-for="(speaker, index) in agenda.speakers"
             :key="index"
@@ -36,8 +36,11 @@
             .speaker__title.mv3
               .fw5 {{speaker.display_name}} / {{speaker.city}}
               .f6 {{speaker.organization}}
-            rich-multi-line.gray.mv3.tl.fw3(:text="speaker.bio")
-            .fw3.mv3.tl(v-if="isUrl(speaker.info_url)")
+            rich-multi-line.gray.mv3.fw3(
+              :text="speaker.bio"
+              :class="{tl: isMonoSpeaker}"
+            )
+            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isMonoSpeaker}")
               | {{$t('moreInfo')}}
               ext-link.ml2(:to="speaker.info_url")
 </template>
@@ -71,6 +74,7 @@ import ExtLink from '~/components/ExtLink'
 import agendaMixin from '~/utils/AgendaMixin'
 
 const DAY_0_DATE = 3
+const SUPER_LONG_BIO = 300
 
 export default {
   components: {
@@ -106,6 +110,14 @@ export default {
         cats.push(this.category)
       }
       return cats.join(' / ')
+    },
+    isMonoSpeaker () {
+      // example: 1204-jothon-1
+      const speakers = this.agenda.speakers || []
+      if (!speakers.length || speakers.length > 1) {
+        return false
+      }
+      return speakers[0].bio.length > SUPER_LONG_BIO
     }
   },
   methods: {
@@ -210,6 +222,10 @@ export default {
     column-gap: 3rem;
     margin-bottom: 4.5rem;
     justify-content: center;
+
+    &--mono {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .gray {
