@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div ref="content" class="content min-vh-100 flex flex-column" :style="{width: pageWidth}">
+    <div ref="content" class="content min-vh-100 flex flex-column" :sstyle="{width: pageWidth}">
       <navbar @toggle="toggleMenu" />
       <div class="page-container flex-auto">
         <nuxt />

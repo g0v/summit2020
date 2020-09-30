@@ -8,8 +8,9 @@
         .agendacard__topic(v-if="topic") {{topic}}
         .agendacard__category(v-if="category") {{category}}
       h2.agendacard__title.f5.mt3.fw5 {{title}}
-      .agendacard__speakers.mt3.f6.lh-title(v-if="speakers") {{speakers}}
-      .flex.flex-wrap.mt4(v-if="hasTagsToShow")
+      .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
+      .flex.flex-wrap.mt3(v-if="hasTagsToShow")
+        .agendacard__tag.agendacard__tag--hl.db.dn-l(v-if="room") {{room}}
         .agendacard__tag(v-if="format") {{format}}
         .agendacard__tag(v-if="lang") {{$t(lang)}}
 </template>
@@ -41,6 +42,9 @@ export default {
       } else {
         return '#'
       }
+    },
+    hasTagsToShow () {
+      return !this.isPseudo && (this.lang || this.format || this.room)
     }
   }
 }
@@ -79,6 +83,9 @@ export default {
     padding: 0.125rem 0.5rem;
     &:not(:first-child) {
       margin-left: 0.25rem;
+    }
+    &--hl {
+      background: #509fac;
     }
   }
 }

@@ -2,8 +2,14 @@
   .dailyagenda(:style="gridStyle" data-slideout-ignore)
     .dailyagenda__gutter.dailyagenda__gutter--left
     .dailyagenda__gutter.dailyagenda__gutter--right
+    .dailyagenda__item(
+      v-for="agenda in crossRoom.agendaList"
+      :key="agenda.id"
+      :style="agendaStyle(agenda)"
+    )
+      agenda-card(:agenda="agenda")
     template(v-for="room in regularRooms")
-      .dailyagenda__header.mb2(:key="room.name")
+      .dailyagenda__header.dn.db-l.mb2(:key="room.name")
         room-card(:name="room.name")
       .dailyagenda__item(
         v-for="agenda in room.agendaList"
@@ -11,12 +17,6 @@
         :style="agendaStyle(agenda)"
       )
         agenda-card(:agenda="agenda")
-    .dailyagenda__item(
-      v-for="agenda in crossRoom.agendaList"
-      :key="agenda.id"
-      :style="agendaStyle(agenda)"
-    )
-      agenda-card(:agenda="agenda")
 </template>
 <script>
 import dayjs from 'dayjs'
@@ -103,9 +103,14 @@ export default {
       this.setPageWidth(`${totalWidth}rem`)
     },
     agendaStyle (agenda) {
+      // order for mobile
+      // smaller start time come first
+      // shorter period come first
+      const flexOrder = agenda.layout.rowStart * 100 + agenda.layout.rowSpan
       return {
         gridColumn: `${agenda.layout.columnStart} / span ${agenda.layout.columnSpan}`,
-        gridRow: `${agenda.layout.rowStart} / span ${agenda.layout.rowSpan}`
+        gridRow: `${agenda.layout.rowStart} / span ${agenda.layout.rowSpan}`,
+        order: flexOrder
       }
     },
     decorateLayout (perRoom, index, columnSpan = 1) {
@@ -133,7 +138,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .dailyagenda {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  @include large-screen {
+    display: grid;
+  }
   align-items: stretch;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
@@ -141,6 +150,13 @@ export default {
 
   &__header {
     grid-row-start: 1;
+  }
+
+  &__item {
+    padding: 0 0.5rem;
+    @include large-screen {
+      padding: 0;
+    }
   }
 
   &__gutter {

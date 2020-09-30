@@ -13,7 +13,7 @@
             img(src="~/assets/images/agenda/close.svg")
         .detail__subheader.mt3.pa3.bb.relative
           .fw5 {{fromTime}} - {{toTime}}
-          .f6 {{agenda.timeSheet.議程場地}}
+          .f6(v-if="room") {{room}}
         h1.fw5.f3 {{title}}
         .gray {{superCategory}}
         .mt4.flex
@@ -162,8 +162,11 @@ export default {
     margin-bottom: 0.25rem;
     color: $blue-1;
     position: sticky;
-    top: -4.5rem;
     background: rgba(255, 255, 255, 0.9);
+    top: -2.5rem;
+    @include large-screen {
+      top: -4.5rem;
+    }
   }
   h2 {
     margin-top: 4rem;
