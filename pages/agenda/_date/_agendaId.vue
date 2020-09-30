@@ -3,40 +3,40 @@
     v-if="isModalVisible"
     @click="closeModal"
   )
-    .detail__modal.br2.bg-white(@click.stop)
-      .flex.justify-between
-        .detail__start.f6
-          .dib.mr2 Day{{dayN}}
-          .dib.ml1 {{$t(startDate)}}
-        button.detail__close.bg-white.bn(@click="closeModal")
-          img(src="~/assets/images/agenda/close.svg")
-      .detail__subheader.mt3.pa3.bb.relative
-        .fw5 {{fromTime}} - {{toTime}}
-        .f6 {{agenda.timeSheet.議程場地}}
-      h1.fw5.f3 {{title}}
-      .gray {{superCategory}}
-      .mt4.flex
-        .detail__tag(v-if="format") {{format}}
-        .detail__tag(v-if="lang") {{$t(lang)}}
-      h2.ttc {{$t('abstract')}}
-      rich-multi-line.gray(:text="agenda.summary")
-      .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
-        span.mr2 {{$t('keyword')}}
-        | {{agenda.three_keywords}}
-      .detail__speakers(v-if="speakers")
-        .speaker(
-          v-for="(speaker, index) in agenda.speakers"
-          :key="index"
-        )
-          img.speaker__avatar(
-            :src="speaker.avatar_url"
-            :alt="speaker.display_name"
+    .detail__wrapper
+      .detail__modal.br2.bg-white(@click.stop data-slideout-ignore)
+        .flex.justify-between
+          .detail__start.f6
+            .dib.mr2 Day{{dayN}}
+            .dib.ml1 {{$t(startDate)}}
+          button.detail__close.bg-white.bn(@click="closeModal")
+            img(src="~/assets/images/agenda/close.svg")
+        .detail__subheader.mt3.pa3.bb.relative
+          .fw5 {{fromTime}} - {{toTime}}
+          .f6(v-if="room") {{room}}
+        h1.fw5.f3 {{title}}
+        .gray {{superCategory}}
+        .mt4.flex
+          .detail__tag(v-if="format") {{format}}
+          .detail__tag(v-if="lang") {{$t(lang)}}
+        h2.ttc {{$t('abstract')}}
+        rich-multi-line.gray(:text="agenda.summary")
+        .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
+          span.mr2 {{$t('keyword')}}
+          | {{agenda.three_keywords}}
+        .detail__speakers(v-if="speakers")
+          .speaker(
+            v-for="(speaker, index) in agenda.speakers"
+            :key="index"
           )
-          .speaker__title.mv3
-            .fw5 {{speaker.display_name}} / {{speaker.city}}
-            .f6 {{speaker.organization}}
-          rich-multi-line.gray.mv3.tl.fw3(:text="speaker.bio")
-
+            img.speaker__avatar(
+              :src="speaker.avatar_url"
+              :alt="speaker.display_name"
+            )
+            .speaker__title.mv3
+              .fw5 {{speaker.display_name}} / {{speaker.city}}
+              .f6 {{speaker.organization}}
+            rich-multi-line.gray.mv3.tl.fw3(:text="speaker.bio")
 </template>
 <i18n lang="yaml">
 en:
@@ -100,9 +100,6 @@ export default {
       return cats.join(' / ')
     }
   },
-  mounted () {
-    console.warn(this.$route)
-  },
   methods: {
     closeModal () {
       this.$router.push({
@@ -118,19 +115,28 @@ export default {
 <style lang="scss" scoped>
 .detail {
   background: rgba(198, 198, 198, 0.8);
-  &__modal {
+  &__wrapper {
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
     max-width: 100vw;
+  }
+  &__modal {
+    max-width: calc(100vw - 2rem);
     width: 65rem;
     border: 1px solid $pink-1;
-    padding: 1rem;
-    margin: 1rem auto;
-    position: sticky;
+    padding: 1rem 1rem 1rem 2rem;
+    margin: auto;
+    position: relative;
     top: 1rem;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
     @include large-screen {
       padding: 4.5rem 5.5rem;
-      margin: 3rem auto;
+      margin: auto;
       top: 3rem;
       max-height: calc(100vh - 6rem);
     }
@@ -156,8 +162,11 @@ export default {
     margin-bottom: 0.25rem;
     color: $blue-1;
     position: sticky;
-    top: -4.5rem;
     background: rgba(255, 255, 255, 0.9);
+    top: -2.5rem;
+    @include large-screen {
+      top: -4.5rem;
+    }
   }
   h2 {
     margin-top: 4rem;

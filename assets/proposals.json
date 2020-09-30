@@ -2002,10 +2002,20 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://mask.goodideas-studio.com/",
-    "speakers": [],
+    "speakers": [
+      {
+        "display_name": "Phelps",
+        "organization": "偶爾會路過好想工作室",
+        "avatar_url": "https://i.imgur.com/0TyHo8Uh.jpg",
+        "city": "台北",
+        "info_url": "https://待補充",
+        "bio": "年初協助口罩地圖專案設計規劃，7月協助北市聯合醫院線上掛號流程優化設計。設計師/專案經理、服務設計/UX/UI 職能。平常負責規劃商業(服務)模式設計，與使用者轉換優化。",
+        "bio_en": ""
+      }
+    ],
     "verified": true,
-    "createdAt": "2020-09-26T13:53:33.000Z",
-    "updatedAt": "2020-09-26T13:53:33.000Z",
+    "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
     "timeSheet": {
       "id": "5efa37d2ba206b030d66a3f9",
       "議程日期": "2020-12-04",
@@ -2262,7 +2272,7 @@
     "is_slide_cc40": true,
     "related_url": "https://www.eden.org.tw/branches_detail.php?detailId=JCU4NSMh&rePageUrl=L2JyYW5jaGVzLnBocD8mcGFnZT0xNQ%3D%3D",
     "verified": true,
-    "createdAt": "2020-09-28T01:19:29.203Z",
+    "createdAt": "2020-09-29T11:11:00.891Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -2273,9 +2283,27 @@
         "info_url": "",
         "bio": "從事社會工作二十多年, 現任伊甸台南區區長",
         "bio_en": ""
+      },
+      {
+        "display_name": "沈淑雅",
+        "organization": "伊甸大林社會住宅住戶",
+        "avatar_url": "https://i.imgur.com/au6GfgTh.jpg",
+        "city": "台南市",
+        "info_url": "",
+        "bio": "沈淑雅，小兒麻痺及乳癌患者，平日生活皆需仰賴電動輪椅代步，入住社宅前期因居住環境變好，讓她得以休養身體後在外工作，後來身體狀況不佳就待業在家。目前與兒子同住在大林雙福園區社會住宅，兒子今年剛從大學畢業。\n",
+        "bio_en": ""
+      },
+      {
+        "display_name": "陳勝雄",
+        "organization": "伊甸大林社會住宅住戶",
+        "avatar_url": "https://i.imgur.com/7lHDepeh.jpg",
+        "city": "台南",
+        "info_url": "",
+        "bio": "本身為小兒麻痺患者，平常是從事二手車買賣的工作，與雙親及妹妹同住在大林雙福園區社會住宅。母親患有失智症，白天由勝雄負責照料媽媽，陪同參加伊甸大林長照站的活動。\n",
+        "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-28T01:19:29.203Z",
+    "updatedAt": "2020-09-29T11:11:00.891Z",
     "timeSheet": {
       "id": "5efac8d2ba206b030d66a432",
       "議程日期": "2020-12-04",
@@ -2544,9 +2572,9 @@
   },
   "5efafc95ba206b030d66a461": {
     "id": "5efafc95ba206b030d66a461",
-    "title": "eID 數位身分證",
-    "title_en": "Digital ID Cards in Taiwan",
-    "summary": "臺灣預計在年底發行 eID - 打開智慧政府的關鍵鑰匙，政府目前規劃會先在區域小規模試辦，並舉辦獎金獵人，但這樣就夠讓人民信賴願意使用 eID 了嗎？\n\n你的個資不是你的個資，eID 的發行將帶來什麼風險與不方便？",
+    "title": "談台灣與國際的數位身分證發展與隱憂",
+    "title_en": "Digital ID Cards in Taiwan and International",
+    "summary": "臺灣預計最快在 2021 發行 eID，一張打開智慧政府的關鍵鑰匙。政府目前規劃會先選定區域小規模試辦，並舉辦獎金獵人，但這樣就夠讓人民信賴願意使用 eID 了嗎？\n本議程將會分享：\n(1) 你的個資不是你的個資，eID 的發行將帶來什麼風險與不方便？\n(2) 比較不同國家的數位身分證的制度",
     "summary_en": "",
     "oral_language": "華語",
     "oral_languate_other": "",
@@ -2558,6 +2586,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.eid.tw/",
+    "verified": true,
+    "createdAt": "2020-09-30T05:03:05.684Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Singing Li",
@@ -2578,9 +2609,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-30T05:03:05.684Z",
     "timeSheet": {
       "id": "5efafc95ba206b030d66a461",
       "議程日期": "2020-12-05",
@@ -2610,6 +2639,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.zazaeye.org/",
+    "verified": true,
+    "createdAt": "2020-09-29T10:11:50.982Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "CJ",
@@ -2630,9 +2662,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-09-29T10:11:50.982Z",
     "timeSheet": {
       "id": "5efb007bba206b030d66a46c",
       "議程日期": "2020-12-04",
@@ -4071,25 +4101,6 @@
       "議程長度": 90
     }
   },
-  "1204-sprout-2": {
-    "id": "1204-sprout-2",
-    "speakers": [],
-    "updatedAt": "2020-09-28T11:15:04.000Z",
-    "createdAt": "2020-09-28T11:15:04.000Z",
-    "title": "左鎮的地方創生元年大冒險（暫）",
-    "timeSheet": {
-      "id": "1204-sprout-2",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "左鎮的地方創生元年大冒險（暫）",
-      "最後更新時間": "2020-09-24T16:28:24.000Z",
-      "分類主題-華語": "開源社群對NGO的重要性",
-      "分類主題-en": "Open is important for NGOs",
-      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
-      "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 60
-    }
-  },
   "1204-maker-0": {
     "id": "1204-maker-0",
     "speakers": [
@@ -4187,12 +4198,12 @@
       "id": "1204-maker-2",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "台灣自造運動下一步怎麼走？（暫）",
-      "最後更新時間": "2020-09-29T07:59:03.000Z",
+      "最後更新時間": "2020-09-30T05:49:18.000Z",
       "分類主題-華語": "構造改革！maker 運動下一步可以做啥",
       "分類主題-en": "What’s next for us makers?",
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
-      "議程開始時間": "2020-12-04T13:30",
+      "議程開始時間": "2020-12-04T13:00",
       "議程長度": 90
     }
   },
@@ -4297,8 +4308,8 @@
       "議程長度": 90
     }
   },
-  "1206-sponsor-A": {
-    "id": "1206-sponsor-A",
+  "1206-sponsor-A1": {
+    "id": "1206-sponsor-A1",
     "speakers": [
       {
         "display_name": "Dr. Pimrapaat Dusadeeisariyakul",
@@ -4310,8 +4321,8 @@
         "bio_en": "Dr. Pimrapaat Dusadeeisariyakul is known for an innovative idea to provide social innovation. Since 2011, she has been developing games to engage with Thai citizens. Her games on democracy, human rights, peace and media literacy have been translated into different languages. She continues to develop tools for social transformation. She is Thailand team’s Programme Manager for The Friedrich Naumann Foundation. In 1999 she obtained her doctorate degree in International Relations from the University of Aberdeen, United Kingdom and in 1993 her master degree in International Politics from the University of Aberystwyth, United Kingdom."
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T05:37:16.000Z",
+    "createdAt": "2020-09-30T05:37:16.000Z",
     "title": "Engaging Thai citizens with games and open platforms",
     "title_en": "Engaging Thai citizens with games and open platforms",
     "summary": "\"The Friedrich Naumann Foundation (FNF) in Thailand has developed games and open platforms to engage citizens since 2010.\n\n“Sim Democracy” was our first game. Simulating a simple democratic community, the game aimes to provide understanding of basic democratic values and processes, to stimulate political opinions, and to raise questions on government administrations and public issues. The game has been translated into different languages.\n\nWith the success of our first game, FNF Thailand developed “Rights Card” and “Bingo Rights” based on the Declaration of Human Rights in 2016, “Media Literacy Game” in 2017, and “PeaceSoCrazy” in 2018. Local election game and virtual citizen online games are underway.\n\nAdditionally, “Dream Thailand,” a campaign based on “future research” provides platform for people to voice their dreams for the country. In 2020, an online survey of 1,880 people aoub their wishes for the post-COVI-19 Thailand was conducted. Data and findings were presented to policy makers and media to access.\"",
@@ -4324,20 +4335,21 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
-      "id": "1206-sponsor-A",
+      "id": "1206-sponsor-A1",
       "議程日期": "2020-12-06",
-      "議程預設標題-華語": "贊助議程：blablabla",
-      "最後更新時間": "2020-09-23T14:29:31.000Z",
+      "議程預設標題-華語": "Engaging Thai citizens with games and open platforms",
+      "議程預設標題-en": "Engaging Thai citizens with games and open platforms",
+      "最後更新時間": "2020-09-30T05:36:40.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 30
     }
   },
-  "1206-sponsor-B": {
-    "id": "1206-sponsor-B",
+  "1206-sponsor-A2": {
+    "id": "1206-sponsor-A2",
     "speakers": [
       {
         "display_name": "王希",
@@ -4349,8 +4361,8 @@
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-09-29T10:50:52.000Z",
-    "createdAt": "2020-09-29T10:50:52.000Z",
+    "updatedAt": "2020-09-30T05:37:25.000Z",
+    "createdAt": "2020-09-30T05:37:25.000Z",
     "title": "如果有個 mnd.g0v.tw – 用資訊公開、公民參與防守中國對台認知戰",
     "summary": "\"面對中國對台的認知戰，你是否感到無力？感覺無所不在的資訊操弄及滲透，不知道我們能做些什麼？\n\n先講結論：雖然是老梗，但資訊公開、公民參與，真的是防守台灣的重要力量。\n\n2019 年底，一群台灣媒體工作者、社會科學、資料科學家及公民運動者組成了「IORG」這個跨領域團隊，要以科學方法調查中國對台認知戰，要深入地方，了解資訊操弄、實體滲透在台灣各地的現狀。\n\n資訊公開很重要，讓滲透網絡現形，也讓研究接受檢驗。IORG 將分享「中國對台資訊操弄及滲透網絡圖」，訊息傳播、協同行為、組織合作等具體事證，標記並連結中國、台灣的人物、民間組織、政府機構、交流活動。\n\n公民參與也很重要，跨地域、跨族群的在地培力，讓資訊判讀落地。IORG 在全台北、中、南、東、離島建立研究組織網絡，在城市、鄉村舉辦 60 場資訊判讀工作坊，接觸千人。透過對話，理解資訊操弄在不同地方、不同族群的樣貌；透過互動，分享資訊判讀的技能，找回信任，增強面對認知戰的集體抵抗力。\"",
     "oral_language": "華語",
@@ -4362,16 +4374,54 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
-      "id": "1206-sponsor-B",
+      "id": "1206-sponsor-A2",
       "議程日期": "2020-12-06",
-      "議程預設標題-華語": "贊助議程：blablabla",
-      "最後更新時間": "2020-09-23T14:29:48.000Z",
+      "議程預設標題-華語": "如果有個 mnd.g0v.tw – 用資訊公開、公民參與防守中國對台認知戰",
+      "最後更新時間": "2020-09-30T05:36:33.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-06T15:00",
+      "議程長度": 30
+    }
+  },
+  "1206-sponsor-B1": {
+    "id": "1206-sponsor-B1",
+    "speakers": [],
+    "updatedAt": "2020-09-30T05:38:49.000Z",
+    "createdAt": "2020-09-30T05:38:49.000Z",
+    "title": "邀請中",
+    "timeSheet": {
+      "id": "1206-sponsor-B1",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "邀請中",
+      "最後更新時間": "2020-09-30T05:35:46.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 30
+    }
+  },
+  "1206-sponsor-B2": {
+    "id": "1206-sponsor-B2",
+    "speakers": [],
+    "updatedAt": "2020-09-30T05:38:50.000Z",
+    "createdAt": "2020-09-30T05:38:50.000Z",
+    "title": "邀請中",
+    "timeSheet": {
+      "id": "1206-sponsor-B2",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "邀請中",
+      "最後更新時間": "2020-09-30T05:35:54.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
+      "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
+      "議程開始時間": "2020-12-06T16:30",
+      "議程長度": 30
     }
   },
   "1204-opening": {
@@ -4463,20 +4513,20 @@
     "isPseudo": true,
     "title": "午休",
     "title_en": "Lunch break",
-    "updatedAt": "2020-09-23T13:57:38.000Z",
-    "createdAt": "2020-09-23T13:57:38.000Z",
+    "updatedAt": "2020-09-30T05:52:36.000Z",
+    "createdAt": "2020-09-30T05:52:36.000Z",
     "timeSheet": {
       "id": "1204-lunch-break-sprout",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "午休",
       "議程預設標題-en": "Lunch break",
-      "最後更新時間": "2020-09-23T13:57:38.000Z",
+      "最後更新時間": "2020-09-30T05:52:36.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
-      "議程開始時間": "2020-12-04T11:30",
-      "議程長度": 90
+      "議程開始時間": "2020-12-04T12:00",
+      "議程長度": 60
     }
   },
   "1204-lunch-break-maker": {

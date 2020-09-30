@@ -1,6 +1,6 @@
 <template lang="pug">
   .agenda
-    .agenda__menu.flex.justify-center
+    .agenda__menu.justify-center.dn.flex-l
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
           v-for="date in dateList"
@@ -9,8 +9,18 @@
         )
           .datemenu__title.b Day{{date.index}}
           .datemenu__date.fw5.bt {{$t(date.date)}}
-    .agenda__content.flex.justify-center
+    .agenda__content
       daily-agenda(:agenda-per-room="agendaPerRoom")
+    .agenda__mobilemenu.mobilemenu.mt3(data-slideout-ignore)
+      div
+      nuxt-link.mobilemenu__item.tc.lh-title(
+          v-for="date in dateList"
+          :key="date.index"
+          :to="localePath(`/agenda/${date.date}`)"
+        )
+          .mobilemenu__title.b.bt.bw1.pv2.f4 Day{{date.index}}
+          .mobilemenu__date.fw5.pb2 {{$t(date.date)}}
+      div
     nuxt
 </template>
 <i18n lang="yaml">
@@ -101,22 +111,46 @@ export default {
 </script>
 <style lang="scss" scoped>
 .agenda {
-  padding: 1rem;
+  padding: 1rem 0;
   background-image: url('../../assets/images/agenda-bg-left.svg'),
       url('../../assets/images/agenda-bg-right.svg');
   background-position: left -10.5rem top 15rem, right -10em top;
   background-repeat: no-repeat;
   @include medium-screen {
-    padding: 2.5rem 6.5rem;
+    padding: 2.5rem 0;
     background-position: left -6rem top 15rem, right -4.5rem top;
   }
   @include large-screen {
-    padding: 5rem 12rem;
+    padding: 5rem 0;
     background-position: left top 15rem, right top;
   }
 
   &__content {
-    margin-top: 5.25rem;
+    @include large-screen {
+      margin-top: 5.25rem;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 100vw;
+    position: sticky;
+    left: 0;
+  }
+
+  &__mobilemenu {
+    display: grid;
+    grid-template-columns: 0 repeat(3, 35vw) 0;
+    column-gap: 1rem;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: auto;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    @include large-screen {
+      display: none;
+    }
   }
 }
 
@@ -136,6 +170,22 @@ export default {
     padding: 0.5rem 1.375rem 0;
     margin-top: 0.875rem;
     border-color: transparent;
+  }
+}
+
+.mobilemenu {
+  .nuxt-link-exact-active {
+    .mobilemenu__title {
+      border-color: $pink-1;
+      color: $pink-1;
+    }
+  }
+  &__title {
+    color: #6e6e6e;
+    border-color: transparent;
+  }
+  &__date {
+    color: #c2c0c0;
   }
 }
 </style>

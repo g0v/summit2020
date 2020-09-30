@@ -81,7 +81,7 @@ export default {
   i18n: {
     defaultLocale: 'zh',
     vueI18nLoader: true,
-    strategy: 'prefix_and_default',
+    strategy: 'prefix',
     vueI18n: {
       silentTranslationWarn: true
     },
