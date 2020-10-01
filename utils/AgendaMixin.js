@@ -19,9 +19,7 @@ export default {
       return this.time.議程長度
     },
     toTime () {
-      return dayjs(this.time.議程開始時間)
-        .add(this.duration, 'm')
-        .format('HH:mm')
+      return dayjs(this.time.議程開始時間).add(this.duration, 'm').format('HH:mm')
     },
     title () {
       return this.agenda.title || ''

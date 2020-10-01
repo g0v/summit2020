@@ -19,7 +19,7 @@
 </template>
 <i18n lang="yaml">
 en:
-  minuteUnit: mins
+  minuteUnit: min
   華語: Mandarin
   English: English
 zh:
