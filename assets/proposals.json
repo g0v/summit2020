@@ -4289,8 +4289,8 @@
         "bio_en": "【Dao Dao Online Learning Platform】\nLin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet.\nLin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations.\n【Traditional Chinese CC0 corpus and Mozilla Common Voice database】\nIrvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net.\n【CoTeach】\nKahou: Member of CoTeach.\nMeng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat!\n【Happiness Bankbook】\nJeffery Lin: Founder of Grass Book House\nGiovanni: Project Manager of Happiness Bankbook\n【Chatbot for High School Students】\nJason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year.\n【Literacy Practices Database】\ntmonk: Live Stream Director, Backend Developer, Free Software Engineer"
       }
     ],
-    "updatedAt": "2020-09-30T16:42:13.000Z",
-    "createdAt": "2020-09-30T16:42:13.000Z",
+    "updatedAt": "2020-10-01T09:44:36.000Z",
+    "createdAt": "2020-10-01T09:44:36.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
@@ -4300,7 +4300,7 @@
     "topic": "賢者之島 Academia Formosa",
     "three_keywords": "EdTech, Open Education, g0v",
     "related_url": "https://sch001.g0v.tw/",
-    "cover_image": "https://imgur.com/84af39bb-e9e4-46d4-ae14-1378fd75de43",
+    "cover_image": "https://i.imgur.com/HzCHN1w.png",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "timeSheet": {
@@ -5142,15 +5142,65 @@
     "id": "1206-unconf-A0",
     "isPseudo": true,
     "title": "Unconference A0",
-    "title_en": "Unconference A0",
-    "updatedAt": "2020-09-23T14:44:05.000Z",
-    "createdAt": "2020-09-23T14:44:05.000Z",
+    "title_en": "Unconference A5",
+    "updatedAt": "2020-10-01T09:35:43.000Z",
+    "createdAt": "2020-10-01T09:35:43.000Z",
     "timeSheet": {
       "id": "1206-unconf-A0",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Unconference A0",
+      "議程預設標題-en": "Unconference A5",
+      "最後更新時間": "2020-10-01T09:35:43.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "好想工作室",
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
+    }
+  },
+  "1206-unconf-A1": {
+    "id": "1206-unconf-A1",
+    "isPseudo": true,
+    "title": "Unconference A1",
+    "title_en": "Unconference A6",
+    "updatedAt": "2020-10-01T09:35:46.000Z",
+    "createdAt": "2020-10-01T09:35:46.000Z",
+    "timeSheet": {
+      "id": "1206-unconf-A1",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "Unconference A1",
+      "議程預設標題-en": "Unconference A6",
+      "最後更新時間": "2020-10-01T09:35:46.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-06T14:30",
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
+    }
+  },
+  "1206-unconf-A2": {
+    "id": "1206-unconf-A2",
+    "isPseudo": true,
+    "title": "Unconference A2",
+    "title_en": "Unconference A0",
+    "updatedAt": "2020-10-01T09:35:37.000Z",
+    "createdAt": "2020-10-01T09:35:37.000Z",
+    "timeSheet": {
+      "id": "1206-unconf-A2",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "Unconference A2",
       "議程預設標題-en": "Unconference A0",
-      "最後更新時間": "2020-09-23T14:44:05.000Z",
+      "最後更新時間": "2020-10-01T09:35:37.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - R1",
@@ -5160,56 +5210,6 @@
       "locationMeta": {
         "order": 20,
         "capacity": 80
-      }
-    }
-  },
-  "1206-unconf-A1": {
-    "id": "1206-unconf-A1",
-    "isPseudo": true,
-    "title": "Unconference A1",
-    "title_en": "Unconference A1",
-    "updatedAt": "2020-09-23T14:44:05.000Z",
-    "createdAt": "2020-09-23T14:44:05.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-A1",
-      "議程日期": "2020-12-06",
-      "議程預設標題-華語": "Unconference A1",
-      "議程預設標題-en": "Unconference A1",
-      "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "成大綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 50,
-        "capacity": 30
-      }
-    }
-  },
-  "1206-unconf-A2": {
-    "id": "1206-unconf-A2",
-    "isPseudo": true,
-    "title": "Unconference A2",
-    "title_en": "Unconference A2",
-    "updatedAt": "2020-09-23T14:44:05.000Z",
-    "createdAt": "2020-09-23T14:44:05.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-A2",
-      "議程日期": "2020-12-06",
-      "議程預設標題-華語": "Unconference A2",
-      "議程預設標題-en": "Unconference A2",
-      "最後更新時間": "2020-09-23T14:44:05.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "成大綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4",
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 60,
-        "capacity": 40
       }
     }
   },
@@ -5267,24 +5267,24 @@
     "id": "1206-unconf-A5",
     "isPseudo": true,
     "title": "Unconference A5",
-    "title_en": "Unconference A5",
-    "updatedAt": "2020-09-23T14:44:05.000Z",
-    "createdAt": "2020-09-23T14:44:05.000Z",
+    "title_en": "Unconference A1",
+    "updatedAt": "2020-10-01T09:35:38.000Z",
+    "createdAt": "2020-10-01T09:35:38.000Z",
     "timeSheet": {
       "id": "1206-unconf-A5",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Unconference A5",
-      "議程預設標題-en": "Unconference A5",
-      "最後更新時間": "2020-09-23T14:44:05.000Z",
+      "議程預設標題-en": "Unconference A1",
+      "最後更新時間": "2020-10-01T09:35:38.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
-      "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio",
+      "議程場地-華語": "成大綠色魔法學校 - R3",
+      "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-06T14:30",
       "議程長度": 60,
       "locationMeta": {
-        "order": 12,
-        "capacity": 50
+        "order": 50,
+        "capacity": 30
       }
     }
   },
@@ -5292,24 +5292,24 @@
     "id": "1206-unconf-A6",
     "isPseudo": true,
     "title": "Unconference A6",
-    "title_en": "Unconference A6",
-    "updatedAt": "2020-09-23T14:44:05.000Z",
-    "createdAt": "2020-09-23T14:44:05.000Z",
+    "title_en": "Unconference A2",
+    "updatedAt": "2020-10-01T09:35:42.000Z",
+    "createdAt": "2020-10-01T09:35:42.000Z",
     "timeSheet": {
       "id": "1206-unconf-A6",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Unconference A6",
-      "議程預設標題-en": "Unconference A6",
-      "最後更新時間": "2020-09-23T14:44:05.000Z",
+      "議程預設標題-en": "Unconference A2",
+      "最後更新時間": "2020-10-01T09:35:42.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
-      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程場地-華語": "成大綠色魔法學校 - R4",
+      "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-06T14:30",
       "議程長度": 60,
       "locationMeta": {
-        "order": 13,
-        "capacity": 100
+        "order": 60,
+        "capacity": 40
       }
     }
   },
@@ -5342,15 +5342,65 @@
     "id": "1206-unconf-B0",
     "isPseudo": true,
     "title": "Unconference B0",
-    "title_en": "Unconference B0",
-    "updatedAt": "2020-09-23T14:43:59.000Z",
-    "createdAt": "2020-09-23T14:43:59.000Z",
+    "title_en": "Unconference B5",
+    "updatedAt": "2020-10-01T09:36:25.000Z",
+    "createdAt": "2020-10-01T09:36:25.000Z",
     "timeSheet": {
       "id": "1206-unconf-B0",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Unconference B0",
+      "議程預設標題-en": "Unconference B5",
+      "最後更新時間": "2020-10-01T09:36:25.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "好想工作室",
+      "議程場地-en": "Good-Ideas Studio",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
+    }
+  },
+  "1206-unconf-B1": {
+    "id": "1206-unconf-B1",
+    "isPseudo": true,
+    "title": "Unconference B1",
+    "title_en": "Unconference B6",
+    "updatedAt": "2020-10-01T09:36:26.000Z",
+    "createdAt": "2020-10-01T09:36:26.000Z",
+    "timeSheet": {
+      "id": "1206-unconf-B1",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "Unconference B1",
+      "議程預設標題-en": "Unconference B6",
+      "最後更新時間": "2020-10-01T09:36:26.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
+      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
+    }
+  },
+  "1206-unconf-B2": {
+    "id": "1206-unconf-B2",
+    "isPseudo": true,
+    "title": "Unconference B2",
+    "title_en": "Unconference B0",
+    "updatedAt": "2020-10-01T09:36:19.000Z",
+    "createdAt": "2020-10-01T09:36:19.000Z",
+    "timeSheet": {
+      "id": "1206-unconf-B2",
+      "議程日期": "2020-12-06",
+      "議程預設標題-華語": "Unconference B2",
       "議程預設標題-en": "Unconference B0",
-      "最後更新時間": "2020-09-23T14:43:59.000Z",
+      "最後更新時間": "2020-10-01T09:36:19.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - R1",
@@ -5360,56 +5410,6 @@
       "locationMeta": {
         "order": 20,
         "capacity": 80
-      }
-    }
-  },
-  "1206-unconf-B1": {
-    "id": "1206-unconf-B1",
-    "isPseudo": true,
-    "title": "Unconference B1",
-    "title_en": "Unconference B1",
-    "updatedAt": "2020-09-23T14:43:59.000Z",
-    "createdAt": "2020-09-23T14:43:59.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-B1",
-      "議程日期": "2020-12-06",
-      "議程預設標題-華語": "Unconference B1",
-      "議程預設標題-en": "Unconference B1",
-      "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "成大綠色魔法學校 - R3",
-      "議程場地-en": "The Magic School of Green Technologies - R3",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 50,
-        "capacity": 30
-      }
-    }
-  },
-  "1206-unconf-B2": {
-    "id": "1206-unconf-B2",
-    "isPseudo": true,
-    "title": "Unconference B2",
-    "title_en": "Unconference B2",
-    "updatedAt": "2020-09-23T14:43:59.000Z",
-    "createdAt": "2020-09-23T14:43:59.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-B2",
-      "議程日期": "2020-12-06",
-      "議程預設標題-華語": "Unconference B2",
-      "議程預設標題-en": "Unconference B2",
-      "最後更新時間": "2020-09-23T14:43:59.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "成大綠色魔法學校 - R4",
-      "議程場地-en": "The Magic School of Green Technologies - R4",
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 60,
-        "capacity": 40
       }
     }
   },
@@ -5467,24 +5467,24 @@
     "id": "1206-unconf-B5",
     "isPseudo": true,
     "title": "Unconference B5",
-    "title_en": "Unconference B5",
-    "updatedAt": "2020-09-23T14:43:59.000Z",
-    "createdAt": "2020-09-23T14:43:59.000Z",
+    "title_en": "Unconference B1",
+    "updatedAt": "2020-10-01T09:36:21.000Z",
+    "createdAt": "2020-10-01T09:36:21.000Z",
     "timeSheet": {
       "id": "1206-unconf-B5",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Unconference B5",
-      "議程預設標題-en": "Unconference B5",
-      "最後更新時間": "2020-09-23T14:43:59.000Z",
+      "議程預設標題-en": "Unconference B1",
+      "最後更新時間": "2020-10-01T09:36:21.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
-      "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio",
+      "議程場地-華語": "成大綠色魔法學校 - R3",
+      "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-06T16:00",
       "議程長度": 60,
       "locationMeta": {
-        "order": 12,
-        "capacity": 50
+        "order": 50,
+        "capacity": 30
       }
     }
   },
@@ -5492,24 +5492,24 @@
     "id": "1206-unconf-B6",
     "isPseudo": true,
     "title": "Unconference B6",
-    "title_en": "Unconference B6",
-    "updatedAt": "2020-09-23T14:43:59.000Z",
-    "createdAt": "2020-09-23T14:43:59.000Z",
+    "title_en": "Unconference B2",
+    "updatedAt": "2020-10-01T09:36:21.000Z",
+    "createdAt": "2020-10-01T09:36:21.000Z",
     "timeSheet": {
       "id": "1206-unconf-B6",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "Unconference B6",
-      "議程預設標題-en": "Unconference B6",
-      "最後更新時間": "2020-09-23T14:43:59.000Z",
+      "議程預設標題-en": "Unconference B2",
+      "最後更新時間": "2020-10-01T09:36:21.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
-      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
+      "議程場地-華語": "成大綠色魔法學校 - R4",
+      "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-06T16:00",
       "議程長度": 60,
       "locationMeta": {
-        "order": 13,
-        "capacity": 100
+        "order": 60,
+        "capacity": 40
       }
     }
   },
