@@ -25,7 +25,7 @@
           span.mr2 {{$t('keyword')}}
           | {{agenda.three_keywords}}
         .detail__speakers(v-if="speakers" :class="{'detail__speakers--mono': isMonoSpeaker}")
-          .speaker(
+          .speaker.mb5.mb0-l(
             v-for="(speaker, index) in agenda.speakers"
             :key="index"
           )
@@ -247,11 +247,14 @@ export default {
     color: $blue-1;
   }
   &__speakers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
     margin-bottom: 4.5rem;
     justify-content: center;
+
+    @include large-screen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+    }
 
     &--mono {
       grid-template-columns: 1fr;
