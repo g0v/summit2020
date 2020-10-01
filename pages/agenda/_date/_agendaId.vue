@@ -34,13 +34,15 @@
               :alt="speaker.display_name"
             )
             .speaker__title.mv3
-              .fw5 {{speaker.display_name}} / {{speaker.city}}
+              .fw5
+                | {{speaker.display_name}}
+                span(v-if="speaker.city.trim()") &nbsp;/ {{speaker.city}}
               .f6 {{speaker.organization}}
             rich-multi-line.gray.mv3.fw3(
               :text="speaker.bio"
-              :class="{tl: isMonoSpeaker}"
+              :class="{tl: isSpeakerBioTl(speaker)}"
             )
-            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isMonoSpeaker}")
+            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isSpeakerBioTl(speaker)}")
               | {{$t('moreInfo')}}
               ext-link.ml2(:to="speaker.info_url")
 </template>
@@ -76,6 +78,7 @@ import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
 const SUPER_LONG_BIO = 300
+const SUPER_SHORT_BIO = 20
 
 export default {
   components: {
@@ -139,6 +142,9 @@ export default {
       }
       const tokens = url.split('.')
       return tokens.length > 1 && tokens.every(token => !!token)
+    },
+    isSpeakerBioTl (speaker) {
+      return this.isMonoSpeaker || speaker.bio.length > SUPER_SHORT_BIO
     }
   },
   head: friendlyHeader({
