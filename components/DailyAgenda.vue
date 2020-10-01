@@ -9,7 +9,7 @@
     )
       agenda-card(:agenda="agenda")
     template(v-for="room in regularRooms")
-      .dailyagenda__header.dn.db-l.mb2(:key="room.name")
+      .dailyagenda__header.dn.db-ns.mb2(:key="room.name")
         room-card(:name="room.name")
       .dailyagenda__item(
         v-for="agenda in room.agendaList"
@@ -27,7 +27,7 @@ import RoomCard from '~/components/RoomCard'
 import AgendaCard from '~/components/AgendaCard'
 
 const CARD_WIDTH = 13
-const GUTTER_WIDTH = 1
+const GUTTER_WIDTH = 4
 const GAP_WIDTH = 0.5
 
 // each row is 5 min
@@ -138,7 +138,7 @@ export default {
 .dailyagenda {
   display: flex;
   flex-direction: column;
-  @include large-screen {
+  @include not-small-screen {
     display: grid;
   }
   align-items: stretch;
@@ -152,7 +152,7 @@ export default {
 
   &__item {
     padding: 0 0.5rem;
-    @include large-screen {
+    @include not-small-screen {
       padding: 0;
     }
   }

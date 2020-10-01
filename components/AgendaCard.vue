@@ -10,7 +10,7 @@
       h2.agendacard__title.f5.mt3.fw5 {{title}}
       .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
       .flex.flex-wrap.mt3(v-if="hasTagsToShow")
-        .agendacard__tag.agendacard__tag--hl.db.dn-l(v-if="room") {{room}}
+        .agendacard__tag.agendacard__tag--hl.db.dn-ns(v-if="room") {{room}}
         .agendacard__tag(v-if="format") {{format}}
         .agendacard__tag(v-if="lang") {{$t(lang)}}
 </template>

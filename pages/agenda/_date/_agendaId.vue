@@ -2,9 +2,10 @@
   .detail.fixed.top-0.left-0.bottom-0.right-0(
     v-if="isModalVisible"
     @click="closeModal"
+    data-slideout-ignore
   )
     .detail__wrapper
-      .detail__modal.br2.bg-white(@click.stop data-slideout-ignore)
+      .detail__modal.br2.bg-white(@click.stop)
         .flex.justify-between
           .detail__start.f6
             .dib.mr2 Day{{dayN}}
@@ -25,7 +26,7 @@
           span.mr2 {{$t('keyword')}}
           | {{agenda.three_keywords}}
         .detail__speakers(v-if="speakers" :class="{'detail__speakers--mono': isMonoSpeaker}")
-          .speaker(
+          .speaker.mb5.mb0-ns(
             v-for="(speaker, index) in agenda.speakers"
             :key="index"
           )
@@ -34,13 +35,15 @@
               :alt="speaker.display_name"
             )
             .speaker__title.mv3
-              .fw5 {{speaker.display_name}} / {{speaker.city}}
+              .fw5
+                | {{speaker.display_name}}
+                span(v-if="speaker.city.trim()") &nbsp;/ {{speaker.city}}
               .f6 {{speaker.organization}}
             rich-multi-line.gray.mv3.fw3(
               :text="speaker.bio"
-              :class="{tl: isMonoSpeaker}"
+              :class="{tl: isSpeakerBioTl(speaker)}"
             )
-            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isMonoSpeaker}")
+            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isSpeakerBioTl(speaker)}")
               | {{$t('moreInfo')}}
               ext-link.ml2(:to="speaker.info_url")
 </template>
@@ -76,6 +79,7 @@ import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
 const SUPER_LONG_BIO = 300
+const SUPER_SHORT_BIO = 20
 
 export default {
   components: {
@@ -124,6 +128,11 @@ export default {
       return speakers[0].bio.length > SUPER_LONG_BIO
     }
   },
+  watch: {
+    isModalVisible (isVisible) {
+      console.warn('m', isVisible, document.querySelector('body'))
+    }
+  },
   methods: {
     closeModal () {
       this.$router.push({
@@ -139,6 +148,9 @@ export default {
       }
       const tokens = url.split('.')
       return tokens.length > 1 && tokens.every(token => !!token)
+    },
+    isSpeakerBioTl (speaker) {
+      return this.isMonoSpeaker || speaker.bio.length > SUPER_SHORT_BIO
     }
   },
   head: friendlyHeader({
@@ -166,6 +178,7 @@ export default {
 <style lang="scss" scoped>
 .detail {
   background: rgba(198, 198, 198, 0.8);
+  z-index: 100;
   &__wrapper {
     position: sticky;
     left: 0;
@@ -174,6 +187,7 @@ export default {
     width: 100%;
     max-height: 100vh;
     max-width: 100vw;
+    display: inline-block;
   }
   &__modal {
     max-width: calc(100vw - 2rem);
@@ -185,7 +199,7 @@ export default {
     top: 1rem;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
-    @include large-screen {
+    @include not-small-screen {
       padding: 4.5rem 5.5rem;
       margin: auto;
       top: 3rem;
@@ -215,7 +229,7 @@ export default {
     position: sticky;
     background: rgba(255, 255, 255, 0.9);
     top: -2.5rem;
-    @include large-screen {
+    @include not-small-screen {
       top: -4.5rem;
     }
   }
@@ -241,11 +255,14 @@ export default {
     color: $blue-1;
   }
   &__speakers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
     margin-bottom: 4.5rem;
     justify-content: center;
+
+    @include not-small-screen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3rem;
+    }
 
     &--mono {
       grid-template-columns: 1fr;

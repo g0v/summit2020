@@ -1,6 +1,6 @@
 <template lang="pug">
   .agenda
-    .agenda__menu.justify-center.dn.flex-l
+    .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
           v-for="date in dateList"
@@ -72,18 +72,26 @@ export default {
       const agendaPerRoom = agendaToday.reduce((perRoom, agenda) => {
         const room = agenda.timeSheet.議程場地
         if (!(room in perRoom)) {
-          perRoom[room] = []
+          perRoom[room] = {
+            list: [],
+            meta: agenda.timeSheet.locationMeta
+          }
         }
-        perRoom[room].push(agenda)
+        perRoom[room].list.push(agenda)
         return perRoom
       }, {})
 
-      return Object.keys(agendaPerRoom).map((room) => {
-        return {
-          name: room,
-          agendaList: agendaPerRoom[room]
-        }
-      })
+      return Object.keys(agendaPerRoom)
+        .map((room) => {
+          return {
+            name: room,
+            meta: agendaPerRoom[room].meta,
+            agendaList: agendaPerRoom[room].list
+          }
+        })
+        .sort((l, r) => {
+          return l.meta.order - r.meta.order
+        })
     }
   },
   watch: {
@@ -120,13 +128,13 @@ export default {
     padding: 2.5rem 0;
     background-position: left -6rem top 15rem, right -4.5rem top;
   }
-  @include large-screen {
+  @include not-small-screen {
     padding: 5rem 0;
     background-position: left top 15rem, right top;
   }
 
   &__content {
-    @include large-screen {
+    @include not-small-screen {
       margin-top: 5.25rem;
     }
   }
@@ -148,14 +156,14 @@ export default {
     position: sticky;
     bottom: 0;
     background: white;
-    @include large-screen {
+    @include not-small-screen {
       display: none;
     }
   }
 }
 
 .datemenu {
-  .nuxt-link-exact-active {
+  .nuxt-link-active {
     .datemenu__date {
       border-color: $pink-1;
       color: $pink-1;
@@ -174,7 +182,7 @@ export default {
 }
 
 .mobilemenu {
-  .nuxt-link-exact-active {
+  .nuxt-link-active {
     .mobilemenu__title {
       border-color: $pink-1;
       color: $pink-1;
