@@ -1,5 +1,8 @@
 <template lang="pug">
-  nuxt-link.db.agendacard.br2.h-100(:to="detailUrl")
+  nuxt-link.db.agendacard.br2.h-100(
+    :to="detailUrl"
+    :class="{'agendacard--break': isBreak}"
+  )
     .agendacard__wrapper
       .agendacard__time.flex.justify-between.mb3.lh-solid
         .f7 {{fromTime}} - {{toTime}}
@@ -9,9 +12,9 @@
         .agendacard__category(v-if="category") {{category}}
       h2.agendacard__title.f5.mt3.fw5 {{title}}
       .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
-      .flex.flex-wrap.mt3(v-if="hasTagsToShow")
-        .agendacard__tag.agendacard__tag--hl.db.dn-ns(v-if="room") {{room}}
-        .agendacard__tag(v-if="format") {{format}}
+      .flex.flex-wrap
+        .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
+        .agendacard__tag.mt3-ns(v-if="format") {{format}}
         .agendacard__tag(v-if="lang") {{$t(lang)}}
 </template>
 <i18n lang="yaml">
@@ -45,6 +48,9 @@ export default {
     },
     hasTagsToShow () {
       return !this.isPseudo && (this.lang || this.format || this.room)
+    },
+    isBreak () {
+      return this.agenda.isPseudo && this.title.includes('休')
     }
   }
 }
@@ -53,6 +59,13 @@ export default {
 .agendacard {
   background: #f8f8f8;
   padding: 1rem 0.75rem;
+  &--break {
+    background: #e7eff0;
+    cursor: default;
+    .agendacard__title {
+      color: #555;
+    }
+  }
   &__wrapper {
     position: sticky;
     top: 0.5rem;
@@ -81,8 +94,8 @@ export default {
     margin-top: 0.25rem;
     background: #67cddd;
     padding: 0.125rem 0.5rem;
-    &:not(:first-child) {
-      margin-left: 0.25rem;
+    &:not(:last-child) {
+      margin-right: 0.25rem;
     }
     &--hl {
       background: #509fac;
