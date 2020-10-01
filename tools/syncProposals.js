@@ -1,11 +1,15 @@
 // TODO:
 // 1. [x] download accepted proposal && merge time sheet info
 // 2. [x] allow overwrite by summit worker using special airtable table
-// 3. [ ] sentry integration
+// 3. [x] sentry integration
 // 4. [ ] host avatar ourselves
+
+// include sentry
+require('dotenv').config()
 
 const fs = require('fs')
 const path = require('path')
+const Sentry = require('@sentry/node')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -17,6 +21,12 @@ const {
   CONTENT_FIELD_DEFINITIONS,
   SPEAKER_FIELD_DEFINITIONS
 } = require('./projectFields')
+
+if (process.env.SENTRY_DSN) {
+  Sentry.init({
+    dsn: process.env.SENTRY_DSN
+  })
+}
 
 dayjs.extend(utc)
 
@@ -123,8 +133,25 @@ async function downloadTables () {
     tableName: '議程時間',
     view: 'Grid view'
   }, false)
+
+  const locationRaw = await downloadOneTable({
+    id: 'dummy',
+    tableName: '議程場地資訊',
+    view: 'Grid view'
+  }, false)
+
+  const locationMap = locationRaw.reduce((map, location) => {
+    return {
+      ...map,
+      [location.場地]: {
+        order: location.順位,
+        capacity: location.人數
+      }
+    }
+  }, {})
+
   const timeSheet = timeSheetRaw
-    .map(sheet => normalizeTimeSheet(sheet))
+    .map(sheet => normalizeTimeSheet(sheet, locationMap))
     .filter(sheet => sheet.議程長度 && sheet.議程開始時間)
   return { timeSheet }
 }
@@ -144,7 +171,7 @@ function genFieldI18n (value) {
   }
 }
 
-function normalizeTimeSheet (timeSheet) {
+function normalizeTimeSheet (timeSheet, locationMap) {
   const category = genFieldI18n(timeSheet.分類主題)
   const location = genFieldI18n(timeSheet.議程場地)
   const startHour = dayjs.unix(timeSheet.議程開始時間)
@@ -167,6 +194,15 @@ function normalizeTimeSheet (timeSheet) {
   }
   if (timeSheet.議程長度) {
     ret.議程長度 = timeSheet.議程長度 / SEC_PER_MIN
+  }
+
+  const locationStr = timeSheet.議程場地
+  if (locationMap[locationStr]) {
+    ret.locationMeta = locationMap[locationStr]
+  } else if (locationStr) {
+    const errmsg = `Undefined location ${timeSheet.議程場地}`
+    Sentry.captureMessage(errmsg)
+    console.error(errmsg)
   }
   delete ret.分類主題
   delete ret.議程場地

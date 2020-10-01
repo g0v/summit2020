@@ -48,7 +48,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5eddea12ba206b030d66a2ca": {
@@ -92,7 +96,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5ee0c02eba206b030d66a2d5": {
@@ -143,7 +151,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T17:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5ee1aa0cba206b030d66a2d9": {
@@ -194,7 +206,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "5ee48620ba206b030d66a2e5": {
@@ -248,7 +264,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "5ee88411ba206b030d66a2ea": {
@@ -291,7 +311,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "5eeb7044ba206b030d66a2f4": {
@@ -353,7 +377,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "5eee8137ba206b030d66a2ff": {
@@ -396,7 +424,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5eeee658ba206b030d66a303": {
@@ -438,7 +470,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T10:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5ef09c0eba206b030d66a310": {
@@ -490,7 +526,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5ef211bcba206b030d66a31d": {
@@ -533,7 +573,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T13:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "5ef220f9ba206b030d66a325": {
@@ -575,7 +619,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5ef22cd9ba206b030d66a327": {
@@ -619,7 +667,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 40
+      "議程長度": 40,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5ef2e905ba206b030d66a333": {
@@ -690,7 +742,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T14:15",
-      "議程長度": 45
+      "議程長度": 45,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5ef324e1ba206b030d66a33d": {
@@ -733,7 +789,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5ef4330bba206b030d66a347": {
@@ -776,7 +836,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5ef44d7fba206b030d66a34b": {
@@ -819,7 +883,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "5ef479b9ba206b030d66a34e": {
@@ -881,7 +949,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T14:15",
-      "議程長度": 45
+      "議程長度": 45,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5ef4aeaeba206b030d66a354": {
@@ -925,7 +997,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5ef4bfc8ba206b030d66a358": {
@@ -968,7 +1044,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5ef63898ba206b030d66a362": {
@@ -1012,7 +1092,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5ef6c29dba206b030d66a364": {
@@ -1056,7 +1140,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5ef6eca4ba206b030d66a368": {
@@ -1118,7 +1206,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "5ef709ebba206b030d66a36c": {
@@ -1170,7 +1262,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5ef81b08ba206b030d66a37a": {
@@ -1214,7 +1310,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5ef8c370ba206b030d66a386": {
@@ -1256,7 +1356,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5ef947a8ba206b030d66a392": {
@@ -1299,7 +1403,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T17:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5ef99ae9ba206b030d66a39d": {
@@ -1342,7 +1450,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5ef99bf1ba206b030d66a39f": {
@@ -1385,7 +1497,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5ef9aaffba206b030d66a3a4": {
@@ -1428,7 +1544,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5ef9bc2dba206b030d66a3ae": {
@@ -1471,7 +1591,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5ef9c9cbba206b030d66a3b1": {
@@ -1523,7 +1647,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5ef9e78dba206b030d66a3c2": {
@@ -1583,7 +1711,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "5ef9f18fba206b030d66a3ca": {
@@ -1635,7 +1767,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5ef9fa99ba206b030d66a3d8": {
@@ -1679,7 +1815,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5ef9fe47ba206b030d66a3dc": {
@@ -1724,7 +1864,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5ef9fed0ba206b030d66a3df": {
@@ -1768,7 +1912,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efa0877ba206b030d66a3e8": {
@@ -1810,7 +1958,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5efa0bf6ba206b030d66a3ea": {
@@ -1853,7 +2005,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "5efa0fb8ba206b030d66a3ef": {
@@ -1896,7 +2052,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "5efa11b2ba206b030d66a3f1": {
@@ -1939,7 +2099,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5efa175bba206b030d66a3f3": {
@@ -1991,7 +2155,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5efa2e57ba206b030d66a3f7": {
@@ -2034,7 +2202,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efa37d2ba206b030d66a3f9": {
@@ -2077,7 +2249,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5efa793fba206b030d66a402": {
@@ -2121,7 +2297,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T14:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5efa9092ba206b030d66a408": {
@@ -2163,7 +2343,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 40
+      "議程長度": 40,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5efaa323ba206b030d66a414": {
@@ -2216,7 +2400,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T11:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efaa83cba206b030d66a41a": {
@@ -2260,7 +2448,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T10:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5efabbc9ba206b030d66a42a": {
@@ -2303,7 +2495,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "5efac8d2ba206b030d66a432": {
@@ -2365,7 +2561,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T11:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "5efad21cba206b030d66a437": {
@@ -2417,7 +2617,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5efadb44ba206b030d66a439": {
@@ -2461,7 +2665,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efadc65ba206b030d66a43a": {
@@ -2521,7 +2729,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "5efae364ba206b030d66a441": {
@@ -2564,7 +2776,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T16:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efaf2c6ba206b030d66a458": {
@@ -2618,7 +2834,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5efafc95ba206b030d66a461": {
@@ -2671,7 +2891,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T14:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5efb007bba206b030d66a46c": {
@@ -2724,7 +2948,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T17:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efb0618ba206b030d66a474": {
@@ -2767,7 +2995,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "5efb0ef9ba206b030d66a47b": {
@@ -2820,7 +3052,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efb2838ba206b030d66a495": {
@@ -2864,7 +3100,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T17:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efb34d8ba206b030d66a4a4": {
@@ -2933,7 +3173,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efb3c4bba206b030d66a4a9": {
@@ -2985,7 +3229,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T15:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5efb4748ba206b030d66a4bb": {
@@ -3028,7 +3276,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T15:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5efb5a5fba206b030d66a4d8": {
@@ -3072,7 +3324,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5efb5c5eba206b030d66a4dc": {
@@ -3116,7 +3372,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T10:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5efb712eba206b030d66a4e9": {
@@ -3168,7 +3428,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T10:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5efcd945ba206b030d66a50e": {
@@ -3211,7 +3475,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T15:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5efe0289ba206b030d66a514": {
@@ -3262,7 +3530,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T09:30",
-      "議程長度": 40
+      "議程長度": 40,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5f02d14ee88a4948daf87fb7": {
@@ -3305,7 +3577,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "5f02d5a0e88a4948daf87fb9": {
@@ -3366,7 +3642,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 45
+      "議程長度": 45,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5f0c7c17e88a4948daf87fe0": {
@@ -3409,7 +3689,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5f0cd255e88a4948daf87fe9": {
@@ -3461,7 +3745,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T14:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5f0d47ede88a4948daf87fed": {
@@ -3504,7 +3792,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "5f0dd9c960d627285b6b14e7": {
@@ -3557,7 +3849,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T10:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "5f0e6f7560d627285b6b14f2": {
@@ -3618,7 +3914,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T13:30",
-      "議程長度": 45
+      "議程長度": 45,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "5f0e97c660d627285b6b14f8": {
@@ -3661,7 +3961,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-05T16:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "5f0ef5300bde6f3bbab73f6d": {
@@ -3705,7 +4009,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T16:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "5f0f06fd0bde6f3bbab73f70": {
@@ -3757,7 +4065,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-05T13:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "5f0f1b6e0bde6f3bbab73f76": {
@@ -3801,7 +4113,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T15:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "5f0f209d0bde6f3bbab73f7a": {
@@ -3844,7 +4160,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T10:50",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "5f0f235a0bde6f3bbab73f7e": {
@@ -3887,7 +4207,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T15:30",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "1204-jothon-0": {
@@ -3945,7 +4269,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T10:40",
-      "議程長度": 80
+      "議程長度": 80,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "1204-jothon-1": {
@@ -3985,7 +4313,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "1204-goodideas-0": {
@@ -4019,7 +4351,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "1204-goodideas-1": {
@@ -4054,7 +4390,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T10:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "1204-goodideas-2": {
@@ -4088,7 +4428,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T13:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "1204-sprout-0": {
@@ -4123,7 +4467,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "1204-sprout-1": {
@@ -4149,7 +4497,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T13:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "1204-maker-0": {
@@ -4203,7 +4555,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T09:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1204-maker-1": {
@@ -4229,7 +4585,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T10:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1204-maker-2": {
@@ -4255,7 +4615,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T13:00",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1206-keynote-0": {
@@ -4310,7 +4674,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-06T09:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1206-keynote-1": {
@@ -4356,7 +4724,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-06T11:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1206-sponsor-A0": {
@@ -4396,7 +4768,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1206-sponsor-A1": {
@@ -4434,7 +4810,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T15:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1206-sponsor-B0": {
@@ -4453,7 +4833,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1206-sponsor-B1": {
@@ -4472,7 +4856,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T16:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1204-opening": {
@@ -4493,7 +4881,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-04T09:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1204-morning-break-jothon": {
@@ -4514,7 +4906,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T10:30",
-      "議程長度": 10
+      "議程長度": 10,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "1204-lunch-break-jothon": {
@@ -4535,7 +4931,11 @@
       "議程場地-華語": "臺南市美術館2館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "議程開始時間": "2020-12-04T12:00",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
     }
   },
   "1204-lunch-break-goodideas": {
@@ -4556,7 +4956,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-04T11:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "1204-lunch-break-sprout": {
@@ -4577,7 +4981,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-04T12:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "1204-lunch-break-maker": {
@@ -4598,7 +5006,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-04T11:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1204-afternoon-break": {
@@ -4619,7 +5031,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-04T15:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1205-lunch-break": {
@@ -4640,7 +5056,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-05T11:30",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1205-afternoon-break": {
@@ -4661,7 +5081,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-05T15:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1206-morning-break": {
@@ -4682,7 +5106,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-06T11:00",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1206-lunch-break": {
@@ -4703,7 +5131,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-06T13:00",
-      "議程長度": 90
+      "議程長度": 90,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1206-unconf-A0": {
@@ -4724,7 +5156,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "1206-unconf-A1": {
@@ -4745,7 +5181,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "1206-unconf-A2": {
@@ -4766,7 +5206,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "1206-unconf-A3": {
@@ -4787,7 +5231,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1206-unconf-A4": {
@@ -4808,7 +5256,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "1206-unconf-A5": {
@@ -4829,7 +5281,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "1206-unconf-A6": {
@@ -4850,7 +5306,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "1206-afternoon-break": {
@@ -4871,7 +5331,11 @@
       "議程場地-華語": "ALL",
       "議程場地-en": "ALL",
       "議程開始時間": "2020-12-06T15:30",
-      "議程長度": 30
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 127,
+        "capacity": 1023
+      }
     }
   },
   "1206-unconf-B0": {
@@ -4892,7 +5356,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "1206-unconf-B1": {
@@ -4913,7 +5381,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R3",
       "議程場地-en": "The Magic School of Green Technologies - R3",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 50,
+        "capacity": 30
+      }
     }
   },
   "1206-unconf-B2": {
@@ -4934,7 +5406,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R4",
       "議程場地-en": "The Magic School of Green Technologies - R4",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 60,
+        "capacity": 40
+      }
     }
   },
   "1206-unconf-B3": {
@@ -4955,7 +5431,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1206-unconf-B4": {
@@ -4976,7 +5456,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "1206-unconf-B5": {
@@ -4997,7 +5481,11 @@
       "議程場地-華語": "好想工作室",
       "議程場地-en": "Good-Ideas Studio",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
+      }
     }
   },
   "1206-unconf-B6": {
@@ -5018,7 +5506,11 @@
       "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 13,
+        "capacity": 100
+      }
     }
   },
   "1206-lightning-talk": {
@@ -5039,7 +5531,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T17:00",
-      "議程長度": 50
+      "議程長度": 50,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1206-closing-speech": {
@@ -5060,7 +5556,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-06T17:50",
-      "議程長度": 10
+      "議程長度": 10,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1205-QA-hall-0": {
@@ -5080,7 +5580,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T11:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1205-QA-hall-1": {
@@ -5100,7 +5604,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T16:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1205-QA-hall-2": {
@@ -5120,7 +5628,11 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "議程開始時間": "2020-12-05T17:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
     }
   },
   "1205-QA-R1-0": {
@@ -5140,7 +5652,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T11:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "1205-QA-R1-1": {
@@ -5160,7 +5676,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T16:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "1205-QA-R1-2": {
@@ -5180,7 +5700,11 @@
       "議程場地-華語": "成大綠色魔法學校 - R1",
       "議程場地-en": "The Magic School of Green Technologies - R1",
       "議程開始時間": "2020-12-05T17:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 20,
+        "capacity": 80
+      }
     }
   },
   "1205-QA-C1-0": {
@@ -5200,7 +5724,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T16:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1205-QA-C1-1": {
@@ -5220,7 +5748,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 1F",
       "議程場地-en": "C-Hub - 1F",
       "議程開始時間": "2020-12-05T17:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 30,
+        "capacity": 100
+      }
     }
   },
   "1205-QA-C3-0": {
@@ -5240,7 +5772,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T11:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "1205-QA-C3-1": {
@@ -5260,7 +5796,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T16:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   },
   "1205-QA-C3-2": {
@@ -5280,7 +5820,11 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T17:10",
-      "議程長度": 20
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
     }
   }
 }
