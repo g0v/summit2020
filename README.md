@@ -3,7 +3,7 @@
 ## 技術需求
 
 1. node 12+
-1. npx 
+1. npx
 1. [Nuxt.js](https://nuxtjs.org)
 
 ### 多語支援
