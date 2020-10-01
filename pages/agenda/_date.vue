@@ -1,6 +1,6 @@
 <template lang="pug">
   .agenda
-    .agenda__menu.justify-center.dn.flex-l
+    .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
           v-for="date in dateList"
@@ -128,13 +128,13 @@ export default {
     padding: 2.5rem 0;
     background-position: left -6rem top 15rem, right -4.5rem top;
   }
-  @include large-screen {
+  @include not-small-screen {
     padding: 5rem 0;
     background-position: left top 15rem, right top;
   }
 
   &__content {
-    @include large-screen {
+    @include not-small-screen {
       margin-top: 5.25rem;
     }
   }
@@ -156,7 +156,7 @@ export default {
     position: sticky;
     bottom: 0;
     background: white;
-    @include large-screen {
+    @include not-small-screen {
       display: none;
     }
   }

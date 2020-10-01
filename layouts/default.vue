@@ -74,7 +74,7 @@ export default {
 .content {
   min-width: 100%;
   max-width: 100vw;
-  @include large-screen {
+  @include not-small-screen {
     max-width: none;
   }
 }
@@ -107,7 +107,7 @@ export default {
   z-index: 1;
   // this corrupt position fixed XD
   // https://stackoverflow.com/questions/6794000/fixed-position-but-relative-to-container
-  will-change: transform;
+  // will-change: transform;
   background-color: #FFF; /* A background-color is required */
 }
 
