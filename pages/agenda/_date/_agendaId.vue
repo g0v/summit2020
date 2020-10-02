@@ -15,13 +15,19 @@
         .detail__subheader.mt3.pa3.bb.relative
           .fw5 {{fromTime}} - {{toTime}}
           .f6(v-if="room") {{room}}
-        h1.fw5.f3 {{title}}
+        .detail__header.flex
+          h1.fw5.f3 {{title}}
+          ext-link.f3.dib.ph3(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
+            i.fa.fa-comments
         .gray {{superCategory}}
         .mt4.flex
           .detail__tag(v-if="format") {{format}}
           .detail__tag(v-if="lang") {{$t(lang)}}
         h2.ttc {{$t('abstract')}}
         rich-multi-line.gray(:text="agenda.summary")
+        .gray.mv3(v-if="relatedInfo")
+          span.mr1 {{$t('relatedInfo')}}
+          ext-link(:to="relatedInfo")
         .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
           span.mr2 {{$t('keyword')}}
           | {{agenda.three_keywords}}
@@ -31,8 +37,13 @@
             :key="index"
           )
             img.speaker__avatar(
-              :src="speaker.avatar_url"
+              v-if="speakerAvatar(speaker)"
+              :src="speakerAvatar(speaker)"
               :alt="speaker.display_name"
+            )
+            .speaker__avatar.speaker__avatar--empty(
+              v-else
+              :title="speaker.display_name"
             )
             .speaker__title.mv3
               .fw5
@@ -45,7 +56,7 @@
             )
             .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isSpeakerBioTl(speaker)}")
               | {{$t('moreInfo')}}
-              ext-link.ml2(:to="speaker.info_url")
+              ext-link.ml1(:to="speaker.info_url")
 </template>
 <i18n lang="yaml">
 en:
@@ -58,6 +69,8 @@ en:
   華語: Mandarin
   English: English
   moreInfo: "More info:"
+  relatedInfo: "Related info:"
+  comment: "Join discussion"
 
 zh:
   '2020-12-03': 2020/12/03（四）
@@ -69,17 +82,22 @@ zh:
   English: English
   華語: 華語
   moreInfo: 更多資訊：
+  relatedInfo: 相關資訊：
+  comment: "參與討論"
 </i18n>
 <script>
 import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
 import agendaMixin from '~/utils/AgendaMixin'
+import commentMap from '~/assets/agendas/commentCache.json'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
 const SUPER_LONG_BIO = 300
 const SUPER_SHORT_BIO = 20
+
+const COMMENT_BASE = 'https://discuss.summit2020.g0v.tw/topic/'
 
 export default {
   components: {
@@ -97,6 +115,9 @@ export default {
     },
     isModalVisible () {
       return !!this.id && 'title' in this.agenda
+    },
+    relatedInfo () {
+      return this.agenda.related_url || ''
     },
     startDate () {
       if (this.isModalVisible) {
@@ -126,11 +147,14 @@ export default {
         return false
       }
       return speakers[0].bio.length > SUPER_LONG_BIO
-    }
-  },
-  watch: {
-    isModalVisible (isVisible) {
-      console.warn('m', isVisible, document.querySelector('body'))
+    },
+    commentUrl () {
+      const comment = commentMap[this.id]
+      console.warn('url', commentMap, this.id, comment)
+      if (comment) {
+        return `${COMMENT_BASE}${comment.id}`
+      }
+      return ''
     }
   },
   methods: {
@@ -151,6 +175,9 @@ export default {
     },
     isSpeakerBioTl (speaker) {
       return this.isMonoSpeaker || speaker.bio.length > SUPER_SHORT_BIO
+    },
+    speakerAvatar (speaker) {
+      return (speaker.avatar_url || '').trim()
     }
   },
   head: friendlyHeader({
@@ -221,17 +248,24 @@ export default {
     left: -1rem;
     width: calc(100% + 1rem);
   }
-  h1 {
-    padding-top: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 0.25rem;
+  &__header {
     color: $blue-1;
     position: sticky;
-    background: rgba(255, 255, 255, 0.9);
     top: -2.5rem;
     @include not-small-screen {
       top: -4.5rem;
     }
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+
+    a {
+      color: $blue-1;
+    }
+  }
+  h1 {
+    margin: 0;
   }
   h2 {
     margin-top: 4rem;
@@ -280,6 +314,11 @@ export default {
     height: 7.5rem;
     object-fit: cover;
     border-radius: 100%;
+    &--empty {
+      background: rgba(103, 205, 221, 0.8);
+      background: linear-gradient(164deg, rgba(103,205,221,0.9) 0%,rgba(103,205,221,0.25) 100%);
+      display: inline-block;
+    }
   }
   &__title {
     color: #303030;

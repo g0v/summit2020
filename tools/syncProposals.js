@@ -30,7 +30,7 @@ if (process.env.SENTRY_DSN) {
 
 dayjs.extend(utc)
 
-const EXPORT_PATH = path.join(__dirname, '../assets/proposals.json')
+const EXPORT_PATH = path.join(__dirname, '../assets/agendas/proposals.json')
 const SEC_PER_MIN = 60
 const ALLOW_MERGE_SINCE = dayjs('2020-09-06T12:00:00+08:00')
 
