@@ -63,7 +63,7 @@ export default {
 
   // proposal
   'proposal/map': extractLanguageFromProposals({
-    proposals: require('~/assets/proposals.json'),
+    proposals: require('~/assets/agendas/proposals.json'),
     isEn: false
   }),
 
