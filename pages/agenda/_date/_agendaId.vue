@@ -37,8 +37,13 @@
             :key="index"
           )
             img.speaker__avatar(
-              :src="speaker.avatar_url"
+              v-if="speakerAvatar(speaker)"
+              :src="speakerAvatar(speaker)"
               :alt="speaker.display_name"
+            )
+            .speaker__avatar.speaker__avatar--empty(
+              v-else
+              :title="speaker.display_name"
             )
             .speaker__title.mv3
               .fw5
@@ -170,6 +175,9 @@ export default {
     },
     isSpeakerBioTl (speaker) {
       return this.isMonoSpeaker || speaker.bio.length > SUPER_SHORT_BIO
+    },
+    speakerAvatar (speaker) {
+      return (speaker.avatar_url || '').trim()
     }
   },
   head: friendlyHeader({
@@ -306,6 +314,11 @@ export default {
     height: 7.5rem;
     object-fit: cover;
     border-radius: 100%;
+    &--empty {
+      background: rgba(103, 205, 221, 0.8);
+      background: linear-gradient(164deg, rgba(103,205,221,0.9) 0%,rgba(103,205,221,0.25) 100%);
+      display: inline-block;
+    }
   }
   &__title {
     color: #303030;
