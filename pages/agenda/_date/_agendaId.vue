@@ -316,7 +316,7 @@ export default {
     border-radius: 100%;
     &--empty {
       background: rgba(103, 205, 221, 0.8);
-      background: linear-gradient(164deg, rgba(103,205,221,0.9) 0%,rgba(103,205,221,0.25) 100%);
+      background: linear-gradient(164deg, rgba(112, 223, 240, 0.6) 0%,rgba(103,205,221,0.12) 100%);
       display: inline-block;
     }
   }

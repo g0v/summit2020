@@ -19,9 +19,11 @@
 en:
   lang: '華語'
   cfp: 'Get Latest Proposals'
+  registration: 'Registration'
 zh:
   lang: 'English'
   cfp: '看議程投稿'
+  registration: '立刻報名'
 </i18n>
 <script>
 import ExtLink from '~/components/ExtLink'
@@ -42,7 +44,8 @@ export default {
         { key: 'transport', url: '/transport' },
         // { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true },
         // { key: 'speakers', url: '/speakers' },
-        { key: 'agenda', url: '/agenda' }
+        { key: 'agenda', url: '/agenda' },
+        { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true }
         // { key: 'partners', url: '/partners' },
         // { key: 'transport', url: '/transport' },
         // { key: 'live', url: 'https://some.live.url.com', isExt: true },
