@@ -5836,5 +5836,29 @@
         "capacity": 50
       }
     }
+  },
+  "5efc998dba206b030d66a50c": {
+    "id": "5efc998dba206b030d66a50c",
+    "isPseudo": true,
+    "title": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
+    "title_en": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
+    "updatedAt": "2020-10-04T02:19:33.000Z",
+    "createdAt": "2020-10-04T02:19:33.000Z",
+    "timeSheet": {
+      "id": "5efc998dba206b030d66a50c",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
+      "最後更新時間": "2020-10-04T02:19:33.000Z",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
+      "議程場地-華語": "C-Hub 成大創意基地 - 3F",
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T15:50",
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
+    }
   }
 }
