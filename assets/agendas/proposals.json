@@ -3435,6 +3435,62 @@
       }
     }
   },
+  "5efc998dba206b030d66a50c": {
+    "id": "5efc998dba206b030d66a50c",
+    "title": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
+    "title_en": "",
+    "summary": "In the fall of 2019, we, Open Source Politics were requested by Paula Forteza (the French MEP reknown for its stands on open source and civic tech experiments) to help the Cedric Villani campaign for the Paris municipal election to provide a digital system that would the backbone of secure and transparent sortition process where regular citizens would candidate to make it into the candidate list in every district of Paris. The result is an epic adventure with many challenges leading up to this : https://candidater.cedricvillani.paris\n\nWe used the Decidim open source framework to verify citizens identity, gather their application and then organize a sortition with several rounds and many constraints (parity, position on the list, district base).\n\nIn the end we were able to do the whole process thanks to the energy and dedication of the campaign team and volunteers who tirelessly recruited candidate, and met them between sortition round to ensure of their identities. The stakes were quite high as Cedric Villani poled up to 20% in intended votes and the positions on the candidates list for the randomly selected citizen candidate were quite high (3rd place in some cases, which meant great possibilities to be elected).\n\nWe had the chance to know in person the randomly selected candidate and met incredible individuals which input in the campaign brought so much freshness. \n\nThe experience might have been the first of its kind and really brought disruption to political campaign when most commonly it's can of worms.",
+    "summary_en": "",
+    "oral_language": "English",
+    "oral_languate_other": "",
+    "format": "演講 （20 分鐘）Talk (20 min)",
+    "topic": "「沒有人」的島 Nobody’s island",
+    "three_keywords": "sortition, municipal election",
+    "cover_image": "https://i.imgur.com/wmjd9C6h.jpg",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "related_url": "https://candidater.cedricvillani.paris",
+    "speakers": [
+      {
+        "display_name": "Virgile Deville",
+        "organization": "Open Source Politics",
+        "avatar_url": "https://i.imgur.com/Gi4l0yeh.jpg",
+        "city": "Paris",
+        "info_url": "https://virgile-dev.github.io",
+        "bio": "I am a Civic Tech Entrepreneur, Blockchain enthusiast, Product Manager, Conference Speaker & Open Source Community Builder. I co-founded Open Source Politics and Code for France.",
+        "bio_en": "I am a Civic Tech Entrepreneur, Blockchain enthusiast, Product Manager, Conference Speaker & Open Source Community Builder. I co-founded Open Source Politics and Code for France."
+      },
+      {
+        "display_name": "Eloïse Gabadou",
+        "organization": "Open Source Politics",
+        "avatar_url": "https://i.imgur.com/AHE3eY6h.jpg",
+        "city": "Paris",
+        "info_url": "https://twitter.com/eloise_gabadou",
+        "bio": "After a degree in political science and economics at McGill University and University College London (UCL), Eloïse specializes in the impact technology sector through her experience at Liberté Living-lab. After an experience as a communications officer in this third place dedicated to civic and social technology, she focuses on open data and SAAS solutions applied to democracy, government transparency and citizen engagement. Today, it is within Open Source Politics and with the free software Decidim that Eloïse works as a consultant in digital democracy for institutions, associations and social enterprises.",
+        "bio_en": ""
+      }
+    ],
+    "verified": true,
+    "createdAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "timeSheet": {
+      "id": "5efc998dba206b030d66a50c",
+      "議程日期": "2020-12-05",
+      "議程預設標題-華語": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
+      "最後更新時間": "2020-10-04T02:19:33.000Z",
+      "分類主題-華語": "沒有人的網羅",
+      "分類主題-en": "Nobody is everywhere",
+      "議程場地-華語": "C-Hub 成大創意基地 - 3F",
+      "議程場地-en": "C-Hub - 3F",
+      "議程開始時間": "2020-12-05T15:50",
+      "議程長度": 20,
+      "locationMeta": {
+        "order": 40,
+        "capacity": 50
+      }
+    }
+  },
   "5efcd945ba206b030d66a50e": {
     "id": "5efcd945ba206b030d66a50e",
     "title": "Big issues, small data: How open-source data science can help social organizations tackle big problems ",
@@ -5830,30 +5886,6 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "議程開始時間": "2020-12-05T17:10",
-      "議程長度": 20,
-      "locationMeta": {
-        "order": 40,
-        "capacity": 50
-      }
-    }
-  },
-  "5efc998dba206b030d66a50c": {
-    "id": "5efc998dba206b030d66a50c",
-    "isPseudo": true,
-    "title": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
-    "title_en": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
-    "updatedAt": "2020-10-04T02:19:33.000Z",
-    "createdAt": "2020-10-04T02:19:33.000Z",
-    "timeSheet": {
-      "id": "5efc998dba206b030d66a50c",
-      "議程日期": "2020-12-05",
-      "議程預設標題-華語": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
-      "最後更新時間": "2020-10-04T02:19:33.000Z",
-      "分類主題-華語": "沒有人的網羅",
-      "分類主題-en": "Nobody is everywhere",
-      "議程場地-華語": "C-Hub 成大創意基地 - 3F",
-      "議程場地-en": "C-Hub - 3F",
-      "議程開始時間": "2020-12-05T15:50",
       "議程長度": 20,
       "locationMeta": {
         "order": 40,
