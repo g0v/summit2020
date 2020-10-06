@@ -67,7 +67,7 @@ export default {
       const allProposals = this.$t('proposal/map')
       const agendaToday = allProposals
         .filter(proposal => proposal.timeSheet.議程日期 === this.targetDate)
-        .sort(proposal => proposal.timeSheet.議程開始時間)
+        .sort((l, r) => l.timeSheet.議程開始時間.localeCompare(r.timeSheet.議程開始時間))
 
       const agendaPerRoom = agendaToday.reduce((perRoom, agenda) => {
         const room = agenda.timeSheet.議程場地

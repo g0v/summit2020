@@ -8,6 +8,12 @@
       :style="agendaStyle(agenda)"
     )
       agenda-card(:agenda="agenda")
+    .dailyagenda__item.dn.db-l(
+      v-for="agenda in shadowRoom.agendaList"
+      :key="agenda.id"
+      :style="agendaStyle(agenda)"
+    )
+      agenda-card(:agenda="agenda")
     template(v-for="room in regularRooms")
       .dailyagenda__header.dn.db-ns.mb2(:key="room.name")
         room-card(:name="room.name")
@@ -51,10 +57,17 @@ export default {
   computed: {
     regularRooms () {
       return this.agendaPerRoom
-        .filter(room => room.name !== 'ALL')
+        .filter(room => !room.name.startsWith('ALL'))
         .map((perRoom, index) => {
           return this.decorateLayout(perRoom, index)
         })
+    },
+    shadowRoom () {
+      const room = this.agendaPerRoom.find(room => room.name === 'ALL-SHADOW')
+      if (room) {
+        return this.decorateLayout(room, 1, this.regularRooms.length - 1)
+      }
+      return {}
     },
     crossRoom () {
       const room = this.agendaPerRoom.find(room => room.name === 'ALL')
@@ -64,7 +77,7 @@ export default {
       return {}
     },
     columnNumber () {
-      return this.agendaPerRoom.filter(room => room.name !== 'ALL').length
+      return this.regularRooms.length
     },
     gridStyle () {
       const gutter = `minmax(${GUTTER_WIDTH}rem, 1fr)`
