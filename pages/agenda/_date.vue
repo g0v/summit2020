@@ -9,7 +9,7 @@
           )
           button.bn.bg-transparent.flex.items-center
             img(v-if="!curQuery" src="~/assets/icons/search.svg")
-            i.fa.fa-times(v-else)
+            img(v-else src="~/assets/icons/close.svg")
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
@@ -262,6 +262,9 @@ $toolbar-width: 30rem;
     border-color: $gray;
     input {
       color: #6e6e6e;
+    }
+    img {
+      width: 1.125rem;
     }
   }
 }
