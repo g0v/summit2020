@@ -1,14 +1,15 @@
 <template lang="pug">
   .agenda
-    .agenda__toolbar.flex.center.mb5
-      .agenda__search.br-pill.pv1.ph3.ba.flex-auto.flex.items-center
-        input.flex-auto.bn.lh-solid(
-          v-model.trim="curQuery"
-          :placeholder="$t('search')"
-        )
-        button.bn.bg-transparent.flex.items-center
-          img(v-if="!curQuery" src="~/assets/icons/search.svg")
-          i.fa.fa-times(v-else)
+    .agenda__toolbar-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-1
+      .agenda__toolbar
+        .agenda__search.br-pill.pv1.ph3.ba.flex-auto.flex.items-center
+          input.flex-auto.bn.lh-solid(
+            v-model.trim="curQuery"
+            :placeholder="$t('search')"
+          )
+          button.bn.bg-transparent.flex.items-center
+            img(v-if="!curQuery" src="~/assets/icons/search.svg")
+            i.fa.fa-times(v-else)
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
@@ -192,7 +193,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 $gray: #c2c0c0;
-$toolbar-width: 34rem;
+$toolbar-width: 30rem;
 
 .agenda {
   padding: 1rem 0;
@@ -244,7 +245,16 @@ $toolbar-width: 34rem;
     }
   }
 
+  &__toolbar-wrapper {
+    width: 100%;
+    position: sticky;
+    max-width: 100vw;
+    top: 0;
+    left: 0;
+  }
+
   &__toolbar {
+    width: 100%;
     max-width: $toolbar-width;
   }
 
