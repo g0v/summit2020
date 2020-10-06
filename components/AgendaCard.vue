@@ -1,21 +1,21 @@
 <template lang="pug">
-  nuxt-link.db.agendacard.br2.h-100(
+  nuxt-link.db.agendacard.h-100(
     :to="detailUrl"
-    :class="{'agendacard--break': isBreak}"
   )
-    .agendacard__wrapper
-      .agendacard__time.flex.justify-between.mb3.lh-solid
-        .f7 {{fromTime}} - {{toTime}}
-        .f7 {{duration}}{{$t('minuteUnit')}}
-      .mb2.mt3.f6.fw5(v-if="hasPreHeaderToShow")
-        .agendacard__topic(v-if="topic") {{topic}}
-        .agendacard__category(v-if="category") {{category}}
-      h2.agendacard__title.f5.mt3.fw5 {{title}}
-      .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
-      .flex.flex-wrap
-        .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
-        .agendacard__tag.mt3-ns(v-if="format") {{format}}
-        .agendacard__tag(v-if="lang") {{$t(lang)}}
+    .agendacard__wrapper.br2.h-100(:class="{'agendacard__wrapper--break': isBreak}")
+      .agendacard__content
+        .agendacard__time.flex.justify-between.mb3.lh-solid
+          .f7 {{fromTime}} - {{toTime}}
+          .f7 {{duration}}{{$t('minuteUnit')}}
+        .mb2.mt3.f6.fw5(v-if="hasPreHeaderToShow")
+          .agendacard__topic(v-if="topic") {{topic}}
+          .agendacard__category(v-if="category") {{category}}
+        h2.agendacard__title.f5.mt3.fw5 {{title}}
+        .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
+        .flex.flex-wrap
+          .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
+          .agendacard__tag.mt3-ns(v-if="format") {{format}}
+          .agendacard__tag(v-if="lang") {{$t(lang)}}
 </template>
 <i18n lang="yaml">
 en:
@@ -57,16 +57,21 @@ export default {
 </script>
 <style lang="scss" scoped>
 .agendacard {
-  background: #f8f8f8;
-  padding: 1rem 0.75rem;
-  &--break {
-    background: #e7eff0;
-    cursor: default;
-    .agendacard__title {
-      color: #555;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+
+  &__wrapper {
+    background: #f8f8f8;
+    padding: 1rem 0.75rem;
+    &--break {
+      background: #e7eff0;
+      cursor: default;
+      .agendacard__title {
+        color: #555;
+      }
     }
   }
-  &__wrapper {
+  &__content {
     position: sticky;
     top: 0.5rem;
     left: 1.25rem;

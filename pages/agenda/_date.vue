@@ -1,5 +1,14 @@
 <template lang="pug">
   .agenda
+    .agenda__toolbar.flex.center.mb5
+      .agenda__search.br-pill.pv1.ph3.ba.flex-auto.flex.items-center
+        input.flex-auto.bn.lh-solid(
+          v-model.trim="curQuery"
+          :placeholder="$t('search')"
+        )
+        button.bn.bg-transparent.flex.items-center
+          img(v-if="!curQuery" src="~/assets/icons/search.svg")
+          i.fa.fa-times(v-else)
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
@@ -8,9 +17,14 @@
           :to="localePath(`/agenda/${date.date}`)"
         )
           .datemenu__title.b Day{{date.index}}
+            span.ml2.fw3(v-if="curQuery && agendaCountPerDay[date.date]")
+              | ({{agendaCountPerDay[date.date]}})
           .datemenu__date.fw5.bt {{$t(date.date)}}
     .agenda__content
-      daily-agenda(:agenda-per-room="agendaPerRoom")
+      .agenda__noresult.br2.center.tc(v-if="isTodayEmpty")
+        | {{$t('no-result')}}&nbsp;
+        button.bn.bg-transparent.underline.dim(@click="resetSearch") {{$t('clear-search')}}
+      daily-agenda(v-else :agenda-per-room="agendaPerRoom")
     .agenda__mobilemenu.mobilemenu.mt3(data-slideout-ignore)
       div
       nuxt-link.mobilemenu__item.tc.lh-title(
@@ -19,6 +33,8 @@
           :to="localePath(`/agenda/${date.date}`)"
         )
           .mobilemenu__title.b.bt.bw1.pv2.f4 Day{{date.index}}
+            span.ml2.fw3(v-if="curQuery && agendaCountPerDay[date.date]")
+              | ({{agendaCountPerDay[date.date]}})
           .mobilemenu__date.fw5.pb2 {{$t(date.date)}}
       div
     nuxt
@@ -29,14 +45,24 @@ en:
   '2020-12-04': Fri, Dec 4
   '2020-12-05': Sat, Dec 5
   '2020-12-06': Sun, Dec 6
+  search: Search agenda
+  no-result: No result found. Please try another one or
+  clear-search: clear search text
 zh:
   '2020-12-03': 12/03（四）
   '2020-12-04': 12/04（五）
   '2020-12-05': 12/05（六）
   '2020-12-06': 12/06（日）
+  search: 搜尋議程
+  no-result: 查無相符議程，請試試其他文字，或
+  clear-search: 清空搜尋條件
 </i18n>
 <script>
+import { mapMutations } from 'vuex'
+
 import DailyAgenda from '~/components/DailyAgenda'
+import { MUTATIONS, STATES } from '~/store'
+import { isAgendaMatch } from '~/utils/searchUtils'
 
 const DEFAULT_DATE = '2020-12-04'
 const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
@@ -44,6 +70,11 @@ const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
 export default {
   components: {
     DailyAgenda
+  },
+  data () {
+    return {
+      curQuery: this.$store.state[STATES.AGENDA_QUERY]
+    }
   },
   computed: {
     isDateValid () {
@@ -63,23 +94,53 @@ export default {
       }
       return DEFAULT_DATE
     },
-    agendaPerRoom () {
+    matchedAgenda () {
       const allProposals = this.$t('proposal/map')
-      const agendaToday = allProposals
-        .filter(proposal => proposal.timeSheet.議程日期 === this.targetDate)
+      return allProposals.filter((proposal) => {
+        return isAgendaMatch(proposal, this.curQuery)
+      })
+    },
+    agendaCountPerDay () {
+      const stats = {}
+      this.matchedAgenda.forEach((agenda) => {
+        const day = agenda.timeSheet.議程日期
+        if (!stats[day]) {
+          stats[day] = 0
+        }
+        stats[day] += 1
+      })
+      return stats
+    },
+    roomsToday () {
+      const rooms = {}
+      const allProposals = this.$t('proposal/map')
+      allProposals.forEach((proposal) => {
+        const time = proposal.timeSheet
+        if (time.議程日期 === this.targetDate) {
+          rooms[time.議程場地] = time.locationMeta
+        }
+      })
+      return rooms
+    },
+    agendaPerRoom () {
+      const agendaToday = this.matchedAgenda
+        .filter(agenda => agenda.timeSheet.議程日期 === this.targetDate)
         .sort((l, r) => l.timeSheet.議程開始時間.localeCompare(r.timeSheet.議程開始時間))
 
-      const agendaPerRoom = agendaToday.reduce((perRoom, agenda) => {
-        const room = agenda.timeSheet.議程場地
-        if (!(room in perRoom)) {
-          perRoom[room] = {
-            list: [],
-            meta: agenda.timeSheet.locationMeta
-          }
+      const agendaPerRoom = {}
+      Object.keys(this.roomsToday).forEach((name) => {
+        agendaPerRoom[name] = {
+          list: [],
+          meta: this.roomsToday[name]
         }
-        perRoom[room].list.push(agenda)
-        return perRoom
-      }, {})
+      })
+
+      agendaToday.forEach((agenda) => {
+        const room = agenda.timeSheet.議程場地
+        if (agendaPerRoom[room]) {
+          agendaPerRoom[room].list.push(agenda)
+        }
+      })
 
       return Object.keys(agendaPerRoom)
         .map((room) => {
@@ -92,17 +153,26 @@ export default {
         .sort((l, r) => {
           return l.meta.order - r.meta.order
         })
+    },
+    isTodayEmpty () {
+      return !this.agendaCountPerDay[this.targetDate]
     }
   },
   watch: {
     isDateValid (newVal) {
       this.checkDate()
+    },
+    curQuery (newVal) {
+      this.setQuery(newVal)
     }
   },
   mounted () {
     this.checkDate()
   },
   methods: {
+    ...mapMutations({
+      setQuery: MUTATIONS.SET_AGENDA_QUERY
+    }),
     checkDate () {
       if (!this.isDateValid) {
         this.$router.replace({
@@ -113,11 +183,17 @@ export default {
           }
         })
       }
+    },
+    resetSearch () {
+      this.curQuery = ''
     }
   }
 }
 </script>
 <style lang="scss" scoped>
+$gray: #c2c0c0;
+$toolbar-width: 34rem;
+
 .agenda {
   padding: 1rem 0;
   background-image: url('../../assets/images/agenda-bg-left.svg'),
@@ -137,6 +213,13 @@ export default {
     @include not-small-screen {
       margin-top: 5.25rem;
     }
+  }
+
+  &__noresult {
+    background: #e7eff0;
+    color: #555;
+    max-width: $toolbar-width;
+    padding: 1rem 0.75rem;
   }
 
   &__menu {
@@ -160,6 +243,17 @@ export default {
       display: none;
     }
   }
+
+  &__toolbar {
+    max-width: $toolbar-width;
+  }
+
+  &__search {
+    border-color: $gray;
+    input {
+      color: #6e6e6e;
+    }
+  }
 }
 
 .datemenu {
@@ -173,7 +267,7 @@ export default {
     color: #6e6e6e;
   }
   &__date {
-    color: #c2c0c0;
+    color: $gray;
     min-width: 10.5rem;
     padding: 0.5rem 1.375rem 0;
     margin-top: 0.875rem;
@@ -193,7 +287,7 @@ export default {
     border-color: transparent;
   }
   &__date {
-    color: #c2c0c0;
+    color: $gray;
   }
 }
 </style>
