@@ -7,7 +7,7 @@ export default {
     },
     room () {
       const room = this.time.議程場地
-      if (!room || room === 'ALL') {
+      if (!room || room.startsWith('ALL')) {
         return ''
       }
       return room
