@@ -7,7 +7,7 @@
             v-model.trim="curQuery"
             :placeholder="$t('search')"
           )
-          button.bn.bg-transparent.flex.items-center
+          button.bn.bg-transparent.flex.items-center(@click="resetSearch")
             img(v-if="!curQuery" src="~/assets/icons/search.svg")
             img(v-else src="~/assets/icons/close.svg")
     .agenda__menu.justify-center.dn.flex-ns
