@@ -8,12 +8,12 @@
           .f7 {{fromTime}} - {{toTime}}
           .f7 {{duration}}{{$t('minuteUnit')}}
         .mb2.mt3.f6.fw5(v-if="hasPreHeaderToShow")
-          .agendacard__topic(v-if="topic") {{topic}}
           .agendacard__category(v-if="category") {{category}}
         h2.agendacard__title.f5.mt3.fw5 {{title}}
         .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
         .flex.flex-wrap
           .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
+          .agendacard__tag(v-if="topic") {{topic}}
           .agendacard__tag.mt3-ns(v-if="format") {{format}}
           .agendacard__tag(v-if="lang") {{$t(lang)}}
 </template>
@@ -73,7 +73,7 @@ export default {
   }
   &__content {
     position: sticky;
-    top: 0.5rem;
+    top: 3.5rem;
     left: 1.25rem;
     display: inline-block;
     width: 100%;

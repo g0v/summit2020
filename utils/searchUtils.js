@@ -9,7 +9,7 @@ export function isAgendaMatch (agenda, query = '') {
     return true
   }
   // brute force tokenization, cut EVERY CJK char, 0-gram XD
-  const queryTokens = query
+  const queryTokens = query.toLowerCase()
     .replace(cjkRegex, ' $1 ')
     // eslint-disable-next-line no-irregular-whitespace
     .replace(/[ 　]+/g, ' ')

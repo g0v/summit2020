@@ -19,8 +19,9 @@
           h1.fw5.f3 {{title}}
           ext-link.f3.dib.ph3(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
             i.fa.fa-comments
-        .gray {{superCategory}}
+        .gray(v-if="category") {{category}}
         .mt4.flex
+          .detail__tag(v-if="topic") {{topic}}
           .detail__tag(v-if="format") {{format}}
           .detail__tag(v-if="lang") {{$t(lang)}}
         h2.ttc {{$t('abstract')}}
@@ -130,16 +131,16 @@ export default {
       const dayN = startDate.date() - DAY_0_DATE
       return dayN > 0 ? dayN : 0
     },
-    superCategory () {
-      const cats = []
-      if (this.topic) {
-        cats.push(this.topic)
-      }
-      if (this.category) {
-        cats.push(this.category)
-      }
-      return cats.join(' / ')
-    },
+    // superCategory () {
+    //   const cats = []
+    //   if (this.topic) {
+    //     cats.push(this.topic)
+    //   }
+    //   if (this.category) {
+    //     cats.push(this.category)
+    //   }
+    //   return cats.join(' / ')
+    // },
     isMonoSpeaker () {
       // example: 1204-jothon-1
       const speakers = this.agenda.speakers || []
