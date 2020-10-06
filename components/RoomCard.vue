@@ -1,5 +1,5 @@
 <template lang="pug">
-  .roomcard.tc
+  .roomcard.tc.pb2.pr2
     .fw5.f4 {{building}}
     .fw3 {{room}}
 </template>

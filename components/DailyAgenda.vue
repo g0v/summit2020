@@ -155,8 +155,9 @@ export default {
     display: grid;
   }
   align-items: stretch;
-  column-gap: 0.5rem;
-  row-gap: 0.5rem;
+  // don't use gap to get shorter search result
+  // column-gap: 0.5rem;
+  // row-gap: 0.5rem;
   width: auto;
 
   &__header {
