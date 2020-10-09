@@ -9,10 +9,14 @@
         img(v-if="!curQuery" src="~/assets/icons/search.svg")
         img(v-else src="~/assets/icons/close.svg")
     .atooltip__filter.filter.ml4
-      b-dropdown(aria-role="list" multiple v-model="filters")
+      b-dropdown(
+        aria-role="list"
+        multiple v-model="filterOptions"
+      )
         button.bn.bg-transparent.flex.items-center.pv2(slot="trigger")
           img.mr2(src="~/assets/icons/filter.svg")
           span.dn.di-l.pl1 {{$t('filter')}}
+            span.ml2(v-show="totalFilterCount") ({{totalFilterCount}})
         b-dropdown-item.filter__reset(
           :custom="true"
           @click.native="resetFilter"
@@ -81,13 +85,19 @@ export default {
     query: {
       type: String,
       default: ''
+    },
+    filter: {
+      type: Object,
+      default () {
+        return {}
+      }
     }
   },
   data () {
     return {
       curQuery: '',
       filterTypes: ['format', 'location', 'island'],
-      filters: [],
+      filterOptions: [],
       isTypesOpened: {
         format: true,
         location: false,
@@ -108,7 +118,7 @@ export default {
     },
     filterTypesCount () {
       const counts = {}
-      this.filters.forEach((value) => {
+      this.filterOptions.forEach((value) => {
         const type = value.split(':')[0]
         if (!counts[type]) {
           counts[type] = 0
@@ -117,8 +127,12 @@ export default {
       })
       return counts
     },
+    totalFilterCount () {
+      return Object.values(this.filterTypesCount)
+        .reduce((sum, count) => sum + count, 0)
+    },
     resetItemClass () {
-      if (this.filters.length) {
+      if (this.filterOptions.length) {
         return ['o-100', 'pointer', 'dim']
       }
       return ['o-50']
@@ -132,6 +146,19 @@ export default {
       if (newVal !== this.curQuery) {
         this.curQuery = newVal
       }
+    },
+    filterOptions (newVal) {
+      const newFilter = newVal.reduce((filter, value) => {
+        const tokens = value.split(':')
+        const type = tokens[0]
+        const typeValue = tokens.slice(1).join(':')
+        if (!filter[type]) {
+          filter[type] = []
+        }
+        filter[type].push(typeValue)
+        return filter
+      }, {})
+      this.$emit('update:filter', newFilter)
     }
   },
   methods: {
@@ -139,7 +166,7 @@ export default {
       this.curQuery = ''
     },
     resetFilter () {
-      this.filters = []
+      this.filterOptions = []
     },
     toggleTypeFilter (type) {
       this.isTypesOpened[type] = !this.isTypesOpened[type]
@@ -214,6 +241,10 @@ export default {
     .dropdown-menu {
       width: 16rem;
       max-width: calc(100vw - 6rem);
+      @include not-small-screen {
+        max-height: calc(100vh - 20rem);
+        overflow-y: auto;
+      }
     }
     .dropdown-content {
       padding: 0;

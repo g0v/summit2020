@@ -4,7 +4,23 @@ import _ from 'lodash'
 const CJK_RANGE = '\u4E00-\u9FCC'
 const cjkRegex = new RegExp(`([${CJK_RANGE}])`, 'g')
 
-export function isAgendaMatch (agenda, query = '') {
+const FILTER_MAP = {
+  format: 'format',
+  location: 'timeSheet.議程場地',
+  island: 'topic'
+}
+
+function isAgendaMatchFilter (agenda, filter) {
+  return Object.keys(filter).every((type) => {
+    // agenda should match one value in each filter type
+    return filter[type].some((filterValue) => {
+      const fieldValue = _.get(agenda, FILTER_MAP[type])
+      return filterValue === fieldValue
+    })
+  })
+}
+
+function isAgendaMatchQuery (agenda, query) {
   if (query.trim() === '') {
     return true
   }
@@ -40,4 +56,9 @@ export function isAgendaMatch (agenda, query = '') {
   })
 
   return isMatch
+}
+
+export function isAgendaMatch (agenda, query = '', filter = {}) {
+  return isAgendaMatchFilter(agenda, filter) &&
+    isAgendaMatchQuery(agenda, query)
 }

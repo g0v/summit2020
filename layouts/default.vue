@@ -121,4 +121,7 @@ export default {
   display: block;
 }
 
+html {
+  overflow-x: auto;
+}
 </style>

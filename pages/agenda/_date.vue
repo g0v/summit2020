@@ -1,7 +1,7 @@
 <template lang="pug">
   .agenda
     .agenda__tooltip-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-1
-      agenda-tooltip(:query.sync="query")
+      agenda-tooltip(:query.sync="query" :filter.sync="filter")
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
@@ -10,7 +10,7 @@
           :to="localePath(`/agenda/${date.date}`)"
         )
           .datemenu__title.b Day{{date.index}}
-            span.ml2.fw3(v-if="query && agendaCountPerDay[date.date]")
+            span.ml2.fw3(v-if="isUnderSearch && agendaCountPerDay[date.date]")
               | ({{agendaCountPerDay[date.date]}})
           .datemenu__date.fw5.bt {{$t(date.date)}}
     .agenda__content
@@ -63,7 +63,8 @@ export default {
   },
   data () {
     return {
-      query: ''
+      query: '',
+      filter: {}
     }
   },
   computed: {
@@ -87,7 +88,7 @@ export default {
     matchedAgenda () {
       const allProposals = this.$t('proposal/map')
       return allProposals.filter((proposal) => {
-        return isAgendaMatch(proposal, this.query)
+        return isAgendaMatch(proposal, this.query, this.filter)
       })
     },
     agendaCountPerDay () {
@@ -146,6 +147,9 @@ export default {
     },
     isTodayEmpty () {
       return !this.agendaCountPerDay[this.targetDate]
+    },
+    isUnderSearch () {
+      return !!this.query || Object.keys(this.filter).length > 0
     }
   },
   watch: {
@@ -225,7 +229,7 @@ export default {
     }
   }
 
-  &__toolbar-wrapper {
+  &__tooltip-wrapper {
     width: 100%;
     position: sticky;
     max-width: 100vw;
