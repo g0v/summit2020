@@ -102,12 +102,16 @@ $islandHeight: 142px;
   justify-content: center;
   > .point {
     > .label {
+      color: $gray;
+      font-weight: normal;
       > .date {
         font-size: 1.125rem;
       }
       > .title {
         font-size: 1.25rem;
         line-height: 1.375;
+        color: $gray;
+        font-weight: normal;
       }
       > .description {
         font-size: 0.875rem;

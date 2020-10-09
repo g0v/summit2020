@@ -34,5 +34,8 @@ export default {
 <style lang="scss" scoped>
 .summitmd {
   padding: 1rem;
+  /deep/ ul {
+    list-style: inherit;
+  }
 }
 </style>
