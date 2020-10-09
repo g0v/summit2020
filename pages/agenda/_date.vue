@@ -1,7 +1,7 @@
 <template lang="pug">
   .agenda
     .agenda__tooltip-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-1
-      agenda-tooltip(:query.sync="query" :filter.sync="filter")
+      agenda-tooltip
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
@@ -49,6 +49,9 @@ zh:
   clear-search: 清空搜尋條件
 </i18n>
 <script>
+import { mapMutations, mapState } from 'vuex'
+
+import { MUTATIONS, STATES } from '~/store'
 import DailyAgenda from '~/components/DailyAgenda'
 import AgendaTooltip from '~/components/AgendaTooltip'
 import { isAgendaMatch } from '~/utils/searchUtils'
@@ -61,13 +64,11 @@ export default {
     DailyAgenda,
     AgendaTooltip
   },
-  data () {
-    return {
-      query: '',
-      filter: {}
-    }
-  },
   computed: {
+    ...mapState({
+      query: STATES.AGENDA_QUERY,
+      filter: STATES.AGENDA_FILTER
+    }),
     isDateValid () {
       return VALID_DATE_LIST.includes(this.$route.params.date)
     },
@@ -161,6 +162,9 @@ export default {
     this.checkDate()
   },
   methods: {
+    ...mapMutations({
+      doResetSearch: MUTATIONS.RESET_AGENDA_SEARCH
+    }),
     checkDate () {
       if (!this.isDateValid) {
         this.$router.replace({
@@ -173,7 +177,7 @@ export default {
       }
     },
     resetSearch () {
-      this.query = ''
+      this.doResetSearch()
     }
   }
 }

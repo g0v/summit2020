@@ -5,7 +5,7 @@
         v-model.trim="curQuery"
         :placeholder="$t('search')"
       )
-      button.bn.bg-transparent.flex.items-center(@click="resetSearch")
+      button.bn.bg-transparent.flex.items-center(@click="resetQuery")
         img(v-if="!curQuery" src="~/assets/icons/search.svg")
         img(v-else src="~/assets/icons/close.svg")
     .atooltip__filter.filter.ml4
@@ -68,6 +68,8 @@ zh:
 </i18n>
 <script>
 import _ from 'lodash'
+import { mapMutations, mapState } from 'vuex'
+import { MUTATIONS, STATES } from '~/store'
 
 function uniqBy (agendas, field) {
   const valueMap = {}
@@ -81,23 +83,18 @@ function uniqBy (agendas, field) {
 }
 
 export default {
-  props: {
-    query: {
-      type: String,
-      default: ''
-    },
-    filter: {
-      type: Object,
-      default () {
-        return {}
-      }
-    }
-  },
   data () {
+    const filterOptions = []
+    const filter = this.$store.state[STATES.AGENDA_FILTER]
+    Object.keys(filter).forEach((type) => {
+      filter[type].forEach((filterValue) => {
+        filterOptions.push(`${type}:${filterValue}`)
+      })
+    })
     return {
-      curQuery: '',
+      curQuery: this.$store.state[STATES.AGENDA_QUERY],
       filterTypes: ['format', 'location', 'island'],
-      filterOptions: [],
+      filterOptions,
       isTypesOpened: {
         format: true,
         location: false,
@@ -106,6 +103,10 @@ export default {
     }
   },
   computed: {
+    ...mapState({
+      storeQuery: STATES.AGENDA_QUERY,
+      storeFilter: STATES.AGENDA_FILTER
+    }),
     agendas () {
       return this.$t('proposal/map')
     },
@@ -140,12 +141,7 @@ export default {
   },
   watch: {
     curQuery (newVal) {
-      this.$emit('update:query', newVal)
-    },
-    query (newVal) {
-      if (newVal !== this.curQuery) {
-        this.curQuery = newVal
-      }
+      this.setQuery(newVal)
     },
     filterOptions (newVal) {
       const newFilter = newVal.reduce((filter, value) => {
@@ -158,11 +154,21 @@ export default {
         filter[type].push(typeValue)
         return filter
       }, {})
-      this.$emit('update:filter', newFilter)
+      this.setFilter(newFilter)
+    },
+    storeQuery () {
+      this.resetSearchIfEmpty()
+    },
+    storeFilter () {
+      this.resetSearchIfEmpty()
     }
   },
   methods: {
-    resetSearch () {
+    ...mapMutations({
+      setQuery: MUTATIONS.SET_AGENDA_QUERY,
+      setFilter: MUTATIONS.SET_AGENDA_FILTER
+    }),
+    resetQuery () {
       this.curQuery = ''
     },
     resetFilter () {
@@ -170,6 +176,14 @@ export default {
     },
     toggleTypeFilter (type) {
       this.isTypesOpened[type] = !this.isTypesOpened[type]
+    },
+    resetSearchIfEmpty () {
+      const isStoreEmpty = !this.storeQuery && !Object.keys(this.storeFilter).length
+      const isMeEmpty = !this.curQuery && !this.filterOptions.length
+      if (isStoreEmpty && !isMeEmpty) {
+        this.curQuery = ''
+        this.filterOptions = []
+      }
     }
   }
 }
