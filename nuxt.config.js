@@ -45,6 +45,7 @@ export default {
   */
   css: [
     'tachyons/css/tachyons.css',
+    // 'buefy/dist/buefy.css'
     '@/assets/scss/main.scss'
   ],
   styleResources: {

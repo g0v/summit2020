@@ -1,6 +1,6 @@
 <template lang="pug">
-  .footer
-    .footer__content.h-100.flex.flex-column.justify-center.items-center
+  .summitfooter
+    .summitfooter__content.h-100.flex.flex-column.justify-center.items-center
       .license
         ext-link.white(to="https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW") CC by 4.0
         | &nbsp;g0v Summit 2020
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.footer {
+.summitfooter {
   height: 156px;
   color: white;
   background-color: $blue-2;

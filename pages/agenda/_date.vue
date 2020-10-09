@@ -1,15 +1,7 @@
 <template lang="pug">
   .agenda
-    .agenda__toolbar-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-1
-      .agenda__toolbar
-        .agenda__search.br-pill.pv1.ph3.ba.flex-auto.flex.items-center
-          input.flex-auto.bn.lh-solid(
-            v-model.trim="curQuery"
-            :placeholder="$t('search')"
-          )
-          button.bn.bg-transparent.flex.items-center(@click="resetSearch")
-            img(v-if="!curQuery" src="~/assets/icons/search.svg")
-            img(v-else src="~/assets/icons/close.svg")
+    .agenda__tooltip-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-1
+      agenda-tooltip(:query="query")
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
         nuxt-link.datemenu__item.tc.f4.mh2(
@@ -18,7 +10,7 @@
           :to="localePath(`/agenda/${date.date}`)"
         )
           .datemenu__title.b Day{{date.index}}
-            span.ml2.fw3(v-if="curQuery && agendaCountPerDay[date.date]")
+            span.ml2.fw3(v-if="query && agendaCountPerDay[date.date]")
               | ({{agendaCountPerDay[date.date]}})
           .datemenu__date.fw5.bt {{$t(date.date)}}
     .agenda__content
@@ -34,7 +26,7 @@
           :to="localePath(`/agenda/${date.date}`)"
         )
           .mobilemenu__title.b.bt.bw1.pv2.f4 Day{{date.index}}
-            span.ml2.fw3(v-if="curQuery && agendaCountPerDay[date.date]")
+            span.ml2.fw3(v-if="query && agendaCountPerDay[date.date]")
               | ({{agendaCountPerDay[date.date]}})
           .mobilemenu__date.fw5.pb2 {{$t(date.date)}}
       div
@@ -46,7 +38,6 @@ en:
   '2020-12-04': Fri, Dec 4
   '2020-12-05': Sat, Dec 5
   '2020-12-06': Sun, Dec 6
-  search: Search agenda
   no-result: No result found. Please try another one or
   clear-search: clear search text
 zh:
@@ -54,15 +45,12 @@ zh:
   '2020-12-04': 12/04（五）
   '2020-12-05': 12/05（六）
   '2020-12-06': 12/06（日）
-  search: 搜尋議程
   no-result: 查無相符議程，請試試其他文字，或
   clear-search: 清空搜尋條件
 </i18n>
 <script>
-import { mapMutations } from 'vuex'
-
 import DailyAgenda from '~/components/DailyAgenda'
-import { MUTATIONS, STATES } from '~/store'
+import AgendaTooltip from '~/components/AgendaTooltip'
 import { isAgendaMatch } from '~/utils/searchUtils'
 
 const DEFAULT_DATE = '2020-12-04'
@@ -70,11 +58,12 @@ const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
 
 export default {
   components: {
-    DailyAgenda
+    DailyAgenda,
+    AgendaTooltip
   },
   data () {
     return {
-      curQuery: this.$store.state[STATES.AGENDA_QUERY]
+      query: ''
     }
   },
   computed: {
@@ -98,7 +87,7 @@ export default {
     matchedAgenda () {
       const allProposals = this.$t('proposal/map')
       return allProposals.filter((proposal) => {
-        return isAgendaMatch(proposal, this.curQuery)
+        return isAgendaMatch(proposal, this.query)
       })
     },
     agendaCountPerDay () {
@@ -162,18 +151,12 @@ export default {
   watch: {
     isDateValid (newVal) {
       this.checkDate()
-    },
-    curQuery (newVal) {
-      this.setQuery(newVal)
     }
   },
   mounted () {
     this.checkDate()
   },
   methods: {
-    ...mapMutations({
-      setQuery: MUTATIONS.SET_AGENDA_QUERY
-    }),
     checkDate () {
       if (!this.isDateValid) {
         this.$router.replace({
@@ -186,15 +169,12 @@ export default {
       }
     },
     resetSearch () {
-      this.curQuery = ''
+      this.query = ''
     }
   }
 }
 </script>
 <style lang="scss" scoped>
-$gray: #c2c0c0;
-$toolbar-width: 30rem;
-
 .agenda {
   padding: 1rem 0;
   background-image: url('../../assets/images/agenda-bg-left.svg'),
@@ -219,7 +199,7 @@ $toolbar-width: 30rem;
   &__noresult {
     background: #e7eff0;
     color: #555;
-    max-width: $toolbar-width;
+    max-width: $tooltip-width;
     padding: 1rem 0.75rem;
   }
 
@@ -252,21 +232,6 @@ $toolbar-width: 30rem;
     top: 0;
     left: 0;
   }
-
-  &__toolbar {
-    width: 100%;
-    max-width: $toolbar-width;
-  }
-
-  &__search {
-    border-color: $gray;
-    input {
-      color: #6e6e6e;
-    }
-    img {
-      width: 1.125rem;
-    }
-  }
 }
 
 .datemenu {
@@ -280,7 +245,7 @@ $toolbar-width: 30rem;
     color: #6e6e6e;
   }
   &__date {
-    color: $gray;
+    color: $gray-2;
     min-width: 10.5rem;
     padding: 0.5rem 1.375rem 0;
     margin-top: 0.875rem;
@@ -300,7 +265,7 @@ $toolbar-width: 30rem;
     border-color: transparent;
   }
   &__date {
-    color: $gray;
+    color: $gray-2;
   }
 }
 </style>
