@@ -12,13 +12,15 @@
             .dib.ml1 {{$t(startDate)}}
           button.detail__close.bg-white.bn(@click="closeModal")
             img(src="~/assets/images/agenda/close.svg")
-        .detail__subheader.mt3.pa3.bb.relative
-          .fw5 {{fromTime}} - {{toTime}}
-          .f6(v-if="room") {{room}}
+        .detail__subheader.mt3.pa3.bb.relative.flex.justify-between.items-center
+          div
+            .fw5 {{fromTime}} - {{toTime}}
+            .f6(v-if="room") {{room}}
+          .detail__resource
+            ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
+              i.fa.fa-comments
         .detail__header.flex
-          h1.fw5.f3 {{title}}
-          ext-link.f3.dib.ph3(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
-            i.fa.fa-comments
+          h1.fw5.f4.f3-ns {{title}}
         .gray(v-if="category") {{category}}
         .mt4.flex
           .detail__tag(v-if="topic") {{topic}}
@@ -248,6 +250,10 @@ export default {
     color: #6e6e6e;
     left: -1rem;
     width: calc(100% + 1rem);
+  }
+  &__resource {
+    position: relative;
+    right: -0.5rem;
   }
   &__header {
     color: $blue-1;
