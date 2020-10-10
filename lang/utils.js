@@ -73,9 +73,9 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
         .replace(/\([^)]+\)/, '')
       const tokens = format.split(' ')
       if (isEn) {
-        perLangProposal.format = tokens.slice(1).join(' ')
+        perLangProposal.format = tokens.slice(1).join(' ').trim()
       } else {
-        perLangProposal.format = tokens[0]
+        perLangProposal.format = tokens[0].trim()
       }
     }
 
@@ -83,9 +83,9 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
     if (perLangProposal.topic) {
       const tokens = perLangProposal.topic.split(' ')
       if (isEn) {
-        perLangProposal.topic = tokens.slice(1).join(' ')
+        perLangProposal.topic = tokens.slice(1).join(' ').trim()
       } else {
-        perLangProposal.topic = tokens[0]
+        perLangProposal.topic = tokens[0].trim()
       }
     }
 
