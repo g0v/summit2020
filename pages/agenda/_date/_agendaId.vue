@@ -153,7 +153,6 @@ export default {
     },
     commentUrl () {
       const comment = commentMap[this.id]
-      console.warn('url', commentMap, this.id, comment)
       if (comment) {
         return `${COMMENT_BASE}${comment.id}`
       }
