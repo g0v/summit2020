@@ -74,7 +74,7 @@ import { MUTATIONS, STATES } from '~/store'
 function uniqBy (agendas, field) {
   const valueMap = {}
   agendas.forEach((agenda) => {
-    const value = _.get(agenda, field)
+    const value = _.get(agenda, field, '')
     if (value) {
       valueMap[value] = true
     }
