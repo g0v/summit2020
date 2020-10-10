@@ -4,17 +4,31 @@ import _ from 'lodash'
 const CJK_RANGE = '\u4E00-\u9FCC'
 const cjkRegex = new RegExp(`([${CJK_RANGE}])`, 'g')
 
-const FILTER_MAP = {
-  format: 'format',
-  location: 'timeSheet.議程場地',
-  island: 'topic'
+export const FILTER_MAP = {
+  format: {
+    field: 'format',
+    defaultOpened: true
+  },
+  language: {
+    field: 'oral_language',
+    i18n: true,
+    defaultOpened: false
+  },
+  location: {
+    field: 'timeSheet.議程場地',
+    defaultOpened: false
+  },
+  island: {
+    field: 'topic',
+    defaultOpened: false
+  }
 }
 
 function isAgendaMatchFilter (agenda, filter) {
   return Object.keys(filter).every((type) => {
     // agenda should match one value in each filter type
     return filter[type].some((filterValue) => {
-      const fieldValue = _.get(agenda, FILTER_MAP[type])
+      const fieldValue = _.get(agenda, FILTER_MAP[type].field)
       return filterValue === fieldValue
     })
   })

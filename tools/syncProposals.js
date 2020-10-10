@@ -98,6 +98,11 @@ function genProposalFromAdditionalTable (addition) {
       return
     }
     proposal[field.id] = addition[field.label]
+
+    const otherId = field.otherId
+    if (otherId && addition[otherId]) {
+      proposal[otherId] = addition[otherId]
+    }
   });
 
   ['講者 1', '講者 2', '講者 3'].forEach((speakerId) => {

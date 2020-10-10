@@ -29,32 +29,34 @@
         template(v-for="type in filterTypes")
           b-dropdown-item.filter__header(
             :custom="true"
-            @click.native="toggleTypeFilter(type)"
+            @click.native="toggleTypeFilter(type.key)"
           )
             .flex.justify-between
               div
-                | {{$t(type)}}
-                span.ml2(v-show="filterTypesCount[type]") ({{filterTypesCount[type]}})
+                | {{$t(type.key)}}
+                span.ml2(v-show="filterTypesCount[type.key]") ({{filterTypesCount[type.key]}})
               div
-                img(v-show="!isTypesOpened[type]" src="~/assets/icons/arrow-down.svg")
-                img(v-show="isTypesOpened[type]" src="~/assets/icons/arrow-right.svg")
+                img(v-show="!isTypesOpened[type.key]" src="~/assets/icons/arrow-down.svg")
+                img(v-show="isTypesOpened[type.key]" src="~/assets/icons/arrow-right.svg")
           b-dropdown-item.filter__item.ttc(
             aira-role="list-item"
-            v-for="item in filterTypesList[type]"
-            :key="`${type}:${item}`"
-            :value="`${type}:${item}`"
-            v-show="isTypesOpened[type]"
+            v-for="item in filterTypesList[type.key]"
+            :key="`${type.key}:${item}`"
+            :value="`${type.key}:${item}`"
+            v-show="isTypesOpened[type.key]"
           )
             .dim.flex.items-center
               .filter__check
                 img.dn(src="~/assets/icons/check.svg")
-              .filter__content {{item}}
+              .filter__content(v-if="type.i18n") {{$t(item)}}
+              .filter__content(v-else) {{item}}
 </template>
 <i18n lang="yaml">
 en:
   search: Search agenda
   filter: Filter agenda
   format: Format
+  language: Language
   location: Location
   island: Topic
   clearFilter: Reset filter
@@ -62,6 +64,7 @@ zh:
   search: 搜尋議程
   filter: 篩選議程
   format: 形式
+  language: 語言
   location: 場地
   island: 主題
   clearFilter: 清除條件
@@ -70,6 +73,7 @@ zh:
 import _ from 'lodash'
 import { mapMutations, mapState } from 'vuex'
 import { MUTATIONS, STATES } from '~/store'
+import { FILTER_MAP } from '~/utils/searchUtils'
 
 function uniqBy (agendas, field) {
   const valueMap = {}
@@ -91,15 +95,21 @@ export default {
         filterOptions.push(`${type}:${filterValue}`)
       })
     })
+    const filterTypes = Object.keys(FILTER_MAP).map((type) => {
+      return {
+        key: type,
+        ...FILTER_MAP[type]
+      }
+    })
+    const isTypesOpened = {}
+    Object.keys(FILTER_MAP).forEach((type) => {
+      isTypesOpened[type] = FILTER_MAP[type].defaultOpened
+    })
     return {
       curQuery: this.$store.state[STATES.AGENDA_QUERY],
-      filterTypes: ['format', 'location', 'island'],
+      filterTypes,
       filterOptions,
-      isTypesOpened: {
-        format: true,
-        location: false,
-        island: false
-      }
+      isTypesOpened
     }
   },
   computed: {
@@ -111,11 +121,12 @@ export default {
       return this.$t('proposal/map')
     },
     filterTypesList () {
-      return {
-        format: uniqBy(this.agendas, 'format'),
-        location: uniqBy(this.agendas, 'timeSheet.議程場地'),
-        island: uniqBy(this.agendas, 'topic')
-      }
+      const ret = {}
+      Object.keys(FILTER_MAP).forEach((type) => {
+        ret[type] = uniqBy(this.agendas, FILTER_MAP[type].field)
+      })
+      ret.location = ret.location.filter(location => !location.startsWith('ALL'))
+      return ret
     },
     filterTypesCount () {
       const counts = {}
@@ -228,7 +239,7 @@ export default {
       background: none;
     }
     > div {
-      color: #c2c0c0;
+      color: #999;
       padding: 0.5rem 0.75rem;
     }
     &.is-active {
