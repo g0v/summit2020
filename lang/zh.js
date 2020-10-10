@@ -62,6 +62,9 @@ export default {
   }),
 
   // proposal
+  English: 'English',
+  華語: '華語',
+  '其他 Others': '其他',
   'proposal/map': extractLanguageFromProposals({
     proposals: require('~/assets/agendas/proposals.json'),
     isEn: false

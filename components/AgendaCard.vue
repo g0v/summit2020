@@ -21,11 +21,8 @@
 en:
   minuteUnit: min
   華語: Mandarin
-  English: English
 zh:
   minuteUnit: 分鐘
-  English: English
-  華語: 華語
 </i18n>
 <script>
 import agendaMixin from '~/utils/AgendaMixin'
