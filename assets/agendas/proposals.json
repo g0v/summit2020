@@ -549,7 +549,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-09-16T14:26:35.454Z",
+    "createdAt": "2020-10-10T02:42:01.342Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -562,7 +562,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-16T14:26:35.454Z",
+    "updatedAt": "2020-10-10T02:42:01.342Z",
     "timeSheet": {
       "id": "5ef211bcba206b030d66a31d",
       "議程日期": "2020-12-04",
@@ -3509,6 +3509,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "http://datasketch.co",
+    "verified": true,
+    "createdAt": "2020-10-10T03:26:33.692Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Juan Pablo Marín Díaz",
@@ -3520,9 +3523,7 @@
         "bio_en": "Juan Pablo is a Data Scientist from Colombia. He has helped different newsrooms, governments and NGO's to collect, analyze and explore public sources of data for social good. He is the founder of the data journalism startup Datasketch http://datasketch.co and creates tools for the public appropriation of open data and visualization."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-10T03:26:33.692Z",
     "timeSheet": {
       "id": "5efcd945ba206b030d66a50e",
       "議程日期": "2020-12-05",
@@ -3611,20 +3612,21 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.code4japan.org/",
+    "verified": true,
+    "createdAt": "2020-10-10T03:32:17.250Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Kota Yatagai",
         "organization": "Code for Japan",
         "avatar_url": "https://i.imgur.com/14TjOunh.jpg",
         "city": "Tokyo",
-        "info_url": "https://kotayatagai.cf",
-        "bio": "I'm a high school student working as an intern at Code for Japan. I'm not a native speaker in English, so please go easy on me :)",
+        "info_url": "https://kota-yata.com",
+        "bio": "A high school student working as an intern at Code for Japan",
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-10T03:32:17.250Z",
     "timeSheet": {
       "id": "5f02d14ee88a4948daf87fb7",
       "議程日期": "2020-12-04",
@@ -4190,10 +4192,10 @@
   },
   "5f0f209d0bde6f3bbab73f7a": {
     "id": "5f0f209d0bde6f3bbab73f7a",
-    "title": "面向海洋 – 東亞公民黑客串連兩年回顧",
+    "title": "面向海洋──東亞公民黑客串連兩年回顧",
     "title_en": "Facing the Ocean – 2-year review of this civic hacking network in East Asia",
-    "summary": "兩年來，港、台、日、韓四國的公民黑客持續的聚在一起、共同工作，用對彼此國家食物的愛好和共享的價值，讓這個「面向海洋」的公民黑客網絡慢慢長大。FtO 參與者一起舉辦了數不清次數的線上聚會、兩次實體黑客松，以及零次國際研討會。他們還一起做了些哪些，從彼此身上學到了什麼呢？這個短講邀請 FtO 的參與者來分享他們的故事。\n\nFtO 參與者正持續討論這份稿件，進度記錄在 HackMD 共筆 - https://g0v.hackmd.io/Cir7yKp1SPmyZzm8JyxBiQ",
-    "summary_en": "Civic hackers in Japan, Korea, Hongkong, and Taiwan has been working, eating, having fun, strengthening this network together for the past 2 years. With numerous online meetups, 2 hackathons, and 0 conferences, what have they done together and learned from each other? This session invites FtO participants to share their stories.\n\nThis proposal is a on-going discussion with FtO participants. Progress will be reflected in the HackMD doc - https://g0v.hackmd.io/Cir7yKp1SPmyZzm8JyxBiQ",
+    "summary": "兩年來，港、台、日、韓四國的公民黑客持續的聚在一起、共同工作，用對彼此國家食物的愛好和共享的價值，讓這個「面向海洋」的公民黑客網絡慢慢長大。FtO 參與者一起舉辦了數不清次數的線上聚會、兩次實體黑客松，以及零次國際研討會。他們還一起做了些哪些，從彼此身上學到了什麼呢？這個短講邀請 FtO 的參與者來分享他們的故事。\n\nFtO 參與者正持續討論這份稿件，進度記錄在 HackMD 共筆── https://g0v.hackmd.io/Cir7yKp1SPmyZzm8JyxBiQ",
+    "summary_en": "Civic hackers in Japan, Korea, Hongkong, and Taiwan has been working, eating, having fun, strengthening this network together for the past 2 years. With numerous online meetups, 2 hackathons, and 0 conferences, what have they done together and learned from each other? This session invites FtO participants to share their stories.\n\nThis proposal is a on-going discussion with FtO participants. Progress will be reflected in the HackMD doc – https://g0v.hackmd.io/Cir7yKp1SPmyZzm8JyxBiQ",
     "oral_language": "English",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
@@ -4205,18 +4207,9 @@
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/Cir7yKp1SPmyZzm8JyxBiQ",
     "verified": true,
-    "createdAt": "2020-10-06T07:10:17.391Z",
+    "createdAt": "2020-10-07T10:20:55.699Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
-      {
-        "display_name": "Isabel Hou",
-        "organization": "g0v",
-        "avatar_url": "https://i.imgur.com/D1BYLIvh.jpg",
-        "city": "Chupei",
-        "info_url": "",
-        "bio": "Isabel Hou",
-        "bio_en": ""
-      },
       {
         "display_name": "Mee",
         "organization": "Parti Co-op",
@@ -4225,9 +4218,18 @@
         "info_url": "",
         "bio": "Democracy Activist of Parti Co-op, Project Organizer of Code for Korea, Member of Nullfull, Everyday Experimentalist, Imo of classi and berry 🐕 🐩",
         "bio_en": ""
+      },
+      {
+        "display_name": "Miley Takesada",
+        "organization": "Code for Japan",
+        "avatar_url": "https://i.imgur.com/BiUii9Th.jpg",
+        "city": "Tokyo",
+        "info_url": "",
+        "bio": "Miley is a PhD student of child development and community manager of Code for Japan. She works for LITALICO and held Social Fighter Award,the award for the team who work on the social issues.",
+        "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-06T07:10:17.391Z",
+    "updatedAt": "2020-10-07T10:20:55.699Z",
     "timeSheet": {
       "id": "5f0f209d0bde6f3bbab73f7a",
       "議程日期": "2020-12-05",
