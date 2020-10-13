@@ -446,6 +446,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-10T06:53:56.493Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Colin Megill",
@@ -457,9 +460,7 @@
         "bio_en": "cofounder pol.is"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-10T06:53:56.493Z",
     "timeSheet": {
       "id": "5eeee658ba206b030d66a303",
       "議程日期": "2020-12-05",
@@ -520,7 +521,7 @@
       "id": "5ef09c0eba206b030d66a310",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "NullFull - Introducing Korean civic hacking community",
-      "最後更新時間": "2020-10-02T02:03:39.000Z",
+      "最後更新時間": "2020-10-12T14:01:59.000Z",
       "分類主題-華語": "台日韓齊揪松",
       "分類主題-en": "Communities & Hackathons in East Asia",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
@@ -1426,6 +1427,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://github.com/readr-media/open-relationship",
+    "verified": true,
+    "createdAt": "2020-10-12T03:44:46.318Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "H.C. Chien",
@@ -1437,9 +1441,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-12T03:44:46.318Z",
     "timeSheet": {
       "id": "5ef99ae9ba206b030d66a39d",
       "議程日期": "2020-12-04",
@@ -2847,7 +2849,7 @@
     "id": "5efafc95ba206b030d66a461",
     "title": "談台灣與國際的數位身分證發展與隱憂",
     "title_en": "Digital ID Cards in Taiwan and International",
-    "summary": "臺灣預計最快在 2021 發行 eID，一張打開智慧政府的關鍵鑰匙。政府目前規劃會先選定區域小規模試辦，並舉辦獎金獵人，但這樣就夠讓人民信賴願意使用 eID 了嗎？\n本議程將會分享：\n(1) 你的個資不是你的個資，eID 的發行將帶來什麼風險與不方便？\n(2) 比較不同國家的數位身分證的制度",
+    "summary": "臺灣預計最快在 2021 全面發行 eID數位晶片身分證。\n\n政府目前規劃會先選定在澎湖、新竹、板橋、中和等區域內小規模試辦，並舉辦獎金獵人，讓全民一起 debug。但這樣政府就能自認安全無虞了嗎？人民真的信賴且願意使用 eID ，這張「一張打開智慧政府的關鍵鑰匙」？\n\n魔鬼總是藏在細節裡，本議程將會分享以下主題，告訴你什麼是政府「沒說的」eID 大小事。：\n(1) 你的個資不是你的個資，eID 的發行將帶來什麼風險與不方便？\n(2) 比較不同國家的數位身分證的制度\n\n相關資訊：https://www.eid.tw/",
     "summary_en": "",
     "oral_language": "華語",
     "oral_languate_other": "",
@@ -2860,7 +2862,7 @@
     "is_slide_cc40": true,
     "related_url": "https://www.eid.tw/",
     "verified": true,
-    "createdAt": "2020-09-30T05:03:05.684Z",
+    "createdAt": "2020-10-12T05:54:36.719Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -2882,7 +2884,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-30T05:03:05.684Z",
+    "updatedAt": "2020-10-12T05:54:36.719Z",
     "timeSheet": {
       "id": "5efafc95ba206b030d66a461",
       "議程日期": "2020-12-05",
@@ -3124,6 +3126,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-12T03:43:01.746Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "H.C. Chien",
@@ -3162,9 +3167,7 @@
         "bio_en": "Frontend / graphics engineer at Commonwealth Magazine, previously frontend engineer at the New York Times."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-12T03:43:01.746Z",
     "timeSheet": {
       "id": "5efb34d8ba206b030d66a4a4",
       "議程日期": "2020-12-05",
@@ -3600,7 +3603,7 @@
     "id": "5f02d14ee88a4948daf87fb7",
     "title": "What are the interns of Code for Japan doing?",
     "title_en": "",
-    "summary": "I guess there aren't many Code for communities or civic tech communities that hire interns. But in Japan, there are four student interns hired by Code for Japan. I'm going to give a presentation about what the student interns of Code for Japan are doing, are working. \nFurthermore, I'm going to introduce the civic tech award that we interns are planning, named \"Civic tech Challenge Cup U-22\". This award will be held from August to October, so I may be able to bring the champion to this summit.",
+    "summary": "I guess there aren't many Code for communities or civic tech communities that hire interns. But in Japan, there are four student interns hired by Code for Japan. I'm going to give a presentation about what the student interns of Code for Japan are doing, are working. \nFurthermore, I'm going to introduce the civic tech award that we interns are planning, named \"Civic tech Challenge Cup U-22\". This award will be held from August to October, so I may be able to bring the champion to this summit. One of the champion will give presentation about their work.",
     "summary_en": "",
     "oral_language": "English",
     "oral_languate_other": "",
@@ -3613,7 +3616,7 @@
     "is_slide_cc40": true,
     "related_url": "https://www.code4japan.org/",
     "verified": true,
-    "createdAt": "2020-10-10T03:32:17.250Z",
+    "createdAt": "2020-10-11T12:41:01.313Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -3626,7 +3629,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-10T03:32:17.250Z",
+    "updatedAt": "2020-10-11T12:41:01.313Z",
     "timeSheet": {
       "id": "5f02d14ee88a4948daf87fb7",
       "議程日期": "2020-12-04",
