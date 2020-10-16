@@ -120,32 +120,21 @@
     "is_slide_cc40": true,
     "speakers": [
       {
-        "display_name": "蔡蕙如",
-        "organization": "淡哩來數位新聞實驗室",
-        "avatar_url": "https://i.imgur.com/GPpqTcgh.jpg",
+        "display_name": "鍾明君",
+        "organization": "淡江大學大眾傳播學系暨研究所",
+        "avatar_url": "https://imgur.com/a/hUZ4rGJ",
         "city": "新北市",
-        "info_url": "",
-        "bio": "淡江大學大眾傳播學系助理教授，台灣媒體改造學社成員，台灣高等教育產業工會會員。目前研究關懷：批判的傳播政治經濟學、串流媒體研究、、影視產業研究、文化公共化、公民新聞學等。",
-        "bio_en": "Hui-Ju TSAI is a assistant professor at the Department of Mass Communication, Tamkang University. She obtained her PhD at Social Sciences, Loughborough University in 2018. She is a member of Campaign for Media Reform [CMR] in Taiwan. Her recent published articles include:Audience Commodity in the Age of Streaming Services: An Analysis of Netflix Binge-Watching and the Associated Audience Labor through Critical Political Economy of Communications (CEPC) Approach (2020). Her research orientation is critical political economy approach to studying culture and communication policies. Tsai is especially interested in creative industries, public service media, and the democratisation of mass culture."
-      },
-      {
-        "display_name": "許家雋",
-        "organization": "中華民國軟體自由協會",
-        "avatar_url": "https://i.imgur.com/YQT5axhh.jpg",
-        "city": "彰化",
-        "info_url": " https://blogs.slat.org/blog/otakupapa",
-        "bio": "文組出身；砍掉重練後，目前作為 Drupal site builder 混口飯吃。不過主要工作是當奶爸！",
-        "bio_en": "Drupal site builder / Homeschooling parent"
+        "bio": "淡江大學大傳所研究生aka空中小飛俠，目前正在做與YouTuber經營相關的研究+摸索未知領域，最近剛考過空拍機證照，學習美感攝影中。"
       }
     ],
     "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "createdAt": "2020-10-15T11:46:56.000Z",
+    "updatedAt": "2020-10-15T11:46:56.000Z",
     "timeSheet": {
       "id": "5ee0c02eba206b030d66a2d5",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "初探大學課堂裡的數位新聞想像與實作──「淡哩來數位新聞實驗室」",
-      "最後更新時間": "2020-10-05T15:25:05.000Z",
+      "最後更新時間": "2020-10-15T12:14:22.000Z",
       "分類主題-華語": "自己的學習自己來",
       "分類主題-en": "Self-learning",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
