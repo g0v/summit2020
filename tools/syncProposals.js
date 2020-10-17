@@ -40,7 +40,7 @@ const EXPORT_PATH = path.join(__dirname, '../assets/agendas/proposals')
 const SEC_PER_MIN = 60
 const ALLOW_MERGE_SINCE = dayjs('2020-09-06T12:00:00+08:00')
 const IMG_CACHE_BASE = {
-  url: '/cache/',
+  url: 'cache/',
   path: path.join(__dirname, '../static/cache')
 }
 const ACCEPTED_IMAGE_TYPE = ['png', 'jpg', 'webp', 'gif']
@@ -248,8 +248,8 @@ async function hostImage (originalUrl, mayRetry = true) {
 
   const matchedImage = glob.sync(`${imgDest}.*`)
   if (matchedImage.length) {
-    const file = path.basename(matchedImage[0])
-    return `${IMG_CACHE_BASE.url}${file}`
+    const ext = path.extname(matchedImage[0])
+    return `${imgUrl}${ext}`
   }
 
   // let Sentry catch error automatically
