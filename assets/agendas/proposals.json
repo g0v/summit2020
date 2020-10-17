@@ -883,25 +883,25 @@
   "5ef479b9ba206b030d66a34e": {
     "id": "5ef479b9ba206b030d66a34e",
     "title": "線上揪松是怎麼煉成的",
-    "title_en": "How the Jothon Online Was Tempered",
+    "title_en": "How Jothon Online was Build",
     "summary": "- 線上揪松是怎麼煉成的？當面對疫情的挑戰，揪松團是如何開始想像線上大松，以及增加了哪些措施和規則，來讓線上的活動也能像實體活動一般，讓參與者有高度的互動性及參與感。\n- 線上活動的幕後（導播、場控）：線上活動不可或缺的靈魂人物，需要掌控直播的畫面、視角的切換，同時也要眼看四面耳聽八方，確認正在發表的講者、主持人的進度以及狀況，讓觀看者不要因為技術問題而降低參與感。\n- 線上揪松的挑戰與未來：線上揪松除了辦大松之外，也在發展的過程中促成了很多線上直播會議的進行，揪松團能夠在這當中扮演的腳色，以及對於未來線上揪松的想像，將於本場議程中與大家分享。\n- 專案授權：BSD License",
-    "summary_en": "",
+    "summary_en": "- In this panel we will provide a brief origin story of Jothon Online. Start from the concept of hosting virtaul hackathon. Make the virtual event more interactive and engaged. And make it go as smooth as physical one by new measures and rules.\n- Introducing the hidden figures: Scenes Director and Floor Director. They are responsible for scene transition timing, scene arrangement and checking the progress and the status of moderator and speaker. Make sure the viewer experience is affected by any technical issue.\n- The challenge and the next step of Jothon Online: Except for holding hackathon. Jothon Online also contributes to few online meeting and virtual conference. We will talk about what are the roles that Jothon Online play a part in and what will be the next step of Jothon Online.\n- License: BSD License",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
     "topic": "「沒有人」的島 Nobody’s island",
-    "three_keywords": "揪松團,線上揪松,遠距交流",
+    "three_keywords": "Jothon,Jothon Online,Distance Communication",
     "cover_image": "https://i.imgur.com/HJdIdjkh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/@jothon/jothonline",
     "verified": true,
-    "createdAt": "2020-09-11T14:31:33.742Z",
+    "createdAt": "2020-10-14T04:25:19.796Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "慕約",
+        "display_name": "muyueh",
         "organization": "李慕約公司",
         "avatar_url": "https://i.imgur.com/80jscAKh.jpg",
         "city": "Taipei City",
@@ -910,7 +910,7 @@
         "bio_en": ""
       },
       {
-        "display_name": "以婕",
+        "display_name": "ichieh",
         "organization": "g0v",
         "avatar_url": "https://i.imgur.com/JajgExUh.jpg",
         "city": "Taipei City",
@@ -928,7 +928,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-11T14:31:33.742Z",
+    "updatedAt": "2020-10-14T04:25:19.796Z",
     "timeSheet": {
       "id": "5ef479b9ba206b030d66a34e",
       "議程日期": "2020-12-05",
@@ -1219,16 +1219,10 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/EYSWYz8ZRB2oN6RHrVNf5g",
+    "verified": true,
+    "createdAt": "2020-10-13T09:49:01.642Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
-      {
-        "display_name": "ael",
-        "organization": "g0v",
-        "avatar_url": "https://i.imgur.com/omLEKAmh.jpg",
-        "city": "Taipei",
-        "info_url": "",
-        "bio": "g0v 參與者，想要開發可以促進開放公民參與協作的數位服務，關注社群協作的各種可能。\n\n過去一年在 Disfactory 農地違章工廠回報行動扮演產品經理的角色，其他深度參與的 g0v 專案包括台日韓港合作的 Herstory in East Asia、Libot 里伯市容回報 LINE bot。\n\n曾於 g0v 揪松團擔任職工，以及在 sense.tw 專案擔任產品經理開發議題政策討論工具。\n",
-        "bio_en": "Ael is an active g0v participant that wants to build digital solutions for open and collaborative civic participation with open source communities.\n\nShe has been serving as product manager in “Disfactory”, a report platform on illegal factories on the farmlands, “Herstory in East Asia” and “Libot”, a LINE bot for Village Chiefs to report damages in the city.\n\nAel was the project manager of g0v Civic Tech Prototype Grant working with Jothon team and the product manager of sense.tw, an issue-policy mapping tool."
-      },
       {
         "display_name": "Pei4",
         "organization": "g0v",
@@ -1237,11 +1231,18 @@
         "info_url": "",
         "bio": "Transfer from accounting to UI/UX. I hope I can contribute my abilities to make the world better.\n",
         "bio_en": "Transfer from accounting to UI/UX. I hope I can contribute my abilities to make the world better."
+      },
+      {
+        "display_name": "fluidto",
+        "organization": "femilog, shadow pins, nullfull",
+        "avatar_url": "https://i.imgur.com/kGZfBFWh.jpg",
+        "city": "Seoul",
+        "info_url": "http://Femilog.dothome.co.kr",
+        "bio": "Graphic Designer, Activist, Feminist, Plant Lover, and First Daughter!",
+        "bio_en": "Graphic Designer, Activist, Feminist, Plant Lover, and First Daughter!\n"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-13T09:49:01.642Z",
     "timeSheet": {
       "id": "5ef709ebba206b030d66a36c",
       "議程日期": "2020-12-05",
@@ -1369,7 +1370,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": false,
     "verified": true,
-    "createdAt": "2020-09-18T04:24:13.732Z",
+    "createdAt": "2020-10-12T09:10:12.354Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -1382,7 +1383,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-18T04:24:13.732Z",
+    "updatedAt": "2020-10-12T09:10:12.354Z",
     "timeSheet": {
       "id": "5ef947a8ba206b030d66a392",
       "議程日期": "2020-12-04",
@@ -1816,7 +1817,7 @@
   },
   "5ef9fe47ba206b030d66a3dc": {
     "id": "5ef9fe47ba206b030d66a3dc",
-    "title": "用開源來改變世界",
+    "title": "用開源來改變社會",
     "title_en": "Open Source can improve our world \"TGH Open Source Prosthetic Project\" ",
     "summary": "設計是為解決生活的問題方法之一，而開源設計可以讓技術快速成長並累積成果，不必浪費資源做相同的研發，開源義肢不以市場為優先考量，而是以解決問題為出發，利用群眾的力量，尋求體制內改善的方法，以“自造”為手段的社會運動。",
     "summary_en": "Design is one of the ways to improve our life, and open source allows technology to grow rapidly and accumulate results. TGH Open Source Prosthetic Project focuses on solving the problem of high price, inappropriateness and inconvenience of prosthetic. ",
@@ -1832,7 +1833,7 @@
     "oral_language_other": "文字華語，口說台語",
     "related_url": "https://sites.google.com/view/twgodhand/%E9%A6%96%E9%A0%81-home?authuser=0",
     "verified": true,
-    "createdAt": "2020-09-14T15:11:25.280Z",
+    "createdAt": "2020-10-16T12:49:10.036Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -1845,7 +1846,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-14T15:11:25.280Z",
+    "updatedAt": "2020-10-16T12:49:10.036Z",
     "timeSheet": {
       "id": "5ef9fe47ba206b030d66a3dc",
       "議程日期": "2020-12-05",
@@ -2020,6 +2021,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.tahr.org.tw/issues/transparency-report",
+    "verified": true,
+    "createdAt": "2020-10-15T03:37:56.200Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "周冠汝",
@@ -2031,9 +2035,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-15T03:37:56.200Z",
     "timeSheet": {
       "id": "5efa0fb8ba206b030d66a3ef",
       "議程日期": "2020-12-05",
@@ -2512,38 +2514,18 @@
     "is_slide_cc40": true,
     "related_url": "https://www.eden.org.tw/branches_detail.php?detailId=JCU4NSMh&rePageUrl=L2JyYW5jaGVzLnBocD8mcGFnZT0xNQ%3D%3D",
     "verified": true,
-    "createdAt": "2020-09-29T11:11:00.891Z",
+    "createdAt": "2020-10-16T15:13:26.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "張盟宜",
-        "organization": "財團法人伊甸社會福利基金會",
-        "avatar_url": "https://i.imgur.com/kdleVw2h.jpg",
-        "city": "台南",
-        "info_url": "",
-        "bio": "從事社會工作二十多年, 現任伊甸台南區區長",
-        "bio_en": ""
-      },
-      {
         "display_name": "沈淑雅",
         "organization": "伊甸大林社會住宅住戶",
-        "avatar_url": "https://i.imgur.com/au6GfgTh.jpg",
+        "avatar_url": "https://i.imgur.com/Zhgh8Zm.jpg",
         "city": "台南市",
-        "info_url": "",
-        "bio": "沈淑雅，小兒麻痺及乳癌患者，平日生活皆需仰賴電動輪椅代步，入住社宅前期因居住環境變好，讓她得以休養身體後在外工作，後來身體狀況不佳就待業在家。目前與兒子同住在大林雙福園區社會住宅，兒子今年剛從大學畢業。\n",
-        "bio_en": ""
-      },
-      {
-        "display_name": "陳勝雄",
-        "organization": "伊甸大林社會住宅住戶",
-        "avatar_url": "https://i.imgur.com/7lHDepeh.jpg",
-        "city": "台南",
-        "info_url": "",
-        "bio": "本身為小兒麻痺患者，平常是從事二手車買賣的工作，與雙親及妹妹同住在大林雙福園區社會住宅。母親患有失智症，白天由勝雄負責照料媽媽，陪同參加伊甸大林長照站的活動。\n",
-        "bio_en": ""
+        "bio": "沈淑雅，小兒麻痺及乳癌患者，平日生活皆需仰賴電動輪椅代步，入住社宅前期因居住環境變好，讓她得以休養身體後在外工作，後來身體狀況不佳就待業在家。目前與兒子同住在大林雙福園區社會住宅，兒子今年剛從大學畢業。"
       }
     ],
-    "updatedAt": "2020-09-29T11:11:00.891Z",
+    "updatedAt": "2020-10-16T15:13:26.000Z",
     "timeSheet": {
       "id": "5efac8d2ba206b030d66a432",
       "議程日期": "2020-12-04",
@@ -2621,7 +2603,7 @@
     "id": "5efadb44ba206b030d66a439",
     "title": "創用 CC 在玩些什麼？",
     "title_en": "What I did in the global Creative Commons community?",
-    "summary": "Creative Commons License（台灣翻譯為創用 CC 授權）是一個把自己的創作品丟到網路上共享之前，用來約束別人如何有限度地使用這個作品的工具。Creative Commons 是一個美國的非營利組織，2018 年開始轉變全球社群的經營型態，從原來透過各國法人組織合作的方式，轉變為完全由各地自建社群自主經營。本演說將介紹自身參與 CC 國際會議和擔任志工的經驗，以及全球 CC 社群目前的目標方向。",
+    "summary": "Creative Commons License（台灣翻譯為創用 CC 授權、或 CC 授權）是在不影響著作權的前提之下，預先設定好自己想要的共創共享授權方式，把自己的創作品上傳到網路，除了能被其他人自由安心地使用或再創作、不亂用之外，也達到快速傳遞的效果。Creative Commons 是一個美國的非營利組織，2018 年開始轉變全球社群的經營型態，從原來透過各國法人組織合作的方式，轉變為完全由各地自建社群自主經營。本演說將介紹自身參與 CC 國際會議和擔任志工的經驗，以及全球 CC 社群目前的目標方向。",
     "summary_en": "Creative Commons License is a tool that restricts how others can use the work you share in a limited extent before you share your creative works on the Internet. Creative Commons is a non-profit organization in the United States. In 2018, it began to change the operating style of the global community, from the original way of cooperation with organizations in various countries, to completely operated by the self-built communities. This speech will introduce the experience of self-participation in CC international meetings and volunteer work, as well as the current goal of the global CC community.",
     "oral_language": "華語",
     "oral_languate_other": "",
@@ -2634,7 +2616,7 @@
     "is_slide_cc40": true,
     "related_url": "https://cc.ocf.tw/",
     "verified": true,
-    "createdAt": "2020-09-15T13:35:58.909Z",
+    "createdAt": "2020-10-13T02:17:36.180Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -2647,7 +2629,7 @@
         "bio_en": "Involved in Open Communities since 2009, not a programmer but love to push others into a pit.\nFather of 2 daughters\nThe last generation of Open Source Software Foundry\nStaff of Open Culture Foundation\nMember of CC Global Network membership committee \nRepresentative of CC Taiwan Chapter"
       }
     ],
-    "updatedAt": "2020-09-15T13:35:58.909Z",
+    "updatedAt": "2020-10-13T02:17:36.180Z",
     "timeSheet": {
       "id": "5efadb44ba206b030d66a439",
       "議程日期": "2020-12-04",
@@ -2680,6 +2662,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-13T07:29:27.507Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "void",
@@ -2693,7 +2678,7 @@
       {
         "display_name": "Peace",
         "organization": "Speaker’s organization or community affiliation vTaiwan,Rentea",
-        "avatar_url": "https://i.imgur.com/xMlMu29h.jpg",
+        "avatar_url": "https://i.imgur.com/hXiOtoeh.jpg",
         "city": "台北",
         "info_url": "",
         "bio": "做過NGO、出版、媒體與製作公司的行銷，接觸g0v社群後，希望公民科技的想像，能讓更多社會議題被妥善討論，讓台灣第三部門有新的可能，但…暫時只有失敗經驗。",
@@ -2709,9 +2694,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-13T07:29:27.507Z",
     "timeSheet": {
       "id": "5efadc65ba206b030d66a43a",
       "議程日期": "2020-12-04",
@@ -3341,7 +3324,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-09-14T17:21:14.632Z",
+    "createdAt": "2020-10-16T10:34:12.896Z",
     "presentation_method": "遠端連線 online",
     "related_url": "https://codeforpakistan.org/blog/portfolio-item/open-data-portal-for-pmru/ ",
     "speakers": [
@@ -3353,9 +3336,18 @@
         "info_url": "https://www.linkedin.com/in/ebtihajkhan/",
         "bio": "Ebtihaj is the Government Innovation Lead at Code for Pakistan.",
         "bio_en": "Ebtihaj is a development sector professional currently working as the Government Innovation Lead at Code for Pakistan. He has over 5 years of experience working with the government and holds great insights on how governments operate and how to transform their processes digitally. Being an avid technologist, Ebtihaj has a keen interest in civic innovation, open data and the development of scalable digital services to transform governance. Being an advocate for open data and transparency, Ebtihaj is spearheading innovation in the Government through his work in Code for Pakistan."
+      },
+      {
+        "display_name": "Dr Akif Khan",
+        "organization": "Deputy Coordinator eGovernance, Performance Management and Reforms Unit, Office of the Chief Secretary, Government of Khyber Pakhtunkhwa",
+        "avatar_url": "https://i.imgur.com/rGZ6Kprh.jpg",
+        "city": "Peshawar",
+        "info_url": "https://www.linkedin.com/in/akifonline/",
+        "bio": "Dr. Akif Khan is an ICT consultant, project architect, and an information systems expert with over ten years of experience of working with the Government. He specializes in strategizing, planning, and implementing ICT projects in the Government sector and creating policies to introduce digital-first culture in the Government. He has led teams who have the credit of developing digital solutions like the Pakistan Citizens’ Portal and other Governance and M-Governance activities in Khyber Pakhtunkhwa. Dr. Akif also has proven experience in developing action plans, management of HR, project implementation methodologies, and technical documentations (PC-I, PC-II, PC-IV, RFP’s, TOR, EOI’s) for the Provincial Government. ",
+        "bio_en": "Dr. Akif Khan is the Deputy Coordinator eGovernance for the Performance Management and Reforms Unit, Office of the Chief Secretary, Government of Khyber Pakhtunkhwa. Dr. Akif holds a Ph.D. Degree from Peshawar University. He has several other certifications including COBIT 5, Project Management Professional (PMP), Zend Certified PHP Engineer, Certified Ethical Hacker(CEH), and Microsoft Certified Solutions Developer."
       }
     ],
-    "updatedAt": "2020-09-14T17:21:14.632Z",
+    "updatedAt": "2020-10-16T10:34:12.896Z",
     "timeSheet": {
       "id": "5efb5c5eba206b030d66a4dc",
       "議程日期": "2020-12-05",
@@ -4354,15 +4346,15 @@
       {
         "display_name": "Bess Lee",
         "organization": "g0v.tw",
-        "avatar_url": "https://i.imgur.com/8rJa0cA.jpg",
+        "avatar_url": "https://i.imgur.com/pGy8CPv.png",
         "city": "Taipei, Taiwan",
         "info_url": "https://jothon.g0v.tw/about/",
-        "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。Bess 在 g0v 揪松團統籌多個 g0v 專案，包括 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
-        "bio_en": "Bess is Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She coordinates many g0v projects at g0v jothon, including g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
+        "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。2017 年加入 g0v 揪松團，統籌 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
+        "bio_en": "Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She is general coordinator of g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
       }
     ],
-    "updatedAt": "2020-10-06T10:35:44.000Z",
-    "createdAt": "2020-10-06T10:35:44.000Z",
+    "updatedAt": "2020-10-16T18:20:27.000Z",
+    "createdAt": "2020-10-16T18:20:27.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
