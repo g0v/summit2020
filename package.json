@@ -29,6 +29,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@sentry/browser": "^5.26.0",
+    "@sentry/integrations": "^5.26.0",
     "buefy": "^0.9.3",
     "dayjs": "^1.9.1",
     "front-matter": "^3.2.1",

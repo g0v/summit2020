@@ -4,8 +4,6 @@ require('dotenv').config()
 const DOMAIN = process.env.DOMAIN || 'summit.g0v.tw'
 const ROUTER_BASE = process.env.ROUTER_BASE || ''
 
-process.env.SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
-
 // eslint-disable-next-line import/first
 import { friendlyHeader } from './utils/crawlerFriendly'
 
@@ -55,8 +53,14 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-plugins'
+    '~/plugins/vue-plugins',
+    '~/plugins/sentry'
   ],
+  env: {
+    SITE_BASE: `https://${DOMAIN}${ROUTER_BASE}`,
+    SENTRY_DSN: process.env.SENTRY_DSN || '',
+    APP_RELEASE: process.env.TRAVIS_COMMIT || ''
+  },
   /*
   ** Nuxt.js dev-modules
   */
