@@ -9,12 +9,18 @@ require('dotenv').config()
 
 const fs = require('fs')
 const path = require('path')
+const glob = require('glob')
 const Sentry = require('@sentry/node')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const _ = require('lodash')
 const yaml = require('yaml')
+const md5 = require('md5')
+const imageType = require('image-type')
+const imagemin = require('imagemin')
+const imageminJpegtran = require('imagemin-jpegtran')
+const imageminPngquant = require('imagemin-pngquant')
 const { proposalServer } = require('../.docs.config')
 const { downloadOneTable } = require('./airtableLibs')
 const {
@@ -30,9 +36,19 @@ if (process.env.SENTRY_DSN) {
 
 dayjs.extend(utc)
 
-const EXPORT_PATH = path.join(__dirname, '../assets/agendas/proposals.json')
+const EXPORT_PATH = path.join(__dirname, '../assets/agendas/proposals')
 const SEC_PER_MIN = 60
 const ALLOW_MERGE_SINCE = dayjs('2020-09-06T12:00:00+08:00')
+const IMG_CACHE_BASE = {
+  url: '/cache/',
+  path: path.join(__dirname, '../static/cache')
+}
+const ACCEPTED_IMAGE_TYPE = ['png', 'jpg', 'webp', 'gif']
+
+function logError (message) {
+  Sentry.captureMessage(message)
+  console.error(message)
+}
 
 async function downloadProposals () {
   const allProposals = await axios.get(`${proposalServer}/projects`)
@@ -206,15 +222,67 @@ function normalizeTimeSheet (timeSheet, locationMap) {
     ret.locationMeta = locationMap[locationStr]
   } else if (locationStr) {
     const errmsg = `Undefined location ${timeSheet.議程場地}`
-    Sentry.captureMessage(errmsg)
-    console.error(errmsg)
+    logError(errmsg)
   }
   delete ret.分類主題
   delete ret.議程場地
   return ret
 }
 
-function exportProposals (proposals, timeSheet) {
+async function hostImage (originalUrl) {
+  // download image and return new img url, if the image is host in 3rd party
+  // also optimize the image when possible
+
+  // example exception:
+  // https://drive.google.com/file/d/1MeM5enF9IfGVv-_Sgb5k_J5VC9DIETz9/view?usp=sharing
+  // https://imgur.com/a/8JI5s
+  originalUrl = originalUrl.trim()
+  if (!originalUrl || originalUrl.startsWith('/')) {
+    // in case someone overwrite url to other local path XD
+    return originalUrl
+  }
+
+  const imgHash = md5(originalUrl)
+  const imgDest = path.join(IMG_CACHE_BASE.path, imgHash)
+  const imgUrl = `${IMG_CACHE_BASE.url}${imgHash}`
+
+  const matchedImage = glob.sync(`${imgDest}.*`)
+  if (matchedImage.length) {
+    const file = path.basename(matchedImage[0])
+    return `${IMG_CACHE_BASE.url}${file}`
+  }
+
+  // let Sentry catch error automatically
+  // download image one by one to avoid flooding
+  const img = await axios.get(originalUrl, { responseType: 'arraybuffer' })
+  if (!img || !img.data) {
+    logError(`Failed to download image ${originalUrl}`)
+    return originalUrl
+  }
+  const type = imageType(img.data)
+
+  if (!type || !ACCEPTED_IMAGE_TYPE.includes(type.ext)) {
+    logError(`Invalid image url: ${originalUrl}`)
+    return originalUrl
+  }
+
+  const miniImg = await imagemin.buffer(img.data, {
+    plugins: [
+      imageminJpegtran(),
+      imageminPngquant({
+        quality: [0.6, 0.8]
+      })
+    ]
+  })
+
+  // eslint-disable-next-line no-console
+  console.info(`Host image ${originalUrl} in ${imgHash}.${type.ext}`)
+
+  fs.writeFileSync(path.join(`${imgDest}.${type.ext}`), miniImg)
+  return `${imgUrl}.${type.ext}`
+}
+
+async function exportProposals (proposals, timeSheet) {
   const timeMap = {}
   const timeTakenMap = {}
   timeSheet.forEach((sheet) => {
@@ -230,8 +298,8 @@ function exportProposals (proposals, timeSheet) {
     }
     const sheet = timeMap[pid]
     if (timeTakenMap[pid]) {
-      console.warn(`Time ${sheet.議程日期} ${sheet.議程開始時間} - ${sheet['議程場地-華語']} is taken by at least 2 proposals:`)
-      console.warn(`    ${sheet.isTakenBy.id} && ${pid}`)
+      const errMsg = `Time ${sheet.議程日期} ${sheet.議程開始時間} - ${sheet['議程場地-華語']} is taken by at least 2 proposals: ${sheet.isTakenBy.id} && ${pid}`
+      logError(errMsg)
       return
     }
     timeTakenMap[pid] = proposal
@@ -261,18 +329,31 @@ function exportProposals (proposals, timeSheet) {
     }
   })
 
-  fs.writeFile(EXPORT_PATH, JSON.stringify(toExport, null, '  '), (err) => {
-    if (err) {
-      console.error(err)
-      return
+  // backup original proposal
+  fs.writeFileSync(`${EXPORT_PATH}.orig.json`, JSON.stringify(toExport, null, '  '))
+
+  // replace all image url
+  for (const pid in toExport) {
+    const project = toExport[pid]
+    if (project.cover_image) {
+      project.cover_image = await hostImage(project.cover_image)
     }
-    // eslint-disable-next-line no-console
-    console.info(`Generate ${Object.keys(toExport).length} proposals`)
-  })
+
+    if (project.speakers) {
+      for (const speaker of project.speakers) {
+        if (speaker.avatar_url) {
+          speaker.avatar_url = await hostImage(speaker.avatar_url)
+        }
+      }
+    }
+  }
+  fs.writeFileSync(`${EXPORT_PATH}.json`, JSON.stringify(toExport, null, '  '))
+  // eslint-disable-next-line no-console
+  console.info(`Generate ${Object.keys(toExport).length} proposals`)
 }
 
 (async function syncProposals () {
   const proposals = await downloadProposals()
   const { timeSheet } = await downloadTables()
-  exportProposals(proposals, timeSheet)
+  await exportProposals(proposals, timeSheet)
 })()
