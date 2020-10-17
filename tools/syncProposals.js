@@ -229,7 +229,7 @@ function normalizeTimeSheet (timeSheet, locationMap) {
   return ret
 }
 
-async function hostImage (originalUrl) {
+async function hostImage (originalUrl, mayRetry = true) {
   // download image and return new img url, if the image is host in 3rd party
   // also optimize the image when possible
 
@@ -262,6 +262,14 @@ async function hostImage (originalUrl) {
   const type = imageType(img.data)
 
   if (!type || !ACCEPTED_IMAGE_TYPE.includes(type.ext)) {
+    if (originalUrl.includes('imgur.com') && mayRetry) {
+      // https://imgur.com/a/8JI5s
+      const html = img.data.toString()
+      const realImg = html.match(/https:\/\/i.imgur.com\/[0-9a-zA-Z.]+/)
+      if (realImg) {
+        return await hostImage(realImg[0], false)
+      }
+    }
     logError(`Invalid image url: ${originalUrl}`)
     return originalUrl
   }
