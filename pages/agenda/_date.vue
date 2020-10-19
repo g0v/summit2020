@@ -173,6 +173,9 @@ export default {
             ...this.$route.params,
             date: DEFAULT_DATE
           }
+        }).catch(() => {
+          // #80, avoid change route at the same time when in non-default lang browser
+          // nothing to do, we will be redirect to non-default lang and rerun this check soon
         })
       }
     },
