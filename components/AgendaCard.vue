@@ -20,7 +20,6 @@
 <i18n lang="yaml">
 en:
   minuteUnit: min
-  華語: Mandarin
 zh:
   minuteUnit: 分鐘
 </i18n>

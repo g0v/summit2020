@@ -69,8 +69,6 @@ en:
   '2020-12-06': Sun, Dec 6 2020
   abstract: abstract
   keyword: "keywords:"
-  華語: Mandarin
-  English: English
   moreInfo: "More info:"
   relatedInfo: "Related info:"
   comment: "Join discussion"
@@ -82,8 +80,6 @@ zh:
   '2020-12-06': 2020/12/06（日）
   abstract: 摘要
   keyword: 關鍵字：
-  English: English
-  華語: 華語
   moreInfo: 更多資訊：
   relatedInfo: 相關資訊：
   comment: "參與討論"
