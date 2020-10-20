@@ -275,21 +275,31 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
-    "related_url": "",
+    "related_url": "https://www.facebook.com/groups/familytalk",
+    "verified": true,
+    "createdAt": "2020-10-20T05:18:25.773Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "陳怡君 Ginger",
-        "organization": "家庭診聊室",
+        "display_name": "陳怡君 Ginger ",
+        "organization": "家庭診聊事",
         "avatar_url": "cache/dd08f122d0a6f3e21e374693d6d48f0c.jpg",
         "city": "Taipei",
         "info_url": "https://www.facebook.com/yichun.chen.1238",
-        "bio": "UIUX 設計師，研究各種機制對群體的心理的影響，經營小工作室、診聊社團、Tofutype 網站，藉由開小副本學習機制的設計",
+        "bio": "UIUX 設計師，研究各種機制對群體的心理的影響，經營野薑設計工作室、家庭診聊事社團、Tofutype，在 2019 投入對話研究、群體心理學、希望朝「溫暖對話、聰明反抗、健康吵架」路線前進",
+        "bio_en": ""
+      },
+      {
+        "display_name": "洪寯博",
+        "organization": "家庭診聊事",
+        "avatar_url": "cache/0f7b0b1e79cd860870105d4185258b36.jpg",
+        "city": "Taipei",
+        "info_url": "https://www.facebook.com/hong.matthew.3",
+        "bio": "家庭診聊事社團",
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-20T05:18:25.773Z",
     "timeSheet": {
       "id": "5ee88411ba206b030d66a2ea",
       "議程日期": "2020-12-05",
