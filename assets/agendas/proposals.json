@@ -471,7 +471,7 @@
     "id": "5ef09c0eba206b030d66a310",
     "title": "NullFull - Introducing Korean civic hacking community",
     "title_en": "",
-    "summary": "NullFull is a civic hacking community in South Korea. We often deride, mock, and criticize our government and politicians who waste taxpayers’ money. The following introduces our previous projects.\n\nNullFull has been active since 2016, and we hold a weekly meeting on Mondays. The members participating in NullFull are developers, social activists, designers, data analysts, system engineers, and more.\n\nWe proudly introduce some of our projects as follows:\n* We draw a foodie map of the restaurants that congressmen “adore” to visit, based on the public data from the annual expenditure financial statement.\n* We assist consumers to easily detect whether a certain product is manufactured from one of the “infamous” food corporations - by taking a picture of the product barcode and uploading it on the website.\n* We demand legislative candidates to amend the existing criminal law to strongly penalize and punish sexual offenders - by creating an accessible system for the electors to directly send emails to parliamentary candidates.\n* We document and disclose the background of the judges who are “reluctant” to punish sexual offenders.\n* We disclose the vehicle defects data of car manufacturers that are hidden to the consumers.\n",
+    "summary": "NullFull is a civic hacking community in South Korea. We often deride, mock, and criticize our government and politicians who waste taxpayers’ money. The following introduces our previous projects.\n\nNullFull has been active since 2016, and we hold a weekly meeting on Mondays. The members participating in NullFull are developers, social activists, designers, data analysts, system engineers, and more.\n\nWe proudly introduce some of our projects as follows:\n* We draw a foodie map of the restaurants that congressmen “adore” to visit, based on the public data from the annual expenditure financial statement.\n* We assist consumers to easily detect whether a certain product is manufactured from one of the “infamous” food corporations - by taking a picture of the product barcode and uploading it on the website.\n* We demand legislative candidates to amend the existing criminal law to strongly penalize and punish sexual offenders - by creating an accessible system for the electors to directly send emails to parliamentary candidates.\n* Roast poor data visualizations from media and redo it by ourselves.\n",
     "summary_en": "",
     "oral_language": "English",
     "oral_languate_other": "",
@@ -483,6 +483,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://nullfull.kr",
+    "verified": true,
+    "createdAt": "2020-10-17T11:15:33.050Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Sl Kim ",
@@ -499,13 +502,11 @@
         "avatar_url": "cache/0cefb0f91c25b3d3081fd1eed9a9dcdb.jpg",
         "city": "Seoul",
         "info_url": "",
-        "bio": "Ang!",
+        "bio": "Fabulously talented to find the right one in the wrong address. ",
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-17T11:15:33.050Z",
     "timeSheet": {
       "id": "5ef09c0eba206b030d66a310",
       "議程日期": "2020-12-04",
@@ -1150,19 +1151,19 @@
     "three_keywords": "性少數 社群網路 empower",
     "cover_image": "cache/82029ddc1f283aa5d988c568118c9f10.jpg",
     "is_content_cc40": true,
-    "is_presentation_cc40": false,
+    "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://lezismore.org/",
     "verified": true,
-    "createdAt": "2020-09-14T13:11:44.921Z",
-    "presentation_method": "現場報告 on-site",
+    "createdAt": "2020-10-13T07:28:21.028Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Shin",
         "organization": "濡沫 Lez is more",
         "avatar_url": "cache/3165a92715aa00fe38dd7a6cdba4120d.jpg",
         "city": "Taipei",
-        "info_url": "",
+        "info_url": "https://lezismore.org/author/mbiistscther/",
         "bio": "從學生自治運動與網路串連為起始，歷經些許虛擬空間到實體空間的性別戰役，一度接近體制內的國家女性主義，因緣際會走至性別圈話語權的邊緣地帶。文／法跨領域雙背景，五年社群管理經驗，現為濡沫站長。仍在摸索、思考與發展避免或減少多元主體被代言與被消費的性別運動方法論。",
         "bio_en": ""
       },
@@ -1171,7 +1172,7 @@
         "organization": "濡沫 Lez is more （臺灣） / PrideLab （香港）",
         "avatar_url": "cache/453f739530d939b2d0341210c087c220.jpg",
         "city": "桃園",
-        "info_url": "",
+        "info_url": "https://lezismore.org/author/rrrechargable/",
         "bio": "曾任職香港情趣用品店店長，現居台灣寫性別研究碩論ing。\n居台三年，一直觀察香港與台灣的女同志(為主)論壇文化，並反思日漸壯大的「女力」（Girl Power）培力（Empowerment）論述、消費主義與性/別倡議的共生與矛盾。",
         "bio_en": "MTNA is currently writing her Gender Studies MA thesis regarding her working experience in a sex shop in Hong Kong.\nResiding in Taiwan for three years, MTNA has been observing and experiencing the online forum culture (mainly) among lesbians, and rethinking the mutuality and conflict among “Girl Power\" empowerment discourse, consumerism and sexuality/gender advocacy. "
       },
@@ -1180,12 +1181,12 @@
         "organization": "濡沫 Lez is more （臺灣） /  PTT實業坊鄉民",
         "avatar_url": "cache/2a599855d4cc3aafd0439f918a192efc.jpg",
         "city": "屏東",
-        "info_url": "",
+        "info_url": "https://lezismore.org/author/isomtwolf/",
         "bio": "資深鄉民一枚。ptt作為我的性別啟蒙，看板經驗與我的性別經驗相牽連。\n回顧從2009西甲大戰、2010拉版，到2013年經歷法西斯、八卦、CCR版的大小戰役。網路看似匿名，有人說「認真就輸了」，但我們卻被真實的影響著。與大家一起聊聊這段血肉模糊的歷史，在「開放、自由」的公共空間的背後，壓迫、管束與霸凌如何透過治理而發揮作用。",
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-14T13:11:44.921Z",
+    "updatedAt": "2020-10-13T07:28:21.028Z",
     "timeSheet": {
       "id": "5ef6eca4ba206b030d66a368",
       "議程日期": "2020-12-05",
@@ -2069,6 +2070,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://covidmyanmar.com",
+    "verified": true,
+    "createdAt": "2020-10-19T05:22:40.867Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Nyein Chan Ko Ko",
@@ -2080,9 +2084,7 @@
         "bio_en": "An ex-medical doctor who has a strong passion to apply technology in the medical field. He had been working around in IT industry for 7 years and developed healthcare tools in different forms. During Covid-19, he developed covidmyanmar.com and maintain datasets, dashboards, and other visualizations for Myanmar's situation. At the same time, helped health institutions and NGOs to improve data flow and methods."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-19T05:22:40.867Z",
     "timeSheet": {
       "id": "5efa11b2ba206b030d66a3f1",
       "議程日期": "2020-12-05",
@@ -3644,12 +3646,15 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://projectlockdown.world/",
+    "verified": true,
+    "createdAt": "2020-10-18T16:15:05.940Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
-        "display_name": "Jean F. Queralt",
-        "organization": "The IO Foundation",
-        "avatar_url": "cache/c367edd643e6a6de754fc693f49aafa7.jpg",
-        "city": "Petaling Jaya",
+        "display_name": "Mark Datysgeld",
+        "organization": "Project Lockdown - The IO Foundation",
+        "avatar_url": "cache/619832452bd5f318239fbdb185a12861.jpg",
+        "city": "Brazil",
         "info_url": "",
         "bio": "Born in Spain and with a full career in IT, I eventually realized that I was deeply linked to Asia and moved to Malaysia in 2012 and started volunteering in both Malaysia and the Philippines. In 2018, I founded The IO Foundation to establish a more solid and targeted direction to address Digital Rights for users. TIOF intends to work with pertinent regional and international agencies in crafting and implementing a Universal Declaration of Digital Rights (UDDR) which aims to be grounded from the Universal Declaration of Human Rights.",
         "bio_en": "Born in Spain and with a full career in IT, I eventually realized that I was deeply linked to Asia and moved to Malaysia in 2012 and started volunteering in both Malaysia and the Philippines. In 2018, I founded The IO Foundation to establish a more solid and targeted direction to address Digital Rights for users. TIOF intends to work with pertinent regional and international agencies in crafting and implementing a Universal Declaration of Digital Rights (UDDR) which aims to be grounded from the Universal Declaration of Human Rights."
@@ -3657,25 +3662,23 @@
       {
         "display_name": "Julie Green",
         "organization": "Project Lockdown - The IO Foundation",
-        "avatar_url": "cache/d294e0151c37cb7173a246ace113624e.jpg",
+        "avatar_url": "cache/f4d0f18f1447fe1e697c4ce046ab7175.jpg",
         "city": "Kampala",
         "info_url": "",
         "bio": "Julie is passionate about human and digital rights and equity across the globe. Having worked seven years in the telecommunications industry as a software engineer, hardware engineer, market strategist, and consultant, Julie re-qualified as a secondary school teacher. She has been fortunate to work in many different cultures and countries and when not teaching has worked in the humanitarian sector in both long-term volunteering positions and paid employment.",
         "bio_en": "Julie is passionate about human and digital rights and equity across the globe. Having worked seven years in the telecommunications industry as a software engineer, hardware engineer, market strategist, and consultant, Julie re-qualified as a secondary school teacher. She has been fortunate to work in many different cultures and countries and when not teaching has worked in the humanitarian sector in both long-term volunteering positions and paid employment."
       },
       {
-        "display_name": "Ruha Thurairatnam",
+        "display_name": "Steven Chen",
         "organization": "Project Lockdown - The IO Foundation",
-        "avatar_url": "cache/686de0f317fc7370810cd80626e7228a.jpg",
-        "city": "Toronto",
+        "avatar_url": "cache/2cc42bf9954c26017b66a647cafeb675.jpg",
+        "city": "Tainan",
         "info_url": "",
-        "bio": "Ruha is the Project Manager for Project Lockdown and has a Bachelors in Fine Arts.",
-        "bio_en": ""
+        "bio": "Steven is an undergraduate majoring in Economics in The Chinese University of Hong Kong. Apart from the interest in macroeconomics, he is passionate about the digital rights and the social innovation.",
+        "bio_en": "Steven is an undergraduate majoring in Economics in The Chinese University of Hong Kong. Apart from the interest in macroeconomics, he is passionate about the digital rights and the social innovation."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-18T16:15:05.940Z",
     "timeSheet": {
       "id": "5f02d5a0e88a4948daf87fb9",
       "議程日期": "2020-12-05",
@@ -3756,6 +3759,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.trinetx.com/fda-sentinel/",
+    "verified": true,
+    "createdAt": "2020-10-19T04:15:38.257Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "卓敬壹 James Chuo",
@@ -3776,9 +3782,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-19T04:15:38.257Z",
     "timeSheet": {
       "id": "5f0cd255e88a4948daf87fe9",
       "議程日期": "2020-12-04",
@@ -3916,6 +3920,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://drive.google.com/file/d/1tsDUvM2Szp6UsHztyQ1i6qysL5OSAsR7/view?usp=sharing",
+    "verified": true,
+    "createdAt": "2020-10-18T03:44:47.713Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "黃凱暉",
@@ -3923,7 +3930,7 @@
         "avatar_url": "cache/1a8c7ab44a1a96d9f8ea610ed5ece7a8.jpg",
         "city": "臺北市",
         "info_url": "",
-        "bio": "土木工程、法律、程式設計，什麼東西都好像會一點的工具人，夢想是政府預算開發出來的程式或服務全面開源。",
+        "bio": "土木工程、法律、程式設計，什麼東西都好像會一點的工具人，夢想是政府投注預算開發的公共行政用應用系統或服務可以全面開源。",
         "bio_en": ""
       },
       {
@@ -3943,11 +3950,18 @@
         "info_url": "https://www.linkedin.com/in/kristen-chan/",
         "bio": "R-Ladies Taipei 現任負責人，喜歡學任何新鮮有趣的東西，期望能貢獻自己的能力運用資料解決問題。",
         "bio_en": ""
+      },
+      {
+        "display_name": "謝宗震",
+        "organization": "DSP智庫驅動",
+        "avatar_url": "cache/b9213ed040e2079d0f4fc2d59cea431d.jpg",
+        "city": "臺北市",
+        "info_url": "https://www.linkedin.com/in/johnson-hsieh-522b0556/",
+        "bio": "DSP智庫驅動知識長，清華大學統計所博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。致力於資料科學顧問服務，輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。",
+        "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-18T03:44:47.713Z",
     "timeSheet": {
       "id": "5f0e6f7560d627285b6b14f2",
       "議程日期": "2020-12-05",
@@ -3982,11 +3996,11 @@
     "is_slide_cc40": true,
     "related_url": "https://repository.tudelft.nl/islandora/object/uuid%3Ad708d240-6130-4a70-bf36-5019b525ced7?collection=education",
     "verified": true,
-    "createdAt": "2020-10-01T13:57:09.938Z",
+    "createdAt": "2020-10-18T13:44:12.832Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "HY Chang",
+        "display_name": "Haoyung",
         "organization": "myself",
         "avatar_url": "cache/f4502e26d832077b634f0bed3471e366.jpg",
         "city": "台北市",
@@ -3997,14 +4011,23 @@
       {
         "display_name": "Robert Lin",
         "organization": "皓詠小夥伴",
-        "avatar_url": "cache/9124b2f504599c5b442b66afcbefebfe.jpg",
+        "avatar_url": "cache/d56dd9887404074f249ecd623d5fe92f.jpg",
         "city": "Taipei",
         "info_url": "",
         "bio": "工作坊小幫手/小夥伴",
         "bio_en": ""
+      },
+      {
+        "display_name": "Haoting",
+        "organization": "皓詠小夥伴",
+        "avatar_url": "cache/d4a11163c4f7aeed0e11c4f3f48ac360.jpg",
+        "city": "台北",
+        "info_url": "",
+        "bio": "皓詠小夥伴",
+        "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-01T13:57:09.938Z",
+    "updatedAt": "2020-10-18T13:44:12.832Z",
     "timeSheet": {
       "id": "5f0e97c660d627285b6b14f8",
       "議程日期": "2020-12-05",
@@ -4309,7 +4332,7 @@
       "id": "1204-jothon-0",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "零時小學校 2020 成果發表會",
-      "最後更新時間": "2020-10-02T01:59:41.000Z",
+      "最後更新時間": "2020-10-19T12:28:00.000Z",
       "分類主題-華語": "零時小學校 2020 成果發表會",
       "分類主題-en": "Sch001 2020 Final Presentation",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
@@ -4703,9 +4726,9 @@
         "organization": "中研院法律所副研究員",
         "avatar_url": "cache/9e76176cb13c6109f1340b57693f3922.jpg",
         "city": "台北市",
-        "info_url": " ",
-        "bio": " ",
-        "bio_en": " "
+        "info_url": "https://www.iias.sinica.edu.tw/member_post/16",
+        "bio": "中研院法律所副研究員、資訊法中心副主任，主要研究興趣包括著作權法、網路社群自治、公民科學、資訊科技法律與社會",
+        "bio_en": "Shun-Ling Chen is an associate research professor and the associate director of Information Law Center at the Institutum Iurisprudentiae, Academia Sinica (Taipei, Taiwan). She received her S.J.D. from Harvard Law School in 2013. She works in fields where society, information technologies and the legal system intersect, including the allocation of resources related to intellectual property laws. She spent years studying the development and enforcement of communal norms in online peer production communities, as well as how these communities negotiate externally with established institutions."
       },
       {
         "display_name": "黃煥彰",
@@ -4717,8 +4740,8 @@
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-10-10T02:43:30.000Z",
-    "createdAt": "2020-10-10T02:43:30.000Z",
+    "updatedAt": "2020-10-19T13:06:43.000Z",
+    "createdAt": "2020-10-19T13:06:43.000Z",
     "title": "台灣社群與民主防衛",
     "title_en": "Defending Democracy: Communities Can Help",
     "summary": "台灣民主正在成長、茁壯，同時也正面對多層面、多角度、更精準、強度更高的挑戰。不實訊息、境外勢力滲透、全球公衛危機，讓社會對立、混亂加劇。許多人已清楚認知到，「民主」需要公民的持續防衛，使其更加健全。\n\n在實體空間、城市巷弄深度耕耘的非營利組織；運用網路科技、看似無遠弗屆的開放協作社群；以橫向連結嘗試突破傳統官僚體系的「公務員網絡」，這些不同型態的「台灣社群」，已經做了什麼，未來能如何協力防衛、深化民主？專案、組織的「民主」，又如何影響城市、國家的民主？而以「開放」之名推行的各項措施，是否都能達到還權於民、深化民主的目的，或者是有些仍不免成為少數人獲得利益的工具？\n",
@@ -4777,9 +4800,9 @@
         "bio_en": " "
       }
     ],
-    "updatedAt": "2020-10-10T02:43:31.000Z",
-    "createdAt": "2020-10-10T02:43:31.000Z",
-    "title": "來一碗民主，唔該晒（暫）",
+    "updatedAt": "2020-10-19T15:51:58.000Z",
+    "createdAt": "2020-10-19T15:51:58.000Z",
+    "title": "來一碗民主，唔該晒",
     "title_en": "Connecting Democracies Through Communities",
     "summary": "2012 年 g0v 發起，以開放、協作的理念，號召社群參與改造社會。但是，隨著跨領域協作愈來愈深入，更多人開始意識到，開放協作的社群之所以能在台灣推動改變，民主自由的社會是不可或缺的基石。普選、多黨政治、言論自由、結社自由，這些制度上的基礎不只實現了開放的精神，也保障公民們可以積極組織起來，改造社會，並一起承擔必要的運作成本與消耗。這些匯聚起來的力量，支持著社群的參與者們，讓社群走到今天。\n\n身處亞太地區的我們，面對極權擴張，公民權利、資訊安全受到挑戰，連帶著，開放協作的空間受到擠壓。當公開、自由的交流不再安全，分享與協作、讓改變發生，將成為一件奢侈的事。言論空間受到擠壓的環境下，社群是否更為重要？我們可以怎麼繼續維持 ██、加強 ██？香港人做了什麼？台灣人做了什麼？鄰近的公民與黑客們，未來可以怎麼一起前進？",
     "oral_language": "其他 Others",
