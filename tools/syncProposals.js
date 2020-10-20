@@ -78,21 +78,36 @@ async function downloadProposals () {
   const usedAdditionalMap = {}
 
   additionalProposals.forEach((row) => {
-    const proposal = genProposalFromAdditionalTable(row)
+    const { proposal, speakers } = genProposalFromAdditionalTable(row)
     const existing = acceptedMap[proposal.id]
+    let isAdditionNewer = false
     if (proposal.id in usedAdditionalMap) {
       throw new Error(`Duplicated proposal ID ${proposal.id} in airtable`)
     }
     usedAdditionalMap[proposal.id] = true
 
     if (!existing) {
-      acceptedMap[proposal.id] = proposal
+      acceptedMap[proposal.id] = {
+        ...proposal,
+        speakers: []
+      }
     } else if (proposal.updatedAt > existing.updatedAt && proposal.updatedAt > ALLOW_MERGE_SINCE) {
+      isAdditionNewer = true
       acceptedMap[proposal.id] = {
         ...existing,
         ...proposal
       }
     }
+
+    // merge non-empty speaker from additional proposals anyway
+    speakers.forEach((speaker, i) => {
+      if (!speaker) {
+        return
+      }
+      if (!acceptedMap[proposal.id].speakers[i] || isAdditionNewer) {
+        acceptedMap[proposal.id].speakers[i] = speaker
+      }
+    })
   })
   return Object.values(acceptedMap)
 }
@@ -102,11 +117,11 @@ function genProposalFromAdditionalTable (addition) {
   const ts = dayjs(addition.updatedAt)
   const proposal = {
     id: addition.id,
-    speakers: [],
     updatedAt: ts,
     // to be compatible to CFP site data structure
     createdAt: ts
   }
+  const speakers = []
 
   CONTENT_FIELD_DEFINITIONS.forEach((field) => {
     const val = addition[field.label]
@@ -123,6 +138,7 @@ function genProposalFromAdditionalTable (addition) {
 
   ['講者 1', '講者 2', '講者 3'].forEach((speakerId) => {
     if (!addition[speakerId]) {
+      speakers.push(undefined)
       return
     }
     let additionalSpeaker = {}
@@ -141,11 +157,11 @@ function genProposalFromAdditionalTable (addition) {
       speaker[field.id] = val
     })
     if (Object.keys(speaker).length) {
-      proposal.speakers.push(speaker)
+      speakers.push(speaker)
     }
   })
 
-  return proposal
+  return { proposal, speakers }
 }
 
 async function downloadTables () {

@@ -11,7 +11,7 @@ commit_country_json_files() {
   # Current month and year, e.g: Apr 2018
   dateAndMonth=`date "+%b %Y"`
   # Stage the modified files in dist/output
-  git add -f assets
+  git add -f assets static
   # Create a new commit with a custom build message
   # and Travis build number for reference
   git commit -m "Document auto update: $dateAndMonth (Build $TRAVIS_BUILD_NUMBER)"
