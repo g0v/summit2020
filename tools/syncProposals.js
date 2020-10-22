@@ -168,7 +168,7 @@ async function downloadTables () {
   const timeSheetRaw = await downloadOneTable({
     id: 'dummy',
     tableName: '議程時間',
-    view: 'Grid view'
+    view: '別動我區'
   }, false)
 
   const locationRaw = await downloadOneTable({
