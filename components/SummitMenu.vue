@@ -6,6 +6,7 @@
         :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
         :key="menu.key"
         :to="genLink(menu)"
+        :class="{'menu__item--cta': menu.isCta}"
         @click.native="sthClick"
       )
         | {{ $t(menu.key) }}
@@ -20,10 +21,12 @@ en:
   lang: '華語'
   cfp: 'Get Latest Proposals'
   registration: 'Registration'
+  banquet: 'Banquet'
 zh:
   lang: 'English'
   cfp: '看議程投稿'
   registration: '立刻報名'
+  banquet: '來辦桌'
 </i18n>
 <script>
 import ExtLink from '~/components/ExtLink'
@@ -45,7 +48,8 @@ export default {
         // { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true },
         // { key: 'speakers', url: '/speakers' },
         { key: 'agenda', url: '/agenda' },
-        { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true }
+        { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
+        { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, isCta: true }
         // { key: 'partners', url: '/partners' },
         // { key: 'transport', url: '/transport' },
         // { key: 'live', url: 'https://some.live.url.com', isExt: true },
@@ -82,6 +86,10 @@ export default {
     &.nuxt-link-active {
       font-weight: bold;
     }
+
+    &--cta {
+      color: #333;
+    }
   }
   &__lang {
     color: #f779ee;
@@ -90,6 +98,9 @@ export default {
     .menu {
       &__item {
         color: #f6f6f6;
+        &--cta {
+          color: #f6f6f6;
+        }
       }
       &__lang {
         color: #f7dc79;
