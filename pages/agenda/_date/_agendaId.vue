@@ -34,32 +34,18 @@
         .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
           span.mr2 {{$t('keyword')}}
           | {{agenda.three_keywords}}
-        .detail__speakers(v-if="speakers" :class="{'detail__speakers--mono': isMonoSpeaker}")
-          .speaker.mb5.mb0-ns(
+        .detail__people(v-if="speakers || moderator" :class="{'detail__people--mono': isMonoSpeaker}")
+          summit-person(
+            v-if="moderator"
+            :person="moderator"
+            :is-moderator="true"
+          )
+          summit-person(
             v-for="(speaker, index) in agenda.speakers"
             :key="index"
+            :person="speaker"
+            :is-mono-speaker="isMonoSpeaker"
           )
-            img.speaker__avatar(
-              v-if="speakerAvatar(speaker)"
-              :src="speakerAvatar(speaker)"
-              :alt="speaker.display_name"
-            )
-            .speaker__avatar.speaker__avatar--empty(
-              v-else
-              :title="speaker.display_name"
-            )
-            .speaker__title.mv3
-              .fw5
-                | {{speaker.display_name}}
-                span(v-if="speaker.city.trim()") &nbsp;/ {{speaker.city}}
-              .f6 {{speaker.organization}}
-            rich-multi-line.gray.mv3.fw3(
-              :text="speaker.bio"
-              :class="{tl: isSpeakerBioTl(speaker)}"
-            )
-            .fw3.mv3(v-if="isUrl(speaker.info_url)" :class="{tl: isSpeakerBioTl(speaker)}")
-              | {{$t('moreInfo')}}
-              ext-link.ml1(:to="speaker.info_url")
 </template>
 <i18n lang="yaml">
 en:
@@ -69,7 +55,6 @@ en:
   '2020-12-06': Sun, Dec 6 2020
   abstract: abstract
   keyword: "keywords:"
-  moreInfo: "More info:"
   relatedInfo: "Related info:"
   comment: "Join discussion"
 
@@ -80,7 +65,6 @@ zh:
   '2020-12-06': 2020/12/06（日）
   abstract: 摘要
   keyword: 關鍵字：
-  moreInfo: 更多資訊：
   relatedInfo: 相關資訊：
   comment: "參與討論"
 </i18n>
@@ -88,20 +72,21 @@ zh:
 import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
+import SummitPerson from '~/components/SummitPerson'
 import agendaMixin from '~/utils/AgendaMixin'
 import commentMap from '~/assets/agendas/commentCache.json'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
 const SUPER_LONG_BIO = 300
-const SUPER_SHORT_BIO = 20
 
 const COMMENT_BASE = 'https://discuss.summit2020.g0v.tw/topic/'
 
 export default {
   components: {
     RichMultiLine,
-    ExtLink
+    ExtLink,
+    SummitPerson
   },
   mixins: [agendaMixin],
   computed: {
@@ -163,19 +148,6 @@ export default {
           date: this.$route.params.date
         }
       })
-    },
-    isUrl (url) {
-      if (!url) {
-        return false
-      }
-      const tokens = url.split('.')
-      return tokens.length > 1 && tokens.every(token => !!token)
-    },
-    isSpeakerBioTl (speaker) {
-      return this.isMonoSpeaker || speaker.bio.length > SUPER_SHORT_BIO
-    },
-    speakerAvatar (speaker) {
-      return (speaker.avatar_url || '').trim()
     }
   },
   head: friendlyHeader({
@@ -290,7 +262,7 @@ export default {
   &__keyword {
     color: $blue-1;
   }
-  &__speakers {
+  &__people {
     margin-bottom: 4.5rem;
     justify-content: center;
 
@@ -308,22 +280,5 @@ export default {
 .gray {
   color: #555;
 }
-.speaker {
-  margin-top: 3rem;
-  text-align: center;
-  &__avatar {
-    width: 7.5rem;
-    height: 7.5rem;
-    object-fit: cover;
-    border-radius: 100%;
-    &--empty {
-      background: rgba(103, 205, 221, 0.8);
-      background: linear-gradient(164deg, rgba(112, 223, 240, 0.6) 0%,rgba(103,205,221,0.12) 100%);
-      display: inline-block;
-    }
-  }
-  &__title {
-    color: #303030;
-  }
-}
+
 </style>

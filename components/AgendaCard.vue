@@ -5,12 +5,18 @@
     .agendacard__wrapper.br2.h-100(:class="{'agendacard__wrapper--break': isBreak}")
       .agendacard__content
         .agendacard__time.flex.justify-between.mb3.lh-solid
-          .f7 {{fromTime}} - {{toTime}}
-          .f7 {{duration}}{{$t('minuteUnit')}}
-        .mb2.mt3.f6.fw5(v-if="hasPreHeaderToShow")
-          .agendacard__category(v-if="category") {{category}}
-        h2.agendacard__title.f5.mt3.fw5 {{title}}
-        .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
+          text-highlighter.f7(:text="`${fromTime} - ${toTime}`")
+          .f7
+            text-highlighter(tag="span" :text="duration")
+            | {{$t('minuteUnit')}}
+        .mb2.mt3.f6(v-if="hasPreHeaderToShow")
+          text-highlighter.agendacard__category.fw5(v-if="category" :text="category")
+          .agendacard__moderator(v-if="moderator")
+            span {{$t('moderator')}} /&nbsp;
+            text-highlighter(tag="span" :text="moderator.display_name")
+        text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
+        .agendacard__people.mt3.mb4.f6.lh-copy
+          text-highlighter(v-if="speakers" :text="speakers")
         .flex.flex-wrap
           .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
           .agendacard__tag(v-if="topic") {{topic}}
@@ -25,8 +31,12 @@ zh:
 </i18n>
 <script>
 import agendaMixin from '~/utils/AgendaMixin'
+import TextHighlighter from '~/components/TextHighlighter'
 
 export default {
+  components: {
+    TextHighlighter
+  },
   mixins: [agendaMixin],
   props: {
     agenda: {
@@ -46,7 +56,8 @@ export default {
       return !this.isPseudo && (this.lang || this.format || this.room)
     },
     isBreak () {
-      return this.agenda.isPseudo && this.title.includes('休')
+      const title = this.title
+      return this.agenda.isPseudo && (title.includes('休') || title.includes('break'))
     }
   }
 }
@@ -87,6 +98,9 @@ export default {
   }
   &__title {
     color: $blue-1;
+  }
+  &__moderator {
+    color: $blue-2;
   }
   &__tag {
     border-radius: 999px;

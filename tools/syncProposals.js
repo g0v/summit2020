@@ -141,27 +141,34 @@ function genProposalFromAdditionalTable (addition) {
       speakers.push(undefined)
       return
     }
-    let additionalSpeaker = {}
     try {
-      additionalSpeaker = yaml.parse(addition[speakerId])
+      const speaker = genPerson(addition[speakerId])
+      if (speaker) {
+        speakers.push(speaker)
+      }
     } catch (err) {
       console.error(`In ${addition.id} > ${speakerId}, get invalid yaml`)
       throw err
     }
-    const speaker = {}
-    SPEAKER_FIELD_DEFINITIONS.forEach((field) => {
-      const val = additionalSpeaker[field.id]
-      if (val === undefined || val === '') {
-        return
-      }
-      speaker[field.id] = val
-    })
-    if (Object.keys(speaker).length) {
-      speakers.push(speaker)
-    }
   })
 
   return { proposal, speakers }
+}
+
+function genPerson (personString) {
+  const additionalSpeaker = yaml.parse(personString)
+  const speaker = {}
+  SPEAKER_FIELD_DEFINITIONS.forEach((field) => {
+    const val = additionalSpeaker[field.id]
+    if (val === undefined || val === '') {
+      return
+    }
+    speaker[field.id] = val
+  })
+  if (Object.keys(speaker).length) {
+    return speaker
+  }
+  return undefined
 }
 
 async function downloadTables () {
@@ -177,6 +184,24 @@ async function downloadTables () {
     view: 'Grid view'
   }, false)
 
+  const moderatorRaw = await downloadOneTable({
+    id: 'dummy',
+    tableName: '主持人資訊',
+    view: 'Grid view'
+  }, false)
+
+  const moderatorMap = moderatorRaw.reduce((map, moderator) => {
+    try {
+      return {
+        ...map,
+        [moderator.id]: genPerson(moderator.資訊)
+      }
+    } catch (err) {
+      logError(`Invalid moderator "${moderator.id}": ${err}`)
+    }
+    return map
+  }, {})
+
   const locationMap = locationRaw.reduce((map, location) => {
     return {
       ...map,
@@ -188,7 +213,7 @@ async function downloadTables () {
   }, {})
 
   const timeSheet = timeSheetRaw
-    .map(sheet => normalizeTimeSheet(sheet, locationMap))
+    .map(sheet => normalizeTimeSheet(sheet, locationMap, moderatorMap))
     .filter(sheet => sheet.議程長度 && sheet.議程開始時間)
   return { timeSheet }
 }
@@ -208,10 +233,12 @@ function genFieldI18n (value) {
   }
 }
 
-function normalizeTimeSheet (timeSheet, locationMap) {
+function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
   const category = genFieldI18n(timeSheet.分類主題)
   const location = genFieldI18n(timeSheet.議程場地)
   const startHour = dayjs.unix(timeSheet.議程開始時間)
+  const moderator = moderatorMap[timeSheet.主持人] || null
+
   const timeSheetFields = [
     'id',
     '議程日期',
@@ -224,7 +251,8 @@ function normalizeTimeSheet (timeSheet, locationMap) {
     '分類主題-華語': category.zh,
     '分類主題-en': category.en,
     '議程場地-華語': location.zh,
-    '議程場地-en': location.en
+    '議程場地-en': location.en,
+    主持人: moderator
   }
   if (startHour.isValid()) {
     ret.議程開始時間 = `${timeSheet.議程日期}T${startHour.utc().format('HH:mm')}`
@@ -253,7 +281,7 @@ async function hostImage (originalUrl, mayRetry = true) {
   // https://drive.google.com/file/d/1MeM5enF9IfGVv-_Sgb5k_J5VC9DIETz9/view?usp=sharing
   // https://imgur.com/a/8JI5s
   originalUrl = originalUrl.trim()
-  if (!originalUrl || originalUrl.startsWith('/')) {
+  if (!originalUrl || originalUrl.startsWith('/') || originalUrl.startsWith(IMG_CACHE_BASE.url)) {
     // in case someone overwrite url to other local path XD
     return originalUrl
   }
@@ -268,9 +296,13 @@ async function hostImage (originalUrl, mayRetry = true) {
     return `${imgUrl}${ext}`
   }
 
-  // let Sentry catch error automatically
   // download image one by one to avoid flooding
-  const img = await axios.get(originalUrl, { responseType: 'arraybuffer' })
+  let img = null
+  try {
+    img = await axios.get(originalUrl, { responseType: 'arraybuffer' })
+  } catch (err) {
+    logError(`Error fetching ${originalUrl}: ${err}`)
+  }
   if (!img || !img.data) {
     logError(`Failed to download image ${originalUrl}`)
     return originalUrl
@@ -369,6 +401,10 @@ async function exportProposals (proposals, timeSheet) {
           speaker.avatar_url = await hostImage(speaker.avatar_url)
         }
       }
+    }
+    const moderator = _.get(project, 'timeSheet.主持人')
+    if (moderator && moderator.avatar_url) {
+      moderator.avatar_url = await hostImage(moderator.avatar_url)
     }
   }
   fs.writeFileSync(`${EXPORT_PATH}.json`, JSON.stringify(toExport, null, '  '))
