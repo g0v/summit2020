@@ -52,7 +52,8 @@ export default {
       return !this.isPseudo && (this.lang || this.format || this.room)
     },
     isBreak () {
-      return this.agenda.isPseudo && this.title.includes('休')
+      const title = this.title
+      return this.agenda.isPseudo && (title.includes('休') || title.includes('break'))
     }
   }
 }
