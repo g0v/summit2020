@@ -6,17 +6,17 @@
       .agendacard__content
         .agendacard__time.flex.justify-between.mb3.lh-solid
           .f7 {{fromTime}} - {{toTime}}
-          .f7 {{duration}}{{$t('minuteUnit')}}
+          .f7
+            text-highlighter(tag="span" :text="duration")
+            | {{$t('minuteUnit')}}
         .mb2.mt3.f6(v-if="hasPreHeaderToShow")
-          .agendacard__category.fw5(v-if="category") {{category}}
+          text-highlighter.agendacard__category.fw5(v-if="category" :text="category")
           .agendacard__moderator(v-if="moderator")
             span {{$t('moderator')}} /&nbsp;
-            | {{moderator.display_name}}
-        h2.agendacard__title.f5.mt3.fw5 {{title}}
+            text-highlighter(tag="span" :text="moderator.display_name")
+        text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
         .agendacard__people.mt3.mb4.f6.lh-copy
-          div(v-if="speakers")
-            // span.moon-gray {{$t('speaker')}} /&nbsp;
-            | {{speakers}}
+          text-highlighter(v-if="speakers" :text="speakers")
         .flex.flex-wrap
           .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
           .agendacard__tag(v-if="topic") {{topic}}
@@ -31,8 +31,12 @@ zh:
 </i18n>
 <script>
 import agendaMixin from '~/utils/AgendaMixin'
+import TextHighlighter from '~/components/TextHighlighter'
 
 export default {
+  components: {
+    TextHighlighter
+  },
   mixins: [agendaMixin],
   props: {
     agenda: {

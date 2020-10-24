@@ -24,6 +24,13 @@ export const FILTER_MAP = {
   }
 }
 
+const AGENDA_FIELD_TO_SEARCH = [
+  'title',
+  'timeSheet.分類主題',
+  'timeSheet.議程長度',
+  'timeSheet.主持人.display_name'
+]
+
 function isAgendaMatchFilter (agenda, filter) {
   return Object.keys(filter).every((type) => {
     // agenda should match one value in each filter type
@@ -34,29 +41,65 @@ function isAgendaMatchFilter (agenda, filter) {
   })
 }
 
-function isAgendaMatchQuery (agenda, query) {
+function normalizeQuery (query) {
   if (query.trim() === '') {
-    return true
+    return []
   }
   // brute force tokenization, cut EVERY CJK char, 0-gram XD
-  const queryTokens = query.toLowerCase()
+  return query.toLowerCase()
     .replace(cjkRegex, ' $1 ')
     // eslint-disable-next-line no-irregular-whitespace
     .replace(/[ 　]+/g, ' ')
     .split(' ')
+}
+
+export function markMatchedText (text, query) {
+  const queryTokens = normalizeQuery(query)
+
+  if (!queryTokens.length) {
+    return [{ text, isMatched: false }]
+  }
+
+  // text won't be too long, say, less than 20 chars,
+  // use simple O(m*n) alg without complex data structure such as interval tree XD
+  text = text.toString()
+  const normalizedText = text.toLowerCase()
+  const matchedMap = _.repeat(' ', text.length).split('').map(() => false)
+  queryTokens.forEach((token) => {
+    for (const matched of normalizedText.matchAll(token)) {
+      for (let i = 0; i < token.length; i++) {
+        matchedMap[i + matched.index] = true
+      }
+    }
+  })
+  return matchedMap.reduce((textTokens, isMatched, index) => {
+    const tokenLen = textTokens.length
+    const theChar = text[index]
+    if (!tokenLen) {
+      return [{ text: theChar, isMatched }]
+    }
+    if (textTokens[tokenLen - 1].isMatched !== isMatched) {
+      textTokens.push({ text: theChar, isMatched })
+    } else {
+      textTokens[tokenLen - 1].text += theChar
+    }
+    return textTokens
+  }, [])
+}
+
+function isAgendaMatchQuery (agenda, query) {
+  const queryTokens = normalizeQuery(query)
+
+  if (!queryTokens.length) {
+    return true
+  }
 
   // search agenda
-  const agendaFieldToSearch = [
-    'title',
-    'timeSheet.分類主題',
-    'timeSheet.議程長度',
-    'timeSheet.主持人.display_name'
-  ]
-  let isMatch = agendaFieldToSearch.some((field) => {
+  let isMatched = AGENDA_FIELD_TO_SEARCH.some((field) => {
     const value = _.get(agenda, field, '').toString().toLowerCase()
     return queryTokens.every(token => value.includes(token))
   })
-  if (isMatch) {
+  if (isMatched) {
     return true
   }
 
@@ -65,12 +108,12 @@ function isAgendaMatchQuery (agenda, query) {
     return false
   }
 
-  isMatch = agenda.speakers.some((speaker) => {
+  isMatched = agenda.speakers.some((speaker) => {
     const value = (speaker.display_name || '').toLowerCase()
     return queryTokens.every(token => value.includes(token))
   })
 
-  return isMatch
+  return isMatched
 }
 
 export function isAgendaMatch (agenda, query = '', filter = {}) {
