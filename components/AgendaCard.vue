@@ -7,10 +7,16 @@
         .agendacard__time.flex.justify-between.mb3.lh-solid
           .f7 {{fromTime}} - {{toTime}}
           .f7 {{duration}}{{$t('minuteUnit')}}
-        .mb2.mt3.f6.fw5(v-if="hasPreHeaderToShow")
-          .agendacard__category(v-if="category") {{category}}
+        .mb2.mt3.f6(v-if="hasPreHeaderToShow")
+          .agendacard__category.fw5(v-if="category") {{category}}
+          .agendacard__moderator(v-if="moderator")
+            span {{$t('moderator')}} /&nbsp;
+            | {{moderator.display_name}}
         h2.agendacard__title.f5.mt3.fw5 {{title}}
-        .agendacard__speakers.mt3.mb4.f6.lh-title(v-if="speakers") {{speakers}}
+        .agendacard__people.mt3.mb4.f6.lh-copy
+          div(v-if="speakers")
+            // span.moon-gray {{$t('speaker')}} /&nbsp;
+            | {{speakers}}
         .flex.flex-wrap
           .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
           .agendacard__tag(v-if="topic") {{topic}}
@@ -87,6 +93,9 @@ export default {
   }
   &__title {
     color: $blue-1;
+  }
+  &__moderator {
+    color: $blue-2;
   }
   &__tag {
     border-radius: 999px;

@@ -281,7 +281,7 @@ async function hostImage (originalUrl, mayRetry = true) {
   // https://drive.google.com/file/d/1MeM5enF9IfGVv-_Sgb5k_J5VC9DIETz9/view?usp=sharing
   // https://imgur.com/a/8JI5s
   originalUrl = originalUrl.trim()
-  if (!originalUrl || originalUrl.startsWith('/')) {
+  if (!originalUrl || originalUrl.startsWith('/') || originalUrl.startsWith(IMG_CACHE_BASE.url)) {
     // in case someone overwrite url to other local path XD
     return originalUrl
   }
@@ -296,9 +296,13 @@ async function hostImage (originalUrl, mayRetry = true) {
     return `${imgUrl}${ext}`
   }
 
-  // let Sentry catch error automatically
   // download image one by one to avoid flooding
-  const img = await axios.get(originalUrl, { responseType: 'arraybuffer' })
+  let img = null
+  try {
+    img = await axios.get(originalUrl, { responseType: 'arraybuffer' })
+  } catch (err) {
+    logError(`Error fetching ${originalUrl}: ${err}`)
+  }
   if (!img || !img.data) {
     logError(`Failed to download image ${originalUrl}`)
     return originalUrl

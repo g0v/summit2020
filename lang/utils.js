@@ -48,9 +48,17 @@ function extractLanguageFromItem ({ item, isEn }) {
 function extractLanguageFromProposals ({ proposals, isEn = true }) {
   return Object.values(proposals).map((proposal) => {
     const timeSheetWrapper = extractLanguageFromTable({ rows: [proposal.timeSheet], isEn })
+    const timeSheet = timeSheetWrapper[0]
+    if (timeSheet.主持人) {
+      const moderator = { ...timeSheet.主持人 }
+      extractLanguageFromItem({
+        item: moderator,
+        isEn
+      })
+    }
     const perLangProposal = {
       ...proposal,
-      timeSheet: timeSheetWrapper[0]
+      timeSheet
     }
 
     extractLanguageFromItem({ item: perLangProposal, isEn })

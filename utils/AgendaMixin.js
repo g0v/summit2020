@@ -42,6 +42,9 @@ export default {
     },
     category () {
       return this.agenda.timeSheet.分類主題
+    },
+    moderator () {
+      return this.agenda.timeSheet.主持人
     }
   }
 }

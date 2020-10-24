@@ -49,7 +49,8 @@ function isAgendaMatchQuery (agenda, query) {
   const agendaFieldToSearch = [
     'title',
     'timeSheet.分類主題',
-    'timeSheet.議程長度'
+    'timeSheet.議程長度',
+    'timeSheet.主持人.display_name'
   ]
   let isMatch = agendaFieldToSearch.some((field) => {
     const value = _.get(agenda, field, '').toString().toLowerCase()

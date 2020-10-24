@@ -66,6 +66,9 @@ export default {
   華語: 'Mandarin',
   English: 'English',
   '其他 Others': 'Others',
+  moderator: 'Moderator',
+  speaker: 'Speaker',
+  colon: ': ',
   'proposal/map': extractLanguageFromProposals({
     proposals: require('~/assets/agendas/proposals.json'),
     isEn: true
