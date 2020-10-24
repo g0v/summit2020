@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import dayjs from 'dayjs'
 
 const EN_TERMS = {
   en: true,
@@ -55,6 +56,13 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
         item: moderator,
         isEn
       })
+    }
+    // quick hack for search
+    if (timeSheet.議程開始時間) {
+      const fromTime = timeSheet.議程開始時間
+      const duration = timeSheet.議程長度
+      timeSheet.fromTimeStr = dayjs(fromTime).format('HH:mm')
+      timeSheet.toTimeStr = dayjs(fromTime).add(duration, 'm').format('HH:mm')
     }
     const perLangProposal = {
       ...proposal,

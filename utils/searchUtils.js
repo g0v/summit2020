@@ -28,6 +28,8 @@ const AGENDA_FIELD_TO_SEARCH = [
   'title',
   'timeSheet.分類主題',
   'timeSheet.議程長度',
+  'timeSheet.fromTimeStr',
+  'timeSheet.toTimeStr',
   'timeSheet.主持人.display_name'
 ]
 

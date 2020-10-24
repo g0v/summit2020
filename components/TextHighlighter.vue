@@ -33,5 +33,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
+.texthl {
+  mark {
+    background: #20ff88;
+  }
+}
 </style>

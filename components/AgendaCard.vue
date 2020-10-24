@@ -5,7 +5,7 @@
     .agendacard__wrapper.br2.h-100(:class="{'agendacard__wrapper--break': isBreak}")
       .agendacard__content
         .agendacard__time.flex.justify-between.mb3.lh-solid
-          .f7 {{fromTime}} - {{toTime}}
+          text-highlighter.f7(:text="`${fromTime} - ${toTime}`")
           .f7
             text-highlighter(tag="span" :text="duration")
             | {{$t('minuteUnit')}}

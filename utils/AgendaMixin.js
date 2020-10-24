@@ -1,5 +1,3 @@
-import dayjs from 'dayjs'
-
 export default {
   computed: {
     time () {
@@ -13,13 +11,13 @@ export default {
       return room
     },
     fromTime () {
-      return dayjs(this.time.議程開始時間).format('HH:mm')
+      return this.time.fromTimeStr
     },
     duration () {
       return this.time.議程長度
     },
     toTime () {
-      return dayjs(this.time.議程開始時間).add(this.duration, 'm').format('HH:mm')
+      return this.time.toTimeStr
     },
     title () {
       return this.agenda.title || ''
