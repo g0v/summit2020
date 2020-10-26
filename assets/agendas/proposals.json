@@ -300,7 +300,7 @@
     "is_slide_cc40": true,
     "related_url": "https://www.facebook.com/groups/familytalk",
     "verified": true,
-    "createdAt": "2020-10-21T14:37:32.432Z",
+    "createdAt": "2020-10-23T10:11:22.474Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -309,7 +309,7 @@
         "avatar_url": "cache/dd08f122d0a6f3e21e374693d6d48f0c.jpg",
         "city": "Taipei",
         "info_url": "https://www.facebook.com/yichun.chen.1238",
-        "bio": "UIUX 設計師，研究各種機制對群體的心理的影響，經營野薑設計工作室、家庭診聊事社團、Tofutype，在 2019 投入對話研究、群體心理學、希望朝「溫暖對話、聰明反抗、健康吵架」路線前進",
+        "bio": "UIUX 設計師，研究各種機制對群體的心理的影響，經營野薑設計工作室、家庭診聊事社團、Tofutype，在 2019 投入對話研究、希望朝「溫暖對話、聰明反抗、健康吵架」路線前進",
         "bio_en": ""
       },
       {
@@ -322,7 +322,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-21T14:37:32.432Z",
+    "updatedAt": "2020-10-23T10:11:22.474Z",
     "timeSheet": {
       "id": "5ee88411ba206b030d66a2ea",
       "議程日期": "2020-12-05",
@@ -785,7 +785,7 @@
   "5ef324e1ba206b030d66a33d": {
     "id": "5ef324e1ba206b030d66a33d",
     "title": "你付出的房租值得嗎? 談空間分析框架下的居住正義 以德國漢堡市為例",
-    "title_en": "What your paid actually worth it? Spatial Analyst on Real Estate, example in Hamburg",
+    "title_en": "Multivariable Spatial Analyst on Real Estate factor, example in Hamburg",
     "summary": "蜗居 房租太高 青年的居住正義 是經年 跨國的老議題了\n到底怎樣才算不合理的高\n實價登陸平台除了提供歷史價格 還能怎麼修正\n以開放資料結合數個城市空間因子看德國漢堡市的房地產分布概況",
     "summary_en": "Rental too high? Can't afford an apartment?\nTo what extent can one say really \"can't affordable\"?\nIs our real estate platform transparent enough?\nAn hand-on example to combine several open data in the city of Hamburg.",
     "oral_language": "華語",
@@ -798,6 +798,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "http://www.geomatik-hamburg.de/g2lab/study/Moodmap.html",
+    "verified": true,
+    "createdAt": "2020-10-21T15:21:43.092Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Ariel Chang",
@@ -809,9 +812,7 @@
         "bio_en": "major in spatial analysis, GIS and data visualization"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-21T15:21:43.092Z",
     "timeSheet": {
       "id": "5ef324e1ba206b030d66a33d",
       "議程日期": "2020-12-05",
@@ -846,6 +847,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.facebook.com/good.to.go.tw/ ",
+    "verified": true,
+    "createdAt": "2020-10-24T04:13:58.635Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "好盒器 Good to go",
@@ -857,9 +861,7 @@
         "bio_en": "Good To Go. A social enterprise which tries to solve the problems facing Taiwan through social design."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-24T04:13:58.635Z",
     "timeSheet": {
       "id": "5ef4330bba206b030d66a347",
       "議程日期": "2020-12-05",
@@ -1364,9 +1366,9 @@
   },
   "5ef8c370ba206b030d66a386": {
     "id": "5ef8c370ba206b030d66a386",
-    "title": "Addressing the State : an analysis of the online-offline petition system in Taiwan",
+    "title": "Addressing the State : an analysis of the online-offline request system in Taiwan",
     "title_en": "“請求政府”：台灣公共政策網路參與平台之訴求與開放政府聯絡人之分析",
-    "summary": "In many countries, governments have adopted, as part of complex online-offline apparatus, new online petition platforms for citizens to directly address government institutions, voice their discontent and ask for changes (ie. WeThePeople in the United States or E-pétitions in France). \n\tIn 2015, following the aftermath of the Sunflower movement, Taiwan government launches a request platform called JOIN, that allows citizens to address the ministries of the Executive Yuan. Each request that gathers at least 5000 signatures, get a written response from the government. In 2017, the implementation of the Participation Officer network (PO network) -public servants from each ministries- pushed the request system based on JOIN further, as selected requests are discussed through a two-month process gathering public servants, the petitioner, signatories and civil society organizations.\n\tWhat can we learn from this online-offline petition system? This talk (based on a one year and half fieldwork) draws from the sociology of controversies, to analyze the petition apparatus through requests content, PO’s interactions and meetings among actors. What do people ask to the government in Taiwan? How requests are handled by the administration and debated during meetings? What can and can't be discussed through this process?\n\tThe JOIN–PO network system is a place were established norms (laws, policies) are challenged. Through requests, people share expectations on how the government should work, about its role in society. JOIN and POs’ meetings are spaces were actors debate and redefine together what is just and unjust, what should be and not be. If citizens tend to underline what they consider to be malfunctions, they also tend to define what is for them a “good government”. Request and POs’ meetings are also moments were actors redefine the relation between the government and the society. \n\tFrom requests pushing in favor or against LGBT rights, from public servants’ requests pushing for changes in their profession to requests asking for corporal punishment, Taiwan petition system gives us an interesting overview of Taiwan society controversies. If we can learn a lot about what opposes people (agonistic pluralism), it also tends to show what brings them together.",
+    "summary": "In many countries, governments have adopted, as part of complex online-offline apparatus, new online petition platforms for citizens to directly address government institutions, voice their discontent and ask for changes (ie. WeThePeople in the United States or E-pétitions in France). \n\tIn 2015, following the aftermath of the Sunflower movement, Taiwan government launches a request platform called JOIN, that allows citizens to address the ministries of the Executive Yuan. Each request that gathers at least 5000 signatures, get a written response from the government. In 2017, the implementation of the Participation Officer network (PO network) -public servants from each ministries- pushed the request system based on JOIN further, as selected requests are discussed through a two-month process gathering public servants, the petitioner, signatories and civil society organizations.\n\tWhat can we learn from this online-offline request system? This talk (based on a one year and half fieldwork) draws from the sociology of controversies to analyze the petition apparatus through requests content, PO’s interactions and meetings among actors. What do people ask to the government in Taiwan? How requests are handled by the administration and debated during meetings? What can and can't be discussed through this process?\n\tThe JOIN–PO network system is a place were established norms (laws, policies) are challenged. Through requests, people share expectations on how the government should work, about its role in society. JOIN and POs’ meetings are spaces were actors debate and redefine together what is just and unjust, what should be and not be. If citizens tend to underline what they consider to be malfunctions, they also tend to define what is for them a “good government”. Request and POs’ meetings are also moments were actors redefine the relation between the government and the society. \n\tFrom requests pushing in favor or against LGBTQ+ rights, from public servants’ requests pushing for changes in their profession to requests asking for corporal punishment, Taiwan petition system gives us an interesting overview of Taiwan society controversies. If we can learn a lot about what opposes people (agonistic pluralism), it also tends to show what brings them together.",
     "summary_en": "",
     "oral_language": "English",
     "oral_languate_other": "",
@@ -1377,6 +1379,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-21T15:21:41.430Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Fiorella Bourgeois",
@@ -1388,9 +1393,7 @@
         "bio_en": "Phd candidate in political sociology at the EHESS (École des Hautes Études en Sciences Sociales)."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-21T15:21:41.430Z",
     "timeSheet": {
       "id": "5ef8c370ba206b030d66a386",
       "議程日期": "2020-12-05",
@@ -1832,8 +1835,8 @@
   },
   "5ef9fa99ba206b030d66a3d8": {
     "id": "5ef9fa99ba206b030d66a3d8",
-    "title": "眾人協作台灣原住民族字典－阿美語萌典的開始",
-    "title_en": "",
+    "title": "眾人協作台灣原住民族字典－阿美語萌典的發展歷程",
+    "title_en": "Developing story of 'Amis MoeDict",
     "summary": "台灣是一個多元族群社會，台灣原住民族是其中之一，台灣原住民族目前官方認定的有16族及平埔族群，每個族群都具有各自獨特的文化與語言，但由於統治階級在管理方便，往往都將原住民族進行與多數族群相同的教育，造成原住民族族語快速的流失，造成新一代原住民族對於族語大都無法流利使用。雖官方（原民會）及國家政策展開許多措施，但在族語流失速度上，仍然無法有效降低流失速率，且官方字典與數位學習平台上仍有許多誤植或是有錯誤地方，因行政作業問題，無法即時更新。而阿美語萌典是自2014年起在g0vsubmite發起，透過原本在台灣許多傳教士留下的原住民族字典中的阿美語字典，以眾人協力方式，透過鄉民一同參與字典辨識條目騰寫，短短幾天內就完成阿美語幾本字典的工人校對，便在此數位檔案下進行阿美萌典網站及APP進行設計使用，對於語言保存提供了新一種方式。",
     "summary_en": "",
     "oral_language": "華語",
@@ -1847,7 +1850,7 @@
     "is_slide_cc40": true,
     "related_url": "https://amis.moedict.tw",
     "verified": true,
-    "createdAt": "2020-10-21T14:37:53.243Z",
+    "createdAt": "2020-10-24T03:41:44.404Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -1860,7 +1863,7 @@
         "bio_en": ""
       },
       {
-        "display_name": "weiting",
+        "display_name": "Weiting",
         "organization": "阿美語萌典",
         "avatar_url": "cache/e12939967a6ae28618138b760af83709.jpg",
         "city": "台北市",
@@ -1878,7 +1881,7 @@
         "bio_en": null
       }
     ],
-    "updatedAt": "2020-10-21T14:37:53.243Z",
+    "updatedAt": "2020-10-24T03:41:44.404Z",
     "timeSheet": {
       "id": "5ef9fa99ba206b030d66a3d8",
       "議程日期": "2020-12-04",
@@ -2011,6 +2014,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-22T12:08:47.772Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Shun-Ling Chen",
@@ -2022,9 +2028,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-22T12:08:47.772Z",
     "timeSheet": {
       "id": "5efa0877ba206b030d66a3e8",
       "議程日期": "2020-12-05",
@@ -2311,6 +2315,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://mask.goodideas-studio.com/",
+    "verified": true,
+    "createdAt": "2020-10-21T16:12:09.653Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Phelps",
@@ -2322,9 +2329,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-21T16:12:09.653Z",
     "timeSheet": {
       "id": "5efa37d2ba206b030d66a3f9",
       "議程日期": "2020-12-04",
@@ -2407,6 +2412,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-22T02:09:16.862Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Hal Seki",
@@ -2418,9 +2426,7 @@
         "bio_en": "https://github.com/halsk/profile/blob/master/README_en.md"
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-22T02:09:16.862Z",
     "timeSheet": {
       "id": "5efa9092ba206b030d66a408",
       "議程日期": "2020-12-05",
@@ -2562,6 +2568,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.flameflame.org/projects/age-project/",
+    "verified": true,
+    "createdAt": "2020-10-22T04:21:50.514Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "社團法人邊邊女力協會",
@@ -2573,9 +2582,7 @@
         "bio_en": "FLAME’s mission is to question the knowledge production, development, and application of technology from a feminist intersectional approach and to promote gender-equal access to resources and technologies in the society."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-22T04:21:50.514Z",
     "timeSheet": {
       "id": "5efabbc9ba206b030d66a42a",
       "議程日期": "2020-12-05",
@@ -2781,7 +2788,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-10-13T07:29:27.507Z",
+    "createdAt": "2020-10-22T08:02:20.931Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -2810,9 +2817,18 @@
         "info_url": "",
         "bio": "一名只會仰臥不會起坐的女子",
         "bio_en": ""
+      },
+      {
+        "display_name": "pm5",
+        "organization": "g0v.tw",
+        "avatar_url": "cache/34e165566f53916a9040e2bede59c536.jpg",
+        "city": "Taipei",
+        "info_url": "",
+        "bio": "數學家、程式設計師，長期活躍於零時政府 g0v.tw、群島 archipiélago 等開放協作與跨領域創作社群，為 g0v 國際交流小組共同創辦人。致力於公民參與社會的資訊平台與工具，以及演算法倫理議題與相關技術。曾為開源軟體專案 itaigi.tw 台語群眾辭典、Sense.tw 科技政策規劃意見搜集工具的參與開發者、TrustableAI 共同創辦人。現於 0archive 零時檔案庫專案中擔任系統架構與資深工程師。",
+        "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-13T07:29:27.507Z",
+    "updatedAt": "2020-10-22T08:02:20.931Z",
     "timeSheet": {
       "id": "5efadc65ba206b030d66a43a",
       "議程日期": "2020-12-04",
@@ -3569,6 +3585,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://candidater.cedricvillani.paris",
+    "verified": true,
+    "createdAt": "2020-10-21T16:46:18.187Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Virgile Deville",
@@ -3589,9 +3608,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-21T16:46:18.187Z",
     "timeSheet": {
       "id": "5efc998dba206b030d66a50c",
       "議程日期": "2020-12-05",
@@ -4806,8 +4823,8 @@
   },
   "1204-maker-1": {
     "id": "1204-maker-1",
-    "updatedAt": "2020-10-05T15:12:24.000Z",
-    "createdAt": "2020-10-05T15:12:24.000Z",
+    "updatedAt": "2020-10-25T05:05:06.000Z",
+    "createdAt": "2020-10-25T05:05:06.000Z",
     "title": "何謂 maker 精神？自造者們的真心話",
     "summary": "台南在地動手做的maker社群們，聊聊彼此在做的事情，和自身對於maker精神的定義或看法提出想法。針對主題性的社群聚集未來能有哪些方向",
     "oral_language": "華語",
@@ -4816,7 +4833,35 @@
     "three_keywords": "自造者運動 自造工藝 自造公益",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
-    "speakers": [],
+    "speakers": [
+      {
+        "display_name": "Scott Chen",
+        "organization": "TGH (Tawian Gods Hand)",
+        "avatar_url": "cache/ffbcb1bfab98cf585e36ce3b3c7d4076.jpg",
+        "city": "台南 Tainan",
+        "info_url": " ",
+        "bio": "人稱府城億載金城武，平時為朝九晚五南科上班族，下班和假日與夥伴研發開源義肢技術並開源於網路上",
+        "bio_en": " "
+      },
+      {
+        "display_name": "Ginko Ching Lee 李青",
+        "organization": "台南維修咖啡館，白日夢工廠",
+        "avatar_url": "cache/5636024727e9f2507dbe50a61f110990.jpg",
+        "city": "Tainan, Taiwan / Pasadena, California, USA",
+        "info_url": " ",
+        "bio": " ",
+        "bio_en": " "
+      },
+      {
+        "display_name": "楊禮誠",
+        "organization": "雲語藝術工作室",
+        "avatar_url": "cache/9c985f8722a3eaae50d0042682950b38.jpg",
+        "city": "台南市 Tainan",
+        "info_url": " ",
+        "bio": "藝術工作者 雲語藝術工作室  負責人 台南大學 兼任講師 台南社大 講師\"",
+        "bio_en": " "
+      }
+    ],
     "timeSheet": {
       "id": "1204-maker-1",
       "議程日期": "2020-12-04",
@@ -4837,8 +4882,8 @@
   },
   "1204-maker-2": {
     "id": "1204-maker-2",
-    "updatedAt": "2020-09-30T15:36:35.000Z",
-    "createdAt": "2020-09-30T15:36:35.000Z",
+    "updatedAt": "2020-10-25T05:06:08.000Z",
+    "createdAt": "2020-10-25T05:06:08.000Z",
     "title": "台灣自造運動下一步怎麼走？",
     "summary": "對自造運動的下一步想像，將討論：有空間的社群如何達到永續經營/開放社群如何進入在地社區/如何發展公民性開源硬體坑/如何達到資源共享化：開放空間與設備共享/如何友善新手maker等議題，延續及創造自造運動的活路與可能",
     "oral_language": "華語",
@@ -4847,7 +4892,17 @@
     "three_keywords": "自造者運動 社會設計 未來想像",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
-    "speakers": [],
+    "speakers": [
+      {
+        "display_name": "吳中仁",
+        "organization": "Fablab Tainan",
+        "avatar_url": "cache/896a75581f3a419b9f8a71e6c54950e2.jpg",
+        "city": "台南 Tainan",
+        "info_url": " ",
+        "bio": "平常在醫院工作的臨床聽力師，因為興趣一頭栽入FABLAB Tainan成為社群成員，擅長用各種自造專案把時間剁碎、永遠覺得時間不夠用，好在不時還可以用想法或自造技能為生活、工作帶來一點改革。",
+        "bio_en": " "
+      }
+    ],
     "timeSheet": {
       "id": "1204-maker-2",
       "議程日期": "2020-12-04",
