@@ -848,20 +848,29 @@
     "is_slide_cc40": true,
     "related_url": "https://www.facebook.com/good.to.go.tw/ ",
     "verified": true,
-    "createdAt": "2020-10-24T04:13:58.635Z",
+    "createdAt": "2020-10-25T13:34:52.362Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "好盒器 Good to go",
-        "organization": "好盒器 Good to go",
+        "display_name": "好盒器 Good to go 宋宜臻",
+        "organization": "好盒器 Good to go ",
         "avatar_url": "cache/6a1bd884ecc257435146e95ce53d327b.jpg",
+        "city": "台南",
+        "info_url": "https://www.facebook.com/good.to.go.tw/",
+        "bio": "好盒器。透過便利的容器租借服務，推動「一次性容器減量」，希望透過服務設計解決台灣面臨的挑戰。",
+        "bio_en": "Good To Go. A social enterprise which tries to solve the problems facing Taiwan through social design."
+      },
+      {
+        "display_name": "好盒器 Good to go 洪小雯",
+        "organization": "好盒器 Good to go ",
+        "avatar_url": "cache/d4ea4d183a672a53a3e1a358e55cb0bf.jpg",
         "city": "台南",
         "info_url": "https://www.facebook.com/good.to.go.tw/",
         "bio": "好盒器。透過便利的容器租借服務，推動「一次性容器減量」，希望透過服務設計解決台灣面臨的挑戰。",
         "bio_en": "Good To Go. A social enterprise which tries to solve the problems facing Taiwan through social design."
       }
     ],
-    "updatedAt": "2020-10-24T04:13:58.635Z",
+    "updatedAt": "2020-10-25T13:34:52.362Z",
     "timeSheet": {
       "id": "5ef4330bba206b030d66a347",
       "議程日期": "2020-12-05",
@@ -933,7 +942,7 @@
     "title": "線上揪松是怎麼煉成的",
     "title_en": "How Jothon Online was Build",
     "summary": "- 線上揪松是怎麼煉成的？當面對疫情的挑戰，揪松團是如何開始想像線上大松，以及增加了哪些措施和規則，來讓線上的活動也能像實體活動一般，讓參與者有高度的互動性及參與感。\n- 線上活動的幕後（導播、場控）：線上活動不可或缺的靈魂人物，需要掌控直播的畫面、視角的切換，同時也要眼看四面耳聽八方，確認正在發表的講者、主持人的進度以及狀況，讓觀看者不要因為技術問題而降低參與感。\n- 線上揪松的挑戰與未來：線上揪松除了辦大松之外，也在發展的過程中促成了很多線上直播會議的進行，揪松團能夠在這當中扮演的腳色，以及對於未來線上揪松的想像，將於本場議程中與大家分享。\n- 專案授權：BSD License",
-    "summary_en": "- In this panel we will provide a brief origin story of Jothon Online. Start from the concept of hosting virtaul hackathon. Make the virtual event more interactive and engaged. And make it go as smooth as physical one by new measures and rules.\n- Introducing the hidden figures: Scenes Director and Floor Director. They are responsible for scene transition timing, scene arrangement and checking the progress and the status of moderator and speaker. Make sure the viewer experience is affected by any technical issue.\n- The challenge and the next step of Jothon Online: Except for holding hackathon. Jothon Online also contributes to few online meeting and virtual conference. We will talk about what are the roles that Jothon Online play a part in and what will be the next step of Jothon Online.\n- License: BSD License",
+    "summary_en": "- In this panel we will provide a brief origin story of Jothon Online. Start from the concept of hosting virtaul hackathon. Make the virtual event more interactive and engaged. And make it go as smooth as physical one by new measures and rules.\n- Introducing the hidden figures: Scenes Director and Floor Director. They are responsible for scene transition timing, scene arrangement and checking the progress and the status of moderator and speaker. Make sure the viewer experience is affected by any technical issue.\n- The challenge and the next step of Jothon Online: Except for holding hackathon, Jothon Online also contributes to few online meeting and virtual conference. We will talk about what are the roles that Jothon Online play a part in and what will be the next step of Jothon Online.\n- License: BSD License",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
@@ -945,11 +954,11 @@
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/@jothon/jothonline",
     "verified": true,
-    "createdAt": "2020-10-14T04:25:19.796Z",
+    "createdAt": "2020-10-26T13:24:56.243Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "muyueh",
+        "display_name": "Muyueh Lee",
         "organization": "李慕約公司",
         "avatar_url": "cache/d53beb75d0aeb190dbea9c3af7c76385.jpg",
         "city": "Taipei City",
@@ -969,14 +978,14 @@
       {
         "display_name": "tmonk",
         "organization": "g0v",
-        "avatar_url": "cache/d189137dcb7093c0f0f89545e978e271.jpg",
+        "avatar_url": "cache/82f578d7ca8502169d7850ff8a8a49e4.jpg",
         "city": "Taipei City",
         "info_url": "",
         "bio": "自由軟體工作者、網頁後端、直播導播。",
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-14T04:25:19.796Z",
+    "updatedAt": "2020-10-26T13:24:56.243Z",
     "timeSheet": {
       "id": "5ef479b9ba206b030d66a34e",
       "議程日期": "2020-12-05",
@@ -2413,7 +2422,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-10-22T02:09:16.862Z",
+    "createdAt": "2020-10-25T15:44:09.806Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -2424,9 +2433,18 @@
         "info_url": "https://www.linkedin.com/in/halsk/",
         "bio": "Hal Seki is a founder of Code for Japan, which is one of the biggest civic tech community in Japan. He is well known as a community manager for solving social issues through technology tools in Japan. ",
         "bio_en": "https://github.com/halsk/profile/blob/master/README_en.md"
+      },
+      {
+        "display_name": "Mariko Nishimura",
+        "organization": "HEART CATCH Inc.",
+        "avatar_url": "cache/905fa0e6b24ef53c478de9e940790837.jpg",
+        "city": "Tokyo, Japan",
+        "info_url": "",
+        "bio": "Mariko Nishimura has been involved the one of projects of Code for Japan that aimed to develop a contact-tracing app.",
+        "bio_en": "Mariko Nishimura started a career in IT with IBM Japan before moving into marketing management at Adobe Systems and production at Bascule. CEO and Co-Founder of creative marketing agency HEART CATCH Inc. since 2014, Mariko connects business, creativity and technology beyond borders, working with start-ups, companies, and government."
       }
     ],
-    "updatedAt": "2020-10-22T02:09:16.862Z",
+    "updatedAt": "2020-10-25T15:44:09.806Z",
     "timeSheet": {
       "id": "5efa9092ba206b030d66a408",
       "議程日期": "2020-12-05",
@@ -2903,7 +2921,7 @@
     "summary_en": "",
     "oral_language": "華語",
     "oral_languate_other": "",
-    "format": "工作坊 （60 分鐘）Workshop (60 min)",
+    "format": "主題論壇 （90 分鐘）Panel discussion (90 min)",
     "topic": "「沒有人」的島 Nobody’s island",
     "three_keywords": "揪松團,線上揪松,遠距交流",
     "cover_image": "cache/e31297cdc1e88214dede5dda7a2f10ff.jpg",
@@ -2912,7 +2930,7 @@
     "is_slide_cc40": true,
     "related_url": "http://g0v.github.io/jitsi-screen/screen2",
     "verified": true,
-    "createdAt": "2020-09-11T14:31:42.755Z",
+    "createdAt": "2020-10-26T13:23:43.753Z",
     "is_present_online": true,
     "presentation_method": "現場報告 on-site",
     "speakers": [
@@ -2935,7 +2953,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-09-11T14:31:42.755Z",
+    "updatedAt": "2020-10-26T13:23:43.753Z",
     "timeSheet": {
       "id": "5efaf2c6ba206b030d66a458",
       "議程日期": "2020-12-04",
@@ -3074,7 +3092,7 @@
     "id": "5efb0618ba206b030d66a474",
     "title": "g0v新手村─如何讓 g0v 更容易入門？",
     "title_en": "g0v novice village - how to make g0v a more beginner-friendly community?",
-    "summary": "蒐集開源社群新手會遇到的問題，並討論新手們希望得到什麼形式的協助與導航。期待解決現在開源社群流動性高造成的不確定性、專案複雜造成的資訊爆炸等結構性的問題，幫助 g0v 社群朝更開放、更有機的方向發展。\n\n【預計進行方式】\n一、新手許願池\n在會場布置常駐許願池，讓新參者可以隨時將遇到的問題投到許願池中。\n在工作坊時會將許願池的內容加入討論，並在會後整理、分享給揪松團。\n\n二、工作坊（預期 15 名各領域參與者）\n5 min.   發想新參者會遇到的問題與情緒（+ 許願池）\n8 min.   依據發生階段、嚴重性高低分類，篩選出前期、重大的問題\n10 min. 發想問題背後有哪些需求存在\n5 min.   根據性質分類，並讓參與者選擇有興趣的類別（預計 3 類，每類 5 名）\n5 min.   分組討論如何滿足需求\n15 min. 呈現（每組 3 分鐘發表 2 分鐘 feedback）\n12 min. 分享「你認為的 g0v 是什麼」 + 緩衝時間",
+    "summary": "了解開源新手加入時會遇到什麼困難，找出讓新手快速融入組織的切入點。期待解決開源社群流動性高造成的不確定性、專案複雜造成的資訊爆炸等結構性的問題，幫助 g0v 社群朝更開放、更有機的方向發展。\n\n【預計進行方式】\n一、新手許願池\n在會場布置常駐許願池，讓新參者可以隨時將遇到的問題投到許願池中。在會後整理、分享給揪松團。\n\n二、工作坊（15~30 名）\n5 min. 介紹工作坊目標與流程\n5 min. 了解現場參與者組成結構\n15 min. 畫g0v 運作流程圖、提出困擾點（痛點）\n15 min. 根據痛點發想該解決的問題\n10 min. 分類並票選\n10 min. 選出目標人物 & 關鍵時刻",
     "summary_en": "",
     "oral_language": "華語",
     "oral_languate_other": "",
@@ -3086,7 +3104,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-09-12T16:22:56.027Z",
+    "createdAt": "2020-10-26T00:49:41.087Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -3099,7 +3117,7 @@
         "bio_en": "Transfer from accounting to UI/UX. I hope I can contribute my abilities to make the world better."
       }
     ],
-    "updatedAt": "2020-09-12T16:22:56.027Z",
+    "updatedAt": "2020-10-26T00:49:41.087Z",
     "timeSheet": {
       "id": "5efb0618ba206b030d66a474",
       "議程日期": "2020-12-05",
@@ -3798,7 +3816,7 @@
     "is_slide_cc40": true,
     "related_url": "https://projectlockdown.world/",
     "verified": true,
-    "createdAt": "2020-10-18T16:15:05.940Z",
+    "createdAt": "2020-10-26T07:08:45.117Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -3807,16 +3825,16 @@
         "avatar_url": "cache/619832452bd5f318239fbdb185a12861.jpg",
         "city": "Brazil",
         "info_url": "",
-        "bio": "Born in Spain and with a full career in IT, I eventually realized that I was deeply linked to Asia and moved to Malaysia in 2012 and started volunteering in both Malaysia and the Philippines. In 2018, I founded The IO Foundation to establish a more solid and targeted direction to address Digital Rights for users. TIOF intends to work with pertinent regional and international agencies in crafting and implementing a Universal Declaration of Digital Rights (UDDR) which aims to be grounded from the Universal Declaration of Human Rights.",
-        "bio_en": "Born in Spain and with a full career in IT, I eventually realized that I was deeply linked to Asia and moved to Malaysia in 2012 and started volunteering in both Malaysia and the Philippines. In 2018, I founded The IO Foundation to establish a more solid and targeted direction to address Digital Rights for users. TIOF intends to work with pertinent regional and international agencies in crafting and implementing a Universal Declaration of Digital Rights (UDDR) which aims to be grounded from the Universal Declaration of Human Rights."
+        "bio": "Mark擁有國際關係學士和碩士學位，是ICANN GNSO理事會的成員，主要研究互聯網治理和科技對公共和私人政策制定的影響。\n他是ProjectLockdown的創始成員，現在是顧問委員會的核心成員。\n在GovernancePrimer Brand，他為企業和個人提供有關參與科技相關國際機構的諮詢。\nMark也是一名講師和課程開發人員，支持以及開發那些提高年輕人在國際舞台上的參與度和包容性的項目",
+        "bio_en": "With a BA and Master in International Relations, Mark is a member of the ICANN GNSO Council where he focuses on Internet Governance and the impacts of technology on public and private policymaking.\nHe is a founding member of Project Lockdown and is now a core member of the Board of Consultants.\nUnder the Governance  Primer brand, he consults for businesses and individuals in their participation in international institutions that relate to technology.\nMark is also a lecturer and course developer, supporting programs that increase the participation and inclusion of youth in international arenas."
       },
       {
         "display_name": "Julie Green",
         "organization": "Project Lockdown - The IO Foundation",
-        "avatar_url": "cache/f4d0f18f1447fe1e697c4ce046ab7175.jpg",
+        "avatar_url": "cache/da69f89616136a007559e26dae5cd589.jpg",
         "city": "Kampala",
         "info_url": "",
-        "bio": "Julie is passionate about human and digital rights and equity across the globe. Having worked seven years in the telecommunications industry as a software engineer, hardware engineer, market strategist, and consultant, Julie re-qualified as a secondary school teacher. She has been fortunate to work in many different cultures and countries and when not teaching has worked in the humanitarian sector in both long-term volunteering positions and paid employment.",
+        "bio": "Julie懷抱著對人權、數位權以及全球正義的熱情。曾在通訊業擔任軟、硬體工程師、市場策略顧問長達七年的期間，她重新定位自己成為一個中學教師。她很幸運自己能在不同文化圈及不同國家之間工作，並且在教書之外能以長期志工和有償的方式在人權領域中服務",
         "bio_en": "Julie is passionate about human and digital rights and equity across the globe. Having worked seven years in the telecommunications industry as a software engineer, hardware engineer, market strategist, and consultant, Julie re-qualified as a secondary school teacher. She has been fortunate to work in many different cultures and countries and when not teaching has worked in the humanitarian sector in both long-term volunteering positions and paid employment."
       },
       {
@@ -3825,11 +3843,11 @@
         "avatar_url": "cache/2cc42bf9954c26017b66a647cafeb675.jpg",
         "city": "Tainan",
         "info_url": "",
-        "bio": "Steven is an undergraduate majoring in Economics in The Chinese University of Hong Kong. Apart from the interest in macroeconomics, he is passionate about the digital rights and the social innovation.",
+        "bio": "Steven是個在香港中文大學主修經濟的大學生。除了對總經的興趣外，他對數位權以及社會創新懷抱著極大的熱忱",
         "bio_en": "Steven is an undergraduate majoring in Economics in The Chinese University of Hong Kong. Apart from the interest in macroeconomics, he is passionate about the digital rights and the social innovation."
       }
     ],
-    "updatedAt": "2020-10-18T16:15:05.940Z",
+    "updatedAt": "2020-10-26T07:08:45.117Z",
     "timeSheet": {
       "id": "5f02d5a0e88a4948daf87fb9",
       "議程日期": "2020-12-05",
@@ -4314,20 +4332,20 @@
     "id": "5f0f1b6e0bde6f3bbab73f76",
     "title": "失敗分享：澳門民間投票 2019 ",
     "title_en": "Lesson learnt from failure - Reflection on Macau Civil Vote 2019",
-    "summary": "民間/非官方公投是培養公民參與和集體表達意見的一種手段。在香港和澳門，中國試圖壓制民間投票。在過去的幾年中，公權力及有國家資助的行為者濫用了刑事訴訟程序及並發起了網絡攻擊，以干擾在香港和澳門的這些投票的運作。\n\n以2019年在澳門舉行的特首選舉民間投票為例，投票組織者在遭受多方面攻擊後，被迫提前結束投票。本議程將包括投票所面對的政治威脅以及在技術角度介紹防護措拖。我將討論當時來自中國拒絕服務（DoS）攻擊的模式、投票程式是否需要過度設計以及我為應對技術威脅所採取的措施。儘管在技術方面成功地守著了投票程式運行，但投票活動還是失敗了。投票組織者的主要成員收到對其人身安全受到威脅。組織者不僅提前中止了投票，還取消了計劃中的宣佈結果的新聞發佈會。從2019年澳門投票失敗中吸取的教訓可能會幫助有志者將來組織類似的投票。",
-    "summary_en": "Civic / unofficial referendums have been a means of cultivating civic engagement and collective expression of opinions.  In the context of Hong Kong and Macau, China has attempted to clamp down on civic votes / referendums.  In the past few years, the authorities and state-sponsored actors have abused criminal procedures and launched cyberattacks to interfere with the organisation of these votes in both Hong Kong and Macau.\n\nIn the case of the 2019 Vote on Chief Execution Election in Macau, the vote organiser was forced to close the vote prematurely after encountering multifaceted attacks.   The presentation will cover the political threat facing the vote as well as the technical aspect of the defence.  I will discuss the pattern of the Denial of Service (DoS) attacks, whether over-engineering is necessary and the measures I took to mitigate these threats.  Despite the success in defence of the voting application on the technical front, the vote ended up a failure.  Key members of the vote organiser received threats to their personal safety.  Not only did the organiser halt the vote but also cancelled a planned press conference at which the results would be announced.  The lessons learnt from the failure of the 2019 Macau Vote might help others plan a similar vote in the future. ",
+    "summary": "民間/非官方公投是培養公民參與和集體表達集體意見的一種手段。在香港和澳門，中國試圖壓制民間投票活動。過去幾年，這些投票活動遭受了不同程度的網絡攻擊以至被濫用刑事程序干擾。\n\n以2019年在澳門舉行的特首選舉民間投票為例，投票發起人在遭受多方面攻擊後，被迫提前結束投票。本議程將介紹該投票活動所面對的政治威脅以及技術上的攻防。講者將討論當時來自中國拒絕服務（DoS）攻擊的模式、投票程式是否需要過度設計以及應對技術威脅所採取的措施。儘管在技術層面成功地守著了投票程式運行，但投票活動還是失敗了。投票發起組織主要成員收到對其人身安全之威脅，發起人不僅提前中止了投票，還取消了宣佈結果的新聞發佈會。從2019年澳門投票失敗中吸取的教訓可能會幫助有志者將來組織類似的投票。",
+    "summary_en": "Civic / unofficial referendums have been a means of cultivating civic engagement and expressing collective opinions.  In the context of Hong Kong and Macau, China has attempted to clamp down on civic votes/referendums.  In the past few years, these votes experienced varying extents of cyberattacks and even the abuse of criminal procedures.\n\nIn the case of the 2019 Vote on Chief Execution Election in Macau, the vote organiser was forced to close the vote prematurely after encountering multifaceted attacks.  The presentation will cover the political threats facing the vote and the technical aspect of the defence.  I will discuss the pattern of the Denial of Service (DoS) attacks, whether over-engineering is necessary and the measures taken to mitigate these threats.  Despite the success in the defence on the technical front, the vote ended up a failure.  Key members of the vote organiser received threats to their personal safety.  Not only did the organiser halt the vote but also cancelled a planned press conference at which the results would be announced.  The lessons learnt from the failure of the 2019 Macau Vote might help others plan a similar vote in the future. ",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
     "topic": "島嶼大聯盟 Island’s federation",
-    "three_keywords": "voting, failure, referendum",
+    "three_keywords": "vote, failure, cyberattack",
     "cover_image": "",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://2019.newmacau.org/results.html",
     "verified": true,
-    "createdAt": "2020-09-14T11:59:47.938Z",
+    "createdAt": "2020-10-25T21:55:50.210Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -4336,11 +4354,11 @@
         "avatar_url": "cache/e82e8c675b80ab4a3a2af39b2d783d1d.jpg",
         "city": "London",
         "info_url": "https://jasontc.net/",
-        "bio": "開發人員、人權運動人士、博士生",
-        "bio_en": "Developer, human rights activist and PhD student"
+        "bio": "技術人、人權運動人。曾參與社會/政治運動、倡議同志平權以及學習人權法。目前為德國鍚根大學博士生，負責數位媒體研究工具之開發。",
+        "bio_en": "Jason Chao is a technologist and human rights activist.   Chao has backgrounds in political activism, LGBT+ advocacy and human rights law.  He is currently researching the development of digital method tools as a doctoral researcher at the University of Siegen."
       }
     ],
-    "updatedAt": "2020-09-14T11:59:47.938Z",
+    "updatedAt": "2020-10-25T21:55:50.210Z",
     "timeSheet": {
       "id": "5f0f1b6e0bde6f3bbab73f76",
       "議程日期": "2020-12-05",
@@ -4512,8 +4530,8 @@
   },
   "1204-jothon-1": {
     "id": "1204-jothon-1",
-    "updatedAt": "2020-10-16T18:20:27.000Z",
-    "createdAt": "2020-10-16T18:20:27.000Z",
+    "updatedAt": "2020-10-26T13:34:59.000Z",
+    "createdAt": "2020-10-26T13:34:59.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
@@ -4533,8 +4551,8 @@
         "avatar_url": "cache/347efea3de16f86c00ecde56d98b116f.jpg",
         "city": "Tokyo, Japan",
         "info_url": "https://medium.com/@mamisada",
-        "bio": "Miley 是研究兒童發展的博士生、Code for Japan 的社群經理。他曾在 LITALICO 工作，舉辦 Social Fighter Award，獎勵關注社會議題的科技團隊。",
-        "bio_en": "Miley is a PhD student of child development and community manager of Code for Japan. She worked for LITALICO and held Social Fighter Award, the award for the team who work on the social issues."
+        "bio": "Miley 是 Code for Japan 的社群經理、在大阪大學研究兒童發展的博士生。他曾在 LITALICO 工作，自 2018 年起舉辦「Social Fighter Award」，這個獎項是給關注社會議題的科技團隊。今年他與 Code for Japan 的實習生一起舉辦「Civictech Challenge Cup U-22」。",
+        "bio_en": "Community manager of Code for Japan and she is a PhD student of child development at Osaka Univ.  She worked for LITALICO and held Social Fighter Award, the award for the team who work on the social issues in 2018. This year she made Civictech Challenge Cup U-22 with Code for Japan interns."
       },
       {
         "display_name": "Mee",
