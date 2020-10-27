@@ -144,12 +144,13 @@
         "organization": "淡江大學大眾傳播學系暨研究所",
         "avatar_url": "https://imgur.com/a/hUZ4rGJ",
         "city": "新北市",
-        "bio": "淡江大學大傳所研究生aka空中小飛俠，目前正在做與YouTuber經營相關的研究+摸索未知領域，最近剛考過空拍機證照，學習美感攝影中。"
+        "bio": "淡江大學大傳所研究生aka空中小飛俠，目前正在做與YouTuber經營相關的研究+摸索未知領域，最近剛考過空拍機證照，學習美感攝影中。",
+        "bio_en": " "
       }
     ],
     "verified": true,
-    "createdAt": "2020-10-15T11:46:56.000Z",
-    "updatedAt": "2020-10-15T11:46:56.000Z",
+    "createdAt": "2020-10-27T12:54:57.000Z",
+    "updatedAt": "2020-10-27T12:54:57.000Z",
     "timeSheet": {
       "id": "5ee0c02eba206b030d66a2d5",
       "議程日期": "2020-12-04",
@@ -2636,7 +2637,7 @@
     "is_slide_cc40": true,
     "related_url": "https://www.eden.org.tw/branches_detail.php?detailId=JCU4NSMh&rePageUrl=L2JyYW5jaGVzLnBocD8mcGFnZT0xNQ%3D%3D",
     "verified": true,
-    "createdAt": "2020-10-16T15:13:26.000Z",
+    "createdAt": "2020-10-27T12:54:51.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -2653,7 +2654,8 @@
         "organization": "伊甸大林社會住宅住戶",
         "avatar_url": "https://i.imgur.com/Zhgh8Zm.jpg",
         "city": "台南市",
-        "bio": "沈淑雅，小兒麻痺及乳癌患者，平日生活皆需仰賴電動輪椅代步，入住社宅前期因居住環境變好，讓她得以休養身體後在外工作，後來身體狀況不佳就待業在家。目前與兒子同住在大林雙福園區社會住宅，兒子今年剛從大學畢業。"
+        "bio": "沈淑雅，小兒麻痺及乳癌患者，平日生活皆需仰賴電動輪椅代步，入住社宅前期因居住環境變好，讓她得以休養身體後在外工作，後來身體狀況不佳就待業在家。目前與兒子同住在大林雙福園區社會住宅，兒子今年剛從大學畢業。",
+        "bio_en": " "
       },
       {
         "display_name": "陳勝雄",
@@ -2665,7 +2667,7 @@
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-16T15:13:26.000Z",
+    "updatedAt": "2020-10-27T12:54:51.000Z",
     "timeSheet": {
       "id": "5efac8d2ba206b030d66a432",
       "議程日期": "2020-12-04",
@@ -2869,8 +2871,8 @@
     "id": "5efae364ba206b030d66a441",
     "title": "Wikidata 台灣一年了，回顧過往與展望未來",
     "title_en": "Wikidata one Year in Taiwan, what is our results and what is our future plan",
-    "summary": "Wikidata 台灣社群在台灣在台灣發展一年多，幾年前有 Wikidata 專案經理來台宣傳 Wikidata 不過激盪不出太多本地漣漪，直到 2019 年有些轉機。Wikidata 從原先附屬相關社群如維基百科語和開放街圖順帶提及，如今因為方便編輯與容易用程式串接，而能衍生相對數量多而且多樣的應用。\n\nWikidata 除了知識體系之外，新的詞條形式收錄語言資料，能容納不同形式書寫系統。本次演講計畫談論 Wikidata Taiwan 一年基礎知識成果像是河川水系，學校，村里資料，還有未來展望，像是收錄本土語言台語語言資料，性別主題和地方學議題等可能性。\n",
-    "summary_en": "Wikidata Taiwan Community is developing for one year. Several  years ago the project manager of Wikidata give a talk on COSCUP, but after the talk there were few action outside the Wikipedia movement circle. Until 2019 there is a change, once a topic belong to related project like Wikipedia or OpenStreetMap, Wikidata in Taiwan finally have the chance to run as a booming community. It is easy for interested people to edit Wikidata, and for developers it is also very easy to access by API using query language to retrieve stuff you want. So there are many Wikidata-powered application.\n\nWikidata is not only a knowledge system, but also have a lexema system for storing words and terms of any given languages. This talk will reflect the achievement of last year, like waterway data, school data, village data, and looking into the future possibility , things such as local language restoration, gender issue and local studies.",
+    "summary": "Wikidata 台灣社群在台灣在台灣發展一年多，幾年前有 Wikidata 專案經理來台宣傳 Wikidata ，不過激盪不出太多本地漣漪，直到 2019 年有些轉機。Wikidata 從原先附屬相關社群如維基百科語和開放街圖順帶提及，如今因為方便編輯與容易用程式串接，而能衍生相對數量繁多而且多樣的應用，能整合任何你想到的知識體系。\n\nWikidata 除了知識體系之外，新的詞條形式收錄語言資料，能容納不同形式書寫系統。本次演講計畫談論 Wikidata Taiwan 一年基礎知識成果像是河川水系，學校，村里資料，還有未來展望，像是收錄本土語言台語語言資料，性別主題和地方學議題等可能性。\n\n本次演講將回顧十年發展，從 COSCUP 帶來的 Wikidata 演講展開曙光，卻在中間沉寂一陣子，只有鏈結資料學者會研究，到後來隨著 Wikidata 計劃的發展，重新在台灣當地被重視。我們將講述近兩年時間 Wikidata 台灣社群做什麼，未來的展望。",
+    "summary_en": "Wikidata Taiwan Community is developing for one year. Several  years ago the project manager of Wikidata give a talk on COSCUP, but after the talk there were few action outside the Wikipedia movement circle. Until 2019 there is a change, once a topic belong to related project like Wikipedia or OpenStreetMap, Wikidata in Taiwan finally have the chance to run as a booming community. It is easy for interested people to edit Wikidata, and for developers it is also very easy to access by API using query language to retrieve stuff you want. So there are many Wikidata-powered application.\n\nWikidata is not only a knowledge system, but also have a lexema system for storing words and terms of any given languages. This talk will reflect the achievement of last year, like waterway data, school data, village data, and looking into the future possibility , things such as local language restoration, gender issue and local studies.\n\nThis talk will review Wikidata activities of 10 years in Taiwan. From the very beginning of Wikidata project Manager's talk in COSCUP. But Wikidata does not have much to do in Taiwan, only linked-data scholar care about. And recent years Wikidata was rediscovered by Taiwan Wikimedian. We will talk about our experience and future overview.",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
@@ -2881,6 +2883,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.wikidata.org",
+    "verified": true,
+    "createdAt": "2020-10-27T03:45:23.602Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "陳瑞霖",
@@ -2889,12 +2894,10 @@
         "city": "台北",
         "info_url": "https://www.slideshare.net/ChenJuilin",
         "bio": "Wikidata Taiwan 與 OpenStreetMap 台灣社群成員，前媒體工作者，但現在仍主持線上社群刊物 weeklyOSM 的編務工作。個人關注開放資料與開放內容，並且不時關心數位人權議題。",
-        "bio_en": "Dennis is a Community member of Wikidata Taiwan and OpenStreetMap Taiwan. A former media workers, but still have connection with editing due to participate in weeklyOSM team. He follows closely with the trend of open content and open data in Taiwan, sometimes also pay attention to digital rights."
+        "bio_en": "Dennis is a Community member of Wikidata Taiwan and OpenStreetMap Taiwan. A former media workers, but still have connection with editing due to participate in OpenStreetMap community news publication weeklyOSM team. He follows closely with the trend of open content and open data in Taiwan, sometimes also pay attention to digital rights."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-10-27T03:45:23.602Z",
     "timeSheet": {
       "id": "5efae364ba206b030d66a441",
       "議程日期": "2020-12-05",
@@ -3754,20 +3757,20 @@
     "id": "5f02d14ee88a4948daf87fb7",
     "title": "What are the interns of Code for Japan doing?",
     "title_en": "",
-    "summary": "I guess there aren't many Code for communities or civic tech communities that hire interns. But in Japan, there are four student interns hired by Code for Japan. I'm going to give a presentation about what the student interns of Code for Japan are doing, are working. \nFurthermore, I'm going to introduce the civic tech award that we interns are planning, named \"Civic tech Challenge Cup U-22\". This award will be held from August to October, so I may be able to bring the champion to this summit. One of the champion will give presentation about their work.",
+    "summary": "I guess there aren't many Code for communities or civic tech communities that hire interns. But in Japan, there are 6 students interns hired by Code for Japan. I'm going to give a presentation about what the student interns of Code for Japan are doing, are working. \nFurthermore, I'm going to introduce the civic tech award that we interns are planning, named \"Civic tech Challenge Cup U-22\". The winner team of this contest “Civichat” will give presentation about their product.\n",
     "summary_en": "",
     "oral_language": "English",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
     "topic": "「沒有人」的島 Nobody’s island",
-    "three_keywords": "Code for Japan, Interns, High school students",
+    "three_keywords": "Code for Japan, Students, CCCu22",
     "cover_image": "https://i.imgur.com/SEzyeGlh.jpg",
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://www.code4japan.org/",
     "verified": true,
-    "createdAt": "2020-10-11T12:41:01.313Z",
+    "createdAt": "2020-10-27T10:03:10.647Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -3776,11 +3779,20 @@
         "avatar_url": "https://i.imgur.com/14TjOunh.jpg",
         "city": "Tokyo",
         "info_url": "https://kota-yata.com",
-        "bio": "A high school student working as an intern at Code for Japan",
+        "bio": "A high school student working as an intern at Code for Japan. I'm going to speak about our jobs and Civictech Challenge Cup U-22.",
+        "bio_en": ""
+      },
+      {
+        "display_name": "Civichat",
+        "organization": "Civichat",
+        "avatar_url": "https://i.imgur.com/DTDA5cEh.jpg",
+        "city": "Tokyo",
+        "info_url": "https://civichat.jp/",
+        "bio": "We are the winners of the Civictech Challenge Cup U-22, 'Civichat'. All members of this team are students, but we built our product entirely online, despite the restrictions on face-to-face work due to COVID-19. The winning entry was called \"Civichat\", which allows users to find out about the public system that suits them on line.\nIn this presentation, we will talk about the current state of Japan's public system and its solutions, as well as the \"interface of government\" that Civichat aims to create.",
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-11T12:41:01.313Z",
+    "updatedAt": "2020-10-27T10:03:10.647Z",
     "timeSheet": {
       "id": "5f02d14ee88a4948daf87fb7",
       "議程日期": "2020-12-04",
@@ -4394,7 +4406,7 @@
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/Cir7yKp1SPmyZzm8JyxBiQ",
     "verified": true,
-    "createdAt": "2020-10-07T10:20:55.699Z",
+    "createdAt": "2020-10-27T12:54:43.000Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -4414,9 +4426,15 @@
         "info_url": "",
         "bio": "Miley is a PhD student of child development and community manager of Code for Japan. She works for LITALICO and held Social Fighter Award,the award for the team who work on the social issues.",
         "bio_en": ""
+      },
+      {
+        "display_name": "Isabel Hou",
+        "organization": "g0v",
+        "city": "Chupei",
+        "bio_en": " "
       }
     ],
-    "updatedAt": "2020-10-07T10:20:55.699Z",
+    "updatedAt": "2020-10-27T12:54:43.000Z",
     "timeSheet": {
       "id": "5f0f209d0bde6f3bbab73f7a",
       "議程日期": "2020-12-05",
@@ -4485,8 +4503,8 @@
   },
   "1204-jothon-0": {
     "id": "1204-jothon-0",
-    "updatedAt": "2020-10-05T23:46:52.000Z",
-    "createdAt": "2020-10-05T23:46:52.000Z",
+    "updatedAt": "2020-10-27T07:58:28.000Z",
+    "createdAt": "2020-10-27T07:58:28.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
@@ -4530,8 +4548,8 @@
   },
   "1204-jothon-1": {
     "id": "1204-jothon-1",
-    "updatedAt": "2020-10-26T13:34:59.000Z",
-    "createdAt": "2020-10-26T13:34:59.000Z",
+    "updatedAt": "2020-10-27T04:56:22.000Z",
+    "createdAt": "2020-10-27T04:56:22.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
@@ -4552,7 +4570,7 @@
         "city": "Tokyo, Japan",
         "info_url": "https://medium.com/@mamisada",
         "bio": "Miley 是 Code for Japan 的社群經理、在大阪大學研究兒童發展的博士生。他曾在 LITALICO 工作，自 2018 年起舉辦「Social Fighter Award」，這個獎項是給關注社會議題的科技團隊。今年他與 Code for Japan 的實習生一起舉辦「Civictech Challenge Cup U-22」。",
-        "bio_en": "Community manager of Code for Japan and she is a PhD student of child development at Osaka Univ.  She worked for LITALICO and held Social Fighter Award, the award for the team who work on the social issues in 2018. This year she made Civictech Challenge Cup U-22 with Code for Japan interns."
+        "bio_en": "Community manager of Code for Japan and she is a PhD student of child development at Osaka Univ.  She worked for LITALICO and held Social Fighter Award, the award for the team who work on the social issues in 2018. This year she organized Civictech Challenge Cup U-22 with Code for Japan interns."
       },
       {
         "display_name": "Mee",
@@ -5047,19 +5065,12 @@
       "id": "1206-keynote-1",
       "議程日期": "2020-12-06",
       "議程預設標題-華語": "基調演講：區域民主社群串連（暫）",
-      "最後更新時間": "2020-10-24T08:21:25.000Z",
+      "最後更新時間": "2020-10-27T13:02:56.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
-      "主持人": {
-        "display_name": "外星人",
-        "organization": "冥王星 中山路 36 號 2 弄 7 樓",
-        "avatar_url": "http://www.gravatar.com/avatar/47e9e12a38128bfeb8ed7c29527e41a0.png",
-        "city": "冥王星",
-        "bio": "前面要空兩格",
-        "bio_en": "2 space at beginning of line"
-      },
+      "主持人": null,
       "議程開始時間": "2020-12-06T11:30",
       "議程長度": 90,
       "locationMeta": {
