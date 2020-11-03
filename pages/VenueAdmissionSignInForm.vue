@@ -650,6 +650,9 @@ export default {
     if (localStorage.getItem('checkedInVenues')) {
       this.checkedInVenues = [...JSON.parse(localStorage.getItem('checkedInVenues'))]
     }
+    if (localStorage.getItem('venueAdmissionSignInForm')) {
+      this.venueAdmissionSignInForm = { ...JSON.parse(localStorage.getItem('venueAdmissionSignInForm')) }
+    }
   },
   methods: {
     selectedVenue (value) {
