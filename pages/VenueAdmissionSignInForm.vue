@@ -277,12 +277,35 @@
           input.f5(type='radio',name="today-coronavirus-test", id='today-coronavirus-test-yes')
           label(for='today-coronavirus-test-yes')
             | 有 Yes
+    div.check-info
+      button#button-check-in.fw9(
+        @click="submmit"
+        v-if="!isChecked"
+      )
+        | {{$t('checkIn')}}
+      div.checked-in(
+        v-else
+      )
+        <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="54" cy="54" r="54" fill="#4BE2F2"/>
+          <path d="M23 54L43 74L63.5 53.5L84 33" stroke="white" stroke-width="5"/>
+        </svg>
+        p.checked-time.fw9
+          | {{checkedTime}}
+        p.fw9
+          | {{$t('checkedIn')}}
+        button#button-checked-in
+          | Enjoy !
 </template>
 <i18n lang="yaml">
 en:
   signInForm: 'Venue Admission Sign In Form'
+  checkIn: 'Check In !'
+  checkedIn: 'Checked In'
 zh:
   signInForm: '入場打卡表單'
+  checkIn: '打卡！'
+  checkedIn: '完成打卡'
 </i18n>
 <script>
 export default {
@@ -297,7 +320,24 @@ export default {
       testResults: '',
       // when diagnosed === 'no', clean hospitalized
       diagnosed: '',
-      hospitalized: ''
+      hospitalized: '',
+      checkedTime: '',
+      isChecked: false
+    }
+  },
+  methods: {
+    submmit () {
+      this.checkedTime = this.timeStamp()
+      this.isChecked = true
+    },
+    timeStamp () {
+      const date = new Date()
+      const YYYY = date.getFullYear()
+      const MM = date.getMonth() + 1
+      const DD = date.getDate()
+      const hh = date.getHours()
+      const mm = date.getMinutes()
+      return `${YYYY}/${MM}/${DD} ${hh}:${mm}`
     }
   }
 }
@@ -311,12 +351,14 @@ export default {
     text-align: center;
     color: #0EAFC9;
   }
+  button {
+    border: 0;
+  }
   .venues {
     @media screen and (min-width: 800px) {
       text-align: center;
     }
     button {
-      margin: 0;
       margin-right: 15px;
       margin-bottom: 15px;
       padding: 8px 5px;
@@ -327,6 +369,11 @@ export default {
       @media screen and (min-width: 800px) {
         padding: 13px;
       }
+    }
+    button:hover {
+      color: #fff;
+      background: #0EAFC9;
+
     }
   }
   .info {
@@ -354,7 +401,27 @@ export default {
       display: flex;
       flex-direction: column;
     }
-
+  }
+  .check-info {
+    text-align: center;
+    font-size: 1.125rem;
+    .checked-time {
+      color: #f779ee;
+    }
+    button {
+      border-radius: 30px;
+      padding: 4px 25px;
+    }
+    #button-check-in {
+      font-size: 2rem;
+      color: #fff;
+      background: #0EAFC9;
+    }
+    #button-checked-in {
+      padding: 8px 25px;
+      color: #fff;
+      background: #4BE2F2;
+    }
   }
 }
 </style>
