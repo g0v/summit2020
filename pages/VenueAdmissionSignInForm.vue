@@ -101,6 +101,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="temperature",
             id='temperature'
@@ -110,6 +111,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="coughs",
             id='coughs'
@@ -119,6 +121,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="pharyngitis",
             id='pharyngitis'
@@ -128,6 +131,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="breath",
             id='breath'
@@ -137,6 +141,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="unnyNose",
             id='runny-nose'
@@ -146,6 +151,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="myalgia",
             id='myalgia'
@@ -155,6 +161,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="arthralgia",
             id='arthralgia'
@@ -164,6 +171,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="asthenia",
             id='asthenia'
@@ -173,6 +181,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="chest",
             id='chest'
@@ -182,6 +191,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="ageusia",
             id='ageusia'
@@ -191,6 +201,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="anosmia",
             id='anosmia'
@@ -200,6 +211,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="diarrhea",
             id='diarrhea'
@@ -209,6 +221,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="hyperemia",
             id='hyperemia'
@@ -218,6 +231,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="eyes",
             id='eyes'
@@ -227,6 +241,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanThatOneChoice"
             type="checkbox",
             value="blisters",
             id='blisters'
@@ -236,6 +251,7 @@
         div
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
+            @change="cleanExceptMyselfChoices"
             type="checkbox",
             value="noneOfTheAbove",
             id='none-of-the-above'
@@ -256,7 +272,7 @@
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms",
             type='text',
-            placeholder='請填寫症狀'
+            placeholder='*請填寫症狀'
           )
     div.field
       label.fw5
@@ -508,6 +524,7 @@
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsToday",
             type='radio',
+            value="no",
             name="today-symptoms",
             id='today-symptoms-no'
           )
@@ -517,6 +534,7 @@
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsToday",
             type='radio',
+            value="yes",
             name="today-symptoms",
             id='today-symptoms-yes'
           )
@@ -612,7 +630,7 @@ export default {
         diagnosedCountry: '',
         diagnosedHospital: '',
         diagnosedHospitalized: '',
-        symptomsToday: 'no',
+        symptomsToday: '',
         stayedMoreThan1HourPlacesToday: '',
         takeACoronavirusTestToday: ''
       },
@@ -637,6 +655,22 @@ export default {
     selectedVenue (value) {
       this.currentVenue = value
     },
+    cleanThatOneChoice () {
+      const thatOneChoice = 'noneOfTheAbove'
+      if (this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes(thatOneChoice)) {
+        const index = this.venueAdmissionSignInForm.symptomsInTheLast14Days.indexOf(thatOneChoice)
+        this.venueAdmissionSignInForm.symptomsInTheLast14Days.splice(index, 1)
+      }
+    },
+    cleanExceptMyselfChoices () {
+      const thatOneChoice = 'noneOfTheAbove'
+      if (this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others')) {
+        this.venueAdmissionSignInForm.symptomsInTheLast14Days = ['others']
+      } else {
+        this.venueAdmissionSignInForm.symptomsInTheLast14Days = []
+      }
+      this.venueAdmissionSignInForm.symptomsInTheLast14Days.push(thatOneChoice)
+    },
     cleanHiddenFieldValue () {
       if (!this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others')) {
         this.venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms = ''
@@ -655,8 +689,60 @@ export default {
         this.venueAdmissionSignInForm.diagnosedHospitalized = ''
       }
     },
-    validateFrom () {
+    isRequiredFieldEmpty () {
+      // 驗證複選欄位
+      const isSymptomsInTheLast14DaysEmpty = this.venueAdmissionSignInForm.symptomsInTheLast14Days.length === 0
+      // 驗證複選欄位包含 others 時的隱藏欄位
+      const isSymptomsInTheLast14DaysOthersSymptomsEmpty = this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others') ? this.venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms === '' : false
+      // 驗證「是否接受過新冠肺炎篩檢」欄位為 yes 時的隱藏欄位
+      let isReceivedScreenTestHiddenFieldsEmpty
+      if (this.venueAdmissionSignInForm.receivedScreenTest === 'yes') {
+        isReceivedScreenTestHiddenFieldsEmpty = this.venueAdmissionSignInForm.receivedScreenDate === '' ||
+                this.venueAdmissionSignInForm.receivedScreenCountry === '' ||
+                this.venueAdmissionSignInForm.receivedScreenInstitute === '' ||
+                this.venueAdmissionSignInForm.receivedScreenTestMethods === '' ||
+                this.venueAdmissionSignInForm.receivedScreenTestResults === ''
+      }
+      // 驗證「是否曾被確診為新冠肺炎患者」欄位為 yes 時的隱藏欄位
+      let isDiagnosedHiddenFieldsEmpty
+      if (this.venueAdmissionSignInForm.diagnosed === 'yes') {
+        isDiagnosedHiddenFieldsEmpty = this.venueAdmissionSignInForm.diagnosedDate === '' ||
+                this.venueAdmissionSignInForm.diagnosedCountry === '' ||
+                this.venueAdmissionSignInForm.diagnosedHospital === '' ||
+                this.venueAdmissionSignInForm.diagnosedHospitalized === ''
+      }
+
+      const specialFields = [
+        'symptomsInTheLast14Days',
+        'symptomsInTheLast14DaysOthersSymptoms',
+        'receivedScreenDate',
+        'receivedScreenCountry',
+        'receivedScreenInstitute',
+        'receivedScreenTestMethods',
+        'receivedScreenTestResults',
+        'diagnosedDate',
+        'diagnosedCountry',
+        'diagnosedHospital',
+        'diagnosedHospitalized'
+      ]
+      // 驗證其他欄位
+      const isOtherFieldsEmpty = Object.keys(this.venueAdmissionSignInForm).some((key) => {
+        if (!specialFields.includes(key)) {
+          return this.venueAdmissionSignInForm[key] === ''
+        }
+      })
       /* eslint-disable no-console */
+      return isSymptomsInTheLast14DaysEmpty ||
+            isSymptomsInTheLast14DaysOthersSymptomsEmpty ||
+            isReceivedScreenTestHiddenFieldsEmpty ||
+            isDiagnosedHiddenFieldsEmpty ||
+            isOtherFieldsEmpty
+    },
+    validateFrom () {
+      if (this.isRequiredFieldEmpty()) {
+        alert(' 必填欄位不能為空')
+        return
+      }
       this.submmit()
     },
     submmit () {
