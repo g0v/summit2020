@@ -191,6 +191,9 @@ async function downloadTables () {
   }, false)
 
   const moderatorMap = moderatorRaw.reduce((map, moderator) => {
+    if (!moderator.資訊) {
+      return map
+    }
     try {
       return {
         ...map,
