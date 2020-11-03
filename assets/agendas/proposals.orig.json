@@ -4,7 +4,7 @@
     "title": "牧貓人 —— g0v 混亂有序開放協作專案管理",
     "title_en": " Herding Cats –– Project Management in g0v Projects",
     "summary": "來 g0v 提案許願就會成真？才沒那麼簡單，想走得長遠有影響力，需有對社會議題的理解、習慣開源社群鬆散的協作方式、做數位產品的產品開發、跨領域溝通。滿多專案隨時面臨人力、時間不足、無法說服利害關係人、開發方向不明等問題。當每個貢獻者都是獨立的貓時，該如何促進社群協作呢？\n\n作為兩個長期提案的專案經理，我們將以環境倡議團體發起的 Disfactory 農地違章工廠回報行動，與嘗試居住新解法的 Rentea 社群為例，說明我們如何嘗試定義提案目標、釐清議題需求、定出可執行的具體項目、與開源社群協作開發、找到/運用手上的資源，從食物轉為程式碼的黑盒子中，提取專案管理的經驗和心法。\n\n這次分享是另一個長期專案 #herding-cats 的開頭，開始訪談整理形形色色的 g0v 專案，具體來說是如何協作開發的，成為之後 g0v 專案的養分。\n\n圖片來源：https://www.flickr.com/photos/ceardach/4549876293\n",
-    "summary_en": "",
+    "summary_en": "\"Herding cats\" is perfect to describe project management in an open source project contributed by quite independent developers.\n\nCivic tech adds an extra layer of complexity because you need to understand the contexts of social issues, to collaborate with diverse stakeholders with intense interdisciplinary communication. However, the project usually only has unstable contributors with limited time following unclear project goals. That is when you need to consider some project management in your projects.\n\nWe would like to share our journeys on open source project management in civic tech–– how to identify user needs, how to brainstorm solutions, how to determine project's scope, how to make a feasible development plan and how to sustain the projects with open source communities.\n\nWe hope this talk would inspire more civic hackers develop their projects in open collaboration with less struggles.\n\nThe two cases shared in the talk are Disfactory, a reporting platform on illegal factory on farmland, and Rentea, a project trying to create alternative for living in urban area.\n\nImage source: https://www.flickr.com/photos/ceardach/4549876293",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
@@ -15,7 +15,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-09-11T16:03:29.271Z",
+    "createdAt": "2020-11-02T08:19:48.161Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -37,7 +37,7 @@
         "bio_en": "Ael is an active g0v participant that wants to build digital solutions for open and collaborative civic participation with open source communities.\n\nShe has been serving as product manager in “Disfactory”, a report platform on illegal factories on the farmlands, “Herstory in East Asia” and “Libot”, a LINE bot for Village Chiefs to report damages in the city.\n\nAel was the project manager of g0v Civic Tech Prototype Grant working with Jothon team and the product manager of sense.tw, an issue-policy mapping tool."
       }
     ],
-    "updatedAt": "2020-09-11T16:03:29.271Z",
+    "updatedAt": "2020-11-02T08:19:48.161Z",
     "timeSheet": {
       "id": "5edcffaeba206b030d66a2c6",
       "議程日期": "2020-12-04",
@@ -120,6 +120,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-10-31T15:11:34.169Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "蔡蕙如",
@@ -148,9 +151,7 @@
         "bio_en": " "
       }
     ],
-    "verified": true,
-    "createdAt": "2020-10-27T12:54:57.000Z",
-    "updatedAt": "2020-10-27T12:54:57.000Z",
+    "updatedAt": "2020-10-31T15:11:34.169Z",
     "timeSheet": {
       "id": "5ee0c02eba206b030d66a2d5",
       "議程日期": "2020-12-04",
@@ -608,53 +609,6 @@
       "locationMeta": {
         "order": 13,
         "capacity": 100
-      }
-    }
-  },
-  "5ef220f9ba206b030d66a325": {
-    "id": "5ef220f9ba206b030d66a325",
-    "title": "線上參與的一百種方法",
-    "title_en": "100 ways of online participation",
-    "summary": "隨著科技進步，越來越多的交流與討論可以用「線上」的方式參與。不論是線上參與 g0v 大松、 vTaiwan 小松、用 sli.do 參與現場有三十人左右的工作坊、甚至「線上」開機器人出席國際會議，這些應用我們似乎都不還太陌生。\n\n到了 2020 年，各式各樣創意十足的線上參與方式浮現。視訊軟體的 breakout rooms 體驗越來越完善，在開線上會議時也發展出一個「如何有禮貌又得體的說掰掰」的不成文規範（舉起一手示意要離開，另一手先關掉視訊，接著才離開會議）\n\n線上參與比起純粹的面對面討論有什麼優缺點呢？什麼 easy hack 可以簡易又快速的改善線上參與的體驗呢？什麼樣的討論是非線上做不到的呢？\n\n在這個短講中，我想分享我的線上參與經驗、整理一份名為「線上參與的一百種方法」的工具包，用人數、場地、時間等等 filter 提供活動主辦方一些可行的靈感，並分享我個人喜歡的 easy hack 線上參與小玩具們。",
-    "summary_en": "With the advance of technology, more communication and collaboration got brought online. G0v sets a great examples which has hosted online hackathons every two months along with physical ones. vTaiwan recently brought our weekly meet-ups online, as impacted by COVID-19 and lockdown situation. Other examples such as entering workshops with more than 30+ participatns through [sli.do](http://sli.do), or giving talks to international conferences through a Double Robotics, it all shows that we are getting more and more familiar with this \"new\" way to participate – online participation, no matter as a remote participant, or participating with an online presence. \n\n2020 is the year when we need the most creativity to participate online. Online conference tools have sharpen up their breakout room experience, even new etiquette forms. People developed a way to \"say byes politely\" when exiting online meetings: raise one hand first to indicate the intention to end conversation, turn off video-streaming first, then finally click on the leaving meeting button. \n\nWhat are the advantages and disadvanage for online and physical particiaption? What are the easy hacks to improve the experience when participating online?\n\nIn this short talk, I'd like to share my experience of participating online. I will share a toolkit named as <100 ways of online participation> for event organizers to browse for inspiration and understand pros and cons among options. It will provide filters such as ideal level of interactivity and experience etc, I'll also share my favorite tools when participating online.",
-    "oral_language": "華語",
-    "oral_languate_other": "",
-    "format": "演講 （20 分鐘）Talk (20 min)",
-    "topic": "大島開放 Open island",
-    "three_keywords": "線上參與、工具包、玩具",
-    "cover_image": "https://i.imgur.com/aoXsFu4h.jpg",
-    "is_content_cc40": true,
-    "is_presentation_cc40": true,
-    "is_slide_cc40": true,
-    "speakers": [
-      {
-        "display_name": "sylin",
-        "organization": "individual ",
-        "avatar_url": "https://i.imgur.com/3K2lT6Ch.jpg",
-        "city": "Bristol",
-        "info_url": "",
-        "bio": "斷斷續續會出現在 g0v 大松、 vTaiwan 小松的參與者，喜歡思考人與人、人與電腦之間的互動。",
-        "bio_en": ""
-      }
-    ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
-    "timeSheet": {
-      "id": "5ef220f9ba206b030d66a325",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "線上參與的一百種方法",
-      "最後更新時間": "2020-10-31T12:40:59.000Z",
-      "分類主題-華語": "資訊人跳坑",
-      "分類主題-en": "When tech people dive in",
-      "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio",
-      "主持人": null,
-      "議程開始時間": "2020-12-04T14:30",
-      "議程長度": 30,
-      "locationMeta": {
-        "order": 12,
-        "capacity": 50
       }
     }
   },
@@ -1524,7 +1478,7 @@
     "title": "資料都開放了! 然後呢!? 讓我們一起譜出知識的樂章",
     "title_en": "A Construction of Knowledge Graph from Open Data",
     "summary": "開放資料的運動方興未艾，台灣政府開放的資料集數量多，在大量的資料下隱含了資料整合的問題，舉例來說，至少有三個以上的政府單位管理並開放了「步道」資料，林務局只管路線、觀光局只管觀光旅遊資訊、衛服部只管走步道消耗多少熱量，各部會各司其職，資料管理也只涉及所轄權責，但對資料治理而言，缺乏一個架構來貫穿資料，讓資料成為可被操作的知識。本次演講將以農產品產銷履歷和民生公共物聯網資料，來介紹台灣開放資料轉化成知識圖譜(鏈結資料)的經驗，及其應用的建立。",
-    "summary_en": "",
+    "summary_en": "Since the open data movement was initiated in Taiwan, datasets are available in the open data platform. There exists a big challenge of data integration with having the huge amount of datasets. Take 'trail' datasets as an example. The Forest Bureau only concerns geospatial locations on the maps, while Tourism Bureau only concerns tourism information for a trial and Ministry of Health and Welfare only takes care about the consumption of calories as people walk on a trail.  Each governmental department only concerns the affairs they charge of. Data management is often limited in the authority of a governmental department. There lacks a framework for integration of open data for making it to operable knowledge. This presentation is going to introduce how to utilize linked data technology for transferring agricultural traceable product data and civic IoT data to knowledge graphs and their applications.",
     "oral_language": "華語",
     "oral_languate_other": "",
     "format": "演講 （20 分鐘）Talk (20 min)",
@@ -1535,6 +1489,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "http://linkedopendata.tw",
+    "verified": true,
+    "createdAt": "2020-11-02T03:14:06.695Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Dongpo",
@@ -1546,14 +1503,12 @@
         "bio_en": "Dongpo Deng is an evangelist for open data and open source. He was active in OpenStreetMap society and a charter member of OSM Taiwan and Open Source Geospatial Foundation (OSGeo). He serves as a committee member of open data for several government organizations. As a geo-information and open data researcher, he devotes the studies of geospatial semantics,  linked open data, and Volunteered Geographic Information."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-11-02T03:14:06.695Z",
     "timeSheet": {
       "id": "5ef99bf1ba206b030d66a39f",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "資料都開放了！然後呢！？讓我們一起譜出知識的樂章",
-      "最後更新時間": "2020-10-31T12:41:36.000Z",
+      "最後更新時間": "2020-11-02T14:52:17.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "成大綠色魔法學校 - R1",
@@ -1736,6 +1691,9 @@
     "is_content_cc40": true,
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
+    "verified": true,
+    "createdAt": "2020-11-02T08:53:11.466Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "施昀佑 Ayo",
@@ -1765,9 +1723,7 @@
         "bio_en": "\nJudy Chang graduated from the Department of Advertising and Public Relations of Fu Jen University.\nShe worked as project manager and film planner in Advertising and Film agency, but now she is a freelancer.\nShe was selected《Come with Us, Please－Proposals for Promoting Spatial History of Monuments of Injustice》(\nNational Human Rights Museum,2020). During this period, she created the online story map “There Were Here”, bring people to see the life path of political prisoners."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-11-02T08:53:11.466Z",
     "timeSheet": {
       "id": "5ef9e78dba206b030d66a3c2",
       "議程日期": "2020-12-05",
@@ -2729,7 +2685,7 @@
       "id": "5efad21cba206b030d66a437",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "科技麻瓜 NGO 和開源魔法師的旅程",
-      "最後更新時間": "2020-10-31T12:42:33.000Z",
+      "最後更新時間": "2020-11-02T14:52:17.000Z",
       "分類主題-華語": "科技也要倡議",
       "分類主題-en": "Tech as activism",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
@@ -3394,6 +3350,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://ronny.tw/data/",
+    "verified": true,
+    "createdAt": "2020-11-02T12:20:26.357Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Ronny Wang",
@@ -3405,9 +3364,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-11-02T12:20:26.357Z",
     "timeSheet": {
       "id": "5efb4748ba206b030d66a4bb",
       "議程日期": "2020-12-05",
@@ -3739,7 +3696,7 @@
       "id": "5efe0289ba206b030d66a514",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "The Battle for Internet Freedom ",
-      "最後更新時間": "2020-10-31T12:43:13.000Z",
+      "最後更新時間": "2020-11-02T16:04:16.000Z",
       "分類主題-華語": "網路自由不能讓",
       "分類主題-en": "Stand with Internet Freedom",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
@@ -4299,6 +4256,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://bit.ly/g0v-eid",
+    "verified": true,
+    "createdAt": "2020-11-01T09:05:11.320Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "clkao",
@@ -4319,9 +4279,7 @@
         "bio_en": ""
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-11-01T09:05:11.320Z",
     "timeSheet": {
       "id": "5f0f06fd0bde6f3bbab73f70",
       "議程日期": "2020-12-05",
@@ -5992,6 +5950,31 @@
       "locationMeta": {
         "order": 10,
         "capacity": 300
+      }
+    }
+  },
+  "rec5TGMT2hWmMDBkt": {
+    "id": "rec5TGMT2hWmMDBkt",
+    "isPseudo": true,
+    "title": "待確認",
+    "title_en": "待確認",
+    "updatedAt": "2020-11-02T15:06:07.000Z",
+    "createdAt": "2020-11-02T15:06:07.000Z",
+    "timeSheet": {
+      "id": "rec5TGMT2hWmMDBkt",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "待確認",
+      "最後更新時間": "2020-11-02T15:06:07.000Z",
+      "分類主題-華語": "資訊人跳坑",
+      "分類主題-en": "When tech people dive in",
+      "議程場地-華語": "好想工作室",
+      "議程場地-en": "Good-Ideas Studio",
+      "主持人": null,
+      "議程開始時間": "2020-12-04T14:30",
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 12,
+        "capacity": 50
       }
     }
   },
