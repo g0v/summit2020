@@ -225,6 +225,7 @@ export default {
   &__header {
     color: $blue-1;
     position: sticky;
+    z-index: 1;
     top: -2.5rem;
     @include not-small-screen {
       top: -4.5rem;
