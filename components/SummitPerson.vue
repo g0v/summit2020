@@ -16,7 +16,7 @@
         span(v-if="city") &nbsp;/ {{city}}
       .f6 {{person.organization}}
     rich-multi-line.gray.mt3.fw3(
-      :text="person.bio"
+      :text="bio"
       :class="{tl: isSpeakerBioTl}"
     )
     .fw3.mv3(v-if="isUrl(person.info_url)" :class="{tl: isSpeakerBioTl}")
@@ -55,8 +55,11 @@ export default {
     }
   },
   computed: {
+    bio () {
+      return this.person.bio || ''
+    },
     isSpeakerBioTl () {
-      return this.isMonoSpeaker || this.person.bio.length > SUPER_SHORT_BIO
+      return this.isMonoSpeaker || this.bio.length > SUPER_SHORT_BIO
     },
     speakerAvatar () {
       return (this.person.avatar_url || '').trim()
