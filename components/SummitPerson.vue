@@ -1,5 +1,5 @@
 <template lang="pug">
-  .person
+  .person.pa3.br1.relative(:class="{'person--speaker': isModerator}")
     img.person__avatar(
       v-if="speakerAvatar"
       :src="speakerAvatar"
@@ -9,13 +9,13 @@
       v-else
       :title="person.display_name"
     )
+    .person__type.pv1.ph2.f6.absolute.br1.br--right.top-0.left-0(v-if="isModerator") {{$t('moderator')}}
     .person__title.mv3
       .fw54
-        span(v-if="isModerator") {{$t('moderator')}}{{$t('colon')}}
         | {{person.display_name}}
-        span(v-if="person.city.trim()") &nbsp;/ {{person.city}}
+        span(v-if="city") &nbsp;/ {{city}}
       .f6 {{person.organization}}
-    rich-multi-line.gray.mv3.fw3(
+    rich-multi-line.gray.mt3.fw3(
       :text="person.bio"
       :class="{tl: isSpeakerBioTl}"
     )
@@ -60,6 +60,12 @@ export default {
     },
     speakerAvatar () {
       return (this.person.avatar_url || '').trim()
+    },
+    city () {
+      if (this.person && this.person.city) {
+        return this.person.city.trim()
+      }
+      return ''
     }
   },
   methods: {
@@ -80,6 +86,13 @@ export default {
   text-align: center;
   @include not-small-screen {
     margin-bottom: 0;
+  }
+  &--speaker {
+    background: rgba(112, 223, 240, 0.2);
+  }
+  &__type {
+    margin-top: 1rem;
+    background: rgba(112, 223, 240, 0.5);
   }
   &__avatar {
     width: 7.5rem;
