@@ -269,7 +269,7 @@ export default {
     @include not-small-screen {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 3rem;
+      column-gap: 2rem;
     }
 
     &--mono {
