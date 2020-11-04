@@ -55,6 +55,9 @@ export default {
     hasTagsToShow () {
       return !this.isPseudo && (this.lang || this.format || this.room)
     },
+    hasPreHeaderToShow () {
+      return this.category || this.moderator
+    },
     isBreak () {
       const title = this.title
       return this.agenda.isPseudo && (title.includes('休') || title.includes('break'))

@@ -32,9 +32,6 @@ export default {
     format () {
       return this.agenda.format
     },
-    hasPreHeaderToShow () {
-      return this.topic || this.category
-    },
     topic () {
       return this.agenda.topic
     },
