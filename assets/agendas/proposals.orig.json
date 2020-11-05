@@ -2888,6 +2888,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://g0v.hackmd.io/@yukaii/Disfactory",
+    "verified": true,
+    "createdAt": "2020-11-04T04:42:06.348Z",
+    "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "小海",
@@ -2908,14 +2911,12 @@
         "bio_en": "Ael is an active g0v participant that wants to build digital solutions for open and collaborative civic participation with open source communities.\n\nShe has been serving as product manager in “Disfactory”, a report platform on illegal factories on the farmlands, “Herstory in East Asia” and “Libot”, a LINE bot for Village Chiefs to report damages in the city.\n\nAel was the project manager of g0v Civic Tech Prototype Grant working with Jothon team and the product manager of sense.tw, an issue-policy mapping tool."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-11-04T04:42:06.348Z",
     "timeSheet": {
       "id": "5efad21cba206b030d66a437",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "科技麻瓜 NGO 和開源魔法師的旅程",
-      "最後更新時間": "2020-11-03T15:58:53.000Z",
+      "最後更新時間": "2020-11-04T15:56:51.000Z",
       "分類主題-華語": "科技也要倡議",
       "分類主題-en": "Tech as activism",
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
