@@ -4797,8 +4797,8 @@
   },
   "1204-jothon-0": {
     "id": "1204-jothon-0",
-    "updatedAt": "2020-10-27T07:58:28.000Z",
-    "createdAt": "2020-10-27T07:58:28.000Z",
+    "updatedAt": "2020-11-06T15:25:57.000Z",
+    "createdAt": "2020-11-06T15:25:57.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
@@ -4814,9 +4814,11 @@
     "speakers": [
       {
         "display_name": "Sch001 Demo Day 2020 獲獎團隊",
+        "display_name_en": "Sch001 Demo Day 2020 Awardees",
         "organization": "g0v.tw",
         "avatar_url": "https://imgur.com/2YPVJDy.jpg",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees",
         "bio": "【島島阿學：學習資源平台】\n林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。\n林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】\nIrvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】\nKahou：「CoTeach 教案共享平臺」團隊成員。\n蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】\n林峻丞：小草書屋創辦人/執行長\n賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】\n廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】\ntmonk：直播導播、網頁後端工程師、自由軟體工程師",
         "bio_en": "【Dao Dao Online Learning Platform】\nLin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet.\nLin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations.\n【Traditional Chinese CC0 corpus and Mozilla Common Voice database】\nIrvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net.\n【CoTeach】\nKahou: Member of CoTeach.\nMeng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat!\n【Happiness Bankbook】\nJeffery Lin: Founder of Grass Book House\nGiovanni: Project Manager of Happiness Bankbook\n【Chatbot for High School Students】\nJason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year.\n【Literacy Practices Database】\ntmonk: Live Stream Director, Backend Developer, Free Software Engineer"
@@ -4848,8 +4850,8 @@
   },
   "1204-jothon-1": {
     "id": "1204-jothon-1",
-    "updatedAt": "2020-10-27T04:56:22.000Z",
-    "createdAt": "2020-10-27T04:56:22.000Z",
+    "updatedAt": "2020-11-06T15:27:09.000Z",
+    "createdAt": "2020-11-06T15:27:09.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
@@ -4876,7 +4878,8 @@
         "display_name": "Mee",
         "organization": "Parti Co-op",
         "avatar_url": "https://i.imgur.com/3oOb1NC.jpg",
-        "city": "Jeju, South Korea",
+        "city": "韓國濟州",
+        "city_en": "Jeju, South Korea",
         "info_url": "https://parti.coop/",
         "bio": "Parti Co-op 民主運動家、每日實驗家。兩隻狗 classi 和 berry 的阿姨 🐕 🐩",
         "bio_en": "Democracy Activist of Parti Co-op, Everyday Experimentalist, Imo of classi and berry 🐕 🐩"
@@ -4885,7 +4888,8 @@
         "display_name": "Bess Lee",
         "organization": "g0v.tw",
         "avatar_url": "https://i.imgur.com/pGy8CPv.png",
-        "city": "Taipei, Taiwan",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://jothon.g0v.tw/about/",
         "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。2017 年加入 g0v 揪松團，統籌 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
         "bio_en": "Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She is general coordinator of g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
@@ -4918,8 +4922,8 @@
   },
   "1204-goodideas-0": {
     "id": "1204-goodideas-0",
-    "updatedAt": "2020-09-30T15:29:03.000Z",
-    "createdAt": "2020-09-30T15:29:03.000Z",
+    "updatedAt": "2020-11-06T14:37:49.000Z",
+    "createdAt": "2020-11-06T14:37:49.000Z",
     "title": "地方空間經營與創生",
     "summary": "台南從前是個資訊沙漠，任何想要得到養分的人都會往台北跑，縱使一段時間後想要回家鄉，也沒有能撐起回家鄉工作的條件，這樣的環境若沒有人願意去動手耕耘，也就只會是惡性循環。「想要讓南部從事資訊產業的人有個友善環境」是我們的初衷，這六年來，我們建立了一個以資訊為主的共同工作空間，以此為起點，耕耘出台南的資訊燈塔，同時也建立了台灣唯一「沒有形狀」的免費資訊培育，以養成個人的「自學習慣」及重塑「解決問題」的能力為核心，漸變為量產好品質人才的基地，講者從「空間經營」、「資訊培育」、「社群創生」、「產業對接」這四個主題切入如何經營在地主題的創生。",
     "oral_language": "華語",
@@ -4932,8 +4936,10 @@
       {
         "display_name": "Howard",
         "organization": "好想工作室",
+        "organization_en": "Good-Ideas Studio",
         "avatar_url": "https://propose.summit2020.g0v.tw/img/Howard.dd1ee9e7.jpg",
         "city": "臺南",
+        "city_en": "Tainan, Taiwan",
         "bio": "好想工作室 Host，是一名網頁工程師，同時擅長經營空間，創造產業鏈結，期望創造出南部的資訊產業聚落，讓更多人可以在台南扎根生活的同時，也能夠挑戰世界舞台"
       }
     ],
@@ -4963,8 +4969,8 @@
   },
   "1204-goodideas-1": {
     "id": "1204-goodideas-1",
-    "updatedAt": "2020-09-30T15:35:00.000Z",
-    "createdAt": "2020-09-30T15:35:00.000Z",
+    "updatedAt": "2020-11-06T14:38:14.000Z",
+    "createdAt": "2020-11-06T14:38:14.000Z",
     "title": "自我探索的資訊教育",
     "summary": "一位好的 mentor 是創造好的人才背後不可或缺的推手，目前的教育體制裡面一直都只有老師到角色而沒有 mentor 的角色，這兩者的差別在於一個是著重在於「授業」而一個是著重在於「引導」，必須要能引導出學生自我探索的能力才有機會變成好的人才，我們透過環境建立與氛圍營造來重新定義教育的本質。",
     "oral_language": "華語",
@@ -4977,8 +4983,10 @@
       {
         "display_name": "Chris",
         "organization": "好想工作室",
+        "organization_en": "Good-Ideas Studio",
         "avatar_url": "https://i.imgur.com/rNPMLis.jpg",
         "city": "臺南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "https://dwatow.github.io/about/",
         "bio": "出道語言 C++，為追求主流跑到 JS 的世界而重新菜一次。以「足自己生活」為目標的開發者。"
       }
@@ -5009,8 +5017,8 @@
   },
   "1204-goodideas-2": {
     "id": "1204-goodideas-2",
-    "updatedAt": "2020-09-30T15:35:24.000Z",
-    "createdAt": "2020-09-30T15:35:24.000Z",
+    "updatedAt": "2020-11-06T14:38:22.000Z",
+    "createdAt": "2020-11-06T14:38:22.000Z",
     "title": "口罩地圖事件",
     "summary": "2020 年初的 Covid-19 全球大流行，台灣是世界上最安全的地方之一，在疫情剛開始，口罩地圖事件是一個很成功的公民參與運動，也喚起許多人的防疫意識，我們聊聊從一塊小小的磚頭，引出了一大片的美玉。",
     "oral_language": "華語",
@@ -5023,8 +5031,10 @@
       {
         "display_name": "Howard",
         "organization": "好想工作室",
+        "organization_en": "Good-Ideas Studio",
         "avatar_url": "https://propose.summit2020.g0v.tw/img/Howard.dd1ee9e7.jpg",
         "city": "臺南",
+        "city_en": "Tainan, Taiwan",
         "bio": "好想工作室 Host，口罩地圖第一位發起者"
       }
     ],
@@ -5054,8 +5064,8 @@
   },
   "1204-sprout-0": {
     "id": "1204-sprout-0",
-    "updatedAt": "2020-09-30T15:35:55.000Z",
-    "createdAt": "2020-09-30T15:35:55.000Z",
+    "updatedAt": "2020-11-06T14:38:31.000Z",
+    "createdAt": "2020-11-06T14:38:31.000Z",
     "title": "開島在台南：青年的生存與生活",
     "summary": "\"2020年迎來台南縣市合併十週年。縣市合併後，台南的青年過得好嗎？台南是否已經成為「一個台南」？\n在本場次中，我們希望討論青年在地居住、就業的情況，也邀請現在在前縣區居住的青年，聊聊他們對生活在台南的想法。\"",
     "oral_language": "華語",
@@ -5068,8 +5078,10 @@
       {
         "display_name": "洪敬舒",
         "organization": "台灣勞工陣線",
+        "organization_en": "Taiwan Labor Front ",
         "avatar_url": " ",
         "city": "台南市&台北市",
+        "city_en": "Tainan & Taipei, Taiwan",
         "info_url": "https://sites.google.com/site/povertyknowledge/",
         "bio": "思考以經濟民主作為勞動貧窮的可行解方"
       }
@@ -5131,8 +5143,8 @@
   },
   "1204-maker-0": {
     "id": "1204-maker-0",
-    "updatedAt": "2020-09-30T15:36:10.000Z",
-    "createdAt": "2020-09-30T15:36:10.000Z",
+    "updatedAt": "2020-11-06T14:41:36.000Z",
+    "createdAt": "2020-11-06T14:41:36.000Z",
     "title": "全台大串燒：自造者空間與社群近況",
     "summary": "希望可以聚集全台maker社群與空間，彼此分享過去與近期的經驗與做了些什麼給在場初次接觸maker的參加者；並希望在共同QA期間開放參與者提問，或聊聊彼此社群經營經驗交換、如何更加串連等議題。",
     "oral_language": "華語",
@@ -5144,9 +5156,11 @@
     "speakers": [
       {
         "display_name": "Felix Lin",
-        "organization": "創客閣樓(Maker's Attic)",
+        "organization": "創客閣樓",
+        "organization_en": "Maker's Attic",
         "avatar_url": "https://i.imgur.com/HhV0owX.jpg",
         "city": "高雄市",
+        "city_en": "Kaohsiung, Taiwan",
         "info_url": " ",
         "bio": "韌體工程師出身，熱愛研究新技術與有趣的專案，經常任聘於大專院校講師、職訓講師，目前專注在物聯網系統開發。2015年初創立高雄第一個創客社群，至今依然堅持每周定期聚會與活動。",
         "bio_en": " "
@@ -5156,6 +5170,7 @@
         "organization": "桃園市自造者協會",
         "avatar_url": "https://i.imgur.com/BzRn8FO.jpg",
         "city": "桃園市",
+        "city_en": "Taoyuan, Taiwan",
         "info_url": " ",
         "bio": "桃園市自造者協會 理事長 整合智能有限公司 負責人 人嶼科技藝術國際有限公司 技術專家\"",
         "bio_en": " "
@@ -5164,7 +5179,8 @@
         "display_name": "Honki",
         "organization": "Openlab.Taipei",
         "avatar_url": "https://i.imgur.com/i5I8DNRh.jpg",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "過氣的台灣 Maker 一哥～",
         "bio_en": " "
@@ -5193,8 +5209,8 @@
   },
   "1204-maker-1": {
     "id": "1204-maker-1",
-    "updatedAt": "2020-10-25T05:05:06.000Z",
-    "createdAt": "2020-10-25T05:05:06.000Z",
+    "updatedAt": "2020-11-06T14:49:21.000Z",
+    "createdAt": "2020-11-06T14:49:21.000Z",
     "title": "何謂 maker 精神？自造者們的真心話",
     "summary": "台南在地動手做的maker社群們，聊聊彼此在做的事情，和自身對於maker精神的定義或看法提出想法。針對主題性的社群聚集未來能有哪些方向",
     "oral_language": "華語",
@@ -5208,7 +5224,8 @@
         "display_name": "Scott Chen",
         "organization": "TGH (Tawian Gods Hand)",
         "avatar_url": "https://i.imgur.com/TCLeXush.jpg",
-        "city": "台南 Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": " ",
         "bio": "人稱府城億載金城武，平時為朝九晚五南科上班族，下班和假日與夥伴研發開源義肢技術並開源於網路上",
         "bio_en": " "
@@ -5226,7 +5243,8 @@
         "display_name": "楊禮誠",
         "organization": "雲語藝術工作室",
         "avatar_url": "https://i.imgur.com/vlwwixs.jpeg",
-        "city": "台南市 Tainan",
+        "city": "台南市",
+        "city_en": "Tainan, Taiwan",
         "info_url": " ",
         "bio": "藝術工作者 雲語藝術工作室  負責人 台南大學 兼任講師 台南社大 講師\"",
         "bio_en": " "
@@ -5255,8 +5273,8 @@
   },
   "1204-maker-2": {
     "id": "1204-maker-2",
-    "updatedAt": "2020-10-25T05:06:08.000Z",
-    "createdAt": "2020-10-25T05:06:08.000Z",
+    "updatedAt": "2020-11-06T14:43:53.000Z",
+    "createdAt": "2020-11-06T14:43:53.000Z",
     "title": "台灣自造運動下一步怎麼走？",
     "summary": "對自造運動的下一步想像，將討論：有空間的社群如何達到永續經營/開放社群如何進入在地社區/如何發展公民性開源硬體坑/如何達到資源共享化：開放空間與設備共享/如何友善新手maker等議題，延續及創造自造運動的活路與可能",
     "oral_language": "華語",
@@ -5270,7 +5288,8 @@
         "display_name": "吳中仁",
         "organization": "Fablab Tainan",
         "avatar_url": "https://i.imgur.com/oi1zu4Gh.jpg",
-        "city": "台南 Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": " ",
         "bio": "平常在醫院工作的臨床聽力師，因為興趣一頭栽入FABLAB Tainan成為社群成員，擅長用各種自造專案把時間剁碎、永遠覺得時間不夠用，好在不時還可以用想法或自造技能為生活、工作帶來一點改革。",
         "bio_en": " "
@@ -5412,7 +5431,7 @@
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳",
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "主持人": {
-        "display_name": "待確認",
+        "display_name": "劉致昕",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-06T11:30",
