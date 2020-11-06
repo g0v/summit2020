@@ -105,6 +105,7 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "avatar_url": "https://i.imgur.com/al9tGym.jpg",
         "city": "新竹 Hsinchu",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
@@ -1195,58 +1196,6 @@
       }
     }
   },
-  "5ef6c29dba206b030d66a364": {
-    "id": "5ef6c29dba206b030d66a364",
-    "title": "通过游戏共同创造，YCAM黑客马拉松。",
-    "title_en": "Co-creation through play, the YCAM’s hackathon.",
-    "summary": "是山口县山口市的艺术中心。我们以市民、各领域专家与共同创造、共同学习的为运营理念，对运用媒体新技术及信息作为文化基础的可能性、以及对人类而言的信息的意义等多个领域进行积极的探索与尝试。并对在此过程中孕育的表现手法、学习方式进行全球传播，旨在为培养新一代人才做出贡献。",
-    "summary_en": "YCAM is an art center located in Yamaguchi, Japan.\nWe have made “creating together, learning together” with local citizens and experts from various fields the basic philosophy of our work, exploring from Just the good relationship with media technology; the potential of information as a cultural foundation; and further, the meaning of information for us humans. While introducing the forms of expression and learning that emerge in this process to the world, it is our aim to contribute to the fostering of  creative individuals.\nI will pick up the \"Sports Hackathon 2020\" that we held this May at online as an example and explain what kind of projects YCAM had planned and created involve citizens.",
-    "oral_language": "其他 Others",
-    "oral_languate_other": "",
-    "format": "演講 （20 分鐘）Talk (20 min)",
-    "topic": "賢者之島 Academia Formosa",
-    "three_keywords": "艺术　媒体技术　文化设施",
-    "cover_image": "https://i.imgur.com/gj5ehPAh.jpg",
-    "is_content_cc40": true,
-    "is_presentation_cc40": true,
-    "is_slide_cc40": true,
-    "oral_language_other": "日本語",
-    "related_url": "https://www.ycam.jp/cn/aboutus/",
-    "speakers": [
-      {
-        "display_name": "山岡大地",
-        "organization": "山口媒体艺术中心［YCAM］",
-        "avatar_url": "https://i.imgur.com/pAzFMigh.jpg",
-        "city": "日本山口县山口市",
-        "info_url": "",
-        "bio": "1987年出生，2014年4月到任YCAM教育工作者。 他策划和制作教育活动。\n迄今所做的主要项目\n\"KOROGARU Koen PARK Series\", \"Yamaguchi's Future Sports Day\", \"Yamaguchi's Future Classes\"",
-        "bio_en": "Born in 1987, I arrived as a YCAM educator in 2014. I plans and produces educational events.\nMajor projects implemented to date.\n\"KOROGARU Koen PARK Series\", \"Yamaguchi's Future Sports Day\", \"Yamaguchi's Future Classes\""
-      }
-    ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
-    "timeSheet": {
-      "id": "5ef6c29dba206b030d66a364",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "透過遊戲共同創造──YCAM 黑客松",
-      "最後更新時間": "2020-11-03T16:24:05.000Z",
-      "分類主題-華語": "台日韓齊揪松",
-      "分類主題-en": "Communities & Hackathons in East Asia",
-      "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
-      "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
-      },
-      "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30,
-      "locationMeta": {
-        "order": 11,
-        "capacity": 200
-      }
-    }
-  },
   "5ef6eca4ba206b030d66a368": {
     "id": "5ef6eca4ba206b030d66a368",
     "title": "性少數社群網站的建構經驗──從邊緣開拓出路",
@@ -1561,20 +1510,20 @@
     "is_slide_cc40": true,
     "related_url": "https://github.com/readr-media/open-relationship",
     "verified": true,
-    "createdAt": "2020-10-12T03:44:46.318Z",
+    "createdAt": "2020-11-05T11:55:56.153Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "H.C. Chien",
+        "display_name": "李又如",
         "organization": "READr",
-        "avatar_url": "https://i.imgur.com/iwJOvQDh.jpg",
+        "avatar_url": "https://i.imgur.com/mLefR5Vh.jpg",
         "city": "台北",
         "info_url": "",
-        "bio": "coder、攝影師。長期關注 open source 社群，近幾年跟隨 g0v 開始注意公民科技，接著轉進新聞媒體圈，從報導者，到鏡傳媒，接著催生實驗媒體 READr",
+        "bio": "READr 記者兼專題製作人。貓奴。\n\n",
         "bio_en": ""
       }
     ],
-    "updatedAt": "2020-10-12T03:44:46.318Z",
+    "updatedAt": "2020-11-05T11:55:56.153Z",
     "timeSheet": {
       "id": "5ef99ae9ba206b030d66a39d",
       "議程日期": "2020-12-04",
@@ -2177,6 +2126,7 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "avatar_url": "https://i.imgur.com/al9tGym.jpg",
         "city": "新竹 Hsinchu",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
@@ -2561,6 +2511,7 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "avatar_url": "https://i.imgur.com/al9tGym.jpg",
         "city": "新竹 Hsinchu",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
@@ -4952,6 +4903,7 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "avatar_url": "https://i.imgur.com/al9tGym.jpg",
         "city": "新竹 Hsinchu",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
@@ -6415,6 +6367,34 @@
       "locationMeta": {
         "order": 12,
         "capacity": 50
+      }
+    }
+  },
+  "recWmGqJOWdAYo02R": {
+    "id": "recWmGqJOWdAYo02R",
+    "isPseudo": true,
+    "title": "待確認",
+    "title_en": "待確認",
+    "updatedAt": "2020-11-05T01:41:47.000Z",
+    "createdAt": "2020-11-05T01:41:47.000Z",
+    "timeSheet": {
+      "id": "recWmGqJOWdAYo02R",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "待確認",
+      "最後更新時間": "2020-11-05T01:41:47.000Z",
+      "分類主題-華語": "台日韓齊揪松",
+      "分類主題-en": "Communities & Hackathons in East Asia",
+      "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "主持人": {
+        "display_name": "待確認",
+        "bio_en": "\""
+      },
+      "議程開始時間": "2020-12-04T16:00",
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
       }
     }
   },
