@@ -22,11 +22,13 @@ en:
   cfp: 'Get Latest Proposals'
   registration: 'Registration'
   banquet: 'Banquet'
+  venueAdmissionSignIn: 'Venue Admission Sign In'
 zh:
   lang: 'English'
   cfp: '看議程投稿'
   registration: '立刻報名'
   banquet: '來辦桌'
+  venueAdmissionSignIn: '入館簽到'
 </i18n>
 <script>
 import ExtLink from '~/components/ExtLink'
@@ -44,6 +46,7 @@ export default {
   data () {
     return {
       menuList: [
+        { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
         { key: 'transport', url: '/transport' },
         // { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true },
         // { key: 'speakers', url: '/speakers' },
