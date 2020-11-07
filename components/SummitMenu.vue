@@ -46,7 +46,7 @@ export default {
   data () {
     return {
       menuList: [
-        { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
+        // { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
         { key: 'transport', url: '/transport' },
         // { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true },
         // { key: 'speakers', url: '/speakers' },
