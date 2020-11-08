@@ -83,7 +83,7 @@ export default {
   }
   &__content {
     position: sticky;
-    top: 3.5rem;
+    top: 7.75rem;
     left: 1.25rem;
     display: inline-block;
     width: 100%;
