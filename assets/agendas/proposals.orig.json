@@ -5143,8 +5143,8 @@
   },
   "1204-maker-0": {
     "id": "1204-maker-0",
-    "updatedAt": "2020-11-06T14:41:36.000Z",
-    "createdAt": "2020-11-06T14:41:36.000Z",
+    "updatedAt": "2020-11-07T07:15:35.000Z",
+    "createdAt": "2020-11-07T07:15:35.000Z",
     "title": "全台大串燒：自造者空間與社群近況",
     "summary": "希望可以聚集全台maker社群與空間，彼此分享過去與近期的經驗與做了些什麼給在場初次接觸maker的參加者；並希望在共同QA期間開放參與者提問，或聊聊彼此社群經營經驗交換、如何更加串連等議題。",
     "oral_language": "華語",
@@ -5168,6 +5168,7 @@
       {
         "display_name": "賴聲寬",
         "organization": "桃園市自造者協會",
+        "organization_en": "TY.Maker",
         "avatar_url": "https://i.imgur.com/BzRn8FO.jpg",
         "city": "桃園市",
         "city_en": "Taoyuan, Taiwan",
@@ -5209,8 +5210,8 @@
   },
   "1204-maker-1": {
     "id": "1204-maker-1",
-    "updatedAt": "2020-11-06T14:49:21.000Z",
-    "createdAt": "2020-11-06T14:49:21.000Z",
+    "updatedAt": "2020-11-07T07:18:48.000Z",
+    "createdAt": "2020-11-07T07:18:48.000Z",
     "title": "何謂 maker 精神？自造者們的真心話",
     "summary": "台南在地動手做的maker社群們，聊聊彼此在做的事情，和自身對於maker精神的定義或看法提出想法。針對主題性的社群聚集未來能有哪些方向",
     "oral_language": "華語",
@@ -5233,6 +5234,7 @@
       {
         "display_name": "Ginko Ching Lee 李青",
         "organization": "台南維修咖啡館，白日夢工廠",
+        "organization_en": "TainanRepairCafe, Daydream Factory",
         "avatar_url": "https://i.imgur.com/k2TaXGLh.jpg",
         "city": "Tainan, Taiwan / Pasadena, California, USA",
         "info_url": " ",
@@ -5242,6 +5244,7 @@
       {
         "display_name": "楊禮誠",
         "organization": "雲語藝術工作室",
+        "organization_en": "Kumo-Art-Studio",
         "avatar_url": "https://i.imgur.com/vlwwixs.jpeg",
         "city": "台南市",
         "city_en": "Tainan, Taiwan",
@@ -5369,6 +5372,10 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳",
       "主持人": {
         "display_name": "Singing",
+        "organization": "開放文化基金會 OCF",
+        "avatar_url": "https://ocf.tw/people/staff/singing.jpg",
+        "city": "台北",
+        "bio": "任職於開放文化基金會 (OCF)，因熱愛 Firefox 開源軟體與網路自由的理念，在大學時期開始參與資訊社群的活動，嘗試以非資訊人的角度認識開放源碼、資訊安全、社群經營。參與過 COSCUP、HITCON、BSDTW 社群活動的籌辦，是 2019、2020 年 COSCUP 總召。",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-06T09:30",
