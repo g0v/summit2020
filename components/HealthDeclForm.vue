@@ -594,15 +594,18 @@
 </template>
 <i18n lang="yaml">
 en:
-  signInForm: 'Venue Admission Sign In Form'
+  signInForm: 'Building Check-In'
   checkIn: 'Check In !'
   checkedIn: 'Checked In'
 zh:
-  signInForm: '入場打卡表單'
+  signInForm: '入館簽到'
   checkIn: '打卡！'
   checkedIn: '完成打卡'
 </i18n>
 <script>
+// TODO:
+// 您已於 xx:xx 在 oo場館 簽到
+// You've checked into oo at xx:xx
 export default {
   data () {
     return {

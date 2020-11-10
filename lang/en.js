@@ -51,6 +51,7 @@ export default {
   'article/summitContent': require('~/assets/articles/雙年會內容.en.md').default,
   'article/summitAbout': require('~/assets/articles/關於雙年會.en.md').default,
   'article/summitGuidelines': require('~/assets/articles/行為準則.en.md').default,
+  'article/healthGuidelines': require('~/assets/articles/健康聲明.en.md').default,
 
   // tables
   'table/roughSchedule': extractLanguageFromTable({
