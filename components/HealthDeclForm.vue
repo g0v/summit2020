@@ -440,15 +440,20 @@ en:
   titleSymptoms: Symptoms related to COVID-19
   submit: Submit
   someFieldEmpty: 'Please fill in all fields'
+  submitFailed: Fail to submit Health Declaration Form. Please try again later
 zh:
   title: 健康聲明書
   titleSymptoms: 「嚴重特殊傳染性肺炎」（武漢肺炎）有關接觸史與症狀
   submit: 送出健康聲明
   someFieldEmpty: '請填寫所有欄位'
+  submitFailed: 聲明書傳送失敗，請稍後再重新嘗試
 </i18n>
 <script>
 import qs from 'querystring'
 import axios from 'axios'
+import md5 from 'md5'
+import { mapMutations } from 'vuex'
+import { MUTATIONS } from '~/store'
 
 const FORM_URL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSewrwiopO6HiuCL5Ff0L8Xg8UjbMyjE5QJXq1T3MsZ-eJbDKw/formResponse'
 
@@ -612,6 +617,9 @@ export default {
     }
   },
   methods: {
+    ...mapMutations({
+      declareHealth: MUTATIONS.DECLARE_HEALTH
+    }),
     keepSymptomConsistent (e) {
       const value = e.target.value
       const isChecked = e.target.checked
@@ -710,11 +718,9 @@ export default {
       // 驗證其他欄位
       const isOtherFieldsEmpty = Object.keys(this.venueAdmissionSignInForm).some((key) => {
         if (!specialFields.includes(key)) {
-          console.warn('  some', this.venueAdmissionSignInForm[key] === '', key, this.venueAdmissionSignInForm[key])
           return this.venueAdmissionSignInForm[key] === ''
         }
       })
-      console.warn(isSymptomsInTheLast14DaysEmpty, isSymptomsInTheLast14DaysOthersSymptomsEmpty, isOtherFieldsEmpty)
       return isSymptomsInTheLast14DaysEmpty ||
             isSymptomsInTheLast14DaysOthersSymptomsEmpty ||
             // isReceivedScreenTestHiddenFieldsEmpty ||
@@ -731,11 +737,17 @@ export default {
       this.submmit()
     },
     async submmit () {
-      // TODO: gen hash
-      const hash = ''
-      const body = FORM_FIELDS.reduce((form, field) => {
-        form[field.key] = this.venueAdmissionSignInForm[field.name]
-        return form
+      const form = this.venueAdmissionSignInForm
+      const hash = md5([
+        form.name,
+        form.phone,
+        form.email,
+        form.IDOrPassport
+      ].join('##'))
+
+      const body = FORM_FIELDS.reduce((body, field) => {
+        body[field.key] = body[field.name]
+        return body
       }, {
         [FORM_HASH_KEY]: hash
       })
@@ -744,13 +756,35 @@ export default {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       }
+      let isSuccessed = false
       try {
         await axios.post(FORM_URL, qs.stringify(body), config)
+        isSuccessed = true
       } catch (error) {
-        // ignore CORS warning <3
+        console.warn(error)
+        if (error.message === 'Network Error' && error.isAxiosError) {
+          // ignore CORS warning <3
+          // is could also be 400, but there's no way to distinguish them
+          isSuccessed = true
+        } else {
+          this.$sentry.captureException(error)
+        }
       }
 
-      // TODO: record necessary info and goto next page
+      if (isSuccessed) {
+        this.declareHealth({
+          hashKey: hash,
+          meta: {
+            hash,
+            needLearningCredit: form.needLearningCredit === 'yes',
+            name: form.name
+          }
+        })
+      } else {
+        this.$buefy.dialog.alert({
+          message: this.$t('submitFailed')
+        })
+      }
     }
   }
 }
