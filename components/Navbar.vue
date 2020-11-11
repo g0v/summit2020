@@ -7,7 +7,10 @@
       nuxt-link.navbar__logo.flex-auto.flex-none-l.tc(:to="localePath('/')")
         img.h-100(src="~/assets/images/logo-singleline.svg")
       .dn.flex-l.items-center
-        summit-menu
+        summit-menu(
+          @building-open="openBuildingCheckIn"
+          @guidelines-open="openCovid19Guidelines"
+        )
 </template>
 <script>
 import SummitMenu from './SummitMenu'
@@ -19,6 +22,12 @@ export default {
   methods: {
     toggleMobileMenu () {
       this.$emit('toggle')
+    },
+    openBuildingCheckIn () {
+      this.$emit('building-open')
+    },
+    openCovid19Guidelines () {
+      this.$emit('guidelines-open')
     }
   }
 }

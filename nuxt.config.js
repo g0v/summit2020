@@ -53,8 +53,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/vue-plugins',
-    '~/plugins/sentry'
+    '~/plugins/sentry',
+    '~/plugins/vuex-init',
+    '~/plugins/vue-plugins'
   ],
   env: {
     SITE_BASE: `https://${DOMAIN}${ROUTER_BASE}`,
