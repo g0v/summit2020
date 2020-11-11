@@ -17,11 +17,16 @@
         text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
         .agendacard__people.mt3.mb4.f6.lh-copy
           text-highlighter(v-if="speakers" :text="speakers")
-        .flex.flex-wrap
-          .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
-          .agendacard__tag(v-if="topic") {{topic}}
-          .agendacard__tag.mt3-ns(v-if="format") {{format}}
-          .agendacard__tag(v-if="lang") {{$t(lang)}}
+        .flex
+          .flex.flex-wrap.flex-grow-1-ns
+            .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
+            .agendacard__tag(v-if="topic") {{topic}}
+            .agendacard__tag.mt3-ns(v-if="format") {{format}}
+            .agendacard__tag(v-if="lang") {{$t(lang)}}
+          button.agendacard__heart(v-if="!this.agenda.isPseudo" @click="toggleFavorite")
+            img(v-if="isFavourite" src="~/assets/icons/heart-full.svg")
+            img(v-else src="~/assets/icons/heart-empty.svg")
+
 </template>
 <i18n lang="yaml">
 en:
@@ -44,6 +49,9 @@ export default {
       required: true
     }
   },
+  data () {
+    return { isFavourite: false }
+  },
   computed: {
     detailUrl () {
       if (!this.agenda.isPseudo && this.$route.params.date) {
@@ -61,6 +69,25 @@ export default {
     isBreak () {
       const title = this.title
       return this.agenda.isPseudo && (title.includes('休') || title.includes('break'))
+    }
+  },
+  mounted () {
+    const favouriteAgendas = JSON.parse(localStorage.getItem('favouriteAgendas')) || []
+    this.isFavourite = favouriteAgendas.includes(this.agenda.id)
+  },
+  methods: {
+    toggleFavorite (e) {
+      e.preventDefault()
+      const favouriteAgendas = JSON.parse(localStorage.getItem('favouriteAgendas')) || []
+      const favouriteAgendaIndex = favouriteAgendas.indexOf(this.agenda.id)
+      if (this.isFavourite && favouriteAgendaIndex > -1) {
+        favouriteAgendas.splice(favouriteAgendaIndex, 1)
+        localStorage.setItem('favouriteAgendas', JSON.stringify(favouriteAgendas))
+        this.isFavourite = false
+      } else if (!this.isFavourite && favouriteAgendaIndex === -1) {
+        localStorage.setItem('favouriteAgendas', JSON.stringify([...favouriteAgendas, this.agenda.id]))
+        this.isFavourite = true
+      }
     }
   }
 }
@@ -118,6 +145,18 @@ export default {
     &--hl {
       background: #509fac;
     }
+  }
+  &__heart {
+    background-color: transparent;
+    border: none;
+    flex: 0 0 1.125rem;
+    /* margin-top of agendacard__tag */
+    margin-top: 0.25rem;
+    /* height of agendacard__tag */
+    height: 1.4375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
