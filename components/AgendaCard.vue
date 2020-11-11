@@ -110,6 +110,7 @@ export default {
   }
   &__content {
     position: sticky;
+    // header search bar 3.5rem, locaion bar 4.25rem
     top: 7.75rem;
     left: 1.25rem;
     display: inline-block;
