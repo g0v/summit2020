@@ -1,37 +1,15 @@
 <template lang="pug">
 .sign-in-form.center.ph4
-  h1.f2.fw5
-    | {{$t('signInForm')}}
-  div.venues.f4.fw5
-    button(
-      @click="selectedVenue('GoodIdeasStudio')",
-      :class="{selectedVenue: currentVenue==='GoodIdeasStudio'}"
-    )
-      | 好想工作室
-    button(
-      @click="selectedVenue('WuGarden')",
-      :class="{selectedVenue: currentVenue==='WuGarden'}"
-    )
-      | 吳園公會堂
-    button(
-      @click="selectedVenue('CHub')",
-      :class="{selectedVenue: currentVenue==='CHub'}"
-    )
-      | 成大 C-Hub
-    button(
-      @click="selectedVenue('TainanArtMuseumBuilding2')",
-      :class="{selectedVenue: currentVenue==='TainanArtMuseumBuilding2'}"
-    )
-      | 臺南市美術館 2 館
+  h1.fw5 {{$t('title')}}
   div.info
-    div.field
-      label.fw5
-        | *身分別 Identity
-      input.f5(
-        type='text',
-        value='訪客 Visitors',
-        disabled
-      )
+    // div.field
+    //   label.fw5
+    //     | *身分別 Identity
+    //   input.f5(
+    //     type='text',
+    //     value='訪客 Visitors',
+    //     disabled
+    //   )
     div.field
       label.fw5
         | *姓名 Name
@@ -62,12 +40,36 @@
       )
     div.field
       label.fw5
-        | *來校目的與地點 Purposes & Place of Visiting
-      input.f5(
-        type='text',
-        value='學術交流/學習活動 Academic activities',
-        disabled
-      )
+        | 需申請公務員終身學習時數 Applying lifelong learning credit
+      div.radio-group.radio-x
+        div
+          input.f5(
+            v-model="venueAdmissionSignInForm.needLearningCredit",
+            type='radio',
+            value="no",
+            name="learning-credit",
+            id='learning-credit-no'
+          )
+          label(for='learning-credit-no')
+            | 不需要 No
+        div
+          input.f5(
+            v-model="venueAdmissionSignInForm.needLearningCredit",
+            type='radio',
+            value="yes",
+            name="learning-credit",
+            id='learning-credit-yes'
+          )
+          label(for='learning-credit-yes')
+            | 需要 Yes
+    // div.field
+    //   label.fw5
+    //     | *來校目的與地點 Purposes & Place of Visiting
+    //   input.f5(
+    //     type='text',
+    //     value='學術交流/學習活動 Academic activities',
+    //     disabled
+    //   )
     div.field
       label.fw5
         | *近一個月出入境台灣史 History of Entry and Departure (Taiwan)
@@ -92,183 +94,22 @@
           )
           label(for='history-yes')
             | 有 Yes
-    h2.f5
-      | 「嚴重特殊傳染性肺炎」（武漢肺炎）有關接觸史與症狀 Symptoms related to COVID-19
+    h2 {{$t('titleSymptoms')}}
     div.field
       label.fw5
         | *最近14天內是否出現以下症狀（複選） Do you have any symptoms listed below in the last 14 days ? (Multiple choice)
       div.radio-group.radio-y
-        div
+        div(v-for="(symptom, i) in symptomOptions" :key="symptom")
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
+            @change="keepSymptomConsistent"
             type="checkbox",
-            value="temperature",
-            id='temperature'
+            :value="symptom",
+            :id="`symptom-${i}`"
           )
-          label(for='temperature')
-            | 發燒(> 37.5度) Body temperature over 37.5 ˚C
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="coughs",
-            id='coughs'
-          )
-          label(for='coughs')
-            | 咳嗽 Coughs
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="pharyngitis",
-            id='pharyngitis'
-          )
-          label(for='pharyngitis')
-            | 喉嚨痛 Pharyngitis (Sore throat)
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="breath",
-            id='breath'
-          )
-          label(for='breath')
-            | 呼吸道窘迫症狀 (呼吸急促﹑呼吸困難) Shortness of Breath
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="unnyNose",
-            id='runny-nose'
-          )
-          label(for='runny-nose')
-            | 流鼻水 Runny nose
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="myalgia",
-            id='myalgia'
-          )
-          label(for='myalgia')
-            | 肌肉酸痛 Myalgia (Muscle pain)
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="arthralgia",
-            id='arthralgia'
-          )
-          label(for='arthralgia')
-            | 關節酸痛 Arthralgia (Joint pain)
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="asthenia",
-            id='asthenia'
-          )
-          label(for='asthenia')
-            | 四肢無力 Asthenia (Weakness; weak extremities)
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="chest",
-            id='chest'
-          )
-          label(for='chest')
-            | 胸痛 Chest Pain
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="ageusia",
-            id='ageusia'
-          )
-          label(for='ageusia')
-            | 味覺失調或消失 Dysgeusia or Ageusia
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="anosmia",
-            id='anosmia'
-          )
-          label(for='anosmia')
-            | 嗅覺失調或消失 Dysosmia or Anosmia
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="diarrhea",
-            id='diarrhea'
-          )
-          label(for='diarrhea')
-            | 腹瀉 Diarrhea
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="hyperemia",
-            id='hyperemia'
-          )
-          label(for='hyperemia')
-            | 結膜充血 Conjunctival hyperemia
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="eyes",
-            id='eyes'
-          )
-          label(for='eyes')
-            | 眼睛癢 Itchy Eyes
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanThatOneChoice"
-            type="checkbox",
-            value="blisters",
-            id='blisters'
-          )
-          label(for='blisters')
-            | 腳指有紅點並起水泡 Get red spots or blisters on my toes
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanExceptMyselfChoices"
-            type="checkbox",
-            value="noneOfTheAbove",
-            id='none-of-the-above'
-          )
-          label(for='none-of-the-above')
-            | 無以上任⼀症狀 None of the above
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsInTheLast14Days",
-            @change="cleanHiddenFieldValue"
-            type="checkbox",
-            value="others",
-            id='others'
-          )
-          label(for='others')
-            | 其他 Others
-        div(v-if="venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others')")
+          label(:for="`symptom-${i}`")
+            | {{symptom}}
+        div(v-if="isSymptomMiscVisible")
           input.f5(
             v-model="venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms",
             type='text',
@@ -514,173 +355,305 @@
             )
             label(for='hospitalized-yes')
               | 有 Yes
-    h2.f5
-      | 回報今日健康資訊 Fill in today's health information
-    div.field
-      label.fw5
-        | *是否出現新冠肺炎症狀 Symptoms
-      div.radio-group.radio-x
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsToday",
-            type='radio',
-            value="no",
-            name="today-symptoms",
-            id='today-symptoms-no'
-          )
-          label(for='today-symptoms-no')
-            | 無 No
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.symptomsToday",
-            type='radio',
-            value="yes",
-            name="today-symptoms",
-            id='today-symptoms-yes'
-          )
-          label(for='today-symptoms-yes')
-            | 有 Yes
-    div.field
-      label.fw5
-        | *今天你去過的足跡待1小時以上處所 Where you stayed for more than 1 hour today ?
-      input.f5(
-        v-model="venueAdmissionSignInForm.stayedMoreThan1HourPlacesToday",
-        type='text'
+    // h2
+    //   | 回報今日健康資訊 Fill in today's health information
+    // div.field
+    //   label.fw5
+    //     | *是否出現新冠肺炎症狀 Symptoms
+    //   div.radio-group.radio-x
+    //     div
+    //       input.f5(
+    //         v-model="venueAdmissionSignInForm.symptomsToday",
+    //         type='radio',
+    //         value="no",
+    //         name="today-symptoms",
+    //         id='today-symptoms-no'
+    //       )
+    //       label(for='today-symptoms-no')
+    //         | 無 No
+    //     div
+    //       input.f5(
+    //         v-model="venueAdmissionSignInForm.symptomsToday",
+    //         type='radio',
+    //         value="yes",
+    //         name="today-symptoms",
+    //         id='today-symptoms-yes'
+    //       )
+    //       label(for='today-symptoms-yes')
+    //         | 有 Yes
+    // div.field
+    //   label.fw5
+    //     | *今天你去過的足跡待1小時以上處所 Where you stayed for more than 1 hour today ?
+    //   input.f5(
+    //     v-model="venueAdmissionSignInForm.stayedMoreThan1HourPlacesToday",
+    //     type='text'
+    //   )
+    // div.field
+    //   label.fw5
+    //     | *是否去篩檢 Did you take a coronavirus test ?
+    //   div.radio-group.radio-x
+    //     div
+    //       input.f5(
+    //         v-model="venueAdmissionSignInForm.takeACoronavirusTestToday",
+    //         type='radio',
+    //         value="no",
+    //         name="today-coronavirus-test",
+    //         id='today-coronavirus-test-no'
+    //       )
+    //       label(for='today-coronavirus-test-no')
+    //         | 無 No
+    //     div
+    //       input.f5(
+    //         v-model="venueAdmissionSignInForm.takeACoronavirusTestToday",
+    //         type='radio',
+    //         value="yes",
+    //         name="today-coronavirus-test",
+    //         id='today-coronavirus-test-yes'
+    //       )
+    //       label(for='today-coronavirus-test-yes')
+    //         | 有 Yes
+    .tc.mt5
+      b-button(
+        type="is-primary"
+        rounded
+        @click="validateFrom"
       )
-    div.field
-      label.fw5
-        | *是否去篩檢 Did you take a coronavirus test ?
-      div.radio-group.radio-x
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.takeACoronavirusTestToday",
-            type='radio',
-            value="no",
-            name="today-coronavirus-test",
-            id='today-coronavirus-test-no'
-          )
-          label(for='today-coronavirus-test-no')
-            | 無 No
-        div
-          input.f5(
-            v-model="venueAdmissionSignInForm.takeACoronavirusTestToday",
-            type='radio',
-            value="yes",
-            name="today-coronavirus-test",
-            id='today-coronavirus-test-yes'
-          )
-          label(for='today-coronavirus-test-yes')
-            | 有 Yes
-    div.check-info
-      button#button-check-in.fw9(
-        @click="validateFrom",
-        v-if="checkedTime===''"
-      )
-        | {{$t('checkIn')}}
-      div.checked-in(
-        v-else
-      )
-        <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="54" cy="54" r="54" fill="#4BE2F2"/>
-          <path d="M23 54L43 74L63.5 53.5L84 33" stroke="white" stroke-width="5"/>
-        </svg>
-        p.checked-time.fw9
-          | {{checkedTime}}
-        p.fw9
-          | {{$t('checkedIn')}}
-        button#button-checked-in
-          | Enjoy !
+        | {{$t('submit')}}
+      // div.checked-in(
+      //   v-else
+      // )
+      //   <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+      //     <circle cx="54" cy="54" r="54" fill="#4BE2F2"/>
+      //     <path d="M23 54L43 74L63.5 53.5L84 33" stroke="white" stroke-width="5"/>
+      //   </svg>
+      //   p.checked-time.fw9
+      //     | {{checkedTime}}
+      //   p.fw9
+      //     | {{$t('checkedIn')}}
+      //   button#button-checked-in
+      //     | Enjoy !
 
 </template>
 <i18n lang="yaml">
 en:
-  signInForm: 'Building Check-In'
-  checkIn: 'Check In !'
-  checkedIn: 'Checked In'
+  title: Health Declaration Form
+  titleSymptoms: Symptoms related to COVID-19
+  submit: Submit
+  someFieldEmpty: 'Please fill in all fields'
 zh:
-  signInForm: '入館簽到'
-  checkIn: '打卡！'
-  checkedIn: '完成打卡'
+  title: 健康聲明書
+  titleSymptoms: 「嚴重特殊傳染性肺炎」（武漢肺炎）有關接觸史與症狀
+  submit: 送出健康聲明
+  someFieldEmpty: '請填寫所有欄位'
 </i18n>
 <script>
+import qs from 'querystring'
+import axios from 'axios'
+
+const FORM_URL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSewrwiopO6HiuCL5Ff0L8Xg8UjbMyjE5QJXq1T3MsZ-eJbDKw/formResponse'
+
 // TODO:
 // 您已於 xx:xx 在 oo場館 簽到
 // You've checked into oo at xx:xx
+
+const SYMPTOM_OPTIONS = [
+  '發燒(> 37.5度) Body temperature over 37.5 ˚C',
+  '咳嗽 Coughs',
+  '喉嚨痛 Pharyngitis (Sore throat)',
+  '呼吸道窘迫症狀 (呼吸急促﹑呼吸困難) Shortness of Breath',
+  '流鼻水 Runny nose',
+  '肌肉酸痛 Myalgia (Muscle pain)',
+  '關節酸痛 Arthralgia (Joint pain)',
+  '四肢無力 Asthenia (Weakness; weak extremities)',
+  '胸痛 Chest Pain',
+  '味覺失調或消失 Dysgeusia or Ageusia',
+  '嗅覺失調或消失 Dysosmia or Anosmia',
+  '腹瀉 Diarrhea',
+  '結膜充血 Conjunctival hyperemia',
+  '眼睛癢 Itchy Eyes',
+  '腳指有紅點並起水泡 Get red spots or blisters on my toes',
+  '無以上任⼀症狀 None of the above',
+  '其他 Others'
+]
+
+const SYMPTOM_MISC = SYMPTOM_OPTIONS[SYMPTOM_OPTIONS.length - 1]
+const SYMPTOM_NULL = SYMPTOM_OPTIONS[SYMPTOM_OPTIONS.length - 2]
+
+const FORM_HASH_KEY = 'entry.442735562'
+
+const FORM_FIELDS = [
+  {
+    name: 'name',
+    default: '',
+    key: 'entry.660004461'
+  },
+  {
+    name: 'IDOrPassport',
+    default: '',
+    key: 'entry.553859736'
+  },
+  {
+    name: 'phone',
+    default: '',
+    key: 'entry.479158093'
+  },
+  {
+    name: 'email',
+    default: '',
+    key: 'entry.1619087838'
+  },
+  {
+    name: 'needLearningCredit',
+    default: '',
+    key: 'entry.1306117304'
+  },
+  {
+    name: 'historyOfEntryAndDepartureTaiwan',
+    default: '',
+    key: 'entry.1562638894'
+  },
+  {
+    name: 'symptomsInTheLast14Days',
+    default: [],
+    key: 'entry.1411713175'
+  },
+  {
+    name: 'symptomsInTheLast14DaysOthersSymptoms',
+    default: '',
+    key: 'entry.707341411'
+  },
+  {
+    name: 'quarantined',
+    default: '',
+    key: 'entry.1816027399'
+  },
+  {
+    name: 'physicalContactCOVID19Patients',
+    default: '',
+    key: 'entry.906781877'
+  },
+  {
+    name: 'closeContactWithReturnedFromOtherCountries',
+    default: '',
+    key: 'entry.25409996'
+  },
+  {
+    name: 'receivedScreenTest',
+    default: '',
+    key: 'entry.129802636'
+  },
+  {
+    name: 'receivedScreenDate',
+    default: '',
+    key: 'entry.2137916666'
+  },
+  {
+    name: 'receivedScreenCountry',
+    default: '',
+    key: 'entry.1521882388'
+  },
+  {
+    name: 'receivedScreenInstitute',
+    default: '',
+    key: 'entry.1800852332'
+  },
+  {
+    name: 'receivedScreenTestMethods',
+    default: '',
+    key: 'entry.1826409970'
+  },
+  {
+    name: 'receivedScreenTestResults',
+    default: '',
+    key: 'entry.1774182199'
+  },
+  {
+    name: 'diagnosed',
+    default: '',
+    key: 'entry.53211377'
+  },
+  {
+    name: 'diagnosedDate',
+    default: '',
+    key: 'entry.1138488582'
+  },
+  {
+    name: 'diagnosedCountry',
+    default: '',
+    key: 'entry.1835565540'
+  },
+  {
+    name: 'diagnosedHospital',
+    default: '',
+    key: 'entry.643806537'
+  },
+  {
+    name: 'diagnosedHospitalized',
+    default: '',
+    key: 'entry.1208089477'
+  }
+]
+
 export default {
   data () {
     return {
-      venueAdmissionSignInForm: {
-        identity: '訪客 Visitors',
-        name: '',
-        IDOrPassport: '',
-        phone: '',
-        email: '',
-        purposesPlaceOfVisiting: '學術交流/學習活動 Academic activities',
-        historyOfEntryAndDepartureTaiwan: '',
-        symptomsInTheLast14Days: [],
-        symptomsInTheLast14DaysOthersSymptoms: '',
-        quarantined: '',
-        physicalContactCOVID19Patients: '',
-        closeContactWithReturnedFromOtherCountries: '',
-        receivedScreenTest: '',
-        receivedScreenDate: '',
-        receivedScreenCountry: '',
-        receivedScreenInstitute: '',
-        receivedScreenTestMethods: '',
-        receivedScreenTestResults: '',
-        diagnosed: '',
-        diagnosedDate: '',
-        diagnosedCountry: '',
-        diagnosedHospital: '',
-        diagnosedHospitalized: '',
-        symptomsToday: '',
-        stayedMoreThan1HourPlacesToday: '',
-        takeACoronavirusTestToday: ''
-      },
-      currentVenue: 'GoodIdeasStudio',
-      checkedInVenues: []
+      venueAdmissionSignInForm: FORM_FIELDS.reduce((form, field) => {
+        form[field.name] = field.default
+        return form
+      }, {}),
+      symptomOptions: SYMPTOM_OPTIONS
     }
   },
   computed: {
-    checkedTime () {
-      const currentVenueCheckedInfo = this.checkedInVenues.filter((item) => {
-        return item.checkedVenue === this.currentVenue
-      })[0]
-      return currentVenueCheckedInfo ? currentVenueCheckedInfo.checkedTime : ''
-    }
-  },
-  mounted () {
-    if (localStorage.getItem('checkedInVenues')) {
-      this.checkedInVenues = [...JSON.parse(localStorage.getItem('checkedInVenues'))]
-    }
-    if (localStorage.getItem('venueAdmissionSignInForm')) {
-      this.venueAdmissionSignInForm = { ...JSON.parse(localStorage.getItem('venueAdmissionSignInForm')) }
+    isSymptomMiscVisible () {
+      return this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes(
+        SYMPTOM_MISC
+      )
     }
   },
   methods: {
-    selectedVenue (value) {
-      this.currentVenue = value
-    },
-    cleanThatOneChoice () {
-      const thatOneChoice = 'noneOfTheAbove'
-      if (this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes(thatOneChoice)) {
-        const index = this.venueAdmissionSignInForm.symptomsInTheLast14Days.indexOf(thatOneChoice)
-        this.venueAdmissionSignInForm.symptomsInTheLast14Days.splice(index, 1)
+    keepSymptomConsistent (e) {
+      const value = e.target.value
+      const isChecked = e.target.checked
+      const form = this.venueAdmissionSignInForm
+      if (!isChecked) {
+        return
+      }
+      if (value === SYMPTOM_NULL) {
+        const newOptions = []
+        if (this.isSymptomMiscVisible) {
+          newOptions.push(SYMPTOM_MISC)
+        }
+        newOptions.push(SYMPTOM_NULL)
+        form.symptomsInTheLast14Days = newOptions
+      } else if (value !== SYMPTOM_MISC) {
+        const index = form.symptomsInTheLast14Days.indexOf(SYMPTOM_NULL)
+        if (index >= 0) {
+          form.symptomsInTheLast14Days.splice(index, 1)
+        }
       }
     },
-    cleanExceptMyselfChoices () {
-      const thatOneChoice = 'noneOfTheAbove'
-      if (this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others')) {
-        this.venueAdmissionSignInForm.symptomsInTheLast14Days = ['others']
-      } else {
-        this.venueAdmissionSignInForm.symptomsInTheLast14Days = []
-      }
-      this.venueAdmissionSignInForm.symptomsInTheLast14Days.push(thatOneChoice)
-    },
+    // cleanThatOneChoice () {
+    //   const thatOneChoice = SYMPTOM_NULL
+    //   if (this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes(thatOneChoice)) {
+    //     const index = this.venueAdmissionSignInForm.symptomsInTheLast14Days.indexOf(thatOneChoice)
+    //     this.venueAdmissionSignInForm.symptomsInTheLast14Days.splice(index, 1)
+    //   }
+    // },
+    // cleanExceptMyselfChoices () {
+    //   const thatOneChoice = SYMPTOM_NULL
+    //   if (this.isSymptomMiscVisible) {
+    //     this.venueAdmissionSignInForm.symptomsInTheLast14Days = [SYMPTOM_MISC]
+    //   } else {
+    //     this.venueAdmissionSignInForm.symptomsInTheLast14Days = []
+    //   }
+    //   this.venueAdmissionSignInForm.symptomsInTheLast14Days.push(thatOneChoice)
+    // },
     cleanHiddenFieldValue () {
-      if (!this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others')) {
-        this.venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms = ''
-      }
+      // don't need to clean it as user might just want to hide it temporary
+      // if (!this.isSymptomMiscVisible) {
+      //   this.venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms = ''
+      // }
       if (this.venueAdmissionSignInForm.receivedScreenTest === 'no') {
         this.venueAdmissionSignInForm.receivedScreenDate = ''
         this.venueAdmissionSignInForm.receivedScreenCountry = ''
@@ -699,26 +672,29 @@ export default {
       // 驗證複選欄位
       const isSymptomsInTheLast14DaysEmpty = this.venueAdmissionSignInForm.symptomsInTheLast14Days.length === 0
       // 驗證複選欄位包含 others 時的隱藏欄位
-      const isSymptomsInTheLast14DaysOthersSymptomsEmpty = this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes('others') ? this.venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms === '' : false
+      const isSymptomsInTheLast14DaysOthersSymptomsEmpty = this.isSymptomMiscVisible ? this.venueAdmissionSignInForm.symptomsInTheLast14DaysOthersSymptoms === '' : false
       // 驗證「是否接受過新冠肺炎篩檢」欄位為 yes 時的隱藏欄位
-      let isReceivedScreenTestHiddenFieldsEmpty
-      if (this.venueAdmissionSignInForm.receivedScreenTest === 'yes') {
-        isReceivedScreenTestHiddenFieldsEmpty = this.venueAdmissionSignInForm.receivedScreenDate === '' ||
-                this.venueAdmissionSignInForm.receivedScreenCountry === '' ||
-                this.venueAdmissionSignInForm.receivedScreenInstitute === '' ||
-                this.venueAdmissionSignInForm.receivedScreenTestMethods === '' ||
-                this.venueAdmissionSignInForm.receivedScreenTestResults === ''
-      }
+      // > ddio: 不用驗證，不然切回 yes 之前要逼使用者手動清空所有欄位 XD
+      // let isReceivedScreenTestHiddenFieldsEmpty
+      // if (this.venueAdmissionSignInForm.receivedScreenTest === 'yes') {
+      //   isReceivedScreenTestHiddenFieldsEmpty = this.venueAdmissionSignInForm.receivedScreenDate === '' ||
+      //           this.venueAdmissionSignInForm.receivedScreenCountry === '' ||
+      //           this.venueAdmissionSignInForm.receivedScreenInstitute === '' ||
+      //           this.venueAdmissionSignInForm.receivedScreenTestMethods === '' ||
+      //           this.venueAdmissionSignInForm.receivedScreenTestResults === ''
+      // }
       // 驗證「是否曾被確診為新冠肺炎患者」欄位為 yes 時的隱藏欄位
-      let isDiagnosedHiddenFieldsEmpty
-      if (this.venueAdmissionSignInForm.diagnosed === 'yes') {
-        isDiagnosedHiddenFieldsEmpty = this.venueAdmissionSignInForm.diagnosedDate === '' ||
-                this.venueAdmissionSignInForm.diagnosedCountry === '' ||
-                this.venueAdmissionSignInForm.diagnosedHospital === '' ||
-                this.venueAdmissionSignInForm.diagnosedHospitalized === ''
-      }
+      // > ddio: 理由同上
+      // let isDiagnosedHiddenFieldsEmpty
+      // if (this.venueAdmissionSignInForm.diagnosed === 'yes') {
+      //   isDiagnosedHiddenFieldsEmpty = this.venueAdmissionSignInForm.diagnosedDate === '' ||
+      //           this.venueAdmissionSignInForm.diagnosedCountry === '' ||
+      //           this.venueAdmissionSignInForm.diagnosedHospital === '' ||
+      //           this.venueAdmissionSignInForm.diagnosedHospitalized === ''
+      // }
 
       const specialFields = [
+        'needLearningCredit',
         'symptomsInTheLast14Days',
         'symptomsInTheLast14DaysOthersSymptoms',
         'receivedScreenDate',
@@ -734,39 +710,47 @@ export default {
       // 驗證其他欄位
       const isOtherFieldsEmpty = Object.keys(this.venueAdmissionSignInForm).some((key) => {
         if (!specialFields.includes(key)) {
+          console.warn('  some', this.venueAdmissionSignInForm[key] === '', key, this.venueAdmissionSignInForm[key])
           return this.venueAdmissionSignInForm[key] === ''
         }
       })
-      /* eslint-disable no-console */
+      console.warn(isSymptomsInTheLast14DaysEmpty, isSymptomsInTheLast14DaysOthersSymptomsEmpty, isOtherFieldsEmpty)
       return isSymptomsInTheLast14DaysEmpty ||
             isSymptomsInTheLast14DaysOthersSymptomsEmpty ||
-            isReceivedScreenTestHiddenFieldsEmpty ||
-            isDiagnosedHiddenFieldsEmpty ||
+            // isReceivedScreenTestHiddenFieldsEmpty ||
+            // isDiagnosedHiddenFieldsEmpty ||
             isOtherFieldsEmpty
     },
     validateFrom () {
       if (this.isRequiredFieldEmpty()) {
-        alert(' 必填欄位不能為空')
+        this.$buefy.dialog.alert({
+          message: this.$t('someFieldEmpty')
+        })
         return
       }
       this.submmit()
     },
-    submmit () {
-      this.checkedInVenues.push({
-        checkedVenue: this.currentVenue,
-        checkedTime: this.timeStamp()
+    async submmit () {
+      // TODO: gen hash
+      const hash = ''
+      const body = FORM_FIELDS.reduce((form, field) => {
+        form[field.key] = this.venueAdmissionSignInForm[field.name]
+        return form
+      }, {
+        [FORM_HASH_KEY]: hash
       })
-      localStorage.setItem('venueAdmissionSignInForm', JSON.stringify(this.venueAdmissionSignInForm))
-      localStorage.setItem('checkedInVenues', JSON.stringify(this.checkedInVenues))
-    },
-    timeStamp () {
-      const date = new Date()
-      const YYYY = date.getFullYear()
-      const MM = date.getMonth() + 1
-      const DD = date.getDate()
-      const hh = date.getHours()
-      const mm = date.getMinutes()
-      return `${YYYY}/${MM}/${DD} ${hh}:${mm}`
+      const config = {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      }
+      try {
+        await axios.post(FORM_URL, qs.stringify(body), config)
+      } catch (error) {
+        // ignore CORS warning <3
+      }
+
+      // TODO: record necessary info and goto next page
     }
   }
 }
@@ -817,6 +801,16 @@ export default {
     }
     .radio-group {
       padding: 9px;
+      > div {
+        display: flex;
+        align-items: center;
+
+        > * {
+          &:not(:first-child) {
+            margin-left: 0.25rem;
+          }
+        }
+      }
     }
     .radio-x {
       display: flex;
@@ -826,29 +820,11 @@ export default {
       }
     }
     .radio-y {
-      display: flex;
       flex-direction: column;
-    }
-  }
-  .check-info {
-    text-align: center;
-    font-size: 1.125rem;
-    .checked-time {
-      color: #f779ee;
-    }
-    button {
-      border-radius: 30px;
-      padding: 4px 25px;
-    }
-    #button-check-in {
-      font-size: 2rem;
-      color: #fff;
-      background: #0EAFC9;
-    }
-    #button-checked-in {
-      padding: 8px 25px;
-      color: #fff;
-      background: #4BE2F2;
+      > div {
+        padding: 0.125rem;
+        margin-bottom: 0.125rem;
+      }
     }
   }
 }
