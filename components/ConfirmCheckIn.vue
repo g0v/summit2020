@@ -38,12 +38,24 @@ export default {
     healthInfo () {
       return this.curHealthInfo || {}
     },
+    needLearningCredit () {
+      return !!this.healthInfo.needLearningCredit
+    },
     message () {
       const now = dayjs().format('HH:mm')
+      const isSignin = this.payload.signinInfo === '簽到'
       if (this.$i18n.locale === 'zh') {
-        return `您已於 ${now} 在<br /> ${this.payload.building} 簽到`
+        let verb = '簽到'
+        if (this.needLearningCredit && !isSignin) {
+          verb = '簽退'
+        }
+        return `您已於 ${now} 在<br /> ${this.payload.building} ${verb}`
       }
-      return `Yov've checked into<br /> ${this.payload.building} at ${now}`
+      let verb = 'checked into'
+      if (this.needLearningCredit) {
+        verb = isSignin ? 'signned-in to' : 'signned-out to'
+      }
+      return `Yov've ${verb}<br /> ${this.payload.building} at ${now}`
     }
   },
   methods: {

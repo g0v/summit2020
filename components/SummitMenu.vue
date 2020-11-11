@@ -11,6 +11,7 @@
       )
         | {{ $t(menu.key) }}
   button.menu__item.menu__item--checkin.pa3.pv0-l.dim.bb.bt.bn-l.b--silver.mr3-l.br-pill-l(
+    v-if="allowCheckIn"
     @click="openCheckIn"
   ) {{$t(checkInType)}}
   nuxt-link.menu__lang.pa3.pa2-l.dim(
@@ -68,7 +69,8 @@ export default {
   },
   computed: {
     ...mapGetters({
-      curHealthInfo: GETTERS.CUR_HEALTH_INFO
+      curHealthInfo: GETTERS.CUR_HEALTH_INFO,
+      allowCheckIn: GETTERS.ALLOW_CHECK_IN
     }),
     isZh () {
       return this.$i18n.locale === 'zh'
@@ -135,6 +137,8 @@ export default {
         }
         &--checkin {
           color: white;
+          background: transparent;
+          height: auto;
         }
       }
       &__lang {

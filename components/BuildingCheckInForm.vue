@@ -28,7 +28,22 @@
         )
           | {{building}}
     .mt4.tc
+      template(v-if="needLearningCredit")
+        b-button.b.mr3(
+          rounded
+          size="is-medium"
+          type="is-primary"
+          @click="submit('簽到')"
+        ) {{$t('startLearning')}}
+        b-button.b(
+          rounded
+          outlined
+          size="is-medium"
+          type="is-primary"
+          @click="submit('簽退')"
+        ) {{$t('finishLearning')}}
       b-button.b(
+        v-else
         rounded
         size="is-medium"
         type="is-primary"
@@ -45,16 +60,20 @@ en:
   phone: 'Phone Number:'
   buildingInfo: Building Information
   submit: Check in
+  startLearning: Sign in
+  finishLearning: Sign off
   noBuilding: Please select the building you are going to enter
   resetHealth: Change personal information
 zh:
-  titleDefault: 入館登記
+  titleDefault: 入館簽到
   titleLearningCredit: 終身學習簽到簽退
   basicInfo: 個人資訊
   name: 姓名：
   phone: 電話：
   buildingInfo:  場館地點
-  submit: 登記入館
+  submit: 簽到入館
+  startLearning: 簽到
+  finishLearning: 簽退
   noBuilding: 請選擇要進入的場館
   resetHealth: 調整個人資訊
 </i18n>
@@ -73,7 +92,8 @@ const FIELD_MAPPING = {
   building: 'entry.488819449',
   hash: 'entry.1803586269',
   name: 'entry.812880642',
-  phone: 'entry.876031581'
+  phone: 'entry.876031581',
+  learningCredit: 'entry.1894872452'
 }
 
 export default {
@@ -110,8 +130,11 @@ export default {
       })
       return Object.keys(buildings)
     },
+    needLearningCredit () {
+      return !!this.healthInfo.needLearningCredit
+    },
     title () {
-      if (this.healthInfo.needLearningCredit) {
+      if (this.needLearningCredit) {
         return this.$t('titleLearningCredit')
       }
       return this.$t('titleDefault')
@@ -121,7 +144,7 @@ export default {
     reset () {
       this.$emit('reset')
     },
-    async submit () {
+    async submit (signinInfo) {
       if (!this.currentBuilding) {
         this.$buefy.dialog.alert({
           type: 'is-danger',
@@ -134,6 +157,9 @@ export default {
         [FIELD_MAPPING.hash]: this.healthInfo.hash,
         [FIELD_MAPPING.name]: this.healthInfo.name,
         [FIELD_MAPPING.phone]: this.healthInfo.phone
+      }
+      if (signinInfo) {
+        body[FIELD_MAPPING.learningCredit] = signinInfo
       }
       const config = {
         headers: {
@@ -155,7 +181,8 @@ export default {
       }
       if (isSuccessed) {
         this.$emit('building-done', {
-          building: this.currentBuilding
+          building: this.currentBuilding,
+          signinInfo
         })
       }
     }
