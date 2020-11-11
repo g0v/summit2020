@@ -154,7 +154,9 @@ export default {
         }
       }
       if (isSuccessed) {
-        this.$emit('building-done')
+        this.$emit('building-done', {
+          building: this.currentBuilding
+        })
       }
     }
   }

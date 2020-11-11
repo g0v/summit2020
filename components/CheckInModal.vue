@@ -3,9 +3,11 @@
     health-modal(:active.sync="isModalActive")
       component(
         :is="contentConponent"
+        :payload="buildingPayload"
         @reset="redeclareHealth"
         @health-done="healthDone"
         @building-done="buildingDone"
+        @confirm-done="confirmDone"
       )
 </template>
 <script>
@@ -30,7 +32,7 @@ export default {
     return {
       isModalActive: this.active,
       hasToResetHealthDecl: false,
-      isDone: false
+      buildingPayload: null
     }
   },
   computed: {
@@ -38,7 +40,7 @@ export default {
       curHealthInfo: GETTERS.CUR_HEALTH_INFO
     }),
     contentConponent () {
-      if (this.isDone) {
+      if (this.buildingPayload) {
         return ConfirmCheckIn
       } else if (this.curHealthInfo && !this.hasToResetHealthDecl) {
         return BuildingCheckInForm
@@ -59,7 +61,7 @@ export default {
   },
   methods: {
     reset () {
-      this.isDone = false
+      this.buildingPayload = null
       this.hasToResetHealthDecl = false
     },
     redeclareHealth () {
@@ -68,8 +70,11 @@ export default {
     healthDone () {
       this.hasToResetHealthDecl = false
     },
-    buildingDone () {
-      this.isDone = true
+    buildingDone (payload) {
+      this.buildingPayload = payload
+    },
+    confirmDone () {
+      this.isModalActive = false
     }
   }
 }
