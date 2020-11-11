@@ -17,7 +17,7 @@ export default {
   watch: {
     active (isActive) {
       if (!isActive) {
-        this.$router.push('/')
+        this.$router.push(this.localePath('/'))
       }
     }
   }

@@ -2,7 +2,7 @@
   .guideline
     h1.ph3 {{$t('title')}}
     summit-markdown(:content="$t('article/healthGuidelines')")
-    .flex-l.justify-center.items-center.mt3
+    .flex.flex-column.flex-row-l.justify-center.items-center.mt3
       b-button(@click="cancel") {{$t('cancel')}}
       b-button.mt3.mt0-l.ml3-l(
         v-if="allowCheckIn"
@@ -41,10 +41,10 @@ export default {
   },
   methods: {
     cancel () {
-      this.$router.push('/')
+      this.$emit('cancel')
     },
     fillForm () {
-      this.$router.push('building-check-in')
+      this.$emit('fill-form')
     }
   }
 }

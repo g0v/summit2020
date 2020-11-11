@@ -99,7 +99,8 @@ const FIELD_MAPPING = {
 export default {
   data () {
     return {
-      currentBuilding: ''
+      currentBuilding: '',
+      isInProgress: false
     }
   },
   computed: {
@@ -152,6 +153,10 @@ export default {
         })
         return
       }
+      if (this.isInProgress) {
+        return
+      }
+      this.isInProgress = true
       const body = {
         [FIELD_MAPPING.building]: this.currentBuilding,
         [FIELD_MAPPING.hash]: this.healthInfo.hash,
@@ -185,6 +190,7 @@ export default {
           signinInfo
         })
       }
+      this.isInProgress = false
     }
   }
 }

@@ -18,7 +18,10 @@
       )
     check-in-modal(:active.sync="isBuildingCheckInActive")
     health-modal(:active.sync="isCovid19GuidlinesActive")
-      covid19-guidelines
+      covid19-guidelines(
+        @fill-form="fillForm"
+        @cancel="closeGuidelines"
+      )
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -78,6 +81,13 @@ export default {
         return
       }
       this.slideout.close()
+    },
+    fillForm () {
+      this.isCovid19GuidlinesActive = false
+      this.isBuildingCheckInActive = true
+    },
+    closeGuidelines () {
+      this.isCovid19GuidlinesActive = false
     },
     openBuildingCheckIn () {
       this.closeMenu()

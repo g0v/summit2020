@@ -588,6 +588,7 @@ export default {
         form[field.name] = field.default
         return form
       }, {}),
+      isInProgress: false,
       symptomOptions: SYMPTOM_OPTIONS
     }
   },
@@ -709,14 +710,19 @@ export default {
             // isDiagnosedHiddenFieldsEmpty ||
             isOtherFieldsEmpty
     },
-    validateFrom () {
+    async validateFrom () {
       if (this.isRequiredFieldEmpty()) {
         this.$buefy.dialog.alert({
           message: this.$t('someFieldEmpty')
         })
         return
       }
-      this.submmit()
+      if (this.isInProgress) {
+        return
+      }
+      this.isInProgress = true
+      await this.submmit()
+      this.isInProgress = false
     },
     async submmit () {
       const form = this.venueAdmissionSignInForm

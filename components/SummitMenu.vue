@@ -25,12 +25,14 @@ en:
   lang: 華語
   registration: Registration
   banquet: Banquet
+  learningCredit: Sign In/Off
   buildingCheckIn: Check In
   healthDecl: Health Declaration
 zh:
   lang: English
   registration: 立刻報名
   banquet: 來辦桌
+  learningCredit: 終身學習簽到退
   buildingCheckIn: 入館簽到
   healthDecl: 填健康聲明
 </i18n>
@@ -77,6 +79,9 @@ export default {
     },
     checkInType () {
       if (this.curHealthInfo) {
+        if (this.curHealthInfo.needLearningCredit) {
+          return 'learningCredit'
+        }
         return 'buildingCheckIn'
       }
       return 'healthDecl'
