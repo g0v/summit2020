@@ -1,8 +1,8 @@
 <template lang="pug">
-.menu.flex.flex-column.flex-row-l.h-100.h-auto-l(:class="{'menu--dark': dark}")
+.menu.flex.flex-column.flex-row-l.items-center-l.h-100.h-auto-l(:class="{'menu--dark': dark}")
   .flex-auto.flex-none-l
     template(v-for="menu in menuList")
-      component.menu__item.dim-l.pa3.pa2-l.mr3-l.db.dib-l.bb.bn-l.b--silver(
+      component.menu__item.dim.pa3.pa2-l.mr3-l.db.dib-l.bb.bn-l.b--silver(
         :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
         :key="menu.key"
         :to="genLink(menu)"
@@ -10,7 +10,10 @@
         @click.native="sthClick"
       )
         | {{ $t(menu.key) }}
-  nuxt-link.menu__lang.pa3.pa2-l.dim-l(
+  button.menu__item.menu__item--checkin.pa3.pv0-l.dim.bb.bt.bn-l.b--silver.mr3-l.br-pill-l(
+    @click="openCheckIn"
+  ) {{$t(checkInType)}}
+  nuxt-link.menu__lang.pa3.pa2-l.dim(
     :to="switchLocalePath(isZh ? 'en' : 'zh')"
     @click.native="sthClick"
   )
@@ -18,19 +21,21 @@
 </template>
 <i18n lang="yaml">
 en:
-  lang: '華語'
-  cfp: 'Get Latest Proposals'
-  registration: 'Registration'
-  banquet: 'Banquet'
-  venueAdmissionSignIn: 'Venue Admission Sign In'
+  lang: 華語
+  registration: Registration
+  banquet: Banquet
+  buildingCheckIn: Check In
+  healthDecl: Health Declaration
 zh:
-  lang: 'English'
-  cfp: '看議程投稿'
-  registration: '立刻報名'
-  banquet: '來辦桌'
-  venueAdmissionSignIn: '入館簽到'
+  lang: English
+  registration: 立刻報名
+  banquet: 來辦桌
+  buildingCheckIn: 入館簽到
+  healthDecl: 填健康聲明
 </i18n>
 <script>
+import { mapGetters } from 'vuex'
+import { GETTERS } from '~/store'
 import ExtLink from '~/components/ExtLink'
 
 export default {
@@ -48,7 +53,6 @@ export default {
       menuList: [
         // { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
         { key: 'transport', url: '/transport' },
-        // { key: 'cfp', url: 'https://propose.summit2020.g0v.tw/proposal-list', isExt: true },
         // { key: 'speakers', url: '/speakers' },
         { key: 'agenda', url: '/agenda' },
         { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
@@ -63,8 +67,17 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      curHealthInfo: GETTERS.CUR_HEALTH_INFO
+    }),
     isZh () {
       return this.$i18n.locale === 'zh'
+    },
+    checkInType () {
+      if (this.curHealthInfo) {
+        return 'buildingCheckIn'
+      }
+      return 'healthDecl'
     }
   },
   methods: {
@@ -76,6 +89,13 @@ export default {
     },
     sthClick () {
       this.$emit('link-click')
+    },
+    openCheckIn () {
+      if (this.curHealthInfo) {
+        this.$emit('building-open')
+      } else {
+        this.$emit('guidelines-open')
+      }
     }
   }
 }
@@ -93,6 +113,15 @@ export default {
     &--cta {
       color: #333;
     }
+
+    &--checkin {
+      border-left: none;
+      border-right: none;
+      outline: none;
+      background: #77efff;
+      text-align: left;
+      height: 2rem;
+    }
   }
   &__lang {
     color: #f779ee;
@@ -103,6 +132,9 @@ export default {
         color: #f6f6f6;
         &--cta {
           color: #f6f6f6;
+        }
+        &--checkin {
+          color: white;
         }
       }
       &__lang {

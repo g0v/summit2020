@@ -1,20 +1,24 @@
-<template>
-  <div class="wrapper">
-    <div ref="content" class="main min-vh-100 flex flex-column" :style="{width: pageWidth}">
-      <navbar @toggle="toggleMenu" />
-      <div class="page-container flex-auto">
-        <nuxt />
-      </div>
-      <Footer />
-    </div>
-    <div ref="mobilemenu" class="dn bg-mid-gray">
-      <summit-menu
-        class="pa2"
+<template lang="pug">
+  .wrapper
+    .main.min-vh-100.flex.flex-column(ref="content" :style="{width: pageWidth}")
+      navbar(
+        @toggle="toggleMenu"
+        @building-open="openBuildingCheckIn"
+        @guidelines-open="openCovid19Guidelines"
+      )
+      .page-container.flex-auto
+        nuxt/
+      footer
+    .dn.bg-mid-gray(ref="mobilemenu")
+      summit-menu.pa2(
         :dark="true"
         @link-click="closeMenu"
-      />
-    </div>
-  </div>
+        @building-open="openBuildingCheckIn"
+        @guidelines-open="openCovid19Guidelines"
+      )
+    check-in-modal(:active.sync="isBuildingCheckInActive")
+    health-modal(:active.sync="isCovid19GuidlinesActive")
+      covid19-guidelines
 </template>
 <script>
 import { mapState } from 'vuex'
@@ -23,16 +27,24 @@ import { STATES } from '~/store'
 import Navbar from '~/components/Navbar'
 import Footer from '~/components/Footer'
 import SummitMenu from '~/components/SummitMenu'
+import HealthModal from '~/components/HealthModal'
+import CheckInModal from '~/components/CheckInModal'
+import Covid19Guidelines from '~/components/Covid19Guidelines'
 
 export default {
   components: {
     Navbar,
     Footer,
-    SummitMenu
+    SummitMenu,
+    CheckInModal,
+    Covid19Guidelines,
+    HealthModal
   },
   data () {
     return {
-      slideout: null
+      slideout: null,
+      isBuildingCheckInActive: false,
+      isCovid19GuidlinesActive: false
     }
   },
   computed: {
@@ -66,6 +78,14 @@ export default {
         return
       }
       this.slideout.close()
+    },
+    openBuildingCheckIn () {
+      this.closeMenu()
+      this.isBuildingCheckInActive = true
+    },
+    openCovid19Guidelines () {
+      this.closeMenu()
+      this.isCovid19GuidlinesActive = true
     }
   }
 }
