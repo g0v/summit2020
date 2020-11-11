@@ -1,8 +1,10 @@
 @import "~bulma/sass/utilities/_all";
 @import "~bulma";
+@import "~buefy/src/scss/utils/_variables";
 @import "~buefy/src/scss/components/_dropdown";
 @import "~buefy/src/scss/components/_modal";
 @import "~buefy/src/scss/components/_dialog";
+@import "~buefy/src/scss/components/_radio";
 
 @import './reset';
 @import './font';

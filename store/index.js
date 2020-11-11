@@ -105,6 +105,7 @@ export const getters = {
   },
   [GETTERS.ALLOW_CHECK_IN] (state) {
     // TODO: add time based rule
-    return true
+    // disable checkin from production for now
+    return !process.env.SITE_BASE.endsWith('/2020')
   }
 }

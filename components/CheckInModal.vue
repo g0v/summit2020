@@ -1,7 +1,12 @@
 <template lang="pug">
   .checkin-modal
     health-modal(:active.sync="isModalActive")
-      component(:is="contentConponent" @reset="redeclareHealth" @done="done")
+      component(
+        :is="contentConponent"
+        @reset="redeclareHealth"
+        @health-done="healthDone"
+        @building-done="buildingDone"
+      )
 </template>
 <script>
 import { mapGetters } from 'vuex'
@@ -60,7 +65,10 @@ export default {
     redeclareHealth () {
       this.hasToResetHealthDecl = true
     },
-    done () {
+    healthDone () {
+      this.hasToResetHealthDecl = false
+    },
+    buildingDone () {
       this.isDone = true
     }
   }

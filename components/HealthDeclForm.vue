@@ -457,10 +457,6 @@ import { MUTATIONS } from '~/store'
 
 const FORM_URL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSewrwiopO6HiuCL5Ff0L8Xg8UjbMyjE5QJXq1T3MsZ-eJbDKw/formResponse'
 
-// TODO:
-// 您已於 xx:xx 在 oo場館 簽到
-// You've checked into oo at xx:xx
-
 const SYMPTOM_OPTIONS = [
   '發燒(> 37.5度) Body temperature over 37.5 ˚C',
   '咳嗽 Coughs',
@@ -745,9 +741,9 @@ export default {
         form.IDOrPassport
       ].join('##'))
 
-      const body = FORM_FIELDS.reduce((body, field) => {
-        body[field.key] = body[field.name]
-        return body
+      const body = FORM_FIELDS.reduce((cache, field) => {
+        cache[field.key] = form[field.name]
+        return cache
       }, {
         [FORM_HASH_KEY]: hash
       })
@@ -761,7 +757,6 @@ export default {
         await axios.post(FORM_URL, qs.stringify(body), config)
         isSuccessed = true
       } catch (error) {
-        console.warn(error)
         if (error.message === 'Network Error' && error.isAxiosError) {
           // ignore CORS warning <3
           // is could also be 400, but there's no way to distinguish them
@@ -772,14 +767,17 @@ export default {
       }
 
       if (isSuccessed) {
+        const visiblePhone = '●●●●●●' + form.phone.slice(-3)
         this.declareHealth({
           hashKey: hash,
           meta: {
             hash,
             needLearningCredit: form.needLearningCredit === 'yes',
-            name: form.name
+            name: form.name,
+            phone: visiblePhone
           }
         })
+        this.$emit('health-done')
       } else {
         this.$buefy.dialog.alert({
           message: this.$t('submitFailed')
