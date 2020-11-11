@@ -179,8 +179,14 @@
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "Bess Lee",
+        "organization": "g0v.tw",
+        "avatar_url": "https://i.imgur.com/pGy8CPv.png",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://jothon.g0v.tw/about/",
+        "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。2017 年加入 g0v 揪松團，統籌 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
+        "bio_en": "Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She is general coordinator of g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
       },
       "議程開始時間": "2020-12-04T14:30",
       "議程長度": 30,
@@ -589,14 +595,19 @@
       "id": "5ef09c0eba206b030d66a310",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "NullFull - Introducing Korean civic hacking community",
-      "最後更新時間": "2020-11-03T16:00:54.000Z",
+      "最後更新時間": "2020-11-10T08:13:03.000Z",
       "分類主題-華語": "台日韓齊揪松",
       "分類主題-en": "Communities & Hackathons in East Asia",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "小蟹 Kalang",
+        "organization": "阿美語萌典",
+        "avatar_url": "https://summit.g0v.tw/2020/cache/ec48a8cc7b64dfa2eb3ee45b2e64008a.jpg",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://twitter.com/wildjcrt",
+        "bio": "擅長的程式語言為 Ruby，以社群貢獻分享為興趣，熱愛自由，和女人迷共同為性別議題發聲，同時也長期參與開源社群，為 g0v 阿美語萌典團隊的主要開發維護者，以及 Rails Taiwan 共同創辦人，希望一起讓世界變得更美好。"
       },
       "議程開始時間": "2020-12-04T15:30",
       "議程長度": 30,
@@ -1677,6 +1688,9 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "related_url": "https://opendata.isoc.hk/",
+    "verified": true,
+    "createdAt": "2020-11-10T09:50:38.838Z",
+    "presentation_method": "遠端連線 online",
     "speakers": [
       {
         "display_name": "Benjamin Zhou",
@@ -1688,14 +1702,12 @@
         "bio_en": "Benjamin Zhou is a researcher with the Internet Society Hong Kong, and developed the Hong Kong Open Data Index. Zhou has been researching on privacy and freedom of expression issues of Hong Kong and mainland China. He was the project manager of the Hong Kong Transparency Report at The University of Hong Kong, and has researched on Chinese internet companies for the Ranking Digital Rights."
       }
     ],
-    "verified": true,
-    "createdAt": "2020-08-23T00:00:00.000Z",
-    "updatedAt": "2020-08-23T00:00:00.000Z",
+    "updatedAt": "2020-11-10T09:50:38.838Z",
     "timeSheet": {
       "id": "5ef9bc2dba206b030d66a3ae",
       "議程日期": "2020-12-05",
       "議程預設標題-華語": "香港開放數據指數",
-      "最後更新時間": "2020-11-03T15:59:33.000Z",
+      "最後更新時間": "2020-11-10T14:16:27.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "成大綠色魔法學校 - 崇華廳 R0",
@@ -1966,14 +1978,19 @@
       "id": "5ef9fa99ba206b030d66a3d8",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "眾人協作台灣原住民族字典──阿美語萌典的開始",
-      "最後更新時間": "2020-11-03T16:00:56.000Z",
+      "最後更新時間": "2020-11-10T08:13:10.000Z",
       "分類主題-華語": "台日韓齊揪松",
       "分類主題-en": "Communities & Hackathons in East Asia",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "小蟹 Kalang",
+        "organization": "阿美語萌典",
+        "avatar_url": "https://summit.g0v.tw/2020/cache/ec48a8cc7b64dfa2eb3ee45b2e64008a.jpg",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://twitter.com/wildjcrt",
+        "bio": "擅長的程式語言為 Ruby，以社群貢獻分享為興趣，熱愛自由，和女人迷共同為性別議題發聲，同時也長期參與開源社群，為 g0v 阿美語萌典團隊的主要開發維護者，以及 Rails Taiwan 共同創辦人，希望一起讓世界變得更美好。"
       },
       "議程開始時間": "2020-12-04T16:30",
       "議程長度": 30,
@@ -3126,14 +3143,19 @@
       "id": "5efaf2c6ba206b030d66a458",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "線上揪松「揪己家」工作坊",
-      "最後更新時間": "2020-11-03T16:00:56.000Z",
+      "最後更新時間": "2020-11-10T08:13:10.000Z",
       "分類主題-華語": "台日韓齊揪松",
       "分類主題-en": "Communities & Hackathons in East Asia",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "Ronny Wang",
+        "organization": "g0v",
+        "avatar_url": "https://summit.g0v.tw/2020/cache/c0aab43f7330ceb7db8456fb8feb34da.jpg",
+        "city": "Taipei City",
+        "city_en": "Taipei City",
+        "info_url": "https://jothon.g0v.tw/about/",
+        "bio": "工程師，喜歡爬政府資料並開放，這次疫情開始對視訊會議接觸研究。"
       },
       "議程開始時間": "2020-12-04T17:00",
       "議程長度": 60,
@@ -3575,8 +3597,14 @@
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "Bess Lee",
+        "organization": "g0v.tw",
+        "avatar_url": "https://i.imgur.com/pGy8CPv.png",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://jothon.g0v.tw/about/",
+        "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。2017 年加入 g0v 揪松團，統籌 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
+        "bio_en": "Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She is general coordinator of g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
       },
       "議程開始時間": "2020-12-04T14:00",
       "議程長度": 30,
@@ -4006,6 +4034,81 @@
       }
     }
   },
+  "5efe22ddba206b030d66a516": {
+    "id": "5efe22ddba206b030d66a516",
+    "title": "Ùi台語到台文，討論社會大眾ê母語語文態度轉變kap社群經營",
+    "title_en": "",
+    "summary": "咱這ê論談邀請tio̍h有teh推sak台語、台文ê有志，ùi無kâng ê身份、角度來分享，有台灣人mā有米國人，有磅米芳塗礱師、軟體工程師、台語Youtuber kap台文系教授，做伙來討論一般人對台語、台文ê學習意識、動機、過程，kap咱按怎來經營。\n\n阮按算交流分享無kāng人、無kāng角色teh\b學習、推廣台語ê經驗。向望透過交流，thang hō͘ ta̍k家思考現此時台語、台文ê問題kap復興母語ê活路。",
+    "summary_en": "We will bring together an eclectic group of Taiwanese language and literacy advocates to share and discuss their experiences. The group includes YouTubers A-Hoa (Taiwanese) and A'iong (American), a software engineer, and professor of Taiwanese literature.\n\nAmong the topics we will discuss are: our diverse experiences with learning, teaching, and using Taiwanese; and how we can use technology or other means to help improve Taiwanese literacy rates and raise its general social status.",
+    "oral_language": "其他 Others",
+    "oral_languate_other": "",
+    "format": "主題論壇 （120 分鐘）Panel discussion (120 min)",
+    "topic": "賢者之島 Academia Formosa",
+    "three_keywords": "台語、台文、母語意識",
+    "cover_image": "",
+    "is_content_cc40": true,
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "oral_language_other": "Tâi-gí（台語）",
+    "verified": true,
+    "createdAt": "2020-11-09T18:08:40.912Z",
+    "presentation_method": "現場報告 on-site",
+    "speakers": [
+      {
+        "display_name": "A'ióng (高安詠)",
+        "organization": "阿勇台語 A'ióng Tâi-gí",
+        "avatar_url": "https://i.imgur.com/QC609xjh.jpg",
+        "city": "Sin-tek (新竹)",
+        "info_url": "https://www.facebook.com/AiongTaigi",
+        "bio": "Bí-kok lâi ê Tâi-oân sin-chū-bîn. Nńg-thé kang-têng-su. Ū-êng teh chhui-sak Tâi-gí.",
+        "bio_en": "American immigrant to Taiwan. Software developer. Promote Taiwanese in my free time."
+      },
+      {
+        "display_name": "Lōa Ēng-Hôa",
+        "organization": "足英台三聲道磅米芳",
+        "avatar_url": "https://i.imgur.com/mzSFVCNh.jpg",
+        "city": "Sin-tek (新竹)",
+        "info_url": "https://www.facebook.com/MandarinIsJapanese/",
+        "bio": "Chiù-chōa chit-sì-lâng m̄ kóng Hôa-gí ê pōng-bí-phang sai-hū.",
+        "bio_en": "The Taiwanese pop-ricer who refuses Mandarin."
+      },
+      {
+        "display_name": "Chiúⁿ Ûi-bûn（蔣為文）",
+        "organization": "國立成功大學台灣語文測驗中心",
+        "avatar_url": "https://i.imgur.com/dC6ppiah.jpg",
+        "city": "Tâi-lâm（台南）",
+        "info_url": "http://www.twl.ncku.edu.tw/p/405-1143-114277,c10606.php?Lang=zh-tw",
+        "bio": "國立成功大學台灣語文測驗中心主任、國立成功大學越南研究中心主任、國立成功大學台灣文學系系主任",
+        "bio_en": ""
+      }
+    ],
+    "updatedAt": "2020-11-09T18:08:40.912Z",
+    "timeSheet": {
+      "id": "5efe22ddba206b030d66a516",
+      "議程日期": "2020-12-04",
+      "議程預設標題-華語": "Ùi台語到台文，討論社會大眾ê母語語文態度轉變kap社群經營",
+      "最後更新時間": "2020-11-10T08:13:04.000Z",
+      "分類主題-華語": "台日韓齊揪松",
+      "分類主題-en": "Communities & Hackathons in East Asia",
+      "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
+      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
+      "主持人": {
+        "display_name": "小蟹 Kalang",
+        "organization": "阿美語萌典",
+        "avatar_url": "https://summit.g0v.tw/2020/cache/ec48a8cc7b64dfa2eb3ee45b2e64008a.jpg",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://twitter.com/wildjcrt",
+        "bio": "擅長的程式語言為 Ruby，以社群貢獻分享為興趣，熱愛自由，和女人迷共同為性別議題發聲，同時也長期參與開源社群，為 g0v 阿美語萌典團隊的主要開發維護者，以及 Rails Taiwan 共同創辦人，希望一起讓世界變得更美好。"
+      },
+      "議程開始時間": "2020-12-04T16:00",
+      "議程長度": 30,
+      "locationMeta": {
+        "order": 11,
+        "capacity": 200
+      }
+    }
+  },
   "5f02d14ee88a4948daf87fb7": {
     "id": "5f02d14ee88a4948daf87fb7",
     "title": "What are the interns of Code for Japan doing?",
@@ -4050,14 +4153,20 @@
       "id": "5f02d14ee88a4948daf87fb7",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "What are the interns of Code for Japan doing?",
-      "最後更新時間": "2020-11-03T16:00:51.000Z",
-      "分類主題-華語": "自己的學習自己來",
-      "分類主題-en": "Self-learning",
+      "最後更新時間": "2020-11-10T08:06:02.000Z",
+      "分類主題-華語": "台日韓齊揪松",
+      "分類主題-en": "Communities & Hackathons in East Asia",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "Bess Lee",
+        "organization": "g0v.tw",
+        "avatar_url": "https://i.imgur.com/pGy8CPv.png",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://jothon.g0v.tw/about/",
+        "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。2017 年加入 g0v 揪松團，統籌 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
+        "bio_en": "Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She is general coordinator of g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
       },
       "議程開始時間": "2020-12-04T13:30",
       "議程長度": 30,
@@ -4838,7 +4947,7 @@
       "id": "1204-jothon-0",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "零時小學校 2020 成果發表會",
-      "最後更新時間": "2020-11-03T15:19:13.000Z",
+      "最後更新時間": "2020-11-10T08:09:29.000Z",
       "分類主題-華語": "零時小學校 2020 成果發表會",
       "分類主題-en": "Sch001 2020 Final Presentation",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
@@ -4909,7 +5018,7 @@
       "id": "1204-jothon-1",
       "議程日期": "2020-12-04",
       "議程預設標題-華語": "停學，不停學",
-      "最後更新時間": "2020-11-03T15:19:24.000Z",
+      "最後更新時間": "2020-11-10T08:09:34.000Z",
       "分類主題-華語": "停學，不停學",
       "分類主題-en": "Stop Schooling",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
@@ -6403,34 +6512,6 @@
       "locationMeta": {
         "order": 12,
         "capacity": 50
-      }
-    }
-  },
-  "recWmGqJOWdAYo02R": {
-    "id": "recWmGqJOWdAYo02R",
-    "isPseudo": true,
-    "title": "待確認",
-    "title_en": "待確認",
-    "updatedAt": "2020-11-05T01:41:47.000Z",
-    "createdAt": "2020-11-05T01:41:47.000Z",
-    "timeSheet": {
-      "id": "recWmGqJOWdAYo02R",
-      "議程日期": "2020-12-04",
-      "議程預設標題-華語": "待確認",
-      "最後更新時間": "2020-11-05T01:41:47.000Z",
-      "分類主題-華語": "台日韓齊揪松",
-      "分類主題-en": "Communities & Hackathons in East Asia",
-      "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
-      "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
-      "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
-      },
-      "議程開始時間": "2020-12-04T16:00",
-      "議程長度": 30,
-      "locationMeta": {
-        "order": 11,
-        "capacity": 200
       }
     }
   },
