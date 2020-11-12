@@ -197,7 +197,7 @@ async function downloadTables () {
     try {
       return {
         ...map,
-        [moderator.id]: genPerson(moderator.資訊)
+        [moderator._id]: genPerson(moderator.資訊)
       }
     } catch (err) {
       logError(`Invalid moderator "${moderator.id}": ${err}`)
@@ -240,7 +240,9 @@ function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
   const category = genFieldI18n(timeSheet.分類主題)
   const location = genFieldI18n(timeSheet.議程場地)
   const startHour = dayjs.unix(timeSheet.議程開始時間)
-  const moderator = moderatorMap[timeSheet.主持人] || null
+  // 主持人 could be [`id`] or undefined
+  const moderatorId = timeSheet.主持人 ? timeSheet.主持人[0] : null
+  const moderator = moderatorMap[moderatorId] || null
 
   const timeSheetFields = [
     'id',
