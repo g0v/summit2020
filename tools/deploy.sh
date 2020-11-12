@@ -1,4 +1,6 @@
 #!/bin/bash
+# exit when any error occur
+set -e
 
 target="$1"
 
@@ -13,6 +15,8 @@ dirtyCount=`git status -s | wc -l`
 
 if [ "$target" != "-p" ]; then
   echo Deploy to staging
+else
+  echo Deploy to PRODUCTION
 fi
 
 if [ $dirtyCount -gt 0 ]; then
@@ -26,9 +30,19 @@ if [ -f ".env" ]; then
 fi
 
 if [ "$target" == "-p" ]; then
-  env SENTRY_DSN="$dsn" TRAVIS_COMMIT="$headCommit"  npm run generate:production
+  env SENTRY_DSN="$dsn" TRAVIS_COMMIT="$headCommit" npm run generate:production
+  npm run deploy:production
+  git clone --depth 1 --branch gh-pages git@github.com:g0v/summit.g0v.tw
+  cd summit.g0v.tw
+  git submodule init
+  git submodule update --remote
+  git commit -a -m "Manually update submodule 2020"
+  git push
+  cd ..
+  rm -rf summit.g0v.tw
 else
-  env SENTRY_DSN="$dsn" TRAVIS_COMMIT="$headCommit"  npm run generate:staging && npm run deploy:staging
+  env SENTRY_DSN="$dsn" TRAVIS_COMMIT="$headCommit"  npm run generate:staging
+  npm run deploy:staging
 fi
 
 if [ -f ".env.back" ]; then
