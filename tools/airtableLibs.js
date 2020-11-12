@@ -30,6 +30,8 @@ function downloadOneTable (tableInfo, toFile = true) {
     }).eachPage((records, fetchNextPage) => {
       records.forEach((record) => {
         rows.push({
+          // `id` may be used in fields
+          _id: record.id,
           id: record.id,
           ...record.fields
         })

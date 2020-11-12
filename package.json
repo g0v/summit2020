@@ -24,7 +24,9 @@
     "generate:staging": "env DOMAIN=g0v.github.io ROUTER_BASE=/summit2020 nuxt generate",
     "generate:production": "env DOMAIN=summit.g0v.tw ROUTER_BASE=/2020 nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "jest"
+    "test": "jest",
+    "deploy:staging": "push-dir --dir=dist --branch=gh-pages --cleanup --allow-unclean",
+    "deploy:production": "push-dir --dir=dist --branch=production-pages --cleanup --allow-unclean"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -70,6 +72,7 @@
     "node-sass": "^4.14.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "push-dir": "^0.4.1",
     "raw-loader": "^4.0.1",
     "sass-loader": "^8.0.2",
     "tachyons": "^4.12.0",
