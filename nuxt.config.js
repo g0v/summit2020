@@ -98,9 +98,6 @@ export default {
       { code: 'en', file: 'en.js' }
     ]
   },
-  dotenv: {
-    systemvars: true
-  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
