@@ -56,6 +56,7 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
         item: moderator,
         isEn
       })
+      timeSheet.主持人 = moderator
     }
     // quick hack for search
     if (timeSheet.議程開始時間) {
