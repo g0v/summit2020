@@ -387,11 +387,11 @@ async function exportProposals (proposals, timeSheet) {
         createdAt: updatedAt,
         timeSheet
       }
-    // } else if (updatedAt > toExport[pid].updatedAt) {
-    //   // summit crew prefer set title from timeSheet XD
-    //   if (enTitle && enTitle !== zhTitle) {
-    //     toExport[pid].title_en = enTitle
-    //   }
+    } else if (updatedAt > toExport[pid].updatedAt) {
+      // summit crew prefer set title from timeSheet XD
+      if (enTitle && enTitle !== zhTitle) {
+        toExport[pid].title_en = enTitle
+      }
     }
   })
 

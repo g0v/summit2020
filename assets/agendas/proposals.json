@@ -2,7 +2,7 @@
   "5edcffaeba206b030d66a2c6": {
     "id": "5edcffaeba206b030d66a2c6",
     "title": "牧貓人 —— g0v 混亂有序開放協作專案管理",
-    "title_en": " Herding Cats –– Project Management in g0v Projects",
+    "title_en": "Herding cats – project management in g0v projects",
     "summary": "來 g0v 提案許願就會成真？才沒那麼簡單，想走得長遠有影響力，需有對社會議題的理解、習慣開源社群鬆散的協作方式、做數位產品的產品開發、跨領域溝通。滿多專案隨時面臨人力、時間不足、無法說服利害關係人、開發方向不明等問題。當每個貢獻者都是獨立的貓時，該如何促進社群協作呢？\n\n作為兩個長期提案的專案經理，我們將以環境倡議團體發起的 Disfactory 農地違章工廠回報行動，與嘗試居住新解法的 Rentea 社群為例，說明我們如何嘗試定義提案目標、釐清議題需求、定出可執行的具體項目、與開源社群協作開發、找到/運用手上的資源，從食物轉為程式碼的黑盒子中，提取專案管理的經驗和心法。\n\n這次分享是另一個長期專案 #herding-cats 的開頭，開始訪談整理形形色色的 g0v 專案，具體來說是如何協作開發的，成為之後 g0v 專案的養分。\n\n圖片來源：https://www.flickr.com/photos/ceardach/4549876293\n",
     "summary_en": "\"Herding cats\" is perfect to describe project management in an open source project contributed by quite independent developers.\n\nCivic tech adds an extra layer of complexity because you need to understand the contexts of social issues, to collaborate with diverse stakeholders with intense interdisciplinary communication. However, the project usually only has unstable contributors with limited time following unclear project goals. That is when you need to consider some project management in your projects.\n\nWe would like to share our journeys on open source project management in civic tech–– how to identify user needs, how to brainstorm solutions, how to determine project's scope, how to make a feasible development plan and how to sustain the projects with open source communities.\n\nWe hope this talk would inspire more civic hackers develop their projects in open collaboration with less struggles.\n\nThe two cases shared in the talk are Disfactory, a reporting platform on illegal factory on farmland, and Rentea, a project trying to create alternative for living in urban area.\n\nImage source: https://www.flickr.com/photos/ceardach/4549876293",
     "oral_language": "華語",
@@ -70,7 +70,7 @@
   "5eddea12ba206b030d66a2ca": {
     "id": "5eddea12ba206b030d66a2ca",
     "title": "「社群治理」這個不太一樣的坑",
-    "title_en": "Community g0vernance as a community project",
+    "title_en": "Community govenance as a community project",
     "summary": "寫 code 填坑，大家都是「沒有人」，那接受訪問的時候呢？募款的時候呢？參加展覽、國際會議、管理 domain name、Fb 專頁的時候呢？辦 summit 的時候呢？從「去中心」到「多中心」，從《媒體政策》到《社群治理目錄》，從 OCF 國際交流到 g0v 國際交流，從共筆討論到「基礎松」，為什麼 g0v 社群要這麼麻煩，討論什麼社群治理？這些「治理」的大小事，能不能在其他地方找到共鳴？投稿者想分享自己的參與討論社群治理的經驗，也很希望能開啟更多討論。",
     "summary_en": "In g0v, “we are nobody.” How do “we” do interviews? Fundraising? Art exhibitions? International conferences? How do “we” manage domain names or g0v’s Facebook page?",
     "oral_language": "華語",
@@ -201,7 +201,7 @@
   "5ee1aa0cba206b030d66a2d9": {
     "id": "5ee1aa0cba206b030d66a2d9",
     "title": "左鎮的地方創生元年大冒險",
-    "title_en": "Does NDC REALLY HELP ?",
+    "title_en": "Does NDC really help?",
     "summary": "2018年底，國發會與臺灣野村總研挑選宜蘭三星與台南左鎮作為示範區域，轟轟烈烈的揭開地方創生元年序幕。\n左鎮作為人口流失與老化都嚴重的偏鄉地帶，但也擁有豐富的自然地景與人文資源，正是地方創生最適合發展之處。然而，兩年過去了，官民協力的地方創生嘗試成果如何，下一步將走向哪裡？\n左鎮老街團隊想透過這個分享來談談這兩年間碰到那些困境與難題，最後又打算如何解決，相信能讓其他團隊從這個案例吸取經驗與教訓，走出更平穩的一步。",
     "summary_en": "",
     "oral_language": "華語",
@@ -321,7 +321,7 @@
   "5ee88411ba206b030d66a2ea": {
     "id": "5ee88411ba206b030d66a2ea",
     "title": "如何和不同溫層對話不受傷",
-    "title_en": "",
+    "title_en": "How to talk to people outside the bubble without getting hurt",
     "summary": "《家庭診聊事》在 2019 喊出「 對話 」鼓勵 7000 多位診友，出發和自己不同溫層的親友展開對話，延伸多種技巧：包含辨識、建立信任、資訊密度、重啟思考、抵抗假消息，等方法。有效的讓診友，從身邊做起，不講高深的理論，真誠的展開對話，是人人可以做到的，用工作坊體驗對話帶來改變，感受心理獨立，不知不覺的展開思辨、踏入公民之路。在逐漸解構的社會中，藉由社團優點，看到新的立法機制的路。希望未來能將對話力放入台灣文化 DNA , 如同公開透明、開放政府，在 2020 防疫發揮的效用一般\n\n10min     話語魔法的心法\n30min     工作坊 - 前方高能衝擊體驗\n20 min    社群對話觀察報告\n\n\nps.工作坊不用特別準備，會三人為一組對話，人數 30 - 45 人，可坐可站，讓大家體會長輩內心被衝擊的感覺\n",
     "summary_en": "",
     "oral_language": "華語",
@@ -380,7 +380,7 @@
   "5eeb7044ba206b030d66a2f4": {
     "id": "5eeb7044ba206b030d66a2f4",
     "title": "網路自由大風吹 ",
-    "title_en": "",
+    "title_en": "Spark the fire of Internet freedom",
     "summary": "在國際夥伴建議下，一群人開始在台北每月固定聚會，自 2019 年 9 月不間斷熱烈討論網路自由至今，從一點一點的知識分享、觀點討論、交流國際社群大小事，累積出豐富的議題共筆，現在，我們精選過去「網路自由小聚」數個精彩議題，帶入 g0v summit 的開放討論空間，邀請各位一起來探索，激發更多網路自由之火。\n\n四個角落 / 主題，歡迎來大風吹交流你的見解和經驗：\n-如何戒斷 Google & Facebook /  by Edward\n-精準廣告與數位足跡 /  by Irvin\n-如何在數位時代維護個人隱私? / by 開放文化基金會\n-模擬審查員：言論自由與內容管制 / by 冠汝\n\n甚麼是網路自由? 廣義來說，是指網路使用者在網路上享有自由、不被箝制、有自主權、權力不被侵犯。因此數位人權、審查監控、網路中立性都包含其中，然而隨著新的網路威脅越來越多，網路自由的討論也更加多元，請來現場一起探尋。\n\n",
     "summary_en": "This session comes from a monthly “Internet Freedom Meetup” host by communities members in Taipei. The origin of the meetup is the invitation of international group “Internet Freedom Festival” and it’s idea of monthly “Coffee and Circumvention” in different cities around the world. It brings together technologists, artists, journalists, citizens and others interested in digital rights, online privacy and security, and open technology.\nSince first meetup in Set. 2019, the gathering only stopped once due to Lunar New Year. Now, we pick 4 interesting topics from the history meetup, welcome to join our discussion and find out: what is internet freedom? \n",
     "oral_language": "華語",
@@ -626,7 +626,7 @@
   "5ef211bcba206b030d66a31d": {
     "id": "5ef211bcba206b030d66a31d",
     "title": "台南市開放政府經驗談",
-    "title_en": "",
+    "title_en": "Open government in Tainan",
     "summary": "過往，我曾在行政院唐鳳政委辦公室協助推動開放政府相關業務。在因緣際會之下，成為台南市政府的顧問，協助推動地方政府的開放政府。在這段時間中，我發現開放政府要鑲嵌進政府體制，還有很多要素需要配合。在這場演講中，我會整理這些要素，希望能給大家一點參考的經驗。",
     "summary_en": "",
     "oral_language": "華語",
@@ -740,7 +740,7 @@
   "5ef2e905ba206b030d66a333": {
     "id": "5ef2e905ba206b030d66a333",
     "title": "政府的邊緣人：生態保育與開放資料",
-    "title_en": "",
+    "title_en": "Ecosystem protection and open data",
     "summary": "生物多樣性與人類的食衣住行育樂息息相關，身處地狹人稠的台灣，生態保育及經濟發展的各種不同需求之間上演著一場場的拉鋸戰。我們認為缺乏公開共享的生物時空分布資料是造成保育和發展之間衝突的關鍵因素。在這個過程中，我們以開放資料的理念建置了生物多樣性資料庫-台灣生物多樣性網絡 (TBN)，讓公民科學家、民間組織、學術研究單位、政府機關等不同角色都能參與從資料的蒐集、彙整、展示到流通使用的過程。同時也嘗試透過這些資料來參與生態保育議題，將資料化為資訊，協助決策者擬定解決方案。在這場論壇中，我們將分享：1.生物多樣性開放資料的參與管道、2.綠能發展與生態保育的空間衝突等相關應用範例、3.實際運用資料時的技術需求與限制。",
     "summary_en": "Biodiversity is essential to every aspect of human life. However, to balance between biodiversity conservation and economic development appears to be a never-ending struggle, especially in our heavily populated country, Taiwan. We believe a current lack of public-shared information of where and when wildlife inhabits is the key knowledge gap contributing to the conflict between conservation and development. We hence established a biodiversity database that embraces the concept of open data - the Taiwan Biodiversity Network. Such a database aims to invite various sources of data collectors - including citizen scientists, NGOs, academic institutes, government agencies - to engage in different roles in the life cycle of biodiversity open data. We also work with researchers and data analysts to use biodiversity open data to involve in the decision process of emerging conservation issues. In this symposium, we will share our experiences and insights on (1) pathways to engage in biodiversity open data, (2) data application cases such as the conflict between green-energy and wildlife conservation, and (3) current requirement and limitations in using biodiversity open data.",
     "oral_language": "華語",
@@ -825,7 +825,7 @@
   "5ef324e1ba206b030d66a33d": {
     "id": "5ef324e1ba206b030d66a33d",
     "title": "你付出的房租值得嗎? 談空間分析框架下的居住正義 以德國漢堡市為例",
-    "title_en": "Multivariable Spatial Analyst on Real Estate factor, example in Hamburg",
+    "title_en": "What your paid actually worth it? Multivariable spatial analysis on real estate factor – example in Hamburg",
     "summary": "蜗居 房租太高 青年的居住正義 是經年 跨國的老議題了\n到底怎樣才算不合理的高\n實價登陸平台除了提供歷史價格 還能怎麼修正\n以開放資料結合數個城市空間因子看德國漢堡市的房地產分布概況",
     "summary_en": "Rental too high? Can't afford an apartment?\nTo what extent can one say really \"can't affordable\"?\nIs our real estate platform transparent enough?\nAn hand-on example to combine several open data in the city of Hamburg.",
     "oral_language": "華語",
@@ -882,7 +882,7 @@
   "5ef4330bba206b030d66a347": {
     "id": "5ef4330bba206b030d66a347",
     "title": "大家一起讓循環動起來：好盒器如何透過「社會設計」推動循環經濟",
-    "title_en": "Make a good circulation: \"Good to go\" reusable food containers service to promote circular economy through social design",
+    "title_en": "Make a good circulation: “Good to go” reusable food containers service to promote circular economy through social design",
     "summary": "好盒器提供便利的外帶循環杯借還機制，串聯店舖提供可重複使用的飲料杯，讓民眾在購買咖啡茶飲時，就可借走循環杯直接盛裝；用畢後，再歸還到任一合作店舖或自助歸還站，即可輕鬆地降低對一次性飲料杯的依賴。\n好盒器自2017年推出，一開始在台南人流、垃圾量皆大的正興街區推動，陸續推往台南各個友善店家，計畫將在2020展開群眾募資，邁向全國性的服務。都說循環經濟是當代潮流，但除了立意良善之外，還需要建立能自主永續的商業模式。好盒器團隊由設計師及工程師組成，用社會設計的視角實踐外帶容器循環的概念。本次將分享好盒器的發展之路，為達到讓不同角色（包括但不限於：消費者、咖啡茶飲店舖、在地組織、清洗夥伴、地方政府⋯）「願意認同」並「能夠參與」，在這之中「設計扮演的角色」、「面臨的設計兩難」及「設計的反思」。",
     "summary_en": "\"Good to go\" is a service of providing reusable food containers to reduce disposable plastic cups and food boxes. It is founded in 2017 and took its test drive in the bustling touristy area ZhengXing Street in Tainan. Slowly the service was introduced in many environmental friendly shops in Tainan. Now it is going to start its first round of crowdfunding in 2020 and to provide nation-wide service. Circular economy is the trend today, but aside from the good intention, it requires a good business model to sustain. \"Good to go\" will share its experience from a cause to a corporation.",
     "oral_language": "華語",
@@ -1065,7 +1065,7 @@
   "5ef4aeaeba206b030d66a354": {
     "id": "5ef4aeaeba206b030d66a354",
     "title": "在偏遠離島的side project：公共運輸分析地圖、GoogleMapsAPI的道路系統架構探索和人行環境建構潛在需求分析",
-    "title_en": "",
+    "title_en": "Public transit, road system architecture, and pedestrian environment analysis in the remote islands of Kinmen",
     "summary": "我是在金門工作的約聘公務員。金門很邊緣，資源缺乏，所以想儘可能的從自己能做的事開始，試著去解決不同的問題。R與QGIS是很好的工具，在工作上有幫助，一些使用非組織內部資料試驗也許沒有內含什麼高深技術，但我想試著從三個小side project開始，談談看在金門做了什麼。",
     "summary_en": "",
     "oral_language": "華語",
@@ -1123,7 +1123,7 @@
   "5ef4bfc8ba206b030d66a358": {
     "id": "5ef4bfc8ba206b030d66a358",
     "title": "臺灣館連開放的挑戰--低成本、低介入的 wikidata 是可能的出路嗎？",
-    "title_en": "",
+    "title_en": "Challenges of GLAM Taiwan – can Wikidata solve this?",
     "summary": "館連(GLAM)即畫廊、圖術館、檔案館與博物館的簡稱，是國際在提及文化機構開放時常用的架構，像是 OpenGLAM 或是 GLAM-Wiki，都是以這個架構推動的開放計畫。\n在 2020年新樂園藝術空間首次以替代空間之姿，大膽嘗試使用 wikidata 進行歷史資料的紀錄；透過整年度的執行經驗，回頭審視過往的泛館連機構開放推動策略，我們其實會發現：對他們而言，開放的成本高、難度高，但是短期可見的量化效益卻很低。\n\n而 wikidata 在這之中，提供一個低成本、低介入的資料開放模式，對於館連機構會是一個突破口嗎？本論壇將由講者分享自身的博物館實務經驗與 wikidata 研究案的參與心得，嘗試為臺灣的館連開放工作找出新的方向。",
     "summary_en": "",
     "oral_language": "華語",
@@ -1180,7 +1180,7 @@
   "5ef63898ba206b030d66a362": {
     "id": "5ef63898ba206b030d66a362",
     "title": "\b自造者與社會運動，然後呢？",
-    "title_en": "Maker in Protest，and then?",
+    "title_en": "Maker in protest, and then?",
     "summary": "在大街上游行與抗議不僅是要倡議與發聲，某種程度上也是ㄧ種歸屬感的凝聚。\n身為一個產品設計師，除了不要製作更多的垃圾外，對於公民參與社會運動，我們能做什麼？ 因緣際會下，我用現成物，加上現成的ＡＰＰ （Zello)，設計並且組合了一個 可用網路連線的無線大聲公 （One-Megaphone)。一個一對多的聲音傳播工具。\n\n為了驗證，我策劃了TaiwaneseLivesMatter 的抗議活動，一以測試Maker 設計師 用創作介入的可能性，二以回應有關台灣被WHA壓迫的事實。\n活動很順利，裝置很成功，然後呢？\n\n我想藉由這個機會，分享這個案例與各位交流。",
     "summary_en": "As we can see from news and social media, Protesting has become the new norm. Marching down the street is not only for demanding change but also for finding a sense of belonging.\n\nAs a contemporary designer One-Megaphone is my response to empower people by giving them a vehicle of ideas using Bluetooth and internet connectivity to bring people together for social change.\n \nOne-Megaphone project is an internet-connected megaphone that links to channels through an app. The More people connect, The bigger the voice. The app is a bridge between physical product and human actions. it not only facilitate One-Megaphone but also helps people to reach out from a different part of the world. It is simple. you either crests a channel for other One-Megaphone to join or search a channel to join to distribute others’ voice.\n\nFor my validation, create a protest of my own, TaiwaneseLivesMatter, by using One-Megaphone and One-App together. TaiwaneseLivesMatter was host in front of the China’s embassy in London as a response to the recent news about WHA does not invite Taiwan to the assembly this year due to the China’s pressure.\n\nI create a channel in the app, and 8 One-Megaphones joins, to create a sound shell. when I shout out, “Shame on WHA”, with a half second delay, the message sends to all the other 8 megaphones via internet and Bluetooth and amplifying together.\n",
     "oral_language": "華語",
@@ -1235,7 +1235,7 @@
   "5ef6eca4ba206b030d66a368": {
     "id": "5ef6eca4ba206b030d66a368",
     "title": "性少數社群網站的建構經驗──從邊緣開拓出路",
-    "title_en": "",
+    "title_en": "Why Lez is more is here: decontruct labels of suppression",
     "summary": "目前既有的網路交友社群平台以異性戀為多數，LGBTIQA族群中則以男同志最活躍；女同志、雙性戀女性、跨性別、酷兒、泛性戀、無性戀等性少數則常年面臨多重壓迫，包括：單調的性別敘事框架、情慾經驗中不容許混亂與矛盾的二元論述、在高度複雜與差異化的性少數族群互相傾軋、性別網紅代言群體......等。\n\n性/別與性傾向，是每個人私密且核心的自我認同。在人生不同階段，個體都可能透過性或各種形式的親密關係來認知自己。然而，在「解構父權壓迫」與「掃蕩數位性別暴力」浪潮下，如何透過性少數社群網路的建構，使異質性極高的性少數主體得以自我壯大（empower）？「濡沫 Lez is more」在本次g0v論壇會有三位主講者，從不同角度出發：台灣性少數情慾友善交友平台的管理經驗、港台女同志網路社群文化觀察，與PTT血肉模糊的性別歷史。我們期望提供社群網路的建構經驗，開啟對話可能性。\n\n",
     "summary_en": "Women, lesbians and sexual minorities are labeled, compartmentalised, and suppressed because of their sexuality, gender expression and sexual orientation for a long time. Despite the majority's treatment against the groups, similar kind of treatment is also found, and even more fierce among these groups, against the even marginalised. When labelling underlies suppression, we need deconstruction, and this is why Lez is more is here. ",
     "oral_language": "華語",
@@ -1303,7 +1303,7 @@
   "5ef709ebba206b030d66a36c": {
     "id": "5ef709ebba206b030d66a36c",
     "title": "Herstory in East Asia ",
-    "title_en": "Herstory in East Asia",
+    "title_en": "東亞，她的故事",
     "summary": "“Herstory in East Asia” project was launched in Facing the Ocean Hackathon in Okinawa, Japan with contributors from Taiwan, Korea, Japan and Hong Kong. We want to show “herstory” in East Asia from local perspectives with a timeline and a map in our local languages, so that people from different regions of East Asia can learn more about the stories and rights women and LGBETQ+ have fought for.\n\nMonthly meetings have been hosted to share our experience and to discuss contents, visualization design and translation issues. So far, more than 50 stories have been translated into English, Mandarin, Korean and Japanese with more than 20 participants. A website prototype is under development.\n\nIn the presentation, we would like to share:\n- Demo of our work by December\n- Why we join? What does the project mean to communities in different countries?\n- Challenges of international collaboration, e.g. language barrier, how to set project scope and goals and pivot, hard to translate local events\n- Lessons learned from the project for future international collaboration\n\nOther speakers may include other country coordinator @Mee from Korea and @Miley from Code for Japan. \n\nWebsite: https://herstory-of-east-asia.netlify.com/\nCollaboration spreadsheet: https://bit.ly/2SsOPSU",
     "summary_en": "“Herstory in East Asia” project was launched in Facing the Ocean Hackathon in Okinawa, Japan with contributors from Taiwan, Korea, Japan and Hong Kong. We want to show “herstory” in East Asia from local perspectives with a timeline and a map in our local languages, so that people from different regions of East Asia can learn more about the stories and rights women and LGBETQ+ have fought for.\n\nMonthly meetings have been hosted to share our experience and to discuss contents, visualization design and translation issues. So far, more than 50 stories have been translated into English, Mandarin, Korean and Japanese with more than 20 participants. A website prototype is under development.\n\nIn the presentation, we would like to share:\n- Demo of our work by December\n- Why we join? What does the project mean to communities in different countries?\n- Challenges of international collaboration, e.g. language barrier, how to set project scope and goals and pivot, hard to translate local events\n- Lessons learned from the project for future international collaboration\n\nOther speakers may include other country coordinator @Mee from Korea and @Miley from Code for Japan. \n\nWebsite: https://herstory-of-east-asia.netlify.com/\nCollaboration spreadsheet: https://bit.ly/2SsOPSU",
     "oral_language": "English",
@@ -1369,7 +1369,7 @@
   "5ef81b08ba206b030d66a37a": {
     "id": "5ef81b08ba206b030d66a37a",
     "title": "讓公務員颱風天不再崩潰—我們怎麼向市政府提案開發里長回報 LINE bot",
-    "title_en": "",
+    "title_en": "How we proposed and developed “libot”: the neighborhood reporting LINE bot",
     "summary": "假設颱風來了，你是一個里長，里民一直告訴你哪裡樹倒了、哪裡淹水、哪裡路不通。這時候，你可以怎麼辦？（A）打 1999，但有可能 1999 忙線很難打進去。（B）傳到里長群組告訴公務員，但很可能公務員人手不足，來不及回應群組訊息，而訊息一下子就被新訊息洗版。\n或許這時候需要來一個「里長 LINE bot」代替人眼雙手記下案件。\n",
     "summary_en": "",
     "oral_language": "華語",
@@ -1481,7 +1481,7 @@
   "5ef947a8ba206b030d66a392": {
     "id": "5ef947a8ba206b030d66a392",
     "title": "資料與應用，從地方政府談公私協力是轉機還是困境",
-    "title_en": "",
+    "title_en": "Public-private partnership for data and applications – an opportunity or predicament? A local government perspective",
     "summary": "如果問到民間社群對政府開放資料的看法，不夠，不好，不行，不對，政府到底懂不懂什麼叫開放資料？從政府的角色談開放資料，誰要為資料正確負責，不對怎麼辦？為什麼選這個開放？政府跟民間在資料與應用總是充滿了衝突，民間總覺得政府學不會，但政府也不知道該怎麼講清楚。從口罩地圖看到了政府與民間每一個人都可以幫忙，但總是缺了點什麼？我們能讓這種協力文化走得更深更遠嗎？",
     "summary_en": "",
     "oral_language": "華語",
@@ -1536,7 +1536,7 @@
   "5ef99ae9ba206b030d66a39d": {
     "id": "5ef99ae9ba206b030d66a39d",
     "title": "台灣政商人物資料庫，從點到線的資料協作",
-    "title_en": "",
+    "title_en": "Public people relations open data – from data point to collaborative data system",
     "summary": "2018 年 g0v summit，來自馬來西亞的 sweemeng 分享了 Sinar Project，一個馬來西亞政治人物資料庫的實作。最近，我們嘗試使用 Sinar project 的原始碼來建立台灣自己的政商人物資料庫，但是仔細研究了原始碼，發現雖然有網站的程式碼，但是卻沒有後端資料的串接部分。於是我們想要重新打造一個用來建立台灣政商人物資料庫的系統。\n於是我們利用開放原始碼的內容管理工具—Keystone.js 製作了一個資料庫管理介面，接下來我們將會使用 google spreadsheet 或其他類似的工具，提供給一般使用者也可以進行資料的協作，並且讓 spreadsheet 可以跟資料庫進行資料的同步。有了同步功能之後，便可以進行協作，讓所有人可以將相關資料利用這些工具加強資料庫的完整性。",
     "summary_en": "",
     "oral_language": "華語",
@@ -1592,7 +1592,7 @@
   "5ef99bf1ba206b030d66a39f": {
     "id": "5ef99bf1ba206b030d66a39f",
     "title": "資料都開放了! 然後呢!? 讓我們一起譜出知識的樂章",
-    "title_en": "A Construction of Knowledge Graph from Open Data",
+    "title_en": "A construction of knowledge graph from open data",
     "summary": "開放資料的運動方興未艾，台灣政府開放的資料集數量多，在大量的資料下隱含了資料整合的問題，舉例來說，至少有三個以上的政府單位管理並開放了「步道」資料，林務局只管路線、觀光局只管觀光旅遊資訊、衛服部只管走步道消耗多少熱量，各部會各司其職，資料管理也只涉及所轄權責，但對資料治理而言，缺乏一個架構來貫穿資料，讓資料成為可被操作的知識。本次演講將以農產品產銷履歷和民生公共物聯網資料，來介紹台灣開放資料轉化成知識圖譜(鏈結資料)的經驗，及其應用的建立。",
     "summary_en": "Since the open data movement was initiated in Taiwan, datasets are available in the open data platform. There exists a big challenge of data integration with having the huge amount of datasets. Take 'trail' datasets as an example. The Forest Bureau only concerns geospatial locations on the maps, while Tourism Bureau only concerns tourism information for a trial and Ministry of Health and Welfare only takes care about the consumption of calories as people walk on a trail.  Each governmental department only concerns the affairs they charge of. Data management is often limited in the authority of a governmental department. There lacks a framework for integration of open data for making it to operable knowledge. This presentation is going to introduce how to utilize linked data technology for transferring agricultural traceable product data and civic IoT data to knowledge graphs and their applications.",
     "oral_language": "華語",
@@ -1649,7 +1649,7 @@
   "5ef9aaffba206b030d66a3a4": {
     "id": "5ef9aaffba206b030d66a3a4",
     "title": "讓視障者來當政府的眼睛",
-    "title_en": "Let the visually impaired be the eyes of the governments",
+    "title_en": "Let the visually impaired be the eyes of the government",
     "summary": "從2017台南市Beacon 平臺創意應用挑戰賽【智慧盲人導航】、2018 台南市智慧視障導航測試案、2019 參與立法院的視障導引公聽會, 到2020 台南市的正式啟用 (https://news.ltn.com.tw/news/life/breakingnews/3170108). 接下來為了建構視障導航需要的相關無障礙地理圖資，將首創讓視障者來擔任無障礙改善大使，創造視障者回報政府戶外無障礙何處該改善的勘查，並創造視障者新工作型態的社會創新實驗。將於本會中首度公佈三位視障測試員為期八周的測試成果，並討論與其他開放資料結合的可行性。\n",
     "summary_en": "From the Smart City Competition held by the Tainan City Government in 2017, the Smart Visually Impaired Navigation Test Case in 2018, and the participation in the public hearing of the Legislative Yuan in 2019, to the official opening of Tainan City in 2020. Next, in order to construct the relevant barrier-free geographic map data needed for visually impaired navigation , Will be the first to allow visually impaired people to serve as barrier-free improvement ambassadors, create a survey for visually impaired people to report back to the government where outdoor accessibility should be improved, and create social innovation experiments for visually impaired people in new work styles. The eight-week test results of three visually impaired testers will be announced for the first time in this summit, and the feasibility of combining with other open data will be discussed.\n",
     "oral_language": "華語",
@@ -1763,7 +1763,7 @@
   "5ef9c9cbba206b030d66a3b1": {
     "id": "5ef9c9cbba206b030d66a3b1",
     "title": "都市設計、公民科技與城市改善 ? - 台灣經驗",
-    "title_en": "City making, civic tech and urban transformations ? - Taiwan experience",
+    "title_en": "City making, civic tech, and urban transformations? The Taiwan experience",
     "summary": "隨著人口的不斷增長，越來越多的人生活在都市地區。台灣也有這個社會現象。在氣候變化之前，大流行的情況已經證明，城市與當地重新連接是至關重要的。在公民的參與下，城市更新和城市發展可能會有所改善。我們相信公民的參與和透明度是更好的城市政策的條件。\n\n在台灣，我們有機會參與少數涉及公民的項目，使用公民科技(Unlimited cities DIY)。 APP是開源的，由一個 7 billion urbanists 的非政府組織製作。它允許人們輕鬆地設計。我們還參加了總統盃黑客松團隊 (patch by planting – 臺灣好植地)。這個團隊由來自不同群體的許多其他人組成，它允許我們思考各種可能性，並將這種方法應用於邀請人們考慮植樹與環境改善的目標。\n\n在這次演講中，我們想分享一下我們在台灣的經歷，包括我們參與的幾個案例。我們將簡要介紹APP Unlimited cities的理念，為什麼我們認為它在某些情況下是成功的，為什麼在其他情況下不成功。",
     "summary_en": "While population keeps growing, more and more people lives in urban areas. Taiwan knows this social phenomenon. The pandemic situation and before climate change already proves that it's crucial that cities reconnect with local territories. Urban renew and urban development might improve with citizen’s involvement. We believe citizen’s involvement and transparency are conditions for better urban policies.\n\nIn Taiwan, we had opportunity to be part of few projects involving citizens while using a civic tech « unlimited cities Diy ». The APP is open source and made by a NGO called 7 billion urbanists. It allows people to easily design public space with photo realistic features. We also had opportunity to be part of a team in the presidential Hackathon 2020 (patch by planting – 台灣號直地). This team is made from many other people from different backgrounds. This experience forced us to rethink about possibilities and limits of this kind of citizen involvement methodology to simply invite people to think about planting trees.\n\nIn this talk we would like to share our experience in Taiwan, including the few cases we have been part. We will introduce briefly the idea behind the APP unlimited cities, why we think it has been successful in some case and why not in others case.\n",
     "oral_language": "English",
@@ -1829,7 +1829,7 @@
   "5ef9e78dba206b030d66a3c2": {
     "id": "5ef9e78dba206b030d66a3c2",
     "title": "【鄉民的轉型正義】來聊聊「白色恐怖時期不義遺址」的公共推廣與開放系統吧！",
-    "title_en": "",
+    "title_en": "Transitional justice for the people – let’s chat about open public engagement for “historical sites of injustice”",
     "summary": "25分鐘：Ayo分享過去三年與國家人權博物館、促轉會以及其他民間單位合作，推廣不義遺址研究成果的相關工作。並提出不義遺址標示系統可能設置的模式與架構。\n\n35分鐘：Judy和懿容以《請你跟我走一趟－不義遺址空間歷史推廣企劃示範巡迴展》創作作品解析，簡單帶大家認識不義遺址歷史空間，從空間和人物兩種面向，看見白色恐怖議題與大眾對話的可能。\n\n60分鐘：現場進行分組，希望將下列三個題目讓分組來認領討論，講者也會進組來共同參與討論和發想。\n\n1. 設計不義遺址標示系統時，是否可以在政府所公告的公共系統中包含一套開放系統？如果需要，如何可能？（會說明為何提出開放系統之需求）\n2. 不義遺址在網路世界的公共性：如何在WIKI上建立完整詞條\n3. 以Judy和懿容的報告為參考，試著設定一個受眾社群，提出一個推廣不義遺址認識的方法。\n",
     "summary_en": "",
     "oral_language": "華語",
@@ -2036,7 +2036,7 @@
   "5ef9fe47ba206b030d66a3dc": {
     "id": "5ef9fe47ba206b030d66a3dc",
     "title": "用開源來改變社會",
-    "title_en": "Open Source can improve our world \"TGH Open Source Prosthetic Project\" ",
+    "title_en": "Open-source can improve our world: TGH Open Source Prosthetic Project",
     "summary": "設計是為解決生活的問題方法之一，而開源設計可以讓技術快速成長並累積成果，不必浪費資源做相同的研發，開源義肢不以市場為優先考量，而是以解決問題為出發，利用群眾的力量，尋求體制內改善的方法，以“自造”為手段的社會運動。",
     "summary_en": "Design is one of the ways to improve our life, and open source allows technology to grow rapidly and accumulate results. TGH Open Source Prosthetic Project focuses on solving the problem of high price, inappropriateness and inconvenience of prosthetic. ",
     "oral_language": "其他 Others",
@@ -2093,7 +2093,7 @@
   "5ef9fed0ba206b030d66a3df": {
     "id": "5ef9fed0ba206b030d66a3df",
     "title": "分散式創新的新契機",
-    "title_en": "New Opportunities for Distributed Innovation",
+    "title_en": "New opportunities for distributed innovation",
     "summary": "    創新不但是促進全體人類往前邁進的力量，也是推動企業成長的重要動能之一。但是「創新」只能在透過大量資本與專家團隊投入才能產生嗎？「創新」必然是「開放」的嗎？為了解答以上的疑問，我們將爬梳分散式創新中的兩大理論—「使用者創新 (User Innovation)」 與「開放式創新 (Open Innovation)」，同時與近年來興起的兩個近似概念：「草根創新」(Grassroots Innovation)與「社會創新」(Social Innovation)進行定義的爬梳與比較。\n    過去一般均認為台灣市場規模偏小，難以研發出符合本土需求的技術、或培養出很大型的廠商。廠商沒有足夠的資源投入研發，就很難競爭，但如果能善用分散式創新的研發模式，即便廠商的規模不大，還是可以整合很多使用者或是社群創新。因此，如何透過開放式創新、使用者創新、以及結合草根力量的社會創新便是台灣在有限的企業規模下，持續維持創新動力的重要策略。\n",
     "summary_en": "        Innovations not only promote all human beings to move forward, but also one of the important driving forces for enterprise growth. But can \"innovation\" only happen through a massive capital investment and expert team input? Is \"innovation\" necessarily \"open\"? In order to answer the above questions, we will review the two main theories in distributed innovation-\"User Innovation\" and \"Open Innovation\", as well as two similar concepts that have emerged in recent years: \"Grassroots Innovation\" and \"Social Innovation\" are defined and compared. \n        In the past, it was generally believed that the Taiwanese market was too small to develop technologies that meet local needs, or to develop very large manufacturers. Manufacturers do not have enough resources to invest in research and development (R&D), so it is difficult to compete, but if you can make good use of the distributed innovation model, even if the manufacturer is small, you can still integrate many users or community innovation. Therefore, how to use open innovation, user innovation, and social innovation that combines grassroots forces is an important strategy for Taiwan to continue to maintain its innovation momentum under a limited enterprise scale.",
     "oral_language": "華語",
@@ -2146,7 +2146,7 @@
   "5efa0877ba206b030d66a3e8": {
     "id": "5efa0877ba206b030d66a3e8",
     "title": "做工的沒有人 - 社群治理為何重要",
-    "title_en": "Reflecting on value and invisible labor in collaborative projects, or why community governance is important",
+    "title_en": "Reflecting on value and invisible labor in collaborative projects, or why community govenance is important",
     "summary": "沒有人不真的是沒有人，但協作中的勞動也不是那麼容易被看見。這個短講的主題是協作中經常隱形的勞動、這些勞動生產的價值、以及協作成果的分配問題，以及為何這些價值的分配（不論是以實際經濟利益的形式或名聲、地位等象徵性資源）是社群治理重要的議題，也是協作的核心。預計從一些實際的例子出發，並嘗試與相關文獻做連結，如 Postill 在 The Rise of Nerd Politics (2018) 討論在社群參與政治時對於「收割」的態度，以及 Ekiba and Nardi 在 Heteromation (2017)，對於線上協作或眾包模式中的勞動經常為無償或價值被低估的分析。",
     "summary_en": "The talk will discuss various types of invisible labor in collaborative projects, the values they create, and how such value is distributed within and beyond the community. The talk will cover actual examples, as well as reflections on literature on related topics. E.g. nerd politics (Postill 2018) and heteromatd labor - labor through somewhat voluntary/willing participation mediated by computer systems that is often unpaid or under-rewarded (Ekiba and Nardi, 2017). The distribution of value, material or symbolic, created by collaborative projects is a core issue in community governance. ",
     "oral_language": "華語",
@@ -2254,7 +2254,7 @@
   "5efa0fb8ba206b030d66a3ef": {
     "id": "5efa0fb8ba206b030d66a3ef",
     "title": "調個資、刪內容，公民如何監督政府與企業？來打造「透明報告」！",
-    "title_en": "",
+    "title_en": "The Transparency Report: How do citizens monitor the government and corporations?",
     "summary": "政府要求，企業配合。等等，這句話中間是不是遺漏了什麼？台灣網路透明報告2020年將第三次揭露「政府要求企業交出網路個資」和「限制網路內容」的統計。我們的小小心願是，台灣的政府/企業可以定期向公民/客戶交代：究竟要了多少個資？限制多少內容？配合多少？又拒絕多少？\n\n本次工作坊將討論政府監控與內容審查的資訊揭露。我們會一起扮演政府、企業、當事人等不同角色，依據不同情境，討論如何保障數位隱私與言論自由。\n\n情境一：申請政府資訊公開收到的回覆\n「公布有礙犯罪偵查」\n「提供會侵害企業正當利益」\n「無資料」\n你會如何回覆？\n\n情境二：台灣企業可以如何提升透明度？\n\n部分電信業者CSR報告揭露配合率超過98%，但沒告訴你政府來要多少個資。\n\n情境三：政府調個資，有哪些可以保護當事人有救濟機會，又能防止機制遭濫用的設計？\n",
     "summary_en": "",
     "oral_language": "華語",
@@ -2304,7 +2304,7 @@
   "5efa11b2ba206b030d66a3f1": {
     "id": "5efa11b2ba206b030d66a3f1",
     "title": "How home stayers unlock the potential of open data in response to Covid-19 Pandemic in Myanmar?",
-    "title_en": "How home stayers unlock the potential of open data in response to Covid-19 Pandemic in Myanmar?",
+    "title_en": "在家對抗武漢肺炎，解鎖開放資料潛力：緬甸經驗",
     "summary": "2020, an unprecedented pandemic happened.\nIn order to control the spread of disease, the travels were restricted, people were suggested to stay at home. By the time the battle mode against COVID-19 is activated, the innovation of people played a critical role in the pandemic response.\n\nPeople in Myanmar quickly adopted new tools and technologies to respond to the pandemic in an affected way.\nThe rise of open data, dashboards, and visualizations all came together with the contact tracing methods. And the home staying people well understood the importance of open data. We introduced many new civic technologies for the people to collaborate together under one goal.\n",
     "summary_en": "2020, an unprecedented pandemic happened.\nIn order to control the spread of disease, the travels were restricted, people were suggested to stay at home. By the time the battle mode against COVID-19 is activated, the innovation of people played a critical role in the pandemic response.\n\nPeople in Myanmar quickly adopted new tools and technologies to respond to the pandemic in an affected way.\nThe rise of open data, dashboards, and visualizations all came together with the contact tracing methods. And the home staying people well understood the importance of open data. We introduced many new civic technologies for the people to collaborate together under one goal.",
     "oral_language": "English",
@@ -2357,7 +2357,7 @@
   "5efa175bba206b030d66a3f3": {
     "id": "5efa175bba206b030d66a3f3",
     "title": "資料驅動的社會倡議–談談「掃了再買 App」的發想與執行",
-    "title_en": "",
+    "title_en": "Data-driven activism: ideation and implementation of the “Scan before buy” app",
     "summary": "曾因企業偷排或讓員工過勞死的新聞生氣嗎？但在挑選商品時，並沒有更多資訊告訴我們商品製造商在環境、勞工方面的違規紀錄，無形之中消費卻成了黑心企業的共犯。\n\n綠盟想透過App連結消費者，讓工廠生產更透明之餘，也讓消費者拿回更多選擇的權力。希望藉由負責任的消費，促使企業負責任的生產。\n\n要達到這個目標，除了手邊現有的工廠裁罰紀錄外，還需要作哪些事才能達到？想實現的目標，該如何描述成程式需求，又要怎麼傳達給技術團隊知道？尋找製作者時，應在g0v提案，還是尋找外包團隊？預算有限時，要如何找到折衷方案？除了程式外，還需要哪些角色，才能讓專案和原本的組織節奏同步？\n\n我們將分享「掃了再買 App」的發想與願景，介紹綠盟從透明足跡專案開始，如何將資料應用到倡議中的經驗，並談談如何從無到有，讓 App 得以上線運作的過程。",
     "summary_en": "",
     "oral_language": "華語",
@@ -2423,7 +2423,7 @@
   "5efa1ecaba206b030d66a3f6": {
     "id": "5efa1ecaba206b030d66a3f6",
     "title": "科技與資料新聞的碰撞",
-    "title_en": "",
+    "title_en": "Data journalism: when tech meets the news",
     "summary": "資料新聞從 2012 年開始因為電腦跟網路技術的進步，開始受到歐美許多大型編輯室重視。但是除了統計以及大量數據的運算，技術還能有什麼在資料新聞運用以及協助的部分呢？\nREADr 從二年多前開始專心致力於推動台灣資料新聞的發展，我們嘗試過將技術跟新聞作結合，也有過不少的嘗試。而且今年暑假我們也將舉辦第二次為大專院校同學開設的資料新聞工作坊，也是台灣唯一有專門為資料新聞開課的編輯室。\n這兩年多的經驗，讓我們發現。資料跟新聞的結合不是一般人所以為的圖表或是互動式視覺化，而是含有更多的可能性。例如透過機器學習，我們可以發現所謂「網軍」到底有什麼樣的特性，或是透過關聯性的分析去探討網路與論的操作。當然，對於很多編輯室不太願意進行的大量資料分析，我們卻可以從中找到一些有趣的發現，科技跟新聞的碰撞會有更多火花。",
     "summary_en": "",
     "oral_language": "華語",
@@ -2479,7 +2479,7 @@
   "5efa2e57ba206b030d66a3f7": {
     "id": "5efa2e57ba206b030d66a3f7",
     "title": "零時檔案局 - 台灣資訊空間的開放資料",
-    "title_en": "0archive, open data of Taiwan's information space. ",
+    "title_en": "0archive: open data of Taiwan’s information space",
     "summary": "《零時檔案局》是由 g0v 社群參與者發起的開源專案，蒐集新聞平台、論壇、內容農場的文章，並提供成開放資料，希望能幫助針對台灣的媒體與資訊空間的研究。此演講的對象定位在有相關資料需求的研究者，演講主要會介紹0archive的開放資料集內容、資料格式、取用方法、利用0archive資料做過的內容農場分類以及PTT分析，並希望能利用小demo降低入手資料的難度，讓非軟體工程背景的人也可以輕鬆上手使用。",
     "summary_en": "0archive is a g0v project to archive Taiwan’s information space with open-source and automated tools. We are actively collecting publications from various sources, such as news media, discussion platforms, and content farms, and release them as open data.  In this speech we would mainly focus on our open dataset: what is included, how to get them, and past analyses done using the dataset. We hope to reach out to audiences in the research community who have the need of such dataset, and would use demo to lower the bar of using the dataset for non-software background audiences. ",
     "oral_language": "華語",
@@ -2537,7 +2537,7 @@
   "5efa37d2ba206b030d66a3f9": {
     "id": "5efa37d2ba206b030d66a3f9",
     "title": "口罩地圖設計後感，下次災難前，我們還可以準備什麼？",
-    "title_en": "After outbreak , What can we do for next disaster in Taiwan?",
+    "title_en": "After the mask supply map: What can we prepare before the next crisis?",
     "summary": "年初協助規劃口罩地圖後 \n花了些時間觀察疫情期間的現象，做了些整理可以跟大家一起延伸探討 \n如果在台灣災難是頻發的，包含颱風、地震、疫病、戰爭。\n在資源管控期間的台灣，社會模式和政府的配置模式 \n有沒有固定的pattern可以被整理為腳本或SOP化 \n作為往後，快速應對的模式參照",
     "summary_en": "",
     "oral_language": "華語",
@@ -2593,7 +2593,7 @@
   "5efa793fba206b030d66a402": {
     "id": "5efa793fba206b030d66a402",
     "title": "Building an army of facilitators with Extinction Rebellion",
-    "title_en": "",
+    "title_en": "在「反抗滅絕」訓練「協助者」大軍",
     "summary": "In this year dubbed #TryEverything2020, the revolution will be facilitated. Facilitation practices have the ability to create a trajectory from self-discovery to relational transformation to community self-governance to the achievement of democracy at the scale of society—if only there were enough facilitators to meet the need! In this panel, get to know the movement known as Extinction Rebellion, learn how it was inspired by g0v, and marvel at the scale of training going into building an army of facilitators.\n\n",
     "summary_en": "",
     "oral_language": "English",
@@ -2650,7 +2650,7 @@
   "5efa9092ba206b030d66a408": {
     "id": "5efa9092ba206b030d66a408",
     "title": "来自日本的项目展示案例--我们如何合作？",
-    "title_en": "Project show case from Japan - How we can collaborate?",
+    "title_en": "Project showcase from Japan – How we can collaborate?",
     "summary": "来自日本的你好 Code for Japan是日本的民间科技社区。在COVID-19大流行的情况下，日本发生了很多项目。本節將介紹一些這樣的計畫。然后，我们将讨论未来台湾社区之间的合作。",
     "summary_en": "Hello from Japan! Code for Japan is the civic tech community in Japan. Under the COVID-19 pandemic, a lot of projects have been happening in Japan. This session introduces some os such projects. Then we would like to discuss future collaboration between Taiwan community.",
     "oral_language": "English",
@@ -2715,7 +2715,7 @@
   "5efaa323ba206b030d66a414": {
     "id": "5efaa323ba206b030d66a414",
     "title": "打造說好故事的輪子 ——《報導者》開放「新聞敘事元件庫」的實踐之路。",
-    "title_en": "",
+    "title_en": "Make good wheels of storytelling at The Reporter",
     "summary": "近五年來，《報導者》在每一次的敘事實驗裡根據新聞特性將多種媒材互相組合，量身打造每一個專題，希望把故事說好。\n然而，這些多媒體專題常為了單一新聞事件而活；當事件過去，量身打造的專題也就乏人問津。\n為了避免重複打造輪子，《報導者》聚焦在開發可重複使用，且將故事說得更好的新聞敘事網頁元件。\n除了是可以重複使用的獨立元件，我們對這些新聞敘事元件還有其他的期許：\n1. 通用：元件皆以能融入大多數新聞室裡的內容管理系統（CMS）為目標進行製作，在支援鑲嵌程式碼的CMS裡都可以被「隨插即用」。\n2. 迭代：強調以元件為單位重複使用，讓使用者回饋範圍回歸元件本身，藉此獲取較為明確的改善建議。\n3. 開放：元件的原始程式碼將被公開存放在GitHub上。產生鑲嵌程式碼的服務也會一併對外開放，讓受眾從「有程式背景的人」到「有意願使用的人」。\n",
     "summary_en": "",
     "oral_language": "華語",
@@ -2781,7 +2781,7 @@
   "5efaa83cba206b030d66a41a": {
     "id": "5efaa83cba206b030d66a41a",
     "title": "g0v.social：分散式社群媒體的四年旅程",
-    "title_en": "Running a federated social network: a 4 years journey",
+    "title_en": "g0v.social: a 4-year journey of distrubuted social (communal) media",
     "summary": "基於 g0v.tw 的願景之一：「提供公民參與社會的開放平台」而生，g0v.social(https://g0v.social) 是個默默運作了四年的分散式社群媒體。g0v.social 基於開源的 Mastodon 專案(https://joinmastodon.org/)，透過公開的 ActivityPub 協定與世界上兩百萬以上的同好互相連結。\n\n本次將分享經營 g0v.social 四年來的旅程，以及關於以下議題的心得：\n* 中心化社群媒體（如 Facebook、Twitter）與聯邦式（Federated）、去中心（Decentralized）系統的優劣\n* Mastodon 聯邦大事記，分散式社群的常見問題\n* 萬事起頭難：如何利用開源專案跟開放的溝通協定，建立專案初期的網路效應。避免專案初期缺乏使用者、難以為繼的問題。\n* 如何長期維持與開發公民參與專案：開源、資金、人力、心理健康。\n* 如何透過 Mastodon 維繫你的社群",
     "summary_en": "One of the goal of g0v.tw is providing an open platform for civil participation. g0v.social(https://g0v.social) is a federated social media quietly running for 4 years. It's based on the Mastodon(https://joinmastodon.org/) open source project and connect to 2 millions+ global users with the \"ActivityPub\" open protocol.\n\nIn this talk, we'll share the 4 years journey of maintaining the community of g0v.social and experiences on the following topics:\n* The pros and cons between centralized (facebook/twitter), federated, and decentralized social media.\n* The first step is the hardest: How to leverage open source project and open protocol to create a network effect at the start.\n* Maintaining and developing civil tech project for longevity: Open source, Funding, Human, and Mental Health.\n* How to maintain a community with Mastodon",
     "oral_language": "華語",
@@ -2883,7 +2883,7 @@
   "5efac8d2ba206b030d66a432": {
     "id": "5efac8d2ba206b030d66a432",
     "title": "台灣第一個NGO自營社會住宅經驗分享",
-    "title_en": "",
+    "title_en": "The first NGO-run social housing in Taiwan",
     "summary": "有鑑於身心障礙者租屋之困難, 伊甸基金會從1987年的無殼蝸牛運動, 2014年的巢運, 都在其中扮演為身障者在這高房價的台灣, 爭取良好合宜且平價的居住環境而努力. 更在2013年, 於台南大林國宅購下一幢樓, 修繕了無障礙環境, 以身障, 老人及其他弱勢家庭為對象, 創辦了台灣第一個以NGO身份自營社會住宅的範例. 此服務係以中繼屋的方式, 希望在入住期間, 除了讓弱勢家庭有安定的住處外, 也提供各類社福服務, 希望幫助這些家庭, 發展其潛能, 也融入社區中, 不再成為社會邊緣人. 第一批在2014年初入住的住戶已在此居住6年, 我們期待透過弱勢住戶、家庭照顧者、服務提供者三個不同角度, 來和大家分享社會住宅對這些家庭的影響及重要性.",
     "summary_en": "",
     "oral_language": "華語",
@@ -2954,7 +2954,7 @@
   "5efad21cba206b030d66a437": {
     "id": "5efad21cba206b030d66a437",
     "title": "科技麻瓜 NGO 和開源魔法師的旅程",
-    "title_en": "",
+    "title_en": "Journey of a NGO tech muggle and an open sourceror",
     "summary": "有組織有死線的NGO怎麼跟鬆散流動的開源社群協作呢？\n來自環境組織的小海和 g0v 社群參與者小班，分別從 NGO 倡議與開源專案的角度，回顧共同開發的 Disfactory 專案（農地工廠回報系統）\n以實際案例分享從互相陌生到開放協作，中間如何摸索跨過哪些關卡。\n\n如何開始？提案之前我們想像的對方是...\n如何對焦？相遇後語彙與知識卻差異過大，怎麼找到溝通方式。\n如何前進？開發流程進度如何與倡議時程扣合。\n如何組織？不同文化帶來的衝擊，為何而做是我們還在一起的原因。\n如何抵達？數位產品真的對倡議有用嗎。\n\n如果你也曾有下列疑問，歡迎一起加入討論！\n麻瓜的困擾：為什麼工程師只因為好玩願意無償開發程式碼？沒有嚴格組織，這樣開發進度真的來得及嗎？\n開源社群的糾結：如何導入開源和軟體敏捷開發的思維在 NGO 的合作之中？\ndisfactory 專案網址 https://about.disfactory.tw",
     "summary_en": "",
     "oral_language": "華語",
@@ -3075,7 +3075,7 @@
   "5efadc65ba206b030d66a43a": {
     "id": "5efadc65ba206b030d66a43a",
     "title": "NPO組織 vs 開源社群",
-    "title_en": "",
+    "title_en": "NPO v.s. open-source communities",
     "summary": "有牆的NPO組織與無邊界開源社群，並肩同行時會共生出多少種樣貌？\n\n｜環境資訊協會，主婦聯盟基金會，地球公民基金會\n\n來自環資的void，嘗試將科技實踐在NPO組織中；曾任職主婦聯盟的peace則尋求NPO組織文化的數位升級突破；地球公民的小海目前在剛滿周歲的g0v專案 disfactory 中匍匐前進。三位工作者近年分別在組織經營、議題關注上與開源社群有互動經驗。投身公共或許是兩者交集的最初，但NPO各自迥異的特質，以及公共議題在不同階段介入的龐大光譜差異。那麼當NPO組織遇上開源社群，將會...\n\n｜commitment與ownership\n\n我們將各自經驗統整在 commitment 與 ownership 兩個關鍵字下。當組織的 commit 象徵許諾社會價值與營運，遇上社群的 commit 來自個人貢獻與認同，兩者該如何維繫專案開發的軸線，往目標不離不棄。當 ownership 既是權力也是責任時，擁有權力才能負責，還是一旦負責就擁有權力呢？\n\n讓我們繼續看下去吧（歪",
     "summary_en": "",
     "oral_language": "華語",
@@ -3154,7 +3154,7 @@
   "5efae364ba206b030d66a441": {
     "id": "5efae364ba206b030d66a441",
     "title": "Wikidata 台灣一年了，回顧過往與展望未來",
-    "title_en": "Wikidata one Year in Taiwan, what is our results and what is our future plan",
+    "title_en": "Wikidata one year in Taiwan, what is our results and what is our future plan",
     "summary": "Wikidata 台灣社群在台灣在台灣發展一年多，幾年前有 Wikidata 專案經理來台宣傳 Wikidata ，不過激盪不出太多本地漣漪，直到 2019 年有些轉機。Wikidata 從原先附屬相關社群如維基百科語和開放街圖順帶提及，如今因為方便編輯與容易用程式串接，而能衍生相對數量繁多而且多樣的應用，能整合任何你想到的知識體系。\n\nWikidata 除了知識體系之外，新的詞條形式收錄語言資料，能容納不同形式書寫系統。本次演講計畫談論 Wikidata Taiwan 一年基礎知識成果像是河川水系，學校，村里資料，還有未來展望，像是收錄本土語言台語語言資料，性別主題和地方學議題等可能性。\n\n本次演講將回顧十年發展，從 COSCUP 帶來的 Wikidata 演講展開曙光，卻在中間沉寂一陣子，只有鏈結資料學者會研究，到後來隨著 Wikidata 計劃的發展，重新在台灣當地被重視。我們將講述近兩年時間 Wikidata 台灣社群做什麼，未來的展望。",
     "summary_en": "Wikidata Taiwan Community is developing for one year. Several  years ago the project manager of Wikidata give a talk on COSCUP, but after the talk there were few action outside the Wikipedia movement circle. Until 2019 there is a change, once a topic belong to related project like Wikipedia or OpenStreetMap, Wikidata in Taiwan finally have the chance to run as a booming community. It is easy for interested people to edit Wikidata, and for developers it is also very easy to access by API using query language to retrieve stuff you want. So there are many Wikidata-powered application.\n\nWikidata is not only a knowledge system, but also have a lexema system for storing words and terms of any given languages. This talk will reflect the achievement of last year, like waterway data, school data, village data, and looking into the future possibility , things such as local language restoration, gender issue and local studies.\n\nThis talk will review Wikidata activities of 10 years in Taiwan. From the very beginning of Wikidata project Manager's talk in COSCUP. But Wikidata does not have much to do in Taiwan, only linked-data scholar care about. And recent years Wikidata was rediscovered by Taiwan Wikimedian. We will talk about our experience and future overview.",
     "oral_language": "華語",
@@ -3279,7 +3279,7 @@
   "5efafc95ba206b030d66a461": {
     "id": "5efafc95ba206b030d66a461",
     "title": "談台灣與國際的數位身分證發展與隱憂",
-    "title_en": "Digital ID Cards in Taiwan and International",
+    "title_en": "Digital ID cards home and abroad",
     "summary": "臺灣預計最快在 2021 全面發行 eID數位晶片身分證。\n\n政府目前規劃會先選定在澎湖、新竹、板橋、中和等區域內小規模試辦，並舉辦獎金獵人，讓全民一起 debug。但這樣政府就能自認安全無虞了嗎？人民真的信賴且願意使用 eID ，這張「一張打開智慧政府的關鍵鑰匙」？\n\n魔鬼總是藏在細節裡，本議程將會分享以下主題，告訴你什麼是政府「沒說的」eID 大小事。：\n(1) 你的個資不是你的個資，eID 的發行將帶來什麼風險與不方便？\n(2) 比較不同國家的數位身分證的制度\n\n相關資訊：https://www.eid.tw/",
     "summary_en": "",
     "oral_language": "華語",
@@ -3345,7 +3345,7 @@
   "5efb007bba206b030d66a46c": {
     "id": "5efb007bba206b030d66a46c",
     "title": "沒有人可以做行政？不再自己當沒有人，讓流程機器人(RPA)來幫助你！ -- 小型非營利組織的行政自動化",
-    "title_en": "Introduce RPA(Robotic Process Automation) into NPO. Sharing our experience.",
+    "title_en": "Introducing RPA (Robotic Process Automation) into NPO – sharing our experience",
     "summary": "我們是一個新創的非營利組織，主要是透過攝影教育，在柬埔寨的偏鄉，讓孩子有完整的賦權(empower)經驗。\n\n因為草創，所以在沒錢也沒人的情況下，我們盡可能的善用所有數位工具，來讓我們的行政負擔以及服務達到更好的效果與效率，想與大家分享我們的經驗與目前的成果，也希望這樣的模板與工具可以幫助到其他需要的組織。\n\n分享內容主要包含：\n\n1. 我們發展這些數位自動化的動機？\n\n2. 我們如何開始擁抱數位？\n    第一步：線上開會、智慧相簿、共享行事曆、共筆與會議記錄。\n\n3. 如何結合 Google 表單以及試算表，打造組織的全自動報帳及會計系統？\n\n4. 透過撰寫簡易的 RPA 機器人，來銜接捐款系統與會計系統，以達到財務管理的自動化",
     "summary_en": "",
     "oral_language": "華語",
@@ -3457,7 +3457,7 @@
   "5efb0ef9ba206b030d66a47b": {
     "id": "5efb0ef9ba206b030d66a47b",
     "title": "補助款明細的流浪之路：許一個選舉資料庫開放的願望",
-    "title_en": "",
+    "title_en": "Wishing for election subsidy data, or perhaps an open election database",
     "summary": "近年來，選舉的開票專題變成媒體編輯室例行公事之一。2020年，公視P#新聞實驗室嘗試以歷年選票資料，追蹤200億補助款。在報導過程中，我們發現由國庫支出的補助款，沒有公開明細，也無處可以查詢。每一票、每一筆，都要從頭來過。實驗室沒有工程師，所有資料從開放資料、開放社群挖，過程中也曾掉到不少坑洞，例如姓名異體字、資料位置複雜⋯⋯。\n\n我們能不能有更開放的選舉資料庫？每年媒體都在鑽研選舉資料，跨媒體合作是解方嗎？",
     "summary_en": "",
     "oral_language": "華語",
@@ -3523,7 +3523,7 @@
   "5efb2838ba206b030d66a495": {
     "id": "5efb2838ba206b030d66a495",
     "title": "LASS 如何建構水社群與公私協力經驗談",
-    "title_en": "How LASS build water community and co-work with government",
+    "title_en": "How LASS builds water community and co-works with the government",
     "summary": "繼空氣感測社群與空氣盒子佈建，LASS 正在建構水社群，推出水盒子與山河事件簿等開源軟硬體整合專案，也逐漸建構產官學研交流體系，目前正在與水利署建構公私協力社群平台，預計將相關的狀態/計畫/經驗與技巧與社群夥伴分享",
     "summary_en": "Following the establishment of the air sensing community and the AirBox, LASS is building a water community, launching open source software and hardware integration projects such as the WaterBox and the RiverLog, and gradually building an industry-government-academic-research exchange system. Building public-private partnership community platform with Water Resources Agency and expected to share relevant status/plans/experiences and skills with community partners.",
     "oral_language": "華語",
@@ -3578,7 +3578,7 @@
   "5efb34d8ba206b030d66a4a4": {
     "id": "5efb34d8ba206b030d66a4a4",
     "title": "技術與媒體，談網路工程師在媒體以及科技對媒體的影響",
-    "title_en": "",
+    "title_en": "The influence of Internet, engineering, and technology on news media",
     "summary": "在最近幾年，網路新聞媒體幾乎已經是主流，無論傳統紙媒或電視，幾乎都會向網路靠攏。可是網路/軟體工程師在新聞媒體的狀況如何，能不能為媒體帶來什麼協助？以及台灣新聞媒體對於網路技術有什麼樣的想像？\n透過幾位現在正身處新聞媒體業的工程師，也許可以讓大家一虧究竟，也可以探討技術現在及未來，對於新聞產業的影響有多少",
     "summary_en": "",
     "oral_language": "華語",
@@ -3733,7 +3733,7 @@
   "5efb4748ba206b030d66a4bb": {
     "id": "5efb4748ba206b030d66a4bb",
     "title": "將資料思維帶進政府",
-    "title_en": "",
+    "title_en": "Bringing data thinking into government",
     "summary": "承辦資料相關的基層公務員缺少資料經驗的前提下，推廣開放資料是否只是讓公務員只是為了滿足 KPI 而交差了事達不到目的呢？這次分享以我這幾年幫公務員上開放資料品質課程，協助衛福部清理防疫相關資料經驗，來分享我看到的目前政府推行開放資料遇到的問題，以及一些我想到的解法",
     "summary_en": "",
     "oral_language": "華語",
@@ -3847,7 +3847,7 @@
   "5efb5c5eba206b030d66a4dc": {
     "id": "5efb5c5eba206b030d66a4dc",
     "title": "Building Policy for Open and Inclusive Governance",
-    "title_en": "Building Policy for Open and Inclusive Governance",
+    "title_en": "建構開放涵容的治理政策",
     "summary": "How can we use data to strengthen participatory democracy in countries with fragile political systems? How can we evoke cultural shifts in government departments when change is perceived as threatening? How can we work with governments to develop policies which spark innovation? \n\nIn 2019, Code for Pakistan’s Fellows partnered with the Performance Monitoring and Reforms Unit (PMRU) to create Khyber Pakhtunkhwa’s first open data policy and to develop an open data portal. In this talk, we’ll share our journey of overcoming resistance and creating awareness about the benefits of open, accountable and inclusive governance; of how it increases government’s capacity to make informed and effective decisions and better respond to citizens’ needs. We’ll share the impact the portal has had so far in increasing government transparency, leading to inclusive decision-making.",
     "summary_en": "How can we use data to strengthen participatory democracy in countries with fragile political systems? How can we evoke cultural shifts in government departments when change is perceived as threatening? How can we work with governments to develop policies which spark innovation? \n\nIn 2019, Code for Pakistan’s Fellows partnered with the Performance Monitoring and Reforms Unit (PMRU) to create Khyber Pakhtunkhwa’s first open data policy and to develop an open data portal. In this talk, we’ll share our journey of overcoming resistance and creating awareness about the benefits of open, accountable and inclusive governance; of how it increases government’s capacity to make informed and effective decisions and better respond to citizens’ needs. We’ll share the impact the portal has had so far in increasing government transparency, leading to inclusive decision-making.\n",
     "oral_language": "English",
@@ -3914,7 +3914,7 @@
   "5efb712eba206b030d66a4e9": {
     "id": "5efb712eba206b030d66a4e9",
     "title": "Civic Tech Toronto - 5 years in and 5 years onward",
-    "title_en": "Civic Tech Toronto - 5 years in and 5 years onward",
+    "title_en": "多倫多公民科技── 5 年之後再 5 年",
     "summary": "In this talk, organisers from the Civic Tech Toronto community will share their experiences of organising hacknights for the last five years, and what we're hoping to accomplish in the next five years. We will discuss how CTTO has evolved over the years, and how we have put our principles into practise. This will include showcasing some of the projects to emerge from our space, and how we try to support this kind of civic hacking in Toronto. ",
     "summary_en": "",
     "oral_language": "English",
@@ -3980,7 +3980,7 @@
   "5efc998dba206b030d66a50c": {
     "id": "5efc998dba206b030d66a50c",
     "title": "Citizen random sortition in Cedric Villani's Paris campaign candidate list",
-    "title_en": "",
+    "title_en": "市民隨機抽籤：Cedric Villani 巴黎市選舉候選名單",
     "summary": "In the fall of 2019, we, Open Source Politics were requested by Paula Forteza (the French MEP reknown for its stands on open source and civic tech experiments) to help the Cedric Villani campaign for the Paris municipal election to provide a digital system that would the backbone of secure and transparent sortition process where regular citizens would candidate to make it into the candidate list in every district of Paris. The result is an epic adventure with many challenges leading up to this : https://candidater.cedricvillani.paris\n\nWe used the Decidim open source framework to verify citizens identity, gather their application and then organize a sortition with several rounds and many constraints (parity, position on the list, district base).\n\nIn the end we were able to do the whole process thanks to the energy and dedication of the campaign team and volunteers who tirelessly recruited candidate, and met them between sortition round to ensure of their identities. The stakes were quite high as Cedric Villani poled up to 20% in intended votes and the positions on the candidates list for the randomly selected citizen candidate were quite high (3rd place in some cases, which meant great possibilities to be elected).\n\nWe had the chance to know in person the randomly selected candidate and met incredible individuals which input in the campaign brought so much freshness. \n\nThe experience might have been the first of its kind and really brought disruption to political campaign when most commonly it's can of worms.",
     "summary_en": "",
     "oral_language": "English",
@@ -4045,7 +4045,7 @@
   "5efcd945ba206b030d66a50e": {
     "id": "5efcd945ba206b030d66a50e",
     "title": "Big issues, small data: How open-source data science can help social organizations tackle big problems ",
-    "title_en": "Big issues, small data: How open-source data science can help social organizations tackle big problems ",
+    "title_en": "小資料，大議題──開源資料科學如何協助社會組織挑戰大問題",
     "summary": "Real-world human problems often rely on humans collecting and organizing information manually. Take for instance COVID, in many places information is lacking or incomplete, there are intricate considerations to analyze data properly for decision making. This is the reality of small organizations that want to tackle difficult issues like gender equality or corruption, especially when they lack in house analysts, information designers or data scientists.\nWe can leverage open-source data science to empower those organizations with easy to use web-based tools. In this talk, we will go over some use cases by organizations in Guatemala, Bolivia, and Colombia using small data to tackle big issues.",
     "summary_en": "Real-world human problems often rely on humans collecting and organizing information manually. Take for instance COVID, in many places information is lacking or incomplete, there are intricate considerations to analyze data properly for decision making. This is the reality of small organizations that want to tackle difficult issues like gender equality or corruption, especially when they lack in house analysts, information designers or data scientists.\nWe can leverage open-source data science to empower those organizations with easy to use web-based tools. In this talk, we will go over some use cases by organizations in Guatemala, Bolivia, and Colombia using small data to tackle big issues.",
     "oral_language": "English",
@@ -4103,7 +4103,7 @@
   "5efe0289ba206b030d66a514": {
     "id": "5efe0289ba206b030d66a514",
     "title": "The Battle for Internet Freedom ",
-    "title_en": "",
+    "title_en": "為網路自由而戰",
     "summary": "Internet freedom has long been under assault, a trend that has been exacerbated by COVID 19 and the cover the virus has provided to authoritarians seeking to clamp down on online discourse. What does the future of the battle for internet freedom look like? How can we shore up support for the agenda in the U.S.? And what does the rest of the world need to do to ensure that internet freedom is advanced? ",
     "summary_en": "",
     "oral_language": "English",
@@ -4375,7 +4375,7 @@
   "5f0c7c17e88a4948daf87fe0": {
     "id": "5f0c7c17e88a4948daf87fe0",
     "title": "Open Contracting for emergency response: how to use open procurement data and red flags to monitor public purchases. ",
-    "title_en": "Open Contracting for emergency response: how to use open procurement data and red flags to monitor public purchases. ",
+    "title_en": "緊急應變、開放採購：用開放資料監督公共採購",
     "summary": "During the COVID-19 pandemic, governments are relying on public procurement as the main vehicle to purchase medical materials and infrastructure. Transparent, open, accountable and data-driven procurement practices have allowed governments to buy better and faster. Also, open data has been used by civil society and journalists to monitor the delivery of the goods and services and spot red flags.  In this session, we want to showcase how implementing the open contracting principles can make a difference in how governments conduct public procurement, and share data-driven methodologies to spot and analyze potential fraudulent practices used by civil society and journalists to monitor government purchases. \nWe will share two products:  The Open Contracting Data Standard, which is a global standard that provides shareable, reusable, and machine-readable open data on public contracting across the entire cycle of public procurement. We want to show its value, how governments can implement it and how it can provide an opportunity to dive deeper into understanding the health, integrity and effectiveness of the public sector. We will also show how partners are using the standard and share our guidance on how to use it for the emergency response.  Our red flags methodology, that details around 150 suspicious behaviour indicators in procurement that can be calculated with open contracting data. These flags occur at all points along the entire chain of public procurement-from planning to tender to award to the contract, itself, to implementation. We will focus particularly on common procurement Red Flags related to emergency procurement. ",
     "summary_en": "During the COVID-19 pandemic, governments are relying on public procurement as the main vehicle to purchase medical materials and infrastructure. Transparent, open, accountable and data-driven procurement practices have allowed governments to buy better and faster. Also, open data has been used by civil society and journalists to monitor the delivery of the goods and services and spot red flags.  In this session, we want to showcase how implementing the open contracting principles can make a difference in how governments conduct public procurement, and share data-driven methodologies to spot and analyze potential fraudulent practices used by civil society and journalists to monitor government purchases. \nWe will share two products:  The Open Contracting Data Standard, which is a global standard that provides shareable, reusable, and machine-readable open data on public contracting across the entire cycle of public procurement. We want to show its value, how governments can implement it and how it can provide an opportunity to dive deeper into understanding the health, integrity and effectiveness of the public sector. We will also show how partners are using the standard and share our guidance on how to use it for the emergency response.  Our red flags methodology, that details around 150 suspicious behaviour indicators in procurement that can be calculated with open contracting data. These flags occur at all points along the entire chain of public procurement-from planning to tender to award to the contract, itself, to implementation. We will focus particularly on common procurement Red Flags related to emergency procurement. ",
     "oral_language": "English",
@@ -4541,7 +4541,7 @@
   "5f0dd9c960d627285b6b14e7": {
     "id": "5f0dd9c960d627285b6b14e7",
     "title": "Who builds the Internet? Tales about infrastructure and the people behind it.",
-    "title_en": "Who builds the Internet? Tales about infrastructure and the people behind it.",
+    "title_en": "網際網路誰蓋的？基礎建設及建築工的故事",
     "summary": "The year is 2020. The internet is entirely occupied and governed by big tech companies. Well, not entirely... Some small grass-roots communities of indomitable developers still hold out against big tech.\n\nThis is the story about open digital infrastructure and FOSS communities we like to tell ourselves. But does it hold up to scrutiny? Volunteers and grassroots communities that develop open digital infrastructure certainly play a vital role in keeping the internet an open space. They stand for open source, open standards, and even low-tech and de-growth instead of innovation and business ideas. But examples such as the infamous Heartbleed bug that affected the security of OpenSSL and, therefore, all of us, have shown that this model of resistance has its flaws. \n\nTo dig deeper into this topic, we spent a year researching different projects and communities. Our recently published report \"Roadwork ahead\" focuses on the people behind open digital infrastructure, their motivations, their values, and what kind of support they need. We'll share some key findings: Why is their work important? Who are they? And more importantly, who should be part of the work, but isn't? From governance structures and diversity – and a lack thereof – to the importance of maintenance and the beauty of rough consensus and running code: We share our insights about open digital infrastructure, and how we all can better support them, to hold out a little longer against t̶h̶e̶ ̶R̶o̶m̶a̶n̶s̶  Big Tech. ",
     "summary_en": "The year is 2020. The internet is entirely occupied and governed by big tech companies. Well, not entirely... Some small grass-roots communities of indomitable developers still hold out against big tech.\n\nThis is the story about open digital infrastructure and FOSS communities we like to tell ourselves. But does it hold up to scrutiny? Volunteers and grassroots communities that develop open digital infrastructure certainly play a vital role in keeping the internet an open space. They stand for open source, open standards, and even low-tech and de-growth instead of innovation and business ideas. But examples such as the infamous Heartbleed bug that affected the security of OpenSSL and, therefore, all of us, have shown that this model of resistance has its flaws. \n\nTo dig deeper into this topic, we spent a year researching different projects and communities. Our recently published report \"Roadwork ahead\" focuses on the people behind open digital infrastructure, their motivations, their values, and what kind of support they need. We'll share some key findings: Why is their work important? Who are they? And more importantly, who should be part of the work, but isn't? From governance structures and diversity – and a lack thereof – to the importance of maintenance and the beauty of rough consensus and running code: We share our insights about open digital infrastructure, and how we all can better support them, to hold out a little longer against t̶h̶e̶ ̶R̶o̶m̶a̶n̶s̶  Big Tech. ",
     "oral_language": "English",
@@ -4603,7 +4603,7 @@
   "5f0e6f7560d627285b6b14f2": {
     "id": "5f0e6f7560d627285b6b14f2",
     "title": "水多的人輸，水少的人贏：運用資料分析優化決策時間以降低都市區域淹水風險",
-    "title_en": "",
+    "title_en": "Data analysis for reducing the risks in urban flooding",
     "summary": "臺灣隨著都市化開發愈甚，政府透過河川截彎取直、興建堤防，以堤內新生地作為住宅與工商業用地，人口密集地帶的不透水面積逐年增加，水要排出的難度自然提升，導致因氣候變遷而來的短期暴雨事件造成的瞬間排水系統過載越來越常發生，而水災不僅癱瘓經濟活動，也威脅生命財產安全。\n\n傳統治水上常採行的防洪疏濬工程成本高昂，設施用地也須徵收，都需花費大筆稅金；另傳統水文模擬使用物理模型計算，雖精度不錯，但需花費較長時間運算，且建置 3D模型經費不斐，不是所有縣市都能負擔；但透過2018年g0v summit的機緣，媒合了臺北市政府工務局與D4SG資料英雄一同進行公私協力合作，於2019年進行一系列資料模型發想，獲得了可運用的專案成果。\n\n本Panel希望藉由分享專案現階段成果，以及執行公私協力案件的過程、方法與痛點，並希望與現場參與者交流，讓專案繼續延伸。",
     "summary_en": "",
     "oral_language": "華語",
@@ -4755,7 +4755,7 @@
   "5f0ef5300bde6f3bbab73f6d": {
     "id": "5f0ef5300bde6f3bbab73f6d",
     "title": "自己的健保卡 Agent 自己開源",
-    "title_en": "",
+    "title_en": "Open-source your own NHI card agent",
     "summary": "2020年初武漢肺炎在全球爆發大流行，健保署推出了口罩實名購買制度，確保了民眾可以買到口罩來保護自己，其中線上預購的認證方式使用健保卡或者自然人憑證來進行實名身份驗證，除了口罩實名制之外，同樣的驗證程式也用於線上報稅等其他服務。\n\n健保卡會在電腦上安裝一個 web 服務，作為瀏覽器與晶片卡讀卡機的溝通媒介，由於軟體品質不佳，以及好奇是否存在漏洞，因此對健保卡 agent 進行了逆向工程，以瞭解程式的架構以及 protocol 運作細節。\n\n在進行了深入的研究後，成功的還原了 agent 與伺服器驗證健保卡的流程。我以 Python 實作了一個跨平臺的 agent 替代品，並且避開了前述的漏洞與缺陷。\n\n在這個議程我們將會介紹這個 protocol 是如何運作的、部分的軟體缺陷、逆向與重新實作的整個過程。",
     "summary_en": "",
     "oral_language": "華語",
@@ -4998,7 +4998,7 @@
   "5f0f235a0bde6f3bbab73f7e": {
     "id": "5f0f235a0bde6f3bbab73f7e",
     "title": "從同人圈到公民科技社群，非技術人的開放文化之旅",
-    "title_en": "",
+    "title_en": "From “dōjin” to civic tech community, a journey of open culture for a non-tech person",
     "summary": "不管是從動漫出發的同人圈，或是以開源技術為基底的公民科技社群，都是一般人認為「外於主流文化」但正在擴大影響力的群體。\n身為一個不會寫文、不會畫畫但在同人圈打滾超過十年的精靈王；到至今不會寫 code 、不會做設計卻也因緣際會踏入開源公民科技圈的填坑獸，在發覺兩邊共通點是參與者大量「用愛發電」之後，非常自樂於在坑與坑之間遊走，貢獻一己之力並建構連結。希望分享跨領域參與經驗，讓聽眾同時對同人和公民科技社群有更多認識，並且也透過探討「什麼是專業技術」來鼓勵更多不同領域和擁有不同技能的人參與社群。",
     "summary_en": "",
     "oral_language": "華語",
