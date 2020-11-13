@@ -236,6 +236,16 @@ function genFieldI18n (value) {
   }
 }
 
+const INTERMEDIATE_TIME_FIELDS = [
+  '議程預設標題-華語',
+  '議程預設標題-en',
+  '標題對調',
+  '講者 1',
+  '講者 2',
+  '講者 3',
+  '覆寫欄位更新時間'
+]
+
 function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
   const category = genFieldI18n(timeSheet.分類主題)
   const location = genFieldI18n(timeSheet.議程場地)
@@ -247,9 +257,8 @@ function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
   const timeSheetFields = [
     'id',
     '議程日期',
-    '議程預設標題-華語',
-    '議程預設標題-en',
-    '最後更新時間'
+    '最後更新時間',
+    ...INTERMEDIATE_TIME_FIELDS
   ]
   const ret = {
     ..._.pick(timeSheet, timeSheetFields),
@@ -273,8 +282,7 @@ function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
     const errmsg = `Undefined location ${timeSheet.議程場地}`
     logError(errmsg)
   }
-  delete ret.分類主題
-  delete ret.議程場地
+
   return ret
 }
 
@@ -357,7 +365,7 @@ async function exportProposals (proposals, timeSheet) {
       console.warn(`Proposal [${pid}] ${proposal.title} not found in time sheet`)
       return
     }
-    const sheet = timeMap[pid]
+    const sheet = { ...timeMap[pid] }
     if (timeTakenMap[pid]) {
       const errMsg = `Time ${sheet.議程日期} ${sheet.議程開始時間} - ${sheet['議程場地-華語']} is taken by at least 2 proposals: ${sheet.isTakenBy.id} && ${pid}`
       logError(errMsg)
@@ -373,8 +381,10 @@ async function exportProposals (proposals, timeSheet) {
   Object.keys(timeMap).forEach((pid) => {
     const timeSheet = timeMap[pid]
     const updatedAt = dayjs(timeSheet.最後更新時間)
+    const overwrittenAt = dayjs(timeSheet.覆寫欄位更新時間)
     const zhTitle = _.get(timeSheet, '議程預設標題-華語', 'N/A')
     const enTitle = _.get(timeSheet, '議程預設標題-en', zhTitle)
+    const richProposal = toExport[pid]
 
     if (!timeTakenMap[pid]) {
       // pseudo time slot!
@@ -385,14 +395,49 @@ async function exportProposals (proposals, timeSheet) {
         title_en: enTitle,
         updatedAt,
         createdAt: updatedAt,
-        timeSheet
+        timeSheet: { ...timeSheet }
       }
-    } else if (updatedAt > toExport[pid].updatedAt) {
-      // summit crew prefer set title from timeSheet XD
+    } else if (overwrittenAt > richProposal.updatedAt) {
+      // summit crew prefer set some attributes from timeSheet XD
       if (enTitle && enTitle !== zhTitle) {
-        toExport[pid].title_en = enTitle
+        richProposal.title_en = enTitle
       }
+
+      // switch title if necessary
+      if (timeSheet.標題對調) {
+        [richProposal.title, richProposal.title_en] = [richProposal.title_en, richProposal.title]
+      }
+
+      // let's also allow overwrite speaker from timeSheet~
+      ['講者 1', '講者 2', '講者 3'].forEach((speakerId, i) => {
+        if (!timeSheet[speakerId]) {
+          return
+        }
+        let speaker = null
+        try {
+          speaker = genPerson(timeSheet[speakerId])
+        } catch (err) {
+          console.error(`In timeSheet ${timeSheet.id} > ${speakerId}, get invalid yaml`)
+          throw err
+        }
+
+        if (!speaker || !richProposal.speakers[i]) {
+          return
+        }
+        Object.keys(speaker).forEach((attr) => {
+          if (speaker[attr]) {
+            console.warn('overwrite', richProposal.title, i, attr, speaker[attr])
+            richProposal.speakers[i][attr] = speaker[attr]
+          }
+        })
+      })
     }
+
+    INTERMEDIATE_TIME_FIELDS.forEach((attr) => {
+      if (attr in toExport[pid].timeSheet) {
+        delete toExport[pid].timeSheet[attr]
+      }
+    })
   })
 
   // backup original proposal
