@@ -227,7 +227,7 @@ function genFieldI18n (value) {
   if (tokens.length > 1) {
     return {
       zh: tokens[0].trim(),
-      en: tokens[1].trim()
+      en: tokens.slice(1).join(',').trim()
     }
   }
   return {
@@ -371,22 +371,27 @@ async function exportProposals (proposals, timeSheet) {
   })
 
   Object.keys(timeMap).forEach((pid) => {
-    if (timeTakenMap[pid]) {
-      return
-    }
-    // pseudo time slot!
     const timeSheet = timeMap[pid]
     const updatedAt = dayjs(timeSheet.最後更新時間)
     const zhTitle = _.get(timeSheet, '議程預設標題-華語', 'N/A')
     const enTitle = _.get(timeSheet, '議程預設標題-en', zhTitle)
-    toExport[pid] = {
-      id: pid,
-      isPseudo: true,
-      title: zhTitle,
-      title_en: enTitle,
-      updatedAt,
-      createdAt: updatedAt,
-      timeSheet
+
+    if (!timeTakenMap[pid]) {
+      // pseudo time slot!
+      toExport[pid] = {
+        id: pid,
+        isPseudo: true,
+        title: zhTitle,
+        title_en: enTitle,
+        updatedAt,
+        createdAt: updatedAt,
+        timeSheet
+      }
+    } else if (updatedAt > toExport[pid].updatedAt) {
+      // summit crew prefer set title from timeSheet XD
+      if (enTitle && enTitle !== zhTitle) {
+        toExport[pid].title_en = enTitle
+      }
     }
   })
 
