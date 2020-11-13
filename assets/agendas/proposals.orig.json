@@ -6012,54 +6012,6 @@
       }
     }
   },
-  "1206-unconf-A0": {
-    "id": "1206-unconf-A0",
-    "isPseudo": true,
-    "title": "Unconference A0",
-    "title_en": "Unconference A5",
-    "updatedAt": "2020-10-01T09:35:43.000Z",
-    "createdAt": "2020-10-01T09:35:43.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-A0",
-      "議程日期": "2020-12-06",
-      "最後更新時間": "2020-10-01T09:35:43.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio",
-      "主持人": null,
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 12,
-        "capacity": 50
-      }
-    }
-  },
-  "1206-unconf-A1": {
-    "id": "1206-unconf-A1",
-    "isPseudo": true,
-    "title": "Unconference A1",
-    "title_en": "Unconference A6",
-    "updatedAt": "2020-10-01T09:35:46.000Z",
-    "createdAt": "2020-10-01T09:35:46.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-A1",
-      "議程日期": "2020-12-06",
-      "最後更新時間": "2020-10-01T09:35:46.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
-      "主持人": null,
-      "議程開始時間": "2020-12-06T14:30",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 13,
-        "capacity": 100
-      }
-    }
-  },
   "1206-unconf-A2": {
     "id": "1206-unconf-A2",
     "isPseudo": true,
@@ -6201,54 +6153,6 @@
       "locationMeta": {
         "order": 127,
         "capacity": 1023
-      }
-    }
-  },
-  "1206-unconf-B0": {
-    "id": "1206-unconf-B0",
-    "isPseudo": true,
-    "title": "Unconference B0",
-    "title_en": "Unconference B5",
-    "updatedAt": "2020-10-01T09:36:25.000Z",
-    "createdAt": "2020-10-01T09:36:25.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-B0",
-      "議程日期": "2020-12-06",
-      "最後更新時間": "2020-10-01T09:36:25.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "好想工作室",
-      "議程場地-en": "Good-Ideas Studio",
-      "主持人": null,
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 12,
-        "capacity": 50
-      }
-    }
-  },
-  "1206-unconf-B1": {
-    "id": "1206-unconf-B1",
-    "isPseudo": true,
-    "title": "Unconference B1",
-    "title_en": "Unconference B6",
-    "updatedAt": "2020-10-01T09:36:26.000Z",
-    "createdAt": "2020-10-01T09:36:26.000Z",
-    "timeSheet": {
-      "id": "1206-unconf-B1",
-      "議程日期": "2020-12-06",
-      "最後更新時間": "2020-10-01T09:36:26.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "Wu Garden - Former Tainan Public Hall",
-      "主持人": null,
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 13,
-        "capacity": 100
       }
     }
   },
