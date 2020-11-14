@@ -64,17 +64,19 @@ function downloadOneTable (tableInfo, toFile = true) {
           const attrList = fields[attr]
           fields[attr] = []
           for (const item of attrList) {
-            if (item.url && item.type && item.thumbnails) {
+            if (item.url && item.type && item.url) {
               // looks like an image
-              const origUrl = await hostImage(item.url)
-              const largeUrl = await hostImage(item.thumbnails.large.url)
-              fields[attr].push({
+              const cacheItem = {
                 id: item.id,
                 filename: item.filename,
-                type: item.type,
-                orig_url: origUrl,
-                large_url: largeUrl
-              })
+                type: item.type
+              }
+              if (item.thumbnails) {
+                cacheItem.large_url = await hostImage(item.thumbnails.large.url)
+              } else {
+                cacheItem.large_url = await hostImage(item.url)
+              }
+              fields[attr].push(cacheItem)
             } else {
               fields[attr].push(item)
             }
