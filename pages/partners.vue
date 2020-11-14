@@ -1,5 +1,5 @@
 <template lang="pug">
-  .partners.mw8.pa3.center
+  .partners.mw8.pa3.center.mb4.mb5-ns
     .cat
       .flex.justify-center.overflow-hidden
         h2.cat__title {{headPartnerClass.name}}
@@ -20,6 +20,7 @@
           v-for="partner in cohosts"
           :key="partner.id"
           :is-cover="!!partner.is_cover"
+          :is-taller="true"
           :cover="partner.照片們[0].large_url"
           :name="partner.共同主辦名稱"
           :desp="partner.說明"
@@ -105,6 +106,10 @@ export default {
   }
 
   &__list {
+    .partner {
+      margin-bottom: 2rem;
+    }
+
     @include not-small-screen {
       display: grid;
       grid-gap: 2rem;
@@ -113,6 +118,10 @@ export default {
 
       &--mono {
         grid-template-columns: calc(50% - 1rem);
+      }
+
+      .partner {
+        margin: 0;
       }
     }
   }

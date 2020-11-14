@@ -5,6 +5,7 @@
     img.partner__banner(
       :src="cover"
       :alt="name"
+      :class="{'partner__banner--taller': isTaller}"
     )
     .partner__content
       h3.partner__title.f4.fw5.mv2 {{name}}
@@ -40,11 +41,19 @@ export default {
     isCover: {
       type: Boolean,
       default: false
+    },
+    isTaller: {
+      type: Boolean,
+      default: false
     }
   }
 }
 </script>
 <style lang="scss" scoped>
+$banner-height: 8.25rem;
+$cover-banner-gap: 1rem;
+$taller-height: 4rem;
+
 .partner {
   border-radius: 2px;
   border: 0.125rem #c2c0c0 solid;
@@ -53,11 +62,15 @@ export default {
     margin-bottom: 2rem;
   }
   &__banner {
-    height: 9.25rem;
+    height: $banner-height;
     width: 100%;
     object-fit: contain;
     object-position: center;
     display: block;
+
+    &--taller {
+      height: $banner-height + $taller-height;
+    }
   }
   &__attr {
     color: #303030;
@@ -75,8 +88,12 @@ export default {
     padding: 0;
     .partner {
       &__banner {
-        height: 10.25rem;
+        height: $banner-height + $cover-banner-gap;
         object-fit: cover;
+
+        &--taller {
+          height: $banner-height + $cover-banner-gap + $taller-height;
+        }
       }
       &__content {
         padding: 0 1.5rem 2rem;
