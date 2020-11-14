@@ -45,6 +45,7 @@ zh:
   cohost: 共同主辦
 </i18n>
 <script>
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 import SummitPartner from '~/components/SummitPartner'
 
 export default {
@@ -78,7 +79,12 @@ export default {
     tailPartnerClass () {
       return this.partnerPerClass.slice(1)
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('partners')
+    }
+  })
 }
 </script>
 <style lang="scss" scoped>

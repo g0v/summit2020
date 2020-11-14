@@ -28,7 +28,6 @@ en:
   learningCredit: Sign In/Off
   buildingCheckIn: Check In
   healthDecl: Health Declaration
-  partners: Partners
 zh:
   lang: English
   registration: 立刻報名
@@ -36,7 +35,6 @@ zh:
   learningCredit: 終身學習簽到退
   buildingCheckIn: 入館簽到
   healthDecl: 填健康聲明
-  partners: 合作夥伴
 </i18n>
 <script>
 import { mapGetters } from 'vuex'
