@@ -52,8 +52,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -107,8 +109,10 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/351786716b7e920d53b239d185419de2.jpg",
-        "city": "新竹 Hsinchu",
+        "city": "新竹",
+        "city_en": "Hsinchu, Taiwan",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
       },
@@ -242,6 +246,7 @@
       "主持人": {
         "display_name": "嚴婉玲",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T15:30",
@@ -473,9 +478,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "Lulu",
-        "organization": "開放文化基金會 / Open Culture Foundation ",
+        "organization": "開放文化基金會",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/225c427033cff06ebffc4e34181b7dfd.jpg",
-        "city": "Taipei 台北",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "一路從生態研究、社區駐點、獨立音樂行銷宣傳、音樂祭員工、小黨選舉公關，直到現在踏入自己沒想過會接觸的開源和開放科技領域，唯一沒變的是持續參與社會運動的決心，並且得以從不同領域不同角度進行串聯，但因為沒有經營單一領域或專長，只好自創我的專業是跨領域經理人，聽起來比較厲害。",
         "bio_en": " "
@@ -529,8 +536,10 @@
       "主持人": {
         "display_name": "曾憲立",
         "organization": "台南大學行政管理學系",
+        "organization_en": "National University of Tainan Department of Public Administration and Management",
         "avatar_url": "cache/cd9809eccbe224878ed27054dd9e9bb3.jpg",
-        "city": "台南, Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
         "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
         "bio_en": " "
@@ -594,6 +603,7 @@
       "主持人": {
         "display_name": "小蟹 Kalang",
         "organization": "阿美語萌典",
+        "organization_en": "amis.moedict",
         "avatar_url": "cache/591a8cf25b4263867322b2fcd99177f8.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -649,8 +659,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -705,8 +717,10 @@
       "主持人": {
         "display_name": "曾憲立",
         "organization": "台南大學行政管理學系",
+        "organization_en": "National University of Tainan Department of Public Administration and Management",
         "avatar_url": "cache/cd9809eccbe224878ed27054dd9e9bb3.jpg",
-        "city": "台南, Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
         "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
         "bio_en": " "
@@ -787,9 +801,11 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "蕭禾秦",
-        "organization": "食物銀行 / foodBANK",
+        "organization": "食物銀行",
+        "organization_en": "foodBANK",
         "avatar_url": "cache/9258a4ef9ec7d861387271246d1181b2.jpg",
         "city": "屏東",
+        "city_en": "Pingtung, Taiwan",
         "info_url": "https://www.facebook.com/hechinhsiao",
         "bio": "關心環境的公民記者與鄉民",
         "bio_en": " "
@@ -844,8 +860,10 @@
       "主持人": {
         "display_name": "RR",
         "organization": "Cofacts 真的假的",
+        "organization_en": "Cofacts",
         "avatar_url": "cache/a8507222815c3fc2992a595515242d08.jpg",
-        "city": "Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "誤入科技叢林的麻瓜，之後便不斷在行銷與服務設計，產業與公部門間跌跌撞撞，努力摸索著在開放與多元中，找到一條公共參與的道路。\"  ",
         "bio_en": "\""
       },
@@ -909,6 +927,7 @@
         "display_name": "洪芷寧",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "藝文工作者，關注不同職務的個體與視覺文化的關係，2016 年開始「說到美術課」計畫進行至今。先前參與的社群以地方、和獨立刊物兩個面向為主。近期為自由工作者，試著用一些方式討論藝術機構工作記憶、參與者經驗等相關課題。",
         "bio_en": "HONG Tze Ning (Da-Ning)"
       },
@@ -1027,8 +1046,10 @@
       "主持人": {
         "display_name": "江明宗",
         "organization": "nobody",
+        "organization_en": "nobody",
         "avatar_url": "cache/25b3b5c32b6a892de8c27a3b453337f3.jpg",
-        "city": "台南/Tainan, Taiwan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "https://kiang.github.io/",
         "bio": " 70 年次，過去的大半輩子都住在台北縣或新北市， 101 年中旬開始定居於台南，因為喜歡這個地方。\n在 318 學運中看到公權力如此粗魯的對待人民，我一直在思考，除了抱怨，我還能夠做些什麼？我並不想要離開這個地方，也希望自己的孩子能夠在這片土地上好好成長，現在試著進一步站到第一線去，看看有沒有機會真的做些事情。"
       },
@@ -1081,9 +1102,11 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "蕭禾秦",
-        "organization": "食物銀行 / foodBANK",
+        "organization": "食物銀行",
+        "organization_en": "foodBANK",
         "avatar_url": "cache/9258a4ef9ec7d861387271246d1181b2.jpg",
         "city": "屏東",
+        "city_en": "Pingtung, Taiwan",
         "info_url": "https://www.facebook.com/hechinhsiao",
         "bio": "關心環境的公民記者與鄉民",
         "bio_en": " "
@@ -1137,8 +1160,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -1192,7 +1217,8 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "張家豪",
-        "organization": "南方創客基地 技術總監 / Fablab STMC Technical Director",
+        "organization": "南方創客基地 技術總監",
+        "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
         "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
       },
@@ -1321,8 +1347,10 @@
       "主持人": {
         "display_name": "ky",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/e29d022ddfcbc871b372b55623011d83.png",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "g0v 社群參與者，不務正業的法律人程序控，長年的台日交流小幫手，平常遊走於公私部門之間的協調者，2016 年意外跌進了 vTaiwan 的坑 ，和大家一起探索開放社群永續發展的極限。",
         "bio_en": "A g0v contributor who builds communities and works between the public and private sectors. Mainly contributed in vTaiwan project, exploring the possibility of open communities."
       },
@@ -1375,8 +1403,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -1429,8 +1459,10 @@
       "主持人": {
         "display_name": "曾憲立",
         "organization": "台南大學行政管理學系",
+        "organization_en": "National University of Tainan Department of Public Administration and Management",
         "avatar_url": "cache/cd9809eccbe224878ed27054dd9e9bb3.jpg",
-        "city": "台南, Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
         "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
         "bio_en": " "
@@ -1483,8 +1515,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -1537,8 +1571,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -1592,8 +1628,10 @@
       "主持人": {
         "display_name": "RR",
         "organization": "Cofacts 真的假的",
+        "organization_en": "Cofacts",
         "avatar_url": "cache/a8507222815c3fc2992a595515242d08.jpg",
-        "city": "Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "誤入科技叢林的麻瓜，之後便不斷在行銷與服務設計，產業與公部門間跌跌撞撞，努力摸索著在開放與多元中，找到一條公共參與的道路。\"  ",
         "bio_en": "\""
       },
@@ -1648,7 +1686,8 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "張家豪",
-        "organization": "南方創客基地 技術總監 / Fablab STMC Technical Director",
+        "organization": "南方創客基地 技術總監",
+        "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
         "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
       },
@@ -1701,9 +1740,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "Lulu",
-        "organization": "開放文化基金會 / Open Culture Foundation ",
+        "organization": "開放文化基金會",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/225c427033cff06ebffc4e34181b7dfd.jpg",
-        "city": "Taipei 台北",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "一路從生態研究、社區駐點、獨立音樂行銷宣傳、音樂祭員工、小黨選舉公關，直到現在踏入自己沒想過會接觸的開源和開放科技領域，唯一沒變的是持續參與社會運動的決心，並且得以從不同領域不同角度進行串聯，但因為沒有經營單一領域或專長，只好自創我的專業是跨領域經理人，聽起來比較厲害。",
         "bio_en": " "
@@ -1767,8 +1808,10 @@
       "主持人": {
         "display_name": "蕙如",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "avatar_url": "cache/5f9596b7e4fcfd523f62b3af91b3b4b8.jpg",
-        "city": "台南市",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "從中山大學社會系畢業後就到新芽工作，現在四年了。即使現在從中央到地方政府都強調資料開放，但在地方議會，無論是議會預決算、會議資料、會議記錄等，都是非常不足夠，卻也少有人關注的。期待能在summit中得到更多催促議會進步的靈感。\"",
         "bio_en": "I now work for Tainan Sprout, an organization mainly focuses on local issues.Ｉn local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention.Hope to develop ways to make local council better in summit. Watching local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention. Hope to develop ways to make local council better in summit. \""
       },
@@ -1894,9 +1937,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "Lulu",
-        "organization": "開放文化基金會 / Open Culture Foundation ",
+        "organization": "開放文化基金會",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/225c427033cff06ebffc4e34181b7dfd.jpg",
-        "city": "Taipei 台北",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "一路從生態研究、社區駐點、獨立音樂行銷宣傳、音樂祭員工、小黨選舉公關，直到現在踏入自己沒想過會接觸的開源和開放科技領域，唯一沒變的是持續參與社會運動的決心，並且得以從不同領域不同角度進行串聯，但因為沒有經營單一領域或專長，只好自創我的專業是跨領域經理人，聽起來比較厲害。",
         "bio_en": " "
@@ -1969,6 +2014,7 @@
       "主持人": {
         "display_name": "小蟹 Kalang",
         "organization": "阿美語萌典",
+        "organization_en": "amis.moedict",
         "avatar_url": "cache/591a8cf25b4263867322b2fcd99177f8.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -2027,6 +2073,7 @@
         "display_name": "洪芷寧",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "藝文工作者，關注不同職務的個體與視覺文化的關係，2016 年開始「說到美術課」計畫進行至今。先前參與的社群以地方、和獨立刊物兩個面向為主。近期為自由工作者，試著用一些方式討論藝術機構工作記憶、參與者經驗等相關課題。",
         "bio_en": "HONG Tze Ning (Da-Ning)"
       },
@@ -2130,8 +2177,10 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/351786716b7e920d53b239d185419de2.jpg",
-        "city": "新竹 Hsinchu",
+        "city": "新竹",
+        "city_en": "Hsinchu, Taiwan",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
       },
@@ -2283,8 +2332,10 @@
       "主持人": {
         "display_name": "江明宗",
         "organization": "nobody",
+        "organization_en": "nobody",
         "avatar_url": "cache/25b3b5c32b6a892de8c27a3b453337f3.jpg",
-        "city": "台南/Tainan, Taiwan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "https://kiang.github.io/",
         "bio": " 70 年次，過去的大半輩子都住在台北縣或新北市， 101 年中旬開始定居於台南，因為喜歡這個地方。\n在 318 學運中看到公權力如此粗魯的對待人民，我一直在思考，除了抱怨，我還能夠做些什麼？我並不想要離開這個地方，也希望自己的孩子能夠在這片土地上好好成長，現在試著進一步站到第一線去，看看有沒有機會真的做些事情。"
       },
@@ -2347,8 +2398,10 @@
       "主持人": {
         "display_name": "蕙如",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "avatar_url": "cache/5f9596b7e4fcfd523f62b3af91b3b4b8.jpg",
-        "city": "台南市",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "從中山大學社會系畢業後就到新芽工作，現在四年了。即使現在從中央到地方政府都強調資料開放，但在地方議會，無論是議會預決算、會議資料、會議記錄等，都是非常不足夠，卻也少有人關注的。期待能在summit中得到更多催促議會進步的靈感。\"",
         "bio_en": "I now work for Tainan Sprout, an organization mainly focuses on local issues.Ｉn local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention.Hope to develop ways to make local council better in summit. Watching local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention. Hope to develop ways to make local council better in summit. \""
       },
@@ -2401,8 +2454,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -2456,8 +2511,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -2511,8 +2568,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -2566,8 +2625,10 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/351786716b7e920d53b239d185419de2.jpg",
-        "city": "新竹 Hsinchu",
+        "city": "新竹",
+        "city_en": "Hsinchu, Taiwan",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
       },
@@ -2629,8 +2690,10 @@
       "主持人": {
         "display_name": "ky",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/e29d022ddfcbc871b372b55623011d83.png",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "g0v 社群參與者，不務正業的法律人程序控，長年的台日交流小幫手，平常遊走於公私部門之間的協調者，2016 年意外跌進了 vTaiwan 的坑 ，和大家一起探索開放社群永續發展的極限。",
         "bio_en": "A g0v contributor who builds communities and works between the public and private sectors. Mainly contributed in vTaiwan project, exploring the possibility of open communities."
       },
@@ -2693,8 +2756,10 @@
       "主持人": {
         "display_name": "洪國鈞",
         "organization": "沃草",
+        "organization_en": "Watchout",
         "avatar_url": "cache/94a47192986a9f764612390059b6a956.jpg",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\"",
         "bio_en": "\""
       },
@@ -2864,6 +2929,7 @@
       "主持人": {
         "display_name": "嚴婉玲",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T11:00",
@@ -2925,8 +2991,10 @@
       "主持人": {
         "display_name": "蕙如",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "avatar_url": "cache/5f9596b7e4fcfd523f62b3af91b3b4b8.jpg",
-        "city": "台南市",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "從中山大學社會系畢業後就到新芽工作，現在四年了。即使現在從中央到地方政府都強調資料開放，但在地方議會，無論是議會預決算、會議資料、會議記錄等，都是非常不足夠，卻也少有人關注的。期待能在summit中得到更多催促議會進步的靈感。\"",
         "bio_en": "I now work for Tainan Sprout, an organization mainly focuses on local issues.Ｉn local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention.Hope to develop ways to make local council better in summit. Watching local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention. Hope to develop ways to make local council better in summit. \""
       },
@@ -2979,7 +3047,8 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "張家豪",
-        "organization": "南方創客基地 技術總監 / Fablab STMC Technical Director",
+        "organization": "南方創客基地 技術總監",
+        "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
         "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
       },
@@ -3110,8 +3179,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -3176,9 +3247,10 @@
       "主持人": {
         "display_name": "Ronny Wang",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/8501868a5314607c3cca588ca62fa754.jpg",
-        "city": "Taipei City",
-        "city_en": "Taipei City",
+        "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://jothon.g0v.tw/about/",
         "bio": "工程師，喜歡爬政府資料並開放，這次疫情開始對視訊會議接觸研究。"
       },
@@ -3241,8 +3313,10 @@
       "主持人": {
         "display_name": "蕙如",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "avatar_url": "cache/5f9596b7e4fcfd523f62b3af91b3b4b8.jpg",
-        "city": "台南市",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "從中山大學社會系畢業後就到新芽工作，現在四年了。即使現在從中央到地方政府都強調資料開放，但在地方議會，無論是議會預決算、會議資料、會議記錄等，都是非常不足夠，卻也少有人關注的。期待能在summit中得到更多催促議會進步的靈感。\"",
         "bio_en": "I now work for Tainan Sprout, an organization mainly focuses on local issues.Ｉn local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention.Hope to develop ways to make local council better in summit. Watching local council, we may find out that regardless of governmental budget bills or agenda related documents are not only lacking but short of attention. Hope to develop ways to make local council better in summit. \""
       },
@@ -3304,7 +3378,8 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "張家豪",
-        "organization": "南方創客基地 技術總監 / Fablab STMC Technical Director",
+        "organization": "南方創客基地 技術總監",
+        "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
         "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
       },
@@ -3414,8 +3489,10 @@
       "主持人": {
         "display_name": "洪國鈞",
         "organization": "沃草",
+        "organization_en": "Watchout",
         "avatar_url": "cache/94a47192986a9f764612390059b6a956.jpg",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\"",
         "bio_en": "\""
       },
@@ -3468,7 +3545,8 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "張家豪",
-        "organization": "南方創客基地 技術總監 / Fablab STMC Technical Director",
+        "organization": "南方創客基地 技術總監",
+        "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
         "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
       },
@@ -3548,8 +3626,10 @@
       "主持人": {
         "display_name": "洪國鈞",
         "organization": "沃草",
+        "organization_en": "Watchout",
         "avatar_url": "cache/94a47192986a9f764612390059b6a956.jpg",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\"",
         "bio_en": "\""
       },
@@ -3674,8 +3754,10 @@
       "主持人": {
         "display_name": "RR",
         "organization": "Cofacts 真的假的",
+        "organization_en": "Cofacts",
         "avatar_url": "cache/a8507222815c3fc2992a595515242d08.jpg",
-        "city": "Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "誤入科技叢林的麻瓜，之後便不斷在行銷與服務設計，產業與公部門間跌跌撞撞，努力摸索著在開放與多元中，找到一條公共參與的道路。\"  ",
         "bio_en": "\""
       },
@@ -3729,8 +3811,10 @@
       "主持人": {
         "display_name": "RR",
         "organization": "Cofacts 真的假的",
+        "organization_en": "Cofacts",
         "avatar_url": "cache/a8507222815c3fc2992a595515242d08.jpg",
-        "city": "Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "誤入科技叢林的麻瓜，之後便不斷在行銷與服務設計，產業與公部門間跌跌撞撞，努力摸索著在開放與多元中，找到一條公共參與的道路。\"  ",
         "bio_en": "\""
       },
@@ -3793,8 +3877,10 @@
       "主持人": {
         "display_name": "曾憲立",
         "organization": "台南大學行政管理學系",
+        "organization_en": "National University of Tainan Department of Public Administration and Management",
         "avatar_url": "cache/cd9809eccbe224878ed27054dd9e9bb3.jpg",
-        "city": "台南, Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
         "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
         "bio_en": " "
@@ -3858,8 +3944,10 @@
       "主持人": {
         "display_name": "ky",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/e29d022ddfcbc871b372b55623011d83.png",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "g0v 社群參與者，不務正業的法律人程序控，長年的台日交流小幫手，平常遊走於公私部門之間的協調者，2016 年意外跌進了 vTaiwan 的坑 ，和大家一起探索開放社群永續發展的極限。",
         "bio_en": "A g0v contributor who builds communities and works between the public and private sectors. Mainly contributed in vTaiwan project, exploring the possibility of open communities."
       },
@@ -3923,6 +4011,7 @@
         "display_name": "洪芷寧",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "藝文工作者，關注不同職務的個體與視覺文化的關係，2016 年開始「說到美術課」計畫進行至今。先前參與的社群以地方、和獨立刊物兩個面向為主。近期為自由工作者，試著用一些方式討論藝術機構工作記憶、參與者經驗等相關課題。",
         "bio_en": "HONG Tze Ning (Da-Ning)"
       },
@@ -3976,8 +4065,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -4108,6 +4199,7 @@
       "主持人": {
         "display_name": "小蟹 Kalang",
         "organization": "阿美語萌典",
+        "organization_en": "amis.moedict",
         "avatar_url": "cache/591a8cf25b4263867322b2fcd99177f8.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -4248,8 +4340,10 @@
       "主持人": {
         "display_name": "江明宗",
         "organization": "nobody",
+        "organization_en": "nobody",
         "avatar_url": "cache/25b3b5c32b6a892de8c27a3b453337f3.jpg",
-        "city": "台南/Tainan, Taiwan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "https://kiang.github.io/",
         "bio": " 70 年次，過去的大半輩子都住在台北縣或新北市， 101 年中旬開始定居於台南，因為喜歡這個地方。\n在 318 學運中看到公權力如此粗魯的對待人民，我一直在思考，除了抱怨，我還能夠做些什麼？我並不想要離開這個地方，也希望自己的孩子能夠在這片土地上好好成長，現在試著進一步站到第一線去，看看有沒有機會真的做些事情。"
       },
@@ -4362,8 +4456,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -4550,9 +4646,11 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "蕭禾秦",
-        "organization": "食物銀行 / foodBANK",
+        "organization": "食物銀行",
+        "organization_en": "foodBANK",
         "avatar_url": "cache/9258a4ef9ec7d861387271246d1181b2.jpg",
         "city": "屏東",
+        "city_en": "Pingtung, Taiwan",
         "info_url": "https://www.facebook.com/hechinhsiao",
         "bio": "關心環境的公民記者與鄉民",
         "bio_en": " "
@@ -4672,8 +4770,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -4783,9 +4883,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "Lulu",
-        "organization": "開放文化基金會 / Open Culture Foundation ",
+        "organization": "開放文化基金會",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/225c427033cff06ebffc4e34181b7dfd.jpg",
-        "city": "Taipei 台北",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "一路從生態研究、社區駐點、獨立音樂行銷宣傳、音樂祭員工、小黨選舉公關，直到現在踏入自己沒想過會接觸的開源和開放科技領域，唯一沒變的是持續參與社會運動的決心，並且得以從不同領域不同角度進行串聯，但因為沒有經營單一領域或專長，只好自創我的專業是跨領域經理人，聽起來比較厲害。",
         "bio_en": " "
@@ -4855,8 +4957,10 @@
       "主持人": {
         "display_name": "ky",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/e29d022ddfcbc871b372b55623011d83.png",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "g0v 社群參與者，不務正業的法律人程序控，長年的台日交流小幫手，平常遊走於公私部門之間的協調者，2016 年意外跌進了 vTaiwan 的坑 ，和大家一起探索開放社群永續發展的極限。",
         "bio_en": "A g0v contributor who builds communities and works between the public and private sectors. Mainly contributed in vTaiwan project, exploring the possibility of open communities."
       },
@@ -4910,6 +5014,7 @@
         "display_name": "洪芷寧",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "藝文工作者，關注不同職務的個體與視覺文化的關係，2016 年開始「說到美術課」計畫進行至今。先前參與的社群以地方、和獨立刊物兩個面向為主。近期為自由工作者，試著用一些方式討論藝術機構工作記憶、參與者經驗等相關課題。",
         "bio_en": "HONG Tze Ning (Da-Ning)"
       },
@@ -4960,7 +5065,8 @@
       "議程場地-en": "Tainan Art Museum Building 2 - Performing Arts Theatre",
       "主持人": {
         "display_name": "劉哲瑋",
-        "organization": "零時政府揪松團志工 / Volunteer of g0v Jothon",
+        "organization": "零時政府揪松團志工",
+        "organization_en": " Volunteer of g0v Jothon",
         "avatar_url": "cache/1b53312f1a29d889b1fa294c1314a561.png",
         "bio": "任職於經典工程顧問有限公司(http://www.classic1990.com/)，持續以社群志願者的身份，參與「零時政府揪松團 (g0v Jothon)」、「公有地大行動 (POP on Fire)」、「資料申請小幫手 (Dataopener.tw)」、「都市農耕網 (Farming Urbanism Network)」等開放知識公民社群的行動。",
         "bio_en": "Chewei works at Classic Landscape Design and Environmental Planning. Ltd (http://www.classic1990.com/), and continuously participates in 'g0v Jothon' 'POP On Fire', 'dataopener.tw', 'Farming Urbanism Network'. \""
@@ -5031,8 +5137,10 @@
       "主持人": {
         "display_name": "Isabel Hou",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/351786716b7e920d53b239d185419de2.jpg",
-        "city": "新竹 Hsinchu",
+        "city": "新竹",
+        "city_en": "Hsinchu, Taiwan",
         "bio": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000.",
         "bio_en": "Isabel Hou is co-founder of  “g0v international ”, the taskforce co-organized the 1st Facing the Ocean Hack and Meet and executive committee member of “g0v Jothon”, which organize the g0v Hackthon every other month. Isabel is also a seasoned attorney focusing on technological innovation and intellectual property law and has served as a legal counsel for various government programs, NGOs, and open source/culture communities in Taiwan since 2000."
       },
@@ -5078,8 +5186,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -5126,8 +5236,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -5173,8 +5285,10 @@
       "議程場地-en": "Good-Ideas Studio",
       "主持人": {
         "display_name": "Howard Wu",
-        "organization": "好想工作室 創辦人 / Goodideas-Studio, the Host",
+        "organization": "好想工作室 創辦人",
+        "organization_en": "Goodideas-Studio, the Host",
         "avatar_url": "cache/be06b13f64b118047f8083906e70c9ef.jpg",
+        "city": "臺南",
         "bio": "好想工作室創辦人，在台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。",
         "bio_en": "Launches a IT working space, and focus the topic to software. Doing free training program for people who want to be a developer. Dedicates to building Tainan, the city of Southern Taiwan to become a IT light tower and a manufacturer of producing quality developer in Taiwan. Builds an online platform of “Mask Inventory Map” in 2020.\""
       },
@@ -5230,6 +5344,7 @@
       "主持人": {
         "display_name": "嚴婉玲",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T09:30",
@@ -5283,6 +5398,7 @@
       "主持人": {
         "display_name": "嚴婉玲",
         "organization": "台南新芽",
+        "organization_en": "Tainan Sprout",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T13:30",
@@ -5524,10 +5640,11 @@
       "主持人": {
         "display_name": "Singing",
         "organization": "開放文化基金會 / Open Culture Foundation",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/ae940ab403a010826dcd38ba5420a533.jpg",
-        "city": "台北 / Taipei, Taiwan",
-        "bio": "任職於開放文化基金會 (OCF)，因熱愛 Firefox 開源軟體與網路自由的理念，在大學時期開始參與資訊社群的活動，嘗試以非資訊人的角度認識開放源碼、資訊安全、社群經營。參與過 COSCUP、HITCON、BSDTW 社群活動的籌辦，是 2019、2020 年 COSCUP 總召。",
-        "bio_en": "\""
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "bio": "任職於開放文化基金會 (OCF)，因熱愛 Firefox 開源軟體與網路自由的理念，在大學時期開始參與資訊社群的活動，嘗試以非資訊人的角度認識開放源碼、資訊安全、社群經營。參與過 COSCUP、HITCON、BSDTW 社群活動的籌辦，是 2019、2020 年 COSCUP 總召。"
       },
       "議程開始時間": "2020-12-06T09:30",
       "議程長度": 90,
@@ -5589,9 +5706,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "劉致昕",
-        "organization": "報導者 / The Roporter",
+        "organization": "報導者",
+        "organization_en": "The Reporter",
         "avatar_url": "cache/1dc8d56eb431d8c2dce66dafa5dea6a6.jpg",
         "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "https://www.linkedin.com/in/jason-chih-hsin-liu-96a18250/",
         "bio": "記者、podcaster、咖啡店的一員",
         "bio_en": "A Taipei-based journalist focusing on human rights, digital politics and digital economics."
@@ -6380,8 +6499,10 @@
       "主持人": {
         "display_name": "曾憲立",
         "organization": "台南大學行政管理學系",
+        "organization_en": "National University of Tainan Department of Public Administration and Management",
         "avatar_url": "cache/cd9809eccbe224878ed27054dd9e9bb3.jpg",
-        "city": "台南, Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
         "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
         "bio_en": " "
@@ -6411,9 +6532,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "Lulu",
-        "organization": "開放文化基金會 / Open Culture Foundation ",
+        "organization": "開放文化基金會",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/225c427033cff06ebffc4e34181b7dfd.jpg",
-        "city": "Taipei 台北",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "一路從生態研究、社區駐點、獨立音樂行銷宣傳、音樂祭員工、小黨選舉公關，直到現在踏入自己沒想過會接觸的開源和開放科技領域，唯一沒變的是持續參與社會運動的決心，並且得以從不同領域不同角度進行串聯，但因為沒有經營單一領域或專長，只好自創我的專業是跨領域經理人，聽起來比較厲害。",
         "bio_en": " "
@@ -6443,9 +6566,11 @@
       "議程場地-en": "The Magic School of Green Technologies - 崇華廳 R0",
       "主持人": {
         "display_name": "Lulu",
-        "organization": "開放文化基金會 / Open Culture Foundation ",
+        "organization": "開放文化基金會",
+        "organization_en": "Open Culture Foundation",
         "avatar_url": "cache/225c427033cff06ebffc4e34181b7dfd.jpg",
-        "city": "Taipei 台北",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "一路從生態研究、社區駐點、獨立音樂行銷宣傳、音樂祭員工、小黨選舉公關，直到現在踏入自己沒想過會接觸的開源和開放科技領域，唯一沒變的是持續參與社會運動的決心，並且得以從不同領域不同角度進行串聯，但因為沒有經營單一領域或專長，只好自創我的專業是跨領域經理人，聽起來比較厲害。",
         "bio_en": " "
@@ -6476,8 +6601,10 @@
       "主持人": {
         "display_name": "ky",
         "organization": "g0v",
+        "organization_en": "g0v",
         "avatar_url": "cache/e29d022ddfcbc871b372b55623011d83.png",
-        "city": "Taipei",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "g0v 社群參與者，不務正業的法律人程序控，長年的台日交流小幫手，平常遊走於公私部門之間的協調者，2016 年意外跌進了 vTaiwan 的坑 ，和大家一起探索開放社群永續發展的極限。",
         "bio_en": "A g0v contributor who builds communities and works between the public and private sectors. Mainly contributed in vTaiwan project, exploring the possibility of open communities."
       },
@@ -6507,8 +6634,10 @@
       "主持人": {
         "display_name": "RR",
         "organization": "Cofacts 真的假的",
+        "organization_en": "Cofacts",
         "avatar_url": "cache/a8507222815c3fc2992a595515242d08.jpg",
-        "city": "Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "誤入科技叢林的麻瓜，之後便不斷在行銷與服務設計，產業與公部門間跌跌撞撞，努力摸索著在開放與多元中，找到一條公共參與的道路。\"  ",
         "bio_en": "\""
       },
@@ -6538,8 +6667,10 @@
       "主持人": {
         "display_name": "RR",
         "organization": "Cofacts 真的假的",
+        "organization_en": "Cofacts",
         "avatar_url": "cache/a8507222815c3fc2992a595515242d08.jpg",
-        "city": "Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "bio": "誤入科技叢林的麻瓜，之後便不斷在行銷與服務設計，產業與公部門間跌跌撞撞，努力摸索著在開放與多元中，找到一條公共參與的道路。\"  ",
         "bio_en": "\""
       },
@@ -6569,8 +6700,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -6601,8 +6734,10 @@
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
+        "organization_en": "PDIS - Public Digital Innovation Space",
         "avatar_url": "cache/daaa06b7b29902cf6fb1801656ac5b25.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.facebook.com/enenkoyako/",
         "bio": "行政院公共數位創新空間小組（PDIS）成員。清大社會所碩士，研究領域為社會運動組織及社會網絡。曾任公民憲政推動聯盟執行秘書、台北市議會法案助理。長期投入審議民主及公民參與相關事務。  ",
         "bio_en": "\""
@@ -6661,6 +6796,7 @@
         "display_name": "洪芷寧",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "藝文工作者，關注不同職務的個體與視覺文化的關係，2016 年開始「說到美術課」計畫進行至今。先前參與的社群以地方、和獨立刊物兩個面向為主。近期為自由工作者，試著用一些方式討論藝術機構工作記憶、參與者經驗等相關課題。",
         "bio_en": "HONG Tze Ning (Da-Ning)"
       },
@@ -6691,6 +6827,7 @@
         "display_name": "洪芷寧",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
+        "city_en": "Taipei, Taiwan",
         "bio": "藝文工作者，關注不同職務的個體與視覺文化的關係，2016 年開始「說到美術課」計畫進行至今。先前參與的社群以地方、和獨立刊物兩個面向為主。近期為自由工作者，試著用一些方式討論藝術機構工作記憶、參與者經驗等相關課題。",
         "bio_en": "HONG Tze Ning (Da-Ning)"
       },

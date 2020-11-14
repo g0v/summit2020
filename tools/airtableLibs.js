@@ -6,6 +6,7 @@ const path = require('path')
 const glob = require('glob')
 const axios = require('axios')
 const md5 = require('md5')
+const sharp = require('sharp')
 const imageType = require('image-type')
 const imagemin = require('imagemin')
 const imageminJpegtran = require('imagemin-jpegtran')
@@ -17,6 +18,7 @@ const IMG_CACHE_BASE = {
   url: 'cache/',
   path: path.join(__dirname, '../static/cache')
 }
+const MAX_IMG_WIDTH = 1280
 const ACCEPTED_IMAGE_TYPE = ['png', 'jpg', 'webp', 'gif']
 
 // https://g0v.hackmd.io/@ddio/summit-2020-articles
@@ -161,7 +163,18 @@ async function hostImage (originalUrl, mayRetry = true) {
     return originalUrl
   }
 
-  const miniImg = await imagemin.buffer(img.data, {
+  const origImg = await sharp(img.data)
+  const imgMeta = await origImg.metadata()
+  let normalizedBuffer = null
+  if (imgMeta.width > MAX_IMG_WIDTH) {
+    // eslint-disable-next-line no-console
+    console.info(`Image ${originalUrl} too large, will resize it to ${MAX_IMG_WIDTH}px width.`)
+    normalizedBuffer = await origImg.resize(MAX_IMG_WIDTH).toBuffer()
+  } else {
+    normalizedBuffer = img.data
+  }
+
+  const miniImg = await imagemin.buffer(normalizedBuffer, {
     plugins: [
       imageminJpegtran(),
       imageminPngquant({
