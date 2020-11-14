@@ -1,5 +1,8 @@
 export default {
   computed: {
+    id () {
+      return this.agenda.id
+    },
     time () {
       return this.agenda.timeSheet || {}
     },

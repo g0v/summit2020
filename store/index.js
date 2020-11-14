@@ -2,7 +2,8 @@ import * as Sentry from '@sentry/browser'
 
 const STORAGE_KEYS = {
   HEALTH_DECLA_INFO: 'summit2020_health_declaration_info',
-  LAST_HEALTH_KEY: 'summit2020_last_health_declaration_key'
+  LAST_HEALTH_KEY: 'summit2020_last_health_declaration_key',
+  FAVOURITE_AGENDAS: 'summit2020_favourite_agendas'
 }
 
 export const STATES = {
@@ -11,7 +12,9 @@ export const STATES = {
   AGENDA_FILTER: 'agendaFilter',
 
   HEALTH_DECLA_INFO: 'healthDeclaInfo',
-  LAST_HEALTH_KEY: 'lastHeathKey'
+  LAST_HEALTH_KEY: 'lastHeathKey',
+
+  FAVOURITE_AGENDAS: 'favouriteAgendas'
 }
 
 export const MUTATIONS = {
@@ -21,7 +24,10 @@ export const MUTATIONS = {
   RESET_AGENDA_SEARCH: 'resetAgendaSearch',
 
   DECLARE_HEALTH: 'declareHealth',
-  INIT_HEALTH: 'initHealth'
+  INIT_HEALTH: 'initHealth',
+
+  TOGGLE_FAVOURITE_AGENDA: 'toggleFavouriteAgenda',
+  INIT_FAVOURITE_AGENDAS: 'initFavouriteAgendas'
 }
 
 export const GETTERS = {
@@ -36,7 +42,9 @@ export const state = () => {
     [STATES.AGENDA_FILTER]: {},
 
     [STATES.HEALTH_DECLA_INFO]: {},
-    [STATES.LAST_HEALTH_KEY]: ''
+    [STATES.LAST_HEALTH_KEY]: '',
+
+    [STATES.FAVOURITE_AGENDAS]: []
   }
 }
 
@@ -71,6 +79,21 @@ export const mutations = {
   [MUTATIONS.INIT_HEALTH] (state, { info, lastKey }) {
     state[STATES.HEALTH_DECLA_INFO] = info
     state[STATES.LAST_HEALTH_KEY] = lastKey
+  },
+  [MUTATIONS.TOGGLE_FAVOURITE_AGENDA] (state, { agendaId }) {
+    const favouriteAgendas = [...state[STATES.FAVOURITE_AGENDAS]]
+    const favouriteAgendaIndex = favouriteAgendas.indexOf(agendaId)
+    if (favouriteAgendaIndex > -1) {
+      favouriteAgendas.splice(favouriteAgendaIndex, 1)
+    } else {
+      favouriteAgendas.push(agendaId)
+    }
+    localStorage.setItem(STORAGE_KEYS.FAVOURITE_AGENDAS, JSON.stringify(favouriteAgendas))
+    state[STATES.FAVOURITE_AGENDAS] = favouriteAgendas
+  },
+  [MUTATIONS.INIT_FAVOURITE_AGENDAS] (state) {
+    const favouriteAgendas = localStorage.getItem(STORAGE_KEYS.FAVOURITE_AGENDAS)
+    state[STATES.FAVOURITE_AGENDAS] = favouriteAgendas ? JSON.parse(favouriteAgendas) : []
   }
 }
 
