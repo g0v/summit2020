@@ -20,7 +20,7 @@ export function genMeta (name, content) {
 }
 
 // all three attribute can be either static string or callback that use vue instance as this
-export function friendlyHeader ({ title, description, coverUrl }) {
+export function friendlyHeader ({ title, description, coverUrl, siteBase }) {
   function getContentAtBest (sth) {
     if (typeof sth === 'string') {
       return sth
@@ -33,7 +33,7 @@ export function friendlyHeader ({ title, description, coverUrl }) {
 
   // return a head function
   return function () {
-    const PROD_URL = process.env.SITE_BASE
+    const PROD_URL = siteBase || process.env.SITE_BASE
     const getContentWithThis = getContentAtBest.bind(this)
     const head = { meta: [] }
 

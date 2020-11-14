@@ -3,13 +3,15 @@ require('dotenv').config()
 
 const DOMAIN = process.env.DOMAIN || 'summit.g0v.tw'
 const ROUTER_BASE = process.env.ROUTER_BASE || ''
+const SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
 
 // eslint-disable-next-line import/first
 import { friendlyHeader } from './utils/crawlerFriendly'
 
 const defaultHeader = friendlyHeader({
   description: 'g0v Summit 台灣零時政府雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等議題，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。',
-  coverUrl: '/og.png'
+  coverUrl: '/og.png',
+  siteBase: SITE_BASE
 })()
 
 export default {
@@ -58,7 +60,7 @@ export default {
     '~/plugins/vue-plugins'
   ],
   env: {
-    SITE_BASE: `https://${DOMAIN}${ROUTER_BASE}`,
+    SITE_BASE,
     SENTRY_DSN: process.env.SENTRY_DSN || '',
     APP_RELEASE: process.env.TRAVIS_COMMIT || ''
   },
