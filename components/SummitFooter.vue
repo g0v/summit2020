@@ -3,18 +3,18 @@
     .summitfooter__content.h-100.flex.flex-column.justify-center.items-center
       .license
         ext-link.white(to="https://creativecommons.org/licenses/by-sa/4.0/deed.zh_TW") CC by 4.0
-        | &nbsp;g0v Summit 2020
+        | &nbsp;- g0v Summit 2020
       .icon-container
         ext-link(to="https://www.facebook.com/g0v.tw")
-          img(:src="require('~/assets/images/icon-fb.svg')" alt="g0v Facebook")
+          img(src="~/assets/images/icon-fb.svg" alt="g0v Facebook")
         ext-link(to="http://join.g0v.tw")
-          img(:src="require('~/assets/images/icon-slack.svg')" alt="Join g0v Slack")
+          img(src="~/assets/images/icon-slack.svg" alt="Join g0v Slack")
         ext-link(to="https://twitter.com/g0vtw")
-          img(:src="require('~/assets/images/icon-twitter.svg')" alt="g0v Twitter")
+          img(src="~/assets/images/icon-twitter.svg" alt="g0v Twitter")
         ext-link(to="https://github.com/g0v/summit2020")
-          img(:src="require('~/assets/images/icon-GitHub.svg')" alt="Source Code")
+          img(src="~/assets/images/icon-GitHub.svg" alt="Source Code")
         a(href="mailto:host@summit.g0v.tw")
-          img(:src="require('~/assets/images/icon-email.svg')" alt="g0v Summit 2020 Email")
+          img(src="~/assets/images/icon-email.svg" alt="g0v Summit 2020 Email")
 </template>
 <i18n lang="yaml">
 // ref: https://nuxt-community.github.io/nuxt-i18n/vue-i18n-loader.html

@@ -21,7 +21,11 @@ const articleLinks = rootDoc.matchAll(/\[[^\]]+\]\(.*\/([a-zA-Z0-9_-]+)\)/g)
 // also put ignored link here
 const existingDocs = {
   'summit-2020-articles': true,
-  [config.rootHackmdId]: true
+  [config.rootHackmdId]: true,
+  'luwR-dgoQQ2fcMZp1nscVQ': true,
+  viwGsQIkrp6JOhyjk: true,
+  viwSevNkqvMUsCCPs: true,
+  viwNqVPw2XhqXbnWP: true
 }
 
 for (const linkMatched of articleLinks) {

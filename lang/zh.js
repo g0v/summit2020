@@ -61,6 +61,14 @@ export default {
     rows: require('~/assets/tables/交通地理位置.json'),
     isEn: false
   }),
+  'table/co-hosts': extractLanguageFromTable({
+    rows: require('~/assets/tables/共同主辦介紹.json'),
+    isEn: false
+  }),
+  'table/partners': extractLanguageFromTable({
+    rows: require('~/assets/tables/合作夥伴介紹.json'),
+    isEn: false
+  }),
 
   // proposal
   English: 'English',

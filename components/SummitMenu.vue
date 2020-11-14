@@ -28,6 +28,7 @@ en:
   learningCredit: Sign In/Off
   buildingCheckIn: Check In
   healthDecl: Health Declaration
+  partners: Partners
 zh:
   lang: English
   registration: 立刻報名
@@ -35,6 +36,7 @@ zh:
   learningCredit: 終身學習簽到退
   buildingCheckIn: 入館簽到
   healthDecl: 填健康聲明
+  partners: 合作夥伴
 </i18n>
 <script>
 import { mapGetters } from 'vuex'
@@ -55,9 +57,10 @@ export default {
     return {
       menuList: [
         // { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
-        { key: 'transport', url: '/transport' },
         // { key: 'speakers', url: '/speakers' },
         { key: 'agenda', url: '/agenda' },
+        { key: 'partners', url: '/partners' },
+        { key: 'transport', url: '/transport' },
         { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
         { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, isCta: true }
         // { key: 'partners', url: '/partners' },

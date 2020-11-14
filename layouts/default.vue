@@ -8,7 +8,7 @@
       )
       .page-container.flex-auto
         nuxt/
-      footer
+      summit-footer
     .dn.bg-mid-gray(ref="mobilemenu")
       summit-menu.pa2(
         :dark="true"
@@ -28,7 +28,7 @@ import { mapState } from 'vuex'
 
 import { STATES } from '~/store'
 import Navbar from '~/components/Navbar'
-import Footer from '~/components/Footer'
+import SummitFooter from '~/components/SummitFooter'
 import SummitMenu from '~/components/SummitMenu'
 import HealthModal from '~/components/HealthModal'
 import CheckInModal from '~/components/CheckInModal'
@@ -37,7 +37,7 @@ import Covid19Guidelines from '~/components/Covid19Guidelines'
 export default {
   components: {
     Navbar,
-    Footer,
+    SummitFooter,
     SummitMenu,
     CheckInModal,
     Covid19Guidelines,
