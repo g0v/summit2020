@@ -9,46 +9,27 @@ require('dotenv').config()
 
 const fs = require('fs')
 const path = require('path')
-const glob = require('glob')
-const Sentry = require('@sentry/node')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const _ = require('lodash')
 const yaml = require('yaml')
-const md5 = require('md5')
-const imageType = require('image-type')
-const imagemin = require('imagemin')
-const imageminJpegtran = require('imagemin-jpegtran')
-const imageminPngquant = require('imagemin-pngquant')
 const { proposalServer } = require('../.docs.config')
-const { downloadOneTable } = require('./airtableLibs')
+const {
+  downloadOneTable,
+  hostImage,
+  logError
+} = require('./airtableLibs')
 const {
   CONTENT_FIELD_DEFINITIONS,
   SPEAKER_FIELD_DEFINITIONS
 } = require('./projectFields')
-
-if (process.env.SENTRY_DSN) {
-  Sentry.init({
-    dsn: process.env.SENTRY_DSN
-  })
-}
 
 dayjs.extend(utc)
 
 const EXPORT_PATH = path.join(__dirname, '../assets/agendas/proposals')
 const SEC_PER_MIN = 60
 const ALLOW_MERGE_SINCE = dayjs('2020-09-06T12:00:00+08:00')
-const IMG_CACHE_BASE = {
-  url: 'cache/',
-  path: path.join(__dirname, '../static/cache')
-}
-const ACCEPTED_IMAGE_TYPE = ['png', 'jpg', 'webp', 'gif']
-
-function logError (message) {
-  Sentry.captureMessage(message)
-  console.error(message)
-}
 
 async function downloadProposals () {
   const allProposals = await axios.get(`${proposalServer}/projects`)
@@ -284,71 +265,6 @@ function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
   }
 
   return ret
-}
-
-async function hostImage (originalUrl, mayRetry = true) {
-  // download image and return new img url, if the image is host in 3rd party
-  // also optimize the image when possible
-
-  // example exception:
-  // https://drive.google.com/file/d/1MeM5enF9IfGVv-_Sgb5k_J5VC9DIETz9/view?usp=sharing
-  // https://imgur.com/a/8JI5s
-  originalUrl = originalUrl.trim()
-  if (!originalUrl || originalUrl.startsWith('/') || originalUrl.startsWith(IMG_CACHE_BASE.url)) {
-    // in case someone overwrite url to other local path XD
-    return originalUrl
-  }
-
-  const imgHash = md5(originalUrl)
-  const imgDest = path.join(IMG_CACHE_BASE.path, imgHash)
-  const imgUrl = `${IMG_CACHE_BASE.url}${imgHash}`
-
-  const matchedImage = glob.sync(`${imgDest}.*`)
-  if (matchedImage.length) {
-    const ext = path.extname(matchedImage[0])
-    return `${imgUrl}${ext}`
-  }
-
-  // download image one by one to avoid flooding
-  let img = null
-  try {
-    img = await axios.get(originalUrl, { responseType: 'arraybuffer' })
-  } catch (err) {
-    logError(`Error fetching ${originalUrl}: ${err}`)
-  }
-  if (!img || !img.data) {
-    logError(`Failed to download image ${originalUrl}`)
-    return originalUrl
-  }
-  const type = imageType(img.data)
-
-  if (!type || !ACCEPTED_IMAGE_TYPE.includes(type.ext)) {
-    if (originalUrl.includes('imgur.com') && mayRetry) {
-      // https://imgur.com/a/8JI5s
-      const html = img.data.toString()
-      const realImg = html.match(/https:\/\/i.imgur.com\/[0-9a-zA-Z.]+/)
-      if (realImg) {
-        return await hostImage(realImg[0], false)
-      }
-    }
-    logError(`Invalid image url: ${originalUrl}`)
-    return originalUrl
-  }
-
-  const miniImg = await imagemin.buffer(img.data, {
-    plugins: [
-      imageminJpegtran(),
-      imageminPngquant({
-        quality: [0.6, 0.8]
-      })
-    ]
-  })
-
-  // eslint-disable-next-line no-console
-  console.info(`Host image ${originalUrl} in ${imgHash}.${type.ext}`)
-
-  fs.writeFileSync(path.join(`${imgDest}.${type.ext}`), miniImg)
-  return `${imgUrl}.${type.ext}`
 }
 
 async function exportProposals (proposals, timeSheet) {

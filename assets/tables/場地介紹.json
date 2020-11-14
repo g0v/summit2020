@@ -24,99 +24,31 @@
     "照片們": [
       {
         "id": "attWyoZIkZUMHI6Ld",
-        "url": "https://dl.airtable.com/.attachments/3c38daa61952a6169dce7157a82ee73b/0974f12e/Hao_Xiang_Gong_Zuo_Shi_--_Zai_Hao_Xiang_Du_Guo_De_Zhe_550_Tian_._Rang_Wo_Dai_Ling_Ni_Yi_Qi_Hui_Gu_Wo_Zai_Hao_Xiang_De_Yi",
         "filename": "Hao_Xiang_Gong_Zuo_Shi_--_Zai_Hao_Xiang_Du_Guo_De_Zhe_550_Tian_._Rang_Wo_Dai_Ling_Ni_Yi_Qi_Hui_Gu_Wo_Zai_Hao_Xiang_De_Yi",
-        "size": 218094,
         "type": "image/jpeg",
-        "thumbnails": {
-          "small": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/663f35cc1be58ae4d3e179ca1564cd2e/cdcd6afd",
-            "width": 48,
-            "height": 36
-          },
-          "large": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/c6e9db704e16d3996a8eef5cecedeaad/9bcceece",
-            "width": 683,
-            "height": 512
-          },
-          "full": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/0fbbcd236672b5dfba7394d0f413d701/c493db5e",
-            "width": 3000,
-            "height": 3000
-          }
-        }
+        "orig_url": "cache/379b75155fd1cc21e6cd4e170a413622.jpg",
+        "large_url": "cache/635fcaf1045f871bfd1f3ebcef4731ab.jpg"
       },
       {
         "id": "att5WnBsb0P5U5QSO",
-        "url": "https://dl.airtable.com/.attachments/f6fdcaed49ef905933cdff21b0cfeb20/82229948/Hao_Xiang_Gong_Zuo_Shi__Tai_Nan_-_Xue_Xi_Huo_Dong_Kong_Jian_._Rang_Cheng_Shi_Xue_Xi_Bian_Jian_Dan_De_Nan_Tai_Wan_Gong_T",
         "filename": "Hao_Xiang_Gong_Zuo_Shi_)_Tai_Nan_-_Xue_Xi_Huo_Dong_Kong_Jian_._Rang_Cheng_Shi_Xue_Xi_Bian_Jian_Dan_De_Nan_Tai_Wan_Gong_T",
-        "size": 703300,
         "type": "image/jpeg",
-        "thumbnails": {
-          "small": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/2db4a6bb6a9f8f3985e07f5cf43b6432/0240be00",
-            "width": 48,
-            "height": 36
-          },
-          "large": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/4800b07f6d8d2f8f0804aa6a5152c445/4f8add3a",
-            "width": 683,
-            "height": 512
-          },
-          "full": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/ae847a1deee7761e11b488ae73873b23/e0968130",
-            "width": 3000,
-            "height": 3000
-          }
-        }
+        "orig_url": "cache/beaf15de19208ca0ef0e116d6c3fb4f7.jpg",
+        "large_url": "cache/eeabbea8ef760b9957168b15087625bd.jpg"
       },
       {
         "id": "attewlTKQAW0pNiEI",
-        "url": "https://dl.airtable.com/.attachments/1b1a17b1c7cff851e893729d19a19deb/1c25071d/Hao_Xiang_Gong_Zuo_Shi_2.0_-_Zhe_Shi_Ni_Zai_Zhui_Qiu_De_Huan_Jing_Ma__2018Nian_11Yue_Xue_Yuan_Zhao_Mu_-_Yi__...",
         "filename": "Hao_Xiang_Gong_Zuo_Shi_2.0_-_Zhe_Shi_Ni_Zai_Zhui_Qiu_De_Huan_Jing_Ma_(_2018Nian_11Yue_Xue_Yuan_Zhao_Mu_-_Yi__...",
-        "size": 310164,
         "type": "image/png",
-        "thumbnails": {
-          "small": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/9eea6bad9f33b17dee55a067b26c3c86/dc165407",
-            "width": 48,
-            "height": 36
-          },
-          "large": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/73cda53a208c16d3310e2d8e5185d298/e58d4943",
-            "width": 683,
-            "height": 512
-          },
-          "full": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/cc126e6a716f8c3fffcc07d57f57f4c8/fdfa5e7e",
-            "width": 3000,
-            "height": 3000
-          }
-        }
+        "orig_url": "cache/93b91363a0c704c2c092736e4b698898.png",
+        "large_url": "cache/18beb1cf7736ca06514a71d3cb757921.png"
       },
       {
         "id": "attkK6wF3tB08iC06",
-        "url": "https://dl.airtable.com/.attachments/789cd12a417cd7edf8557dbec6bb49b3/b0cf8571/Hao_Xiang_Gong_Zuo_Shi_2.0_-_Zhe_Shi_Ni_Zai_Zhui_Qiu_De_Huan_Jing_Ma__2018Nian_11Yue_Xue_Yuan_Zhao_Mu_-_Yi__...",
         "filename": "Hao_Xiang_Gong_Zuo_Shi_2.0_-_Zhe_Shi_Ni_Zai_Zhui_Qiu_De_Huan_Jing_Ma_(_2018Nian_11Yue_Xue_Yuan_Zhao_Mu_-_Yi__...",
-        "size": 297411,
         "type": "image/png",
-        "thumbnails": {
-          "small": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/28f5ae55b1b9fa238ac1e3cc54962a6c/b533b74d",
-            "width": 48,
-            "height": 36
-          },
-          "large": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/e4573f293908c2e1a077ca75535b2452/a650b741",
-            "width": 683,
-            "height": 512
-          },
-          "full": {
-            "url": "https://dl.airtable.com/.attachmentThumbnails/2aef3adf57bb59ad4b448a1e378dbeca/d51ec490",
-            "width": 3000,
-            "height": 3000
-          }
-        }
+        "orig_url": "cache/495f7d4cc61d881044cb2da958cd20d1.png",
+        "large_url": "cache/163ac0db0a8bd94bb4cab02b41651486.png"
       }
     ],
     "說明-華語": "於台南經營 co-working space，並且提供免費的資訊培育，以 mentor 引導、學員自主學習的方式，量產好品質的工程師。好想工作室也是台南資訊社群聚集地，舉辦超過 600 場公開講座，同時對接國內外的業界，讓從事資訊相關的年輕人可以根留台南。\n",
