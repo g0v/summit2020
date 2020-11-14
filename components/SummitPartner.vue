@@ -56,7 +56,7 @@ $taller-height: 4rem;
 
 .partner {
   border-radius: 2px;
-  border: 0.125rem #c2c0c0 solid;
+  border: 1px #c2c0c0 solid;
   padding: 1rem 1.5rem 2rem;
   @include not-small-screen {
     margin-bottom: 2rem;

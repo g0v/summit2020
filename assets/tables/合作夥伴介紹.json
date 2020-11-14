@@ -19,108 +19,6 @@
     "合作角色-en": "Co-organizer"
   },
   {
-    "_id": "recQOw8pjmqRO6Oy0",
-    "id": "recQOw8pjmqRO6Oy0",
-    "名稱-華語": "台南市政府",
-    "名稱-en": "Tainan City Government ",
-    "logo": [
-      {
-        "id": "att8SuFiOObIKVrW8",
-        "filename": "logo_G_台南市政府.png",
-        "type": "image/png",
-        "large_url": "cache/6d924a55fe8a46baf6fbd71e001af8b6.png"
-      }
-    ],
-    "合作角色": "協辦單位",
-    "合作角色-en": "Supporting organizer"
-  },
-  {
-    "_id": "recpynqGwXyaY07O2",
-    "id": "recpynqGwXyaY07O2",
-    "名稱-華語": "財團法人開放文化基金會",
-    "名稱-en": "Open Culture Foundation, OCF",
-    "logo": [
-      {
-        "id": "attCSysOqFL15yphz",
-        "filename": "logo_G_OCF 開放文化基金會.png",
-        "type": "image/png",
-        "large_url": "cache/9d4d5440dd1b306d5a660e9c31377550.png"
-      }
-    ],
-    "合作角色": "協辦單位",
-    "合作角色-en": "Supporting organizer"
-  },
-  {
-    "_id": "rec77RwQQOq5kkFTA",
-    "id": "rec77RwQQOq5kkFTA",
-    "名稱-華語": "國立成功大學計算機與網路中心",
-    "名稱-en": "NCKU Computer and Network Center",
-    "logo": [
-      {
-        "id": "att3A5OTApLLprnVm",
-        "filename": "logo_G_國立成功大學計算機與網路中心.png",
-        "type": "image/png",
-        "large_url": "cache/c9b23b20c264745d031703f47b30cf3b.png"
-      }
-    ],
-    "合作角色": "協辦單位",
-    "合作角色-en": "Supporting organizer"
-  },
-  {
-    "_id": "recJd5lyiegYlnERw",
-    "id": "recJd5lyiegYlnERw",
-    "名稱-華語": "HackMD",
-    "名稱-en": "HackMD",
-    "logo": [
-      {
-        "id": "attSdAwu3kQoLJWSR",
-        "filename": "logo_G_HackMD _ TBC.png",
-        "type": "image/png",
-        "large_url": "cache/6f40a709a59d929684bbe583377a382a.png"
-      }
-    ],
-    "合作角色": "協辦單位",
-    "合作角色-en": "Supporting organizer"
-  },
-  {
-    "_id": "recYH7Yq0e03B3f3l",
-    "id": "recYH7Yq0e03B3f3l",
-    "名稱-華語": "國立成功大學規劃與設計學院",
-    "名稱-en": "The College of Planning and Design, National Cheng Kung University (NCKU)",
-    "說明": "2003年8月1日，原本設於國立成功大學工學院內的建築學系、都市計劃學系及工業設計學系，因應學校組織之調整，組合成立規劃與設計學院。綜觀國內綜合性國立大學，成功大學是唯一設有規劃與設計學院者。\n\n回顧過去的發展，建築學系為台灣建築相關科系中歷史最悠久的系，於1944年設立於台南高等工業學校時期。並自1947年起，於台灣省立工學院時期改制為建築工程學系，基本上以工程實務為導向。隨著時代變遷，1968年成立碩士班，並於1970年更名為建築學系，而由工程實務兼顧設計。1991年成立博士班後，設計、工程實務之外，也兼顧研究發展。都市計劃學系成立於1971年，是國內最早設立的都市計劃學系，1987年成立碩士班，1994年成立博士班。工業設計學系成立於1973年，是國內最早的工業設計學系，於1991年為配合國家經建發展，提升產品設計品質，設立碩士班，並於2000年設立博士班。2003年教育部在本院成立生活流行用品設計策略聯盟教學資源中心，結合產業界及國內相關系所，與國際知名機構結盟，以培育優秀之設計人才。創意產業設計研究所設立於2006年，為國內第一所此類型研究所，配合2006國家重點發展計劃及邁向國際一流大學計劃，同時設立博士班及碩士班，採全英文授課，開國內先驅。\n",
-    "說明-en": "The College of Planning and Design, National Cheng Kung University (NCKU), emerged in August 2003 from the College of Engineering, and initially included the Department of Architecture, Department of Urban Planning and Department of Industrial Design. The Department of Architecture began its development in 1944, then under Tainan Technical College, the predecessor of NCKU, during the Japanese colonial time. The Department of Urban Planning and Department of Industrial Design were further established in 1971 and 1973, respectively. Besides programs for regular students, the Department of Architecture and Industrial Design also offer continuing education for professionals working with design practice and wish to continue their education.\n\nIn 2006, the Institute of Creative Industries Design was created to initiate another new post-graduate program. It aims to widen our scope of planning and design and enhance our competitiveness in the competing world of higher education. By offering all courses in English, this institute welcomes students from different nationalities and professional backgrounds.\n\nWe are proud to say that all the above-mentioned departments and institutes were founded as pioneers and have been playing leading roles in their academic field in Taiwan.\n",
-    "logo": [
-      {
-        "id": "attexHRMdIUR4WY8Y",
-        "filename": "logo_D_國立成功大學規劃與設計學院 (綠色魔法學校).png",
-        "type": "image/png",
-        "large_url": "cache/e7d0a64ddd05ade31fc8af57d26caffb.png"
-      }
-    ],
-    "url": " http://www.cpd.ncku.edu.tw/",
-    "合作角色": "協辦單位",
-    "合作角色-en": "Supporting organizer"
-  },
-  {
-    "_id": "recuVwRij2FGW3MLu",
-    "id": "recuVwRij2FGW3MLu",
-    "名稱-華語": "國家發展委員會",
-    "名稱-en": "National Development Council",
-    "說明": "國家發展委員會為行政院重要政策規劃機關，擔負國家整體發展之規劃、設計、審議及管考等任務。面對急遽變遷的國內外情勢，國家發展委員會將從國家永續發展資源統籌規劃的視野與高度，秉持「勇於創新、敢於突破、善於主動、長於效率」的理念，協調推動經濟、社會、產業、人力、國土、政府治理等重大政策，開創國家發展新格局。",
-    "說明-en": "The NDC is to act as the main policy-planning agency of the Executive Yuan, which is charged with the tasks of planning, designing, coordinating, reviewing and evaluating the nation’s overall development. Acting from the perspective of overall planning of sustainable national development resources, the NDC uphold the ideals of “boldly pursuing innovation, intrepidly breaking down barriers, striving for excellence in action, and increasing efficiency.” Coordinating the implementation of major policies for economic, social, industrial, manpower, land and political governance, it will work to open up new horizons for national development in tune with the rapid changes occurring internally and externally.",
-    "logo": [
-      {
-        "id": "attmo1Q9Ttd7fdZKE",
-        "filename": "logo_A_國家發展委員會.png",
-        "type": "image/png",
-        "large_url": "cache/3d1e32c1390994a1ba17dde6edf9c5ee.png"
-      }
-    ],
-    "url": "https://www.ndc.gov.tw/",
-    "合作角色": "協辦單位",
-    "合作角色-en": "Supporting organizer"
-  },
-  {
     "_id": "rec2SiRXHMJNPoM1d",
     "id": "rec2SiRXHMJNPoM1d",
     "名稱-華語": "可立可股份有限公司",
@@ -290,6 +188,108 @@
     "url": "https://www.archilife.org/",
     "合作角色": "參與者",
     "合作角色-en": "Participant"
+  },
+  {
+    "_id": "recQOw8pjmqRO6Oy0",
+    "id": "recQOw8pjmqRO6Oy0",
+    "名稱-華語": "台南市政府",
+    "名稱-en": "Tainan City Government ",
+    "logo": [
+      {
+        "id": "att8SuFiOObIKVrW8",
+        "filename": "logo_G_台南市政府.png",
+        "type": "image/png",
+        "large_url": "cache/6d924a55fe8a46baf6fbd71e001af8b6.png"
+      }
+    ],
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer"
+  },
+  {
+    "_id": "recpynqGwXyaY07O2",
+    "id": "recpynqGwXyaY07O2",
+    "名稱-華語": "財團法人開放文化基金會",
+    "名稱-en": "Open Culture Foundation, OCF",
+    "logo": [
+      {
+        "id": "attCSysOqFL15yphz",
+        "filename": "logo_G_OCF 開放文化基金會.png",
+        "type": "image/png",
+        "large_url": "cache/9d4d5440dd1b306d5a660e9c31377550.png"
+      }
+    ],
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer"
+  },
+  {
+    "_id": "rec77RwQQOq5kkFTA",
+    "id": "rec77RwQQOq5kkFTA",
+    "名稱-華語": "國立成功大學計算機與網路中心",
+    "名稱-en": "NCKU Computer and Network Center",
+    "logo": [
+      {
+        "id": "att3A5OTApLLprnVm",
+        "filename": "logo_G_國立成功大學計算機與網路中心.png",
+        "type": "image/png",
+        "large_url": "cache/c9b23b20c264745d031703f47b30cf3b.png"
+      }
+    ],
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer"
+  },
+  {
+    "_id": "recJd5lyiegYlnERw",
+    "id": "recJd5lyiegYlnERw",
+    "名稱-華語": "HackMD",
+    "名稱-en": "HackMD",
+    "logo": [
+      {
+        "id": "attSdAwu3kQoLJWSR",
+        "filename": "logo_G_HackMD _ TBC.png",
+        "type": "image/png",
+        "large_url": "cache/6f40a709a59d929684bbe583377a382a.png"
+      }
+    ],
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer"
+  },
+  {
+    "_id": "recYH7Yq0e03B3f3l",
+    "id": "recYH7Yq0e03B3f3l",
+    "名稱-華語": "國立成功大學規劃與設計學院",
+    "名稱-en": "The College of Planning and Design, National Cheng Kung University (NCKU)",
+    "說明": "2003年8月1日，原本設於國立成功大學工學院內的建築學系、都市計劃學系及工業設計學系，因應學校組織之調整，組合成立規劃與設計學院。綜觀國內綜合性國立大學，成功大學是唯一設有規劃與設計學院者。\n\n回顧過去的發展，建築學系為台灣建築相關科系中歷史最悠久的系，於1944年設立於台南高等工業學校時期。並自1947年起，於台灣省立工學院時期改制為建築工程學系，基本上以工程實務為導向。隨著時代變遷，1968年成立碩士班，並於1970年更名為建築學系，而由工程實務兼顧設計。1991年成立博士班後，設計、工程實務之外，也兼顧研究發展。都市計劃學系成立於1971年，是國內最早設立的都市計劃學系，1987年成立碩士班，1994年成立博士班。工業設計學系成立於1973年，是國內最早的工業設計學系，於1991年為配合國家經建發展，提升產品設計品質，設立碩士班，並於2000年設立博士班。2003年教育部在本院成立生活流行用品設計策略聯盟教學資源中心，結合產業界及國內相關系所，與國際知名機構結盟，以培育優秀之設計人才。創意產業設計研究所設立於2006年，為國內第一所此類型研究所，配合2006國家重點發展計劃及邁向國際一流大學計劃，同時設立博士班及碩士班，採全英文授課，開國內先驅。\n",
+    "說明-en": "The College of Planning and Design, National Cheng Kung University (NCKU), emerged in August 2003 from the College of Engineering, and initially included the Department of Architecture, Department of Urban Planning and Department of Industrial Design. The Department of Architecture began its development in 1944, then under Tainan Technical College, the predecessor of NCKU, during the Japanese colonial time. The Department of Urban Planning and Department of Industrial Design were further established in 1971 and 1973, respectively. Besides programs for regular students, the Department of Architecture and Industrial Design also offer continuing education for professionals working with design practice and wish to continue their education.\n\nIn 2006, the Institute of Creative Industries Design was created to initiate another new post-graduate program. It aims to widen our scope of planning and design and enhance our competitiveness in the competing world of higher education. By offering all courses in English, this institute welcomes students from different nationalities and professional backgrounds.\n\nWe are proud to say that all the above-mentioned departments and institutes were founded as pioneers and have been playing leading roles in their academic field in Taiwan.\n",
+    "logo": [
+      {
+        "id": "attexHRMdIUR4WY8Y",
+        "filename": "logo_D_國立成功大學規劃與設計學院 (綠色魔法學校).png",
+        "type": "image/png",
+        "large_url": "cache/e7d0a64ddd05ade31fc8af57d26caffb.png"
+      }
+    ],
+    "url": " http://www.cpd.ncku.edu.tw/",
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer"
+  },
+  {
+    "_id": "recuVwRij2FGW3MLu",
+    "id": "recuVwRij2FGW3MLu",
+    "名稱-華語": "國家發展委員會",
+    "名稱-en": "National Development Council",
+    "說明": "國家發展委員會為行政院重要政策規劃機關，擔負國家整體發展之規劃、設計、審議及管考等任務。面對急遽變遷的國內外情勢，國家發展委員會將從國家永續發展資源統籌規劃的視野與高度，秉持「勇於創新、敢於突破、善於主動、長於效率」的理念，協調推動經濟、社會、產業、人力、國土、政府治理等重大政策，開創國家發展新格局。",
+    "說明-en": "The NDC is to act as the main policy-planning agency of the Executive Yuan, which is charged with the tasks of planning, designing, coordinating, reviewing and evaluating the nation’s overall development. Acting from the perspective of overall planning of sustainable national development resources, the NDC uphold the ideals of “boldly pursuing innovation, intrepidly breaking down barriers, striving for excellence in action, and increasing efficiency.” Coordinating the implementation of major policies for economic, social, industrial, manpower, land and political governance, it will work to open up new horizons for national development in tune with the rapid changes occurring internally and externally.",
+    "logo": [
+      {
+        "id": "attmo1Q9Ttd7fdZKE",
+        "filename": "logo_A_國家發展委員會.png",
+        "type": "image/png",
+        "large_url": "cache/3d1e32c1390994a1ba17dde6edf9c5ee.png"
+      }
+    ],
+    "url": "https://www.ndc.gov.tw/",
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer"
   },
   {
     "_id": "recMUddMTtqsjHj6f",
