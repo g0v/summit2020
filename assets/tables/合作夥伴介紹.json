@@ -84,10 +84,10 @@
     "說明-en": "Luminate is a global philanthropic organisation focused on empowering people and institutions to work together to build just and fair societies. We support innovative and courageous organisations and entrepreneurs around the world, and we advocate for the policies and actions that will drive change across four impact areas: Civic Empowerment, Data & Digital Rights, Financial Transparency, and Independent Media. We work with our partners to ensure that everyone has the opportunity to participate in and to shape the issues affecting their societies, and to make those in positions of power more responsive and accountable. Luminate was established in 2018 by philanthropists Pierre and Pam Omidyar. The organisation was founded by The Omidyar Group. ",
     "logo": [
       {
-        "id": "attja9ylTlUENzSbc",
-        "filename": "Luminate_logo_primary_strapline_BLACK_RGB.png",
+        "id": "attiIjc5lhnMzXr2u",
+        "filename": "logo_A_LUMINATE.png",
         "type": "image/png",
-        "large_url": "cache/c74d6c8059c4120dd8166af64feff87e.png"
+        "large_url": "cache/d2905c31de2c2e6b9a07720af07a7ba9.png"
       }
     ],
     "url": "https://luminategroup.com/",
@@ -309,5 +309,9 @@
     "url": "https://www.facebook.com/sorryyouthtw/",
     "合作角色": "特別感謝",
     "合作角色-en": "Special thanks"
+  },
+  {
+    "_id": "recXsmfbVYb5FF3VH",
+    "id": "recXsmfbVYb5FF3VH"
   }
 ]
