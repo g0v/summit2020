@@ -84,12 +84,14 @@ function downloadOneTable (tableInfo, toFile = true) {
             }
           }
         }
-        rows.push({
-          // `id` may be used in fields
-          _id: record.id,
-          id: record.id,
-          ...fields
-        })
+        if (Object.keys(fields).length) {
+          rows.push({
+            // `id` may be used in fields
+            _id: record.id,
+            id: record.id,
+            ...fields
+          })
+        }
       }
       fetchNextPage()
     }, (err) => {
