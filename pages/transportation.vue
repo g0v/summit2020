@@ -204,7 +204,7 @@ export default {
   },
   head: friendlyHeader({
     title () {
-      return this.$t('transport')
+      return this.$t('transportation')
     },
     coverUrl: '/og-transport.jpg'
   })

@@ -56,7 +56,7 @@ export default {
       menuList: [
         // { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
         // { key: 'speakers', url: '/speakers' },
-        { key: 'coc', url: '/coc' },
+        { key: 'coc', url: '/code-of-conduct' },
         { key: 'agenda', url: '/agenda' },
         { key: 'partners', url: '/partners' },
         { key: 'transportation', url: '/transportation' },
