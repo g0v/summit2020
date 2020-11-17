@@ -19,6 +19,7 @@ export default {
   summitDate: '2020/12/03~06',
 
   // navbar
+  coc: ' 行為準則',
   agenda: '議程',
   partners: '合作夥伴',
   cosponsor: '共同主辦',

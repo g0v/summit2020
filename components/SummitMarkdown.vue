@@ -1,6 +1,6 @@
 <template>
   <div class="summitmd">
-    <vue-markdown>
+    <vue-markdown :toc="true">
       {{ cleanMd }}
     </vue-markdown>
   </div>
@@ -34,8 +34,13 @@ export default {
 <style lang="scss" scoped>
 .summitmd {
   padding: 1rem;
-  /deep/ ul {
-    list-style: inherit;
+  /deep/ {
+    ul {
+      list-style: inherit;
+    }
+    .toc-anchor-link {
+      display: none;
+    }
   }
 }
 </style>
