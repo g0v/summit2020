@@ -23,7 +23,7 @@ export default {
   agenda: 'Agenda',
   partners: 'Partners',
   cosponsor: 'Cosponsor',
-  transport: 'Transportation',
+  transportation: 'Transportation',
   live: 'Live',
   feed: 'Feed',
   staff: 'Staff',

@@ -23,27 +23,29 @@
         <h1 class="f2">
           {{ $t('locations') }}
         </h1>
-        <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="dib pa3 w-100 w-50-l pa2-l">
-          <div class="location">
-            <h3 class="f3" @click="whereIs('map')">
-              {{ location[$t('venuelocationName')] }}
-            </h3>
-            <a class="location-address" :href="location['share-link']" target="_blank">
-              <img :src="require('../assets/images/icon-map.png')" alt="">
-              <span>{{ location[$t('venuelocationAddress')] }}</span>
-              <img class="location-address-navigation" :src="require('../assets/images/icno-navigation.png')" alt="">
-            </a>
-            <!--
-            <img class="location-photo" :src="require(`../assets/images/${location.photo}`)" alt="">
-            -->
-            <div class="location-event-name mt2">
-              <span>{{ $t('events') }}</span>
+        <div class="locations__item">
+          <div v-for="location in locations" :id="`location-${location.id}`" :key="`location-${location.id}`" class="pa3 pa0-l">
+            <div class="location">
+              <h3 class="f3" @click="whereIs('map')">
+                {{ location[$t('venuelocationName')] }}
+              </h3>
+              <a class="location-address flex items-center mv3" :href="location['share-link']" target="_blank">
+                <img :src="require('../assets/images/icon-map.png')" alt="">
+                <span>{{ location[$t('venuelocationAddress')] }}</span>
+                <img class="location-address-navigation" :src="require('../assets/images/icno-navigation.png')" alt="">
+              </a>
+              <!--
+              <img class="location-photo" :src="require(`../assets/images/${location.photo}`)" alt="">
+              -->
+              <div class="location-event-name mt2">
+                <span>{{ $t('events') }}</span>
+              </div>
+              <ul class="location-events">
+                <li v-for="event in location.events" :key="event.id">
+                  <span>{{ event['日期'] | MM_DD }} {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
+                </li>
+              </ul>
             </div>
-            <ul class="location-events">
-              <li v-for="event in location.events" :key="event.id">
-                <span>{{ event['日期'] | MM_DD }} {{ event[$t('venuelocationEventName')] }} - {{ event[$t('venuelocationSubEventName')] }}</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -295,6 +297,14 @@ export default {
       right: 0;
     }
   }
+  &__item {
+    @include not-small-screen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+  }
 }
 
 .location {
@@ -302,20 +312,14 @@ export default {
   margin-bottom: 90px - 20px;
   &-address {
     color: #555555;
-    display: inline-block;
-    line-height: 3;
-    cursor: pointer;
-    img, span {
-      vertical-align: middle;
+
+    span {
+      max-width: calc(100% - 2rem);
+      padding: 0 0.5rem;
     }
-    position: relative;
-    &-navigation {
-      position: absolute;
-      left: 100%;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      transform: translate(15.4px);
+
+    img {
+      width: 1rem;
     }
   }
   &-event-name {
