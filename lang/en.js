@@ -19,10 +19,11 @@ export default {
   summitDate: 'Dec 03-06, 2020',
 
   // navbar
+  coc: 'Code of Conduct',
   agenda: 'Agenda',
   partners: 'Partners',
   cosponsor: 'Cosponsor',
-  transport: 'Transportation',
+  transportation: 'Transportation',
   live: 'Live',
   feed: 'Feed',
   staff: 'Staff',

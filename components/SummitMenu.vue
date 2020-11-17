@@ -56,9 +56,10 @@ export default {
       menuList: [
         // { key: 'venueAdmissionSignIn', url: '/VenueAdmissionSignInForm' },
         // { key: 'speakers', url: '/speakers' },
+        { key: 'coc', url: '/coc' },
         { key: 'agenda', url: '/agenda' },
         { key: 'partners', url: '/partners' },
-        { key: 'transport', url: '/transport' },
+        { key: 'transportation', url: '/transportation' },
         { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
         { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, isCta: true }
         // { key: 'partners', url: '/partners' },
