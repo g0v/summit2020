@@ -309,5 +309,22 @@
     "url": "https://www.facebook.com/sorryyouthtw/",
     "合作角色": "特別感謝",
     "合作角色-en": "Special thanks"
+  },
+  {
+    "_id": "recXsmfbVYb5FF3VH",
+    "id": "recXsmfbVYb5FF3VH",
+    "名稱-華語": "台南市聲暉協進會",
+    "名稱-en": "Tainan Parents Association of the Deaf",
+    "logo": [
+      {
+        "id": "attvraJxW4yB3UbPr",
+        "filename": "logo_H_台南市聲暉協進會.png",
+        "type": "image/png",
+        "large_url": "cache/7f2395d87acc6da2359ae2455bf7d45d.png"
+      }
+    ],
+    "url": "https://www.voiced.org.tw/",
+    "合作角色": "特別感謝",
+    "合作角色-en": "Special thanks"
   }
 ]
