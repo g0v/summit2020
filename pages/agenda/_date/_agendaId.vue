@@ -73,7 +73,7 @@ import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
 import SummitPerson from '~/components/SummitPerson'
-import agendaMixin from '~/utils/AgendaMixin'
+import agendaMixin, { DEFAULT_DATE } from '~/utils/AgendaMixin'
 import commentMap from '~/assets/agendas/commentCache.json'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
@@ -107,7 +107,7 @@ export default {
       if (this.isModalVisible) {
         return this.agenda.timeSheet.議程日期
       }
-      return this.$route.params.date
+      return this.$route.params.date || DEFAULT_DATE
     },
     dayN () {
       const startDate = dayjs(this.startDate)

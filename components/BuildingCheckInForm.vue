@@ -83,10 +83,9 @@ import axios from 'axios'
 import { mapGetters } from 'vuex'
 import dayjs from 'dayjs'
 import { GETTERS } from '~/store'
+import { DEFAULT_DATE, VALID_DATE_LIST } from '~/utils/AgendaMixin'
 
 const FORM_URL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSelVTO7MNPnRglcH12Zi-kBaqjbOi7KpU2zDaxIdBYOoENO-Q/formResponse'
-const DEFAULT_DATE = '2020-12-04'
-const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
 
 const FIELD_MAPPING = {
   building: 'entry.488819449',

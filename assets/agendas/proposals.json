@@ -541,7 +541,7 @@
         "city": "台南",
         "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
-        "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
+        "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
       "議程開始時間": "2020-12-05T10:50",
@@ -722,7 +722,7 @@
         "city": "台南",
         "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
-        "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
+        "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
       "議程開始時間": "2020-12-05T09:30",
@@ -925,6 +925,8 @@
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
         "display_name": "洪芷寧",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -1220,7 +1222,8 @@
         "organization": "南方創客基地 技術總監",
         "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
-        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
+        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"",
+        "bio_en": "I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. "
       },
       "議程開始時間": "2020-12-04T16:00",
       "議程長度": 30,
@@ -1464,7 +1467,7 @@
         "city": "台南",
         "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
-        "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
+        "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
       "議程開始時間": "2020-12-05T10:30",
@@ -1689,7 +1692,8 @@
         "organization": "南方創客基地 技術總監",
         "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
-        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
+        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"",
+        "bio_en": "I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. "
       },
       "議程開始時間": "2020-12-04T15:30",
       "議程長度": 30,
@@ -2071,6 +2075,8 @@
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
         "display_name": "洪芷寧",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -2126,6 +2132,12 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "熊",
+        "organization": "南方創客基地/Fablab Tainan社群",
+        "organization_en": "Fablab Southern Taiwan Maker Center",
+        "avatar_url": "cache/d059637bdb1cf76fead5d9ec3a31f6c5.jpg",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
+        "bio": "求學、生活於台南，喜愛動手做與迷戀自造者運動的精神。為Fablab Tainan社群成員，目前任職於南方創客基地擔任行政總監。希望把自造者的精神推動於各處，讓人人都能成為maker!",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T14:30",
@@ -2232,6 +2244,12 @@
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "主持人": {
         "display_name": "雨蒼",
+        "organization": "g0v參與者",
+        "organization_en": "g0v",
+        "avatar_url": "cache/c7786e6874f4566f44a0795a7258b3d2.jpg",
+        "city": "新北",
+        "city_en": "New Taipei City, Taiwan",
+        "bio": "自由軟體工作者、公民記者，g0v長期參與者，長期關心開放政府。",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T16:30",
@@ -2811,8 +2829,10 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "jxtsai",
+        "info_url": "https://medium.twngo.xyz",
+        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
+        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
       },
       "議程開始時間": "2020-12-05T10:50",
       "議程長度": 20,
@@ -3050,7 +3070,8 @@
         "organization": "南方創客基地 技術總監",
         "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
-        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
+        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"",
+        "bio_en": "I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. "
       },
       "議程開始時間": "2020-12-04T16:30",
       "議程長度": 30,
@@ -3127,6 +3148,12 @@
       "議程場地-en": "Wu Garden - Former Tainan Public Hall",
       "主持人": {
         "display_name": "雨蒼",
+        "organization": "g0v參與者",
+        "organization_en": "g0v",
+        "avatar_url": "cache/c7786e6874f4566f44a0795a7258b3d2.jpg",
+        "city": "新北",
+        "city_en": "New Taipei City, Taiwan",
+        "bio": "自由軟體工作者、公民記者，g0v長期參與者，長期關心開放政府。",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T17:00",
@@ -3381,7 +3408,8 @@
         "organization": "南方創客基地 技術總監",
         "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
-        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
+        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"",
+        "bio_en": "I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. "
       },
       "議程開始時間": "2020-12-04T17:30",
       "議程長度": 30,
@@ -3548,7 +3576,8 @@
         "organization": "南方創客基地 技術總監",
         "organization_en": "Fablab STMC Technical Director",
         "avatar_url": "cache/bbf5a3eefec12aba9a35b09021b551b4.png",
-        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"bio_en: >- I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. \""
+        "bio": "畢業於嘉義大學生物機電工程研究所，曾任職傳產系統工程師。喜愛學新技術及自造小玩意，碰巧搭上創客運動風潮，2016在Fablab Academy結業。在南方創客基地服務，主要負責場地設備維護管理、課程規畫執行及專案開發。\"",
+        "bio_en": "I got an MA in Department of Biomechatronic Engineering of Chiayi University. And be a systems engineer for a few years in food industries. I love learning new technologies and self-made gadgets. I happened to catch up with the Maker movement, and got the certify of Fablab Academy in 2016. Since then I working for Fablab STMC, including maintenance and management of equipment, course planning and execution, and project development. "
       },
       "議程開始時間": "2020-12-04T17:00",
       "議程長度": 30,
@@ -3882,7 +3911,7 @@
         "city": "台南",
         "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
-        "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
+        "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
       "議程開始時間": "2020-12-05T10:10",
@@ -4009,6 +4038,8 @@
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
         "display_name": "洪芷寧",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -4128,8 +4159,10 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "jxtsai",
+        "info_url": "https://medium.twngo.xyz",
+        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
+        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
       },
       "議程開始時間": "2020-12-05T09:30",
       "議程長度": 40,
@@ -4216,8 +4249,8 @@
   },
   "5f02d14ee88a4948daf87fb7": {
     "id": "5f02d14ee88a4948daf87fb7",
-    "title": "What are the interns of Code for Japan doing?",
-    "title_en": "",
+    "title": "Code for Japan 的實習生們都在幹嘛？",
+    "title_en": "What are the interns of Code for Japan doing?",
     "summary": "I guess there aren't many Code for communities or civic tech communities that hire interns. But in Japan, there are 6 students interns hired by Code for Japan. I'm going to give a presentation about what the student interns of Code for Japan are doing, are working. \nFurthermore, I'm going to introduce the civic tech award that we interns are planning, named \"Civic tech Challenge Cup U-22\". The winner team of this contest “Civichat” will give presentation about their product.\n",
     "summary_en": "",
     "oral_language": "English",
@@ -4257,7 +4290,7 @@
     "timeSheet": {
       "id": "5f02d14ee88a4948daf87fb7",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-12T05:38:43.000Z",
+      "最後更新時間": "2020-11-15T08:26:32.000Z",
       "分類主題-華語": "自己的學習自己來",
       "分類主題-en": "Self-learning, learn yourself",
       "議程場地-華語": "臺南市美術館 2 館 - 跨域展演廳",
@@ -4395,8 +4428,10 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "jxtsai",
+        "info_url": "https://medium.twngo.xyz",
+        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
+        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
       },
       "議程開始時間": "2020-12-05T10:30",
       "議程長度": 20,
@@ -4567,8 +4602,10 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "jxtsai",
+        "info_url": "https://medium.twngo.xyz",
+        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
+        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
       },
       "議程開始時間": "2020-12-05T10:10",
       "議程長度": 20,
@@ -5012,6 +5049,8 @@
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
         "display_name": "洪芷寧",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -5028,8 +5067,8 @@
   },
   "1204-jothon-0": {
     "id": "1204-jothon-0",
-    "updatedAt": "2020-11-06T15:25:57.000Z",
-    "createdAt": "2020-11-06T15:25:57.000Z",
+    "updatedAt": "2020-11-15T16:07:16.000Z",
+    "createdAt": "2020-11-15T16:07:16.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
@@ -5047,6 +5086,7 @@
         "display_name": "Sch001 Demo Day 2020 獲獎團隊",
         "display_name_en": "Sch001 Demo Day 2020 Awardees",
         "organization": "g0v.tw",
+        "organization_en": "g0v.tw",
         "avatar_url": "cache/b58873b46d0ef51ca17643f99b977b9d.png",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -5083,8 +5123,8 @@
   },
   "1204-jothon-1": {
     "id": "1204-jothon-1",
-    "updatedAt": "2020-11-06T15:27:09.000Z",
-    "createdAt": "2020-11-06T15:27:09.000Z",
+    "updatedAt": "2020-11-15T16:07:49.000Z",
+    "createdAt": "2020-11-15T16:07:49.000Z",
     "title": "停學，不停學",
     "title_en": "Stop Schooling, Don’t Stop Learning",
     "summary": "這個議程集結台灣、日本和韓國的公民黑客，對談武漢肺炎（COVID-19）爆發之後的教育領域。全世界的教育生態和教學方法已經完全改變，在這樣的變化當中，我們在台灣、日本、韓國發現一些相似之處：學生可能不去學校，但是學生不能停止學習。學生正處在這一波數位解方和教學實驗的浪潮中，在武漢肺炎流行期間，教育的不同之處和困難之處在哪？台灣、日本和韓國的公民黑客將分享自身國家的情況，試著找出「後肺炎時代」的新日常和新解方。",
@@ -5101,8 +5141,10 @@
       {
         "display_name": "Miley Takesada",
         "organization": "Code for Japan",
+        "organization_en": "Code for Japan",
         "avatar_url": "cache/347efea3de16f86c00ecde56d98b116f.jpg",
-        "city": "Tokyo, Japan",
+        "city": "東京",
+        "city_en": "Tokyo, Japan",
         "info_url": "https://medium.com/@mamisada",
         "bio": "Miley 是 Code for Japan 的社群經理、在大阪大學研究兒童發展的博士生。他曾在 LITALICO 工作，自 2018 年起舉辦「Social Fighter Award」，這個獎項是給關注社會議題的科技團隊。今年他與 Code for Japan 的實習生一起舉辦「Civictech Challenge Cup U-22」。",
         "bio_en": "Community manager of Code for Japan and she is a PhD student of child development at Osaka Univ.  She worked for LITALICO and held Social Fighter Award, the award for the team who work on the social issues in 2018. This year she organized Civictech Challenge Cup U-22 with Code for Japan interns."
@@ -5304,8 +5346,8 @@
   },
   "1204-sprout-0": {
     "id": "1204-sprout-0",
-    "updatedAt": "2020-11-14T05:50:29.000Z",
-    "createdAt": "2020-11-14T05:50:29.000Z",
+    "updatedAt": "2020-11-15T17:26:44.000Z",
+    "createdAt": "2020-11-15T17:26:44.000Z",
     "title": "開島在台南：青年的生存與生活",
     "title_en": "Survival and living as a young adult in Tainan",
     "summary": "\"2020年迎來台南縣市合併十週年。縣市合併後，台南的青年過得好嗎？台南是否已經成為「一個台南」？\n在本場次中，我們希望討論青年在地居住、就業的情況，也邀請現在在前縣區居住的青年，聊聊他們對生活在台南的想法。\"",
@@ -5329,8 +5371,10 @@
       {
         "display_name": "陳文彥",
         "organization": "新營社區大學",
+        "organization_en": "Xinying Community College",
         "avatar_url": "cache/ce0d89444646846a99739dc09989a84f.jpg",
         "city": "臺南市新營區",
+        "city_en": "Xinying, Tainan, Taiwan",
         "bio": " 新營社區大學企畫執行",
         "bio_en": " "
       }
@@ -5359,8 +5403,8 @@
   },
   "1204-sprout-1": {
     "id": "1204-sprout-1",
-    "updatedAt": "2020-11-14T05:46:53.000Z",
-    "createdAt": "2020-11-14T05:46:53.000Z",
+    "updatedAt": "2020-11-17T06:02:08.000Z",
+    "createdAt": "2020-11-17T06:02:08.000Z",
     "title": "開發古都？文化資產與都市規劃的碰撞",
     "title_en": "The clash between cultural heritage protection and urban planning in Tainan",
     "summary": "常有人說，「要在臺南搞建設做開發，根本跟做考古沒兩樣。」\n\n臺南市區號稱是臺灣的文化古都，因為市鎮開發的早，留有許多歷史積累的痕跡，也讓當今許多土地開發或都市更新的規劃案，都碰上了文化資產保存的議題。如2016年的運河星鑽計畫與舊魚市場保存衝突，西港外環道的開發導致糖鐵鐵軌遭到拆除，諸如此類的案例層出不窮。\n\n2020年是臺南縣市合併升格十週年，我們希望藉由「開發古都？文化資產與都市規劃的碰撞」論壇，從大臺南市現行的「歷史街區計畫」切入，瞭解文化資產和都市規劃如何相互牽制、互相依存。而在兩造的拉扯之中，又該如何建立公民參與的空間，避免官方政策獨斷、少數專家裁定等困局？",
@@ -5373,18 +5417,22 @@
     "speakers": [
       {
         "display_name": "侯志仁 Jeff Hou",
-        "organization": "華盛頓大學 University of Washington",
+        "organization": "華盛頓大學",
+        "organization_en": "University of Washington",
         "avatar_url": "cache/c09e1341aa40efab1bdbaf89fdf875d8.jpg",
-        "city": "台南 Tainan",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
         "info_url": "http://larch.be.uw.edu/people/jeff-hou/",
         "bio": " 侯志仁為地景建築教授與環境設計和規劃學者，任教於美國華盛頓大學地景建築系，主要專業領域涵蓋：社區設計、城市共生與公共空間，著有《反造再起：城市共生ING》、《城市造反：全球非典型都市規劃術》、《反造城市：台灣非典型都市規劃術》等書。",
         "bio_en": " Jeff Hou is an environmental design and planning scholar who teaches at the University of Washington, Seattle. His work focuses on community design, urban commons, and public space, with edited and co-edited publications, including Insurgent Public Space: Guerrilla Urbanism and the Remaking of Contemporary Cities (2010) and City Unsilenced: Urban Resistance and Public Space in the Age of Shrinking Democracy (2017). "
       },
       {
         "display_name": "顏世樺  Yen Shih Hua",
-        "organization": "財團法人古都保存再生文教基金會 Foundation of Historic City Conservation and Regeneration",
+        "organization": "財團法人古都保存再生文教基金會",
+        "organization_en": "Foundation of Historic City Conservation and Regeneration",
         "avatar_url": "cache/fc7369e2ab9a069b2c939be392c0365b.jpg",
-        "city": "臺南市  Tainan City",
+        "city": "臺南市",
+        "city_en": "Tainan, Taiwan",
         "bio": " 畢業於成功大學建築學系碩士班，曾擔任古都基金會副執行長，現為基金會執行長。長期參與歷史環境保存之研究與推廣工作，並任教於多所大專院校。",
         "bio_en": " "
       }
@@ -5468,6 +5516,12 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "熊",
+        "organization": "南方創客基地/Fablab Tainan社群",
+        "organization_en": "Fablab Southern Taiwan Maker Center",
+        "avatar_url": "cache/d059637bdb1cf76fead5d9ec3a31f6c5.jpg",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
+        "bio": "求學、生活於台南，喜愛動手做與迷戀自造者運動的精神。為Fablab Tainan社群成員，目前任職於南方創客基地擔任行政總監。希望把自造者的精神推動於各處，讓人人都能成為maker!",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T09:30",
@@ -5534,6 +5588,12 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "熊",
+        "organization": "南方創客基地/Fablab Tainan社群",
+        "organization_en": "Fablab Southern Taiwan Maker Center",
+        "avatar_url": "cache/d059637bdb1cf76fead5d9ec3a31f6c5.jpg",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
+        "bio": "求學、生活於台南，喜愛動手做與迷戀自造者運動的精神。為Fablab Tainan社群成員，目前任職於南方創客基地擔任行政總監。希望把自造者的精神推動於各處，讓人人都能成為maker!",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T10:30",
@@ -5579,6 +5639,12 @@
       "議程場地-en": "C-Hub - 1F",
       "主持人": {
         "display_name": "熊",
+        "organization": "南方創客基地/Fablab Tainan社群",
+        "organization_en": "Fablab Southern Taiwan Maker Center",
+        "avatar_url": "cache/d059637bdb1cf76fead5d9ec3a31f6c5.jpg",
+        "city": "台南",
+        "city_en": "Tainan, Taiwan",
+        "bio": "求學、生活於台南，喜愛動手做與迷戀自造者運動的精神。為Fablab Tainan社群成員，目前任職於南方創客基地擔任行政總監。希望把自造者的精神推動於各處，讓人人都能成為maker!",
         "bio_en": "\""
       },
       "議程開始時間": "2020-12-04T13:00",
@@ -5591,8 +5657,8 @@
   },
   "1206-keynote-0": {
     "id": "1206-keynote-0",
-    "updatedAt": "2020-11-03T15:57:22.000Z",
-    "createdAt": "2020-11-03T15:57:22.000Z",
+    "updatedAt": "2020-11-17T06:02:33.000Z",
+    "createdAt": "2020-11-17T06:02:33.000Z",
     "title": "基調座談：台灣社群與民主防衛",
     "title_en": "Defending Democracy: Communities Can Help",
     "summary": "台灣民主正在成長、茁壯，同時也正面對多層面、多角度、更精準、強度更高的挑戰。不實訊息、境外勢力滲透、全球公衛危機，讓社會對立、混亂加劇。許多人已清楚認知到，「民主」需要公民的持續防衛，使其更加健全。\n\n在實體空間、城市巷弄深度耕耘的非營利組織；運用網路科技、看似無遠弗屆的開放協作社群；以橫向連結嘗試突破傳統官僚體系的「公務員網絡」，這些不同型態的「台灣社群」，已經做了什麼，未來能如何協力防衛、深化民主？專案、組織的「民主」，又如何影響城市、國家的民主？而以「開放」之名推行的各項措施，是否都能達到還權於民、深化民主的目的，或者是有些仍不免成為少數人獲得利益的工具？\n",
@@ -5606,8 +5672,10 @@
       {
         "display_name": "唐鳳",
         "organization": "行政院數位政務委員",
+        "organization_en": "Executive Yuan",
         "avatar_url": "cache/cc77bd15e77e62b28c69dc63ed881d99.jpg",
         "city": "臺北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": " 唐鳳，自 2016 年 10 月 1 日起擔任行政院數位政務委員，負責「開放政府」、「社會創新」與「青年參與」等三項業務，透過「從自己辦公室做起」的方式，向事務官同仁們示範如何運用數位科技，達到簡化行政作業流程、提升討論及決策品質與透明度之目標。 過去，唐鳳曾擔任過行政院虛擬世界法規調適計劃顧問、國家發展委員會開放資料諮詢委員，以及十二年國民基本教育課程發展委員會委員。\n另外，唐鳳也是「g0v 零時政府」網路社群的專案貢獻者，並積極參與線上法規討論平台 vTaiwan 的相關活動，希望透過多元溝通管道的建立，協助產出符合多方利益關係人期待、也更貼近實際需求的法規內容。\n在國際交流方面，唐鳳與全球各級政府在數位治理領域保持合作關係，持續累積「開放政府外交」、「數位外交」之經驗與成果。",
         "bio_en": " Audrey Tang is Taiwan’s digital minister in charge of Social Innovation. Audrey is known for revitalizing the computer languages Perl and Haskell, as well as building the online spreadsheet system EtherCalc in collaboration with Dan Bricklin.\nIn the public sector, Audrey served on Taiwan national development council’s open data committee and K-12 curriculum committee; and led the country’s first e-Rulemaking project.\nIn the private sector, Audrey worked as a consultant with Apple on computational linguistics, with Oxford University Press on crowd lexicography, and with Socialtext on social interaction design.\nIn the social sector, Audrey actively contributes to g0v (“gov zero”), a vibrant community focusing on creating tools for the civil society, with the call to “fork the government.”"
@@ -5615,8 +5683,10 @@
       {
         "display_name": "陳舜伶",
         "organization": "中研院法律所副研究員",
+        "organization_en": "Institutum Iurisprudentiae, Academia Sinica",
         "avatar_url": "cache/9e76176cb13c6109f1340b57693f3922.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": "https://www.iias.sinica.edu.tw/member_post/16",
         "bio": "中研院法律所副研究員、資訊法中心副主任，主要研究興趣包括著作權法、網路社群自治、公民科學、資訊科技法律與社會",
         "bio_en": "Shun-Ling Chen is an associate research professor and the associate director of Information Law Center at the Institutum Iurisprudentiae, Academia Sinica (Taipei, Taiwan). She received her S.J.D. from Harvard Law School in 2013. She works in fields where society, information technologies and the legal system intersect, including the allocation of resources related to intellectual property laws. She spent years studying the development and enforcement of communal norms in online peer production communities, as well as how these communities negotiate externally with established institutions."
@@ -5624,8 +5694,10 @@
       {
         "display_name": "黃煥彰",
         "organization": "台南社大環境行動小組召集人",
+        "organization_en": "Tainan Community University",
         "avatar_url": "cache/0833bb7322e1b770c125a257f265a7c5.jpg",
         "city": "台南市",
+        "city_en": "Tainan, Taiwan",
         "info_url": " ",
         "bio": "黃煥彰 中華醫事科技大學護理系副教授\n台南市社區大學環境行動小組召集人\n看守台灣理事\n地球公民監事\n1.長期擔任台南市社區大學環境與自然學程召集人與環境行動小組召集人，以『護生－守護生命』為最核心價值。長期培訓環境志工參與守護河流與土地的調查。台鹼安順廠戴奧辛污染事件、二仁溪廢五金整治、搶救三崁店諸羅樹蛙棲地、老樹調查與復育、海灘廢棄物長期監測、守護龍崎世界級自然地景、全國各地土地污染調查等，都可看到這樣的核心價值。主張「護溪為護生」，去除二仁溪、鹽水溪、嘉南大圳、阿公店溪等溪流多處重大污染源。2007年與台南地檢署合作推動打擊犯罪異業結盟，推動污染巡守，合力解決大台南多項重大污染，為全國首創。\n2.2005年公視「45度C天空下」──劇情取材在非洲取材於外交役男連加恩的故事，另一個角色為台灣付出的人物林宇誠醫師靈感來自黃煥彰老師－長期投入河川保護與台鹼污染導致居民致癌的田野調查及921後一直在達關部落的社工黃盈豪。導演王小棣說「再勇敢的故事背後，有比故事更勇敢的真實人物存在」。\n3. 2007年帶領台南社區大學榮獲福特保育暨環保獎首獎，獎金50萬。、2014帶領台南社大榮獲『國家環境教育獎團體組首獎』，獎金100萬。\n4. 2011年當選中原大學傑出校友、2016年全國SUPER教師大專組首獎、2018年全國社會教育貢獻獎個人",
         "bio_en": " "
@@ -5658,8 +5730,8 @@
   },
   "1206-keynote-1": {
     "id": "1206-keynote-1",
-    "updatedAt": "2020-11-11T06:35:30.000Z",
-    "createdAt": "2020-11-11T06:35:30.000Z",
+    "updatedAt": "2020-11-15T18:10:33.000Z",
+    "createdAt": "2020-11-15T18:10:33.000Z",
     "title": "基調座談：來一碗民主，唔該晒",
     "title_en": "Connecting Democracies Through Communities",
     "summary": "2012 年 g0v 發起，以開放、協作的理念，號召社群參與改造社會。但是，隨著跨領域協作愈來愈深入，更多人開始意識到，開放協作的社群之所以能在台灣推動改變，民主自由的社會是不可或缺的基石。普選、多黨政治、言論自由、結社自由，這些制度上的基礎不只實現了開放的精神，也保障公民們可以積極組織起來，改造社會，並一起承擔必要的運作成本與消耗。這些匯聚起來的力量，支持著社群的參與者們，讓社群走到今天。\n\n身處亞太地區的我們，面對極權擴張，公民權利、資訊安全受到挑戰，連帶著，開放協作的空間受到擠壓。當公開、自由的交流不再安全，分享與協作、讓改變發生，將成為一件奢侈的事。言論空間受到擠壓的環境下，社群是否更為重要？我們可以怎麼繼續維持 ██、加強 ██？香港人做了什麼？台灣人做了什麼？鄰近的公民與黑客們，未來可以怎麼一起前進？",
@@ -5673,6 +5745,7 @@
       {
         "display_name": "Justine",
         "organization": "香港邊城青年秘書長",
+        "organization_en": "Hong Kong Outlanders",
         "avatar_url": "cache/ab57ac83167bb83d1370b8527c6534fa.jpg",
         "city": " ",
         "info_url": " ",
@@ -5770,8 +5843,8 @@
   },
   "1206-sponsor-A1": {
     "id": "1206-sponsor-A1",
-    "updatedAt": "2020-11-12T14:47:57.000Z",
-    "createdAt": "2020-11-12T14:47:57.000Z",
+    "updatedAt": "2020-11-15T18:11:15.000Z",
+    "createdAt": "2020-11-15T18:11:15.000Z",
     "title": "如果有個 mnd.g0v.tw──用資訊公開、公民參與防守中國對台認知戰",
     "title_en": "Perhaps mnd.g0v.tw – Defend against cognitive warfare with public information and communal participation",
     "summary": "\"面對中國對台的認知戰，你是否感到無力？感覺無所不在的資訊操弄及滲透，不知道我們能做些什麼？\n\n先講結論：雖然是老梗，但資訊公開、公民參與，真的是防守台灣的重要力量。\n\n2019 年底，一群台灣媒體工作者、社會科學、資料科學家及公民運動者組成了「IORG」這個跨領域團隊，要以科學方法調查中國對台認知戰，要深入地方，了解資訊操弄、實體滲透在台灣各地的現狀。\n\n資訊公開很重要，讓滲透網絡現形，也讓研究接受檢驗。IORG 將分享「中國對台資訊操弄及滲透網絡圖」，訊息傳播、協同行為、組織合作等具體事證，標記並連結中國、台灣的人物、民間組織、政府機構、交流活動。\n\n公民參與也很重要，跨地域、跨族群的在地培力，讓資訊判讀落地。IORG 在全台北、中、南、東、離島建立研究組織網絡，在城市、鄉村舉辦 60 場資訊判讀工作坊，接觸千人。透過對話，理解資訊操弄在不同地方、不同族群的樣貌；透過互動，分享資訊判讀的技能，找回信任，增強面對認知戰的集體抵抗力。\"",
@@ -5789,6 +5862,7 @@
         "organization": "IORG",
         "avatar_url": "cache/2842c3ac01d92488b5d82402292f0b7c.jpg",
         "city": "台北市",
+        "city_en": "Taipei, Taiwan",
         "info_url": " ",
         "bio": "IORG 共同主持人、公民運動者、教育工作者。現任台灣公民陣線執行委員、現任《沃草》專案經理，為《沃草》創始成員、負責「2016 開放國會松」、「2017 文化部中正紀念堂之社會討論計畫」、「2018 六都市長給問嗎」、「2020 總統大選即時事實查核及語意分析」等專案，致力於打造公民與政治人物「直接、即時、互動」的平台，降低公民參與政治的門檻。認為台灣過去許多問題來自於民眾對明君聖主的迷信，相信集合群眾智慧才是改變台灣現況的關鍵。",
         "bio_en": " "
@@ -6506,7 +6580,7 @@
         "city": "台南",
         "city_en": "Tainan, Taiwan",
         "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
-        "bio": "曾憲立的主要研究領域是數位治理,包含數位政策, 開放資料, 公私協力, 也關心數位隱私與新興科技 (如AI) 在公部門的應用及落實.",
+        "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
       "議程開始時間": "2020-12-05T11:10",
@@ -6768,8 +6842,10 @@
       "議程場地-華語": "C-Hub 成大創意基地 - 3F",
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
-        "display_name": "待確認",
-        "bio_en": "\""
+        "display_name": "jxtsai",
+        "info_url": "https://medium.twngo.xyz",
+        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
+        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
       },
       "議程開始時間": "2020-12-05T11:10",
       "議程長度": 20,
@@ -6796,6 +6872,8 @@
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
         "display_name": "洪芷寧",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
@@ -6827,6 +6905,8 @@
       "議程場地-en": "C-Hub - 3F",
       "主持人": {
         "display_name": "洪芷寧",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
         "avatar_url": "cache/841651db6e2169ca808b11fcbed7712f.jpg",
         "city": "台北",
         "city_en": "Taipei, Taiwan",
