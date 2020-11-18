@@ -23,7 +23,7 @@
             .agendacard__tag(v-if="topic") {{topic}}
             .agendacard__tag.mt3-ns(v-if="format") {{format}}
             .agendacard__tag(v-if="lang") {{$t(lang)}}
-          button.agendacard__heart(v-if="!this.agenda.isPseudo" @click="toggleFavorite")
+          button.agendacard__heart(v-if="!this.agenda.isPseudo" @click.stop.prevent="toggleFavouriteAgenda({agendaId: id})")
             img(v-if="isFavourite" src="~/assets/icons/heart-full.svg")
             img(v-else src="~/assets/icons/heart-empty.svg")
 
@@ -35,6 +35,8 @@ zh:
   minuteUnit: 分鐘
 </i18n>
 <script>
+import { mapState, mapMutations } from 'vuex'
+import { STATES, MUTATIONS } from '~/store'
 import agendaMixin from '~/utils/AgendaMixin'
 import TextHighlighter from '~/components/TextHighlighter'
 
@@ -49,10 +51,14 @@ export default {
       required: true
     }
   },
-  data () {
-    return { isFavourite: false }
-  },
   computed: {
+    ...mapState(
+      {
+        isFavourite (state) {
+          return state[STATES.FAVOURITE_AGENDAS].includes(this.agenda.id)
+        }
+      }
+    ),
     detailUrl () {
       if (!this.agenda.isPseudo && this.$route.params.date) {
         return this.localePath(`/agenda/${this.$route.params.date}/${this.agenda.id}`)
@@ -71,24 +77,8 @@ export default {
       return this.agenda.isPseudo && (title.includes('休') || title.includes('break'))
     }
   },
-  mounted () {
-    const favouriteAgendas = JSON.parse(localStorage.getItem('favouriteAgendas')) || []
-    this.isFavourite = favouriteAgendas.includes(this.agenda.id)
-  },
   methods: {
-    toggleFavorite (e) {
-      e.preventDefault()
-      const favouriteAgendas = JSON.parse(localStorage.getItem('favouriteAgendas')) || []
-      const favouriteAgendaIndex = favouriteAgendas.indexOf(this.agenda.id)
-      if (this.isFavourite && favouriteAgendaIndex > -1) {
-        favouriteAgendas.splice(favouriteAgendaIndex, 1)
-        localStorage.setItem('favouriteAgendas', JSON.stringify(favouriteAgendas))
-        this.isFavourite = false
-      } else if (!this.isFavourite && favouriteAgendaIndex === -1) {
-        localStorage.setItem('favouriteAgendas', JSON.stringify([...favouriteAgendas, this.agenda.id]))
-        this.isFavourite = true
-      }
-    }
+    ...mapMutations({ toggleFavouriteAgenda: MUTATIONS.TOGGLE_FAVOURITE_AGENDA })
   }
 }
 </script>

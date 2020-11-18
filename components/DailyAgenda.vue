@@ -104,10 +104,12 @@ export default {
   },
   mounted () {
     this.updatePageWidth()
+    this.initFavouriteAgendas()
   },
   methods: {
     ...mapMutations({
-      setPageWidth: MUTATIONS.SET_PAGE_WIDTH
+      setPageWidth: MUTATIONS.SET_PAGE_WIDTH,
+      initFavouriteAgendas: MUTATIONS.INIT_FAVOURITE_AGENDAS
     }),
     updatePageWidth () {
       const totalWidth = this.columnNumber * CARD_WIDTH + (this.columnNumber + 1) * GAP_WIDTH + GUTTER_WIDTH * 2
