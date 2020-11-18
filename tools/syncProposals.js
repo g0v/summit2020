@@ -183,7 +183,9 @@ async function downloadTables () {
   const locationMap = locationRaw.reduce((map, location) => {
     return {
       ...map,
-      [location.場地]: {
+      [location.id]: {
+        zhName: location['場地-華語'],
+        enName: location['場地-en'],
         order: location.順位,
         capacity: location.人數
       }
@@ -222,8 +224,12 @@ const INTERMEDIATE_TIME_FIELDS = [
 ]
 
 function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
+  const locationMeta = locationMap[timeSheet.議程場地] || {}
+  if (!locationMeta.zhName) {
+    const errmsg = `Undefined location in  ${timeSheet.id}`
+    logError(errmsg)
+  }
   const category = genFieldI18n(timeSheet.分類主題)
-  const location = genFieldI18n(timeSheet.議程場地)
   const startHour = dayjs.unix(timeSheet.議程開始時間)
   // 主持人 could be [`id`] or undefined
   const moderatorId = timeSheet.主持人 ? timeSheet.主持人[0] : null
@@ -239,8 +245,8 @@ function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
     ..._.pick(timeSheet, timeSheetFields),
     '分類主題-華語': category.zh,
     '分類主題-en': category.en,
-    '議程場地-華語': location.zh,
-    '議程場地-en': location.en,
+    '議程場地-華語': locationMeta.zhName,
+    '議程場地-en': locationMeta.enName || locationMeta.zhName,
     主持人: moderator
   }
   if (startHour.isValid()) {
@@ -249,13 +255,11 @@ function normalizeTimeSheet (timeSheet, locationMap, moderatorMap) {
   if (timeSheet.議程長度) {
     ret.議程長度 = timeSheet.議程長度 / SEC_PER_MIN
   }
-
-  const locationStr = timeSheet.議程場地
-  if (locationMap[locationStr]) {
-    ret.locationMeta = locationMap[locationStr]
-  } else if (locationStr) {
-    const errmsg = `Undefined location ${timeSheet.議程場地}`
-    logError(errmsg)
+  if (locationMeta) {
+    ret.locationMeta = _.pick(locationMeta, [
+      'order',
+      'capacity'
+    ])
   }
 
   return ret
