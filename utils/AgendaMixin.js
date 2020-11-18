@@ -1,6 +1,3 @@
-export const DEFAULT_DATE = '2020-12-04'
-export const VALID_DATE_LIST = ['2020-12-04', '2020-12-05', '2020-12-06']
-
 export default {
   computed: {
     time () {

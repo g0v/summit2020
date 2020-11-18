@@ -3,7 +3,7 @@
     svg(width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg")
       circle(cx="54" cy="54" r="54" fill="#4BE2F2")
       path(d="M23 54L43 74L63.5 53.5L84 33" stroke="white" stroke-width="5")
-    .f3.mv4.w5.center(v-html="message")
+    .f3.mv4.center(v-html="message")
     b-button(
       rounded
       type="is-primary"

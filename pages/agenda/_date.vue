@@ -55,7 +55,7 @@ import { MUTATIONS, STATES } from '~/store'
 import DailyAgenda from '~/components/DailyAgenda'
 import AgendaTooltip from '~/components/AgendaTooltip'
 import { isAgendaMatch } from '~/utils/searchUtils'
-import { DEFAULT_DATE, VALID_DATE_LIST } from '~/utils/AgendaMixin'
+import { DEFAULT_DATE, VALID_DATE_LIST } from '~/utils/scheduleInfo'
 
 export default {
   components: {

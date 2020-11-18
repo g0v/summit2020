@@ -11,7 +11,6 @@
       )
         | {{ $t(menu.key) }}
   button.menu__item.menu__item--checkin.pa3.pv0-l.dim.bb.bt.bn-l.b--silver.mr3-l.br-pill-l(
-    v-if="allowCheckIn"
     @click="openCheckIn"
   ) {{$t(checkInType)}}
   nuxt-link.menu__lang.pa3.pa2-l.dim(
@@ -28,6 +27,7 @@ en:
   learningCredit: Sign In/Off
   buildingCheckIn: Check In
   healthDecl: Health Declaration
+  covid19Guidelines: COVID19 Guideline
 zh:
   lang: English
   registration: 立刻報名
@@ -35,11 +35,13 @@ zh:
   learningCredit: 終身學習簽到退
   buildingCheckIn: 入館簽到
   healthDecl: 填健康聲明
+  covid19Guidelines: 防疫守則
 </i18n>
 <script>
 import { mapGetters } from 'vuex'
 import { GETTERS } from '~/store'
 import ExtLink from '~/components/ExtLink'
+import { ALLOW_CHECK_IN, ALLOW_DECL_HEALTH } from '~/utils/scheduleInfo'
 
 export default {
   components: {
@@ -73,20 +75,22 @@ export default {
   },
   computed: {
     ...mapGetters({
-      curHealthInfo: GETTERS.CUR_HEALTH_INFO,
-      allowCheckIn: GETTERS.ALLOW_CHECK_IN
+      curHealthInfo: GETTERS.CUR_HEALTH_INFO
     }),
     isZh () {
       return this.$i18n.locale === 'zh'
     },
     checkInType () {
-      if (this.curHealthInfo) {
+      if (this.curHealthInfo && ALLOW_CHECK_IN) {
         if (this.curHealthInfo.needLearningCredit) {
           return 'learningCredit'
         }
         return 'buildingCheckIn'
       }
-      return 'healthDecl'
+      if (ALLOW_DECL_HEALTH) {
+        return 'healthDecl'
+      }
+      return 'covid19Guidelines'
     }
   },
   methods: {
@@ -100,7 +104,7 @@ export default {
       this.$emit('link-click')
     },
     openCheckIn () {
-      if (this.curHealthInfo) {
+      if (this.curHealthInfo && ALLOW_CHECK_IN) {
         this.$emit('building-open')
       } else {
         this.$emit('guidelines-open')

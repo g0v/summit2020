@@ -1,9 +1,3 @@
-// TODO:
-// 1. [x] download accepted proposal && merge time sheet info
-// 2. [x] allow overwrite by summit worker using special airtable table
-// 3. [x] sentry integration
-// 4. [ ] host avatar ourselves
-
 // include sentry
 require('dotenv').config()
 
