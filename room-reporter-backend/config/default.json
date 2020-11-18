@@ -4,6 +4,7 @@
   "public": "../public/",
   "clientEndpoints": "CLIENT_ENDPOINTS",
   "fbAccessToken": "MESSENGER_ACCESS_TOKEN",
+  "onboardPassphrase": "ONBOARD_PASSPHRASE",
   "officeTz": "Asia/Taipei",
   "paginate": {
     "default": 10,

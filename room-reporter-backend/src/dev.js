@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const ngrok = require('ngrok')
 const path = require('path')
 const { logger } = require('./logger')

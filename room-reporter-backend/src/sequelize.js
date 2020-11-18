@@ -4,7 +4,7 @@ const { logger } = require('./logger')
 module.exports = function (app) {
   const connectionString = app.get('db')
   const sequelize = new Sequelize(connectionString, {
-    logging: app.get('logSql') ? (msg) => logger.debug(msg) : false,
+    logging: app.get('logSql') ? msg => logger.debug(msg) : false,
     define: {
       freezeTableName: true
     }
@@ -18,7 +18,7 @@ module.exports = function (app) {
 
     // Set up data relationships
     const models = sequelize.models
-    Object.keys(models).forEach(name => {
+    Object.keys(models).forEach((name) => {
       if ('associate' in models[name]) {
         models[name].associate(models)
       }

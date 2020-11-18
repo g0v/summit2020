@@ -1,6 +1,7 @@
 const { chain } = require('bottender')
 
 const onboardHandler = require('./onboardHandler')
+const echoHandler = require('./echoHandler')
 
 // async function defaultHandler (context, { next }) {
 //   const ev = context.event
@@ -9,6 +10,7 @@ const onboardHandler = require('./onboardHandler')
 
 module.exports = function App () {
   return chain([
-    onboardHandler
+    onboardHandler,
+    echoHandler
   ])
 }
