@@ -4,6 +4,7 @@
 </template>
 <script>
 import CheckInModal from '~/components/CheckInModal'
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 export default {
   components: {
@@ -20,6 +21,11 @@ export default {
         this.$router.push(this.localePath('/'))
       }
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('buildingCheckIn')
+    }
+  })
 }
 </script>

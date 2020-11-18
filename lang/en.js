@@ -29,6 +29,8 @@ export default {
   staff: 'Staff',
   registration: 'Registration',
   speakers: 'Speakers',
+  covid19Guidelines: 'COVID19 Guideline',
+  buildingCheckIn: 'Check In',
 
   // transportation
   venuelocationName: '地點名稱-en',
