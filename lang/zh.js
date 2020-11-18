@@ -29,6 +29,8 @@ export default {
   staff: '工作人員',
   registration: '立即購票',
   speakers: '講者',
+  covid19Guidelines: '防疫守則',
+  buildingCheckIn: '入館簽到',
 
   // transportation
   venuelocationName: '地點名稱-華語',

@@ -7,9 +7,9 @@
       )
 </template>
 <script>
-// TODO: show this when first onboard
 import Covid19Guidelines from '~/components/Covid19Guidelines'
 import HealthModal from '~/components/HealthModal'
+import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
 
 export default {
   components: {
@@ -23,6 +23,14 @@ export default {
     fillForm () {
       this.$router.push(this.localePath('/building-check-in'))
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('covid19Guidelines')
+    },
+    description () {
+      return summaryFromMarkdown(this.$t('article/healthGuidelines'))
+    }
+  })
 }
 </script>
