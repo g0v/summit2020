@@ -1,6 +1,7 @@
 <template lang="pug">
   .roomcard.tc.pb2.pr2
-    .fw5.f4 {{building}}
+    .b.f4 {{code}}
+    .fw5 {{building}}
     .fw3 {{room}}
 </template>
 <script>
@@ -15,15 +16,21 @@ export default {
     roomToken () {
       return this.name.split(' - ')
     },
-    building () {
-      if (this.roomToken.length > 1) {
-        return this.roomToken.slice(0, -1).join('-').trim()
+    code () {
+      if (this.roomToken.length) {
+        return this.roomToken[0].trim()
       }
-      return this.name.trim()
+      return ''
+    },
+    building () {
+      if (this.roomToken.length >= 2) {
+        return this.roomToken[1].trim()
+      }
+      return ''
     },
     room () {
-      if (this.roomToken.length > 1) {
-        return this.roomToken[this.roomToken.length - 1].trim()
+      if (this.roomToken.length >= 3) {
+        return this.roomToken[2].trim()
       }
       return ''
     }

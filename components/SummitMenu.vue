@@ -25,17 +25,13 @@ en:
   registration: Registration
   banquet: Banquet
   learningCredit: Sign In/Off
-  buildingCheckIn: Check In
   healthDecl: Health Declaration
-  covid19Guidelines: COVID19 Guideline
 zh:
   lang: English
   registration: 立刻報名
   banquet: 來辦桌
   learningCredit: 終身學習簽到退
-  buildingCheckIn: 入館簽到
   healthDecl: 填健康聲明
-  covid19Guidelines: 防疫守則
 </i18n>
 <script>
 import { mapGetters } from 'vuex'
