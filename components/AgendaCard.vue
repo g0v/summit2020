@@ -1,6 +1,7 @@
 <template lang="pug">
   nuxt-link.db.agendacard.h-100(
     :to="detailUrl"
+    :class="{'agendacard--en': isEn}"
   )
     .agendacard__wrapper.br2.h-100(:class="{'agendacard__wrapper--break': isBreak}")
       .agendacard__content
@@ -19,10 +20,10 @@
           text-highlighter(v-if="speakers" :text="speakers")
         .flex
           .flex.flex-wrap.flex-grow-1-ns
-            .agendacard__tag.agendacard__tag--hl.db.dn-ns.mt3(v-if="room") {{room}}
-            .agendacard__tag(v-if="topic") {{topic}}
-            .agendacard__tag.mt3-ns(v-if="format") {{format}}
-            .agendacard__tag(v-if="lang") {{$t(lang)}}
+            .agendacard__tag.agendacard__tag--hl.db.dn-ns.truncate.mt3(v-if="room") {{room}}
+            .agendacard__tag.truncate(v-if="topic") {{topic}}
+            .agendacard__tag.truncate.mt3-ns(v-if="format") {{format}}
+            .agendacard__tag.truncate(v-if="lang") {{$t(lang)}}
           button.agendacard__heart(v-if="!this.agenda.isPseudo" @click="toggleFavorite")
             img(v-if="isFavourite" src="~/assets/icons/heart-full.svg")
             img(v-else src="~/assets/icons/heart-empty.svg")
@@ -69,6 +70,9 @@ export default {
     isBreak () {
       const title = this.title
       return this.agenda.isPseudo && (title.includes('休') || title.includes('break'))
+    },
+    isEn () {
+      return this.$i18n.locale === 'en'
     }
   },
   mounted () {
@@ -110,13 +114,19 @@ export default {
   }
   &__content {
     position: sticky;
-    // header search bar 3.5rem, locaion bar 4.25rem
-    top: 7.75rem;
+    // header search bar 3.5rem, locaion bar 6.25rem
+    top: 9.75rem;
     left: 1.25rem;
     display: inline-block;
     width: 100%;
     // 2.5rem: 1.25 * 2
     max-width: calc(100vw - 2.5rem);
+  }
+  &--en {
+    .agendacard__content {
+      // en location will be 4 lines
+      top: 11.5rem;
+    }
   }
   &__time {
     color: #303030;
@@ -140,6 +150,7 @@ export default {
     margin-top: 0.25rem;
     background: #67cddd;
     padding: 0.125rem 0.5rem;
+    max-width: calc(100vw - 5rem);
     &:not(:last-child) {
       margin-right: 0.25rem;
     }
