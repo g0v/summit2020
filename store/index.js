@@ -25,8 +25,7 @@ export const MUTATIONS = {
 }
 
 export const GETTERS = {
-  CUR_HEALTH_INFO: 'curHealthInfo',
-  ALLOW_CHECK_IN: 'allowCheckIn'
+  CUR_HEALTH_INFO: 'curHealthInfo'
 }
 
 export const state = () => {
@@ -102,10 +101,5 @@ export const getters = {
       return null
     }
     return info[key] || null
-  },
-  [GETTERS.ALLOW_CHECK_IN] (state) {
-    // TODO: add time based rule
-    // disable checkin from production for now
-    return !process.env.SITE_BASE.endsWith('/2020')
   }
 }

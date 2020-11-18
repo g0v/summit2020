@@ -5,7 +5,7 @@
     .flex.flex-column.flex-row-l.justify-center.items-center.mt3
       b-button(@click="cancel") {{$t('cancel')}}
       b-button.mt3.mt0-l.ml3-l(
-        v-if="allowCheckIn"
+        :disabled="!allowDeclHeahth"
         type="is-primary"
         @click="fillForm"
       ) {{fillFormStr}}
@@ -16,27 +16,35 @@ en:
   cancel: Visit g0v Summit 2020
   fillHealth: Fill Health Declaration Form
   fillBuilding: Check info a Building
+  waitHealth: 'Form opened on December 3'
 zh:
   title: g0v Summit COVID-19 防疫守則
   cancel: 瀏覽活動網頁
   fillHealth: 填寫健康聲明
   fillBuilding: 登記入館
+  waitHealth: '12/03 開放填寫健康聲明'
 </i18n>
 <script>
 import { mapGetters } from 'vuex'
 import { GETTERS } from '~/store'
+import { ALLOW_CHECK_IN, ALLOW_DECL_HEALTH } from '~/utils/scheduleInfo'
 
 export default {
   computed: {
     ...mapGetters({
-      hasHealthInfo: GETTERS.CUR_HEALTH_INFO,
-      allowCheckIn: GETTERS.ALLOW_CHECK_IN
+      hasHealthInfo: GETTERS.CUR_HEALTH_INFO
     }),
+    allowDeclHeahth () {
+      return ALLOW_DECL_HEALTH
+    },
     fillFormStr () {
-      if (this.hasHealthInfo) {
+      if (this.hasHealthInfo && ALLOW_CHECK_IN) {
         return this.$t('fillBuilding')
       }
-      return this.$t('fillHealth')
+      if (ALLOW_DECL_HEALTH) {
+        return this.$t('fillHealth')
+      }
+      return this.$t('waitHealth')
     }
   },
   methods: {
