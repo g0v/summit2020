@@ -1,0 +1,15 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "clientEndpoints": "CLIENT_ENDPOINTS",
+  "fbAccessToken": "MESSENGER_ACCESS_TOKEN",
+  "officeTz": "Asia/Taipei",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "cacheTTLMin": 10,
+  "db": "DATABASE_URL",
+  "logSql": false
+}

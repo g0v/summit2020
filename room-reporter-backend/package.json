@@ -1,0 +1,72 @@
+{
+  "name": "summit-2020-room-reporter",
+  "description": "",
+  "version": "0.1.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "author": {
+    "name": "ddio",
+    "email": "ddio@ddio.io"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run jest",
+    "lint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "concurrently 'node src/dev.js' 'npx nodemon src/'",
+    "start": "node src/",
+    "jest": "jest  --forceExit"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^4.5.2",
+    "@feathersjs/errors": "^4.5.2",
+    "@feathersjs/express": "^4.5.2",
+    "@feathersjs/feathers": "^4.5.2",
+    "@feathersjs/socketio": "^4.5.2",
+    "@feathersjs/transport-commons": "^4.5.2",
+    "@sentry/node": "^5.12.2",
+    "bottender": "^1.4.5",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "feathers-sequelize": "^6.1.0",
+    "helmet": "^3.21.3",
+    "lodash": "^4.17.15",
+    "pg": "^8.0.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.5",
+    "serve-favicon": "^2.5.0",
+    "sqlite3": "^4.1.1",
+    "winston": "^3.2.1",
+    "winston-transport-sentry-node": "^0.3.0"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0",
+    "ngrok": "^3.2.7",
+    "nodemon": "^2.0.2"
+  }
+}
