@@ -20,11 +20,28 @@ const TIMEOUT_SELECTIONS = {
   })
 }
 
+const ROOM_ABBR = {
+  成大綠色魔法學校: '綠色',
+  ' 成大創意基地': '',
+  '臺南市美術館 2 館 - 跨域展演廳': '南美館',
+  '吳園藝文中心 - 原台南公會堂': '吳園'
+}
+
+function shortRoomName (room) {
+  let zh = room['場地-華語']
+  for (const key in ROOM_ABBR) {
+    if (zh.includes(key)) {
+      zh = zh.replace(key, ROOM_ABBR[key])
+    }
+  }
+  return zh.replace(/ - /g, '-').replace(/-第 .*\)/, '')
+}
+
 const ROOM_SELECTIONS = {
   quickReplies: locations.map((room) => {
     return {
       contentType: 'text',
-      title: room['場地-華語'],
+      title: shortRoomName(room),
       payload: room.id
     }
   })
