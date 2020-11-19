@@ -2,7 +2,7 @@ const onlyInternal = require('../../middleware/onlyInternal')
 
 module.exports = {
   before: {
-    all: [],
+    all: [onlyInternal],
     find: [],
     get: [],
     create: [],

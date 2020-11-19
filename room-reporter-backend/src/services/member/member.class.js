@@ -1,33 +1,7 @@
 const axios = require('axios')
 const { Service } = require('feathers-sequelize')
 const { loggers } = require('winston')
-
-// const PROFILE_ENDPOINT = 'https://graph.facebook.com/v7.0/me/messenger_profile'
-const USER_ENDPOINT = 'https://graph.facebook.com/v7.0/me/custom_user_settings'
-
-// ref: https://developers.facebook.com/docs/messenger-platform/send-messages/persistent-menu
-const MENU_CONFIG = {
-  locale: 'default',
-  composer_input_disabled: false,
-  call_to_actions: [
-    {
-      type: 'postback',
-      title: '客滿通知',
-      payload: 'ROOM_FULL'
-    },
-    {
-      type: 'postback',
-      title: '取消客滿',
-      payload: 'ROOM_AVA'
-    },
-    {
-      type: 'web_url',
-      title: '看議程',
-      url: 'https://summit.g0v.tw/2020/agenda/',
-      webview_height_ratio: 'full'
-    }
-  ]
-}
+const { USER_ENDPOINT, MENU_CONFIG } = require('../../utils/fbMenu')
 
 exports.Member = class Member extends Service {
   setup (app) {

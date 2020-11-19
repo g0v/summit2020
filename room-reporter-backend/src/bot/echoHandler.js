@@ -4,6 +4,7 @@ async function echoHandler (context, { next }) {
     return next
   }
   if (ev.isText) {
+    console.log(context, context.user, context.session)
     await context.sendText(`我看到你說：「${ev.text}」囉～`)
   }
 }

@@ -1,13 +1,15 @@
+const { on } = require('nodemon')
+const onlyInternal = require('../../middleware/onlyInternal')
 
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [],
-    update: [],
-    patch: [],
-    remove: []
+    create: [onlyInternal],
+    update: [onlyInternal],
+    patch: [onlyInternal],
+    remove: [onlyInternal]
   },
 
   after: {

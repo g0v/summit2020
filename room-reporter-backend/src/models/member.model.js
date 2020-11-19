@@ -41,7 +41,6 @@ module.exports = function (app) {
   member.associate = function (models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
-    member.hasMany(models.elementlog)
   }
 
   return member

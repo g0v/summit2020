@@ -3,7 +3,6 @@
 const Sequelize = require('sequelize')
 const DataTypes = Sequelize.DataTypes
 
-
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient')
   const elementLog = sequelizeClient.define('elementlog', {
@@ -12,9 +11,14 @@ module.exports = function (app) {
       autoIncrement: true,
       primaryKey: true
     },
-    // TODO: element table
+    element: {
+      type: DataTypes.STRING
+    },
     value: {
       type: DataTypes.JSONB
+    },
+    timeOutAt: {
+      type: DataTypes.DATE
     }
   }, {
     hooks: {
