@@ -1,3 +1,4 @@
+const onlyInternal = require('../../middleware/onlyInternal')
 
 module.exports = {
   before: {

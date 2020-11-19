@@ -7,7 +7,8 @@ module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient')
   const member = sequelizeClient.define('member', {
     id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
       primaryKey: true
     },
     channelType: {
@@ -19,8 +20,8 @@ module.exports = function (app) {
     username: {
       type: DataTypes.STRING
     },
-    email: {
-      type: DataTypes.STRING
+    profile: {
+      type: DataTypes.JSONB
     }
   }, {
     hooks: {
