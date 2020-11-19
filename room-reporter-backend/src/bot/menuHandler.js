@@ -62,8 +62,8 @@ async function resetState (context) {
   })
 }
 
-async function collectTimeoutInfo (context) {
-  const ans = Number.parseInt(context.event.quickReply.payload)
+async function collectTimeoutInfo (context, ans) {
+  ans = ans || Number.parseInt(context.event.quickReply.payload)
   const state = context.state
   const targetRoom = state.room
 
@@ -108,8 +108,8 @@ async function createLog (context, payload) {
   })
 }
 
-async function collectRoomInfo (context) {
-  const ans = context.event.quickReply.payload
+async function collectRoomInfo (context, ans) {
+  ans = ans || context.event.quickReply.payload
   const state = context.state
   const targetRoom = locations.find(room => room.id === ans)
   if (!targetRoom) {
@@ -147,13 +147,47 @@ async function menuHandler (context, { next }) {
     }
     await handleMenuButton(context)
   } else if (ev.isText && Object.keys(AVAILABLE_PAYLOAD).some(term => ev.text.toUpperCase().includes(term))) {
-    await handleMenuButton(context, ev.text)
+    let realPayload = ''
+    Object.keys(AVAILABLE_PAYLOAD).some((term) => {
+      if (ev.text.toUpperCase().includes(term)) {
+        realPayload = term
+        return true
+      }
+    })
+    await handleMenuButton(context, realPayload)
   } else if (context.state.roomActionType && ev.isQuickReply) {
     if (context.state.room) {
       await collectTimeoutInfo(context)
     } else {
       await collectRoomInfo(context)
     }
+  } else if (context.state.roomActionType && ev.isText) {
+    const text = ev.text
+    if (context.state.room) {
+      const ans = AVAILABLE_TIMEOUT_MIN.find((timeout) => {
+        return text.includes(`${timeout}`)
+      })
+      if (ans) {
+        await collectTimeoutInfo(context, ans)
+      } else {
+        return next
+      }
+    } else {
+      const cleanText = text.toLowerCase().replace(/[^a-z0-9 ]/g, '').split(' ')
+      const ans = locations.find((room) => {
+        return ['場地-華語', '場地-en', 'id'].some((key) => {
+          const value = room[key].toLowerCase()
+          return cleanText.some(t => value.includes(t))
+        })
+      })
+      if (ans) {
+        await collectRoomInfo(context, ans.id)
+      } else {
+        return next
+      }
+    }
+  } else if (ev.isQuickReply && AVAILABLE_PAYLOAD[ev.quickReply.payload]) {
+    await handleMenuButton(context, ev.quickReply.payload)
   } else {
     return next
   }
