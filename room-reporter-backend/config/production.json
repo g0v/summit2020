@@ -1,0 +1,6 @@
+{
+  "host": "HOST",
+  "port": "PORT",
+  "db": "DATABASE_URL",
+  "logSql": false
+}
