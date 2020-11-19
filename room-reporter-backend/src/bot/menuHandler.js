@@ -146,7 +146,7 @@ async function menuHandler (context, { next }) {
       return next
     }
     await handleMenuButton(context)
-  } else if (ev.isText && Object.keys(AVAILABLE_PAYLOAD).some(term => ev.text.toLowerCase().includes(term))) {
+  } else if (ev.isText && Object.keys(AVAILABLE_PAYLOAD).some(term => ev.text.toUpperCase().includes(term))) {
     await handleMenuButton(context, ev.text)
   } else if (context.state.roomActionType && ev.isQuickReply) {
     if (context.state.room) {

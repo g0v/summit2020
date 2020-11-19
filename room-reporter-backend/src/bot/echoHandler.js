@@ -7,9 +7,13 @@ async function echoHandler (context, { next }) {
   if (ev.isDelivery) {
     return next
   }
-  const text = ev.text.toLowerCase()
+  if (!ev.isText) {
+    return next
+  }
+  const text = ev.text
+  const ltext = text.toLowerCase()
   // to pass the test
-  const isMatchBuzzWords = BUZZ_WORDS.some(word => text.includes(word))
+  const isMatchBuzzWords = BUZZ_WORDS.some(word => ltext.includes(word))
   if (isMatchBuzzWords) {
     await context.sendText('請試著打 ROOM_FULL 或 ROOM_AVA ？', {
       quickReplies: POSTBACKS.map((term) => {
@@ -20,8 +24,7 @@ async function echoHandler (context, { next }) {
         }
       })
     })
-  }
-  if (ev.isText) {
+  } else {
     await context.sendText(`我看不懂「${text}」，請試著打 help 看看？`)
   }
 }
