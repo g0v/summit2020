@@ -96,13 +96,14 @@ async function createLog (context, payload) {
     provider: 'server',
     paginate: false
   })
-  if (!members.length) {
-    return
+  // TODO: add auth control
+  if (members.length) {
+    payload = {
+      ...payload,
+      memberId: members[0].id
+    }
   }
-  return logService.create({
-    ...payload,
-    memberId: members[0].id
-  }, {
+  return logService.create(payload, {
     provider: 'server'
   })
 }
@@ -145,6 +146,14 @@ async function menuHandler (context, { next }) {
       return next
     }
     await handleMenuButton(context)
+  } else if (ev.isText && AVAILABLE_PAYLOAD[ev.text]) {
+    await handleMenuButton({
+      event: {
+        postback: {
+          payload: ev.text
+        }
+      }
+    })
   } else if (context.state.roomActionType && ev.isQuickReply) {
     if (context.state.room) {
       await collectTimeoutInfo(context)
