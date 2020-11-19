@@ -47,10 +47,10 @@ const ROOM_SELECTIONS = {
   })
 }
 
-async function handleMenuButton (context) {
+async function handleMenuButton (context, payload) {
   const postback = context.event.postback
   await context.setState({
-    roomActionType: postback.payload
+    roomActionType: payload || postback.payload
   })
   await context.sendText('請選擇場地：', ROOM_SELECTIONS)
 }
@@ -147,13 +147,7 @@ async function menuHandler (context, { next }) {
     }
     await handleMenuButton(context)
   } else if (ev.isText && AVAILABLE_PAYLOAD[ev.text]) {
-    await handleMenuButton({
-      event: {
-        postback: {
-          payload: ev.text
-        }
-      }
-    })
+    await handleMenuButton(context, ev.text)
   } else if (context.state.roomActionType && ev.isQuickReply) {
     if (context.state.room) {
       await collectTimeoutInfo(context)
