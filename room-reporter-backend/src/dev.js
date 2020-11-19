@@ -1,7 +1,7 @@
 require('dotenv').config()
 
-const ngrok = require('ngrok')
 const path = require('path')
+const ngrok = require('ngrok')
 const { logger } = require('./logger')
 
 const bottenderConfig = require(path.join(__dirname, 'bot/bottender.config'))

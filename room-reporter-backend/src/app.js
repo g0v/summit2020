@@ -3,11 +3,12 @@
 const compress = require('compression')
 const helmet = require('helmet')
 const cors = require('cors')
-const { logger, expressHandler } = require('./logger')
-
 const feathers = require('@feathersjs/feathers')
 const configuration = require('@feathersjs/configuration')
 const express = require('@feathersjs/express')
+const { bottender } = require('bottender')
+const socketio = require('@feathersjs/socketio')
+const { logger, expressHandler } = require('./logger')
 
 const sequelize = require('./sequelize')
 
@@ -49,7 +50,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/', express.static(app.get('public')))
 
 // setup bottender
-const { bottender } = require('bottender')
 const bot = bottender({
   dev: process.env.NODE_ENV !== 'production'
 })
@@ -67,7 +67,6 @@ app.use(botRouter)
 app.configure(express.rest())
 
 // Setup websocket
-const socketio = require('@feathersjs/socketio')
 app.configure(socketio())
 
 app.configure(sequelize)

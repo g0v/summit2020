@@ -1,5 +1,5 @@
-const axios = require('axios')
 const url = require('url')
+const axios = require('axios')
 const app = require('../src/app')
 
 const port = app.get('port') || 8998
@@ -13,12 +13,12 @@ const getUrl = pathname => url.format({
 describe('Feathers application tests (with jest)', () => {
   let server
 
-  beforeAll(done => {
+  beforeAll((done) => {
     server = app.listen(port)
     server.once('listening', () => done())
   })
 
-  afterAll(done => {
+  afterAll((done) => {
     server.close(done)
   })
 
