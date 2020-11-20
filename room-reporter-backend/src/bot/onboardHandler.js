@@ -36,6 +36,7 @@ async function onboardHandler (context, { next }) {
   if (ev.isDelivery) {
     return next
   }
+  console.warn('onboard debug', ev.isReferral, ev.ref, ev.text)
   if (!context.state.hasOnboard) {
     await context.sendText('歡迎光臨，請輸灑密入通關蜜語，才能啟用機器人～')
     context.setState({
