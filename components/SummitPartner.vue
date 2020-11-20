@@ -3,6 +3,7 @@
     :class="{'partner--cover': isCover}"
   )
     img.partner__banner(
+      v-if="cover"
       :src="cover"
       :alt="name"
       :class="{'partner__banner--taller': isTaller}"

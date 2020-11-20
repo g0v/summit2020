@@ -7,7 +7,7 @@
         summit-partner(
           v-for="partner in headPartnerClass.partners"
           :key="partner.id"
-          :cover="partner.logo[0].large_url"
+          :cover="partner.logo ? partner.logo[0].large_url : ''"
           :name="partner.名稱"
           :link="partner.url"
           :desp="partner.說明"
@@ -21,7 +21,7 @@
           :key="partner.id"
           :is-cover="!!partner.is_cover"
           :is-taller="true"
-          :cover="partner.照片們[0].large_url"
+          :cover="partner.照片們 ? partner.照片們[0].large_url : ''"
           :name="partner.共同主辦名稱"
           :desp="partner.說明"
         )
@@ -32,7 +32,7 @@
         summit-partner(
           v-for="partner in cat.partners"
           :key="partner.id"
-          :cover="partner.logo[0].large_url"
+          :cover="partner.logo ? partner.logo[0].large_url : ''"
           :name="partner.名稱"
           :link="partner.url"
           :desp="partner.說明"
