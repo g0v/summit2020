@@ -1,8 +1,13 @@
-// const { logger } = require('../logger')
+const { logger } = require('../logger')
 const global = require('../utils/global')
 
 async function registerMember (context) {
-  const userProfile = await context.getUserProfile()
+  let userProfile = { id: context.session.user.id }
+  try {
+    userProfile = await context.getUserProfile()
+  } catch (err) {
+    logger.error(`Failed to get user profile: ${userProfile.id}`, err)
+  }
   const app = global.getItem('app')
   const memberService = app.service('member')
   const targetMembers = await memberService.find({
@@ -45,8 +50,8 @@ async function onboardHandler (context, { next }) {
         isOnReferral: false,
         hasOnboard: true
       })
-      await context.sendText('答對了！請等我一分鐘更新選單，之後就能回報場地狀況囉 ∩﹏∩')
       await registerMember(context)
+      await context.sendText('答對了！請等我一分鐘更新選單，電腦版請重新整理網頁，之後就能回報場地狀況囉 ∩﹏∩')
     } else {
       await context.sendText('不對呦，而且如果一直沒打對的話，你就永遠離不開這裡惹 ⊙﹏⊙')
     }
