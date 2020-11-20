@@ -79,12 +79,14 @@ async function collectTimeoutInfo (context, ans) {
 
   const timeOutAt = dayjs().add(ans, 'minute')
   const timeOutAtTwStr = timeOutAt.tz('Asia/Taipei').format('HH:mm')
-  await createLog(context, {
+  const isSuccess = await createLog(context, {
     element: targetRoom.id,
     timeOutAt: timeOutAt.toDate(),
     value: { isFull: true }
   })
-  await context.sendText(`${targetRoom['場地-華語']} 已標為客滿， ${timeOutAtTwStr} 時復原`)
+  if (isSuccess) {
+    await context.sendText(`${targetRoom['場地-華語']} 已標為客滿， ${timeOutAtTwStr} 時復原`)
+  }
   await resetState(context)
 }
 
@@ -104,7 +106,7 @@ async function createLog (context, payload) {
   })
   if (!members.length) {
     await context.sendText('請先登記為工人後，才能通報呦～')
-    return
+    return false
   }
   return logService.create({
     ...payload,
@@ -124,12 +126,14 @@ async function collectRoomInfo (context, ans) {
   }
   if (state.roomActionType === 'ROOM_AVA') {
     // reset room
-    await createLog(context, {
+    const isSuccess = await createLog(context, {
       element: targetRoom.id,
       timeOutAt: 0,
       value: { isFull: false }
     })
-    await context.sendText(`${targetRoom['場地-華語']} 已取消客滿`)
+    if (isSuccess) {
+      await context.sendText(`${targetRoom['場地-華語']} 已取消客滿`)
+    }
     await resetState(context)
   } else {
     // ask for timeout
