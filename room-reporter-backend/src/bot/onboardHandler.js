@@ -37,12 +37,7 @@ async function onboardHandler (context, { next }) {
     return next
   }
   console.warn('onboard debug', ev.isReferral, ev.ref, ev.text)
-  if (!context.state.hasOnboard) {
-    await context.sendText('歡迎光臨，請輸灑密入通關蜜語，才能啟用機器人～')
-    context.setState({
-      isOnReferral: true
-    })
-  } else if (context.state.isOnReferral && ev.isText) {
+  if (context.state.isOnReferral && ev.isText) {
     const app = global.getItem('app')
     const passPhrase = app.get('onboardPassphrase')
     if (ev.text.trim() === passPhrase) {
@@ -55,6 +50,11 @@ async function onboardHandler (context, { next }) {
     } else {
       await context.sendText('不對呦，而且如果一直沒打對的話，你就永遠離不開這裡惹 ⊙﹏⊙')
     }
+  } else if (!context.state.hasOnboard) {
+    await context.sendText('歡迎光臨，請輸灑密入通關蜜語，才能啟用機器人～')
+    context.setState({
+      isOnReferral: true
+    })
   } else {
     return next
   }
