@@ -56,10 +56,28 @@ async function onboardHandler (context, { next }) {
       await context.sendText('不對呦，而且如果一直沒打對的話，你就永遠離不開這裡惹 ⊙﹏⊙')
     }
   } else if (!context.state.hasOnboard) {
-    await context.sendText('歡迎光臨，請輸灑密入通關蜜語，才能啟用機器人～')
-    context.setState({
-      isOnReferral: true
+    const userId = context.session.user.id
+    const app = global.getItem('app')
+    const memberService = app.service('member')
+    const members = await memberService.find({
+      query: {
+        channelType: 'messenger',
+        channelId: userId
+      },
+      provider: 'server',
+      paginate: false
     })
+    if (!members.length) {
+      await context.sendText('歡迎光臨，請輸灑密入通關蜜語，才能啟用機器人～')
+      context.setState({
+        isOnReferral: true
+      })
+    } else {
+      context.setState({
+        hasOnboard: true
+      })
+      return next
+    }
   } else {
     return next
   }
