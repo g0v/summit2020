@@ -1,8 +1,6 @@
 // const { logger } = require('../logger')
 const global = require('../utils/global')
 
-const TRIGGER = 'OLA_G0V_SUMMIT_2020'
-
 async function registerMember (context) {
   const userProfile = await context.getUserProfile()
   const app = global.getItem('app')
@@ -38,8 +36,7 @@ async function onboardHandler (context, { next }) {
   if (ev.isDelivery) {
     return next
   }
-
-  if (ev.isReferral && ev.ref === TRIGGER) {
+  if (!context.state.hasOnboard) {
     await context.sendText('歡迎光臨，請輸灑密入通關蜜語，才能啟用機器人～')
     context.setState({
       isOnReferral: true
@@ -49,7 +46,8 @@ async function onboardHandler (context, { next }) {
     const passPhrase = app.get('onboardPassphrase')
     if (ev.text.trim() === passPhrase) {
       context.setState({
-        isOnReferral: false
+        isOnReferral: false,
+        hasOnboard: true
       })
       await context.sendText('答對了！請等我一分鐘更新選單，之後就能回報場地狀況囉 ∩﹏∩')
       await registerMember(context)
