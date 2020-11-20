@@ -6,7 +6,7 @@ async function registerMember (context) {
   try {
     userProfile = await context.getUserProfile()
   } catch (err) {
-    logger.error(`Failed to get user profile: ${userProfile.id}`, err)
+    logger.error(`Failed to get user profile: ${userProfile.id} because ${err.message}`)
   }
   const app = global.getItem('app')
   const memberService = app.service('member')
