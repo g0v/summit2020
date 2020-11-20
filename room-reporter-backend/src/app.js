@@ -32,8 +32,24 @@ app.configure(configuration())
 // Enable security, CORS, compression, favicon and body parsing
 app.use(helmet())
 
-const corsOptions = {
-  origin: app.get('clientEndpoints').split(',')
+const corsOptions = {}
+const clientEndpoints = app.get('clientEndpoints')
+
+if (clientEndpoints && clientEndpoints !== 'CLIENT_ENDPOINTS') {
+  const originMap = clientEndpoints.split(',').reduce((map, endpoint) => {
+    return {
+      ...map,
+      [endpoint]: true
+    }
+  }, {})
+
+  corsOptions.origin = function (origin, callback, ...args) {
+    if (originMap[origin] || !origin) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
 }
 
 app.use(cors(corsOptions))
