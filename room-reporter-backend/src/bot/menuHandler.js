@@ -96,14 +96,14 @@ async function createLog (context, payload) {
     provider: 'server',
     paginate: false
   })
-  // TODO: add auth control
-  if (members.length) {
-    payload = {
-      ...payload,
-      memberId: members[0].id
-    }
+  if (!members.length) {
+    await context.sendText('請先登記為工人後，才能通報呦～')
+    return
   }
-  return logService.create(payload, {
+  return logService.create({
+    ...payload,
+    memberId: members[0].id
+  }, {
     provider: 'server'
   })
 }
@@ -146,22 +146,16 @@ async function menuHandler (context, { next }) {
       return next
     }
     await handleMenuButton(context)
-  } else if (ev.isText && Object.keys(AVAILABLE_PAYLOAD).some(term => ev.text.toUpperCase().includes(term))) {
-    let realPayload = ''
-    Object.keys(AVAILABLE_PAYLOAD).some((term) => {
-      if (ev.text.toUpperCase().includes(term)) {
-        realPayload = term
-        return true
-      }
-    })
-    await handleMenuButton(context, realPayload)
   } else if (context.state.roomActionType && ev.isQuickReply) {
     if (context.state.room) {
       await collectTimeoutInfo(context)
     } else {
       await collectRoomInfo(context)
     }
+  } else if (ev.isQuickReply && AVAILABLE_PAYLOAD[ev.quickReply.payload]) {
+    await handleMenuButton(context, ev.quickReply.payload)
   } else if (context.state.roomActionType && ev.isText) {
+    // also accept partial plain text
     const text = ev.text
     if (context.state.room) {
       const ans = AVAILABLE_TIMEOUT_MIN.find((timeout) => {
@@ -186,8 +180,6 @@ async function menuHandler (context, { next }) {
         return next
       }
     }
-  } else if (ev.isQuickReply && AVAILABLE_PAYLOAD[ev.quickReply.payload]) {
-    await handleMenuButton(context, ev.quickReply.payload)
   } else {
     return next
   }

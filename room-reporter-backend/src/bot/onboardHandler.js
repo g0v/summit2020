@@ -48,7 +48,6 @@ async function onboardHandler (context, { next }) {
     const app = global.getItem('app')
     const passPhrase = app.get('onboardPassphrase')
     if (ev.text.trim() === passPhrase) {
-      // TODO: register user, create menu
       context.setState({
         isOnReferral: false
       })

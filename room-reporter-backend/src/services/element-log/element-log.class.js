@@ -6,11 +6,17 @@ const location = require('../../utils/location.json')
 exports.ElementLog = class ElementLog extends Service {
   async find () {
     // ignore params at all XD
+    const last2Hour = dayjs().subtract(2, 'hour')
     const perElementStatus = await this.Model.findAll({
       attributes: [
         'element',
         [fn('max', col('id')), 'id']
       ],
+      where: {
+        updatedAt: {
+          [Op.gte]: last2Hour.toDate()
+        }
+      },
       group: ['element']
     })
     const ids = perElementStatus.map(ele => ele.id)

@@ -15,7 +15,7 @@ async function echoHandler (context, { next }) {
   // to pass the test
   const isMatchBuzzWords = BUZZ_WORDS.some(word => ltext.includes(word))
   if (isMatchBuzzWords) {
-    await context.sendText('請試著打 ROOM_FULL 或 ROOM_AVA ？', {
+    await context.sendText('請選擇以下動作：', {
       quickReplies: POSTBACKS.map((term) => {
         return {
           contentType: 'text',
