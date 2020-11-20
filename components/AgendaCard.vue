@@ -17,7 +17,7 @@
             text-highlighter(tag="span" :text="moderator.display_name")
         .flex
           text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
-          .agendacard__roomoccu.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
+          .agendacard__roomoccu.db.dn-l.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
             i.fas.mr2(:class="{'fa-door-closed': isRoomFull, 'fa-door-open': !isRoomFull}")
         .agendacard__people.mt3.mb4.f6.lh-copy
           text-highlighter(v-if="speakers" :text="speakers")
