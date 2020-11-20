@@ -56,7 +56,7 @@ import { MUTATIONS, STATES } from '~/store'
 import DailyAgenda from '~/components/DailyAgenda'
 import AgendaTooltip from '~/components/AgendaTooltip'
 import { isAgendaMatch } from '~/utils/searchUtils'
-import { DEFAULT_DATE, VALID_DATE_LIST } from '~/utils/scheduleInfo'
+import { DEFAULT_DATE, VALID_DATE_LIST, ALLOW_DECL_HEALTH } from '~/utils/scheduleInfo'
 
 const OCCU_ENDPOINT = 'https://g0v-summit-2020-room-occupatio.herokuapp.com/element-log'
 
@@ -197,12 +197,20 @@ export default {
       this.doResetSearch()
     },
     keepUpdatingOccu () {
+      if (!ALLOW_DECL_HEALTH) {
+        // we only count room status during the event
+        return
+      }
       this.updateOccu()
       this.occupationTimer = setInterval(() => {
         this.updateOccu()
       }, OCCU_UPDATE_PERIOD)
     },
     async updateOccu () {
+      if (!ALLOW_DECL_HEALTH) {
+        // we only count room status during the event
+        return
+      }
       try {
         const resp = await axios.get(OCCU_ENDPOINT)
         if (resp.data) {
