@@ -50,6 +50,7 @@ zh:
 </i18n>
 <script>
 import { mapMutations, mapState } from 'vuex'
+import axios from 'axios'
 
 import { MUTATIONS, STATES } from '~/store'
 import DailyAgenda from '~/components/DailyAgenda'
@@ -57,10 +58,20 @@ import AgendaTooltip from '~/components/AgendaTooltip'
 import { isAgendaMatch } from '~/utils/searchUtils'
 import { DEFAULT_DATE, VALID_DATE_LIST } from '~/utils/scheduleInfo'
 
+const OCCU_ENDPOINT = 'https://g0v-summit-2020-room-occupatio.herokuapp.com/element-log'
+
+// update every 5 minute
+const OCCU_UPDATE_PERIOD = 5 * 60 * 1000
+
 export default {
   components: {
     DailyAgenda,
     AgendaTooltip
+  },
+  data () {
+    return {
+      occupationTimer: null
+    }
   },
   computed: {
     ...mapState({
@@ -158,10 +169,15 @@ export default {
   },
   mounted () {
     this.checkDate()
+    this.keepUpdatingOccu()
+  },
+  beforeDestroy () {
+    clearInterval(this.occupationTimer)
   },
   methods: {
     ...mapMutations({
-      doResetSearch: MUTATIONS.RESET_AGENDA_SEARCH
+      doResetSearch: MUTATIONS.RESET_AGENDA_SEARCH,
+      updateOccuState: MUTATIONS.SET_ROOM_OCCU
     }),
     checkDate () {
       if (!this.isDateValid) {
@@ -179,6 +195,22 @@ export default {
     },
     resetSearch () {
       this.doResetSearch()
+    },
+    keepUpdatingOccu () {
+      this.updateOccu()
+      this.occupationTimer = setInterval(() => {
+        this.updateOccu()
+      }, OCCU_UPDATE_PERIOD)
+    },
+    async updateOccu () {
+      try {
+        const resp = await axios.get(OCCU_ENDPOINT)
+        if (resp.data) {
+          this.updateOccuState(resp.data)
+        }
+      } catch (err) {
+        this.$sentry.self.captureMessage(`Error during retrieving room occupation: ${err.message}`)
+      }
     }
   }
 }

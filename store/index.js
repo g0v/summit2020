@@ -14,7 +14,8 @@ export const STATES = {
   HEALTH_DECLA_INFO: 'healthDeclaInfo',
   LAST_HEALTH_KEY: 'lastHeathKey',
 
-  FAVOURITE_AGENDAS: 'favouriteAgendas'
+  FAVOURITE_AGENDAS: 'favouriteAgendas',
+  ROOM_OCCU_STATE: 'roomOccupationState'
 }
 
 export const MUTATIONS = {
@@ -27,7 +28,8 @@ export const MUTATIONS = {
   INIT_HEALTH: 'initHealth',
 
   TOGGLE_FAVOURITE_AGENDA: 'toggleFavouriteAgenda',
-  INIT_FAVOURITE_AGENDAS: 'initFavouriteAgendas'
+  INIT_FAVOURITE_AGENDAS: 'initFavouriteAgendas',
+  SET_ROOM_OCCU: 'setRoomOccupation'
 }
 
 export const GETTERS = {
@@ -43,7 +45,8 @@ export const state = () => {
     [STATES.HEALTH_DECLA_INFO]: {},
     [STATES.LAST_HEALTH_KEY]: '',
 
-    [STATES.FAVOURITE_AGENDAS]: []
+    [STATES.FAVOURITE_AGENDAS]: [],
+    [STATES.ROOM_OCCU_STATE]: []
   }
 }
 
@@ -93,6 +96,9 @@ export const mutations = {
   [MUTATIONS.INIT_FAVOURITE_AGENDAS] (state) {
     const favouriteAgendas = localStorage.getItem(STORAGE_KEYS.FAVOURITE_AGENDAS)
     state[STATES.FAVOURITE_AGENDAS] = favouriteAgendas ? JSON.parse(favouriteAgendas) : []
+  },
+  [MUTATIONS.SET_ROOM_OCCU] (state, occupationList) {
+    state[STATES.ROOM_OCCU_STATE] = occupationList
   }
 }
 

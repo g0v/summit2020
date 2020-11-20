@@ -84,7 +84,6 @@ export default {
     proposals: require('~/assets/agendas/proposals.json'),
     isEn: false
   }),
-
-  // meta
-  'article/summitMeta': require('~/assets/articles/meta.zh.md').default
+  isRoomFull: '座位已滿',
+  isRoomNotFull: '尚有空位'
 }

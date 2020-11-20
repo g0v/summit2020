@@ -15,7 +15,10 @@
           .agendacard__moderator(v-if="moderator")
             span {{$t('moderator')}} /&nbsp;
             text-highlighter(tag="span" :text="moderator.display_name")
-        text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
+        .flex
+          text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
+          .agendacard__roomoccu.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
+            i.fas.mr2(:class="{'fa-door-closed': isRoomFull, 'fa-door-open': !isRoomFull}")
         .agendacard__people.mt3.mb4.f6.lh-copy
           text-highlighter(v-if="speakers" :text="speakers")
         .flex
@@ -53,13 +56,24 @@ export default {
     }
   },
   computed: {
-    ...mapState(
-      {
-        isFavourite (state) {
-          return state[STATES.FAVOURITE_AGENDAS].includes(this.agenda.id)
-        }
+    ...mapState({
+      isFavourite (state) {
+        return state[STATES.FAVOURITE_AGENDAS].includes(this.agenda.id)
+      },
+      occuState: STATES.ROOM_OCCU_STATE
+    }),
+    isRoomFull () {
+      const field = `${this.$i18n.locale}Name`
+      const myRoom = this.room
+      const roomState = this.occuState.find(item => item[field] === myRoom)
+      return roomState && roomState.isFull
+    },
+    roomOccuStr () {
+      if (this.isRoomFull) {
+        return this.$t('isRoomFull')
       }
-    ),
+      return this.$t('isRoomNotFull')
+    },
     detailUrl () {
       if (!this.agenda.isPseudo && this.$route.params.date) {
         return this.localePath(`/agenda/${this.$route.params.date}/${this.agenda.id}`)
@@ -104,8 +118,8 @@ export default {
   }
   &__content {
     position: sticky;
-    // header search bar 3.5rem, locaion bar 6.25rem
-    top: 9.75rem;
+    // header search bar 3.5rem, locaion bar 7.75rem
+    top: 11.25rem;
     left: 1.25rem;
     display: inline-block;
     width: 100%;
@@ -115,7 +129,15 @@ export default {
   &--en {
     .agendacard__content {
       // en location will be 4 lines
-      top: 11.5rem;
+      top: 13rem;
+    }
+  }
+  &__roomoccu {
+    .fa-door-open {
+      color: $blue-1;
+    }
+    .fa-door-closed {
+      color: #888;
     }
   }
   &__time {
