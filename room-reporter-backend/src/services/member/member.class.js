@@ -1,6 +1,6 @@
 const axios = require('axios')
 const { Service } = require('feathers-sequelize')
-const { loggers } = require('winston')
+const { logger } = require('../../logger')
 const { USER_ENDPOINT, MENU_CONFIG } = require('../../utils/fbMenu')
 
 exports.Member = class Member extends Service {
@@ -20,7 +20,7 @@ exports.Member = class Member extends Service {
     try {
       await axios.post(endpoint, payload)
     } catch (error) {
-      loggers.error(`Failed create user menu for user ${fbid} - ${JSON.stringify(payload)}.`, error)
+      logger.error(`Failed create user menu for user ${fbid} - ${JSON.stringify(payload)}. because ${error.message}`)
     }
     return resp
   }

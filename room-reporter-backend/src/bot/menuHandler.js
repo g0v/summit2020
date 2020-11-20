@@ -1,7 +1,12 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const { POSTBACKS } = require('../utils/fbMenu')
 const locations = require('../utils/location.json').filter(item => !item['場地-華語'].startsWith('ALL'))
 const global = require('../utils/global')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 const AVAILABLE_PAYLOAD = POSTBACKS.reduce((sum, item) => {
   sum[item.payload] = true
@@ -47,10 +52,10 @@ const ROOM_SELECTIONS = {
   })
 }
 
-async function handleMenuButton (context) {
+async function handleMenuButton (context, payload) {
   const postback = context.event.postback
   await context.setState({
-    roomActionType: postback.payload
+    roomActionType: payload || postback.payload
   })
   await context.sendText('請選擇場地：', ROOM_SELECTIONS)
 }
@@ -62,8 +67,8 @@ async function resetState (context) {
   })
 }
 
-async function collectTimeoutInfo (context) {
-  const ans = Number.parseInt(context.event.quickReply.payload)
+async function collectTimeoutInfo (context, ans) {
+  ans = ans || Number.parseInt(context.event.quickReply.payload)
   const state = context.state
   const targetRoom = state.room
 
@@ -73,12 +78,15 @@ async function collectTimeoutInfo (context) {
   }
 
   const timeOutAt = dayjs().add(ans, 'minute')
-  await createLog(context, {
+  const timeOutAtTwStr = timeOutAt.tz('Asia/Taipei').format('HH:mm')
+  const isSuccess = await createLog(context, {
     element: targetRoom.id,
     timeOutAt: timeOutAt.toDate(),
     value: { isFull: true }
   })
-  await context.sendText(`${targetRoom['場地-華語']} 已標為客滿， ${timeOutAt.format('HH:mm')} 時復原`)
+  if (isSuccess) {
+    await context.sendText(`${targetRoom['場地-華語']} 已標為客滿， ${timeOutAtTwStr} 時復原`)
+  }
   await resetState(context)
 }
 
@@ -97,7 +105,8 @@ async function createLog (context, payload) {
     paginate: false
   })
   if (!members.length) {
-    return
+    await context.sendText('請先登記為工人後，才能通報呦～')
+    return false
   }
   return logService.create({
     ...payload,
@@ -107,8 +116,8 @@ async function createLog (context, payload) {
   })
 }
 
-async function collectRoomInfo (context) {
-  const ans = context.event.quickReply.payload
+async function collectRoomInfo (context, ans) {
+  ans = ans || context.event.quickReply.payload
   const state = context.state
   const targetRoom = locations.find(room => room.id === ans)
   if (!targetRoom) {
@@ -117,12 +126,14 @@ async function collectRoomInfo (context) {
   }
   if (state.roomActionType === 'ROOM_AVA') {
     // reset room
-    await createLog(context, {
+    const isSuccess = await createLog(context, {
       element: targetRoom.id,
       timeOutAt: 0,
       value: { isFull: false }
     })
-    await context.sendText(`${targetRoom['場地-華語']} 已取消客滿`)
+    if (isSuccess) {
+      await context.sendText(`${targetRoom['場地-華語']} 已取消客滿`)
+    }
     await resetState(context)
   } else {
     // ask for timeout
@@ -150,6 +161,34 @@ async function menuHandler (context, { next }) {
       await collectTimeoutInfo(context)
     } else {
       await collectRoomInfo(context)
+    }
+  } else if (ev.isQuickReply && AVAILABLE_PAYLOAD[ev.quickReply.payload]) {
+    await handleMenuButton(context, ev.quickReply.payload)
+  } else if (context.state.roomActionType && ev.isText) {
+    // also accept partial plain text
+    const text = ev.text
+    if (context.state.room) {
+      const ans = AVAILABLE_TIMEOUT_MIN.find((timeout) => {
+        return text.includes(`${timeout}`)
+      })
+      if (ans) {
+        await collectTimeoutInfo(context, ans)
+      } else {
+        return next
+      }
+    } else {
+      const cleanText = text.toLowerCase().replace(/[^a-z0-9 ]/g, '').split(' ')
+      const ans = locations.find((room) => {
+        return ['場地-華語', '場地-en', 'id'].some((key) => {
+          const value = room[key].toLowerCase()
+          return cleanText.some(t => value.includes(t))
+        })
+      })
+      if (ans) {
+        await collectRoomInfo(context, ans.id)
+      } else {
+        return next
+      }
     }
   } else {
     return next
