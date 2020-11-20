@@ -84,5 +84,7 @@ export default {
   'proposal/map': extractLanguageFromProposals({
     proposals: require('~/assets/agendas/proposals.json'),
     isEn: true
-  })
+  }),
+  isRoomFull: 'Room full',
+  isRoomNotFull: 'Available'
 }

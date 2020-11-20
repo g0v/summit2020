@@ -18,7 +18,7 @@
             .f6(v-if="room") {{room}}
           .detail__resource
             ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
-              i.fa.fa-comments
+              i.fas.fa-comments
         .detail__header.flex
           h1.fw5.f4.f3-ns {{title}}
         .gray(v-if="category") {{category}}

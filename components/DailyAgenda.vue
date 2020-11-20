@@ -168,7 +168,7 @@ export default {
     top: calc(3.5rem - 1px);
     z-index: 1;
     background: white;
-    background: linear-gradient(180deg, white 0%, white 87%, rgba(255,255,255,0.1) 100%);
+    background: linear-gradient(180deg, white 0%, white 90%, rgba(255,255,255,0.1) 100%);
   }
 
   &__item {

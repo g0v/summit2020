@@ -28,7 +28,6 @@ zh:
   CFP_GOTO_FORUM: 參與討論
 </i18n>
 <script>
-import { friendlyHeader, summaryFromMarkdown } from '~/utils/crawlerFriendly'
 import Timeline from '~/components/Timeline'
 
 export default {
@@ -73,12 +72,7 @@ export default {
     return {
       bigTimeline
     }
-  },
-  head: friendlyHeader({
-    description () {
-      return summaryFromMarkdown(this.$t('article/summitMeta'))
-    }
-  })
+  }
 }
 </script>
 <style lang="scss" scoped>

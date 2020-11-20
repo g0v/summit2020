@@ -9,7 +9,7 @@ const SITE_BASE = `https://${DOMAIN}${ROUTER_BASE}`
 import { friendlyHeader } from './utils/crawlerFriendly'
 
 const defaultHeader = friendlyHeader({
-  description: 'g0v Summit 台灣零時政府雙年會兩年舉辦一次，關注開放政府、開源協作、公民參與等議題，是國際開放政府社群的焦點活動，過去三屆吸引多達 33 國講者投稿。',
+  description: 'g0v summit 2020 是 g0v 台灣零時政府社群兩年一次的大聚會，也是全球公民黑客、公民科技的盛會。開源實作、在地連結，summit 2020 要在台南讓虛擬、實體空間間奔走的黑客、貢獻者齊聚一堂，聆聽彼此的故事，用對話了解彼此。',
   coverUrl: '/og.png',
   siteBase: SITE_BASE
 })()
@@ -29,7 +29,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${ROUTER_BASE}/favicon-32x32.png` },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${ROUTER_BASE}/favicon-16x16.png` },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap' }
     ]
   },
