@@ -28,7 +28,18 @@
             .agendacard__tag.agendacard__tag--hl.db.dn-ns.truncate.mt3(v-if="room") {{room}}
             .agendacard__tag.truncate(v-if="topic") {{topic}}
             .agendacard__tag.truncate.mt3-ns(v-if="format") {{format}}
-            .agendacard__tag.truncate(v-if="lang") {{$t(lang)}}
+            .agendacard__tag.flex.items-center(
+              v-if="lang"
+              :class="{'agendacard__tag--trans': agenda.translation}"
+            )
+              span.truncate {{$t(lang)}}
+              template(v-if="agenda.translation")
+                .flex.dn-l.items-center
+                  | &nbsp;{{$t('with')}} {{agenda.translation}}
+                .agendacard__translation.br-pill.br--right.flex.items-center
+                  b-tooltip(:label="agenda.translation" type="is-dark")
+                    .flex.items-center
+                      img.w1(src="~/assets/images/translate_logo.svg")
           button.agendacard__heart(v-if="!this.agenda.isPseudo" @click.stop.prevent="toggleFavouriteAgenda({agendaId: id})")
             img(v-if="isFavourite" src="~/assets/icons/heart-full.svg")
             img(v-else src="~/assets/icons/heart-empty.svg")
@@ -173,6 +184,21 @@ export default {
     }
     &--hl {
       background: #509fac;
+    }
+    &--trans {
+      // padding-top: 0rem;
+      // padding-bottom: 0rem;
+    }
+  }
+  &__translation {
+    background: rgba(0,0,0,0.25);
+    position: relative;
+    right: -0.5rem;
+    margin-left: -0.25rem;
+    padding: 0 0.25rem;
+    height: calc(100% + 0.25rem);
+    /deep/ .tooltip-trigger {
+      height: 100%;
     }
   }
   &__heart {

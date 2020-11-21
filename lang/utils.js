@@ -103,7 +103,8 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
         }
       },
       { field: 'topic' },
-      { field: 'presentation_method' }
+      { field: 'presentation_method' },
+      { field: 'translation' }
     ]
 
     bilingualFields.forEach((config) => {

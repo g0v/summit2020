@@ -86,5 +86,6 @@ export default {
     isEn: true
   }),
   isRoomFull: 'Room full',
-  isRoomNotFull: 'Available'
+  isRoomNotFull: 'Available',
+  with: 'w/'
 }
