@@ -46,6 +46,15 @@ function extractLanguageFromItem ({ item, isEn }) {
   })
 }
 
+function extractLanguageFromSting (bilingualStr, isEn) {
+  const tokens = bilingualStr.split(' ')
+  if (isEn) {
+    return tokens.slice(1).join(' ').trim()
+  } else {
+    return tokens[0].trim()
+  }
+}
+
 function extractLanguageFromProposals ({ proposals, isEn = true }) {
   return Object.values(proposals).map((proposal) => {
     const timeSheetWrapper = extractLanguageFromTable({ rows: [proposal.timeSheet], isEn })
@@ -82,29 +91,34 @@ function extractLanguageFromProposals ({ proposals, isEn = true }) {
       })
     }
 
-    // format: <zh format> （...） <en format> (...)
-    // ex:演講 （20 分鐘）Talk (20 min)
-    if (perLangProposal.format) {
-      const format = perLangProposal.format
-        .replace(/（[^）]+）/, '')
-        .replace(/\([^)]+\)/, '')
-      const tokens = format.split(' ')
-      if (isEn) {
-        perLangProposal.format = tokens.slice(1).join(' ').trim()
-      } else {
-        perLangProposal.format = tokens[0].trim()
-      }
-    }
+    const bilingualFields = [
+      {
+        field: 'format',
+        // format: <zh format> （...） <en format> (...)
+        // ex:演講 （20 分鐘）Talk (20 min)
+        preprocessor (format) {
+          return format
+            .replace(/（[^）]+）/, '')
+            .replace(/\([^)]+\)/, '')
+        }
+      },
+      { field: 'topic' },
+      { field: 'presentation_method' },
+      { field: 'translation' }
+    ]
 
-    // topic
-    if (perLangProposal.topic) {
-      const tokens = perLangProposal.topic.split(' ')
-      if (isEn) {
-        perLangProposal.topic = tokens.slice(1).join(' ').trim()
-      } else {
-        perLangProposal.topic = tokens[0].trim()
+    bilingualFields.forEach((config) => {
+      let fieldValue = perLangProposal[config.field]
+      if (fieldValue) {
+        if (config.preprocessor) {
+          fieldValue = config.preprocessor(fieldValue)
+        }
+        perLangProposal[config.field] = extractLanguageFromSting(
+          fieldValue,
+          isEn
+        )
       }
-    }
+    })
 
     return perLangProposal
   })

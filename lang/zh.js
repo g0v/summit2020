@@ -85,5 +85,6 @@ export default {
     isEn: false
   }),
   isRoomFull: '座位已滿',
-  isRoomNotFull: '尚有空位'
+  isRoomNotFull: '尚有空位',
+  with: '/'
 }

@@ -16,16 +16,26 @@
           div
             .fw5 {{fromTime}} - {{toTime}}
             .f6(v-if="room") {{room}}
-          .detail__resource
-            ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
-              i.fas.fa-comments
+          .detail__resource.flex.items-center
+            b-tooltip.f3.light-silver(:label="agenda.presentation_method" type="is-dark")
+              i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
+              i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
+            b-tooltip(:label="$t('comment')" type="is-dark")
+              ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl")
+                i.fas.fa-comments
         .detail__header.flex
           h1.fw5.f4.f3-ns {{title}}
         .gray(v-if="category") {{category}}
-        .mt4.flex
+        .mt4.flex.flex-wrap
           .detail__tag(v-if="topic") {{topic}}
           .detail__tag(v-if="format") {{format}}
-          .detail__tag(v-if="lang") {{$t(lang)}}
+          .detail__tag.flex.items-center(v-if="lang")
+            | {{$t(lang)}}
+            template(v-if="agenda.translation")
+              .flex.items-center
+                | &nbsp;{{$t('with')}} {{agenda.translation}}
+              .detail__translation.br-pill.br--right.flex.items-center
+                img.w1(src="~/assets/images/translate_logo.svg")
         h2.ttc {{$t('abstract')}}
         rich-multi-line.gray(:text="agenda.summary")
         .gray.mv3(v-if="relatedInfo")
@@ -257,9 +267,17 @@ export default {
     margin-top: 0.25rem;
     background: #67cddd;
     padding: 0.125rem 0.5rem;
-    &:not(:first-child) {
-      margin-left: 0.25rem;
+    &:not(:last-child) {
+      margin-right: 0.25rem;
     }
+  }
+  &__translation {
+    background: rgba(0,0,0,0.25);
+    position: relative;
+    right: -0.5rem;
+    margin-left: -0.25rem;
+    height: calc(100% + 0.25rem);
+    padding: 0 0.25rem;
   }
   &__keyword {
     color: $blue-1;

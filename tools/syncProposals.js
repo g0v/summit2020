@@ -216,6 +216,8 @@ function genFieldI18n (value) {
 const INTERMEDIATE_TIME_FIELDS = [
   '議程預設標題-華語',
   '議程預設標題-en',
+  '分享方式',
+  '翻譯方式',
   '標題對調',
   '講者 1',
   '講者 2',
@@ -345,6 +347,15 @@ async function exportProposals (proposals, timeSheet) {
           }
         })
       })
+    }
+
+    if (timeSheet.翻譯方式) {
+      toExport[pid].translation = timeSheet.翻譯方式
+    }
+
+    // always prefer 分享方式 then presentation_method as it's defined by crew
+    if (timeSheet.分享方式) {
+      toExport[pid].presentation_method = timeSheet.分享方式
     }
 
     INTERMEDIATE_TIME_FIELDS.forEach((attr) => {
