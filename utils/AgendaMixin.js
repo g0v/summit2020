@@ -1,3 +1,9 @@
+const PRESENT_MODE_LABEL = {
+  'on-site': 'isPresentOnSite',
+  online: 'isPresentOnline',
+  mixed: 'isPresentMixed'
+}
+
 export default {
   computed: {
     id () {
@@ -21,6 +27,12 @@ export default {
     },
     toTime () {
       return this.time.toTimeStr
+    },
+    isPureOnline () {
+      return this.time.分享方式 === 'online'
+    },
+    presentMode () {
+      return PRESENT_MODE_LABEL[this.time.分享方式] || 'isPresentOnSite'
     },
     title () {
       return this.agenda.title || ''

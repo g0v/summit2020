@@ -18,6 +18,12 @@ export const FILTER_MAP = {
     field: 'timeSheet.議程場地',
     defaultOpened: false
   },
+  presentMethod: {
+    field: 'presentation_method',
+    defaultOpened: false,
+    defaultValue: '現場報告 on-site',
+    ignorePseudo: true
+  },
   island: {
     field: 'topic',
     defaultOpened: false
@@ -37,8 +43,16 @@ function isAgendaMatchFilter (agenda, filter) {
   return Object.keys(filter).every((type) => {
     // agenda should match one value in each filter type
     return filter[type].some((filterValue) => {
-      const fieldValue = _.get(agenda, FILTER_MAP[type].field)
-      return filterValue === fieldValue
+      const def = FILTER_MAP[type]
+      const fieldValue = _.get(agenda, def.field)
+      // when defaultValue is given, use it when get empty value
+      if (fieldValue || !def.defaultValue) {
+        return filterValue === fieldValue
+      }
+      if (def.ignorePseudo && agenda.isPseudo) {
+        return false
+      }
+      return filterValue === def.defaultValue
     })
   })
 }

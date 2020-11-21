@@ -58,14 +58,16 @@ en:
   format: Format
   language: Language
   location: Location
+  presentMethod: Presentation Mode
   island: Topic
   clearFilter: Reset filter
 zh:
   search: 搜尋議程
   filter: 篩選議程
-  format: 形式
+  format: 類型
   language: 語言
   location: 場地
+  presentMethod: 呈現方式
   island: 主題
   clearFilter: 清除條件
 </i18n>
@@ -125,6 +127,7 @@ export default {
       Object.keys(FILTER_MAP).forEach((type) => {
         ret[type] = uniqBy(this.agendas, FILTER_MAP[type].field)
       })
+      ret.presentMethod = ret.presentMethod.filter(method => method !== 'unknown')
       ret.location = ret.location.filter(location => !location.startsWith('ALL'))
       return ret
     },

@@ -17,8 +17,10 @@
             text-highlighter(tag="span" :text="moderator.display_name")
         .flex
           text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
+          b-tooltip.agendacard__present.ml2(v-if="isPureOnline" type="is-dark" :label="$t(presentMode)")
+            i.fas.fa-video
           .agendacard__roomoccu.db.dn-l.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
-            i.fas.mr2(:class="{'fa-door-closed': isRoomFull, 'fa-door-open': !isRoomFull}")
+            i.fas(:class="{'fa-door-closed': isRoomFull, 'fa-door-open': !isRoomFull}")
         .agendacard__people.mt3.mb4.f6.lh-copy
           text-highlighter(v-if="speakers" :text="speakers")
         .flex
@@ -150,6 +152,9 @@ export default {
     color: #555;
   }
   &__title {
+    color: $blue-1;
+  }
+  &__present {
     color: $blue-1;
   }
   &__moderator {
