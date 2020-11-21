@@ -1423,8 +1423,8 @@
   },
   "5ef8c370ba206b030d66a386": {
     "id": "5ef8c370ba206b030d66a386",
-    "title": "Addressing the State : an analysis of the online-offline request system in Taiwan",
-    "title_en": "“請求政府”：台灣公共政策網路參與平台之訴求與開放政府聯絡人之分析",
+    "title": "“請求政府”：台灣公共政策網路參與平台之訴求與開放政府聯絡人之分析",
+    "title_en": "Addressing the State : an analysis of the online-offline request system in Taiwan",
     "summary": "In many countries, governments have adopted, as part of complex online-offline apparatus, new online petition platforms for citizens to directly address government institutions, voice their discontent and ask for changes (ie. WeThePeople in the United States or E-pétitions in France). \n\tIn 2015, following the aftermath of the Sunflower movement, Taiwan government launches a request platform called JOIN, that allows citizens to address the ministries of the Executive Yuan. Each request that gathers at least 5000 signatures, get a written response from the government. In 2017, the implementation of the Participation Officer network (PO network) -public servants from each ministries- pushed the request system based on JOIN further, as selected requests are discussed through a two-month process gathering public servants, the petitioner, signatories and civil society organizations.\n\tWhat can we learn from this online-offline request system? This talk (based on a one year and half fieldwork) draws from the sociology of controversies to analyze the petition apparatus through requests content, PO’s interactions and meetings among actors. What do people ask to the government in Taiwan? How requests are handled by the administration and debated during meetings? What can and can't be discussed through this process?\n\tThe JOIN–PO network system is a place were established norms (laws, policies) are challenged. Through requests, people share expectations on how the government should work, about its role in society. JOIN and POs’ meetings are spaces were actors debate and redefine together what is just and unjust, what should be and not be. If citizens tend to underline what they consider to be malfunctions, they also tend to define what is for them a “good government”. Request and POs’ meetings are also moments were actors redefine the relation between the government and the society. \n\tFrom requests pushing in favor or against LGBTQ+ rights, from public servants’ requests pushing for changes in their profession to requests asking for corporal punishment, Taiwan petition system gives us an interesting overview of Taiwan society controversies. If we can learn a lot about what opposes people (agonistic pluralism), it also tends to show what brings them together.",
     "summary_en": "",
     "oral_language": "English",
@@ -1454,7 +1454,7 @@
     "timeSheet": {
       "id": "5ef8c370ba206b030d66a386",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-18T13:04:44.000Z",
+      "最後更新時間": "2020-11-20T14:02:41.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -2779,7 +2779,7 @@
         "city": "台北",
         "city_en": "Taipei, Taiwan",
         "bio": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\"",
-        "bio_en": "\""
+        "bio_en": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\""
       },
       "議程開始時間": "2020-12-05T11:00",
       "議程長度": 30,
@@ -2830,9 +2830,14 @@
       "議程場地-en": "C3 - C-Hub - 3F",
       "主持人": {
         "display_name": "jxtsai",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
+        "avatar_url": "cache/d1553bc77766138e5db11fb586fbf2b5.png",
+        "city": "高雄",
+        "city_en": "Kaohsiung",
         "info_url": "https://medium.twngo.xyz",
-        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
-        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
+        "bio": "前半生求學念書碩士畢業後，曾在不同非營利組織打轉，其涉及議題包括社區營造、志工服務與人權倡議。後半生在為一個人如何尊嚴地走入墳墓作準備。",
+        "bio_en": "Former non-governmental organizations worker, interested in digital rights.   Localization volunteer for various  internet freedom tools projects, like Tor, Tails, SecureDrop etc."
       },
       "議程開始時間": "2020-12-05T10:50",
       "議程長度": 20,
@@ -3522,7 +3527,7 @@
         "city": "台北",
         "city_en": "Taipei, Taiwan",
         "bio": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\"",
-        "bio_en": "\""
+        "bio_en": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\""
       },
       "議程開始時間": "2020-12-05T10:30",
       "議程長度": 30,
@@ -3660,7 +3665,7 @@
         "city": "台北",
         "city_en": "Taipei, Taiwan",
         "bio": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\"",
-        "bio_en": "\""
+        "bio_en": "Kuochun Hung is the Chief Editor of Watchout Co., a media company founded in 2013 with a mission to lower the threshold of civic participation so that more people can understand and engage in our political processes to make Taiwan a better nation. His work at Watchout is to find a way to translate difficult but important information or knowledge into a more reader-friendly form that is accessible and legible to the diverse Taiwanese people.\""
       },
       "議程開始時間": "2020-12-05T09:30",
       "議程長度": 60,
@@ -4160,9 +4165,14 @@
       "議程場地-en": "C3 - C-Hub - 3F",
       "主持人": {
         "display_name": "jxtsai",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
+        "avatar_url": "cache/d1553bc77766138e5db11fb586fbf2b5.png",
+        "city": "高雄",
+        "city_en": "Kaohsiung",
         "info_url": "https://medium.twngo.xyz",
-        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
-        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
+        "bio": "前半生求學念書碩士畢業後，曾在不同非營利組織打轉，其涉及議題包括社區營造、志工服務與人權倡議。後半生在為一個人如何尊嚴地走入墳墓作準備。",
+        "bio_en": "Former non-governmental organizations worker, interested in digital rights.   Localization volunteer for various  internet freedom tools projects, like Tor, Tails, SecureDrop etc."
       },
       "議程開始時間": "2020-12-05T09:30",
       "議程長度": 40,
@@ -4429,9 +4439,14 @@
       "議程場地-en": "C3 - C-Hub - 3F",
       "主持人": {
         "display_name": "jxtsai",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
+        "avatar_url": "cache/d1553bc77766138e5db11fb586fbf2b5.png",
+        "city": "高雄",
+        "city_en": "Kaohsiung",
         "info_url": "https://medium.twngo.xyz",
-        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
-        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
+        "bio": "前半生求學念書碩士畢業後，曾在不同非營利組織打轉，其涉及議題包括社區營造、志工服務與人權倡議。後半生在為一個人如何尊嚴地走入墳墓作準備。",
+        "bio_en": "Former non-governmental organizations worker, interested in digital rights.   Localization volunteer for various  internet freedom tools projects, like Tor, Tails, SecureDrop etc."
       },
       "議程開始時間": "2020-12-05T10:30",
       "議程長度": 20,
@@ -4603,9 +4618,14 @@
       "議程場地-en": "C3 - C-Hub - 3F",
       "主持人": {
         "display_name": "jxtsai",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
+        "avatar_url": "cache/d1553bc77766138e5db11fb586fbf2b5.png",
+        "city": "高雄",
+        "city_en": "Kaohsiung",
         "info_url": "https://medium.twngo.xyz",
-        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
-        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
+        "bio": "前半生求學念書碩士畢業後，曾在不同非營利組織打轉，其涉及議題包括社區營造、志工服務與人權倡議。後半生在為一個人如何尊嚴地走入墳墓作準備。",
+        "bio_en": "Former non-governmental organizations worker, interested in digital rights.   Localization volunteer for various  internet freedom tools projects, like Tor, Tails, SecureDrop etc."
       },
       "議程開始時間": "2020-12-05T10:10",
       "議程長度": 20,
@@ -5067,8 +5087,8 @@
   },
   "1204-jothon-0": {
     "id": "1204-jothon-0",
-    "updatedAt": "2020-11-15T16:07:16.000Z",
-    "createdAt": "2020-11-15T16:07:16.000Z",
+    "updatedAt": "2020-11-20T10:34:13.000Z",
+    "createdAt": "2020-11-20T10:34:13.000Z",
     "title": "零時小學校 2020 成果發表會",
     "title_en": "Sch001 2020 Final Presentation",
     "summary": "零時小學校（Sch001）聚焦在教育，將代表數位原生世代的 0 與 1 放入代表教育的「學校（School）」，從零重新思考學校的角色。自 2020 年 2 月起，零時小學校在 3 次工作坊和 3 次大松累積 21 件教育科技提案，並在 Demo Day 選出 6 組獲獎團隊，包括「｜島島阿學｜學習資源平台」、「繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫」、「CoTeach 教案共享平臺」、「幸福存摺」、「專為高中生設計的管家型聊天機器人」和「識字題庫」。在這次「零時小學校 2020 成果發表會」，Demo Day 獲獎團隊成員將分享開發緣起與心路歷程，給你耳目一新的教育新思考。",
@@ -5091,8 +5111,8 @@
         "city": "台北",
         "city_en": "Taipei, Taiwan",
         "info_url": "https://g0v.hackmd.io/@jothon/Sch001DemoDay2020Awardees",
-        "bio": "【島島阿學：學習資源平台】\n林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。\n林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】\nIrvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】\nKahou：「CoTeach 教案共享平臺」團隊成員。\n蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】\n林峻丞：小草書屋創辦人/執行長\n賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】\n廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】\ntmonk：直播導播、網頁後端工程師、自由軟體工程師",
-        "bio_en": "【Dao Dao Online Learning Platform】\nLin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet.\nLin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations.\n【Traditional Chinese CC0 corpus and Mozilla Common Voice database】\nIrvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net.\n【CoTeach】\nKahou: Member of CoTeach.\nMeng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat!\n【Happiness Bankbook】\nJeffery Lin: Founder of Grass Book House\nGiovanni: Project Manager of Happiness Bankbook\n【Chatbot for High School Students】\nJason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year.\n【Literacy Practices Database】\ntmonk: Live Stream Director, Backend Developer, Free Software Engineer"
+        "bio": "【島島阿學：學習資源平台】\n林奇葦：島島阿學教育社群共同發起人，目前就讀於華江高中，同時參與 Micrsoft Developer Program 及交大人才培育計畫，並自主學習程式開發。過往曾創業並主導多個專案。\n林怡廷：島島阿學教育社群共同發起人，同時為獨立教育工作者及 Goddard College 社會創新與永續研究所學生。過往曾任醫療公關、人文國中小及高中自學團教師，以及多個實驗教育組織及活動之公關。\n【繁體中文 CC0 句庫與 Mozilla Common Voice 語音庫】\nIrvin Chen：長期參與自由文化與開放網路倡議相關活動，目前也致力於 Mozilla 志工社群經營相關事務。同時是女人迷前端工程師，負責前端架構與流量成長相關計畫。\n【CoTeach 教案共享平臺】\nKahou：「CoTeach 教案共享平臺」團隊成員。\n蔡孟庭：臺灣師範大學資訊工程學系畢業，關注資訊、教育與媒體，在教育坑前踏踏卻不小心越陷越深，目前在高中和少女們一起寫程式。抓緊手中的幸運，期許有一天自己也能讓社會上的某個小角落產生美好的變化。\\ 來聊 /～～！\n【幸福存摺】\n阮家貞：小草書屋／青草職能學苑／副校長\n賈承彬：幸福存摺專案經理\n【專為高中生設計的管家型聊天機器人】\n廖煥杰：我是煥杰，目前就讀麗山高中三年級。平時會參加程式設計競賽及寫專案，目標是今年年底前有學校。\n【識字題庫】\ntmonk：直播導播、網頁後端工程師、自由軟體工程師",
+        "bio_en": "【Dao Dao Online Learning Platform】\nLin Chi-Wei: Co-founder in Dao Dao Educational Network. Chi-Wei has studied in HJSH since 2018, also in Microsoft Developer Program and NCTU Talent Cultivation Project. Learning programming and startup business via internet.\nLin Yiting: Co-founder in Dao Dao Educational Network. Yiting is a free-educator and a graduate student studying Social Innovation and Sustainability at Goddard College now. She worked as an educator and PR in Humanity Elementary and Junior School, self-directed learning group, and different experimental education organizations.\n【Traditional Chinese CC0 corpus and Mozilla Common Voice database】\nIrvin Chen: Community liaison of MozTW, Mozilla Taiwan Community. Long time Mozilla contributor since 2004 focus on community building, volunteer recruiting, events organizing, and speaking for Mozilla’s Mission and open culture. In the meantime, I’m a front-end developer of womany.net.\n【CoTeach】\nKahou: Member of CoTeach.\nMeng-Ting Tsai: Hi I’m Meng-Ting, a graduate of National Taiwan Normal University with a BEng in Computer Science and Information Engineering. I’m interested in Computer Science, education and news media. And now I’m teaching programming in a senior high. Hope that I could also make good changes somewhere in our society one day. Let’s have a chat!\n【Happiness Bankbook】\nChia-Chen Juan: Vice President of Grass Book House\nGiovanni: Project Manager of Happiness Bankbook\n【Chatbot for High School Students】\nJason: My name is Jason and I currently study in the 3rd grade at Taipei Municipal Lishan Senior High School. I like to participate in competitive programming and writing projects. My goal is to have a school at the end of this year.\n【Literacy Practices Database】\ntmonk: Live Stream Director, Backend Developer, Free Software Engineer"
       }
     ],
     "timeSheet": {
@@ -5198,8 +5218,8 @@
   },
   "1204-goodideas-0": {
     "id": "1204-goodideas-0",
-    "updatedAt": "2020-11-12T14:48:14.000Z",
-    "createdAt": "2020-11-12T14:48:14.000Z",
+    "updatedAt": "2020-11-20T09:10:00.000Z",
+    "createdAt": "2020-11-20T09:10:00.000Z",
     "title": "地方空間經營與創生",
     "title_en": "Revitalizing Tainan’s IT community and industry",
     "summary": "台南從前是個資訊沙漠，任何想要得到養分的人都會往台北跑，縱使一段時間後想要回家鄉，也沒有能撐起回家鄉工作的條件，這樣的環境若沒有人願意去動手耕耘，也就只會是惡性循環。「想要讓南部從事資訊產業的人有個友善環境」是我們的初衷，這六年來，我們建立了一個以資訊為主的共同工作空間，以此為起點，耕耘出台南的資訊燈塔，同時也建立了台灣唯一「沒有形狀」的免費資訊培育，以養成個人的「自學習慣」及重塑「解決問題」的能力為核心，漸變為量產好品質人才的基地，講者從「空間經營」、「資訊培育」、「社群創生」、「產業對接」這四個主題切入如何經營在地主題的創生。",
@@ -5247,8 +5267,8 @@
   },
   "1204-goodideas-1": {
     "id": "1204-goodideas-1",
-    "updatedAt": "2020-11-12T14:48:14.000Z",
-    "createdAt": "2020-11-12T14:48:14.000Z",
+    "updatedAt": "2020-11-20T09:10:42.000Z",
+    "createdAt": "2020-11-20T09:10:42.000Z",
     "title": "自我探索的資訊教育",
     "title_en": "Redefining IT education with self-exploration",
     "summary": "一位好的 mentor 是創造好的人才背後不可或缺的推手，目前的教育體制裡面一直都只有老師到角色而沒有 mentor 的角色，這兩者的差別在於一個是著重在於「授業」而一個是著重在於「引導」，必須要能引導出學生自我探索的能力才有機會變成好的人才，我們透過環境建立與氛圍營造來重新定義教育的本質。",
@@ -5297,8 +5317,8 @@
   },
   "1204-goodideas-2": {
     "id": "1204-goodideas-2",
-    "updatedAt": "2020-11-12T14:48:28.000Z",
-    "createdAt": "2020-11-12T14:48:28.000Z",
+    "updatedAt": "2020-11-20T09:10:46.000Z",
+    "createdAt": "2020-11-20T09:10:46.000Z",
     "title": "口罩地圖事件",
     "title_en": "The mask supply map",
     "summary": "2020 年初的 Covid-19 全球大流行，台灣是世界上最安全的地方之一，在疫情剛開始，口罩地圖事件是一個很成功的公民參與運動，也喚起許多人的防疫意識，我們聊聊從一塊小小的磚頭，引出了一大片的美玉。",
@@ -5346,8 +5366,8 @@
   },
   "1204-sprout-0": {
     "id": "1204-sprout-0",
-    "updatedAt": "2020-11-15T17:26:44.000Z",
-    "createdAt": "2020-11-15T17:26:44.000Z",
+    "updatedAt": "2020-11-20T16:03:51.000Z",
+    "createdAt": "2020-11-20T16:03:51.000Z",
     "title": "開島在台南：青年的生存與生活",
     "title_en": "Survival and living as a young adult in Tainan",
     "summary": "\"2020年迎來台南縣市合併十週年。縣市合併後，台南的青年過得好嗎？台南是否已經成為「一個台南」？\n在本場次中，我們希望討論青年在地居住、就業的情況，也邀請現在在前縣區居住的青年，聊聊他們對生活在台南的想法。\"",
@@ -5403,8 +5423,8 @@
   },
   "1204-sprout-1": {
     "id": "1204-sprout-1",
-    "updatedAt": "2020-11-17T06:02:08.000Z",
-    "createdAt": "2020-11-17T06:02:08.000Z",
+    "updatedAt": "2020-11-20T09:21:33.000Z",
+    "createdAt": "2020-11-20T09:21:33.000Z",
     "title": "開發古都？文化資產與都市規劃的碰撞",
     "title_en": "The clash between cultural heritage protection and urban planning in Tainan",
     "summary": "常有人說，「要在臺南搞建設做開發，根本跟做考古沒兩樣。」\n\n臺南市區號稱是臺灣的文化古都，因為市鎮開發的早，留有許多歷史積累的痕跡，也讓當今許多土地開發或都市更新的規劃案，都碰上了文化資產保存的議題。如2016年的運河星鑽計畫與舊魚市場保存衝突，西港外環道的開發導致糖鐵鐵軌遭到拆除，諸如此類的案例層出不窮。\n\n2020年是臺南縣市合併升格十週年，我們希望藉由「開發古都？文化資產與都市規劃的碰撞」論壇，從大臺南市現行的「歷史街區計畫」切入，瞭解文化資產和都市規劃如何相互牽制、互相依存。而在兩造的拉扯之中，又該如何建立公民參與的空間，避免官方政策獨斷、少數專家裁定等困局？",
@@ -6845,9 +6865,14 @@
       "議程場地-en": "C3 - C-Hub - 3F",
       "主持人": {
         "display_name": "jxtsai",
+        "organization": "(not applicable)",
+        "organization_en": "(not applicable)",
+        "avatar_url": "cache/d1553bc77766138e5db11fb586fbf2b5.png",
+        "city": "高雄",
+        "city_en": "Kaohsiung",
         "info_url": "https://medium.twngo.xyz",
-        "bio": "曾待過四個台灣非政府組織，但三個現已消失或停業，目前小隱於製造業傳産。偶而碎念一點關於台灣公民社會的數位化發展，將之記錄於「NGO 推進器」。喜歡慢跑，無法保發的女子職業網球與黑白琴鍵。",
-        "bio_en": "Having worked in some local NGOs, focus on civil and political rights. Wanna to explore the dynamics and development of digital civil society in Taiwan."
+        "bio": "前半生求學念書碩士畢業後，曾在不同非營利組織打轉，其涉及議題包括社區營造、志工服務與人權倡議。後半生在為一個人如何尊嚴地走入墳墓作準備。",
+        "bio_en": "Former non-governmental organizations worker, interested in digital rights.   Localization volunteer for various  internet freedom tools projects, like Tor, Tails, SecureDrop etc."
       },
       "議程開始時間": "2020-12-05T11:10",
       "議程長度": 20,
