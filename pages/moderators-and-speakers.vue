@@ -2,9 +2,10 @@
   .mas.center.pa3.pb5
     h2.mas__title {{$t('moderators')}}
     .mas__people
-      .mas__person.person(
+      nuxt-link.mas__person.person.dim(
         v-for="(person, index) in moderators"
         :key="person.key"
+        :to="localePath(person.agendaUrl)"
         itemscope
         itemtype="https://schema.org/Person"
       )
@@ -24,9 +25,10 @@
         .person__name(itemprop="name") {{person.display_name}}
     h2.mas__title {{$t('speakers')}}
     .mas__people
-      .mas__person.person(
+      nuxt-link.mas__person.person.dim(
         v-for="(person, index) in speakers"
         :key="person.key"
+        :to="localePath(person.agendaUrl)"
         itemscope
         itemtype="https://schema.org/Person"
       )
@@ -57,10 +59,12 @@ export default {
           return
         }
         proposal.speakers.forEach((speaker) => {
-          const key = `${speaker.display_name}##${speaker.organization}`.toLowerCase().trim()
+          // let's do a little randomize
+          const key = `${speaker.avatar_url}##${speaker.display_name}`
           speakerMap[key] = {
+            ...speaker,
             key,
-            ...speaker
+            agendaUrl: `/agenda/${proposal.timeSheet.議程日期}/${proposal.id}`
           }
         })
       })
@@ -76,10 +80,12 @@ export default {
           return
         }
         const moderator = proposal.timeSheet.主持人
-        const key = `${moderator.display_name}##${moderator.organization}`.toLowerCase().trim()
+        // let's do a little randomize
+        const key = `${moderator.avatar_url}##${moderator.display_name}`
         moderatorMap[key] = {
+          ...moderator,
           key,
-          ...moderator
+          agendaUrl: `/agenda/${proposal.timeSheet.議程日期}`
         }
       })
       const moderatorList = Object.keys(moderatorMap)
