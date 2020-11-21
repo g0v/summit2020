@@ -28,6 +28,8 @@ export default {
   feed: '社群動態',
   staff: '工作人員',
   registration: '立即購票',
+  moderatorsAndSpeakers: '主持與講者',
+  moderators: '主持',
   speakers: '講者',
   covid19Guidelines: '防疫守則',
   buildingCheckIn: '入館簽到',
@@ -76,7 +78,7 @@ export default {
   // proposal
   English: 'English',
   華語: '華語',
-  moderator: '主持人',
+  moderator: '主持',
   speaker: '講者',
   colon: '：',
   '其他 Others': '其他',
@@ -86,5 +88,6 @@ export default {
   }),
   isRoomFull: '座位已滿',
   isRoomNotFull: '尚有空位',
-  with: '/'
+  with: '/',
+  onSite: '現場報告'
 }

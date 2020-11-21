@@ -26,7 +26,7 @@
           :to="localePath(`/agenda/${date.date}`)"
         )
           .mobilemenu__title.b.bt.bw1.pv2.f4 Day{{date.index}}
-            span.ml2.fw3(v-if="query && agendaCountPerDay[date.date]")
+            span.ml2.fw3(v-if="isUnderSearch && agendaCountPerDay[date.date]")
               | ({{agendaCountPerDay[date.date]}})
           .mobilemenu__date.fw5.pb2 {{$t(date.date)}}
       div
@@ -84,7 +84,7 @@ export default {
     dateList () {
       return VALID_DATE_LIST.map((date, index) => {
         return {
-          index: index + 1,
+          index,
           date
         }
       })

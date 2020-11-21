@@ -56,16 +56,14 @@ export default {
         // { key: 'speakers', url: '/speakers' },
         { key: 'coc', url: '/code-of-conduct' },
         { key: 'agenda', url: '/agenda' },
+        { key: 'moderatorsAndSpeakers', url: '/moderators-and-speakers' },
         { key: 'partners', url: '/partners' },
         { key: 'transportation', url: '/transportation' },
         { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
         { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, isCta: true }
-        // { key: 'partners', url: '/partners' },
-        // { key: 'transport', url: '/transport' },
         // { key: 'live', url: 'https://some.live.url.com', isExt: true },
         // { key: 'feed', url: 'https://some.feed.url.com', isExt: true },
         // { key: 'staff', url: '/staff' },
-        // { key: 'registration', url: 'https://xxx.kktix.com', isExt: true }
       ]
     }
   },
