@@ -116,7 +116,7 @@ function downloadOneTable (tableInfo, toFile = true) {
   })
 }
 
-async function hostImage (originalUrl, mayRetry = true) {
+async function hostImage (originalUrl, maxWidth = MAX_IMG_WIDTH, mayRetry = true) {
   // download image and return new img url, if the image is host in 3rd party
   // also optimize the image when possible
 
@@ -158,7 +158,7 @@ async function hostImage (originalUrl, mayRetry = true) {
       const html = img.data.toString()
       const realImg = html.match(/https:\/\/i.imgur.com\/[0-9a-zA-Z.]+/)
       if (realImg) {
-        return await hostImage(realImg[0], false)
+        return await hostImage(realImg[0], maxWidth, false)
       }
     }
     logError(`Invalid image url: ${originalUrl}`)
@@ -168,10 +168,10 @@ async function hostImage (originalUrl, mayRetry = true) {
   const origImg = await sharp(img.data)
   const imgMeta = await origImg.metadata()
   let normalizedBuffer = null
-  if (imgMeta.width > MAX_IMG_WIDTH) {
+  if (imgMeta.width > maxWidth) {
     // eslint-disable-next-line no-console
-    console.info(`Image ${originalUrl} too large, will resize it to ${MAX_IMG_WIDTH}px width.`)
-    normalizedBuffer = await origImg.resize(MAX_IMG_WIDTH).toBuffer()
+    console.info(`Image ${originalUrl} too large, will resize it to ${maxWidth}px width.`)
+    normalizedBuffer = await origImg.resize(maxWidth).toBuffer()
   } else {
     normalizedBuffer = img.data
   }

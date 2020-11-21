@@ -25,6 +25,8 @@ const EXPORT_PATH = path.join(__dirname, '../assets/agendas/proposals')
 const SEC_PER_MIN = 60
 const ALLOW_MERGE_SINCE = dayjs('2020-09-06T12:00:00+08:00')
 
+const AVATAR_WIDTH = 256
+
 async function downloadProposals () {
   const allProposals = await axios.get(`${proposalServer}/projects`)
   const acceptedProposals = allProposals.data
@@ -378,13 +380,13 @@ async function exportProposals (proposals, timeSheet) {
     if (project.speakers) {
       for (const speaker of project.speakers) {
         if (speaker.avatar_url) {
-          speaker.avatar_url = await hostImage(speaker.avatar_url)
+          speaker.avatar_url = await hostImage(speaker.avatar_url, AVATAR_WIDTH)
         }
       }
     }
     const moderator = _.get(project, 'timeSheet.主持人')
     if (moderator && moderator.avatar_url) {
-      moderator.avatar_url = await hostImage(moderator.avatar_url)
+      moderator.avatar_url = await hostImage(moderator.avatar_url, AVATAR_WIDTH)
     }
   }
   fs.writeFileSync(`${EXPORT_PATH}.json`, JSON.stringify(toExport, null, '  '))
