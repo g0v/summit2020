@@ -122,9 +122,10 @@ export default {
       allProposals.forEach((proposal) => {
         const time = proposal.timeSheet
         if (time.議程日期 === this.today && time.議程場地) {
-          const building = time.議程場地.split('- ')[0].trim()
-          if (building && !building.startsWith('ALL')) {
-            buildings[building] = true
+          const buildingTokens = time.議程場地.split(' - ')
+          if (buildingTokens.length >= 2) {
+            // only `ALL*` does not contain ' - '
+            buildings[buildingTokens[1]] = true
           }
         }
       })
