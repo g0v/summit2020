@@ -3,12 +3,12 @@
     h2.mas__title {{$t('moderators')}}
     .mas__people
       .mas__person.person(
-        v-for="person in moderators"
+        v-for="(person, index) in moderators"
         :key="person.key"
         itemscope
         itemtype="https://schema.org/Person"
       )
-        .person__avatar-wraper
+        .person__avatar-wrapper.relative
           img.person__avatar(
             v-if="person.avatar_url"
             :src="person.avatar_url"
@@ -19,17 +19,18 @@
             v-else
             :title="person.display_name"
           )
+          .person__bg(:class="[`person__bg--${index % 3}`]")
         .person__org(itemprop="affiliation") {{person.organization}}
         .person__name(itemprop="name") {{person.display_name}}
     h2.mas__title {{$t('speakers')}}
     .mas__people
       .mas__person.person(
-        v-for="person in speakers"
+        v-for="(person, index) in speakers"
         :key="person.key"
         itemscope
         itemtype="https://schema.org/Person"
       )
-        .person__avatar-wraper
+        .person__avatar-wrapper.relative
           img.person__avatar(
             v-if="person.avatar_url"
             :src="person.avatar_url"
@@ -40,6 +41,7 @@
             v-else
             :title="person.display_name"
           )
+          .person__bg(:class="[`person__bg--${index % 3}`]")
         .person__org(itemprop="affiliation") {{person.organization}}
         .person__name(itemprop="name") {{person.display_name}}
 </template>
@@ -127,7 +129,27 @@ export default {
 }
 .person {
   text-align: center;
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    &--0 {
+      background-image: url('~assets/images/person-bg0.png')
+    }
+    &--1 {
+      background-image: url('~assets/images/person-bg1.png')
+    }
+    &--2 {
+      background-image: url('~assets/images/person-bg2.png')
+    }
+  }
   &__avatar {
+    z-index: 0;
     width: 7.5rem;
     height: 7.5rem;
     object-fit: cover;
@@ -141,7 +163,7 @@ export default {
   &__org {
     font-size: 0.75rem;
     color: $pink-1;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
   &__name {
