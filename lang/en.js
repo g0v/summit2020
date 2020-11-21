@@ -28,7 +28,9 @@ export default {
   feed: 'Feed',
   staff: 'Staff',
   registration: 'Registration',
+  moderatorsAndSpeakers: 'Moderators and Speakers',
   speakers: 'Speakers',
+  moderators: 'Moderators',
   covid19Guidelines: 'COVID19 Guideline',
   buildingCheckIn: 'Check In',
 
