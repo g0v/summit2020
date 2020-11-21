@@ -17,7 +17,7 @@
             text-highlighter(tag="span" :text="moderator.display_name")
         .flex
           text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
-          b-tooltip.agendacard__present.ml2(v-if="isPureOnline" type="is-dark" :label="$t(presentMode)")
+          b-tooltip.agendacard__present.ml2(v-if="isPureOnline" type="is-dark" :label="agenda.presentation_method")
             i.fas.fa-video
           .agendacard__roomoccu.db.dn-l.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
             i.fas(:class="{'fa-door-closed': isRoomFull, 'fa-door-open': !isRoomFull}")

@@ -16,9 +16,13 @@
           div
             .fw5 {{fromTime}} - {{toTime}}
             .f6(v-if="room") {{room}}
-          .detail__resource
-            ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl" :title="$t('comment')")
-              i.fas.fa-comments
+          .detail__resource.flex.items-center
+            b-tooltip.f3.light-silver(:label="agenda.presentation_method" type="is-dark")
+              i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
+              i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
+            b-tooltip(:label="$t('comment')" type="is-dark")
+              ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl")
+                i.fas.fa-comments
         .detail__header.flex
           h1.fw5.f4.f3-ns {{title}}
         .gray(v-if="category") {{category}}

@@ -1,9 +1,11 @@
-const PRESENT_MODE_LABEL = {
-  'on-site': 'isPresentOnSite',
-  online: 'isPresentOnline',
-  mixed: 'isPresentMixed'
+const PRESENT_MAP = {
+  遠端連線: 'online',
+  online: 'online',
+  現場報告: 'on-site',
+  'on-site': 'on-site',
+  遠端現場混搭: 'mixed',
+  mixed: 'mixed'
 }
-
 export default {
   computed: {
     id () {
@@ -28,11 +30,18 @@ export default {
     toTime () {
       return this.time.toTimeStr
     },
-    isPureOnline () {
-      return this.time.分享方式 === 'online'
+    presentationMethod () {
+      const method = this.agenda.presentation_method
+      return PRESENT_MAP[method] || 'on-site'
     },
-    presentMode () {
-      return PRESENT_MODE_LABEL[this.time.分享方式] || 'isPresentOnSite'
+    isPureOnline () {
+      return this.presentationMethod === 'online'
+    },
+    isPureOnSite () {
+      return this.presentationMethod === 'on-site'
+    },
+    isPureMixed () {
+      return this.presentationMethod === 'mixed'
     },
     title () {
       return this.agenda.title || ''

@@ -21,7 +21,7 @@ export const FILTER_MAP = {
   presentMethod: {
     field: 'presentation_method',
     defaultOpened: false,
-    defaultValue: '現場報告 on-site',
+    defaultValue: ['現場報告', 'on-site'],
     ignorePseudo: true
   },
   island: {
@@ -52,7 +52,7 @@ function isAgendaMatchFilter (agenda, filter) {
       if (def.ignorePseudo && agenda.isPseudo) {
         return false
       }
-      return filterValue === def.defaultValue
+      return def.defaultValue.includes(filterValue)
     })
   })
 }
