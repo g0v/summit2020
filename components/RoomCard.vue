@@ -1,6 +1,6 @@
 <template lang="pug">
   .roomcard.tc.pb2.pr2
-    .roomcard__occu.f6.fw3(:class="{'roomcard__occu--full': isRoomFull}")
+    .roomcard__occu.f6.fw3(v-if="!isFto" :class="{'roomcard__occu--full': isRoomFull}")
       i.fas.mr2(:class="{'fa-door-closed': isRoomFull, 'fa-door-open': !isRoomFull}")
       | {{roomOccuStr}}
     .b.f4 {{code}}
@@ -22,6 +22,9 @@ export default {
     ...mapState({
       occuState: STATES.ROOM_OCCU_STATE
     }),
+    isFto () {
+      return this.name.startsWith('B - ')
+    },
     isRoomFull () {
       const field = `${this.$i18n.locale}Name`
       const roomState = this.occuState.find(item => item[field] === this.name)

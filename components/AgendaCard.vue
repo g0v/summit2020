@@ -1,5 +1,6 @@
 <template lang="pug">
-  nuxt-link.db.agendacard.h-100(
+  component.db.agendacard.h-100(
+    :is="isFto ? 'ext-link' : 'nuxt-link'"
     :to="detailUrl"
     :class="{'agendacard--en': isEn}"
   )
@@ -15,8 +16,9 @@
           .agendacard__moderator(v-if="moderator")
             span {{$t('moderator')}} /&nbsp;
             text-highlighter(tag="span" :text="moderator.display_name")
-        .flex
+        .flex.items-center
           text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
+          i.moon-gray.ml2.f6.fas.fa-external-link-alt(v-if="isFto")
           b-tooltip.agendacard__present.ml2(v-if="isPureOnline" type="is-dark" :label="agenda.presentation_method")
             i.fas.fa-video
           .agendacard__roomoccu.db.dn-l.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
@@ -56,10 +58,12 @@ import { mapState, mapMutations } from 'vuex'
 import { STATES, MUTATIONS } from '~/store'
 import agendaMixin from '~/utils/AgendaMixin'
 import TextHighlighter from '~/components/TextHighlighter'
+import ExtLink from '~/components/ExtLink'
 
 export default {
   components: {
-    TextHighlighter
+    TextHighlighter,
+    ExtLink
   },
   mixins: [agendaMixin],
   props: {
@@ -75,6 +79,10 @@ export default {
       },
       occuState: STATES.ROOM_OCCU_STATE
     }),
+    isFto () {
+      // special case, no need for general solution
+      return this.agenda.id === '1203-abreak-0'
+    },
     isRoomFull () {
       const field = `${this.$i18n.locale}Name`
       const myRoom = this.room
@@ -88,7 +96,9 @@ export default {
       return this.$t('isRoomNotFull')
     },
     detailUrl () {
-      if (!this.agenda.isPseudo && this.$route.params.date) {
+      if (this.isFto) {
+        return 'https://fto.asia/'
+      } else if (!this.agenda.isPseudo && this.$route.params.date) {
         return this.localePath(`/agenda/${this.$route.params.date}/${this.agenda.id}`)
       } else {
         return '#'

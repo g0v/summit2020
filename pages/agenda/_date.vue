@@ -84,7 +84,7 @@ export default {
     dateList () {
       return VALID_DATE_LIST.map((date, index) => {
         return {
-          index: index + 1,
+          index,
           date
         }
       })
