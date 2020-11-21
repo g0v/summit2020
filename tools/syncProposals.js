@@ -18,7 +18,6 @@ const {
   CONTENT_FIELD_DEFINITIONS,
   SPEAKER_FIELD_DEFINITIONS
 } = require('./projectFields')
-const { time } = require('console')
 
 dayjs.extend(utc)
 
