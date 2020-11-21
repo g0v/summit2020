@@ -26,7 +26,7 @@
         .agendacard__people.mt3.mb4.f6.lh-copy
           text-highlighter(v-if="speakers" :text="speakers")
         .flex
-          .flex.flex-wrap.flex-grow-1-ns
+          .flex.flex-wrap.flex-grow-1
             .agendacard__tag.agendacard__tag--hl.db.dn-ns.truncate.mt3(v-if="room") {{room}}
             .agendacard__tag.truncate(v-if="topic") {{topic}}
             .agendacard__tag.truncate.mt3-ns(v-if="format") {{format}}
