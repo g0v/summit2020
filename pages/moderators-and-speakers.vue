@@ -1,35 +1,47 @@
 <template lang="pug">
-  .mas.center.pa3
+  .mas.center.pa3.pb5
     h2.mas__title {{$t('moderators')}}
     .mas__people
-      .mas__person.person(v-for="person in moderators" :key="person.key")
+      .mas__person.person(
+        v-for="person in moderators"
+        :key="person.key"
+        itemscope
+        itemtype="https://schema.org/Person"
+      )
         .person__avatar-wraper
           img.person__avatar(
             v-if="person.avatar_url"
             :src="person.avatar_url"
             :alt="person.display_name"
+            itemprop="image"
           )
           .person__avatar.person__avatar--empty(
             v-else
             :title="person.display_name"
           )
-        .person__org {{person.organization}}
-        .person__name {{person.display_name}}
+        .person__org(itemprop="affiliation") {{person.organization}}
+        .person__name(itemprop="name") {{person.display_name}}
     h2.mas__title {{$t('speakers')}}
     .mas__people
-      .mas__person.person(v-for="person in speakers" :key="person.key")
+      .mas__person.person(
+        v-for="person in speakers"
+        :key="person.key"
+        itemscope
+        itemtype="https://schema.org/Person"
+      )
         .person__avatar-wraper
           img.person__avatar(
             v-if="person.avatar_url"
             :src="person.avatar_url"
             :alt="person.display_name"
+            itemprop="image"
           )
           .person__avatar.person__avatar--empty(
             v-else
             :title="person.display_name"
           )
-        .person__org {{person.organization}}
-        .person__name {{person.display_name}}
+        .person__org(itemprop="affiliation") {{person.organization}}
+        .person__name(itemprop="name") {{person.display_name}}
 </template>
 <script>
 import { friendlyHeader } from '~/utils/crawlerFriendly'
