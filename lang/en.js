@@ -89,5 +89,6 @@ export default {
   }),
   isRoomFull: 'Room full',
   isRoomNotFull: 'Available',
-  with: 'w/'
+  with: 'w/',
+  onSite: 'on-site'
 }

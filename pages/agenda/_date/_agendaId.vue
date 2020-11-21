@@ -3,28 +3,30 @@
     v-if="isModalVisible"
     @click="closeModal"
     data-slideout-ignore
+    itemscope
+    itemtype="https://schema.org/Event"
   )
     .detail__wrapper
       .detail__modal.br2.bg-white(@click.stop)
         .flex.justify-between
           .detail__start.f6
             .dib.mr2 Day{{dayN}}
-            .dib.ml1 {{$t(startDate)}}
+            .dib.ml1(itemprop="startDate") {{$t(startDate)}}
           button.detail__close.bg-white.bn(@click="closeModal")
             img(src="~/assets/images/agenda/close.svg")
         .detail__subheader.mt3.pa3.bb.relative.flex.justify-between.items-center
           div
             .fw5 {{fromTime}} - {{toTime}}
-            .f6(v-if="room") {{room}}
+            .f6(v-if="room" itemprop="location") {{room}}
           .detail__resource.flex.items-center
-            b-tooltip.f3.light-silver(:label="agenda.presentation_method" type="is-dark")
+            b-tooltip.f3.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
               i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
               i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
             b-tooltip(:label="$t('comment')" type="is-dark")
               ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl")
                 i.fas.fa-comments
         .detail__header.flex
-          h1.fw5.f4.f3-ns {{title}}
+          h1.fw5.f4.f3-ns(itemprop="name") {{title}}
         .gray(v-if="category") {{category}}
         .mt4.flex.flex-wrap
           .detail__tag(v-if="topic") {{topic}}
@@ -37,7 +39,7 @@
               .detail__translation.br-pill.br--right.flex.items-center
                 img.w1(src="~/assets/images/translate_logo.svg")
         h2.ttc {{$t('abstract')}}
-        rich-multi-line.gray(:text="agenda.summary")
+        rich-multi-line.gray(itemprop="description" :text="agenda.summary")
         .gray.mv3(v-if="relatedInfo")
           span.mr1 {{$t('relatedInfo')}}
           ext-link(:to="relatedInfo")
@@ -49,12 +51,14 @@
             v-if="moderator"
             :person="moderator"
             :is-moderator="true"
+            itemprop="performer"
           )
           summit-person(
             v-for="(speaker, index) in agenda.speakers"
             :key="index"
             :person="speaker"
             :is-mono-speaker="isMonoSpeaker"
+            itemprop="performer"
           )
 </template>
 <i18n lang="yaml">

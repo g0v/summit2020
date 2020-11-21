@@ -1,9 +1,14 @@
 <template lang="pug">
-  .person.pa3.br1.relative(:class="{'person--speaker': isModerator}")
+  .person.pa3.br1.relative(
+    :class="{'person--speaker': isModerator}"
+    itemscope
+    itemtype="https://schema.org/Person"
+  )
     img.person__avatar(
       v-if="speakerAvatar"
       :src="speakerAvatar"
       :alt="person.display_name"
+      itemprop="image"
     )
     .person__avatar.person__avatar--empty(
       v-else
@@ -11,17 +16,18 @@
     )
     .person__type.pv1.ph2.f6.absolute.br1.br--right.top-0.left-0(v-if="isModerator") {{$t('moderator')}}
     .person__title.mv3
-      .fw54
-        | {{person.display_name}}
+      .fw5
+        span(itemprop="name") {{person.display_name}}
         span(v-if="city") &nbsp;/ {{city}}
-      .f6 {{person.organization}}
+      .f6(itemprop="affiliation") {{person.organization}}
     rich-multi-line.gray.mt3.fw3(
+      itemprop="description"
       :text="bio"
       :class="{tl: isSpeakerBioTl}"
     )
     .fw3.mv3(v-if="isUrl(person.info_url)" :class="{tl: isSpeakerBioTl}")
       | {{$t('moreInfo')}}
-      ext-link.ml1(:to="person.info_url")
+      ext-link.ml1(itemprop="knowsAbout" :to="person.info_url")
 </template>
 <i18n lang="yaml">
 en:
