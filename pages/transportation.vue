@@ -59,11 +59,11 @@
           </h2>
           <div v-for="(rental, index) in rentals" :key="index" class="dib w-100 w-50-l pa2">
             <div class="rental">
-              <a class="icon-name" :href="rental.link" target="_blank">
+              <a class="icon-name flex items-center justify-center" :href="rental.link" target="_blank">
                 <img :src="require(`../assets/images/${rental.icon}`)" alt="">
-                <div class="name f2">
-                  {{ rental.name }}<br>
-                  {{ rental.cht_name }}
+                <div class="name f4 f3-l">
+                  <div class="truncate">{{ rental.name }}</div>
+                  <div class="truncate">{{ rental.cht_name }}</div>
                 </div>
               </a>
               <div v-if="rental.is_app" class="app-link">
@@ -396,30 +396,25 @@ export default {
   max-width: 960px;
   padding-bottom: 148px;
   .rental {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 4px;
-    padding: 28px;
-    @media screen and (min-width: 30em) {
+    padding: 20px;
+    @include large-screen {
       padding: 28px 71px;
     }
-    height: 250px;
     .icon-name {
-      display: inline-block;
-      img, .name {
-        vertical-align: middle;
-        margin-left: 12px;
+      img {
+        width: 4rem;
+        height: 4rem;
       }
       .name {
-        display: inline-block;
-        font-size: 24px;
+        max-width: calc(100% - 4rem);
+        padding-left: 12px;
         color: #F779EE;
       }
     }
     .app-link {
+      margin-top: 36px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -428,7 +423,7 @@ export default {
         display: inline-block;
         flex: 1 1 100%;
         text-align: center;
-        @media screen and (min-width: 30em) {
+        @include large-screen {
           flex: 1 1 133px;
         }
       }
