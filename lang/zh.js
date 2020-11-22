@@ -88,6 +88,5 @@ export default {
   }),
   isRoomFull: '座位已滿',
   isRoomNotFull: '尚有空位',
-  with: '/',
   onSite: '現場報告'
 }

@@ -19,7 +19,7 @@
             .fw5 {{fromTime}} - {{toTime}}
             .f6(v-if="room" itemprop="location") {{room}}
           .detail__resource.flex.items-center
-            b-tooltip.f3.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
+            b-tooltip.f3-l.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
               i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
               i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
             b-tooltip(:label="$t('comment')" type="is-dark")
@@ -29,15 +29,9 @@
           h1.fw5.f4.f3-ns(itemprop="name") {{title}}
         .gray(v-if="category") {{category}}
         .mt4.flex.flex-wrap
-          .detail__tag(v-if="topic") {{topic}}
-          .detail__tag(v-if="format") {{format}}
-          .detail__tag.flex.items-center(v-if="lang")
-            | {{$t(lang)}}
-            template(v-if="agenda.translation")
-              .flex.items-center
-                | &nbsp;{{$t('with')}} {{agenda.translation}}
-              .detail__translation.br-pill.br--right.flex.items-center
-                img.w1(src="~/assets/images/translate_logo.svg")
+          agenda-tag(v-if="topic") {{topic}}
+          agenda-tag(v-if="format") {{format}}
+          language-tag(:agenda="agenda")
         h2.ttc {{$t('abstract')}}
         rich-multi-line.gray(itemprop="description" :text="agenda.summary")
         .gray.mv3(v-if="relatedInfo")
@@ -87,6 +81,8 @@ import dayjs from 'dayjs'
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
 import SummitPerson from '~/components/SummitPerson'
+import AgendaTag from '~/components/AgendaTag'
+import LanguageTag from '~/components/LanguageTag'
 import agendaMixin from '~/utils/AgendaMixin'
 import { DEFAULT_DATE } from '~/utils/scheduleInfo'
 import commentMap from '~/assets/agendas/commentCache.json'
@@ -101,7 +97,9 @@ export default {
   components: {
     RichMultiLine,
     ExtLink,
-    SummitPerson
+    SummitPerson,
+    AgendaTag,
+    LanguageTag
   },
   mixins: [agendaMixin],
   computed: {
@@ -263,25 +261,6 @@ export default {
     color: $blue-1;
     font-size: 1.25rem;
     font-weight: 500;
-  }
-  &__tag {
-    border-radius: 999px;
-    color: white;
-    font-size: 0.75rem;
-    margin-top: 0.25rem;
-    background: #67cddd;
-    padding: 0.125rem 0.5rem;
-    &:not(:last-child) {
-      margin-right: 0.25rem;
-    }
-  }
-  &__translation {
-    background: rgba(0,0,0,0.25);
-    position: relative;
-    right: -0.5rem;
-    margin-left: -0.25rem;
-    height: calc(100% + 0.25rem);
-    padding: 0 0.25rem;
   }
   &__keyword {
     color: $blue-1;

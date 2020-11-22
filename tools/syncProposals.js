@@ -220,6 +220,7 @@ const INTERMEDIATE_TIME_FIELDS = [
   '議程預設標題-en',
   '分享方式',
   '翻譯方式',
+  '提供手語',
   '標題對調',
   '講者 1',
   '講者 2',
@@ -353,6 +354,10 @@ async function exportProposals (proposals, timeSheet) {
 
     if (timeSheet.翻譯方式) {
       toExport[pid].translation = timeSheet.翻譯方式
+    }
+
+    if (timeSheet.提供手語) {
+      toExport[pid].provide_sign_language = true
     }
 
     // always prefer 分享方式 then presentation_method as it's defined by crew
