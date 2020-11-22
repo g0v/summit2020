@@ -182,7 +182,7 @@ export default {
       if (this.agenda && this.agenda.cover_image) {
         return this.agenda.cover_image
       }
-      return '/og-agenda.png'
+      return '/og-agenda-v1.png'
     }
   })
 }
