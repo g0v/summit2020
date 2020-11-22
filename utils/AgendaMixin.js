@@ -50,9 +50,6 @@ export default {
       const speakers = this.agenda.speakers || []
       return speakers.map(speaker => speaker.display_name).join(' / ')
     },
-    lang () {
-      return this.agenda.oral_language_other || this.agenda.oral_language
-    },
     format () {
       return this.agenda.format
     },
