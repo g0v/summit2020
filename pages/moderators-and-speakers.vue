@@ -25,7 +25,7 @@
         .person__name(itemprop="name") {{person.display_name}}
     h2.mas__title {{$t('speakers')}}
     .mas__people
-      nuxt-link.mas__person.person.dim.flex.flex-column.items-center(
+      nuxt-link.mas__person.person.dim(
         v-for="(person, index) in speakers"
         :key="person.key"
         :to="localePath(person.agendaUrl)"
@@ -34,7 +34,7 @@
       )
         .person__avatar-wrapper.relative
           img.person__avatar(
-            v-if="person.avatar_url && false"
+            v-if="person.avatar_url"
             :src="person.avatar_url"
             :alt="person.display_name"
             itemprop="image"
@@ -44,8 +44,8 @@
             :title="person.display_name"
           )
           .person__bg(:class="[`person__bg--${index % 3}`]")
-        span.person__org(itemprop="affiliation") {{person.organization}}
-        span.person__name(itemprop="name") {{person.display_name}}
+        .person__org(itemprop="affiliation") {{person.organization}}
+        .person__name(itemprop="name") {{person.display_name}}
 </template>
 <script>
 import { friendlyHeader } from '~/utils/crawlerFriendly'
@@ -106,7 +106,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .mas {
-  // max-width: 82rem;
+  max-width: 82rem;
   &__title {
     font-size: 2.25rem;
     font-weight: 500;
@@ -172,21 +172,10 @@ export default {
     color: $pink-1;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-
-    display: inline;
-    background: $pink-1;
-    opacity: 0.3;
-    border-radius: 0.25rem;
   }
   &__name {
     font-size: 0.875rem;
     color: #303030;
-
-    color: transparent;
-    display: inline;
-    background: #303030;
-    opacity: 0.2;
-    border-radius: 0.25rem;
   }
 }
 </style>
