@@ -123,6 +123,9 @@ export default {
       )
     }
   },
+  generate: {
+    concurrency: 10
+  },
   server: {
     port: process.env.SERVER_PORT || 3000,
     host: process.env.SERVER_HOST || 'localhost'
