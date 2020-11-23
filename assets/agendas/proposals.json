@@ -4279,7 +4279,7 @@
     "is_slide_cc40": true,
     "oral_language_other": "Tâi-gí（台語）",
     "verified": true,
-    "createdAt": "2020-11-09T18:08:40.912Z",
+    "createdAt": "2020-11-23T15:17:31.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
@@ -4299,18 +4299,9 @@
         "info_url": "https://www.facebook.com/MandarinIsJapanese/",
         "bio": "Chiù-chōa chit-sì-lâng m̄ kóng Hôa-gí ê pōng-bí-phang sai-hū.",
         "bio_en": "The Taiwanese pop-ricer who refuses Mandarin."
-      },
-      {
-        "display_name": "Chiúⁿ Ûi-bûn（蔣為文）",
-        "organization": "國立成功大學台灣語文測驗中心",
-        "avatar_url": "cache/f7939504f562ce3cdb55657b9d705d09.jpg",
-        "city": "Tâi-lâm（台南）",
-        "info_url": "http://www.twl.ncku.edu.tw/p/405-1143-114277,c10606.php?Lang=zh-tw",
-        "bio": "國立成功大學台灣語文測驗中心主任、國立成功大學越南研究中心主任、國立成功大學台灣文學系系主任",
-        "bio_en": ""
       }
     ],
-    "updatedAt": "2020-11-09T18:08:40.912Z",
+    "updatedAt": "2020-11-23T15:17:31.000Z",
     "timeSheet": {
       "id": "5efe22ddba206b030d66a516",
       "議程日期": "2020-12-04",

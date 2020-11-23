@@ -142,6 +142,11 @@ const GENDER_OPTIONS = [
 
 const SPEAKER_FIELD_DEFINITIONS = [
   {
+    label: '須移除的講者（議程組專用）',
+    id: 'is_removed',
+    type: 'boolean'
+  },
+  {
     label: '顯示於網頁的講者名稱 Speaker’s display name',
     id: 'display_name',
     type: 'text',
