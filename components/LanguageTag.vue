@@ -1,7 +1,11 @@
 <template lang="pug">
-  b-tooltip.langtag(:label="label" type="is-dark")
-    agenda-tag.flex.items-center(
+  b-tooltip.langtag(
       v-if="lang"
+    :label="label"
+    type="is-dark"
+    :multilined="true"
+  )
+    agenda-tag.flex.items-center(
       :truncate="false"
       :class="{'agendatag--ext': hasExt}"
     )
@@ -90,6 +94,12 @@ export default {
 
     > *:not(:first-child) {
       margin-left: 0.125rem;
+    }
+  }
+  /deep/ {
+    .tooltip-content {
+      max-width: 9rem;
+      width: auto;
     }
   }
 }
