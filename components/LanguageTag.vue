@@ -77,9 +77,10 @@ export default {
 <style lang="scss" scoped>
 .langtag {
   .agendatag {
-    padding: 0 0.5rem;
+    padding: 0.125rem 0.5rem;
     &--ext {
-      padding-right: 0;
+      padding: 0;
+      padding-left: 0.5rem
     }
   }
   &__translation {

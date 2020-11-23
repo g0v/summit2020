@@ -352,7 +352,7 @@ async function exportProposals (proposals, timeSheet) {
       })
     }
 
-    if (timeSheet.翻譯方式) {
+    if (timeSheet.翻譯方式 && !timeSheet.翻譯方式.startsWith('無翻譯')) {
       toExport[pid].translation = timeSheet.翻譯方式
     }
 
