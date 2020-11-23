@@ -45,7 +45,7 @@
     "timeSheet": {
       "id": "5edcffaeba206b030d66a2c6",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:23.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳更多坑",
       "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "G - 好想工作室",
@@ -101,7 +101,7 @@
     "timeSheet": {
       "id": "5eddea12ba206b030d66a2ca",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:05.000Z",
       "分類主題-華語": "決定囉？多中心社群的治理",
       "分類主題-en": "Let’s decide? Governance of many centers",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -123,7 +123,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ee0c02eba206b030d66a2d5": {
     "id": "5ee0c02eba206b030d66a2d5",
@@ -240,7 +241,7 @@
     "timeSheet": {
       "id": "5ee1aa0cba206b030d66a2d9",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:48.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "開源社群對 NGO 的重要性",
       "分類主題-en": "Openness is important for NGOs",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -478,7 +479,7 @@
     "timeSheet": {
       "id": "5eee8137ba206b030d66a2ff",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:46.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -501,7 +502,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5eeee658ba206b030d66a303": {
     "id": "5eeee658ba206b030d66a303",
@@ -536,7 +538,7 @@
     "timeSheet": {
       "id": "5eeee658ba206b030d66a303",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:39.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -559,7 +561,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef09c0eba206b030d66a310": {
     "id": "5ef09c0eba206b030d66a310",
@@ -661,7 +664,7 @@
     "timeSheet": {
       "id": "5ef211bcba206b030d66a31d",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:34.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "地方的公共參與",
       "分類主題-en": "Civic participation is local",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -719,7 +722,7 @@
     "timeSheet": {
       "id": "5ef22cd9ba206b030d66a327",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T05:32:47.000Z",
+      "最後更新時間": "2020-11-23T07:05:35.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -743,6 +746,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "現場報告 on-site"
   },
   "5ef2e905ba206b030d66a333": {
@@ -865,7 +869,7 @@
     "timeSheet": {
       "id": "5ef324e1ba206b030d66a33d",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:10.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -887,7 +891,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef4330bba206b030d66a347": {
     "id": "5ef4330bba206b030d66a347",
@@ -1055,7 +1060,7 @@
     "timeSheet": {
       "id": "5ef479b9ba206b030d66a34e",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:44.000Z",
       "分類主題-華語": "在家 Hack！公衛危機下的科技應變",
       "分類主題-en": "Hack! Pandemic tech response",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -1077,7 +1082,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef4aeaeba206b030d66a354": {
     "id": "5ef4aeaeba206b030d66a354",
@@ -1230,7 +1236,7 @@
     "timeSheet": {
       "id": "5ef63898ba206b030d66a362",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:56.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "Maker 的花花世界",
       "分類主題-en": "You maker, me maker, everyone maker",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -1360,7 +1366,7 @@
     "timeSheet": {
       "id": "5ef709ebba206b030d66a36c",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:41:11.000Z",
+      "最後更新時間": "2020-11-23T07:06:02.000Z",
       "分類主題-華語": "來串啊！國際公民社群",
       "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -1382,7 +1388,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef81b08ba206b030d66a37a": {
     "id": "5ef81b08ba206b030d66a37a",
@@ -1418,7 +1425,7 @@
     "timeSheet": {
       "id": "5ef81b08ba206b030d66a37a",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:24.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳更多坑",
       "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "G - 好想工作室",
@@ -1473,7 +1480,7 @@
     "timeSheet": {
       "id": "5ef8c370ba206b030d66a386",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:37.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -1496,7 +1503,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef947a8ba206b030d66a392": {
     "id": "5ef947a8ba206b030d66a392",
@@ -1538,7 +1546,7 @@
     "timeSheet": {
       "id": "5ef947a8ba206b030d66a392",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:25.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳更多坑",
       "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "G - 好想工作室",
@@ -1594,7 +1602,7 @@
     "timeSheet": {
       "id": "5ef99ae9ba206b030d66a39d",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:24.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳更多坑",
       "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "G - 好想工作室",
@@ -1650,7 +1658,7 @@
     "timeSheet": {
       "id": "5ef99bf1ba206b030d66a39f",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:11.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -1672,7 +1680,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef9aaffba206b030d66a3a4": {
     "id": "5ef9aaffba206b030d66a3a4",
@@ -1710,7 +1719,7 @@
     "timeSheet": {
       "id": "5ef9aaffba206b030d66a3a4",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:55.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "Maker 的花花世界",
       "分類主題-en": "You maker, me maker, everyone maker",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -1765,7 +1774,7 @@
     "timeSheet": {
       "id": "5ef9bc2dba206b030d66a3ae",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:57.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -1788,7 +1797,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5ef9c9cbba206b030d66a3b1": {
     "id": "5ef9c9cbba206b030d66a3b1",
@@ -1964,7 +1974,7 @@
     "timeSheet": {
       "id": "5ef9f18fba206b030d66a3ca",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T05:32:57.000Z",
+      "最後更新時間": "2020-11-23T07:05:56.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -1988,6 +1998,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端連線 online"
   },
   "5ef9fa99ba206b030d66a3d8": {
@@ -2159,7 +2170,7 @@
     "timeSheet": {
       "id": "5ef9fed0ba206b030d66a3df",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:53.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "構造改革！maker 運動下一步可以做啥",
       "分類主題-en": "What’s next for us makers?",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -2215,7 +2226,7 @@
     "timeSheet": {
       "id": "5efa0877ba206b030d66a3e8",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:04.000Z",
       "分類主題-華語": "決定囉？多中心社群的治理",
       "分類主題-en": "Let’s decide? Governance of many centers",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -2237,7 +2248,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efa0bf6ba206b030d66a3ea": {
     "id": "5efa0bf6ba206b030d66a3ea",
@@ -2272,7 +2284,7 @@
     "timeSheet": {
       "id": "5efa0bf6ba206b030d66a3ea",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:49.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "開源社群對 NGO 的重要性",
       "分類主題-en": "Openness is important for NGOs",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -2377,7 +2389,7 @@
     "timeSheet": {
       "id": "5efa11b2ba206b030d66a3f1",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:42.000Z",
       "分類主題-華語": "在家 Hack！公衛危機下的科技應變",
       "分類主題-en": "Hack! Pandemic tech response",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -2399,7 +2411,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efa175bba206b030d66a3f3": {
     "id": "5efa175bba206b030d66a3f3",
@@ -2502,7 +2515,7 @@
     "timeSheet": {
       "id": "5efa1ecaba206b030d66a3f6",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:22.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳坑",
       "分類主題-en": "When tech people dive in",
       "議程場地-華語": "G - 好想工作室",
@@ -2617,7 +2630,7 @@
     "timeSheet": {
       "id": "5efa37d2ba206b030d66a3f9",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:18.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳坑",
       "分類主題-en": "When tech people dive in",
       "議程場地-華語": "G - 好想工作室",
@@ -2673,7 +2686,7 @@
     "timeSheet": {
       "id": "5efa793fba206b030d66a402",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:06.000Z",
       "分類主題-華語": "決定囉？多中心社群的治理",
       "分類主題-en": "Let’s decide? Governance of many centers",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -2695,7 +2708,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efa9092ba206b030d66a408": {
     "id": "5efa9092ba206b030d66a408",
@@ -2739,7 +2753,7 @@
     "timeSheet": {
       "id": "5efa9092ba206b030d66a408",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:00.000Z",
       "分類主題-華語": "來串啊！國際公民社群",
       "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -2761,7 +2775,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efaa323ba206b030d66a414": {
     "id": "5efaa323ba206b030d66a414",
@@ -2988,7 +3003,7 @@
     "timeSheet": {
       "id": "5efac8d2ba206b030d66a432",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:32.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "青年發展的必須",
       "分類主題-en": "Youth development is a must",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -3112,7 +3127,7 @@
     "timeSheet": {
       "id": "5efadb44ba206b030d66a439",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:56.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "Maker 的花花世界",
       "分類主題-en": "You maker, me maker, everyone maker",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -3193,7 +3208,7 @@
     "timeSheet": {
       "id": "5efadc65ba206b030d66a43a",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:49.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "開源社群對 NGO 的重要性",
       "分類主題-en": "Openness is important for NGOs",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -3453,7 +3468,7 @@
     "timeSheet": {
       "id": "5efb007bba206b030d66a46c",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:57.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "Maker 的花花世界",
       "分類主題-en": "You maker, me maker, everyone maker",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -3622,7 +3637,7 @@
     "timeSheet": {
       "id": "5efb2838ba206b030d66a495",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:57.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "Maker 的花花世界",
       "分類主題-en": "You maker, me maker, everyone maker",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -3833,7 +3848,7 @@
     "timeSheet": {
       "id": "5efb4748ba206b030d66a4bb",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:08.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -3855,7 +3870,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efb5a5fba206b030d66a4d8": {
     "id": "5efb5a5fba206b030d66a4d8",
@@ -3891,7 +3907,7 @@
     "timeSheet": {
       "id": "5efb5a5fba206b030d66a4d8",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:07.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -3913,7 +3929,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efb5c5eba206b030d66a4dc": {
     "id": "5efb5c5eba206b030d66a4dc",
@@ -3958,7 +3975,7 @@
     "timeSheet": {
       "id": "5efb5c5eba206b030d66a4dc",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:36.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -3981,7 +3998,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efb712eba206b030d66a4e9": {
     "id": "5efb712eba206b030d66a4e9",
@@ -4026,7 +4044,7 @@
     "timeSheet": {
       "id": "5efb712eba206b030d66a4e9",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:00.000Z",
       "分類主題-華語": "來串啊！國際公民社群",
       "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -4048,7 +4066,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5efc998dba206b030d66a50c": {
     "id": "5efc998dba206b030d66a50c",
@@ -4437,7 +4456,7 @@
     "timeSheet": {
       "id": "5f02d5a0e88a4948daf87fb9",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:43.000Z",
       "分類主題-華語": "在家 Hack！公衛危機下的科技應變",
       "分類主題-en": "Hack! Pandemic tech response",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -4459,7 +4478,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5f0c7c17e88a4948daf87fe0": {
     "id": "5f0c7c17e88a4948daf87fe0",
@@ -4563,7 +4583,7 @@
     "timeSheet": {
       "id": "5f0cd255e88a4948daf87fe9",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:22.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳坑",
       "分類主題-en": "When tech people dive in",
       "議程場地-華語": "G - 好想工作室",
@@ -4886,7 +4906,7 @@
     "timeSheet": {
       "id": "5f0ef5300bde6f3bbab73f6d",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:24.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳更多坑",
       "分類主題-en": "When tech people dive in some more",
       "議程場地-華語": "G - 好想工作室",
@@ -4999,7 +5019,7 @@
     "timeSheet": {
       "id": "5f0f1b6e0bde6f3bbab73f76",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:14.000Z",
+      "最後更新時間": "2020-11-23T07:05:48.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -5022,7 +5042,8 @@
         "capacity": 300
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5f0f209d0bde6f3bbab73f7a": {
     "id": "5f0f209d0bde6f3bbab73f7a",
@@ -5077,7 +5098,7 @@
     "timeSheet": {
       "id": "5f0f209d0bde6f3bbab73f7a",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T04:42:20.000Z",
+      "最後更新時間": "2020-11-23T07:06:03.000Z",
       "分類主題-華語": "來串啊！國際公民社群",
       "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -5099,7 +5120,8 @@
         "capacity": 80
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "5f0f235a0bde6f3bbab73f7e": {
     "id": "5f0f235a0bde6f3bbab73f7e",
@@ -5320,7 +5342,7 @@
     "timeSheet": {
       "id": "1204-goodideas-0",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:08.000Z",
+      "最後更新時間": "2020-11-23T07:07:01.000Z",
       "分類主題-華語": "資訊人經營",
       "分類主題-en": "When tech people build",
       "議程場地-華語": "G - 好想工作室",
@@ -5370,7 +5392,7 @@
     "timeSheet": {
       "id": "1204-goodideas-1",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:09.000Z",
+      "最後更新時間": "2020-11-23T07:07:01.000Z",
       "分類主題-華語": "資訊人經營",
       "分類主題-en": "When tech people build",
       "議程場地-華語": "G - 好想工作室",
@@ -5419,7 +5441,7 @@
     "timeSheet": {
       "id": "1204-goodideas-2",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:16.000Z",
+      "最後更新時間": "2020-11-23T07:07:05.000Z",
       "分類主題-華語": "資訊人跳坑",
       "分類主題-en": "When tech people dive in",
       "議程場地-華語": "G - 好想工作室",
@@ -5479,7 +5501,7 @@
     "timeSheet": {
       "id": "1204-sprout-0",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:44.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "青年發展的必須",
       "分類主題-en": "Youth development is a must",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -5542,7 +5564,7 @@
     "timeSheet": {
       "id": "1204-sprout-1",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:32:46.000Z",
+      "最後更新時間": "2020-11-23T07:07:09.000Z",
       "分類主題-華語": "地方的公共參與",
       "分類主題-en": "Civic participation is local",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
@@ -5616,7 +5638,7 @@
     "timeSheet": {
       "id": "1204-maker-0",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:48.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "取暖了！你各位最近過得好嗎",
       "分類主題-en": "Maker you OK?",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -5688,7 +5710,7 @@
     "timeSheet": {
       "id": "1204-maker-1",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:51.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "取暖了！你各位最近過得好嗎",
       "分類主題-en": "Maker you OK?",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -5739,7 +5761,7 @@
     "timeSheet": {
       "id": "1204-maker-2",
       "議程日期": "2020-12-04",
-      "最後更新時間": "2020-11-23T05:31:52.000Z",
+      "最後更新時間": "2020-11-23T07:06:59.000Z",
       "分類主題-華語": "構造改革！maker 運動下一步可以做啥",
       "分類主題-en": "What’s next for us makers?",
       "議程場地-華語": "C1 - C-Hub 成大創意基地 - 1F",
@@ -5816,7 +5838,7 @@
     "timeSheet": {
       "id": "1206-keynote-0",
       "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-23T06:13:57.000Z",
+      "最後更新時間": "2020-11-23T07:04:53.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -5838,6 +5860,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "現場報告 on-site"
   },
   "1206-keynote-1": {
@@ -5889,7 +5912,7 @@
     "timeSheet": {
       "id": "1206-keynote-1",
       "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-23T06:08:20.000Z",
+      "最後更新時間": "2020-11-23T07:04:53.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -5913,6 +5936,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端現場混合 mixed"
   },
   "1206-sponsor-A0": {
@@ -5944,7 +5968,7 @@
     "timeSheet": {
       "id": "1206-sponsor-A0",
       "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-18T13:04:44.000Z",
+      "最後更新時間": "2020-11-23T07:03:01.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -5956,7 +5980,8 @@
         "order": 10,
         "capacity": 300
       }
-    }
+    },
+    "presentation_method": "遠端連線 online"
   },
   "1206-sponsor-A1": {
     "id": "1206-sponsor-A1",
@@ -5989,7 +6014,7 @@
     "timeSheet": {
       "id": "1206-sponsor-A1",
       "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-18T13:04:44.000Z",
+      "最後更新時間": "2020-11-23T07:03:30.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -6001,7 +6026,8 @@
         "order": 10,
         "capacity": 300
       }
-    }
+    },
+    "presentation_method": "現場報告 on-site"
   },
   "1203-abreak-0": {
     "id": "1203-abreak-0",
@@ -6680,12 +6706,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T05:37:02.000Z",
-    "createdAt": "2020-11-23T05:37:02.000Z",
+    "updatedAt": "2020-11-23T07:05:54.000Z",
+    "createdAt": "2020-11-23T07:05:54.000Z",
     "timeSheet": {
       "id": "1205-QA-hall-0",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:37:02.000Z",
+      "最後更新時間": "2020-11-23T07:05:54.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -6709,6 +6735,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端現場混合 mixed"
   },
   "1205-QA-hall-1": {
@@ -6716,12 +6743,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T05:37:17.000Z",
-    "createdAt": "2020-11-23T05:37:17.000Z",
+    "updatedAt": "2020-11-23T07:05:53.000Z",
+    "createdAt": "2020-11-23T07:05:53.000Z",
     "timeSheet": {
       "id": "1205-QA-hall-1",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:37:17.000Z",
+      "最後更新時間": "2020-11-23T07:05:53.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -6745,6 +6772,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端現場混合 mixed"
   },
   "1205-QA-hall-2": {
@@ -6752,12 +6780,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T05:37:21.000Z",
-    "createdAt": "2020-11-23T05:37:21.000Z",
+    "updatedAt": "2020-11-23T07:05:57.000Z",
+    "createdAt": "2020-11-23T07:05:57.000Z",
     "timeSheet": {
       "id": "1205-QA-hall-2",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:37:21.000Z",
+      "最後更新時間": "2020-11-23T07:05:57.000Z",
       "分類主題-華語": "愛自由！危機下的公民韌性",
       "分類主題-en": "Fight for freedom! Resilience in crisis",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -6781,6 +6809,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端現場混合 mixed"
   },
   "1205-QA-R1-0": {
@@ -6788,12 +6817,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T05:41:02.000Z",
-    "createdAt": "2020-11-23T05:41:02.000Z",
+    "updatedAt": "2020-11-23T07:06:03.000Z",
+    "createdAt": "2020-11-23T07:06:03.000Z",
     "timeSheet": {
       "id": "1205-QA-R1-0",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:41:02.000Z",
+      "最後更新時間": "2020-11-23T07:06:03.000Z",
       "分類主題-華語": "來串啊！國際公民社群",
       "分類主題-en": "We connect! Civic hackers around the world",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -6816,6 +6845,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端現場混合 mixed"
   },
   "1205-QA-R1-1": {
@@ -6823,12 +6853,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T05:41:55.000Z",
-    "createdAt": "2020-11-23T05:41:55.000Z",
+    "updatedAt": "2020-11-23T07:06:09.000Z",
+    "createdAt": "2020-11-23T07:06:09.000Z",
     "timeSheet": {
       "id": "1205-QA-R1-1",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:41:55.000Z",
+      "最後更新時間": "2020-11-23T07:06:09.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -6851,6 +6881,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "現場報告 on-site"
   },
   "1205-QA-R1-2": {
@@ -6858,12 +6889,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T05:41:59.000Z",
-    "createdAt": "2020-11-23T05:41:59.000Z",
+    "updatedAt": "2020-11-23T07:06:12.000Z",
+    "createdAt": "2020-11-23T07:06:12.000Z",
     "timeSheet": {
       "id": "1205-QA-R1-2",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T05:41:59.000Z",
+      "最後更新時間": "2020-11-23T07:06:12.000Z",
       "分類主題-華語": "我來啦！資訊人跳坑政策",
       "分類主題-en": "Here I am! Tech for policy",
       "議程場地-華語": "R1 - 成大綠色魔法學校 - 第 1 會議室 (B1)",
@@ -6886,6 +6917,7 @@
       }
     },
     "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true,
     "presentation_method": "遠端現場混合 mixed"
   },
   "1205-QA-C1-0": {
@@ -7071,12 +7103,12 @@
     "isPseudo": true,
     "title": "基調座談聯播",
     "title_en": "Keynote panel live-streaming",
-    "updatedAt": "2020-11-23T05:23:31.000Z",
-    "createdAt": "2020-11-23T05:23:31.000Z",
+    "updatedAt": "2020-11-23T07:04:33.000Z",
+    "createdAt": "2020-11-23T07:04:33.000Z",
     "timeSheet": {
       "id": "1206-keynote-0-misc",
       "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-23T05:23:31.000Z",
+      "最後更新時間": "2020-11-23T07:04:33.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL-SHADOW",
@@ -7089,19 +7121,20 @@
         "capacity": 1022
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   },
   "1206-keynote-1-misc": {
     "id": "1206-keynote-1-misc",
     "isPseudo": true,
     "title": "基調座談聯播",
     "title_en": "Keynote panel live-streaming",
-    "updatedAt": "2020-11-23T05:23:34.000Z",
-    "createdAt": "2020-11-23T05:23:34.000Z",
+    "updatedAt": "2020-11-23T07:04:32.000Z",
+    "createdAt": "2020-11-23T07:04:32.000Z",
     "timeSheet": {
       "id": "1206-keynote-1-misc",
       "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-23T05:23:34.000Z",
+      "最後更新時間": "2020-11-23T07:04:32.000Z",
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "ALL-SHADOW",
@@ -7114,6 +7147,7 @@
         "capacity": 1022
       }
     },
-    "translation": "華英口譯 ZH-EN interpreting"
+    "translation": "華英口譯 ZH-EN interpreting",
+    "provide_sign_language": true
   }
 }
