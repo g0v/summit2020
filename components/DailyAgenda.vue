@@ -15,7 +15,7 @@
     )
       agenda-card(:agenda="agenda")
     template(v-for="room in regularRooms")
-      .dailyagenda__header.dn.db-ns.mb2(:key="room.name")
+      .dailyagenda__header.dn.db-ns.mb2.z-5(:key="room.name")
         room-card(:name="room.name")
       .dailyagenda__item(
         v-for="agenda in room.agendaList"
@@ -166,7 +166,6 @@ export default {
     grid-row-start: 1;
     position: sticky;
     top: calc(3.5rem - 1px);
-    z-index: 1;
     background: white;
     background: linear-gradient(180deg, white 0%, white 90%, rgba(255,255,255,0.1) 100%);
   }

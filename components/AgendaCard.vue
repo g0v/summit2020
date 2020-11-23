@@ -134,6 +134,7 @@ export default {
   }
   &__content {
     position: sticky;
+    z-index: 1;
     // header search bar 3.5rem, locaion bar 7.75rem
     top: 11.25rem;
     left: 1.25rem;
@@ -141,6 +142,10 @@ export default {
     width: 100%;
     // 2.5rem: 1.25 * 2
     max-width: calc(100vw - 2.5rem);
+
+    &:hover {
+      z-index: 2;
+    }
   }
   &--en {
     .agendacard__content {

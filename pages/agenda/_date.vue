@@ -1,6 +1,6 @@
 <template lang="pug">
   .agenda
-    .agenda__tooltip-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-2
+    .agenda__tooltip-wrapper.flex.justify-center.mb3.mb5-l.pv2.ph3.ph0-l.bg-white.z-5
       agenda-tooltip
     .agenda__menu.justify-center.dn.flex-ns
       .datemenu.flex
