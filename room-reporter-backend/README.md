@@ -23,7 +23,7 @@ Use `.env` or env var to setup the following variable:
   - `MESSENGER_ACCESS_TOKEN`: Page access token
   - `MESSENGER_APP_ID` & `MESSENGER_APP_SECRET`: Facebook App ID
   - `MESSENGER_VERIFY_TOKEN`: Chatbot verify token
-  - `ONBOARD_PASSPHRASE`: 
+  - `ONBOARD_PASSPHRASE`: Pass pharse to verify whether the visitor is accepted
 - Option log
   - `SENTRY_DSN`: dsn of sentry
 

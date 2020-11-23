@@ -144,3 +144,12 @@ git push -u origin release-<MMDD>.<revision>
 
 # 等 5 分鐘後，就可在 https://summit.g0v.tw/2020/ 看到更新
 ```
+
+# g0v Summit 2020 會議場地客滿通報
+
+本此議程亦支援通報各會議場地的客滿狀況。
+
+- 使用 [Bottender](https://bottender.js.org/) 實做 Messenger 聊天機器人，供工人回報客滿與否
+- 使用 [Featheres.js](https://feathersjs.com/) 實做公開查詢的 RESTful API
+
+詳情請見 `room-reporter-backend` 資料夾
