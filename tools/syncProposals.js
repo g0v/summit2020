@@ -85,6 +85,12 @@ async function downloadProposals () {
         acceptedMap[proposal.id].speakers[i] = speaker
       }
     })
+
+    // allow remove speaker from by crew, using `is_removed` attr
+    acceptedMap[proposal.id].speakers = acceptedMap[proposal.id].speakers
+      .filter((speaker) => {
+        return !speaker.is_removed
+      })
   })
   return Object.values(acceptedMap)
 }
