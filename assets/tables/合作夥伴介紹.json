@@ -296,9 +296,35 @@
     "id": "recIiJ5c2wNeqfsU5",
     "名稱-華語": "崑山科技大學",
     "名稱-en": "Kun Shan University",
-    "說明": "偏鄉從不缺少美，而是缺少發現。\n教育部偏鄉數位創新服務計畫由崑山科技大學承接，致力於利用數位創新科技協助全台六大數位創新型DOC進行數位轉型，並成立專案團隊籌組數位創新團隊至各地服務，且將「連結外部資源、發掘在地特色、提升DOC知名度」作為次要任務，同時落實聯合國SDGs永續發展目標，共同為偏鄉注入一股創新且永續的能量，也期望透過大專生成員及在地青年的數位創新作為，讓更多人發現偏鄉的美、愛上偏鄉的好。\n",
+    "說明": "崑山科技大學深耕技職教育近55年，為南部地區典範型「親產學合作」之科技大學，近年積極發展「綠色科技」、「文化創意」、「智慧生活」與「精密機械」等四大領域特色教學與應用研究，因應國家經濟建設及產業發展方向，教授應用科學及技術服務，培養具備人文精神中心內涵的工程、管理、商業及設計高級人才，成為「南台灣專業技術與教育的領航者」。\n\n由於辦學績優，連續三年獲得教育部高等教育深耕計畫高額補助，學生平均受益經費私立科大全國第一、紅點設計概念全國唯一入榜私校、天下雜誌以及Cheers雜誌調查企業最愛私校之一等卓越績效。崑山科大體認到教育環境的轉變與資訊科技的發展，學習的環境也不再僅限於校園，故希望透過多元自由的社會參與、翻轉教育等方式，鼓勵學生主動關心社會公共議題，培養學生之公民意識與社會責任，迎向「共好」的抉擇。",
+    "說明-en": "Founded in 1964, Kun Shan University, dedicating to technical and vocational education for more than 55 years, has been a paragon of \"industry-academia cooperation\" among the universities of technology in Southern Taiwan. Adapt to the nation's economic and industry development, Kun Shan has been committed to the education and applied research in green technology, cultural creativity industry, smart living technology, and precision machinery to cultivate the talents of engineering, management, business and design, with humanistic spirit. Kun Shan has developed as the leader of the professional skills and education.\n\nFor three consecutive years since 2018, Kun Shan has received high grant from the Higher Education Sprout Project of the Ministry of Education of the Republic of China (Taiwan) because of its highly regarded performance. The benefit per student is the highest among the private universities of technology in Taiwan. Kun Shan is the only private university in Taiwan winning the highly acclaimed competition \"Red Dot Award: Design Concept.\" Additionally, Kun Shan is acknowledged as one of the favorite private universities of the industry from the surveys by Common Wealth Magazine and Cheers Magazine. Aware of the changes of education environments and the development of technology, Kun Shan has been striving to expand the learning beyond campus though various and multiple community participation and flipping education to equip the students with civic awareness and develop social responsibilities while concerning the public issues in the society.",
+    "logo": [
+      {
+        "id": "att0Tdaha7UCxQrof",
+        "filename": "崑山科技大學_Logo.jpg",
+        "type": "image/jpeg",
+        "large_url": "cache/0c926286499fb7b25bd03a43832948b5.jpg"
+      }
+    ],
     "合作角色": "協辦單位",
     "合作角色-en": "Supporting organizer"
+  },
+  {
+    "_id": "recCH8hxSy2j6GfMu",
+    "id": "recCH8hxSy2j6GfMu",
+    "名稱-華語": "偏鄉數位創新服務計畫",
+    "說明": "偏鄉從不缺少美，而是缺少發現。\n教育部偏鄉數位創新服務計畫由崑山科技大學承接，致力於利用數位創新科技協助全台六大數位創新型DOC進行數位轉型，並成立專案團隊籌組數位創新團隊至各地服務，且將「連結外部資源、發掘在地特色、提升DOC知名度」作為次要任務，同時落實聯合國SDGs永續發展目標，共同為偏鄉注入一股創新且永續的能量，也期望透過大專生成員及在地青年的數位創新作為，讓更多人發現偏鄉的美、愛上偏鄉的好。\n",
+    "logo": [
+      {
+        "id": "attoNCiT0zUZK6ImS",
+        "filename": "偏鄉數位創新服務計畫LOGO.jpg",
+        "type": "image/jpeg",
+        "large_url": "cache/1af5207c928dd7fda56389ab6ee7b117.jpg"
+      }
+    ],
+    "合作角色": "協辦單位",
+    "合作角色-en": "Supporting organizer",
+    "名稱-en": "偏鄉數位創新服務計畫"
   },
   {
     "_id": "recMUddMTtqsjHj6f",
