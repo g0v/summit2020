@@ -15,7 +15,7 @@
     )
       agenda-card(:agenda="agenda")
     template(v-for="room in regularRooms")
-      .dailyagenda__header.dn.db-ns.mb2.z-5(:key="room.name")
+      .dailyagenda__header.dn.db-ns.mb2.z-4(:key="room.name")
         room-card(:name="room.name")
       .dailyagenda__item(
         v-for="agenda in room.agendaList"
