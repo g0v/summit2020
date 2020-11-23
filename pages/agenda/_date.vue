@@ -18,7 +18,7 @@
         | {{$t('no-result')}}&nbsp;
         button.bn.bg-transparent.underline.dim(@click="resetSearch") {{$t('clear-search')}}
       daily-agenda(v-else :agenda-per-room="agendaPerRoom")
-    .agenda__mobilemenu.mobilemenu.mt3(data-slideout-ignore)
+    .agenda__mobilemenu.mobilemenu.mt3.z-2(data-slideout-ignore)
       div
       nuxt-link.mobilemenu__item.tc.lh-title(
           v-for="date in dateList"
