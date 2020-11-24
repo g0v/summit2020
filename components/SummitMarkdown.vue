@@ -41,6 +41,15 @@ export default {
     .toc-anchor-link {
       display: none;
     }
+    a {
+      color: $pink-1;
+      transition: opacity .15s ease-in;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }
 </style>
