@@ -3,7 +3,7 @@ const PRESENT_MAP = {
   online: 'online',
   現場報告: 'on-site',
   'on-site': 'on-site',
-  遠端現場混搭: 'mixed',
+  遠端現場混合: 'mixed',
   mixed: 'mixed'
 }
 export default {
