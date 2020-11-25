@@ -9,6 +9,7 @@
         :title="person.organization"
         :avatar="person.avatar_url"
         :link="person.agendaUrl"
+        :style-index="index"
       )
     h2.mas__title {{$t('speakers')}}
     .mas__people
@@ -19,9 +20,7 @@
         :title="person.organization"
         :avatar="person.avatar_url"
         :link="person.agendaUrl"
-        :to="localePath(person.agendaUrl)"
-        itemscope
-        itemtype="https://schema.org/Person"
+        :style-index="index"
       )
 </template>
 <script>

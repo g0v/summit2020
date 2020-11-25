@@ -26,8 +26,7 @@
       "receUolTKSVUuPlwq",
       "recYdS1tBcNzm1L1v",
       "recmttdAuXkvw486f",
-      "recggfqfdyYmQYqmi",
-      "rec9gKaajAs3Gwtds"
+      "recggfqfdyYmQYqmi"
     ],
     "場地-en": "R0 - The Magic School of Green Technologies - Chung-Hua Hall"
   },
@@ -116,7 +115,7 @@
       "recjzqzorUHauM7vF",
       "recZWQIj5SepB7PSL"
     ],
-    "場地-en": "R1 - The Magic School of Green Technologies - Meeting Room I (B1)"
+    "場地-en": "R1 - The Magic School of Green Technologies - Conference Room 1 (B1)"
   },
   {
     "_id": "recgTbWORgaTVabQT",
@@ -195,7 +194,7 @@
       "recQ9d2vwfzSvqj5I",
       "recPLJGpTGHpt0GaN"
     ],
-    "場地-en": "R3 - The Magic School of Green Technologies - Meeting Room III (3F)"
+    "場地-en": "R3 - The Magic School of Green Technologies - Conference Room 3 (3F)"
   },
   {
     "_id": "reccuNZGoWLAa0A8q",
@@ -213,7 +212,18 @@
       "recAzYd4t7p3zAqYS",
       "recN6pEdkleWQAM9y"
     ],
-    "場地-en": "R4 - The Magic School of Green Technologies - Meeting Room 4 (3F)"
+    "場地-en": "R4 - The Magic School of Green Technologies - Conference Room 4 (3F)"
+  },
+  {
+    "_id": "rec8kqytVPaDwaWmM",
+    "id": "rec8kqytVPaDwaWmM",
+    "場地-華語": "B - 午營咖啡",
+    "人數": 30,
+    "順位": 70,
+    "議程時間": [
+      "recVOMkfEKF2MfO0X"
+    ],
+    "場地-en": "B - A Break Cafe"
   },
   {
     "_id": "recrJnWtcmtkNz5P5",
