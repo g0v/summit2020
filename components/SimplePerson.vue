@@ -17,7 +17,7 @@
         v-else
         :title="name"
       )
-      .simpleperson__bg(:class="[`simpleperson__bg--${styleIndex}`]")
+      .simpleperson__bg(:class="[`simpleperson__bg--${styleIndexWrap}`]")
     .simpleperson__org(itemprop="affiliation") {{title}}
     .simpleperson__name(itemprop="name") {{name}}
 </template>
@@ -38,7 +38,7 @@ export default {
     },
     styleIndex: {
       type: Number,
-      default: 127
+      default: -1
     },
     link: {
       type: String,
@@ -48,6 +48,12 @@ export default {
   computed: {
     isLink () {
       return this.link && this.link.trim()
+    },
+    styleIndexWrap () {
+      if (!this.styleIndex < 0) {
+        return ''
+      }
+      return this.styleIndex % 3
     }
   }
 }
