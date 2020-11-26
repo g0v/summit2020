@@ -1260,7 +1260,7 @@
   "5ef6eca4ba206b030d66a368": {
     "id": "5ef6eca4ba206b030d66a368",
     "title": "性少數社群網站的建構經驗──從邊緣開拓出路",
-    "title_en": "Why Lez is more is here: decontruct labels of suppression",
+    "title_en": "Extending Margins - Discussing the Development of Web Communities for Sexual Minorities",
     "summary": "目前既有的網路交友社群平台以異性戀為多數，LGBTIQA族群中則以男同志最活躍；女同志、雙性戀女性、跨性別、酷兒、泛性戀、無性戀等性少數則常年面臨多重壓迫，包括：單調的性別敘事框架、情慾經驗中不容許混亂與矛盾的二元論述、在高度複雜與差異化的性少數族群互相傾軋、性別網紅代言群體......等。\n\n性/別與性傾向，是每個人私密且核心的自我認同。在人生不同階段，個體都可能透過性或各種形式的親密關係來認知自己。然而，在「解構父權壓迫」與「掃蕩數位性別暴力」浪潮下，如何透過性少數社群網路的建構，使異質性極高的性少數主體得以自我壯大（empower）？「濡沫 Lez is more」在本次g0v論壇會有三位主講者，從不同角度出發：台灣性少數情慾友善交友平台的管理經驗、港台女同志網路社群文化觀察，與PTT血肉模糊的性別歷史。我們期望提供社群網路的建構經驗，開啟對話可能性。\n\n",
     "summary_en": "Women, lesbians and sexual minorities are labeled, compartmentalised, and suppressed because of their sexuality, gender expression and sexual orientation for a long time. Despite the majority's treatment against the groups, similar kind of treatment is also found, and even more fierce among these groups, against the even marginalised. When labelling underlies suppression, we need deconstruction, and this is why Lez is more is here. ",
     "oral_language": "華語",
@@ -1309,7 +1309,7 @@
     "timeSheet": {
       "id": "5ef6eca4ba206b030d66a368",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-21T02:33:52.000Z",
+      "最後更新時間": "2020-11-25T16:00:12.000Z",
       "分類主題-華語": "社群裡的性別",
       "分類主題-en": "Gender in communities",
       "議程場地-華語": "R4 - 成大綠色魔法學校 - 第 4 會議室 (3F)",
@@ -1522,27 +1522,21 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": false,
     "verified": true,
-    "createdAt": "2020-11-22T10:15:37.000Z",
+    "createdAt": "2020-11-25T11:36:33.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "林怡壯",
-        "organization": "臺南市政府智慧發展中心",
-        "avatar_url": "cache/7a3e9be87ac6219e1c8ed7e4db6f93cc.jpg",
-        "city": "臺南市",
-        "info_url": "https://sdc-rdec.tainan.gov.tw/cp.aspx?n=13539",
-        "bio": "臺南市政府智慧發展中心主任，從傳統資通訊議題的經營管理一路走來，看見了現今資訊單位多元角色的發展，歷經社群經營，Maker Space與開放政府的發展與投入，一直到近幾年智慧城市的演進從未缺席，也期望之後能夠持續跟上科技發展腳步",
-        "bio_en": ""
-      },
-      {
         "display_name": "陳冠中",
+        "display_name_en": "CHEN,KUAN-CHUNG",
         "organization": "台南市政府智慧發展中心副主任",
+        "organization_en": "Tainan City Government Smart Development Center",
         "city": "台南市",
         "city_en": "Tainan, Taiwan",
-        "bio_en": " "
+        "bio": "致力於智慧城市建置, 尤其是開放資料推廣與數位轉型方面, 協助市府進行資料治理推動",
+        "bio_en": "C.K.Chen, Deputy Director of Smart Development  Center of Tainan City Government, is committed to the construction of smart cities, especially in promotion of open data and digital transformation, and assists the Tainan City Government in the promotion of data governance"
       }
     ],
-    "updatedAt": "2020-11-22T10:15:37.000Z",
+    "updatedAt": "2020-11-25T11:36:33.000Z",
     "timeSheet": {
       "id": "5ef947a8ba206b030d66a392",
       "議程日期": "2020-12-04",
