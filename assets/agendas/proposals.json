@@ -245,7 +245,7 @@
       "分類主題-華語": "開源社群對 NGO 的重要性",
       "分類主題-en": "Openness is important for NGOs",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "嚴婉玲 Urda Yen",
         "organization": "台南新芽",
@@ -668,7 +668,7 @@
       "分類主題-華語": "地方的公共參與",
       "分類主題-en": "Civic participation is local",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "恩恩",
         "organization": "PDIS（公共數位創新空間）",
@@ -2282,7 +2282,7 @@
       "分類主題-華語": "開源社群對 NGO 的重要性",
       "分類主題-en": "Openness is important for NGOs",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "雨蒼",
         "organization": "g0v參與者",
@@ -3001,7 +3001,7 @@
       "分類主題-華語": "青年發展的必須",
       "分類主題-en": "Youth development is a must",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "嚴婉玲 Urda Yen",
         "organization": "台南新芽",
@@ -3206,7 +3206,7 @@
       "分類主題-華語": "開源社群對 NGO 的重要性",
       "分類主題-en": "Openness is important for NGOs",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "雨蒼",
         "organization": "g0v參與者",
@@ -5493,7 +5493,7 @@
       "分類主題-華語": "青年發展的必須",
       "分類主題-en": "Youth development is a must",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "嚴婉玲 Urda Yen",
         "organization": "台南新芽",
@@ -5556,7 +5556,7 @@
       "分類主題-華語": "地方的公共參與",
       "分類主題-en": "Civic participation is local",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": {
         "display_name": "嚴婉玲 Urda Yen",
         "organization": "台南新芽",
@@ -6020,6 +6020,89 @@
     },
     "presentation_method": "現場報告 on-site"
   },
+  "1206-communities": {
+    "id": "1206-communities",
+    "updatedAt": "2020-11-27T01:59:51.000Z",
+    "createdAt": "2020-11-27T01:59:51.000Z",
+    "title": "3 場 conf，5 個總召，他們竟然這樣搞？完全顛覆你的想像！",
+    "title_en": "3 conferences, 5 chairpersons, what the **** were they thinking?",
+    "summary": "標題要很華麗炫砲、賣票要有爆點。這是公關對這場 panel 的要求。什麼？今年南部這麼多 conf，竟然是這個原因？今年，一路向南的這 5 位總召，奉獻青春年華，竟換來了這些？萬事起頭「南」，有人說：你們想去台南辦會，幹嘛拖我下水？社群是人組成的，而會離開，那是必然的。若能夠洞悉辦會各種層面的含義，勢必能讓思維再提高一個層級，要不然大家花了那麼多青春，要幹嘛？",
+    "summary_en": "[by Google] The title should be gorgeous, and the ticket sales should be explosive. This is the requirement of public relations for this panel. What? This year, there are so many confs in the south, which is the reason? This year, these 5 chairpersons who went all the way to the south, dedicated their youthful years, actually got these? Everything starts “south,” some people say: You want to go to Tainan to hold a meeting, why drag me into the water? The community is made up of people, and it is inevitable that they will leave. If you can understand the meaning of the various levels of holding the meeting, you will definitely raise your thinking to another level. Otherwise, everyone has spent so much youth, what do you want to do?",
+    "oral_language": "華語",
+    "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
+    "topic": "合作社群議程",
+    "three_keywords": "社群、合作、產生器",
+    "is_presentation_cc40": true,
+    "is_slide_cc40": true,
+    "speakers": [
+      {
+        "display_name": "Joe",
+        "organization": "PyCon Taiwan",
+        "avatar_url": "cache/2db5d0184490b06c23b8376597cb3cc8.jpg",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "bio": "PyCon Taiwan 2020 召集人",
+        "bio_en": "PyCon Taiwan 2020 chairperson"
+      },
+      {
+        "display_name": "Ofa",
+        "organization": "MOPCON",
+        "organization_en": "MOPCON",
+        "avatar_url": "cache/43be7a796a371790cbe4979b9d38a224.jpg",
+        "city": "KH",
+        "city_en": "KH",
+        "bio": "MOPCON 2020 總召",
+        "bio_en": "MOPCON 2020 general chair"
+      },
+      {
+        "display_name": "Bess Lee",
+        "organization": "g0v.tw",
+        "avatar_url": "cache/eebc28dc5b9cfa99ffbbe97f2837b5a5.jpg",
+        "city": "台北",
+        "city_en": "Taipei, Taiwan",
+        "info_url": "https://jothon.g0v.tw/about/",
+        "bio": "g0v 零時政府揪松團秘書長、g0v Summit 2020 共同召集人。2017 年加入 g0v 揪松團，統籌 g0v 黑客松、基礎松、公民科技創新獎助金和零時小學校。",
+        "bio_en": "Chief of Staff of g0v jothon, Co-chair of g0v Summit 2020. She is general coordinator of g0v Hackathon, infrathon, g0v CivicTech Prototype Grant and Sch001."
+      },
+      {
+        "display_name": "pm5",
+        "organization": "g0v.tw",
+        "avatar_url": null,
+        "city": "台北",
+        "city_en": "Taipei",
+        "info_url": null,
+        "bio": "g0v Summit 2020 共同召集人",
+        "bio_en": "g0v Summit 2020 Co-chair"
+      },
+      {
+        "display_name": "chihao",
+        "organization": "g0v.tw",
+        "avatar_url": "cache/c9f848ec0525f72a80c332b75b657462.jpg",
+        "city": "台北",
+        "city_en": "Taipei",
+        "info_url": "https://chihao.tw",
+        "bio": "g0v Summit 2020 共同召集人",
+        "bio_en": "g0v Summit 2020 Co-chair"
+      }
+    ],
+    "timeSheet": {
+      "id": "1206-communities",
+      "議程日期": "2020-12-06",
+      "最後更新時間": "2020-11-26T15:38:19.000Z",
+      "分類主題-華語": "",
+      "分類主題-en": "",
+      "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
+      "議程場地-en": "R0 - The Magic School of Green Technologies - Chung-Hua Hall",
+      "主持人": null,
+      "議程開始時間": "2020-12-06T16:00",
+      "議程長度": 60,
+      "locationMeta": {
+        "order": 10,
+        "capacity": 300
+      }
+    },
+    "presentation_method": "現場報告 on-site"
+  },
   "1203-abreak-0": {
     "id": "1203-abreak-0",
     "isPseudo": true,
@@ -6155,7 +6238,7 @@
       "分類主題-華語": "",
       "分類主題-en": "",
       "議程場地-華語": "W - 吳園藝文中心 - 原台南公會堂",
-      "議程場地-en": "W - Wu Garden - Former Tainan Public Hall",
+      "議程場地-en": "W - Wu Garden - Former Tainan Assembly Hall",
       "主持人": null,
       "議程開始時間": "2020-12-04T12:00",
       "議程長度": 60,
@@ -6498,30 +6581,6 @@
       "locationMeta": {
         "order": 127,
         "capacity": 1023
-      }
-    }
-  },
-  "1206-community": {
-    "id": "1206-community",
-    "isPseudo": true,
-    "title": "待確認",
-    "title_en": "To be confirmed...",
-    "updatedAt": "2020-11-21T11:46:30.000Z",
-    "createdAt": "2020-11-21T11:46:30.000Z",
-    "timeSheet": {
-      "id": "1206-community",
-      "議程日期": "2020-12-06",
-      "最後更新時間": "2020-11-21T11:46:30.000Z",
-      "分類主題-華語": "",
-      "分類主題-en": "",
-      "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
-      "議程場地-en": "R0 - The Magic School of Green Technologies - Chung-Hua Hall",
-      "主持人": null,
-      "議程開始時間": "2020-12-06T16:00",
-      "議程長度": 60,
-      "locationMeta": {
-        "order": 10,
-        "capacity": 300
       }
     }
   },

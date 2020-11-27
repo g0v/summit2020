@@ -135,11 +135,26 @@ function genProposalFromAdditionalTable (addition) {
     }
   })
 
+  if (addition['講者 N']) {
+    try {
+      const moreSpeakers = yaml.parse(addition['講者 N'])
+      moreSpeakers.forEach((speaker) => {
+        speaker = genPerson(speaker)
+        if (speaker) {
+          speakers.push(speaker)
+        }
+      })
+    } catch (err) {
+      console.error(`In ${addition.id} > 講者 N, get invalid yaml`)
+    }
+  }
+
   return { proposal, speakers }
 }
 
 function genPerson (personString) {
-  const additionalSpeaker = yaml.parse(personString)
+  const additionalSpeaker = typeof personString === 'string'
+    ? yaml.parse(personString) : personString
   const speaker = {}
   SPEAKER_FIELD_DEFINITIONS.forEach((field) => {
     const val = additionalSpeaker[field.id]
