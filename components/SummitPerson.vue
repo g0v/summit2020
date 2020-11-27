@@ -39,7 +39,7 @@ zh:
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
 
-const SUPER_SHORT_BIO = 20
+const SUPER_SHORT_BIO = 21
 
 export default {
   components: {
