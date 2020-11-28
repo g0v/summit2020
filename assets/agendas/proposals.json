@@ -6022,8 +6022,8 @@
   },
   "1206-communities": {
     "id": "1206-communities",
-    "updatedAt": "2020-11-27T01:59:51.000Z",
-    "createdAt": "2020-11-27T01:59:51.000Z",
+    "updatedAt": "2020-11-27T07:22:42.000Z",
+    "createdAt": "2020-11-27T07:22:42.000Z",
     "title": "3 場 conf，5 個總召，他們竟然這樣搞？完全顛覆你的想像！",
     "title_en": "3 conferences, 5 chairpersons, what the **** were they thinking?",
     "summary": "標題要很華麗炫砲、賣票要有爆點。這是公關對這場 panel 的要求。什麼？今年南部這麼多 conf，竟然是這個原因？今年，一路向南的這 5 位總召，奉獻青春年華，竟換來了這些？萬事起頭「南」，有人說：你們想去台南辦會，幹嘛拖我下水？社群是人組成的，而會離開，那是必然的。若能夠洞悉辦會各種層面的含義，勢必能讓思維再提高一個層級，要不然大家花了那麼多青春，要幹嘛？",
@@ -6031,7 +6031,7 @@
     "oral_language": "華語",
     "format": "主題論壇 （60 分鐘）Panel discussion (60 min)",
     "topic": "合作社群議程",
-    "three_keywords": "社群、合作、產生器",
+    "three_keywords": "社群、南方、產生器",
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "speakers": [
@@ -6067,10 +6067,10 @@
       {
         "display_name": "pm5",
         "organization": "g0v.tw",
-        "avatar_url": null,
+        "avatar_url": "cache/26058c8c441b12fe86fb29c4190bbd27.jpg",
         "city": "台北",
         "city_en": "Taipei",
-        "info_url": null,
+        "info_url": "https://pominwu.org",
         "bio": "g0v Summit 2020 共同召集人",
         "bio_en": "g0v Summit 2020 Co-chair"
       },
