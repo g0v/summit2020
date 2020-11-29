@@ -41,6 +41,7 @@ zh:
   設備組: 設備組
 </i18n>
 <script>
+import md5 from 'md5'
 import SimplePerson from '~/components/SimplePerson'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
@@ -95,8 +96,8 @@ export default {
   },
   methods: {
     comparePeople (peopleA, peopleB) {
-      const keyA = peopleA.大頭照 || peopleA['Gravatar 信箱'] || peopleA.顯示名稱
-      const keyB = peopleB.大頭照 || peopleB['Gravatar 信箱'] || peopleB.顯示名稱
+      const keyA = peopleA.大頭照 || peopleA['Gravatar 信箱'] || `cache/${md5(peopleA.id)}`
+      const keyB = peopleB.大頭照 || peopleB['Gravatar 信箱'] || `cache/${md5(peopleB.id)}`
       return keyA.localeCompare(keyB)
     },
     sortPeople (people) {
