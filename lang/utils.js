@@ -24,8 +24,15 @@ function extractLanguageFromTable ({ rows, isEn = true }) {
         continue
       }
       const isKeyEn = _.last(keyToken) in EN_TERMS
-      if ((isEn && isKeyEn) || (!isEn && !isKeyEn)) {
-        const nonLangKey = keyToken.slice(0, -1).join(LANG_SPLITTER)
+      const nonLangKey = keyToken.slice(0, -1).join(LANG_SPLITTER)
+      if (!isEn) {
+        if (!isKeyEn) {
+          perLangRow[nonLangKey] = row[key]
+        }
+      } else if (isKeyEn || (!isKeyEn && !perLangRow[nonLangKey])) {
+        // set en field when
+        // 1. get en field
+        // 2. get zh field && en field is still empty
         perLangRow[nonLangKey] = row[key]
       }
     }

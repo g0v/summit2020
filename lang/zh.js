@@ -29,6 +29,7 @@ export default {
   staff: '工作人員',
   registration: '立即購票',
   moderatorsAndSpeakers: '主持與講者',
+  wg: '工人',
   moderators: '主持',
   speakers: '講者',
   covid19Guidelines: '防疫守則',
@@ -72,6 +73,10 @@ export default {
   }),
   'table/partners': extractLanguageFromTable({
     rows: require('~/assets/tables/合作夥伴介紹.json'),
+    isEn: false
+  }),
+  'table/wg': extractLanguageFromTable({
+    rows: require('~/assets/tables/工人清單.json'),
     isEn: false
   }),
 

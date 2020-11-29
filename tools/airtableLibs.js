@@ -51,22 +51,27 @@ const tables = new Airtable({
 // }
 function downloadOneTable (tableInfo, toFile = true) {
   const rows = []
+  const transformer = tableInfo.transformer || {}
   return new Promise((resolve, reject) => {
     tables(tableInfo.tableName).select({
       view: tableInfo.view
     }).eachPage(async (records, fetchNextPage) => {
       for (const record of records) {
-        // cache image to local
         const fields = record.fields
         const fieldKeys = Object.keys(fields)
         for (const attr of fieldKeys) {
+          // transform column value if needed
+          if (transformer[attr]) {
+            fields[attr] = await transformer[attr](fields[attr])
+          }
+          // cache image to local
           if (!Array.isArray(fields[attr])) {
             continue
           }
           const attrList = fields[attr]
           fields[attr] = []
           for (const item of attrList) {
-            if (item.url && item.type && item.url) {
+            if (item.url && item.type) {
               // looks like an image
               const cacheItem = {
                 id: item.id,
