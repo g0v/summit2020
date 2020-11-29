@@ -29,6 +29,7 @@ export default {
   staff: 'Staff',
   registration: 'Registration',
   moderatorsAndSpeakers: 'Moderators and Speakers',
+  wg: 'Working Group',
   speakers: 'Speakers',
   moderators: 'Moderators',
   covid19Guidelines: 'COVID19 Guideline',
@@ -73,6 +74,10 @@ export default {
   }),
   'table/partners': extractLanguageFromTable({
     rows: require('~/assets/tables/合作夥伴介紹.json'),
+    isEn: true
+  }),
+  'table/wg': extractLanguageFromTable({
+    rows: require('~/assets/tables/工人清單.json'),
     isEn: true
   }),
 
