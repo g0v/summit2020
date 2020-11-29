@@ -23,12 +23,14 @@
 en:
   lang: 華語
   registration: Registration
+  remote: Join Online
   banquet: Banquet
   learningCredit: Sign In/Off
   healthDecl: Health Declaration
 zh:
   lang: English
   registration: 立刻報名
+  remote: 線上參與
   banquet: 來辦桌
   learningCredit: 終身學習簽到退
   healthDecl: 填健康聲明
@@ -60,6 +62,7 @@ export default {
         { key: 'partners', url: '/partners' },
         { key: 'transportation', url: '/transportation' },
         { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
+        { key: 'remote', url: 'https://g0v-summit-2020.kktix.cc/events/rem0te', isExt: true, isCta: true },
         { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, isCta: true }
         // { key: 'live', url: 'https://some.live.url.com', isExt: true },
         // { key: 'feed', url: 'https://some.feed.url.com', isExt: true },
