@@ -41,7 +41,6 @@ zh:
   設備組: 設備組
 </i18n>
 <script>
-import md5 from 'md5'
 import SimplePerson from '~/components/SimplePerson'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
@@ -60,11 +59,6 @@ const GROUP_LIST = [
 ]
 
 const GRAVATAR_BASE = 'https://www.gravatar.com/avatar/'
-const TOP_WORD = {
-  總招: true,
-  組長: true,
-  '共同召集人 co-chair': true
-}
 
 export default {
   components: {
@@ -96,15 +90,15 @@ export default {
   },
   methods: {
     comparePeople (peopleA, peopleB) {
-      const keyA = peopleA.大頭照 || peopleA['Gravatar 信箱'] || `cache/${md5(peopleA.id)}`
-      const keyB = peopleB.大頭照 || peopleB['Gravatar 信箱'] || `cache/${md5(peopleB.id)}`
+      const keyA = peopleA.id
+      const keyB = peopleB.id
       return keyA.localeCompare(keyB)
     },
     sortPeople (people) {
       const headList = []
       const tailList = []
       people.forEach((person) => {
-        if (TOP_WORD[person.職稱]) {
+        if (person.是頭頭) {
           headList.push(person)
         } else {
           tailList.push(person)
