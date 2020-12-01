@@ -134,8 +134,8 @@ export default {
     font-size: 2.25rem;
     font-weight: 500;
     padding: 3rem 0;
-    background-image: url('~assets/images/people-banner.png');
-    background-position: bottom calc(50% - 1.5rem) right calc(50% - 7rem);
+    background-image: url('~assets/images/wg-banner.png');
+    background-position: bottom calc(50% - 1.5rem) right calc(50% - 9rem);
     background-repeat: no-repeat;
     text-align: center;
     @include not-small-screen {
@@ -145,7 +145,7 @@ export default {
   }
   &--en {
     .wg__title {
-      background-position: bottom calc(50% - 1.5rem) right calc(50% - 17rem);
+      background-position: bottom calc(50% - 1.5rem) right calc(50% - 21rem);
     }
   }
   &__people {
