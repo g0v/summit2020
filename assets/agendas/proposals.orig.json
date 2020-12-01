@@ -1826,20 +1826,31 @@
     "is_slide_cc40": true,
     "related_url": "https://urbantaiouan.com/category/studio/",
     "verified": true,
-    "createdAt": "2020-11-30T18:22:45.000Z",
+    "createdAt": "2020-12-01T16:34:20.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Clément Tricot",
-        "display_name_en": "Clément Tricot"
+        "display_name_en": "Clément Tricot",
+        "organization": "Urban Taiouan",
+        "avatar_url": "https://i.imgur.com/rbu5Nerh.jpg",
+        "city": "Taipei",
+        "info_url": "https://twitter.com/home",
+        "bio": "我本身為都市設計師，到台灣以前，我曾在越南和法國工作。我目前在台灣中央廣播電台擔任記者。我與他人共同創建了一個關於台灣城市的工作室 Urban Taiouan。近年我參與了幾個城市行動計畫，這些計畫涉及公民，有時還涉及公民科技。",
+        "bio_en": "Urban designer, I used to work in Vietnam and France before I moved to Taiwan. I've co-founded an informal observatory about Taiwan cities. I now also work as journalist at Radio Taiwan International. I have been part of few urban project involving citizen with sometimes use of civictech."
       },
       {
         "display_name": "Morgane Le Guilloux",
         "display_name_en": "Morgane Le Guilloux",
-        "info_url": "https://www.linkedin.com/in/morgane-le-guilloux?originalSubdomain=fr"
+        "organization": "Urban Taiouan",
+        "avatar_url": "https://i.imgur.com/YEQCKz1h.jpg",
+        "city": "Taipei",
+        "info_url": "https://www.linkedin.com/in/morgane-le-guilloux?originalSubdomain=fr",
+        "bio": "我本身為都市設計師，到台灣以前，我曾在越南和法國工作。我與他人共同創建了一個關於台灣城市的工作室 Urban Taiouan。我也在台灣從事城市和景觀設計項目(馬祖，基隆...)。我參與了幾個城市行動計畫，這些計畫涉及公民，有時還涉及公民科技。",
+        "bio_en": "Urban designer, I used to work in Vietnam and France before I moved to Taiwan. I've co-founded an informal observatory about Taiwan cities.I also work on urban and landscape design project in Taiwan (Matsu, Keelung...). I have been part of few urban project involving citizen with sometimes use of civictech."
       }
     ],
-    "updatedAt": "2020-11-30T18:22:45.000Z",
+    "updatedAt": "2020-12-01T16:34:20.000Z",
     "timeSheet": {
       "id": "5ef9c9cbba206b030d66a3b1",
       "議程日期": "2020-12-05",
@@ -4412,7 +4423,7 @@
     "is_slide_cc40": true,
     "related_url": "https://projectlockdown.world/",
     "verified": true,
-    "createdAt": "2020-11-30T17:03:45.000Z",
+    "createdAt": "2020-12-01T13:08:12.000Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -4436,11 +4447,12 @@
       {
         "display_name": "Mandy Chan",
         "display_name_en": "Mandy Chan",
+        "avatar_url": "https://imgur.com/a/8Jc4R9D",
         "bio": "Mandy就讀於香港大學，主修社會學與城市管治。她對人權、可持續發展等議題以及任何有關城市的事物感興趣。",
         "bio_en": "Mandy is an undergraduate majoring in Sociology and Urban Governance in The University of Hong Kong. She is passionate about human rights, sustainability and anything about cities."
       }
     ],
-    "updatedAt": "2020-11-30T17:03:45.000Z",
+    "updatedAt": "2020-12-01T13:08:12.000Z",
     "timeSheet": {
       "id": "5f02d5a0e88a4948daf87fb9",
       "議程日期": "2020-12-05",
