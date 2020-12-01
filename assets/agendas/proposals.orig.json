@@ -1812,7 +1812,7 @@
   "5ef9c9cbba206b030d66a3b1": {
     "id": "5ef9c9cbba206b030d66a3b1",
     "title": "都市設計、公民科技與城市改善 ? - 台灣經驗",
-    "title_en": "City making, civic tech, and urban transformations? The Taiwan experience",
+    "title_en": "City making, civic tech and urban transformations ? - Taiwan experience",
     "summary": "隨著人口的不斷增長，越來越多的人生活在都市地區。台灣也有這個社會現象。在氣候變化之前，大流行的情況已經證明，城市與當地重新連接是至關重要的。在公民的參與下，城市更新和城市發展可能會有所改善。我們相信公民的參與和透明度是更好的城市政策的條件。\n\n在台灣，我們有機會參與少數涉及公民的項目，使用公民科技(Unlimited cities DIY)。 APP是開源的，由一個 7 billion urbanists 的非政府組織製作。它允許人們輕鬆地設計。我們還參加了總統盃黑客松團隊 (patch by planting – 臺灣好植地)。這個團隊由來自不同群體的許多其他人組成，它允許我們思考各種可能性，並將這種方法應用於邀請人們考慮植樹與環境改善的目標。\n\n在這次演講中，我們想分享一下我們在台灣的經歷，包括我們參與的幾個案例。我們將簡要介紹APP Unlimited cities的理念，為什麼我們認為它在某些情況下是成功的，為什麼在其他情況下不成功。",
     "summary_en": "While population keeps growing, more and more people lives in urban areas. Taiwan knows this social phenomenon. The pandemic situation and before climate change already proves that it's crucial that cities reconnect with local territories. Urban renew and urban development might improve with citizen’s involvement. We believe citizen’s involvement and transparency are conditions for better urban policies.\n\nIn Taiwan, we had opportunity to be part of few projects involving citizens while using a civic tech « unlimited cities Diy ». The APP is open source and made by a NGO called 7 billion urbanists. It allows people to easily design public space with photo realistic features. We also had opportunity to be part of a team in the presidential Hackathon 2020 (patch by planting – 台灣號直地). This team is made from many other people from different backgrounds. This experience forced us to rethink about possibilities and limits of this kind of citizen involvement methodology to simply invite people to think about planting trees.\n\nIn this talk we would like to share our experience in Taiwan, including the few cases we have been part. We will introduce briefly the idea behind the APP unlimited cities, why we think it has been successful in some case and why not in others case.\n",
     "oral_language": "English",
@@ -1826,29 +1826,20 @@
     "is_slide_cc40": true,
     "related_url": "https://urbantaiouan.com/category/studio/",
     "verified": true,
-    "createdAt": "2020-10-06T07:21:55.404Z",
+    "createdAt": "2020-11-30T18:22:45.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
-        "display_name": "Clément",
-        "organization": "Urban Taiouan",
-        "avatar_url": "https://i.imgur.com/rbu5Nerh.jpg",
-        "city": "Taipei",
-        "info_url": "https://twitter.com/home",
-        "bio": "我本身為都市設計師，到台灣以前，我曾在越南和法國工作。我目前在台灣中央廣播電台擔任記者。我與他人共同創建了一個關於台灣城市的工作室 Urban Taiouan。近年我參與了幾個城市行動計畫，這些計畫涉及公民，有時還涉及公民科技。",
-        "bio_en": "Urban designer, I used to work in Vietnam and France before I moved to Taiwan. I've co-founded an informal observatory about Taiwan cities. I now also work as journalist at Radio Taiwan International. I have been part of few urban project involving citizen with sometimes use of civictech."
+        "display_name": "Clément Tricot",
+        "display_name_en": "Clément Tricot"
       },
       {
-        "display_name": "Morgane",
-        "organization": "Urban Taiouan",
-        "avatar_url": "https://i.imgur.com/YEQCKz1h.jpg",
-        "city": "Taipei",
-        "info_url": "https://www.facebook.com/morgane.leguilloux.56",
-        "bio": "我本身為都市設計師，到台灣以前，我曾在越南和法國工作。我與他人共同創建了一個關於台灣城市的工作室 Urban Taiouan。我也在台灣從事城市和景觀設計項目(馬祖，基隆...)。我參與了幾個城市行動計畫，這些計畫涉及公民，有時還涉及公民科技。",
-        "bio_en": "Urban designer, I used to work in Vietnam and France before I moved to Taiwan. I've co-founded an informal observatory about Taiwan cities.I also work on urban and landscape design project in Taiwan (Matsu, Keelung...). I have been part of few urban project involving citizen with sometimes use of civictech."
+        "display_name": "Morgane Le Guilloux",
+        "display_name_en": "Morgane Le Guilloux",
+        "info_url": "https://www.linkedin.com/in/morgane-le-guilloux?originalSubdomain=fr"
       }
     ],
-    "updatedAt": "2020-10-06T07:21:55.404Z",
+    "updatedAt": "2020-11-30T18:22:45.000Z",
     "timeSheet": {
       "id": "5ef9c9cbba206b030d66a3b1",
       "議程日期": "2020-12-05",
@@ -4421,7 +4412,7 @@
     "is_slide_cc40": true,
     "related_url": "https://projectlockdown.world/",
     "verified": true,
-    "createdAt": "2020-10-26T07:08:45.117Z",
+    "createdAt": "2020-11-30T17:03:45.000Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -4443,16 +4434,13 @@
         "bio_en": "Julie is passionate about human and digital rights and equity across the globe. Having worked seven years in the telecommunications industry as a software engineer, hardware engineer, market strategist, and consultant, Julie re-qualified as a secondary school teacher. She has been fortunate to work in many different cultures and countries and when not teaching has worked in the humanitarian sector in both long-term volunteering positions and paid employment."
       },
       {
-        "display_name": "Steven Chen",
-        "organization": "Project Lockdown - The IO Foundation",
-        "avatar_url": "https://i.imgur.com/yLID87ch.jpg",
-        "city": "Tainan",
-        "info_url": "",
-        "bio": "Steven是個在香港中文大學主修經濟的大學生。除了對總經的興趣外，他對數位權以及社會創新懷抱著極大的熱忱",
-        "bio_en": "Steven is an undergraduate majoring in Economics in The Chinese University of Hong Kong. Apart from the interest in macroeconomics, he is passionate about the digital rights and the social innovation."
+        "display_name": "Mandy Chan",
+        "display_name_en": "Mandy Chan",
+        "bio": "Mandy就讀於香港大學，主修社會學與城市管治。她對人權、可持續發展等議題以及任何有關城市的事物感興趣。",
+        "bio_en": "Mandy is an undergraduate majoring in Sociology and Urban Governance in The University of Hong Kong. She is passionate about human rights, sustainability and anything about cities."
       }
     ],
-    "updatedAt": "2020-10-26T07:08:45.117Z",
+    "updatedAt": "2020-11-30T17:03:45.000Z",
     "timeSheet": {
       "id": "5f02d5a0e88a4948daf87fb9",
       "議程日期": "2020-12-05",
