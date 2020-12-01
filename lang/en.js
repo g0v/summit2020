@@ -31,6 +31,7 @@ export default {
   wg: 'Working Group',
   speakers: 'Speakers',
   moderators: 'Moderators',
+  conote: 'Colab. Notes',
   covid19Guidelines: 'COVID19 Guideline',
   buildingCheckIn: 'Check In',
   registration: 'Registration',

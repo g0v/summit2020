@@ -30,6 +30,7 @@ export default {
   moderatorsAndSpeakers: '主持與講者',
   wg: '工人',
   moderators: '主持',
+  conote: '大會共筆',
   speakers: '講者',
   covid19Guidelines: '防疫守則',
   buildingCheckIn: '入館簽到',

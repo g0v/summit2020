@@ -6,7 +6,7 @@
         :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
         :key="menu.key"
         :to="genLink(menu)"
-        :class="{'menu__item--cta': menu.isCta, 'dn-l': menu.isCta}"
+        :class="{'menu__item--cta': menu.isCta, 'dn-l': menu.dnl}"
         @click.native="sthClick"
       )
         | {{ $t(menu.key) }}
@@ -56,9 +56,10 @@ export default {
         { key: 'partners', url: '/partners' },
         { key: 'wg', url: 'working-group' },
         { key: 'transportation', url: '/transportation' },
-        { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, isCta: true },
-        { key: 'remote', url: 'https://g0v-summit-2020.kktix.cc/events/rem0te', isExt: true, isCta: true }
-        // { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, isCta: true }
+        { key: 'conote', url: 'https://g0v.hackmd.io/c/summit20', isExt: true, isCta: true },
+        { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf', isExt: true, dnl: true },
+        { key: 'remote', url: 'https://g0v-summit-2020.kktix.cc/events/rem0te', isExt: true, dnl: true }
+        // { key: 'banquet', url: 'https://g0v-summit-2020.kktix.cc/events/eat-table', isExt: true, dnl: true }
       ]
     }
   },
