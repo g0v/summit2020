@@ -57,8 +57,8 @@
               <img :src="require('../assets/images/img-8.png')" alt="">
             </span>
           </h2>
-          <div v-for="(rental, index) in rentals" :key="index" class="dib w-100 w-50-l pa2">
-            <div class="rental">
+          <div class="rentals__wrapper pa2">
+            <div v-for="(rental, index) in rentals" :key="index" class="rental">
               <a class="icon-name flex items-center justify-center" :href="rental.link" target="_blank">
                 <img :src="require(`../assets/images/${rental.icon}`)" alt="">
                 <div class="name f4 f3-l">
@@ -171,6 +171,14 @@ export default {
         icon: 'img-tbikelogo.png',
         is_app: false,
         link: 'https://tbike.tainan.gov.tw/Portal'
+      }, {
+        name: 'Be-Bike',
+        cht_name: '無樁式共享電動單車',
+        icon: 'be-bike-logo.png',
+        is_app: true,
+        apple_link: 'https://apps.apple.com/tw/app/bebike-%E7%84%A1%E6%A8%81%E5%BC%8F%E9%9B%BB%E8%BC%94%E5%96%AE%E8%BB%8A/id1499818993',
+        google_link: 'https://play.google.com/store/apps/details?id=com.cloudfun.bebike',
+        link: 'https://www.bebike.com.tw/'
       }]
     }
   },
@@ -395,6 +403,16 @@ export default {
 .rentals {
   max-width: 960px;
   padding-bottom: 148px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    @include not-small-screen {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   .rental {
     background-color: #fff;
     border-radius: 4px;

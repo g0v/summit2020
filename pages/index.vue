@@ -3,6 +3,11 @@
     <div class="landing flex justify-center">
       <img :src="require('~/assets/images/banner-2.png')">
     </div>
+    <div class="buyticket absolute fixed-l">
+      <ext-link v-for="type in ticketTypes" :key="type.key" class="buyticket__link br-pill dim" :to="type.url">
+        {{ $t(type.key) }}
+      </ext-link>
+    </div>
     <div class="text-container article article-1">
       <summit-markdown :content="$t('article/communityIntro')" />
       <summit-markdown :content="$t('article/summitAbout')" />
@@ -29,9 +34,11 @@ zh:
 </i18n>
 <script>
 import Timeline from '~/components/Timeline'
+import ExtLink from '~/components/ExtLink'
 
 export default {
   components: {
+    ExtLink,
     Timeline
   },
   data () {
@@ -70,7 +77,11 @@ export default {
       }
     ]
     return {
-      bigTimeline
+      bigTimeline,
+      ticketTypes: [
+        { key: 'registration', url: 'https://g0v-summit-2020.kktix.cc/events/c0nf' },
+        { key: 'remote', url: 'https://g0v-summit-2020.kktix.cc/events/rem0te' }
+      ]
     }
   }
 }
@@ -149,5 +160,30 @@ export default {
     padding-top: 163px;
   }
 
+}
+
+.buyticket {
+  z-index: 1;
+  left: 1rem;
+  top: calc(70vh - 2rem);
+  @include not-small-screen {
+    left: auto;
+    right: 4rem;
+    top: 9rem;
+  }
+
+  &__link {
+    font-size: 1.25rem;
+    display: block;
+    color: white;
+    font-weight: 500;
+    background: $green;
+    padding: 0.25rem 1rem;
+    text-decoration: none;
+
+    + .buyticket__link {
+      margin-top: 1rem;
+    }
+  }
 }
 </style>

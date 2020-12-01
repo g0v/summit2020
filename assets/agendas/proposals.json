@@ -1826,20 +1826,31 @@
     "is_slide_cc40": true,
     "related_url": "https://urbantaiouan.com/category/studio/",
     "verified": true,
-    "createdAt": "2020-11-30T18:22:45.000Z",
+    "createdAt": "2020-12-01T16:34:20.000Z",
     "presentation_method": "現場報告 on-site",
     "speakers": [
       {
         "display_name": "Clément Tricot",
-        "display_name_en": "Clément Tricot"
+        "display_name_en": "Clément Tricot",
+        "organization": "Urban Taiouan",
+        "avatar_url": "cache/c6fd6f6637c06f691c32e906da6cbb83.jpg",
+        "city": "Taipei",
+        "info_url": "https://twitter.com/home",
+        "bio": "我本身為都市設計師，到台灣以前，我曾在越南和法國工作。我目前在台灣中央廣播電台擔任記者。我與他人共同創建了一個關於台灣城市的工作室 Urban Taiouan。近年我參與了幾個城市行動計畫，這些計畫涉及公民，有時還涉及公民科技。",
+        "bio_en": "Urban designer, I used to work in Vietnam and France before I moved to Taiwan. I've co-founded an informal observatory about Taiwan cities. I now also work as journalist at Radio Taiwan International. I have been part of few urban project involving citizen with sometimes use of civictech."
       },
       {
         "display_name": "Morgane Le Guilloux",
         "display_name_en": "Morgane Le Guilloux",
-        "info_url": "https://www.linkedin.com/in/morgane-le-guilloux?originalSubdomain=fr"
+        "organization": "Urban Taiouan",
+        "avatar_url": "cache/330e12877e442dd95eea98d9d7f53d56.jpg",
+        "city": "Taipei",
+        "info_url": "https://www.linkedin.com/in/morgane-le-guilloux?originalSubdomain=fr",
+        "bio": "我本身為都市設計師，到台灣以前，我曾在越南和法國工作。我與他人共同創建了一個關於台灣城市的工作室 Urban Taiouan。我也在台灣從事城市和景觀設計項目(馬祖，基隆...)。我參與了幾個城市行動計畫，這些計畫涉及公民，有時還涉及公民科技。",
+        "bio_en": "Urban designer, I used to work in Vietnam and France before I moved to Taiwan. I've co-founded an informal observatory about Taiwan cities.I also work on urban and landscape design project in Taiwan (Matsu, Keelung...). I have been part of few urban project involving citizen with sometimes use of civictech."
       }
     ],
-    "updatedAt": "2020-11-30T18:22:45.000Z",
+    "updatedAt": "2020-12-01T16:34:20.000Z",
     "timeSheet": {
       "id": "5ef9c9cbba206b030d66a3b1",
       "議程日期": "2020-12-05",
@@ -4412,7 +4423,7 @@
     "is_slide_cc40": true,
     "related_url": "https://projectlockdown.world/",
     "verified": true,
-    "createdAt": "2020-11-30T17:03:45.000Z",
+    "createdAt": "2020-12-01T13:08:12.000Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -4436,11 +4447,12 @@
       {
         "display_name": "Mandy Chan",
         "display_name_en": "Mandy Chan",
+        "avatar_url": "cache/6fd9bf5ebdb06645612feda945b85d98.jpg",
         "bio": "Mandy就讀於香港大學，主修社會學與城市管治。她對人權、可持續發展等議題以及任何有關城市的事物感興趣。",
         "bio_en": "Mandy is an undergraduate majoring in Sociology and Urban Governance in The University of Hong Kong. She is passionate about human rights, sustainability and anything about cities."
       }
     ],
-    "updatedAt": "2020-11-30T17:03:45.000Z",
+    "updatedAt": "2020-12-01T13:08:12.000Z",
     "timeSheet": {
       "id": "5f02d5a0e88a4948daf87fb9",
       "議程日期": "2020-12-05",
@@ -5859,8 +5871,8 @@
   },
   "1206-keynote-1": {
     "id": "1206-keynote-1",
-    "updatedAt": "2020-11-22T14:29:33.000Z",
-    "createdAt": "2020-11-22T14:29:33.000Z",
+    "updatedAt": "2020-12-01T14:54:49.000Z",
+    "createdAt": "2020-12-01T14:54:49.000Z",
     "title": "基調座談：來一碗民主，唔該晒",
     "title_en": "Connecting Democracies Through Communities",
     "summary": "2012 年 g0v 發起，以開放、協作的理念，號召社群參與改造社會。但是，隨著跨領域協作愈來愈深入，更多人開始意識到，開放協作的社群之所以能在台灣推動改變，民主自由的社會是不可或缺的基石。普選、多黨政治、言論自由、結社自由，這些制度上的基礎不只實現了開放的精神，也保障公民們可以積極組織起來，改造社會，並一起承擔必要的運作成本與消耗。這些匯聚起來的力量，支持著社群的參與者們，讓社群走到今天。\n\n身處亞太地區的我們，面對極權擴張，公民權利、資訊安全受到挑戰，連帶著，開放協作的空間受到擠壓。當公開、自由的交流不再安全，分享與協作、讓改變發生，將成為一件奢侈的事。言論空間受到擠壓的環境下，社群是否更為重要？我們可以怎麼繼續維持 ██、加強 ██？香港人做了什麼？台灣人做了什麼？鄰近的公民與黑客們，未來可以怎麼一起前進？",
@@ -5883,9 +5895,8 @@
         "bio_en": " "
       },
       {
-        "display_name": "香港公民黑客",
-        "display_name_en": "Hongkong civic hacker",
-        "organization": " ",
+        "display_name": "Brian",
+        "organization": "vote4.hk",
         "avatar_url": "cache/115064f23566676595ed102b0ea53613.png",
         "city": " ",
         "info_url": " ",
@@ -5901,6 +5912,12 @@
         "info_url": " ",
         "bio": " ",
         "bio_en": " "
+      },
+      {
+        "display_name": "Mandy",
+        "organization": "台南香港關注組發言人",
+        "organization_en": "Tainan with Hongkong spokesperson",
+        "avatar_url": "cache/0325df7674c7e89e7571016684f199a0.jpg"
       }
     ],
     "timeSheet": {

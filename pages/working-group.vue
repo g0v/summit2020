@@ -17,7 +17,7 @@ en:
   總籌組: General Preparatory Task Force
   財務組: Finance Task Force
   議程組: Programming Task Force
-  議程委員: Programming Committee
+  議程委員會: Programming Committee
   宣傳組: Marketing Task Force
   設計組: Design Task Force
   票務組: Ticketing Task Force
@@ -30,7 +30,7 @@ zh:
   總籌組: 總籌組
   財務組: 財務組
   議程組: 議程組
-  議程委員: 議程委員
+  議程委員會: 議程委員會
   宣傳組: 宣傳組
   設計組: 設計組
   票務組: 票務組
@@ -48,7 +48,7 @@ const GROUP_LIST = [
   '總籌組',
   '財務組',
   '議程組',
-  '議程委員',
+  '議程委員會',
   '宣傳組',
   '票務組',
   '直播組',
@@ -134,8 +134,8 @@ export default {
     font-size: 2.25rem;
     font-weight: 500;
     padding: 3rem 0;
-    background-image: url('~assets/images/people-banner.png');
-    background-position: bottom calc(50% - 1.5rem) right calc(50% - 7rem);
+    background-image: url('~assets/images/wg-banner.png');
+    background-position: bottom calc(50% - 1.5rem) right calc(50% - 9rem);
     background-repeat: no-repeat;
     text-align: center;
     @include not-small-screen {
@@ -145,7 +145,7 @@ export default {
   }
   &--en {
     .wg__title {
-      background-position: bottom calc(50% - 1.5rem) right calc(50% - 17rem);
+      background-position: bottom calc(50% - 1.5rem) right calc(50% - 21rem);
     }
   }
   &__people {

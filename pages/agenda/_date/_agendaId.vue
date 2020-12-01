@@ -22,9 +22,9 @@
             b-tooltip.f3-l.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
               i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
               i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
-            b-tooltip(:label="$t('comment')" type="is-dark")
-              ext-link.light-silver.f3.dib.ph2(v-if="commentUrl" :to="commentUrl")
-                i.fas.fa-comments
+            b-tooltip(v-if="hackmdUrl" :label="$t('collab')" type="is-dark")
+              ext-link.light-silver.f3.dib.ph2(:to="hackmdUrl")
+                i.fas.fa-pencil-alt
         .detail__header.flex
           h1.fw5.f4.f3-ns(itemprop="name") {{title}}
         .gray(v-if="category") {{category}}
@@ -64,7 +64,7 @@ en:
   abstract: abstract
   keyword: "keywords:"
   relatedInfo: "Related info:"
-  comment: "Join discussion"
+  collab: "Participate in collaboration notes"
 
 zh:
   '2020-12-03': 2020/12/03（四）
@@ -74,7 +74,7 @@ zh:
   abstract: 摘要
   keyword: 關鍵字：
   relatedInfo: 相關資訊：
-  comment: "參與討論"
+  collab: "一起共筆 + 提問"
 </i18n>
 <script>
 import dayjs from 'dayjs'
@@ -85,13 +85,13 @@ import AgendaTag from '~/components/AgendaTag'
 import LanguageTag from '~/components/LanguageTag'
 import agendaMixin from '~/utils/AgendaMixin'
 import { DEFAULT_DATE } from '~/utils/scheduleInfo'
-import commentMap from '~/assets/agendas/commentCache.json'
+import hackmdMap from '~/assets/agendas/hackmdIndex.json'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 const DAY_0_DATE = 3
 const SUPER_LONG_BIO = 300
 
-const COMMENT_BASE = 'https://discuss.summit2020.g0v.tw/topic/'
+const HACKMD_BASE = 'https://g0v.hackmd.io/c/summit20/'
 
 export default {
   components: {
@@ -145,10 +145,10 @@ export default {
       }
       return speakers[0].bio.length > SUPER_LONG_BIO
     },
-    commentUrl () {
-      const comment = commentMap[this.id]
-      if (comment) {
-        return `${COMMENT_BASE}${comment.id}`
+    hackmdUrl () {
+      const hackmdUrl = hackmdMap[this.id]
+      if (hackmdUrl) {
+        return `${HACKMD_BASE}${encodeURIComponent(hackmdUrl)}`
       }
       return ''
     }

@@ -27,13 +27,15 @@ export default {
   live: '直播',
   feed: '社群動態',
   staff: '工作人員',
-  registration: '立即購票',
   moderatorsAndSpeakers: '主持與講者',
   wg: '工人',
   moderators: '主持',
+  conote: '大會共筆',
   speakers: '講者',
   covid19Guidelines: '防疫守則',
   buildingCheckIn: '入館簽到',
+  registration: '立刻報名',
+  remote: '線上參與',
 
   // transportation
   venuelocationName: '地點名稱-華語',
