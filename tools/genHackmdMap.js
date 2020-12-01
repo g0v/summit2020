@@ -20,13 +20,13 @@ async function genHackmdMap () {
     }
     const cleanLine = line.trim().replace(/^- +\[/, '').replace(/\)$/, '')
     const [titleStr, link] = cleanLine.split('](/')
-    const [titleEn, titleZh] = titleStr.split('<br />')
+    const [titleEn, titleZh] = titleStr.split(/<br *\/>/)
 
     if (titleEn) {
-      titleToLinkMap[titleEn] = '/' + link
+      titleToLinkMap[titleEn.trim()] = '/' + link
     }
     if (titleZh) {
-      titleToLinkMap[titleZh] = '/' + link
+      titleToLinkMap[titleZh.trim()] = '/' + link
     }
   }
 
@@ -34,9 +34,11 @@ async function genHackmdMap () {
 
   for (const agendaId in proposalMeta) {
     const agenda = proposalMeta[agendaId]
-    const link = titleToLinkMap[agenda.title] || titleToLinkMap[agenda.title_en]
+    const link = titleToLinkMap[agenda.title.trim()] || titleToLinkMap[agenda.title_en.trim()]
     if (link) {
       agendaIdToLink[agenda.id] = link
+    } else if (!agenda.isPseudo) {
+      console.warn(`Missing hackmd link for agenda: "${agenda.title}" (${agendaId})`)
     }
   }
 
