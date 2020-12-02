@@ -34,17 +34,9 @@
 </template>
 <i18n lang="yaml">
 en:
-  '2020-12-03': Thu, Dec 3
-  '2020-12-04': Fri, Dec 4
-  '2020-12-05': Sat, Dec 5
-  '2020-12-06': Sun, Dec 6
   no-result: No result found. Please try another one or
   clear-search: clear search text
 zh:
-  '2020-12-03': 12/03（四）
-  '2020-12-04': 12/04（五）
-  '2020-12-05': 12/05（六）
-  '2020-12-06': 12/06（日）
   no-result: 查無相符議程，請試試其他文字，或
   clear-search: 清空搜尋條件
 </i18n>

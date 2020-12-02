@@ -31,6 +31,7 @@ export default {
   wg: '工人',
   moderators: '主持',
   conote: '大會共筆',
+  bookmark: '議程書籤',
   speakers: '講者',
   covid19Guidelines: '防疫守則',
   buildingCheckIn: '入館簽到',
@@ -95,5 +96,10 @@ export default {
   }),
   isRoomFull: '座位已滿',
   isRoomNotFull: '尚有空位',
-  onSite: '現場報告'
+  onSite: '現場報告',
+
+  '2020-12-03': '12/03（四）',
+  '2020-12-04': '12/04（五）',
+  '2020-12-05': '12/05（六）',
+  '2020-12-06': '12/06（日）'
 }

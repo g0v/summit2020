@@ -2,7 +2,7 @@
 .menu.flex.flex-column.flex-row-l.items-center-l.min-h-100.h-auto-l(:class="{'menu--dark': dark}")
   .flex-auto.flex-none-l.flex-l.items-center-l
     template(v-for="menu in menuList")
-      component.menu__item.dim.pa3.pa2-l.mr3-l.db.bb.bn-l.b--silver(
+      component.menu__item.dim.pa3.pa2-l.mr2-l.db.bb.bn-l.b--silver(
         :is="menu.isExt ? 'ext-link' : 'nuxt-link'"
         :key="menu.key"
         :to="genLink(menu)"
@@ -10,14 +10,19 @@
         @click.native="sthClick"
       )
         | {{ $t(menu.key) }}
-  button.menu__item.menu__item--checkin.pa3.pv0-l.dim.bb.bt.bn-l.b--silver.mr3-l.br-pill-l(
+  button.menu__item.menu__item--checkin.pa3.pv2-l.dim.bb.bt.bn-l.b--silver.mr2-l.br2-l(
     @click="openCheckIn"
   ) {{$t(checkInType)}}
-  nuxt-link.menu__lang.pa3.pa2-l.dim(
+  nuxt-link.menu__topitem.pa3.pa2-l.mr2-l.dim.bb.bn-l.b--silver(
     :to="switchLocalePath(isZh ? 'en' : 'zh')"
     @click.native="sthClick"
   )
     | {{$t('lang')}}
+  nuxt-link.menu__topitem.pa3.pa2-l.dim.flex.flex-wrap.items-center(
+    :to="localePath('/bookmarks')"
+  )
+    img(src="~/assets/icons/top-heart-full.svg")
+    | {{$t('bookmark')}}
 </template>
 <i18n lang="yaml">
 en:
@@ -117,22 +122,39 @@ export default {
       color: #333;
     }
 
-    &--checkin {
+    &--checkin.menu__item {
       border-left: none;
       border-right: none;
       outline: none;
-      background: #77efff;
+      background: $blue-1;
+      color: white;
       text-align: left;
-      min-height: 2rem;
+      // min-height: 2rem;
+      @include large-screen {
+        text-align: center;
+        max-width: 8rem;
+        // width: 8rem;
+      }
     }
 
     @include large-screen {
-      max-width: 7rem;
+      max-width: 6.5rem;
       text-align: center;
     }
   }
-  &__lang {
+  &__topitem {
     color: #f779ee;
+
+    img {
+      width: 1.25rem;
+      margin-right: 0.25rem;
+    }
+
+    @include large-screen {
+      max-width: 6.5rem;
+      text-align: center;
+      justify-content: center;
+    }
   }
   &--dark {
     .menu {
@@ -147,7 +169,7 @@ export default {
           height: auto;
         }
       }
-      &__lang {
+      &__topitem {
         color: #f7dc79;
       }
     }
