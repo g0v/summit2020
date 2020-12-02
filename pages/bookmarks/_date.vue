@@ -20,6 +20,7 @@ import { mapState } from 'vuex'
 import { STATES } from '~/store'
 import AgendaDateList from '~/components/AgendaDateList'
 import DailyAgenda from '~/components/DailyAgenda'
+import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 export default {
   components: {
@@ -99,7 +100,12 @@ export default {
           return l.meta.order - r.meta.order
         })
     }
-  }
+  },
+  head: friendlyHeader({
+    title () {
+      return this.$t('bookmark')
+    }
+  })
 }
 </script>
 <style lang="scss" scoped>
