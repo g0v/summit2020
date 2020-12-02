@@ -1,5 +1,5 @@
 <template lang="pug">
-.menu.flex.flex-column.flex-row-l.items-center-l.h-100.h-auto-l(:class="{'menu--dark': dark}")
+.menu.flex.flex-column.flex-row-l.items-center-l.min-h-100.h-auto-l(:class="{'menu--dark': dark}")
   .flex-auto.flex-none-l.flex-l.items-center-l
     template(v-for="menu in menuList")
       component.menu__item.dim.pa3.pa2-l.mr3-l.db.bb.bn-l.b--silver(
