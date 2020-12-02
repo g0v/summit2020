@@ -1,8 +1,15 @@
 import * as Sentry from '@sentry/browser'
+import Cookies from 'js-cookie'
+
+const HEALTH_COOKIE_OPT = {
+  // ensure data is removed in 28 days
+  expires: 28,
+  secure: true
+}
 
 const STORAGE_KEYS = {
-  HEALTH_DECLA_INFO: 'summit2020_health_declaration_info',
-  LAST_HEALTH_KEY: 'summit2020_last_health_declaration_key',
+  HEALTH_DECLA_INFO: 'helt_decl_info',
+  LAST_HEALTH_KEY: 'last_helt_decl_key',
   FAVOURITE_AGENDAS: 'summit2020_favourite_agendas'
 }
 
@@ -66,16 +73,17 @@ export const mutations = {
   },
 
   [MUTATIONS.DECLARE_HEALTH] (state, { hashKey, meta }) {
-    state[STATES.HEALTH_DECLA_INFO][hashKey] = meta
+    state[STATES.HEALTH_DECLA_INFO] = { [hashKey]: meta }
     state[STATES.LAST_HEALTH_KEY] = hashKey
-    // TODO: remove this after event is over
-    localStorage.setItem(
+    Cookies.set(
       STORAGE_KEYS.HEALTH_DECLA_INFO,
-      JSON.stringify(state[STATES.HEALTH_DECLA_INFO])
+      JSON.stringify(state[STATES.HEALTH_DECLA_INFO]),
+      HEALTH_COOKIE_OPT
     )
-    localStorage.setItem(
+    Cookies.set(
       STORAGE_KEYS.LAST_HEALTH_KEY,
-      hashKey
+      hashKey,
+      HEALTH_COOKIE_OPT
     )
   },
   [MUTATIONS.INIT_HEALTH] (state, { info, lastKey }) {
@@ -105,7 +113,7 @@ export const mutations = {
 export const actions = {
   nuxtClientInit ({ commit }) {
     let healthDeclaInfo = {}
-    const healthDeclaStr = localStorage.getItem(STORAGE_KEYS.HEALTH_DECLA_INFO)
+    const healthDeclaStr = Cookies.get(STORAGE_KEYS.HEALTH_DECLA_INFO)
     try {
       if (healthDeclaStr) {
         healthDeclaInfo = JSON.parse(healthDeclaStr)
@@ -114,7 +122,7 @@ export const actions = {
       Sentry.captureException(`Invalid health decla: ${healthDeclaStr}`)
     }
 
-    const lastHealthKey = localStorage.getItem(STORAGE_KEYS.LAST_HEALTH_KEY) || ''
+    const lastHealthKey = Cookies.get(STORAGE_KEYS.LAST_HEALTH_KEY) || ''
     commit(MUTATIONS.INIT_HEALTH, {
       info: healthDeclaInfo,
       lastKey: lastHealthKey
@@ -126,9 +134,15 @@ export const getters = {
   [GETTERS.CUR_HEALTH_INFO] (state) {
     const key = state[STATES.LAST_HEALTH_KEY]
     const info = state[STATES.HEALTH_DECLA_INFO]
-    if (!key || !info) {
+    if (!key || !info || !info[key]) {
       return null
     }
-    return info[key] || null
+    const name = '●●●' + info[key].name
+    const phone = '●●●●●●●' + info[key].phone
+    return {
+      ...info[key],
+      name,
+      phone
+    }
   }
 }

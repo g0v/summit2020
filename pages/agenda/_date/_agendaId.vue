@@ -1,105 +1,18 @@
 <template lang="pug">
-  .detail.fixed.top-0.left-0.bottom-0.right-0(
-    v-if="isModalVisible"
-    @click="closeModal"
-    data-slideout-ignore
-    itemscope
-    itemtype="https://schema.org/Event"
-  )
-    .detail__wrapper
-      .detail__modal.br2.bg-white(@click.stop)
-        .flex.justify-between
-          .detail__start.f6
-            .dib.mr2 Day{{dayN}}
-            .dib.ml1(itemprop="startDate") {{$t(startDate)}}
-          button.detail__close.bg-white.bn(@click="closeModal")
-            img(src="~/assets/images/agenda/close.svg")
-        .detail__subheader.mt3.pa3.bb.relative.flex.justify-between.items-center
-          div
-            .fw5 {{fromTime}} - {{toTime}}
-            .f6(v-if="room" itemprop="location") {{room}}
-          .detail__resource.flex.items-center
-            b-tooltip.f3-l.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
-              i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
-              i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
-            b-tooltip(v-if="hackmdUrl" :label="$t('collab')" type="is-dark")
-              ext-link.light-silver.f3.dib.ph2(:to="hackmdUrl")
-                i.fas.fa-pencil-alt
-        .detail__header.flex
-          h1.fw5.f4.f3-ns(itemprop="name") {{title}}
-        .gray(v-if="category") {{category}}
-        .mt4.flex.flex-wrap
-          agenda-tag(v-if="topic") {{topic}}
-          agenda-tag(v-if="format") {{format}}
-          language-tag(:agenda="agenda")
-        h2.ttc {{$t('abstract')}}
-        rich-multi-line.gray(itemprop="description" :text="agenda.summary")
-        .gray.mv3(v-if="relatedInfo")
-          span.mr1 {{$t('relatedInfo')}}
-          ext-link(:to="relatedInfo")
-        .detail__keyword.ttc.mv3.pv2(v-if="agenda.three_keywords")
-          span.mr2 {{$t('keyword')}}
-          | {{agenda.three_keywords}}
-        .detail__people(v-if="speakers || moderator" :class="{'detail__people--mono': isMonoSpeaker}")
-          summit-person(
-            v-if="moderator"
-            :person="moderator"
-            :is-moderator="true"
-            itemprop="performer"
-          )
-          summit-person(
-            v-for="(speaker, index) in agenda.speakers"
-            :key="index"
-            :person="speaker"
-            :is-mono-speaker="isMonoSpeaker"
-            itemprop="performer"
-          )
+  .detail
+    agenda-detail(
+      :id="id"
+      @closed="modalClosed"
+    )
 </template>
-<i18n lang="yaml">
-en:
-  '2020-12-03': Thu, Dec 3 2020
-  '2020-12-04': Fri, Dec 4 2020
-  '2020-12-05': Sat, Dec 5 2020
-  '2020-12-06': Sun, Dec 6 2020
-  abstract: abstract
-  keyword: "keywords:"
-  relatedInfo: "Related info:"
-  collab: "Participate in collaboration notes"
-
-zh:
-  '2020-12-03': 2020/12/03（四）
-  '2020-12-04': 2020/12/04（五）
-  '2020-12-05': 2020/12/05（六）
-  '2020-12-06': 2020/12/06（日）
-  abstract: 摘要
-  keyword: 關鍵字：
-  relatedInfo: 相關資訊：
-  collab: "一起共筆 + 提問"
-</i18n>
 <script>
-import dayjs from 'dayjs'
-import RichMultiLine from '~/components/RichMultiLine'
-import ExtLink from '~/components/ExtLink'
-import SummitPerson from '~/components/SummitPerson'
-import AgendaTag from '~/components/AgendaTag'
-import LanguageTag from '~/components/LanguageTag'
-import agendaMixin from '~/utils/AgendaMixin'
-import { DEFAULT_DATE } from '~/utils/scheduleInfo'
-import hackmdMap from '~/assets/agendas/hackmdIndex.json'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
-
-const DAY_0_DATE = 3
-const SUPER_LONG_BIO = 300
-
-const HACKMD_BASE = 'https://g0v.hackmd.io/c/summit20/'
+import AgendaDetail from '~/components/AgendaDetail'
+import agendaMixin from '~/utils/AgendaMixin'
 
 export default {
   components: {
-    RichMultiLine,
-    ExtLink,
-    SummitPerson,
-    AgendaTag,
-    LanguageTag
+    AgendaDetail
   },
   mixins: [agendaMixin],
   computed: {
@@ -109,58 +22,19 @@ export default {
     agenda () {
       const allProposals = this.$t('proposal/map')
       return allProposals.find(agenda => agenda.id === this.id) || {}
-    },
-    isModalVisible () {
-      return !!this.id && 'title' in this.agenda
-    },
-    relatedInfo () {
-      return this.agenda.related_url || ''
-    },
-    startDate () {
-      if (this.isModalVisible) {
-        return this.agenda.timeSheet.議程日期
-      }
-      return this.$route.params.date || DEFAULT_DATE
-    },
-    dayN () {
-      const startDate = dayjs(this.startDate)
-      const dayN = startDate.date() - DAY_0_DATE
-      return dayN > 0 ? dayN : 0
-    },
-    // superCategory () {
-    //   const cats = []
-    //   if (this.topic) {
-    //     cats.push(this.topic)
-    //   }
-    //   if (this.category) {
-    //     cats.push(this.category)
-    //   }
-    //   return cats.join(' / ')
-    // },
-    isMonoSpeaker () {
-      // example: 1204-jothon-1
-      const speakers = this.agenda.speakers || []
-      if (!speakers.length || speakers.length > 1) {
-        return false
-      }
-      return speakers[0].bio.length > SUPER_LONG_BIO
-    },
-    hackmdUrl () {
-      const hackmdUrl = hackmdMap[this.id]
-      if (hackmdUrl) {
-        return `${HACKMD_BASE}${encodeURIComponent(hackmdUrl)}`
-      }
-      return ''
     }
   },
   methods: {
-    closeModal () {
+    modalClosed () {
       this.$router.push({
         ...this.$route,
         params: {
           date: this.$route.params.date
         }
       })
+    },
+    finishRender ({ agenda }) {
+      this.agenda = agenda
     }
   },
   head: friendlyHeader({

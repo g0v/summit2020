@@ -1,3 +1,7 @@
+import dayjs from 'dayjs'
+import { DEFAULT_DATE } from './scheduleInfo'
+const DAY_0_DATE = 3
+
 const PRESENT_MAP = {
   遠端連線: 'online',
   online: 'online',
@@ -8,11 +12,11 @@ const PRESENT_MAP = {
 }
 export default {
   computed: {
-    id () {
-      return this.agenda.id
-    },
     time () {
-      return this.agenda.timeSheet || {}
+      if (this.agenda) {
+        return this.agenda.timeSheet || {}
+      }
+      return {}
     },
     room () {
       const room = this.time.議程場地
@@ -30,6 +34,14 @@ export default {
     toTime () {
       return this.time.toTimeStr
     },
+    startDate () {
+      return this.time.議程日期 || this.$route.params.date || DEFAULT_DATE
+    },
+    dayN () {
+      const startDate = dayjs(this.startDate)
+      const dayN = startDate.date() - DAY_0_DATE
+      return dayN > 0 ? dayN : 0
+    },
     presentationMethod () {
       const method = this.agenda.presentation_method
       return PRESENT_MAP[method] || 'on-site'
@@ -44,7 +56,10 @@ export default {
       return this.presentationMethod === 'mixed'
     },
     title () {
-      return this.agenda.title || ''
+      if (this.agenda) {
+        return this.agenda.title || ''
+      }
+      return ''
     },
     speakers () {
       const speakers = this.agenda.speakers || []

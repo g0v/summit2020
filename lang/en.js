@@ -32,6 +32,7 @@ export default {
   speakers: 'Speakers',
   moderators: 'Moderators',
   conote: 'Colab. Notes',
+  bookmark: 'Bookmarks',
   covid19Guidelines: 'COVID19 Guideline',
   buildingCheckIn: 'Check In',
   registration: 'Registration',
@@ -96,5 +97,9 @@ export default {
   }),
   isRoomFull: 'Room full',
   isRoomNotFull: 'Available',
-  onSite: 'on-site'
+  onSite: 'on-site',
+  '2020-12-03': 'Thu, Dec 3',
+  '2020-12-04': 'Fri, Dec 4',
+  '2020-12-05': 'Sat, Dec 5',
+  '2020-12-06': 'Sun, Dec 6'
 }

@@ -4,7 +4,7 @@
       <img :src="require('~/assets/images/banner-2.png')">
     </div>
     <div class="buyticket absolute fixed-l">
-      <ext-link v-for="type in ticketTypes" :key="type.key" class="buyticket__link br-pill dim" :to="type.url">
+      <ext-link v-for="type in ticketTypes" :key="type.key" class="buyticket__link br2 dim" :to="type.url">
         {{ $t(type.key) }}
       </ext-link>
     </div>
