@@ -36,6 +36,7 @@
     "buefy": "^0.9.3",
     "dayjs": "^1.9.1",
     "front-matter": "^3.2.1",
+    "js-cookie": "^2.2.1",
     "leaflet": "^1.6.0",
     "lodash": "^4.17.20",
     "markdown-it": "^11.0.0",

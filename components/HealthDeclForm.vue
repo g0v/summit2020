@@ -759,13 +759,14 @@ export default {
       }
 
       if (isSuccessed) {
-        const visiblePhone = '●●●●●●' + form.phone.slice(-3)
+        const visiblePhone = form.phone.slice(-2)
+        const visibleName = form.name.slice(-1)
         this.declareHealth({
           hashKey: hash,
           meta: {
             hash,
             needLearningCredit: form.needLearningCredit === 'yes',
-            name: form.name,
+            name: visibleName,
             phone: visiblePhone
           }
         })
