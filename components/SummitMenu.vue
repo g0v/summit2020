@@ -13,7 +13,7 @@
   button.menu__topitem.pa3.pa2-l.bg-transparent.dim.flex.flex-wrap.items-center.mr2-l(
     @click="openCheckIn"
   )
-    i.fas.fa-head-side-mask.mr1
+    i.fas.mr1(:class="[checkInIcon]")
     | {{$t(checkInType)}}
   nuxt-link.menu__topitem.pa3.pa2-l.mr2-l.dim.flex.flex-wrap.items-center(
     :to="localePath('/bookmarks')"
@@ -88,6 +88,12 @@ export default {
         return 'healthDecl'
       }
       return 'covid19Guidelines'
+    },
+    checkInIcon () {
+      if (this.checkInType === 'learningCredit') {
+        return 'fa-school'
+      }
+      return 'fa-head-side-mask'
     }
   },
   methods: {

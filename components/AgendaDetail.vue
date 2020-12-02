@@ -19,14 +19,20 @@
             .fw5 {{fromTime}} - {{toTime}}
             .f6(v-if="room" itemprop="location") {{room}}
           .detail__resource.flex.items-center
-            b-tooltip.f3-l.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
-              i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
-              i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
+            button.detail__bookmark.flex.items-center.dim.ph2(
+              @click="toggleFavouriteAgenda({agendaId: id})"
+            )
+              img(v-if="isBookmarked" src="~/assets/icons/heart-full.svg")
+              img(v-else src="~/assets/icons/heart-empty.svg")
             b-tooltip(v-if="hackmdUrl" :label="$t('collab')" type="is-dark")
               ext-link.light-silver.f3.dib.ph2(:to="hackmdUrl")
                 i.fas.fa-pencil-alt
         .detail__header.flex
-          h1.fw5.f4.f3-ns(itemprop="name") {{title}}
+          h1.fw5.f4.f3-ns.flex.items-center(itemprop="name")
+            | {{title}}
+            b-tooltip.f5.f4-ns.ml1.light-silver(:label="agenda.presentation_method || $t('onSite')" type="is-dark")
+              i.fas.fa-chalkboard-teacher.mr2(v-if="isPureOnSite || isPureMixed")
+              i.fas.fa-video.mr2(v-if="isPureOnline || isPureMixed")
         .gray(v-if="category") {{category}}
         .mt4.flex.flex-wrap
           agenda-tag(v-if="topic") {{topic}}
@@ -77,6 +83,9 @@ zh:
   collab: "一起共筆 + 提問"
 </i18n>
 <script>
+import { mapState, mapMutations } from 'vuex'
+import { STATES, MUTATIONS } from '~/store'
+
 import RichMultiLine from '~/components/RichMultiLine'
 import ExtLink from '~/components/ExtLink'
 import SummitPerson from '~/components/SummitPerson'
@@ -107,6 +116,11 @@ export default {
     }
   },
   computed: {
+    ...mapState({
+      isBookmarked (state) {
+        return state[STATES.FAVOURITE_AGENDAS].includes(this.id)
+      }
+    }),
     agenda () {
       const allProposals = this.$t('proposal/map')
       return allProposals.find(agenda => agenda.id === this.id) || {}
@@ -144,6 +158,7 @@ export default {
     }
   },
   methods: {
+    ...mapMutations({ toggleFavouriteAgenda: MUTATIONS.TOGGLE_FAVOURITE_AGENDA }),
     closeModal () {
       this.$emit('closed')
     }
@@ -179,6 +194,14 @@ export default {
       margin: auto;
       top: 3rem;
       max-height: calc(100vh - 6rem);
+    }
+  }
+  &__bookmark {
+    background: transparent;
+    border: none;
+    outline: none;
+    img {
+      width: 1.5rem;
     }
   }
   &__start {

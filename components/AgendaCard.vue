@@ -32,7 +32,7 @@
             agenda-tag(v-if="topic") {{topic}}
             agenda-tag(v-if="format") {{format}}
             language-tag(:is-mini="true" :agenda="agenda")
-          button.agendacard__heart(v-if="!this.agenda.isPseudo" @click.stop.prevent="toggleFavouriteAgenda({agendaId: id})")
+          button.agendacard__heart(v-if="!this.agenda.isPseudo" @click.stop.prevent="toggleFavouriteAgenda({agendaId: agenda.id})")
             img(v-if="isFavourite" src="~/assets/icons/heart-full.svg")
             img(v-else src="~/assets/icons/heart-empty.svg")
 
