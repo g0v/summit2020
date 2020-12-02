@@ -7,13 +7,21 @@
       :key="agenda.id"
       :style="agendaStyle(agenda)"
     )
-      agenda-card(:agenda="agenda")
+      agenda-card(
+        :agenda="agenda"
+        :is-routable="isRoutable"
+        @select="handleSelectAgenda"
+      )
     .dailyagenda__item.dn.db-l(
       v-for="agenda in shadowRoom.agendaList"
       :key="agenda.id"
       :style="agendaStyle(agenda)"
     )
-      agenda-card(:agenda="agenda")
+      agenda-card(
+        :agenda="agenda"
+        :is-routable="isRoutable"
+        @select="handleSelectAgenda"
+      )
     template(v-for="room in regularRooms")
       .dailyagenda__header.dn.db-ns.mb2.z-4(:key="room.name")
         room-card(:name="room.name")
@@ -22,7 +30,11 @@
         :key="agenda.id"
         :style="agendaStyle(agenda)"
       )
-        agenda-card(:agenda="agenda")
+        agenda-card(
+          :agenda="agenda"
+          :is-routable="isRoutable"
+          @select="handleSelectAgenda"
+        )
 </template>
 <script>
 import dayjs from 'dayjs'
@@ -52,6 +64,10 @@ export default {
       validator (list) {
         return list.every(perRoom => perRoom.name && Array.isArray(perRoom.agendaList))
       }
+    },
+    isRoutable: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {
@@ -111,6 +127,9 @@ export default {
       setPageWidth: MUTATIONS.SET_PAGE_WIDTH,
       initFavouriteAgendas: MUTATIONS.INIT_FAVOURITE_AGENDAS
     }),
+    handleSelectAgenda (agenda) {
+      this.$emit('select', agenda)
+    },
     updatePageWidth () {
       const totalWidth = this.columnNumber * CARD_WIDTH + (this.columnNumber + 1) * GAP_WIDTH + GUTTER_WIDTH * 2
       this.setPageWidth(`${totalWidth}rem`)

@@ -143,11 +143,6 @@ export default {
       return ''
     }
   },
-  watch: {
-    agenda () {
-      this.$emit('agenda', this.agenda)
-    }
-  },
   methods: {
     closeModal () {
       this.$emit('closed')

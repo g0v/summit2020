@@ -7,12 +7,20 @@
     )
     .bookmarks__content
       // TODO: is today empty
-      daily-agenda(:agenda-per-room="agendaPerRoom")
+      daily-agenda(
+        :agenda-per-room="agendaPerRoom"
+        :is-routable="false"
+        @select="focusAgenda"
+      )
     agenda-date-list(
       :is-slide="true"
       page-base="bookmarks"
       :show-count="true"
       :count-per-day="agendaCountPerDay"
+    )
+    agenda-detail(
+      :id="focusedAgendaId"
+      @closed="blurAgenda"
     )
 </template>
 <script>
@@ -20,12 +28,19 @@ import { mapState } from 'vuex'
 import { STATES } from '~/store'
 import AgendaDateList from '~/components/AgendaDateList'
 import DailyAgenda from '~/components/DailyAgenda'
+import AgendaDetail from '~/components/AgendaDetail'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 export default {
   components: {
     AgendaDateList,
-    DailyAgenda
+    DailyAgenda,
+    AgendaDetail
+  },
+  data () {
+    return {
+      focusedAgenda: null
+    }
   },
   computed: {
     ...mapState({
@@ -99,6 +114,20 @@ export default {
         .sort((l, r) => {
           return l.meta.order - r.meta.order
         })
+    },
+    focusedAgendaId () {
+      if (this.focusedAgenda) {
+        return this.focusedAgenda.id
+      }
+      return ''
+    }
+  },
+  methods: {
+    focusAgenda (agenda) {
+      this.focusedAgenda = agenda
+    },
+    blurAgenda () {
+      this.focusedAgenda = null
     }
   },
   head: friendlyHeader({
