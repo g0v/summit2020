@@ -17,6 +17,7 @@
         v-model="venueAdmissionSignInForm.name",
         type='text'
       )
+      .error(v-if="invalidFields.name && hasBeenValidated") {{$t(invalidFields.name)}}
     div.field
       label.fw5
         | *身分證/護照/居留證 ID. ID / Passport / ARC No.
@@ -24,6 +25,7 @@
         v-model="venueAdmissionSignInForm.IDOrPassport",
         type='text'
       )
+      .error(v-if="invalidFields.IDOrPassport && hasBeenValidated") {{$t(invalidFields.IDOrPassport)}}
     div.field
       label.fw5
         | *可聯絡手機/室內電話 Cell Phone/Landline
@@ -31,6 +33,7 @@
         v-model="venueAdmissionSignInForm.phone",
         type='tel'
       )
+      .error(v-if="invalidFields.phone && hasBeenValidated") {{$t(invalidFields.phone)}}
     div.field
       label.fw5
         | *電子郵件 Email
@@ -424,14 +427,20 @@
 en:
   title: Health Declaration Form
   titleSymptoms: Symptoms related to COVID-19
+  wrongId: Only English alphabet or number is allowed
+  wrongPhone: Only number is allowed
+  wrongName: Please fill in full name
   submit: Submit
-  someFieldEmpty: 'Please fill in all fields'
+  someFieldEmpty: 'Some of fields is empty or contain invalid data'
   submitFailed: Fail to submit Health Declaration Form. Please try again later
 zh:
   title: 健康聲明書
   titleSymptoms: 「嚴重特殊傳染性肺炎」（武漢肺炎）有關接觸史與症狀
+  wrongId: 只能包含英數字
+  wrongPhone: 請填寫數字
+  wrongName: 請填寫全名
   submit: 送出健康聲明
-  someFieldEmpty: '請填寫所有欄位'
+  someFieldEmpty: '請填寫所有欄位並確認資料無誤'
   submitFailed: 聲明書傳送失敗，請稍後再重新嘗試
 </i18n>
 <script>
@@ -442,6 +451,21 @@ import { mapMutations } from 'vuex'
 import { MUTATIONS } from '~/store'
 
 const FORM_URL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSewrwiopO6HiuCL5Ff0L8Xg8UjbMyjE5QJXq1T3MsZ-eJbDKw/formResponse'
+
+const FIELD_FORMAT = {
+  IDOrPassport: {
+    rule: /[a-zA-Z0-9]{8}/,
+    errCode: 'wrongId'
+  },
+  phone: {
+    rule: /[0-9()+-]{10}/,
+    errCode: 'wrongPhone'
+  },
+  name: {
+    rule: /[^ ]{2}/,
+    errCode: 'wrongName'
+  }
+}
 
 const SYMPTOM_OPTIONS = [
   '發燒(> 37.5度) Body temperature over 37.5 ˚C',
@@ -589,7 +613,8 @@ export default {
         return form
       }, {}),
       isInProgress: false,
-      symptomOptions: SYMPTOM_OPTIONS
+      symptomOptions: SYMPTOM_OPTIONS,
+      hasBeenValidated: false
     }
   },
   computed: {
@@ -597,6 +622,19 @@ export default {
       return this.venueAdmissionSignInForm.symptomsInTheLast14Days.includes(
         SYMPTOM_MISC
       )
+    },
+    invalidFields () {
+      const invalidMap = {}
+
+      Object.keys(FIELD_FORMAT).forEach((field) => {
+        const criteria = FIELD_FORMAT[field]
+        const val = this.venueAdmissionSignInForm[field].trim()
+        if (val && !val.match(criteria.rule)) {
+          invalidMap[field] = criteria.errCode
+        }
+      })
+
+      return invalidMap
     }
   },
   methods: {
@@ -701,16 +739,20 @@ export default {
       // 驗證其他欄位
       const isOtherFieldsEmpty = Object.keys(this.venueAdmissionSignInForm).some((key) => {
         if (!specialFields.includes(key)) {
-          return this.venueAdmissionSignInForm[key] === ''
+          return this.venueAdmissionSignInForm[key].trim() === ''
         }
       })
+
+      const isSomeFormatWrong = Object.keys(this.invalidFields).length > 0
       return isSymptomsInTheLast14DaysEmpty ||
             isSymptomsInTheLast14DaysOthersSymptomsEmpty ||
             // isReceivedScreenTestHiddenFieldsEmpty ||
             // isDiagnosedHiddenFieldsEmpty ||
-            isOtherFieldsEmpty
+            isOtherFieldsEmpty ||
+            isSomeFormatWrong
     },
     async validateFrom () {
+      this.hasBeenValidated = true
       if (this.isRequiredFieldEmpty()) {
         this.$buefy.dialog.alert({
           message: this.$t('someFieldEmpty')
@@ -819,10 +861,15 @@ export default {
       padding: 9px;
       border: 0;
       color: #555555;
+      border-bottom: 1px solid #555555;
+    }
+    .error {
+      color: red;
+      font-size: 0.875rem;
     }
     .field  {
       margin-bottom: 1rem;
-      border-bottom: 1px solid #555555;
+
     }
     .radio-group {
       padding: 9px;
