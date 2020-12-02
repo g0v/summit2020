@@ -145,6 +145,10 @@ export default {
   &__topitem {
     color: #f779ee;
 
+    &.nuxt-link-active {
+      font-weight: bold;
+    }
+
     img {
       width: 1.25rem;
       margin-right: 0.25rem;
