@@ -10,19 +10,21 @@
         @click.native="sthClick"
       )
         | {{ $t(menu.key) }}
-  button.menu__item.menu__item--checkin.pa3.pv2-l.dim.bb.bt.bn-l.b--silver.mr2-l.br2-l(
+  button.menu__topitem.pa3.pa2-l.bg-transparent.dim.flex.flex-wrap.items-center.mr2-l(
     @click="openCheckIn"
-  ) {{$t(checkInType)}}
-  nuxt-link.menu__topitem.pa3.pa2-l.mr2-l.dim.bb.bn-l.b--silver(
-    :to="switchLocalePath(isZh ? 'en' : 'zh')"
-    @click.native="sthClick"
   )
-    | {{$t('lang')}}
-  nuxt-link.menu__topitem.pa3.pa2-l.dim.flex.flex-wrap.items-center(
+    i.fas.fa-head-side-mask.mr1
+    | {{$t(checkInType)}}
+  nuxt-link.menu__topitem.pa3.pa2-l.mr2-l.dim.flex.flex-wrap.items-center(
     :to="localePath('/bookmarks')"
   )
     img(src="~/assets/icons/top-heart-full.svg")
     | {{$t('bookmark')}}
+  nuxt-link.menu__topitem.pa3.pa2-l.dim(
+    :to="switchLocalePath(isZh ? 'en' : 'zh')"
+    @click.native="sthClick"
+  )
+    | {{$t('lang')}}
 </template>
 <i18n lang="yaml">
 en:
@@ -129,11 +131,9 @@ export default {
       background: $blue-1;
       color: white;
       text-align: left;
-      // min-height: 2rem;
       @include large-screen {
         text-align: center;
         max-width: 8rem;
-        // width: 8rem;
       }
     }
 
@@ -144,6 +144,11 @@ export default {
   }
   &__topitem {
     color: #f779ee;
+    border: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #999;
+    }
 
     &.nuxt-link-active {
       font-weight: bold;
@@ -155,9 +160,14 @@ export default {
     }
 
     @include large-screen {
-      max-width: 6.5rem;
+      max-width: 8rem;
       text-align: center;
       justify-content: center;
+      border: none;
+
+      &:not(:last-child) {
+        border: none;
+      }
     }
   }
   &--dark {
