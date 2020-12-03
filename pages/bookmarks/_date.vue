@@ -174,7 +174,9 @@ export default {
   },
   methods: {
     focusAgenda (agenda) {
-      this.focusedAgenda = agenda
+      if (!agenda.isPseudo) {
+        this.focusedAgenda = agenda
+      }
     },
     blurAgenda () {
       this.focusedAgenda = null

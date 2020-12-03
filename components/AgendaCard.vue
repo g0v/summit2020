@@ -20,6 +20,9 @@
         .flex.items-center
           text-highlighter.agendacard__title.f5.mt3.fw5(tag="h2" :text="title")
           i.moon-gray.ml2.f6.fas.fa-external-link-alt(v-if="isFto")
+          button.agendacard__heart.ml3(v-if="this.agenda.isPseudo" @click.stop.prevent="toggleFavouriteAgenda({agendaId: agenda.id})")
+            img(v-if="isFavourite" src="~/assets/icons/heart-full.svg")
+            img(v-else src="~/assets/icons/heart-empty.svg")
           b-tooltip.agendacard__present.ml2(v-if="isPureOnline" type="is-dark" :label="agenda.presentation_method")
             i.fas.fa-video
           .agendacard__roomoccu.db.dn-l.ml2(:title="roomOccuStr" v-if="!agenda.isPseudo")
@@ -217,9 +220,8 @@ export default {
     border: none;
     flex: 0 0 1.125rem;
     /* margin-top of agendacard__tag */
-    margin-top: 0.25rem;
-    /* height of agendacard__tag */
-    height: 1.4375rem;
+    margin-top: 0.375rem;
+    align-self: flex-start;
     display: flex;
     justify-content: center;
     align-items: center;
