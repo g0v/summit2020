@@ -50,7 +50,8 @@ export default {
   },
   data () {
     return {
-      occupationTimer: null
+      occupationTimer: null,
+      isReady: false
     }
   },
   computed: {
@@ -122,10 +123,16 @@ export default {
         })
     },
     isTodayEmpty () {
-      return !this.agendaCountPerDay[this.targetDate]
+      return this.isReady && !this.agendaCountPerDay[this.targetDate]
     },
     isUnderSearch () {
       return !!this.query || Object.keys(this.filter).length > 0
+    }
+  },
+  watch: {
+    matchedAgenda (newVal, oldVal) {
+      // mark page as ready only after we have 2nd output
+      this.isReady = true
     }
   },
   mounted () {
