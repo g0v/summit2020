@@ -3,11 +3,22 @@
     agenda-date-list(
       page-base="bookmarks"
       :show-count="true"
+      :no-day0="true"
       :count-per-day="agendaCountPerDay"
     )
     .bookmarks__content
-      // TODO: is today empty
+      .bookmarks__empty.mw6.ph3.center(v-if="isTodayEmpty")
+        .gray
+          | {{$t('addSomeBookmarkHead')}}
+          nuxt-link.underline.dim(:to="todayAgendayUrl") {{$t('agenda')}}
+          | {{$t('addSomeBookmarkTail')}}
+        .mw5-l.center.mt3(v-if="randomAgendaToday")
+          agenda-card(
+            :agenda="randomAgendaToday"
+            :is-routable="false"
+          )
       daily-agenda(
+        v-else
         :agenda-per-room="agendaPerRoom"
         :is-routable="false"
         @select="focusAgenda"
@@ -23,23 +34,36 @@
       @closed="blurAgenda"
     )
 </template>
+<i18n lang="yaml">
+en:
+  agenda: agenda page
+  addSomeBookmarkHead: "No agenda has been bookmarked today. Let's click 💙 below to create your first bookmark! You can find more agnedas in "
+  addSomeBookmarkTail: " ."
+zh:
+  agenda: 議程頁面
+  addSomeBookmarkHead: 書籤內尚無本日議程，要不要試著按下 💙，建立第一張書籤？你可以在「
+  addSomeBookmarkTail: 」找到更多議程。
+</i18n>
 <script>
 import { mapState } from 'vuex'
 import { STATES } from '~/store'
 import AgendaDateList from '~/components/AgendaDateList'
 import DailyAgenda from '~/components/DailyAgenda'
 import AgendaDetail from '~/components/AgendaDetail'
+import AgendaCard from '~/components/AgendaCard'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
 
 export default {
   components: {
     AgendaDateList,
+    AgendaCard,
     DailyAgenda,
     AgendaDetail
   },
   data () {
     return {
-      focusedAgenda: null
+      focusedAgenda: null,
+      isMounted: false
     }
   },
   computed: {
@@ -49,15 +73,17 @@ export default {
     targetDate () {
       return this.$route.params.date
     },
-    bookmarks () {
-      const allProposals = this.$t('proposal/map')
-      const targetIds = this.bookmarkIds.reduce((map, id) => {
+    bookmarkIdMap () {
+      return this.bookmarkIds.reduce((map, id) => {
         return {
           ...map,
           [id]: true
         }
       }, {})
-      return allProposals.filter(agenda => targetIds[agenda.id])
+    },
+    bookmarks () {
+      const allProposals = this.$t('proposal/map')
+      return allProposals.filter(agenda => this.bookmarkIdMap[agenda.id])
     },
     agendaCountPerDay () {
       const counts = {}
@@ -72,6 +98,24 @@ export default {
     },
     isTodayEmpty () {
       return !this.agendaCountPerDay[this.targetDate]
+    },
+    randomAgendaToday () {
+      if (!this.isMounted) {
+        return undefined
+      }
+      const availableAgendas = this.$t('proposal/map')
+        .filter((agenda) => {
+          return agenda.timeSheet.議程日期 === this.targetDate &&
+            !this.bookmarkIdMap[agenda.id] &&
+            !agenda.isPseudo
+        })
+
+      // it's safe to be empty array
+      const randomIndex = Math.floor(Math.random() * availableAgendas.length)
+      return availableAgendas[randomIndex]
+    },
+    todayAgendayUrl () {
+      return this.localePath(`/agenda/${this.targetDate}`)
     },
     roomsToday () {
       const rooms = {}
@@ -122,6 +166,10 @@ export default {
       return ''
     }
   },
+  mounted () {
+    // avoid ssr confusion as we provide random content
+    this.isMounted = true
+  },
   methods: {
     focusAgenda (agenda) {
       this.focusedAgenda = agenda
@@ -157,6 +205,9 @@ export default {
     @include not-small-screen {
       margin-top: 5.25rem;
     }
+  }
+  &__empty {
+    line-height: 2;
   }
 }
 </style>

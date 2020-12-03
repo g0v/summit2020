@@ -40,8 +40,13 @@
 <i18n lang="yaml">
 en:
   minuteUnit: min
+  bookmarkedHead: "Agenda \""
+  bookmarkedTail: "\" has been added into bookmark."
 zh:
   minuteUnit: 分鐘
+  bookmarkedHead: 「
+  bookmarkedTail: 」已加入書籤。
+
 </i18n>
 <script>
 import { mapState, mapMutations } from 'vuex'
@@ -130,7 +135,14 @@ export default {
     }
   },
   methods: {
-    ...mapMutations({ toggleFavouriteAgenda: MUTATIONS.TOGGLE_FAVOURITE_AGENDA }),
+    ...mapMutations({ doToggleFavouriteAgenda: MUTATIONS.TOGGLE_FAVOURITE_AGENDA }),
+    toggleFavouriteAgenda (params) {
+      this.doToggleFavouriteAgenda(params)
+      if (this.isFavourite) {
+        const msg = `${this.$t('bookmarkedHead')}${this.title}${this.$t('bookmarkedTail')}`
+        this.$buefy.snackbar.open(msg)
+      }
+    },
     selectAgenda () {
       this.$emit('select', this.agenda)
     }

@@ -1,8 +1,17 @@
 import Vue from 'vue'
-import { Dropdown, Modal, Button, Dialog, Radio, Tooltip } from 'buefy'
+import {
+  Snackbar,
+  Dropdown,
+  Modal,
+  Button,
+  Dialog,
+  Radio,
+  Tooltip
+} from 'buefy'
 import SummitMarkdown from '~/components/SummitMarkdown'
 
 Vue.component('summit-markdown', SummitMarkdown)
+Vue.use(Snackbar)
 Vue.use(Dropdown)
 Vue.use(Modal)
 Vue.use(Button)

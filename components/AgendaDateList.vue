@@ -46,6 +46,10 @@ export default {
       default () {
         return {}
       }
+    },
+    noDay0: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -53,12 +57,16 @@ export default {
       return VALID_DATE_LIST.includes(this.$route.params.date)
     },
     dateList () {
-      return VALID_DATE_LIST.map((date, index) => {
+      const list = VALID_DATE_LIST.map((date, index) => {
         return {
           index,
           date
         }
       })
+      if (this.noDay0) {
+        return list.slice(1)
+      }
+      return list
     },
     targetDate () {
       if (this.isDateValid) {
