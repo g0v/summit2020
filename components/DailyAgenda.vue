@@ -120,12 +120,10 @@ export default {
   },
   mounted () {
     this.updatePageWidth()
-    this.initFavouriteAgendas()
   },
   methods: {
     ...mapMutations({
-      setPageWidth: MUTATIONS.SET_PAGE_WIDTH,
-      initFavouriteAgendas: MUTATIONS.INIT_FAVOURITE_AGENDAS
+      setPageWidth: MUTATIONS.SET_PAGE_WIDTH
     }),
     handleSelectAgenda (agenda) {
       this.$emit('select', agenda)

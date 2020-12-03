@@ -24,9 +24,9 @@
       )
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
-import { STATES } from '~/store'
+import { STATES, MUTATIONS } from '~/store'
 import Navbar from '~/components/Navbar'
 import SummitFooter from '~/components/SummitFooter'
 import SummitMenu from '~/components/SummitMenu'
@@ -56,6 +56,7 @@ export default {
     })
   },
   mounted () {
+    this.initFavouriteAgendas()
     const Slideout = require('slideout')
     this.slideout = new Slideout({
       panel: this.$refs.content,
@@ -70,6 +71,9 @@ export default {
     }
   },
   methods: {
+    ...mapMutations({
+      initFavouriteAgendas: MUTATIONS.INIT_FAVOURITE_AGENDAS
+    }),
     toggleMenu () {
       if (!this.slideout) {
         return
