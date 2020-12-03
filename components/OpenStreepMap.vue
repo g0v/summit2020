@@ -12,17 +12,14 @@
         :lat-lng="location.coordinates"
         :icon="markerIcon"
         @add="openPopup"
-        @click="$emit('click:marker', location.id)"
+        @mouseover="bringToFront"
       )
         l-popup(
           :options="popupOptions"
         )
-          .relative
+          .relative.pointer(@click="$emit('click:marker', location.id)")
             .pr3.mr2 {{location[$t('venuelocationNameShort')]}}
             img.absolute.right-0.top-0(src="~/assets/images/trans-info.png")
-          // .flex.items-center.justify-center
-          //   .nowrap
-          //
       l-tile-layer(
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         :options="{maxZoom: 18,attribution: `<a href='https://www.openstreetmap.org/'>OSM</a>`}"
@@ -99,6 +96,7 @@ export default {
       if (!this.$refs.map) {
         return
       }
+      console.warn('to center')
       const map = this.$refs.map.mapObject
       if (this.markers.length > 1) {
         const first2 = this.markers.slice(0, 2)
@@ -119,6 +117,9 @@ export default {
       this.$nextTick(() => {
         event.target.openPopup()
       })
+    },
+    bringToFront (event) {
+      event.target.getPopup().bringToFront()
     }
   }
 }
