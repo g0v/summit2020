@@ -1,7 +1,14 @@
 import dayjs from 'dayjs'
 
-export const DEFAULT_DATE = '2020-12-04'
 export const VALID_DATE_LIST = ['2020-12-03', '2020-12-04', '2020-12-05', '2020-12-06']
+
+const today = dayjs().format('YYYY-MM-DD')
+let defaultDate = '2020-12-04'
+// during Day 1 ~ Day 3, set default day as current date
+if (VALID_DATE_LIST.slice(1).includes(today)) {
+  defaultDate = today
+}
+export const DEFAULT_DATE = defaultDate
 
 let startDate = dayjs(VALID_DATE_LIST[1])
 let endDate = dayjs(VALID_DATE_LIST[VALID_DATE_LIST.length - 1]).add(1, 'day')

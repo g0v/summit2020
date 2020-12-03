@@ -28,19 +28,13 @@ zh:
 </i18n>
 <script>
 import { mapMutations, mapState } from 'vuex'
-import axios from 'axios'
 
 import { MUTATIONS, STATES } from '~/store'
 import DailyAgenda from '~/components/DailyAgenda'
 import AgendaTooltip from '~/components/AgendaTooltip'
 import AgendaDateList from '~/components/AgendaDateList'
 import { isAgendaMatch } from '~/utils/searchUtils'
-import { ALLOW_DECL_HEALTH } from '~/utils/scheduleInfo'
-
-const OCCU_ENDPOINT = 'https://g0v-summit-2020-room-occupatio.herokuapp.com/element-log'
-
-// update every 5 minute
-const OCCU_UPDATE_PERIOD = 5 * 60 * 1000
+import roomMixin from '~/utils/roomMixin'
 
 export default {
   components: {
@@ -48,9 +42,10 @@ export default {
     AgendaTooltip,
     AgendaDateList
   },
+  mixins: [roomMixin],
   data () {
     return {
-      occupationTimer: null
+      isReady: false
     }
   },
   computed: {
@@ -122,17 +117,17 @@ export default {
         })
     },
     isTodayEmpty () {
-      return !this.agendaCountPerDay[this.targetDate]
+      return this.isReady && !this.agendaCountPerDay[this.targetDate]
     },
     isUnderSearch () {
       return !!this.query || Object.keys(this.filter).length > 0
     }
   },
-  mounted () {
-    this.keepUpdatingOccu()
-  },
-  beforeDestroy () {
-    clearInterval(this.occupationTimer)
+  watch: {
+    matchedAgenda (newVal, oldVal) {
+      // mark page as ready only after we have 2nd output
+      this.isReady = true
+    }
   },
   methods: {
     ...mapMutations({
@@ -141,30 +136,6 @@ export default {
     }),
     resetSearch () {
       this.doResetSearch()
-    },
-    keepUpdatingOccu () {
-      if (!ALLOW_DECL_HEALTH) {
-        // we only count room status during the event
-        return
-      }
-      this.updateOccu()
-      this.occupationTimer = setInterval(() => {
-        this.updateOccu()
-      }, OCCU_UPDATE_PERIOD)
-    },
-    async updateOccu () {
-      if (!ALLOW_DECL_HEALTH) {
-        // we only count room status during the event
-        return
-      }
-      try {
-        const resp = await axios.get(OCCU_ENDPOINT)
-        if (resp.data) {
-          this.updateOccuState(resp.data)
-        }
-      } catch (err) {
-        this.$sentry.self.captureMessage(`Error during retrieving room occupation: ${err.message}`)
-      }
     }
   }
 }

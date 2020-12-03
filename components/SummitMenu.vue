@@ -17,6 +17,7 @@
     | {{$t(checkInType)}}
   nuxt-link.menu__topitem.pa3.pa2-l.mr2-l.dim.flex.flex-wrap.items-center(
     :to="localePath('/bookmarks')"
+    @click.native="sthClick"
   )
     img(src="~/assets/icons/top-heart-full.svg")
     | {{$t('bookmark')}}
