@@ -4,6 +4,7 @@
       <OpenStreepMap
         id="location-map"
         class="transport-map"
+        data-slideout-ignore
         :markers="locations"
         @click:marker="whereIs"
       />
