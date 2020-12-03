@@ -1,4 +1,6 @@
 import axios from 'axios'
+import { mapMutations } from 'vuex'
+import { MUTATIONS } from '~/store'
 import { ALLOW_DECL_HEALTH } from '~/utils/scheduleInfo'
 
 const OCCU_ENDPOINT = 'https://g0v-summit-2020-room-occupatio.herokuapp.com/element-log'
@@ -19,6 +21,9 @@ export default {
     clearInterval(this.occupationTimer)
   },
   methods: {
+    ...mapMutations({
+      updateOccuState: MUTATIONS.SET_ROOM_OCCU
+    }),
     keepUpdatingOccu () {
       if (!ALLOW_DECL_HEALTH) {
         // we only count room status during the event

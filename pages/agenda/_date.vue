@@ -131,8 +131,7 @@ export default {
   },
   methods: {
     ...mapMutations({
-      doResetSearch: MUTATIONS.RESET_AGENDA_SEARCH,
-      updateOccuState: MUTATIONS.SET_ROOM_OCCU
+      doResetSearch: MUTATIONS.RESET_AGENDA_SEARCH
     }),
     resetSearch () {
       this.doResetSearch()
