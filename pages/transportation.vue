@@ -215,7 +215,7 @@ export default {
     title () {
       return this.$t('transportation')
     },
-    coverUrl: '/og-transport.jpg'
+    coverUrl: '/og-transport-v1.jpg'
   })
 }
 </script>
@@ -228,6 +228,7 @@ export default {
     width: 100%;
     @include not-small-screen {
       height: 42rem;
+      max-height: 65vh;
     }
   }
   &-nav {
