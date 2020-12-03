@@ -23,7 +23,10 @@
         @select="handleSelectAgenda"
       )
     template(v-for="room in regularRooms")
-      .dailyagenda__header.dn.db-ns.mb2.z-4(:key="room.name")
+      .dailyagenda__header.dn.db-ns.mb2.z-4(
+        :key="room.name"
+        :class="{'dailyagenda__header--higher': !isRoutable}"
+      )
         room-card(:name="room.name")
       .dailyagenda__item(
         v-for="agenda in room.agendaList"
@@ -185,6 +188,10 @@ export default {
     top: calc(3.5rem - 1px);
     background: white;
     background: linear-gradient(180deg, white 0%, white 90%, rgba(255,255,255,0.1) 100%);
+
+    &--higher {
+      top: 0;
+    }
   }
 
   &__item {
