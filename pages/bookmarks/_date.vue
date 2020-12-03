@@ -52,6 +52,7 @@ import DailyAgenda from '~/components/DailyAgenda'
 import AgendaDetail from '~/components/AgendaDetail'
 import AgendaCard from '~/components/AgendaCard'
 import { friendlyHeader } from '~/utils/crawlerFriendly'
+import roomMixin from '~/utils/roomMixin'
 
 export default {
   components: {
@@ -60,6 +61,7 @@ export default {
     DailyAgenda,
     AgendaDetail
   },
+  mixins: [roomMixin],
   data () {
     return {
       focusedAgenda: null,
