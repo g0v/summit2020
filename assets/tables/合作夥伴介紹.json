@@ -315,6 +315,7 @@
     "名稱-華語": "偏鄉數位創新服務計畫",
     "名稱-en": "Innovative Digital Service Project in Remote Area",
     "說明": "偏鄉從不缺少美，而是缺少發現。\n教育部偏鄉數位創新服務計畫由崑山科技大學承接，致力於利用數位創新科技協助全台六大數位創新型DOC進行數位轉型，並成立專案團隊籌組數位創新團隊至各地服務，且將「連結外部資源、發掘在地特色、提升DOC知名度」作為次要任務，同時落實聯合國SDGs永續發展目標，共同為偏鄉注入一股創新且永續的能量，也期望透過大專生成員及在地青年的數位創新作為，讓更多人發現偏鄉的美、愛上偏鄉的好。\n",
+    "說明-en": "There is never a lack of beauty in a remote area, but a lack of discovery. The Innovative Digital Service Project in Remote Area is initiated by the Ministry of Education and committed by Kun Shan University, aiming to support the digital transformation of the six Digital Opportunity Centers (DOC) with digital innovative technologies. Kun Shan University has set up a project team to organize a number of innovative teams for serving in remote areas, and devoting into \"building up connections to resources, exploring local characteristics, and increasing the visibility of DOCs\". The project teams are in the meanwhile practicing the Sustainable Development Goals (SDGs) to fill in the innovative and sustainable energy.  It is hoped that through the digital innovations of college students and local youths, more people will discover the beauty and fall in love with the local areas",
     "logo": [
       {
         "id": "attoNCiT0zUZK6ImS",
@@ -359,6 +360,23 @@
       }
     ],
     "url": "https://www.voiced.org.tw/",
+    "合作角色": "特別感謝",
+    "合作角色-en": "Special thanks"
+  },
+  {
+    "_id": "reclPoS6kyI60MOyu",
+    "id": "reclPoS6kyI60MOyu",
+    "名稱-華語": "好盒器",
+    "名稱-en": "Good To Go",
+    "logo": [
+      {
+        "id": "attqj34ZQJ3WsmxDP",
+        "filename": "oNB0jVLh.png",
+        "type": "image/png",
+        "large_url": "cache/397af3048bd3c008bff689dea83234cc.png"
+      }
+    ],
+    "url": "goodtogo.tw",
     "合作角色": "特別感謝",
     "合作角色-en": "Special thanks"
   }

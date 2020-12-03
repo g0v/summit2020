@@ -13,7 +13,7 @@
     "子活動名稱-en": "FtO Tainan 2020",
     "coordinates": "22.982368,120.193104",
     "share-link": "https://goo.gl/maps/7EaSRVNNF1yBqS2E9",
-    "地點名稱-短-華語": "午營",
+    "地點名稱-短-華語": "午營咖啡",
     "地點名稱-短-en": "A Break Cafe",
     "photo": "location-phpto-0.png"
   },
@@ -22,7 +22,7 @@
     "id": "recEkqDpN8kTsei7l",
     "日期": "2020-12-04",
     "地點名稱-華語": "臺南市美術館 2 館 - 跨域展覽廳",
-    "地點名稱-en": "Performing Arts Theatre - Tainan Art Museum Hall 2",
+    "地點名稱-en": "Performing Arts Theatre - Tainan Art Museum Building 2",
     "活動名稱-華語": "在地議程",
     "活動名稱-en": "Local Program",
     "地址-華語": "700 台南市中西區忠義路二段 1 號",
@@ -31,15 +31,15 @@
     "子活動名稱-en": "g0v jothon",
     "coordinates": "22.99054,120.201436",
     "share-link": "https://goo.gl/maps/7S2rPvozFzLHubkZA",
-    "地點名稱-短-華語": "南美館",
-    "地點名稱-短-en": "Art Museum",
+    "地點名稱-短-華語": "臺南市美術館 2 館",
+    "地點名稱-短-en": "Tainan Art Museum Building 2",
     "photo": "location-phpto-1.png"
   },
   {
     "_id": "recYve9mfdynQ0Zm8",
     "id": "recYve9mfdynQ0Zm8",
     "日期": "2020-12-04",
-    "地點名稱-華語": "吳園 - 原公會堂",
+    "地點名稱-華語": "吳園藝文中心 - 原公會堂",
     "地點名稱-en": "Wu Garden (Former Tainan Public Hall)",
     "活動名稱-華語": "在地議程",
     "活動名稱-en": "Local Program",
@@ -49,7 +49,7 @@
     "子活動名稱-en": "Tainan Sprout - 10th Anniversary of Tainan County-City Integration",
     "coordinates": "22.99462,120.205988",
     "share-link": "https://goo.gl/maps/Uj9zzA6SKosg62qC9",
-    "地點名稱-短-華語": "吳園",
+    "地點名稱-短-華語": "吳園藝文中心",
     "地點名稱-短-en": "Wu Garden",
     "photo": "location-phpto-2.png"
   },
@@ -67,8 +67,8 @@
     "子活動名稱-en": "Good-ideas Studio - Training Developers and Building Local Technical Resources",
     "coordinates": "22.999968,120.212847",
     "share-link": "https://goo.gl/maps/cz689c3Ch5oHTQF97",
-    "地點名稱-短-華語": "好想",
-    "地點名稱-短-en": "Good-Ideas",
+    "地點名稱-短-華語": "好想工作室",
+    "地點名稱-短-en": "Good-Ideas Studio",
     "photo": "location-phpto-3.png"
   },
   {
@@ -103,8 +103,8 @@
     "子活動名稱-en": "Venue 1",
     "coordinates": "23.001872,120.21605",
     "share-link": "https://goo.gl/maps/una3ierpiHcE2a5v5",
-    "地點名稱-短-華語": "魔法學校",
-    "地點名稱-短-en": "Magic School",
+    "地點名稱-短-華語": "綠色魔法學校",
+    "地點名稱-短-en": "The Magic School",
     "photo": "location-phpto-5.png"
   },
   {
@@ -139,7 +139,7 @@
     "子活動名稱-en": "Taiwanese Banquet “Ban-do”",
     "coordinates": "23.006523,120.224366",
     "share-link": "https://goo.gl/maps/TWJhoPbgUL8eVUVk7",
-    "地點名稱-短-華語": "振興里",
+    "地點名稱-短-華語": "振興里里民活動中心",
     "地點名稱-短-en": "Zhenxing Village",
     "photo": "location-phpto-6.png"
   },
@@ -157,8 +157,8 @@
     "子活動名稱-en": "All-Venue Broadcast",
     "coordinates": "23.001872,120.21605",
     "share-link": "https://goo.gl/maps/una3ierpiHcE2a5v5",
-    "地點名稱-短-華語": "魔法學校",
-    "地點名稱-短-en": "Magic School",
+    "地點名稱-短-華語": "綠色魔法學校",
+    "地點名稱-短-en": "The Magic School",
     "photo": "location-phpto-5.png"
   },
   {
@@ -193,8 +193,8 @@
     "子活動名稱-en": "Venue 1",
     "coordinates": "23.001872,120.21605",
     "share-link": "https://goo.gl/maps/una3ierpiHcE2a5v5",
-    "地點名稱-短-華語": "魔法學校",
-    "地點名稱-短-en": "Magic School",
+    "地點名稱-短-華語": "綠色魔法學校",
+    "地點名稱-短-en": "The Magic School",
     "photo": "location-phpto-5.png"
   },
   {
@@ -219,7 +219,7 @@
     "_id": "recIPEseXuakYPeWN",
     "id": "recIPEseXuakYPeWN",
     "日期": "2020-12-06",
-    "地點名稱-華語": "吳園 - 原公會堂",
+    "地點名稱-華語": "吳園藝文中心 - 原公會堂",
     "地點名稱-en": "Wu Garden (Former Tainan Public Hall)",
     "活動名稱-華語": "開放工作坊",
     "活動名稱-en": "Unconference",
@@ -229,7 +229,7 @@
     "子活動名稱-en": "Venue 3",
     "coordinates": "22.99462,120.205988",
     "share-link": "https://goo.gl/maps/Uj9zzA6SKosg62qC9",
-    "地點名稱-短-華語": "吳園",
+    "地點名稱-短-華語": "吳園藝文中心",
     "地點名稱-短-en": "Wu Garden",
     "photo": "location-phpto-2.png"
   },
@@ -247,8 +247,8 @@
     "子活動名稱-en": "Venue 4",
     "coordinates": "22.999968,120.212847",
     "share-link": "https://goo.gl/maps/cz689c3Ch5oHTQF97",
-    "地點名稱-短-華語": "好想",
-    "地點名稱-短-en": "Good-Ideas",
+    "地點名稱-短-華語": "好想工作室",
+    "地點名稱-短-en": "Good-Ideas Studio",
     "photo": "location-phpto-3.png"
   }
 ]

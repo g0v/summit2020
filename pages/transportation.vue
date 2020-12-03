@@ -223,11 +223,10 @@ export default {
 .transport {
   width: 100%;
   &-map {
-    max-height: 80vh;
-    height: 40rem;
+    height: 60vh;
     width: 100%;
-    @media screen and (max-width: 800px) {
-      display: none;
+    @include not-small-screen {
+      height: 42rem;
     }
   }
   &-nav {
