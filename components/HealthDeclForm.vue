@@ -454,11 +454,11 @@ const FORM_URL = 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSewrwiopO6HiuCL5F
 
 const FIELD_FORMAT = {
   IDOrPassport: {
-    rule: /[a-zA-Z0-9]{8}/,
+    rule: /[a-zA-Z0-9 ]{4}/,
     errCode: 'wrongId'
   },
   phone: {
-    rule: /[0-9()+-]{10}/,
+    rule: /[0-9() +-]{4}/,
     errCode: 'wrongPhone'
   },
   name: {
@@ -866,6 +866,10 @@ export default {
     .error {
       color: red;
       font-size: 0.875rem;
+      background: rgb(255, 208, 208);
+      display: inline;
+      padding: 0 1rem;
+      border-left: 0.25rem red solid;
     }
     .field  {
       margin-bottom: 1rem;
