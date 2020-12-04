@@ -2725,7 +2725,7 @@
   "5efa9092ba206b030d66a408": {
     "id": "5efa9092ba206b030d66a408",
     "title": "来自日本的项目展示案例--我们如何合作？",
-    "title_en": "Project showcase from Japan – How we can collaborate?",
+    "title_en": "Project show case from Japan - How we can collaborate?",
     "summary": "来自日本的你好 Code for Japan是日本的民间科技社区。在COVID-19大流行的情况下，日本发生了很多项目。本節將介紹一些這樣的計畫。然后，我们将讨论未来台湾社区之间的合作。",
     "summary_en": "Hello from Japan! Code for Japan is the civic tech community in Japan. Under the COVID-19 pandemic, a lot of projects have been happening in Japan. This session introduces some os such projects. Then we would like to discuss future collaboration between Taiwan community.",
     "oral_language": "English",
@@ -2738,7 +2738,7 @@
     "is_presentation_cc40": true,
     "is_slide_cc40": true,
     "verified": true,
-    "createdAt": "2020-10-25T15:44:09.806Z",
+    "createdAt": "2020-12-04T08:54:51.000Z",
     "presentation_method": "遠端連線 online",
     "speakers": [
       {
@@ -2758,9 +2758,20 @@
         "info_url": "",
         "bio": "Mariko Nishimura has been involved the one of projects of Code for Japan that aimed to develop a contact-tracing app.",
         "bio_en": "Mariko Nishimura started a career in IT with IBM Japan before moving into marketing management at Adobe Systems and production at Bascule. CEO and Co-Founder of creative marketing agency HEART CATCH Inc. since 2014, Mariko connects business, creativity and technology beyond borders, working with start-ups, companies, and government."
+      },
+      {
+        "display_name": "Miley Takesada",
+        "organization": "Code for Japan",
+        "organization_en": "Code for Japan",
+        "avatar_url": "https://imgur.com/HoU1W2W.jpg",
+        "city": "東京",
+        "city_en": "Tokyo, Japan",
+        "info_url": "https://medium.com/@mamisada",
+        "bio": "Miley 是 Code for Japan 的社群經理、在大阪大學研究兒童發展的博士生。他曾在 LITALICO 工作，自 2018 年起舉辦「Social Fighter Award」，這個獎項是給關注社會議題的科技團隊。今年他與 Code for Japan 的實習生一起舉辦「Civictech Challenge Cup U-22」。",
+        "bio_en": "Community manager of Code for Japan and she is a PhD student of child development at Osaka Univ.  She worked for LITALICO and held Social Fighter Award, the award for the team who work on the social issues in 2018. This year she organized Civictech Challenge Cup U-22 with Code for Japan interns."
       }
     ],
-    "updatedAt": "2020-10-25T15:44:09.806Z",
+    "updatedAt": "2020-12-04T08:54:51.000Z",
     "timeSheet": {
       "id": "5efa9092ba206b030d66a408",
       "議程日期": "2020-12-05",
