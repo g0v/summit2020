@@ -538,7 +538,7 @@
     "timeSheet": {
       "id": "5eeee658ba206b030d66a303",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T07:05:39.000Z",
+      "最後更新時間": "2020-12-04T17:54:26.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -554,7 +554,7 @@
         "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
-      "議程開始時間": "2020-12-05T10:50",
+      "議程開始時間": "2020-12-05T10:30",
       "議程長度": 20,
       "locationMeta": {
         "order": 10,
@@ -1461,65 +1461,6 @@
         "capacity": 50
       }
     }
-  },
-  "5ef8c370ba206b030d66a386": {
-    "id": "5ef8c370ba206b030d66a386",
-    "title": "“請求政府”：台灣公共政策網路參與平台之訴求與開放政府聯絡人之分析",
-    "title_en": "Addressing the State : an analysis of the online-offline request system in Taiwan",
-    "summary": "In many countries, governments have adopted, as part of complex online-offline apparatus, new online petition platforms for citizens to directly address government institutions, voice their discontent and ask for changes (ie. WeThePeople in the United States or E-pétitions in France). \n\tIn 2015, following the aftermath of the Sunflower movement, Taiwan government launches a request platform called JOIN, that allows citizens to address the ministries of the Executive Yuan. Each request that gathers at least 5000 signatures, get a written response from the government. In 2017, the implementation of the Participation Officer network (PO network) -public servants from each ministries- pushed the request system based on JOIN further, as selected requests are discussed through a two-month process gathering public servants, the petitioner, signatories and civil society organizations.\n\tWhat can we learn from this online-offline request system? This talk (based on a one year and half fieldwork) draws from the sociology of controversies to analyze the petition apparatus through requests content, PO’s interactions and meetings among actors. What do people ask to the government in Taiwan? How requests are handled by the administration and debated during meetings? What can and can't be discussed through this process?\n\tThe JOIN–PO network system is a place were established norms (laws, policies) are challenged. Through requests, people share expectations on how the government should work, about its role in society. JOIN and POs’ meetings are spaces were actors debate and redefine together what is just and unjust, what should be and not be. If citizens tend to underline what they consider to be malfunctions, they also tend to define what is for them a “good government”. Request and POs’ meetings are also moments were actors redefine the relation between the government and the society. \n\tFrom requests pushing in favor or against LGBTQ+ rights, from public servants’ requests pushing for changes in their profession to requests asking for corporal punishment, Taiwan petition system gives us an interesting overview of Taiwan society controversies. If we can learn a lot about what opposes people (agonistic pluralism), it also tends to show what brings them together.",
-    "summary_en": "",
-    "oral_language": "English",
-    "oral_languate_other": "",
-    "format": "演講 （20 分鐘）Talk (20 min)",
-    "topic": "海海人聲 Voice of the islanders",
-    "three_keywords": "JOIN, PO network, petition",
-    "cover_image": "cache/f0d15799f0845290f4801eca83de330a.jpg",
-    "is_content_cc40": true,
-    "is_presentation_cc40": true,
-    "is_slide_cc40": true,
-    "verified": true,
-    "createdAt": "2020-10-21T15:21:41.430Z",
-    "presentation_method": "遠端連線 online",
-    "speakers": [
-      {
-        "display_name": "Fiorella Bourgeois",
-        "organization": "EHESS (School of Advanced Studies in Social Sciences)",
-        "avatar_url": "cache/9a4636f45b7300e4db354a7a70a00271.jpg",
-        "city": "Paris",
-        "info_url": "https://fiorellabgs.github.io/hackurious/about.html",
-        "bio": "EHESS (法国社會科學高等研究院) 政治社會學博士生.",
-        "bio_en": "Phd candidate in political sociology at the EHESS (École des Hautes Études en Sciences Sociales)."
-      }
-    ],
-    "updatedAt": "2020-10-21T15:21:41.430Z",
-    "timeSheet": {
-      "id": "5ef8c370ba206b030d66a386",
-      "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T07:05:37.000Z",
-      "分類主題-華語": "集結吧！公民的意志",
-      "分類主題-en": "Assemble! Will of the people",
-      "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
-      "議程場地-en": "R0 - The Magic School of Green Technologies - Chung-Hua Hall",
-      "主持人": {
-        "display_name": "曾憲立",
-        "organization": "台南大學行政管理學系",
-        "organization_en": "National University of Tainan Department of Public Administration and Management",
-        "avatar_url": "cache/cd9809eccbe224878ed27054dd9e9bb3.jpg",
-        "city": "台南",
-        "city_en": "Tainan, Taiwan",
-        "info_url": "http://www.pam.nutn.edu.tw/index.php?option=module&lang=cht&task=pageinfo&id=87&index=8",
-        "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
-        "bio_en": " "
-      },
-      "議程開始時間": "2020-12-05T10:30",
-      "議程長度": 20,
-      "locationMeta": {
-        "order": 10,
-        "capacity": 300
-      }
-    },
-    "translation": "華英口譯 ZH-EN interpreting",
-    "provide_sign_language": true
   },
   "5ef947a8ba206b030d66a392": {
     "id": "5ef947a8ba206b030d66a392",
@@ -6788,12 +6729,12 @@
     "isPseudo": true,
     "title": "開放討論",
     "title_en": "Open discussion",
-    "updatedAt": "2020-11-23T07:05:54.000Z",
-    "createdAt": "2020-11-23T07:05:54.000Z",
+    "updatedAt": "2020-12-04T17:55:04.000Z",
+    "createdAt": "2020-12-04T17:55:04.000Z",
     "timeSheet": {
       "id": "1205-QA-hall-0",
       "議程日期": "2020-12-05",
-      "最後更新時間": "2020-11-23T07:05:54.000Z",
+      "最後更新時間": "2020-12-04T17:55:04.000Z",
       "分類主題-華語": "集結吧！公民的意志",
       "分類主題-en": "Assemble! Will of the people",
       "議程場地-華語": "R0 - 成大綠色魔法學校 - 崇華廳",
@@ -6809,8 +6750,8 @@
         "bio": "曾憲立研究領域是數位治理, 關心的議題有：數位政府政策 , 開放資料, 公私協力, 數位隱私與新興科技在公部門的應用及落實, 同時也是電子治理研究中心(TEG)的研究員.",
         "bio_en": " "
       },
-      "議程開始時間": "2020-12-05T11:10",
-      "議程長度": 20,
+      "議程開始時間": "2020-12-05T10:50",
+      "議程長度": 40,
       "locationMeta": {
         "order": 10,
         "capacity": 300
