@@ -5871,8 +5871,8 @@
   },
   "1206-keynote-1": {
     "id": "1206-keynote-1",
-    "updatedAt": "2020-12-01T14:54:49.000Z",
-    "createdAt": "2020-12-01T14:54:49.000Z",
+    "updatedAt": "2020-12-04T05:06:56.000Z",
+    "createdAt": "2020-12-04T05:06:56.000Z",
     "title": "基調座談：來一碗民主，唔該晒",
     "title_en": "Connecting Democracies Through Communities",
     "summary": "2012 年 g0v 發起，以開放、協作的理念，號召社群參與改造社會。但是，隨著跨領域協作愈來愈深入，更多人開始意識到，開放協作的社群之所以能在台灣推動改變，民主自由的社會是不可或缺的基石。普選、多黨政治、言論自由、結社自由，這些制度上的基礎不只實現了開放的精神，也保障公民們可以積極組織起來，改造社會，並一起承擔必要的運作成本與消耗。這些匯聚起來的力量，支持著社群的參與者們，讓社群走到今天。\n\n身處亞太地區的我們，面對極權擴張，公民權利、資訊安全受到挑戰，連帶著，開放協作的空間受到擠壓。當公開、自由的交流不再安全，分享與協作、讓改變發生，將成為一件奢侈的事。言論空間受到擠壓的環境下，社群是否更為重要？我們可以怎麼繼續維持 ██、加強 ██？香港人做了什麼？台灣人做了什麼？鄰近的公民與黑客們，未來可以怎麼一起前進？",
@@ -5904,10 +5904,10 @@
         "bio_en": " "
       },
       {
-        "display_name": "香港公民黑客",
-        "display_name_en": "Hongkong civic hacker",
-        "organization": " ",
-        "avatar_url": "https://s3-ap-northeast-1.amazonaws.com/g0v-hackmd-images/uploads/upload_4c6e5553c863cfb17fc8ebdbb77552df.png",
+        "display_name": "kc",
+        "organization": "香港互聯網協會",
+        "organization_en": "Internet Society Hong Kong",
+        "avatar_url": "https://s3-ap-northeast-1.amazonaws.com/g0v-hackmd-images/uploads/upload_9091f5d325fccc01601d3979cd82d30b.jpg",
         "city": " ",
         "info_url": " ",
         "bio": " ",
