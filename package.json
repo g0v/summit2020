@@ -39,7 +39,7 @@
     "js-cookie": "^2.2.1",
     "leaflet": "^1.6.0",
     "lodash": "^4.17.20",
-    "markdown-it": "^11.0.0",
+    "markdown-it": "^12.3.2",
     "move-file": "^2.0.0",
     "nuxt": "^2.14.0",
     "nuxt-i18n": "^6.11.1",
